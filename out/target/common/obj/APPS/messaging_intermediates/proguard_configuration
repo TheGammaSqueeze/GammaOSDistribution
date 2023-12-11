@@ -1,0 +1,2217 @@
+-injars out/target/common/obj/APPS/messaging_intermediates/classes.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/legacy.core.platform.api.stubs_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/core-lambda-stubs_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/ext_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/android_stubs_current_intermediates/classes-header.jar
+-printmapping out/target/common/obj/APPS/messaging_intermediates/proguard_dictionary
+-printconfiguration out/target/common/obj/APPS/messaging_intermediates/proguard_configuration
+
+# We have moved -dontobfuscate and -dontoptimize to the makefiles.
+# dex does not like code run through proguard optimize and preverify steps.
+# -dontoptimize
+-dontpreverify
+
+# Don't obfuscate. We only need dead code striping.
+# -dontobfuscate
+
+# Add this flag in your package's own configuration if it's needed.
+#-flattenpackagehierarchy
+
+# Keep classes and methods that have the guava @VisibleForTesting annotation
+-keep @**.VisibleForTesting class *
+-keepclassmembers class * {
+@**.VisibleForTesting *;
+}
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+-keep class androidx.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+
+# The proguard configuration file for the following section is ./build/make/core/proguard_basic_keeps.flags
+# Some classes in the libraries extend package private classes to chare common functionality
+# that isn't explicitly part of the API
+-dontskipnonpubliclibraryclasses -dontskipnonpubliclibraryclassmembers
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# class$ methods are inserted by some compilers to implement .class construct,
+# see http://proguard.sourceforge.net/manual/examples.html#library
+-keepclassmembernames class * {
+    java.lang.Class class$(java.lang.String);
+    java.lang.Class class$(java.lang.String, boolean);
+}
+
+# Keep serializable classes and necessary members for serializable classes
+# Copied from the ProGuard manual at http://proguard.sourceforge.net.
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    !static !transient <fields>;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+# Keep Throwable's constructor that takes a String argument.
+-keepclassmembers class * extends java.lang.Throwable {
+  <init>(java.lang.String);
+}
+
+# Please specify classes to be kept explicitly in your package's configuration.
+# -keep class * extends android.app.Activity
+# -keep class * extends android.view.View
+# -keep class * extends android.app.Service
+# -keep class * extends android.content.BroadcastReceiver
+# -keep class * extends android.content.ContentProvider
+# -keep class * extends android.preference.Preference
+# -keep class * extends android.app.BackupAgent
+
+# Parcelable CREATORs must be kept for Parcelable functionality
+-keep class * implements android.os.Parcelable {
+  public static final ** CREATOR;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+# See proguard-android.txt in the SDK package.
+#
+# DO NOT USE THIS: We figured it's dangerous to blindly ignore all support library warnings.
+# ProGuard may strip members of subclass of unknown super classes, in case an app is linking against
+# LOCAL_SDK_VERSION lower than the support library's LOCAL_SDK_VERSION.
+# See bug/20658265.
+# -dontwarn android.support.**
+
+# From https://github.com/google/guava/wiki/UsingProGuardWithGuava
+# Striped64, LittleEndianByteArray, UnsignedBytes, AbstractFuture
+-dontwarn sun.misc.Unsafe
+# Futures.getChecked (which often won't work with Proguard anyway) uses this. It
+# has a fallback, but again, don't use Futures.getChecked on Android regardless.
+-dontwarn java.lang.ClassValue
+
+# Less spammy.
+-dontnote
+
+# The lite proto runtime uses reflection to access fields based on the names in
+# the schema, keep all the fields.
+-keepclassmembers class * extends com.google.protobuf.MessageLite { <fields>; }
+
+# End of content from ./build/make/core/proguard_basic_keeps.flags
+# The proguard configuration file for the following section is ./build/make/core/proguard.flags
+
+
+# End of content from ./build/make/core/proguard.flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-core-ui_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx-legacy/androidx.legacy_legacy-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.legacy_legacy-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.documentfile_documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.localbroadcastmanager_localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.print_print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.coordinatorlayout_coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.drawerlayout_drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.slidingpanelayout_slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.interpolator_interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.swiperefreshlayout_swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.asynclayoutinflater_asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.cursoradapter_cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-core-ui_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-v13_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx-legacy/androidx.legacy_legacy-support-v13-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.fragment_fragment-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.activity_activity-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.savedstate_savedstate-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.tracing_tracing-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-v13_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/colorpicker_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.fragment_fragment-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.activity_activity-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.savedstate_savedstate-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.tracing_tracing-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/colorpicker_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/libchips_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/libchips_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/libphotoviewer_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx-legacy/androidx.legacy_legacy-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.legacy_legacy-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.documentfile_documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.localbroadcastmanager_localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.print_print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.coordinatorlayout_coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.drawerlayout_drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.slidingpanelayout_slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.interpolator_interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.swiperefreshlayout_swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.asynclayoutinflater_asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.cursoradapter_cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.fragment_fragment-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.activity_activity-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.savedstate_savedstate-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.tracing_tracing-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/libphotoviewer_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.appcompat_appcompat_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
+# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
+-keep class androidx.appcompat.widget.SearchView { <init>(...); }
+
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl* {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.cursoradapter_cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.activity_activity-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.savedstate_savedstate-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.tracing_tracing-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.fragment_fragment-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-resources-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.vectordrawable_vectordrawable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.vectordrawable_vectordrawable-animated-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$* {
+   void set*(***);
+   *** get*();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.interpolator_interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.drawerlayout_drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.appcompat_appcompat_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.core_core_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.core_core_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.fragment_fragment_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.fragment_fragment-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.activity_activity-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.savedstate_savedstate-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-savedstate-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.tracing_tracing-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.fragment_fragment_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.media_media_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.media_media-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class androidx.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.media_media_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-core-utils_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.legacy_legacy-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.documentfile_documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.loader_loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.localbroadcastmanager_localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.print_print-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.legacy_legacy-support-core-utils_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.palette_palette_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.palette_palette-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.palette_palette_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.recyclerview_recyclerview_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.recyclerview_recyclerview-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
+    public <init>(android.content.Context, android.util.AttributeSet, int, int);
+    public <init>();
+}
+
+-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
+    public void suppressLayout(boolean);
+    public boolean isLayoutSuppressed();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.recyclerview_recyclerview_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/androidx.viewpager_viewpager_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.viewpager_viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.customview_customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.core_core-nodeps/android_common/aar/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation-experimental-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ignore missing Kotlin meta-annotations so that this library can be used
+# without adding a compileOnly dependency on the Kotlin standard library.
+-dontwarn kotlin.Deprecated
+-dontwarn kotlin.Metadata
+-dontwarn kotlin.ReplaceWith
+-dontwarn kotlin.annotation.AnnotationRetention
+-dontwarn kotlin.annotation.AnnotationTarget
+-dontwarn kotlin.annotation.Retention
+-dontwarn kotlin.annotation.Target
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.lifecycle_lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.arch.core_core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.versionedparcelable_versionedparcelable-nodeps/android_common/aar/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/androidx.viewpager_viewpager_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/APPS/messaging_intermediates/proguard_options
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:589
+-keep class androidx.appcompat.mms.MmsService { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:80
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:80
+-keep class com.android.messaging.BugleApplication { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:349
+-keep class com.android.messaging.datamodel.MediaScratchFileProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:338
+-keep class com.android.messaging.datamodel.MessagingContentProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:344
+-keep class com.android.messaging.datamodel.MmsFileProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:459
+-keep class com.android.messaging.datamodel.NoConfirmationSmsSendService { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:356
+-keep class com.android.messaging.datamodel.action.ActionServiceImpl { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:527
+-keep class com.android.messaging.datamodel.action.ActionServiceImpl$PendingActionReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:360
+-keep class com.android.messaging.datamodel.action.BackgroundWorkerService { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:396
+-keep class com.android.messaging.receiver.AbortMmsWapPushReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:407
+-keep class com.android.messaging.receiver.AbortSmsReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:511
+-keep class com.android.messaging.receiver.BootAndPackageReplacedReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:534
+-keep class com.android.messaging.receiver.DefaultSmsSubscriptionChangeReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:418
+-keep class com.android.messaging.receiver.MmsWapPushDeliverReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:370
+-keep class com.android.messaging.receiver.MmsWapPushReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:521
+-keep class com.android.messaging.receiver.NotificationReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:436
+-keep class com.android.messaging.receiver.SendStatusReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:428
+-keep class com.android.messaging.receiver.SmsDeliverReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:381
+-keep class com.android.messaging.receiver.SmsReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:501
+-keep class com.android.messaging.receiver.StorageStatusReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:163
+-keep class com.android.messaging.ui.BlockedParticipantsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:475
+-keep class com.android.messaging.ui.ClassZeroActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:265
+-keep class com.android.messaging.ui.LicenseActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:108
+-keep class com.android.messaging.ui.PermissionCheckActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:288
+-keep class com.android.messaging.ui.RemoteInputEntrypointActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:484
+-keep class com.android.messaging.ui.SmsStorageLowWarningActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:326
+-keep class com.android.messaging.ui.TestActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:297
+-keep class com.android.messaging.ui.VCardDetailActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:579
+-keep class com.android.messaging.ui.WidgetPickConversationActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:494
+-keep class com.android.messaging.ui.appsettings.ApnEditorActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:488
+-keep class com.android.messaging.ui.appsettings.ApnSettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:206
+-keep class com.android.messaging.ui.appsettings.ApplicationSettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:195
+-keep class com.android.messaging.ui.appsettings.PerSubscriptionSettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:184
+-keep class com.android.messaging.ui.appsettings.SettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:309
+-keep class com.android.messaging.ui.attachmentchooser.AttachmentChooserActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:150
+-keep class com.android.messaging.ui.conversation.ConversationActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:114
+-keep class com.android.messaging.ui.conversation.LaunchConversationActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:137
+-keep class com.android.messaging.ui.conversationlist.ArchivedConversationListActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:93
+-keep class com.android.messaging.ui.conversationlist.ConversationListActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:273
+-keep class com.android.messaging.ui.conversationlist.ForwardMessageActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:227
+-keep class com.android.messaging.ui.conversationlist.ShareIntentActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:252
+-keep class com.android.messaging.ui.conversationsettings.PeopleAndOptionsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:330
+-keep class com.android.messaging.ui.debug.DebugMmsConfigActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:176
+-keep class com.android.messaging.ui.photoviewer.BuglePhotoViewActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:543
+-keep class com.android.messaging.widget.BugleWidgetProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:570
+-keep class com.android.messaging.widget.WidgetConversationListService { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:557
+-keep class com.android.messaging.widget.WidgetConversationProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/messaging_intermediates/manifest/AndroidManifest.xml:574
+-keep class com.android.messaging.widget.WidgetConversationService { <init>(); }
+# Referenced at packages/apps/Messaging/res/menu/photo_view_menu.xml:20
+-keep class android.widget.ShareActionProvider { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_button_bar_material.xml:43
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:52
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_title_material.xml:57
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_cascading_menu_item_layout.xml:20
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_list_menu_item_layout.xml:17
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_popup_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_mode_bar.xml:19
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:44
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_dialog_title_material.xml:22
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple.xml:17
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:37
+# Referenced at packages/apps/Messaging/res/layout/contact_picker_fragment.xml:24
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple.xml:25
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple_overlay_action_mode.xml:32
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.appcompat_appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_fragment.xml:37
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_fragment.xml:23
+# Referenced at packages/apps/Messaging/res/layout/share_intent_conversation_list_view.xml:27
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/custom_header_view_pager.xml:33
+-keep class androidx.viewpager.widget.ViewPager { <init>(...); }
+
+# Referenced at frameworks/opt/colorpicker/res/layout/color_picker_dialog.xml:37
+-keep class com.android.colorpicker.ColorPickerPalette { <init>(...); }
+
+# Referenced at frameworks/opt/chips/res/layout/chips_autocomplete_recipient_dropdown_item.xml:42
+# Referenced at frameworks/opt/chips/res/layout/chips_recipient_dropdown_item.xml:24
+-keep class com.android.ex.chips.CircularImageView { <init>(...); }
+
+# Referenced at frameworks/opt/photoviewer/res/layout/photo_activity_view.xml:30
+-keep class com.android.ex.photo.PhotoViewPager { <init>(...); }
+
+# Referenced at frameworks/opt/photoviewer/res/layout/photo_fragment_view.xml:22
+-keep class com.android.ex.photo.views.PhotoView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_image.xml:17
+# Referenced at packages/apps/Messaging/res/layout/attachment_multiple_image.xml:18
+# Referenced at packages/apps/Messaging/res/layout/attachment_single_image.xml:24
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_item_view.xml:172
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:55
+# Referenced at packages/apps/Messaging/res/layout/gallery_grid_item_view.xml:25
+# Referenced at packages/apps/Messaging/res/layout/place_card.xml:22
+# Referenced at packages/apps/Messaging/res/layout/video_thumbnail_view.xml:23
+-keep class com.android.messaging.ui.AsyncImageView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_preview.xml:17
+-keep class com.android.messaging.ui.AttachmentPreview { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/audio_attachment_view.xml:26
+-keep class com.android.messaging.ui.AudioAttachmentPlayPauseButton { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_audio.xml:25
+# Referenced at packages/apps/Messaging/res/layout/attachment_multiple_audio.xml:25
+# Referenced at packages/apps/Messaging/res/layout/attachment_single_audio.xml:24
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_item_view.xml:182
+# Referenced at packages/apps/Messaging/res/layout/message_audio_attachment.xml:17
+-keep class com.android.messaging.ui.AudioAttachmentView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/audio_attachment_view.xml:54
+-keep class com.android.messaging.ui.AudioPlaybackProgressBar { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/blocked_participant_list_item_view.xml:17
+-keep class com.android.messaging.ui.BlockedParticipantListItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/blocked_participants_activity.xml:17
+-keep class com.android.messaging.ui.BlockedParticipantsFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/add_contacts_confirmation_dialog_body.xml:26
+# Referenced at packages/apps/Messaging/res/layout/blocked_participant_list_item_view.xml:24
+# Referenced at packages/apps/Messaging/res/layout/chips_alternates_dropdown_item.xml:24
+# Referenced at packages/apps/Messaging/res/layout/contact_list_item_view.xml:41
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_item_view.xml:76
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:24
+# Referenced at packages/apps/Messaging/res/layout/person_item_view.xml:24
+-keep class com.android.messaging.ui.ContactIconView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/contact_picker_fragment.xml:67
+-keep class com.android.messaging.ui.CustomHeaderViewPager { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_activity.xml:17
+-keep class com.android.messaging.ui.ImeDetectFrameLayout { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:130
+-keep class com.android.messaging.ui.LineWrapLayout { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/list_empty_view.xml:17
+-keep class com.android.messaging.ui.ListEmptyView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/contact_picker_fragment.xml:32
+-keep class com.android.messaging.ui.MaxHeightScrollView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:49
+-keep class com.android.messaging.ui.MultiAttachmentLayout { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_fragment.xml:23
+-keep class com.android.messaging.ui.PagingAwareViewPager { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_vcard.xml:22
+# Referenced at packages/apps/Messaging/res/layout/attachment_multiple_vcard.xml:22
+# Referenced at packages/apps/Messaging/res/layout/attachment_single_vcard.xml:22
+# Referenced at packages/apps/Messaging/res/layout/message_vcard_attachment.xml:17
+# Referenced at packages/apps/Messaging/res/layout/people_list_item_view.xml:17
+-keep class com.android.messaging.ui.PersonItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/compose_message_view.xml:64
+-keep class com.android.messaging.ui.PlainTextEditText { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/vcard_detail_activity.xml:17
+-keep class com.android.messaging.ui.VCardDetailFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_video.xml:17
+# Referenced at packages/apps/Messaging/res/layout/attachment_multiple_video.xml:18
+# Referenced at packages/apps/Messaging/res/layout/attachment_single_video.xml:18
+# Referenced at packages/apps/Messaging/res/layout/message_video_attachment.xml:17
+-keep class com.android.messaging.ui.VideoThumbnailView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/custom_header_view_pager.xml:19
+-keep class com.android.messaging.ui.ViewPagerTabs { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/viewgroup_vertical_explode_animation_popup.xml:17
+-keep class com.android.messaging.ui.animation.ViewGroupItemVerticalExplodeAnimation$VerticalExplodePopupRootView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/xml-v21/preferences_per_subscription.xml:28
+-keep class com.android.messaging.ui.appsettings.PhoneNumberPreference { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_activity.xml:17
+-keep class com.android.messaging.ui.attachmentchooser.AttachmentChooserFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_grid_item_view.xml:17
+-keep class com.android.messaging.ui.attachmentchooser.AttachmentGridItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/attachment_chooser_fragment.xml:17
+-keep class com.android.messaging.ui.attachmentchooser.AttachmentGridView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/contact_list_item_view.xml:17
+-keep class com.android.messaging.ui.contact.ContactListItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/contact_picker_fragment.xml:38
+-keep class com.android.messaging.ui.contact.ContactRecipientAutoCompleteView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/compose_message_view.xml:17
+-keep class com.android.messaging.ui.conversation.ComposeMessageView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:33
+-keep class com.android.messaging.ui.conversation.ConversationMessageBubbleView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:17
+-keep class com.android.messaging.ui.conversation.ConversationMessageView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_message_view.xml:71
+-keep class com.android.messaging.ui.conversation.MessageBubbleBackground { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/compose_message_view.xml:150
+# Referenced at packages/apps/Messaging/res/layout/sim_selector_item_view.xml:56
+-keep class com.android.messaging.ui.conversation.SimIconView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/sim_selector_item_view.xml:17
+-keep class com.android.messaging.ui.conversation.SimSelectorItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/sim_selector_view.xml:17
+-keep class com.android.messaging.ui.conversation.SimSelectorView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_activity.xml:17
+-keep class com.android.messaging.ui.conversationlist.ConversationListFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/conversation_list_item_view.xml:17
+-keep class com.android.messaging.ui.conversationlist.ConversationListItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/share_intent_activity.xml:17
+-keep class com.android.messaging.ui.conversationlist.ShareIntentFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/people_and_options_activity.xml:17
+-keep class com.android.messaging.ui.conversationsettings.PeopleAndOptionsFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/people_options_item_view.xml:17
+-keep class com.android.messaging.ui.conversationsettings.PeopleOptionsItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/debug_mmsconfig_activity.xml:17
+-keep class com.android.messaging.ui.debug.DebugMmsConfigFragment { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/debug_mmsconfig_item_view.xml:17
+-keep class com.android.messaging.ui.debug.DebugMmsConfigItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_audio_chooser.xml:17
+-keep class com.android.messaging.ui.mediapicker.AudioRecordView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_camera_chooser.xml:18
+-keep class com.android.messaging.ui.mediapicker.CameraMediaChooserView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/gallery_grid_item_view.xml:17
+-keep class com.android.messaging.ui.mediapicker.GalleryGridItemView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_gallery_chooser.xml:21
+-keep class com.android.messaging.ui.mediapicker.GalleryGridView { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_camera_chooser.xml:31
+-keep class com.android.messaging.ui.mediapicker.HardwareCameraPreview { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_fragment.xml:18
+-keep class com.android.messaging.ui.mediapicker.MediaPickerPanel { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/audio_attachment_view.xml:47
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_audio_chooser.xml:40
+-keep class com.android.messaging.ui.mediapicker.PausableChronometer { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_audio_chooser.xml:49
+-keep class com.android.messaging.ui.mediapicker.SoundLevels { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_camera_chooser.xml:37
+-keep class com.android.messaging.ui.mediapicker.camerafocus.RenderOverlay { <init>(...); }
+
+# Referenced at packages/apps/Messaging/res/layout/mediapicker_location_chooser.xml:17
+-keep class com.google.android.location.places.ui.placepicker.PlacePickerFragment { <init>(...); }
+
+
+# End of content from ./out/target/common/obj/APPS/messaging_intermediates/proguard_options
+
+
+# The proguard configuration file for the following section is ./packages/apps/Messaging/proguard.flags
+#  Copyright (C) 2015 The Android Open Source Project
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+# Keep enough data for stack traces
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable,*Annotation*
+
+# Keep classes and methods that have the guava @VisibleForTesting annotation
+-keep @com.google.common.annotations.VisibleForTesting class *
+-keepclassmembers class * {
+  @com.google.common.annotations.VisibleForTesting *;
+}
+-keep class com.android.messaging.* { *; }
+-keep class com.android.messaging.*.* { *; }
+-keep class com.android.messaging.*.*.* { *; }
+
+# Keep methods that have the @VisibleForAnimation annotation
+-keep @interface com.android.messaging.annotation.VisibleForAnimation
+-keepclassmembers class * {
+  @com.android.messaging.annotation.VisibleForAnimation *;
+}
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends androidx.fragment.app.Fragment
+-keep public class com.android.vcard.* { *; }
+
+-keep class androidx.collection.* { *; }
+-keep class androidx.core.* { *; }
+-keep class androidx.core.*.* { *; }
+-keep class androidx.appcompat.* { *; }
+-keep class androidx.appcompat.*.* { *; }
+-keep class androidx.recyclerview.widget.* { *; }
+-keep class androidx.viewpager.widget.* { *; }
+
+# Keep rastermill classes that need to be accessed from native code (JNI)
+-keep class android.support.rastermill.** { *; }
+
+# Preserve the name of the getCaller method so it can find itself in the stack trace it generates
+-keepclassmembers public class com.android.messaging.util.DebugUtils {
+  public static java.lang.StackTraceElement getCaller(...);
+}
+
+# Keep the static fields of referenced inner classes of auto-generated R classes, in case we
+# access those fields by reflection (e.g. EmojiMarkup)
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# End of content from ./packages/apps/Messaging/proguard.flags
+
+
+# The proguard configuration file for the following section is ./packages/apps/Messaging/proguard-release.flags
+#  Copyright (C) 2015 The Android Open Source Project
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+-keep class com.android.messaging.ui.contact.* { *; }
+
+-assumenosideeffects public class com.android.messaging.util.Trace {
+    public void beginSection(...);
+    public void endSection(...);
+}
+-assumenosideeffects public class com.android.messaging.util.Assert {
+    private void setIfEngBuild();
+}
+-assumenosideeffects public class com.android.messaging.util.DebugUtils {
+    public void logCurrentMethod(...);
+}
+
+# End of content from ./packages/apps/Messaging/proguard-release.flags
+# The proguard configuration file for the following section is Command line
+
+-ignorewarnings
+# End of content from Command line
