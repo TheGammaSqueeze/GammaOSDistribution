@@ -1,0 +1,1582 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA5121_h",
+   "name" : "unsigned char [5121]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA5121_h",
+   "size" : 5121,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANDROID_LOG_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANDROID_LOG_DEFAULT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANDROID_LOG_VERBOSE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANDROID_LOG_DEBUG"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANDROID_LOG_INFO"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANDROID_LOG_WARN"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANDROID_LOG_ERROR"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANDROID_LOG_FATAL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANDROID_LOG_SILENT"
+    }
+   ],
+   "linker_set_key" : "_ZTI19android_LogPriority",
+   "name" : "android_LogPriority",
+   "referenced_type" : "_ZTI19android_LogPriority",
+   "self_type" : "_ZTI19android_LogPriority",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include_vndk/android/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MIN"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MAIN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "LOG_ID_RADIO"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "LOG_ID_EVENTS"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "LOG_ID_SYSTEM"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "LOG_ID_CRASH"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "LOG_ID_STATS"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "LOG_ID_SECURITY"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "LOG_ID_KERNEL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "LOG_ID_MAX"
+    },
+    {
+     "enum_field_value" : 2147483647,
+     "name" : "LOG_ID_DEFAULT"
+    }
+   ],
+   "linker_set_key" : "_ZTI6log_id",
+   "name" : "log_id",
+   "referenced_type" : "_ZTI6log_id",
+   "self_type" : "_ZTI6log_id",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include_vndk/android/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::OK"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "android::NO_ERROR"
+    },
+    {
+     "enum_field_value" : -2147483648,
+     "name" : "android::UNKNOWN_ERROR"
+    },
+    {
+     "enum_field_value" : -12,
+     "name" : "android::NO_MEMORY"
+    },
+    {
+     "enum_field_value" : -38,
+     "name" : "android::INVALID_OPERATION"
+    },
+    {
+     "enum_field_value" : -22,
+     "name" : "android::BAD_VALUE"
+    },
+    {
+     "enum_field_value" : -2147483647,
+     "name" : "android::BAD_TYPE"
+    },
+    {
+     "enum_field_value" : -2,
+     "name" : "android::NAME_NOT_FOUND"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "android::PERMISSION_DENIED"
+    },
+    {
+     "enum_field_value" : -19,
+     "name" : "android::NO_INIT"
+    },
+    {
+     "enum_field_value" : -17,
+     "name" : "android::ALREADY_EXISTS"
+    },
+    {
+     "enum_field_value" : -32,
+     "name" : "android::DEAD_OBJECT"
+    },
+    {
+     "enum_field_value" : -2147483646,
+     "name" : "android::FAILED_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -75,
+     "name" : "android::BAD_INDEX"
+    },
+    {
+     "enum_field_value" : -61,
+     "name" : "android::NOT_ENOUGH_DATA"
+    },
+    {
+     "enum_field_value" : -11,
+     "name" : "android::WOULD_BLOCK"
+    },
+    {
+     "enum_field_value" : -110,
+     "name" : "android::TIMED_OUT"
+    },
+    {
+     "enum_field_value" : -74,
+     "name" : "android::UNKNOWN_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -2147483641,
+     "name" : "android::FDS_NOT_ALLOWED"
+    },
+    {
+     "enum_field_value" : -2147483640,
+     "name" : "android::UNEXPECTED_NULL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "name" : "android::(anonymous enum at system/core/libutils/include/utils/Errors.h:43:1)",
+   "referenced_type" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "self_type" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "size" : 4,
+   "source_file" : "system/core/libutils/include/utils/Errors.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::FlattenableUtils::read",
+   "linker_set_key" : "_ZN7android16FlattenableUtils4readINSt3__15arrayIcLm4EEEEEvRPKvRmRT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPKv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRNSt3__15arrayIcLm4EEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTINSt3__15arrayIcLm4EEE" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::read",
+   "linker_set_key" : "_ZN7android16FlattenableUtils4readINSt3__17variantIJNS_17DeviceProductInfo9ModelYearENS4_15ManufactureYearENS4_22ManufactureWeekAndYearEEEEEEvRPKvRmRT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPKv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" :
+   [
+    "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+   ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::read",
+   "linker_set_key" : "_ZN7android16FlattenableUtils4readIhEEvRPKvRmRT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPKv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::read",
+   "linker_set_key" : "_ZN7android16FlattenableUtils4readImEEvRPKvRmRT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPKv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::write",
+   "linker_set_key" : "_ZN7android16FlattenableUtils5writeINSt3__15arrayIcLm4EEEEEvRPvRmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIcLm4EEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTINSt3__15arrayIcLm4EEE" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::write",
+   "linker_set_key" : "_ZN7android16FlattenableUtils5writeINSt3__17variantIJNS_17DeviceProductInfo9ModelYearENS4_15ManufactureYearENS4_22ManufactureWeekAndYearEEEEEEvRPvRmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" :
+   [
+    "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+   ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::write",
+   "linker_set_key" : "_ZN7android16FlattenableUtils5writeIhEEvRPvRmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRKh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::write",
+   "linker_set_key" : "_ZN7android16FlattenableUtils5writeImEEvRPvRmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIRKm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "function_name" : "android::FlattenableUtils::advance",
+   "linker_set_key" : "_ZN7android16FlattenableUtils7advanceERPKvRmm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPKv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "function_name" : "android::FlattenableUtils::advance",
+   "linker_set_key" : "_ZN7android16FlattenableUtils7advanceERPvRmm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRPv"
+    },
+    {
+     "referenced_type" : "_ZTIRm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "function_name" : "android::DeviceProductInfo::unflatten",
+   "linker_set_key" : "_ZN7android17DeviceProductInfo9unflattenEPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android17DeviceProductInfoE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::getFlattenedSize",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers16getFlattenedSizeERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::getFlattenedSize",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers16getFlattenedSizeINSt3__15arrayIcLm4EEEvEEmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIcLm4EEE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTINSt3__15arrayIcLm4EEE", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::getFlattenedSize",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers16getFlattenedSizeINSt3__17variantIJNS_17DeviceProductInfo9ModelYearENS4_15ManufactureYearENS4_22ManufactureWeekAndYearEEEEvEEmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" :
+   [
+    "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+    "_ZTIv"
+   ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::getFlattenedSize",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers16getFlattenedSizeIhEEmRKNSt3__16vectorIT_NS2_9allocatorIS4_EEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIhNS_9allocatorIhEEEE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::getFlattenedSize",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers16getFlattenedSizeIhvEEmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenEPPvPmRKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenINSt3__15arrayIcLm4EEEvEEiPPvPmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIcLm4EEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTINSt3__15arrayIcLm4EEE", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenINSt3__17variantIJNS_17DeviceProductInfo9ModelYearENS4_15ManufactureYearENS4_22ManufactureWeekAndYearEEEEvEEiPPvPmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" :
+   [
+    "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+    "_ZTIv"
+   ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenIhEEiPPvPmRKNSt3__16vectorIT_NS5_9allocatorIS7_EEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIhNS_9allocatorIhEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenIhvEEiPPvPmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKh"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::flatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers7flattenImvEEiPPvPmRKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIRKm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIm", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenEPPKvPmPNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenINSt3__15arrayIcLm4EEEvEEiPPKvPmPT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__15arrayIcLm4EEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTINSt3__15arrayIcLm4EEE", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenINSt3__17variantIJNS_17DeviceProductInfo9ModelYearENS4_15ManufactureYearENS4_22ManufactureWeekAndYearEEEEvEEiPPKvPmPT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" :
+   [
+    "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+    "_ZTIv"
+   ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenIhEEiPPKvPmPNSt3__16vectorIT_NS6_9allocatorIS8_EEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__16vectorIhNS_9allocatorIhEEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenIhvEEiPPKvPmPT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIh", "_ZTIv" ]
+  },
+  {
+   "function_name" : "android::FlattenableHelpers::unflatten",
+   "linker_set_key" : "_ZN7android18FlattenableHelpers9unflattenImvEEiPPKvPmPT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h",
+   "template_args" : [ "_ZTIm", "_ZTIv" ]
+  },
+  {
+   "function_name" : "log_msg::id",
+   "linker_set_key" : "_ZN7log_msg2idEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP7log_msg"
+    }
+   ],
+   "return_type" : "_ZTI6log_id",
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "function_name" : "log_msg::len",
+   "linker_set_key" : "_ZN7log_msg3lenEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP7log_msg"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "function_name" : "log_msg::msg",
+   "linker_set_key" : "_ZN7log_msg3msgEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP7log_msg"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "function_name" : "android::DeviceProductInfo::isFixedSize",
+   "linker_set_key" : "_ZNK7android17DeviceProductInfo11isFixedSizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android17DeviceProductInfoE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "function_name" : "android::DeviceProductInfo::getFlattenedSize",
+   "linker_set_key" : "_ZNK7android17DeviceProductInfo16getFlattenedSizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android17DeviceProductInfoE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "function_name" : "android::DeviceProductInfo::dump",
+   "linker_set_key" : "_ZNK7android17DeviceProductInfo4dumpERNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android17DeviceProductInfoE"
+    },
+    {
+     "referenced_type" : "_ZTIRNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "function_name" : "android::DeviceProductInfo::flatten",
+   "linker_set_key" : "_ZNK7android17DeviceProductInfo7flattenEPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android17DeviceProductInfoE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "function_name" : "log_msg::nsec",
+   "linker_set_key" : "_ZNK7log_msg4nsecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK7log_msg"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__15arrayIcLm4EEE",
+   "name" : "const std::array<char, 4> &",
+   "referenced_type" : "_ZTIKNSt3__15arrayIcLm4EEE",
+   "self_type" : "_ZTIRKNSt3__15arrayIcLm4EEE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "name" : "const std::vector<unsigned char, std::allocator<unsigned char>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "name" : "const std::variant<ModelYear, ManufactureYear, ManufactureWeekAndYear> &",
+   "referenced_type" : "_ZTIKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "self_type" : "_ZTIRKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKh",
+   "name" : "const unsigned char &",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIRKh",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKm",
+   "name" : "const unsigned long &",
+   "referenced_type" : "_ZTIKm",
+   "self_type" : "_ZTIRKm",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__15arrayIcLm4EEE",
+   "name" : "std::array<char, 4> &",
+   "referenced_type" : "_ZTINSt3__15arrayIcLm4EEE",
+   "self_type" : "_ZTIRNSt3__15arrayIcLm4EEE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "name" : "std::variant<ModelYear, ManufactureYear, ManufactureWeekAndYear> &",
+   "referenced_type" : "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "self_type" : "_ZTIRNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRPKv",
+   "name" : "const void *&",
+   "referenced_type" : "_ZTIPKv",
+   "self_type" : "_ZTIRPKv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRPv",
+   "name" : "void *&",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIRPv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRh",
+   "name" : "unsigned char &",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIRh",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRm",
+   "name" : "unsigned long &",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIRm",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP7log_msg",
+   "name" : "log_msg *",
+   "referenced_type" : "_ZTI7log_msg",
+   "self_type" : "_ZTIP7log_msg",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPK7log_msg",
+   "name" : "const log_msg *",
+   "referenced_type" : "_ZTIK7log_msg",
+   "self_type" : "_ZTIPK7log_msg",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android17DeviceProductInfoE",
+   "name" : "const android::DeviceProductInfo *",
+   "referenced_type" : "_ZTIKN7android17DeviceProductInfoE",
+   "self_type" : "_ZTIPKN7android17DeviceProductInfoE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include_vndk/android/log.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android17DeviceProductInfoE",
+   "name" : "android::DeviceProductInfo *",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfoE",
+   "self_type" : "_ZTIPN7android17DeviceProductInfoE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__15arrayIcLm4EEE",
+   "name" : "std::array<char, 4> *",
+   "referenced_type" : "_ZTINSt3__15arrayIcLm4EEE",
+   "self_type" : "_ZTIPNSt3__15arrayIcLm4EEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "name" : "std::vector<unsigned char, std::allocator<unsigned char>> *",
+   "referenced_type" : "_ZTINSt3__16vectorIhNS_9allocatorIhEEEE",
+   "self_type" : "_ZTIPNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "name" : "std::variant<ModelYear, ManufactureYear, ManufactureWeekAndYear> *",
+   "referenced_type" : "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "self_type" : "_ZTIPNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPKv",
+   "name" : "const void **",
+   "referenced_type" : "_ZTIPKv",
+   "self_type" : "_ZTIPPKv",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPv",
+   "name" : "void **",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIPPv",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK7log_msg",
+   "name" : "const log_msg",
+   "referenced_type" : "_ZTI7log_msg",
+   "self_type" : "_ZTIK7log_msg",
+   "size" : 5124,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android17DeviceProductInfoE",
+   "name" : "const android::DeviceProductInfo",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfoE",
+   "self_type" : "_ZTIKN7android17DeviceProductInfoE",
+   "size" : 96,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__15arrayIcLm4EEE",
+   "name" : "const std::array<char, 4>",
+   "referenced_type" : "_ZTINSt3__15arrayIcLm4EEE",
+   "self_type" : "_ZTIKNSt3__15arrayIcLm4EEE",
+   "size" : 4,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "name" : "const std::vector<unsigned char, std::allocator<unsigned char>>",
+   "referenced_type" : "_ZTINSt3__16vectorIhNS_9allocatorIhEEEE",
+   "self_type" : "_ZTIKNSt3__16vectorIhNS_9allocatorIhEEEE",
+   "size" : 24,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "name" : "const std::variant<ModelYear, ManufactureYear, ManufactureWeekAndYear>",
+   "referenced_type" : "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "self_type" : "_ZTIKNSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE",
+   "size" : 12,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/logging/liblog/include_vndk/android/log.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "len",
+     "referenced_type" : "_ZTIt"
+    },
+    {
+     "field_name" : "hdr_size",
+     "field_offset" : 16,
+     "referenced_type" : "_ZTIt"
+    },
+    {
+     "field_name" : "pid",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "tid",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sec",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "nsec",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "lid",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "uid",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI12logger_entry",
+   "name" : "logger_entry",
+   "referenced_type" : "_ZTI12logger_entry",
+   "self_type" : "_ZTI12logger_entry",
+   "size" : 28,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "struct_size",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "buffer_id",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "priority",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "tag",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "file",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "line",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "message",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "linker_set_key" : "_ZTI21__android_log_message",
+   "name" : "__android_log_message",
+   "referenced_type" : "_ZTI21__android_log_message",
+   "self_type" : "_ZTI21__android_log_message",
+   "size" : 48,
+   "source_file" : "system/logging/liblog/include_vndk/android/log.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "referenced_type" : "_ZTIN7log_msgUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI7log_msg",
+   "name" : "log_msg",
+   "referenced_type" : "_ZTI7log_msg",
+   "self_type" : "_ZTI7log_msg",
+   "size" : 5124,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "tv_sec",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "tv_nsec",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI8log_time",
+   "name" : "log_time",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTI8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_time.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android16FlattenableUtilsE",
+   "name" : "android::FlattenableUtils",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android16FlattenableUtilsE",
+   "self_type" : "_ZTIN7android16FlattenableUtilsE",
+   "size" : 1,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android16LightFlattenableINS_17DeviceProductInfoEEE",
+   "name" : "android::LightFlattenable<android::DeviceProductInfo>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android16LightFlattenableINS_17DeviceProductInfoEEE",
+   "self_type" : "_ZTIN7android16LightFlattenableINS_17DeviceProductInfoEEE",
+   "size" : 1,
+   "source_file" : "system/core/libutils/include/utils/Flattenable.h",
+   "template_args" : [ "_ZTIN7android17DeviceProductInfoE" ]
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android17DeviceProductInfo9ModelYearE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android17DeviceProductInfo15ManufactureYearE",
+   "name" : "android::DeviceProductInfo::ManufactureYear",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfo15ManufactureYearE",
+   "self_type" : "_ZTIN7android17DeviceProductInfo15ManufactureYearE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android17DeviceProductInfo15ManufactureYearE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "field_name" : "week",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android17DeviceProductInfo22ManufactureWeekAndYearE",
+   "name" : "android::DeviceProductInfo::ManufactureWeekAndYear",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfo22ManufactureWeekAndYearE",
+   "self_type" : "_ZTIN7android17DeviceProductInfo22ManufactureWeekAndYearE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "year",
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android17DeviceProductInfo9ModelYearE",
+   "name" : "android::DeviceProductInfo::ModelYear",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfo9ModelYearE",
+   "self_type" : "_ZTIN7android17DeviceProductInfo9ModelYearE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android16LightFlattenableINS_17DeviceProductInfoEEE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "field_name" : "name",
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "field_name" : "manufacturerPnpId",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTINSt3__15arrayIcLm4EEE"
+    },
+    {
+     "field_name" : "productId",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "field_name" : "manufactureOrModelDate",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTINSt3__17variantIJN7android17DeviceProductInfo9ModelYearENS2_15ManufactureYearENS2_22ManufactureWeekAndYearEEEE"
+    },
+    {
+     "field_name" : "relativeAddress",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTINSt3__16vectorIhNS_9allocatorIhEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android17DeviceProductInfoE",
+   "name" : "android::DeviceProductInfo",
+   "referenced_type" : "_ZTIN7android17DeviceProductInfoE",
+   "self_type" : "_ZTIN7android17DeviceProductInfoE",
+   "size" : 96,
+   "source_file" : "frameworks/native/libs/ui/include/ui/DeviceProductInfo.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android18FlattenableHelpersE",
+   "name" : "android::FlattenableHelpers",
+   "referenced_type" : "_ZTIN7android18FlattenableHelpersE",
+   "self_type" : "_ZTIN7android18FlattenableHelpersE",
+   "size" : 1,
+   "source_file" : "frameworks/native/libs/ui/include_private/ui/FlattenableHelpers.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "buf",
+     "referenced_type" : "_ZTIA5121_h"
+    },
+    {
+     "field_name" : "entry",
+     "referenced_type" : "_ZTI12logger_entry"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN7log_msgUt_E",
+   "name" : "log_msg::(anonymous union at system/logging/liblog/include_vndk/log/log_read.h:58:3)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN7log_msgUt_E",
+   "self_type" : "_ZTIN7log_msgUt_E",
+   "size" : 5124,
+   "source_file" : "system/logging/liblog/include_vndk/log/log_read.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
