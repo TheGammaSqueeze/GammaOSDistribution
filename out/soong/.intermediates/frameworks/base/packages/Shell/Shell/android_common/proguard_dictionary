@@ -1,0 +1,989 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 0f3043c
+# common_typos_disable
+android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.graphics.drawable.IconCompatParcelizer -> android.support.v4.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesCompatParcelizer -> android.support.v4.media.AudioAttributesCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplApi21Parcelizer -> android.support.v4.media.AudioAttributesImplApi21Parcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplApi21 read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplApi21,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplApi26Parcelizer -> android.support.v4.media.AudioAttributesImplApi26Parcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplApi26 read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplApi26,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplBaseParcelizer -> android.support.v4.media.AudioAttributesImplBaseParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplBase read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplBase,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.MediaBrowserCompat$ItemReceiver -> android.support.v4.media.MediaBrowserCompat$ItemReceiver:
+    2278:2289:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.MediaBrowserCompat$MediaItem -> android.support.v4.media.MediaBrowserCompat$MediaItem:
+    572:572:void <clinit>() -> <clinit>
+    546:548:void <init>(android.os.Parcel) -> <init>
+    565:569:java.lang.String toString() -> toString
+    558:559:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaBrowserCompat$MediaItem$1 -> android.support.v4.media.MediaBrowserCompat$MediaItem$1:
+    573:573:void <init>() -> <init>
+    573:573:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    576:576:android.support.v4.media.MediaBrowserCompat$MediaItem createFromParcel(android.os.Parcel) -> createFromParcel
+    573:573:java.lang.Object[] newArray(int) -> newArray
+    581:581:android.support.v4.media.MediaBrowserCompat$MediaItem[] newArray(int) -> newArray
+android.support.v4.media.MediaBrowserCompat$SearchResultReceiver -> android.support.v4.media.MediaBrowserCompat$SearchResultReceiver:
+    2310:2326:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.MediaDescriptionCompat -> android.support.v4.media.MediaDescriptionCompat:
+    426:426:void <clinit>() -> <clinit>
+    195:203:void <init>(java.lang.String,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.graphics.Bitmap,android.net.Uri,android.os.Bundle,android.net.Uri) -> <init>
+    206:216:void <init>(android.os.Parcel) -> <init>
+    380:418:android.support.v4.media.MediaDescriptionCompat fromMediaDescription(java.lang.Object) -> fromMediaDescription
+    336:362:java.lang.Object getMediaDescription() -> getMediaDescription
+    321:321:java.lang.String toString() -> toString
+    305:315:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaDescriptionCompat$1 -> android.support.v4.media.MediaDescriptionCompat$1:
+    427:427:void <init>() -> <init>
+    427:427:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    430:433:android.support.v4.media.MediaDescriptionCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    427:427:java.lang.Object[] newArray(int) -> newArray
+    439:439:android.support.v4.media.MediaDescriptionCompat[] newArray(int) -> newArray
+android.support.v4.media.MediaDescriptionCompat$Builder -> android.support.v4.media.MediaDescriptionCompat$Builder:
+    459:459:void <init>() -> <init>
+    560:560:android.support.v4.media.MediaDescriptionCompat build() -> build
+    503:503:android.support.v4.media.MediaDescriptionCompat$Builder setDescription(java.lang.CharSequence) -> setDescription
+    538:538:android.support.v4.media.MediaDescriptionCompat$Builder setExtras(android.os.Bundle) -> setExtras
+    515:515:android.support.v4.media.MediaDescriptionCompat$Builder setIconBitmap(android.graphics.Bitmap) -> setIconBitmap
+    527:527:android.support.v4.media.MediaDescriptionCompat$Builder setIconUri(android.net.Uri) -> setIconUri
+    469:469:android.support.v4.media.MediaDescriptionCompat$Builder setMediaId(java.lang.String) -> setMediaId
+    549:549:android.support.v4.media.MediaDescriptionCompat$Builder setMediaUri(android.net.Uri) -> setMediaUri
+    491:491:android.support.v4.media.MediaDescriptionCompat$Builder setSubtitle(java.lang.CharSequence) -> setSubtitle
+    480:480:android.support.v4.media.MediaDescriptionCompat$Builder setTitle(java.lang.CharSequence) -> setTitle
+android.support.v4.media.MediaMetadataCompat -> android.support.v4.media.MediaMetadataCompat:
+    299:632:void <clinit>() -> <clinit>
+    364:365:void <init>(android.os.Parcel) -> <init>
+    598:604:android.support.v4.media.MediaMetadataCompat fromMediaMetadata(java.lang.Object) -> fromMediaMetadata
+    553:553:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaMetadataCompat$1 -> android.support.v4.media.MediaMetadataCompat$1:
+    633:633:void <init>() -> <init>
+    633:633:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    636:636:android.support.v4.media.MediaMetadataCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    633:633:java.lang.Object[] newArray(int) -> newArray
+    641:641:android.support.v4.media.MediaMetadataCompat[] newArray(int) -> newArray
+android.support.v4.media.RatingCompat -> android.support.v4.media.RatingCompat:
+    131:131:void <clinit>() -> <clinit>
+    109:111:void <init>(int,float) -> <init>
+    122:122:int describeContents() -> describeContents
+    116:117:java.lang.String toString() -> toString
+    127:128:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.RatingCompat$1 -> android.support.v4.media.RatingCompat$1:
+    132:132:void <init>() -> <init>
+    132:132:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    140:140:android.support.v4.media.RatingCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    132:132:java.lang.Object[] newArray(int) -> newArray
+    145:145:android.support.v4.media.RatingCompat[] newArray(int) -> newArray
+android.support.v4.media.session.IMediaControllerCallback$Stub -> android.support.v4.media.session.IMediaControllerCallback$Stub:
+    67:68:void <init>() -> <init>
+    96:233:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.support.v4.media.session.IMediaSession$Stub -> android.support.v4.media.session.IMediaSession$Stub:
+    212:216:android.support.v4.media.session.IMediaSession asInterface(android.os.IBinder) -> asInterface
+    2051:2051:android.support.v4.media.session.IMediaSession getDefaultImpl() -> getDefaultImpl
+android.support.v4.media.session.IMediaSession$Stub$Proxy -> android.support.v4.media.session.IMediaSession$Stub$Proxy:
+    831:832:void <init>(android.os.IBinder) -> <init>
+    836:836:android.os.IBinder asBinder() -> asBinder
+    906:921:void registerCallbackListener(android.support.v4.media.session.IMediaControllerCallback) -> registerCallbackListener
+android.support.v4.media.session.MediaControllerCompat$Callback -> android.support.v4.media.session.MediaControllerCompat$Callback:
+    696:701:void <init>() -> <init>
+    828:828:void binderDied() -> binderDied
+android.support.v4.media.session.MediaControllerCompat$Callback$MediaControllerCallbackApi21 -> android.support.v4.media.session.MediaControllerCompat$Callback$MediaControllerCallbackApi21:
+    860:861:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    934:941:void onAudioInfoChanged(android.media.session.MediaController$PlaybackInfo) -> onAudioInfoChanged
+    925:928:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    901:903:void onMetadataChanged(android.media.MediaMetadata) -> onMetadataChanged
+    888:894:void onPlaybackStateChanged(android.media.session.PlaybackState) -> onPlaybackStateChanged
+    909:911:void onQueueChanged(java.util.List) -> onQueueChanged
+    917:919:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    866:868:void onSessionDestroyed() -> onSessionDestroyed
+    874:881:void onSessionEvent(java.lang.String,android.os.Bundle) -> onSessionEvent
+android.support.v4.media.session.MediaControllerCompat$Callback$StubCompat -> android.support.v4.media.session.MediaControllerCompat$Callback$StubCompat:
+    949:950:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    1003:1006:void onCaptioningEnabledChanged(boolean) -> onCaptioningEnabledChanged
+    955:957:void onEvent(java.lang.String,android.os.Bundle) -> onEvent
+    1034:1036:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    979:981:void onMetadataChanged(android.support.v4.media.MediaMetadataCompat) -> onMetadataChanged
+    971:973:void onPlaybackStateChanged(android.support.v4.media.session.PlaybackStateCompat) -> onPlaybackStateChanged
+    987:989:void onQueueChanged(java.util.List) -> onQueueChanged
+    995:997:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    1012:1014:void onRepeatModeChanged(int) -> onRepeatModeChanged
+    963:965:void onSessionDestroyed() -> onSessionDestroyed
+    1055:1057:void onSessionReady() -> onSessionReady
+    1025:1028:void onShuffleModeChanged(int) -> onShuffleModeChanged
+    1042:1049:void onVolumeInfoChanged(android.support.v4.media.session.ParcelableVolumeInfo) -> onVolumeInfoChanged
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21 -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21:
+    2290:2305:void processPendingCallbacksLocked() -> processPendingCallbacksLocked
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver:
+    2318:2331:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraCallback -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraCallback:
+    2337:2337:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    2367:2367:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    2349:2349:void onMetadataChanged(android.support.v4.media.MediaMetadataCompat) -> onMetadataChanged
+    2355:2355:void onQueueChanged(java.util.List) -> onQueueChanged
+    2361:2361:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    2343:2343:void onSessionDestroyed() -> onSessionDestroyed
+    2373:2373:void onVolumeInfoChanged(android.support.v4.media.session.ParcelableVolumeInfo) -> onVolumeInfoChanged
+android.support.v4.media.session.MediaControllerCompat$PlaybackInfo -> android.support.v4.media.session.MediaControllerCompat$PlaybackInfo:
+    1384:1384:void <init>(int,int,int,int,int) -> <init>
+    1389:1394:void <init>(int,androidx.media.AudioAttributesCompat,int,int,int) -> <init>
+android.support.v4.media.session.MediaSessionCompat -> android.support.v4.media.session.MediaSessionCompat:
+    1059:1059:void ensureClassLoader(android.os.Bundle) -> ensureClassLoader
+    1076:1082:android.os.Bundle unparcelWithClassLoader(android.os.Bundle) -> unparcelWithClassLoader
+android.support.v4.media.session.MediaSessionCompat$QueueItem -> android.support.v4.media.session.MediaSessionCompat$QueueItem:
+    2270:2270:void <clinit>() -> <clinit>
+    2165:2174:void <init>(android.media.session.MediaSession$QueueItem,android.support.v4.media.MediaDescriptionCompat,long) -> <init>
+    2177:2179:void <init>(android.os.Parcel) -> <init>
+    2238:2246:android.support.v4.media.session.MediaSessionCompat$QueueItem fromQueueItem(java.lang.Object) -> fromQueueItem
+    2260:2265:java.util.List fromQueueItemList(java.util.List) -> fromQueueItemList
+    2286:2286:java.lang.String toString() -> toString
+    2198:2199:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$QueueItem$1 -> android.support.v4.media.session.MediaSessionCompat$QueueItem$1:
+    2271:2271:void <init>() -> <init>
+    2271:2271:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2275:2275:android.support.v4.media.session.MediaSessionCompat$QueueItem createFromParcel(android.os.Parcel) -> createFromParcel
+    2271:2271:java.lang.Object[] newArray(int) -> newArray
+    2280:2280:android.support.v4.media.session.MediaSessionCompat$QueueItem[] newArray(int) -> newArray
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper -> android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper:
+    2310:2310:void <clinit>() -> <clinit>
+    2305:2306:void <init>(android.os.Parcel) -> <init>
+    2329:2329:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1 -> android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1:
+    2310:2310:void <init>() -> <init>
+    2310:2310:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2313:2313:android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper createFromParcel(android.os.Parcel) -> createFromParcel
+    2310:2310:java.lang.Object[] newArray(int) -> newArray
+    2318:2318:android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper[] newArray(int) -> newArray
+android.support.v4.media.session.MediaSessionCompat$Token -> android.support.v4.media.session.MediaSessionCompat$Token:
+    2115:2115:void <clinit>() -> <clinit>
+    1930:1930:void <init>(java.lang.Object) -> <init>
+    1921:1940:void <init>(java.lang.Object,android.support.v4.media.session.IMediaSession,androidx.versionedparcelable.VersionedParcelable) -> <init>
+    2010:2021:boolean equals(java.lang.Object) -> equals
+    2042:2044:android.support.v4.media.session.IMediaSession getExtraBinder() -> getExtraBinder
+    1999:2002:int hashCode() -> hashCode
+    2052:2054:void setExtraBinder(android.support.v4.media.session.IMediaSession) -> setExtraBinder
+    2072:2074:void setSession2Token(androidx.versionedparcelable.VersionedParcelable) -> setSession2Token
+    1990:1993:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$Token$1 -> android.support.v4.media.session.MediaSessionCompat$Token$1:
+    2116:2116:void <init>() -> <init>
+    2116:2116:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2120:2125:android.support.v4.media.session.MediaSessionCompat$Token createFromParcel(android.os.Parcel) -> createFromParcel
+    2116:2116:java.lang.Object[] newArray(int) -> newArray
+    2130:2130:android.support.v4.media.session.MediaSessionCompat$Token[] newArray(int) -> newArray
+android.support.v4.media.session.ParcelableVolumeInfo -> android.support.v4.media.session.ParcelableVolumeInfo:
+    67:67:void <clinit>() -> <clinit>
+    44:49:void <init>(android.os.Parcel) -> <init>
+    59:63:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.ParcelableVolumeInfo$1 -> android.support.v4.media.session.ParcelableVolumeInfo$1:
+    68:68:void <init>() -> <init>
+    68:68:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    71:71:android.support.v4.media.session.ParcelableVolumeInfo createFromParcel(android.os.Parcel) -> createFromParcel
+    68:68:java.lang.Object[] newArray(int) -> newArray
+    76:76:android.support.v4.media.session.ParcelableVolumeInfo[] newArray(int) -> newArray
+android.support.v4.media.session.PlaybackStateCompat -> android.support.v4.media.session.PlaybackStateCompat:
+    871:871:void <clinit>() -> <clinit>
+    564:575:void <init>(int,long,long,float,long,int,java.lang.CharSequence,long,java.util.List,long,android.os.Bundle) -> <init>
+    578:590:void <init>(android.os.Parcel) -> <init>
+    807:836:android.support.v4.media.session.PlaybackStateCompat fromPlaybackState(java.lang.Object) -> fromPlaybackState
+    595:607:java.lang.String toString() -> toString
+    617:628:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.PlaybackStateCompat$1 -> android.support.v4.media.session.PlaybackStateCompat$1:
+    872:872:void <init>() -> <init>
+    872:872:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    875:875:android.support.v4.media.session.PlaybackStateCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    872:872:java.lang.Object[] newArray(int) -> newArray
+    880:880:android.support.v4.media.session.PlaybackStateCompat[] newArray(int) -> newArray
+android.support.v4.media.session.PlaybackStateCompat$CustomAction -> android.support.v4.media.session.PlaybackStateCompat$CustomAction:
+    978:978:void <clinit>() -> <clinit>
+    900:904:void <init>(java.lang.String,java.lang.CharSequence,int,android.os.Bundle) -> <init>
+    907:911:void <init>(android.os.Parcel) -> <init>
+    939:953:android.support.v4.media.session.PlaybackStateCompat$CustomAction fromCustomAction(java.lang.Object) -> fromCustomAction
+    1035:1035:java.lang.String toString() -> toString
+    916:919:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.PlaybackStateCompat$CustomAction$1 -> android.support.v4.media.session.PlaybackStateCompat$CustomAction$1:
+    979:979:void <init>() -> <init>
+    979:979:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    983:983:android.support.v4.media.session.PlaybackStateCompat$CustomAction createFromParcel(android.os.Parcel) -> createFromParcel
+    979:979:java.lang.Object[] newArray(int) -> newArray
+    988:988:android.support.v4.media.session.PlaybackStateCompat$CustomAction[] newArray(int) -> newArray
+android.support.v4.os.IResultReceiver$Stub -> android.support.v4.os.IResultReceiver$Stub:
+    25:26:void <init>() -> <init>
+    37:41:android.support.v4.os.IResultReceiver asInterface(android.os.IBinder) -> asInterface
+    54:74:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.support.v4.os.IResultReceiver$Stub$Proxy -> android.support.v4.os.IResultReceiver$Stub$Proxy:
+    82:83:void <init>(android.os.IBinder) -> <init>
+    87:87:android.os.IBinder asBinder() -> asBinder
+android.support.v4.os.ResultReceiver -> android.support.v4.os.ResultReceiver:
+    144:144:void <clinit>() -> <clinit>
+    138:141:void <init>(android.os.Parcel) -> <init>
+    130:135:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.os.ResultReceiver$1 -> android.support.v4.os.ResultReceiver$1:
+    145:145:void <init>() -> <init>
+    145:145:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    148:148:android.support.v4.os.ResultReceiver createFromParcel(android.os.Parcel) -> createFromParcel
+    145:145:java.lang.Object[] newArray(int) -> newArray
+    152:152:android.support.v4.os.ResultReceiver[] newArray(int) -> newArray
+android.support.v4.os.ResultReceiver$MyResultReceiver -> android.support.v4.os.ResultReceiver$MyResultReceiver:
+    67:67:void <init>(android.support.v4.os.ResultReceiver) -> <init>
+    70:73:void send(int,android.os.Bundle) -> send
+android.support.v4.os.ResultReceiver$MyRunnable -> android.support.v4.os.ResultReceiver$MyRunnable:
+    56:58:void <init>(android.support.v4.os.ResultReceiver,int,android.os.Bundle) -> <init>
+    63:63:void run() -> run
+androidx.activity.result.ActivityResult -> androidx.activity.result.ActivityResult:
+    109:109:void <clinit>() -> <clinit>
+    50:52:void <init>(android.os.Parcel) -> <init>
+    90:90:java.lang.String resultCodeToString(int) -> resultCodeToString
+    72:73:java.lang.String toString() -> toString
+    96:99:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.activity.result.ActivityResult$1 -> androidx.activity.result.ActivityResult$1:
+    109:109:void <init>() -> <init>
+    109:109:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    112:112:androidx.activity.result.ActivityResult createFromParcel(android.os.Parcel) -> createFromParcel
+    109:109:java.lang.Object[] newArray(int) -> newArray
+    117:117:androidx.activity.result.ActivityResult[] newArray(int) -> newArray
+androidx.activity.result.IntentSenderRequest -> androidx.activity.result.IntentSenderRequest:
+    132:132:void <clinit>() -> <clinit>
+    124:128:void <init>(android.os.Parcel) -> <init>
+    151:154:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.activity.result.IntentSenderRequest$1 -> androidx.activity.result.IntentSenderRequest$1:
+    132:132:void <init>() -> <init>
+    132:132:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    135:135:androidx.activity.result.IntentSenderRequest createFromParcel(android.os.Parcel) -> createFromParcel
+    132:132:java.lang.Object[] newArray(int) -> newArray
+    140:140:androidx.activity.result.IntentSenderRequest[] newArray(int) -> newArray
+androidx.collection.ArrayMap -> androidx.collection.ArrayMap:
+    62:62:void <init>() -> <init>
+    87:88:boolean containsAll(java.util.Collection) -> containsAll
+    152:154:java.util.Set entrySet() -> entrySet
+    640:644:boolean equalsSetHelper(java.util.Set,java.lang.Object) -> equalsSetHelper
+    169:171:java.util.Set keySet() -> keySet
+    101:103:void putAll(java.util.Map) -> putAll
+    113:117:boolean removeAll(java.util.Collection) -> removeAll
+    127:133:boolean retainAll(java.util.Collection) -> retainAll
+    621:631:java.lang.Object[] toArrayHelper(java.lang.Object[],int) -> toArrayHelper
+    186:188:java.util.Collection values() -> values
+androidx.collection.ArrayMap$EntrySet -> androidx.collection.ArrayMap$EntrySet:
+    193:193:void <init>(androidx.collection.ArrayMap) -> <init>
+    193:193:boolean add(java.lang.Object) -> add
+    197:197:boolean add(java.util.Map$Entry) -> add
+    202:206:boolean addAll(java.util.Collection) -> addAll
+    211:211:void clear() -> clear
+    216:224:boolean contains(java.lang.Object) -> contains
+    229:230:boolean containsAll(java.util.Collection) -> containsAll
+    282:282:boolean equals(java.lang.Object) -> equals
+    288:292:int hashCode() -> hashCode
+    239:239:boolean isEmpty() -> isEmpty
+    244:244:java.util.Iterator iterator() -> iterator
+    250:250:boolean remove(java.lang.Object) -> remove
+    256:256:boolean removeAll(java.util.Collection) -> removeAll
+    262:262:boolean retainAll(java.util.Collection) -> retainAll
+    267:267:int size() -> size
+    272:272:java.lang.Object[] toArray() -> toArray
+    277:277:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$KeyIterator -> androidx.collection.ArrayMap$KeyIterator:
+    495:496:void <init>(androidx.collection.ArrayMap) -> <init>
+    501:501:java.lang.Object elementAt(int) -> elementAt
+    506:506:void removeAt(int) -> removeAt
+androidx.collection.ArrayMap$KeySet -> androidx.collection.ArrayMap$KeySet:
+    298:298:void <init>(androidx.collection.ArrayMap) -> <init>
+    301:301:boolean add(java.lang.Object) -> add
+    306:306:boolean addAll(java.util.Collection) -> addAll
+    311:311:void clear() -> clear
+    316:316:boolean contains(java.lang.Object) -> contains
+    321:321:boolean containsAll(java.util.Collection) -> containsAll
+    376:376:boolean equals(java.lang.Object) -> equals
+    382:384:int hashCode() -> hashCode
+    326:326:boolean isEmpty() -> isEmpty
+    331:331:java.util.Iterator iterator() -> iterator
+    336:338:boolean remove(java.lang.Object) -> remove
+    346:346:boolean removeAll(java.util.Collection) -> removeAll
+    351:351:boolean retainAll(java.util.Collection) -> retainAll
+    356:356:int size() -> size
+    361:364:java.lang.Object[] toArray() -> toArray
+    371:371:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$MapIterator -> androidx.collection.ArrayMap$MapIterator:
+    531:533:void <init>(androidx.collection.ArrayMap) -> <init>
+    589:598:boolean equals(java.lang.Object) -> equals
+    562:566:java.lang.Object getKey() -> getKey
+    571:575:java.lang.Object getValue() -> getValue
+    538:538:boolean hasNext() -> hasNext
+    603:610:int hashCode() -> hashCode
+    526:526:java.lang.Object next() -> next
+    543:545:java.util.Map$Entry next() -> next
+    551:557:void remove() -> remove
+    580:584:java.lang.Object setValue(java.lang.Object) -> setValue
+    615:615:java.lang.String toString() -> toString
+androidx.collection.ArrayMap$ValueCollection -> androidx.collection.ArrayMap$ValueCollection:
+    390:390:void <init>(androidx.collection.ArrayMap) -> <init>
+    393:393:boolean add(java.lang.Object) -> add
+    398:398:boolean addAll(java.util.Collection) -> addAll
+    403:403:void clear() -> clear
+    408:408:boolean contains(java.lang.Object) -> contains
+    413:414:boolean containsAll(java.util.Collection) -> containsAll
+    423:423:boolean isEmpty() -> isEmpty
+    428:428:java.util.Iterator iterator() -> iterator
+    433:435:boolean remove(java.lang.Object) -> remove
+    443:448:boolean removeAll(java.util.Collection) -> removeAll
+    459:464:boolean retainAll(java.util.Collection) -> retainAll
+    475:475:int size() -> size
+    480:483:java.lang.Object[] toArray() -> toArray
+    490:490:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$ValueIterator -> androidx.collection.ArrayMap$ValueIterator:
+    511:512:void <init>(androidx.collection.ArrayMap) -> <init>
+    517:517:java.lang.Object elementAt(int) -> elementAt
+    522:522:void removeAt(int) -> removeAt
+androidx.collection.ContainerHelpers -> androidx.collection.ContainerHelpers:
+    20:22:void <clinit>() -> <clinit>
+    51:51:int binarySearch(int[],int,int) -> binarySearch
+    41:41:boolean equal(java.lang.Object,java.lang.Object) -> equal
+androidx.collection.IndexBasedArrayIterator -> androidx.collection.IndexBasedArrayIterator:
+    27:28:void <init>(int) -> <init>
+    36:36:boolean hasNext() -> hasNext
+    41:44:java.lang.Object next() -> next
+    50:56:void remove() -> remove
+androidx.collection.SimpleArrayMap -> androidx.collection.SimpleArrayMap:
+    236:239:void <init>() -> <init>
+    165:196:void allocArrays(int) -> allocArrays
+    77:80:int binarySearchHashes(int[],int,int) -> binarySearchHashes
+    270:280:void clear() -> clear
+    312:312:boolean containsKey(java.lang.Object) -> containsKey
+    352:352:boolean containsValue(java.lang.Object) -> containsValue
+    289:301:void ensureCapacity(int) -> ensureCapacity
+    687:721:boolean equals(java.lang.Object) -> equals
+    201:228:void freeArrays(int[],java.lang.Object[],int) -> freeArrays
+    369:369:java.lang.Object get(java.lang.Object) -> get
+    381:382:java.lang.Object getOrDefault(java.lang.Object,java.lang.Object) -> getOrDefault
+    738:743:int hashCode() -> hashCode
+    88:115:int indexOf(java.lang.Object,int) -> indexOf
+    322:322:int indexOfKey(java.lang.Object) -> indexOfKey
+    126:153:int indexOfNull() -> indexOfNull
+    326:336:int indexOfValue(java.lang.Object) -> indexOfValue
+    423:423:boolean isEmpty() -> isEmpty
+    392:392:java.lang.Object keyAt(int) -> keyAt
+    437:494:java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+    528:530:java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object) -> putIfAbsent
+    543:545:java.lang.Object remove(java.lang.Object) -> remove
+    558:562:boolean remove(java.lang.Object,java.lang.Object) -> remove
+    576:626:java.lang.Object removeAt(int) -> removeAt
+    639:641:java.lang.Object replace(java.lang.Object,java.lang.Object) -> replace
+    655:659:boolean replace(java.lang.Object,java.lang.Object,java.lang.Object) -> replace
+    414:415:java.lang.Object setValueAt(int,java.lang.Object) -> setValueAt
+    670:670:int size() -> size
+    757:782:java.lang.String toString() -> toString
+    402:402:java.lang.Object valueAt(int) -> valueAt
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState -> androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState:
+    3396:3396:void <clinit>() -> <clinit>
+    3358:3369:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    3379:3392:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1 -> androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1:
+    3397:3397:void <init>() -> <init>
+    3397:3397:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    3397:3397:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    3400:3400:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    3405:3405:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    3397:3397:java.lang.Object[] newArray(int) -> newArray
+    3410:3410:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState[] newArray(int) -> newArray
+androidx.core.app.BundleCompat -> androidx.core.app.BundleCompat:
+    105:108:android.os.IBinder getBinder(android.os.Bundle,java.lang.String) -> getBinder
+androidx.core.app.BundleCompat$BundleCompatBaseImpl -> androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    48:64:android.os.IBinder getBinder(android.os.Bundle,java.lang.String) -> getBinder
+androidx.core.app.CoreComponentFactory -> androidx.core.app.CoreComponentFactory:
+    39:39:void <init>() -> <init>
+    80:81:java.lang.Object checkCompatWrapper(java.lang.Object) -> checkCompatWrapper
+    45:45:android.app.Activity instantiateActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateActivity
+    52:52:android.app.Application instantiateApplication(java.lang.ClassLoader,java.lang.String) -> instantiateApplication
+    67:67:android.content.ContentProvider instantiateProvider(java.lang.ClassLoader,java.lang.String) -> instantiateProvider
+    60:60:android.content.BroadcastReceiver instantiateReceiver(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateReceiver
+    75:75:android.app.Service instantiateService(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateService
+androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
+    94:94:void <init>() -> <init>
+androidx.core.app.RemoteActionCompatParcelizer -> androidx.core.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:20:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    26:32:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.content.ContextCompat -> androidx.core.content.ContextCompat:
+    159:162:void <clinit>() -> <clinit>
+    458:461:java.io.File[] getExternalCacheDirs(android.content.Context) -> getExternalCacheDirs
+    405:408:java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String) -> getExternalFilesDirs
+androidx.core.content.ContextCompat$Api19Impl -> androidx.core.content.ContextCompat$Api19Impl:
+    840:840:java.io.File[] getExternalCacheDirs(android.content.Context) -> getExternalCacheDirs
+    845:845:java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String) -> getExternalFilesDirs
+androidx.core.content.FileProvider -> androidx.core.content.FileProvider:
+    361:383:void <clinit>() -> <clinit>
+    360:360:void <init>() -> <init>
+    406:416:void attachInfo(android.content.Context,android.content.pm.ProviderInfo) -> attachInfo
+    876:878:java.io.File buildPath(java.io.File,java.lang.String[]) -> buildPath
+    885:886:java.lang.String[] copyOf(java.lang.String[],int) -> copyOf
+    891:892:java.lang.Object[] copyOf(java.lang.Object[],int) -> copyOf
+    596:597:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    631:645:androidx.core.content.FileProvider$PathStrategy getPathStrategy(android.content.Context,java.lang.String) -> getPathStrategy
+    548:553:java.lang.String getType(android.net.Uri) -> getType
+    441:442:android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File) -> getUriForFile
+    568:568:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    851:869:int modeToMode(java.lang.String) -> modeToMode
+    620:622:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String) -> openFile
+    657:709:androidx.core.content.FileProvider$PathStrategy parsePathStrategy(android.content.Context,java.lang.String) -> parsePathStrategy
+    508:532:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    578:578:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+androidx.core.content.FileProvider$SimplePathStrategy -> androidx.core.content.FileProvider$SimplePathStrategy:
+    754:757:void <init>(java.lang.String) -> <init>
+    765:777:void addRoot(java.lang.String,java.io.File) -> addRoot
+    820:839:java.io.File getFileForUri(android.net.Uri) -> getFileForUri
+    784:815:android.net.Uri getUriForFile(java.io.File) -> getUriForFile
+androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.IconCompat:
+    208:208:void <clinit>() -> <clinit>
+    155:379:void <init>() -> <init>
+    1211:1245:android.graphics.Bitmap createLegacyIconFromAdaptiveIcon(android.graphics.Bitmap,boolean) -> createLegacyIconFromAdaptiveIcon
+    436:442:int getResId() -> getResId
+    1157:1169:int getResId(android.graphics.drawable.Icon) -> getResId
+    937:973:void onPostParceling() -> onPostParceling
+    900:930:void onPreParceling(boolean) -> onPreParceling
+    858:895:java.lang.String toString() -> toString
+androidx.core.graphics.drawable.IconCompatParcelizer -> androidx.core.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:23:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    29:53:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.widget.NestedScrollView$SavedState -> androidx.core.widget.NestedScrollView$SavedState:
+    2197:2197:void <clinit>() -> <clinit>
+    2179:2180:void <init>(android.os.Parcel) -> <init>
+    2192:2193:java.lang.String toString() -> toString
+    2185:2186:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.core.widget.NestedScrollView$SavedState$1 -> androidx.core.widget.NestedScrollView$SavedState$1:
+    2198:2198:void <init>() -> <init>
+    2198:2198:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:androidx.core.widget.NestedScrollView$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    2198:2198:java.lang.Object[] newArray(int) -> newArray
+    2206:2206:androidx.core.widget.NestedScrollView$SavedState[] newArray(int) -> newArray
+androidx.customview.view.AbsSavedState -> androidx.customview.view.AbsSavedState:
+    32:90:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.customview.view.AbsSavedState$1) -> <init>
+    39:40:void <init>() -> <init>
+    70:72:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    87:87:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.customview.view.AbsSavedState$1 -> androidx.customview.view.AbsSavedState$1:
+    32:32:void <init>() -> <init>
+androidx.customview.view.AbsSavedState$2 -> androidx.customview.view.AbsSavedState$2:
+    90:90:void <init>() -> <init>
+    90:90:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    90:90:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    93:97:androidx.customview.view.AbsSavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    102:102:androidx.customview.view.AbsSavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    90:90:java.lang.Object[] newArray(int) -> newArray
+    107:107:androidx.customview.view.AbsSavedState[] newArray(int) -> newArray
+androidx.drawerlayout.widget.DrawerLayout$SavedState -> androidx.drawerlayout.widget.DrawerLayout$SavedState:
+    2201:2201:void <clinit>() -> <clinit>
+    2172:2184:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    2193:2198:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.drawerlayout.widget.DrawerLayout$SavedState$1 -> androidx.drawerlayout.widget.DrawerLayout$SavedState$1:
+    2201:2201:void <init>() -> <init>
+    2201:2201:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    2204:2204:androidx.drawerlayout.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    2209:2209:androidx.drawerlayout.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:java.lang.Object[] newArray(int) -> newArray
+    2214:2214:androidx.drawerlayout.widget.DrawerLayout$SavedState[] newArray(int) -> newArray
+androidx.fragment.app.BackStackRecordState -> androidx.fragment.app.BackStackRecordState:
+    204:204:void <clinit>() -> <clinit>
+    86:100:void <init>(android.os.Parcel) -> <init>
+    188:201:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.BackStackRecordState$1 -> androidx.fragment.app.BackStackRecordState$1:
+    205:205:void <init>() -> <init>
+    205:205:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    208:208:androidx.fragment.app.BackStackRecordState createFromParcel(android.os.Parcel) -> createFromParcel
+    205:205:java.lang.Object[] newArray(int) -> newArray
+    213:213:androidx.fragment.app.BackStackRecordState[] newArray(int) -> newArray
+androidx.fragment.app.BackStackState -> androidx.fragment.app.BackStackState:
+    75:75:void <clinit>() -> <clinit>
+    40:42:void <init>(android.os.Parcel) -> <init>
+    71:72:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.BackStackState$1 -> androidx.fragment.app.BackStackState$1:
+    76:76:void <init>() -> <init>
+    76:76:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    79:79:androidx.fragment.app.BackStackState createFromParcel(android.os.Parcel) -> createFromParcel
+    76:76:java.lang.Object[] newArray(int) -> newArray
+    84:84:androidx.fragment.app.BackStackState[] newArray(int) -> newArray
+androidx.fragment.app.Fragment$SavedState -> androidx.fragment.app.Fragment$SavedState:
+    490:490:void <clinit>() -> <clinit>
+    472:475:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    486:486:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.Fragment$SavedState$1 -> androidx.fragment.app.Fragment$SavedState$1:
+    491:491:void <init>() -> <init>
+    491:491:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    491:491:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    494:494:androidx.fragment.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    499:499:androidx.fragment.app.Fragment$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    491:491:java.lang.Object[] newArray(int) -> newArray
+    504:504:androidx.fragment.app.Fragment$SavedState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo -> androidx.fragment.app.FragmentManager$LaunchedFragmentInfo:
+    3783:3783:void <clinit>() -> <clinit>
+    3767:3769:void <init>(android.os.Parcel) -> <init>
+    3779:3780:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1 -> androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1:
+    3784:3784:void <init>() -> <init>
+    3784:3784:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    3787:3787:androidx.fragment.app.FragmentManager$LaunchedFragmentInfo createFromParcel(android.os.Parcel) -> createFromParcel
+    3784:3784:java.lang.Object[] newArray(int) -> newArray
+    3792:3792:androidx.fragment.app.FragmentManager$LaunchedFragmentInfo[] newArray(int) -> newArray
+androidx.fragment.app.FragmentManagerState -> androidx.fragment.app.FragmentManagerState:
+    68:68:void <clinit>() -> <clinit>
+    32:37:void <init>() -> <init>
+    32:48:void <init>(android.os.Parcel) -> <init>
+    58:65:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentManagerState$1 -> androidx.fragment.app.FragmentManagerState$1:
+    69:69:void <init>() -> <init>
+    69:69:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    72:72:androidx.fragment.app.FragmentManagerState createFromParcel(android.os.Parcel) -> createFromParcel
+    69:69:java.lang.Object[] newArray(int) -> newArray
+    77:77:androidx.fragment.app.FragmentManagerState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentState -> androidx.fragment.app.FragmentState:
+    165:165:void <clinit>() -> <clinit>
+    59:72:void <init>(android.os.Parcel) -> <init>
+    111:140:java.lang.String toString() -> toString
+    150:162:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentState$1 -> androidx.fragment.app.FragmentState$1:
+    166:166:void <init>() -> <init>
+    166:166:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    169:169:androidx.fragment.app.FragmentState createFromParcel(android.os.Parcel) -> createFromParcel
+    166:166:java.lang.Object[] newArray(int) -> newArray
+    174:174:androidx.fragment.app.FragmentState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentTabHost$SavedState -> androidx.fragment.app.FragmentTabHost$SavedState:
+    114:114:void <clinit>() -> <clinit>
+    96:97:void <init>(android.os.Parcel) -> <init>
+    109:110:java.lang.String toString() -> toString
+    102:103:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentTabHost$SavedState$1 -> androidx.fragment.app.FragmentTabHost$SavedState$1:
+    115:115:void <init>() -> <init>
+    115:115:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    118:118:androidx.fragment.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    115:115:java.lang.Object[] newArray(int) -> newArray
+    123:123:androidx.fragment.app.FragmentTabHost$SavedState[] newArray(int) -> newArray
+androidx.media.AudioAttributesCompat -> androidx.media.AudioAttributesCompat:
+    173:185:void <clinit>() -> <clinit>
+    250:250:void <init>() -> <init>
+    253:254:void <init>(androidx.media.AudioAttributesImpl) -> <init>
+    619:626:boolean equals(java.lang.Object) -> equals
+    493:493:int hashCode() -> hashCode
+    498:498:java.lang.String toString() -> toString
+    609:609:int toVolumeStreamType(boolean,int,int) -> toVolumeStreamType
+    536:536:java.lang.String usageToString(int) -> usageToString
+    305:311:androidx.media.AudioAttributesCompat wrap(java.lang.Object) -> wrap
+androidx.media.AudioAttributesCompat$Builder -> androidx.media.AudioAttributesCompat$Builder:
+    373:381:void <init>() -> <init>
+    409:409:androidx.media.AudioAttributesCompat build() -> build
+    486:486:androidx.media.AudioAttributesCompat$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesCompatParcelizer -> androidx.media.AudioAttributesCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:15:androidx.media.AudioAttributesCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    21:22:void write(androidx.media.AudioAttributesCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplApi21 -> androidx.media.AudioAttributesImplApi21:
+    46:56:void <init>() -> <init>
+    60:60:void <init>(android.media.AudioAttributes) -> <init>
+    46:65:void <init>(android.media.AudioAttributes,int) -> <init>
+    116:120:boolean equals(java.lang.Object) -> equals
+    111:111:int hashCode() -> hashCode
+    126:126:java.lang.String toString() -> toString
+androidx.media.AudioAttributesImplApi21$Builder -> androidx.media.AudioAttributesImplApi21$Builder:
+    132:133:void <init>() -> <init>
+    143:143:androidx.media.AudioAttributesImpl build() -> build
+    129:129:androidx.media.AudioAttributesImpl$Builder setLegacyStreamType(int) -> setLegacyStreamType
+    174:174:androidx.media.AudioAttributesImplApi21$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesImplApi21Parcelizer -> androidx.media.AudioAttributesImplApi21Parcelizer:
+    11:11:void <init>() -> <init>
+    14:16:androidx.media.AudioAttributesImplApi21 read(androidx.versionedparcelable.VersionedParcel) -> read
+    22:24:void write(androidx.media.AudioAttributesImplApi21,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplApi26 -> androidx.media.AudioAttributesImplApi26:
+    41:41:void <init>() -> <init>
+    45:45:void <init>(android.media.AudioAttributes) -> <init>
+androidx.media.AudioAttributesImplApi26$Builder -> androidx.media.AudioAttributesImplApi26$Builder:
+    55:55:void <init>() -> <init>
+    65:65:androidx.media.AudioAttributesImpl build() -> build
+androidx.media.AudioAttributesImplApi26Parcelizer -> androidx.media.AudioAttributesImplApi26Parcelizer:
+    11:11:void <init>() -> <init>
+    14:16:androidx.media.AudioAttributesImplApi26 read(androidx.versionedparcelable.VersionedParcel) -> read
+    22:24:void write(androidx.media.AudioAttributesImplApi26,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplBase -> androidx.media.AudioAttributesImplBase:
+    63:91:void <init>() -> <init>
+    63:97:void <init>(int,int,int,int) -> <init>
+    156:162:boolean equals(java.lang.Object) -> equals
+    126:126:int getContentType() -> getContentType
+    136:137:int getFlags() -> getFlags
+    113:116:int getLegacyStreamType() -> getLegacyStreamType
+    131:131:int getUsage() -> getUsage
+    151:151:int hashCode() -> hashCode
+    169:180:java.lang.String toString() -> toString
+androidx.media.AudioAttributesImplBase$Builder -> androidx.media.AudioAttributesImplBase$Builder:
+    184:189:void <init>() -> <init>
+    202:202:androidx.media.AudioAttributesImpl build() -> build
+    277:313:androidx.media.AudioAttributesImplBase$Builder setInternalLegacyStreamType(int) -> setInternalLegacyStreamType
+    183:183:androidx.media.AudioAttributesImpl$Builder setLegacyStreamType(int) -> setLegacyStreamType
+    266:271:androidx.media.AudioAttributesImplBase$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesImplBaseParcelizer -> androidx.media.AudioAttributesImplBaseParcelizer:
+    11:11:void <init>() -> <init>
+    14:18:androidx.media.AudioAttributesImplBase read(androidx.versionedparcelable.VersionedParcel) -> read
+    24:28:void write(androidx.media.AudioAttributesImplBase,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState -> androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState:
+    1503:1503:void <clinit>() -> <clinit>
+    1493:1494:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    1499:1500:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1 -> androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1:
+    1503:1503:void <init>() -> <init>
+    1503:1503:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    1503:1503:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1506:1506:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1511:1511:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    1503:1503:java.lang.Object[] newArray(int) -> newArray
+    1516:1516:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState[] newArray(int) -> newArray
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState:
+    264:264:void <clinit>() -> <clinit>
+    254:255:void <init>(android.os.Parcel) -> <init>
+    260:261:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState$1 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState$1:
+    265:265:void <init>() -> <init>
+    265:265:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    268:268:androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    265:265:java.lang.Object[] newArray(int) -> newArray
+    273:273:androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState[] newArray(int) -> newArray
+androidx.versionedparcelable.CustomVersionedParcelable -> androidx.versionedparcelable.CustomVersionedParcelable:
+    27:27:void <init>() -> <init>
+androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
+    60:60:void <clinit>() -> <clinit>
+    38:39:void <init>(android.os.Parcel) -> <init>
+    46:46:androidx.versionedparcelable.VersionedParcelable getVersionedParcel() -> getVersionedParcel
+    56:57:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.versionedparcelable.ParcelImpl$1 -> androidx.versionedparcelable.ParcelImpl$1:
+    60:60:void <init>() -> <init>
+    60:60:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    63:63:androidx.versionedparcelable.ParcelImpl createFromParcel(android.os.Parcel) -> createFromParcel
+    60:60:java.lang.Object[] newArray(int) -> newArray
+    68:68:androidx.versionedparcelable.ParcelImpl[] newArray(int) -> newArray
+androidx.versionedparcelable.ParcelUtils -> androidx.versionedparcelable.ParcelUtils:
+    40:40:void <init>() -> <init>
+    58:61:androidx.versionedparcelable.VersionedParcelable fromParcelable(android.os.Parcelable) -> fromParcelable
+    109:114:androidx.versionedparcelable.VersionedParcelable getVersionedParcelable(android.os.Bundle,java.lang.String) -> getVersionedParcelable
+androidx.versionedparcelable.VersionedParcel -> androidx.versionedparcelable.VersionedParcel:
+    87:90:void <init>(androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    1635:1640:java.lang.Class findParcelClass(java.lang.Class) -> findParcelClass
+    1613:1617:java.lang.reflect.Method getReadMethod(java.lang.String) -> getReadMethod
+    1624:1628:java.lang.reflect.Method getWriteMethod(java.lang.Class) -> getWriteMethod
+    400:403:boolean readBoolean(boolean,int) -> readBoolean
+    473:476:byte[] readByteArray(byte[],int) -> readByteArray
+    617:620:java.lang.CharSequence readCharSequence(java.lang.CharSequence,int) -> readCharSequence
+    1566:1582:androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel) -> readFromParcel
+    410:413:int readInt(int,int) -> readInt
+    482:485:android.os.Parcelable readParcelable(android.os.Parcelable,int) -> readParcelable
+    452:455:java.lang.String readString(java.lang.String,int) -> readString
+    1496:1499:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> readVersionedParcelable
+    1512:1516:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable() -> readVersionedParcelable
+    295:296:void writeBoolean(boolean,int) -> writeBoolean
+    305:306:void writeByteArray(byte[],int) -> writeByteArray
+    326:327:void writeCharSequence(java.lang.CharSequence,int) -> writeCharSequence
+    335:336:void writeInt(int,int) -> writeInt
+    392:393:void writeParcelable(android.os.Parcelable,int) -> writeParcelable
+    371:372:void writeString(java.lang.String,int) -> writeString
+    1591:1607:void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel) -> writeToParcel
+    1022:1023:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> writeVersionedParcelable
+    1030:1037:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelable
+    1043:1048:void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelableCreator
+androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelable.VersionedParcelParcel:
+    51:51:void <init>(android.os.Parcel) -> <init>
+    41:65:void <init>(android.os.Parcel,int,int,java.lang.String,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    99:109:void closeField() -> closeField
+    119:120:androidx.versionedparcelable.VersionedParcel createSubParcel() -> createSubParcel
+    258:258:boolean readBoolean() -> readBoolean
+    236:241:byte[] readByteArray() -> readByteArray
+    201:201:java.lang.CharSequence readCharSequence() -> readCharSequence
+    70:84:boolean readField(int) -> readField
+    206:206:int readInt() -> readInt
+    248:248:android.os.Parcelable readParcelable() -> readParcelable
+    226:226:java.lang.String readString() -> readString
+    89:94:void setOutputField(int) -> setOutputField
+    181:181:void writeBoolean(boolean) -> writeBoolean
+    127:130:void writeByteArray(byte[]) -> writeByteArray
+    196:196:void writeCharSequence(java.lang.CharSequence) -> writeCharSequence
+    146:146:void writeInt(int) -> writeInt
+    176:176:void writeParcelable(android.os.Parcelable) -> writeParcelable
+    166:166:void writeString(java.lang.String) -> writeString
+androidx.viewpager.widget.ViewPager$SavedState -> androidx.viewpager.widget.ViewPager$SavedState:
+    1403:1403:void <clinit>() -> <clinit>
+    1420:1426:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    1398:1399:java.lang.String toString() -> toString
+    1391:1393:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.viewpager.widget.ViewPager$SavedState$1 -> androidx.viewpager.widget.ViewPager$SavedState$1:
+    1403:1403:void <init>() -> <init>
+    1403:1403:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    1403:1403:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1406:1406:androidx.viewpager.widget.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1411:1411:androidx.viewpager.widget.ViewPager$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    1403:1403:java.lang.Object[] newArray(int) -> newArray
+    1415:1415:androidx.viewpager.widget.ViewPager$SavedState[] newArray(int) -> newArray
+com.android.shell.BugreportPrefs -> com.android.shell.BugreportPrefs:
+    37:39:int getWarningState(android.content.Context,int) -> getWarningState
+    43:45:void setWarningState(android.content.Context,int) -> setWarningState
+com.android.shell.BugreportProgressService -> com.android.shell.BugreportProgressService:
+    259:1547:void <clinit>() -> <clinit>
+    134:256:void <init>() -> <init>
+    134:134:java.io.File access$1000(com.android.shell.BugreportProgressService) -> access$1000
+    134:134:java.lang.String access$1100(com.android.shell.BugreportProgressService$BugreportInfo) -> access$1100
+    134:134:void access$1200(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo) -> access$1200
+    134:134:com.android.shell.BugreportProgressService$BugreportInfoDialog access$1300(com.android.shell.BugreportProgressService) -> access$1300
+    134:134:android.os.Looper access$1400(java.lang.String) -> access$1400
+    134:134:void access$1500(com.android.shell.BugreportProgressService,int,int) -> access$1500
+    134:134:void access$1600(com.android.shell.BugreportProgressService,android.os.Message) -> access$1600
+    134:134:void access$1700(com.android.shell.BugreportProgressService,android.content.Intent) -> access$1700
+    134:134:void access$1800(com.android.shell.BugreportProgressService,int) -> access$1800
+    134:134:void access$1900(com.android.shell.BugreportProgressService,int) -> access$1900
+    134:134:java.lang.Object access$200(com.android.shell.BugreportProgressService) -> access$200
+    134:134:void access$2000(com.android.shell.BugreportProgressService,int,com.android.shell.BugreportProgressService$BugreportInfo) -> access$2000
+    134:134:void access$2100(com.android.shell.BugreportProgressService,int) -> access$2100
+    134:134:void access$2200(com.android.shell.BugreportProgressService,android.os.Message) -> access$2200
+    134:134:void access$2800(com.android.shell.BugreportProgressService$BugreportInfo) -> access$2800
+    134:134:void access$2900(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo,boolean) -> access$2900
+    134:134:void access$300(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo,int) -> access$300
+    134:134:void access$3500(com.android.shell.BugreportProgressService,int,java.lang.String,java.lang.String,java.lang.String) -> access$3500
+    134:134:java.lang.String access$3700(com.android.shell.BugreportProgressService$BugreportInfo,java.lang.String) -> access$3700
+    134:134:void access$3800(java.io.File) -> access$3800
+    134:134:android.os.ParcelFileDescriptor access$3900(java.io.File) -> access$3900
+    134:134:void access$400(com.android.shell.BugreportProgressService,int) -> access$400
+    134:134:android.os.Handler access$600(com.android.shell.BugreportProgressService) -> access$600
+    134:134:android.util.SparseArray access$700(com.android.shell.BugreportProgressService) -> access$700
+    134:134:android.content.Context access$800(com.android.shell.BugreportProgressService) -> access$800
+    134:134:void access$900(android.content.Context,java.lang.String,java.io.File,long) -> access$900
+    1365:1367:void addDetailsToZipFile(com.android.shell.BugreportProgressService$BugreportInfo) -> addDetailsToZipFile
+    1372:1425:void addDetailsToZipFileLocked(com.android.shell.BugreportProgressService$BugreportInfo) -> addDetailsToZipFileLocked
+    1432:1433:void addEntry(java.util.zip.ZipOutputStream,java.lang.String,java.lang.String) -> addEntry
+    1439:1439:void addEntry(java.util.zip.ZipOutputStream,java.lang.String,java.io.InputStream) -> addEntry
+    1444:1449:void addEntry(java.util.zip.ZipOutputStream,java.lang.String,long,java.io.InputStream) -> addEntry
+    1550:1556:void addExtra(java.lang.StringBuilder,android.content.Intent,java.lang.String) -> addExtra
+    1100:1163:android.content.Intent buildSendIntent(android.content.Context,com.android.shell.BugreportProgressService$BugreportInfo) -> buildSendIntent
+    1090:1091:android.content.Intent buildWarningIntent(android.content.Context,android.content.Intent) -> buildWarningIntent
+    836:848:void cancel(int) -> cancel
+    2251:2254:void checkProgressUpdatedLocked(com.android.shell.BugreportProgressService$BugreportInfo,int) -> checkProgressUpdatedLocked
+    486:496:void cleanupOldFiles(int,long,java.io.File) -> cleanupOldFiles
+    1600:1600:void collapseNotificationBar() -> collapseNotificationBar
+    697:703:void createReadWriteFile(java.io.File) -> createReadWriteFile
+    328:343:void dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    1521:1543:java.lang.String dumpIntent(android.content.Intent) -> dumpIntent
+    1458:1484:android.util.Pair findSendToAccount(android.content.Context,java.lang.String) -> findSendToAccount
+    465:480:java.lang.String generateFileHash(java.lang.String) -> generateFileHash
+    600:610:java.lang.String getBugreportBaseName(int) -> getBugreportBaseName
+    687:690:android.os.ParcelFileDescriptor getFd(java.io.File) -> getFd
+    347:347:java.lang.String getFileName(com.android.shell.BugreportProgressService$BugreportInfo,java.lang.String) -> getFileName
+    591:593:com.android.shell.BugreportProgressService$BugreportInfo getInfoLocked(int) -> getInfoLocked
+    454:456:java.lang.String getScreenshotForIntent(com.android.shell.BugreportProgressService$BugreportInfo) -> getScreenshotForIntent
+    1502:1502:android.net.Uri getUri(android.content.Context,java.io.File) -> getUri
+    968:973:void handleScreenshotRequest(android.os.Message) -> handleScreenshotRequest
+    977:1000:void handleScreenshotResponse(android.os.Message) -> handleScreenshotResponse
+    1634:1634:boolean isTv(android.content.Context) -> isTv
+    883:883:void lambda$launchBugreportInfoDialog$0(com.android.shell.BugreportProgressService$BugreportInfo) -> lambda$launchBugreportInfoDialog$0
+    856:883:void launchBugreportInfoDialog(int) -> launchBugreportInfoDialog
+    1299:1313:android.app.Notification$Builder newBaseNotification(android.content.Context) -> newBaseNotification
+    807:810:android.app.PendingIntent newCancelIntent(android.content.Context,com.android.shell.BugreportProgressService$BugreportInfo) -> newCancelIntent
+    1604:1606:android.os.Looper newLooper(java.lang.String) -> newLooper
+    316:316:android.os.IBinder onBind(android.content.Intent) -> onBind
+    1048:1060:void onBugreportFinished(com.android.shell.BugreportProgressService$BugreportInfo) -> onBugreportFinished
+    266:292:void onCreate() -> onCreate
+    321:323:void onDestroy() -> onDestroy
+    297:306:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    1289:1295:void sendBugreportBeingUpdatedNotification(android.content.Context,int) -> sendBugreportBeingUpdatedNotification
+    1244:1280:void sendBugreportNotification(com.android.shell.BugreportProgressService$BugreportInfo,boolean) -> sendBugreportNotification
+    790:799:void sendForegroundabledNotification(int,android.app.Notification) -> sendForegroundabledNotification
+    433:445:void sendRemoteBugreportFinishedBroadcast(android.content.Context,java.lang.String,java.io.File,long) -> sendRemoteBugreportFinishedBroadcast
+    1227:1235:void sendShareIntent(android.content.Context,android.content.Intent) -> sendShareIntent
+    1321:1329:void sendZippedBugreportNotification(com.android.shell.BugreportProgressService$BugreportInfo,boolean) -> sendZippedBugreportNotification
+    953:964:void setTakingScreenshot(boolean) -> setTakingScreenshot
+    1174:1223:void shareBugreport(int,com.android.shell.BugreportProgressService$BugreportInfo) -> shareBugreport
+    614:670:void startBugreportAPI(android.content.Intent) -> startBugreportAPI
+    1008:1024:void stopForegroundWhenDoneLocked(int) -> stopForegroundWhenDoneLocked
+    819:829:void stopProgressLocked(int) -> stopProgressLocked
+    1036:1041:void stopSelfWhenDoneLocked() -> stopSelfWhenDoneLocked
+    893:917:void takeScreenshot(int) -> takeScreenshot
+    925:945:void takeScreenshot(int,int) -> takeScreenshot
+    1613:1629:boolean takeScreenshot(android.content.Context,java.lang.String) -> takeScreenshot
+    1070:1085:void triggerLocalNotification(android.content.Context,com.android.shell.BugreportProgressService$BugreportInfo) -> triggerLocalNotification
+    1575:1595:void updateBugreportInfo(int,java.lang.String,java.lang.String,java.lang.String) -> updateBugreportInfo
+    711:786:void updateProgress(com.android.shell.BugreportProgressService$BugreportInfo) -> updateProgress
+    1337:1354:void zipBugreport(com.android.shell.BugreportProgressService$BugreportInfo) -> zipBugreport
+com.android.shell.BugreportProgressService$$ExternalSyntheticLambda0 -> com.android.shell.BugreportProgressService$$ExternalSyntheticLambda0:
+    com.android.shell.BugreportProgressService com.android.shell.BugreportProgressService$$InternalSyntheticLambda$0$e4802ecedd5008bb5b03b3dd05e8632d9ad6a0f478f9eaf1998cd70cee88a9cc$0.f$0 -> f$0
+    com.android.shell.BugreportProgressService$BugreportInfo com.android.shell.BugreportProgressService$$InternalSyntheticLambda$0$e4802ecedd5008bb5b03b3dd05e8632d9ad6a0f478f9eaf1998cd70cee88a9cc$0.f$1 -> f$1
+    void com.android.shell.BugreportProgressService$$InternalSyntheticLambda$0$e4802ecedd5008bb5b03b3dd05e8632d9ad6a0f478f9eaf1998cd70cee88a9cc$0.<init>(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo) -> <init>
+    void com.android.shell.BugreportProgressService$$InternalSyntheticLambda$0$e4802ecedd5008bb5b03b3dd05e8632d9ad6a0f478f9eaf1998cd70cee88a9cc$0.run() -> run
+com.android.shell.BugreportProgressService$1 -> com.android.shell.BugreportProgressService$1:
+    486:486:void <init>(java.io.File,int,long) -> <init>
+    486:486:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    490:492:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.shell.BugreportProgressService$2 -> com.android.shell.BugreportProgressService$2:
+    1321:1321:void <init>(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo,boolean) -> <init>
+    1321:1321:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1324:1326:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.shell.BugreportProgressService$BugreportCallbackImpl -> com.android.shell.BugreportProgressService$BugreportCallbackImpl:
+    355:356:void <init>(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$BugreportInfo) -> <init>
+    350:350:void access$2300(com.android.shell.BugreportProgressService$BugreportCallbackImpl) -> access$2300
+    391:391:void lambda$onFinished$0() -> lambda$onFinished$0
+    372:376:void onError(int) -> onError
+    382:392:void onFinished() -> onFinished
+    361:363:void onProgress(float) -> onProgress
+    416:426:void sendBugreportFinishedBroadcastLocked() -> sendBugreportFinishedBroadcastLocked
+    406:409:void trackInfoWithIdLocked() -> trackInfoWithIdLocked
+com.android.shell.BugreportProgressService$BugreportCallbackImpl$$ExternalSyntheticLambda0 -> com.android.shell.BugreportProgressService$BugreportCallbackImpl$$ExternalSyntheticLambda0:
+    com.android.shell.BugreportProgressService$BugreportCallbackImpl com.android.shell.BugreportProgressService$BugreportCallbackImpl$$InternalSyntheticLambda$0$38f477d1b6c9c370321f8c53e73b6122c3f96c04e5c0cecf0f67d21898e3c1c8$0.f$0 -> f$0
+    void com.android.shell.BugreportProgressService$BugreportCallbackImpl$$InternalSyntheticLambda$0$38f477d1b6c9c370321f8c53e73b6122c3f96c04e5c0cecf0f67d21898e3c1c8$0.<init>(com.android.shell.BugreportProgressService$BugreportCallbackImpl) -> <init>
+    void com.android.shell.BugreportProgressService$BugreportCallbackImpl$$InternalSyntheticLambda$0$38f477d1b6c9c370321f8c53e73b6122c3f96c04e5c0cecf0f67d21898e3c1c8$0.run() -> run
+com.android.shell.BugreportProgressService$BugreportInfo -> com.android.shell.BugreportProgressService$BugreportInfo:
+    2226:2226:void <clinit>() -> <clinit>
+    1865:1941:void <init>(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.io.File,long) -> <init>
+    1865:2179:void <init>(android.os.Parcel) -> <init>
+    1811:1811:java.lang.String access$100(com.android.shell.BugreportProgressService$BugreportInfo) -> access$100
+    1811:1811:void access$2400(com.android.shell.BugreportProgressService$BugreportInfo) -> access$2400
+    1811:1811:void access$2500(com.android.shell.BugreportProgressService$BugreportInfo) -> access$2500
+    1811:1811:java.lang.String access$2600(com.android.shell.BugreportProgressService$BugreportInfo) -> access$2600
+    1811:1811:java.lang.String access$2700(com.android.shell.BugreportProgressService$BugreportInfo) -> access$2700
+    1811:1811:void access$500(com.android.shell.BugreportProgressService$BugreportInfo) -> access$500
+    2020:2020:void addScreenshot(java.io.File) -> addScreenshot
+    1945:1945:void createBugreportFile() -> createBugreportFile
+    1949:1951:void createScreenshotFile(java.io.File) -> createScreenshotFile
+    2037:2038:void deleteBugreportFile() -> deleteBugreportFile
+    2045:2049:void deleteEmptyFiles() -> deleteEmptyFiles
+    2056:2056:void deleteEmptyScreenshots() -> deleteEmptyScreenshots
+    2027:2029:void deleteScreenshots() -> deleteScreenshots
+    1955:1955:android.os.ParcelFileDescriptor getBugreportFd() -> getBugreportFd
+    1959:1962:android.os.ParcelFileDescriptor getDefaultScreenshotFd() -> getDefaultScreenshotFd
+    1996:1998:java.lang.String getDescription() -> getDescription
+    2111:2116:java.lang.String getFormattedLastUpdate() -> getFormattedLastUpdate
+    1984:1986:java.lang.String getName() -> getName
+    2005:2006:java.lang.String getPathNextScreenshot() -> getPathNextScreenshot
+    2013:2013:java.lang.String getScreenshotName(java.lang.String) -> getScreenshotName
+    1972:1974:java.lang.String getTitle() -> getTitle
+    2057:2060:boolean lambda$deleteEmptyScreenshots$0(java.io.File) -> lambda$deleteEmptyScreenshots$0
+    2221:2222:java.io.File readFile(android.os.Parcel) -> readFile
+    2101:2105:void renameBugreportFile() -> renameBugreportFile
+    2071:2094:void renameScreenshots() -> renameScreenshots
+    1990:1992:void setDescription(java.lang.String) -> setDescription
+    1978:1980:void setName(java.lang.String) -> setName
+    1966:1968:void setTitle(java.lang.String) -> setTitle
+    2123:2149:java.lang.String toString() -> toString
+    2217:2217:void writeFile(android.os.Parcel,java.io.File) -> writeFile
+    2184:2208:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.android.shell.BugreportProgressService$BugreportInfo$$ExternalSyntheticLambda0 -> com.android.shell.BugreportProgressService$BugreportInfo$$ExternalSyntheticLambda0:
+    com.android.shell.BugreportProgressService$BugreportInfo$$InternalSyntheticLambda$0$533318528896f65e5007e18b6a5410c8b2c66e4dc142db350137c2e193c5afb2$0 com.android.shell.BugreportProgressService$BugreportInfo$$InternalSyntheticLambda$0$533318528896f65e5007e18b6a5410c8b2c66e4dc142db350137c2e193c5afb2$0.INSTANCE -> INSTANCE
+    void com.android.shell.BugreportProgressService$BugreportInfo$$InternalSyntheticLambda$0$533318528896f65e5007e18b6a5410c8b2c66e4dc142db350137c2e193c5afb2$0.<clinit>() -> <clinit>
+    void com.android.shell.BugreportProgressService$BugreportInfo$$InternalSyntheticLambda$0$533318528896f65e5007e18b6a5410c8b2c66e4dc142db350137c2e193c5afb2$0.<init>() -> <init>
+    boolean com.android.shell.BugreportProgressService$BugreportInfo$$InternalSyntheticLambda$0$533318528896f65e5007e18b6a5410c8b2c66e4dc142db350137c2e193c5afb2$0.test(java.lang.Object) -> test
+com.android.shell.BugreportProgressService$BugreportInfo$1 -> com.android.shell.BugreportProgressService$BugreportInfo$1:
+    2227:2227:void <init>() -> <init>
+    2227:2227:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2230:2230:com.android.shell.BugreportProgressService$BugreportInfo createFromParcel(android.os.Parcel) -> createFromParcel
+    2227:2227:java.lang.Object[] newArray(int) -> newArray
+    2235:2235:com.android.shell.BugreportProgressService$BugreportInfo[] newArray(int) -> newArray
+com.android.shell.BugreportProgressService$BugreportInfoDialog -> com.android.shell.BugreportProgressService$BugreportInfoDialog:
+    1660:1660:void <init>(com.android.shell.BugreportProgressService) -> <init>
+    1660:1660:void <init>(com.android.shell.BugreportProgressService,com.android.shell.BugreportProgressService$1) -> <init>
+    1660:1660:void access$3000(com.android.shell.BugreportProgressService$BugreportInfoDialog,java.lang.String) -> access$3000
+    1660:1660:android.widget.EditText access$3100(com.android.shell.BugreportProgressService$BugreportInfoDialog) -> access$3100
+    1660:1660:android.widget.EditText access$3200(com.android.shell.BugreportProgressService$BugreportInfoDialog) -> access$3200
+    1660:1660:android.widget.EditText access$3300(com.android.shell.BugreportProgressService$BugreportInfoDialog) -> access$3300
+    1660:1660:int access$3400(com.android.shell.BugreportProgressService$BugreportInfoDialog) -> access$3400
+    1660:1660:android.app.AlertDialog access$3600(com.android.shell.BugreportProgressService$BugreportInfoDialog) -> access$3600
+    1802:1803:void cancel() -> cancel
+    1673:1740:void initialize(android.content.Context,com.android.shell.BugreportProgressService$BugreportInfo) -> initialize
+    1792:1796:void onBugreportFinished(com.android.shell.BugreportProgressService$BugreportInfo) -> onBugreportFinished
+    1762:1781:void sanitizeName(java.lang.String) -> sanitizeName
+com.android.shell.BugreportProgressService$BugreportInfoDialog$1 -> com.android.shell.BugreportProgressService$BugreportInfoDialog$1:
+    1694:1694:void <init>(com.android.shell.BugreportProgressService$BugreportInfoDialog,android.content.Context) -> <init>
+    1698:1698:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.shell.BugreportProgressService$BugreportInfoDialog$2 -> com.android.shell.BugreportProgressService$BugreportInfoDialog$2:
+    1740:1740:void <init>(com.android.shell.BugreportProgressService$BugreportInfoDialog,android.content.Context,com.android.shell.BugreportProgressService$BugreportInfo) -> <init>
+    1744:1751:void onClick(android.view.View) -> onClick
+com.android.shell.BugreportProgressService$LocalBinder -> com.android.shell.BugreportProgressService$LocalBinder:
+    1650:1650:void <init>(com.android.shell.BugreportProgressService) -> <init>
+    1652:1652:com.android.shell.BugreportProgressService getService() -> getService
+com.android.shell.BugreportProgressService$ScreenshotHandler -> com.android.shell.BugreportProgressService$ScreenshotHandler:
+    575:576:void <init>(com.android.shell.BugreportProgressService,java.lang.String) -> <init>
+    581:585:void handleMessage(android.os.Message) -> handleMessage
+com.android.shell.BugreportProgressService$ServiceHandler -> com.android.shell.BugreportProgressService$ServiceHandler:
+    503:504:void <init>(com.android.shell.BugreportProgressService,java.lang.String) -> <init>
+    509:564:void handleMessage(android.os.Message) -> handleMessage
+com.android.shell.BugreportRequestedReceiver -> com.android.shell.BugreportRequestedReceiver:
+    32:32:void <init>() -> <init>
+    38:45:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.shell.BugreportStorageProvider -> com.android.shell.BugreportStorageProvider:
+    40:45:void <clinit>() -> <clinit>
+    36:36:void <init>() -> <init>
+    108:108:android.net.Uri buildNotificationUri(java.lang.String) -> buildNotificationUri
+    121:121:java.lang.String getDocIdForFile(java.io.File) -> getDocIdForFile
+    127:138:java.io.File getFileForDocId(java.lang.String,boolean) -> getFileForDocId
+    153:158:void includeDefaultDocument(android.database.MatrixCursor) -> includeDefaultDocument
+    147:148:android.database.MatrixCursor$RowBuilder includeFile(android.database.MatrixCursor,java.lang.String,java.io.File) -> includeFile
+    54:55:boolean onCreate() -> onCreate
+    99:102:android.os.ParcelFileDescriptor openDocument(java.lang.String,java.lang.String,android.os.CancellationSignal) -> openDocument
+    75:79:android.database.Cursor queryChildDocuments(java.lang.String,java.lang.String[],java.lang.String) -> queryChildDocuments
+    86:91:android.database.Cursor queryDocument(java.lang.String,java.lang.String[]) -> queryDocument
+    61:67:android.database.Cursor queryRoots(java.lang.String[]) -> queryRoots
+    116:116:java.lang.String[] resolveDocumentProjection(java.lang.String[]) -> resolveDocumentProjection
+    112:112:java.lang.String[] resolveRootProjection(java.lang.String[]) -> resolveRootProjection
+com.android.shell.BugreportWarningActivity -> com.android.shell.BugreportWarningActivity:
+    41:41:void <init>() -> <init>
+    86:90:void onClick(android.content.DialogInterface,int) -> onClick
+    49:79:void onCreate(android.os.Bundle) -> onCreate
+com.android.shell.HeapDumpActivity -> com.android.shell.HeapDumpActivity:
+    43:50:void <init>() -> <init>
+    100:101:void lambda$onCreate$0(android.content.DialogInterface,int) -> lambda$onCreate$0
+    104:109:void lambda$onCreate$1(android.content.DialogInterface,int) -> lambda$onCreate$1
+    112:117:void lambda$onCreate$2(android.content.Intent,android.content.DialogInterface,int) -> lambda$onCreate$2
+    54:119:void onCreate(android.os.Bundle) -> onCreate
+    137:139:void onDestroy() -> onDestroy
+    124:130:void onStop() -> onStop
+com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda0 -> com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda0:
+    com.android.shell.HeapDumpActivity com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$1.f$0 -> f$0
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$1.<init>(com.android.shell.HeapDumpActivity) -> <init>
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$1.onClick(android.content.DialogInterface,int) -> onClick
+com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda1 -> com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda1:
+    com.android.shell.HeapDumpActivity com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$0.f$0 -> f$0
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$0.<init>(com.android.shell.HeapDumpActivity) -> <init>
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda2 -> com.android.shell.HeapDumpActivity$$ExternalSyntheticLambda2:
+    android.content.Intent com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$2.f$1 -> f$1
+    com.android.shell.HeapDumpActivity com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$2.f$0 -> f$0
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$2.<init>(com.android.shell.HeapDumpActivity,android.content.Intent) -> <init>
+    void com.android.shell.HeapDumpActivity$$InternalSyntheticLambda$0$1a78262d4fa3cf3d83fb8a40658c935cab1319fbe63374247eac693c95da97bd$2.onClick(android.content.DialogInterface,int) -> onClick
+com.android.shell.HeapDumpProvider -> com.android.shell.HeapDumpProvider:
+    34:34:void <clinit>() -> <clinit>
+    32:32:void <init>() -> <init>
+    65:67:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    60:60:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    95:95:android.net.Uri makeUri(java.lang.String) -> makeUri
+    40:44:boolean onCreate() -> onCreate
+    77:90:android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String) -> openFile
+    99:99:java.lang.String sanitizePath(java.lang.String) -> sanitizePath
+    72:72:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+com.android.shell.HeapDumpReceiver -> com.android.shell.HeapDumpReceiver:
+    41:41:void <init>() -> <init>
+    98:112:void cleanupOldFiles(android.content.Context) -> cleanupOldFiles
+    117:128:void deleteHeapDump(android.content.Context,java.lang.String) -> deleteHeapDump
+    78:92:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    132:186:void showDumpNotification(android.content.Context,android.content.Intent) -> showDumpNotification
+com.android.shell.HeapDumpReceiver$1 -> com.android.shell.HeapDumpReceiver$1:
+    99:99:void <init>(com.android.shell.HeapDumpReceiver,android.content.Context,android.content.BroadcastReceiver$PendingResult) -> <init>
+    99:99:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    103:109:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.shell.HeapDumpReceiver$2 -> com.android.shell.HeapDumpReceiver$2:
+    121:121:void <init>(com.android.shell.HeapDumpReceiver,android.content.Context,java.lang.String,android.content.BroadcastReceiver$PendingResult) -> <init>
+    121:121:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    124:125:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.shell.Screenshooter -> com.android.shell.Screenshooter:
+    40:55:android.graphics.Bitmap takeScreenshot() -> takeScreenshot
