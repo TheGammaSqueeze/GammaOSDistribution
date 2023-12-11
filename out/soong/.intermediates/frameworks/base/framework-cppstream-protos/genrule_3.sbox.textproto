@@ -1,0 +1,225 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-cppstream/linux_glibc_x86_64/protoc-gen-cppstream"
+    to: "tools/out/bin/protoc-gen-cppstream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/usagestatsservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/usagestatsservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/usagestatsservice_v2.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/usagestatsservice_v2.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowcontainerthumbnail.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/windowcontainerthumbnail.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowmanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/windowmanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowmanagertrace.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/windowmanagertrace.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/wirelesschargerdetector.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/wirelesschargerdetector.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/location/context_hub.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/location/context_hub.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/vibrator/vibratormanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/vibrator/vibratormanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/adb.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/adb.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/appwidget.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/appwidget.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/battery.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/battery.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/batterystats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/batterystats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/diskstats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/diskstats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/dropbox.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/dropbox.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/graphicsstats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/graphicsstats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/netstats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/netstats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/network_watchlist.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/network_watchlist.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/notification.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/notification.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/package.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/package.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/print.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/print.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/procstats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/procstats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/restricted_image.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/restricted_image.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/runtime.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/runtime.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/sensor_service.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/sensor_service.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/usb.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/service/usb.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/common.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/util/common.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/event_log_tags.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/util/event_log_tags.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/log.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/util/log.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/quotatracker.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/util/quotatracker.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/textdump.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/util/textdump.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/display.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/display.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/displaycutout.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/displaycutout.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/displayinfo.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/displayinfo.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/imefocuscontroller.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/imefocuscontroller.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/imeinsetssourceconsumer.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/imeinsetssourceconsumer.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetsanimationcontrolimpl.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetsanimationcontrolimpl.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetscontroller.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetscontroller.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssource.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetssource.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssourceconsumer.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetssourceconsumer.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssourcecontrol.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetssourcecontrol.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetsstate.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/insetsstate.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/remote_animation_target.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/remote_animation_target.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/surface.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/surface.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/surfacecontrol.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/surfacecontrol.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/viewrootimpl.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/viewrootimpl.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/windowlayoutparams.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/windowlayoutparams.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/usagestatsservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/usagestatsservice_v2.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowcontainerthumbnail.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowmanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/windowmanagertrace.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/wirelesschargerdetector.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/location/context_hub.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/vibrator/vibratormanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/adb.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/appwidget.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/battery.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/batterystats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/diskstats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/dropbox.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/graphicsstats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/netstats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/network_watchlist.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/notification.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/package.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/print.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/procstats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/restricted_image.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/runtime.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/sensor_service.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/service/usb.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/common.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/event_log_tags.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/log.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/quotatracker.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/util/textdump.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/display.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/displaycutout.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/displayinfo.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/imefocuscontroller.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/imeinsetssourceconsumer.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetsanimationcontrolimpl.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetscontroller.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssource.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssourceconsumer.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetssourcecontrol.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/insetsstate.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/remote_animation_target.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/surface.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/surfacecontrol.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/viewrootimpl.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/windowlayoutparams.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto.d"
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/location/context_hub.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/location/context_hub.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/usagestatsservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/usagestatsservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/usagestatsservice_v2.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/usagestatsservice_v2.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/vibrator/vibratormanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/vibrator/vibratormanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/windowcontainerthumbnail.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/windowcontainerthumbnail.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/windowmanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/windowmanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/windowmanagertrace.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/windowmanagertrace.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/wirelesschargerdetector.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/server/wirelesschargerdetector.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/adb.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/adb.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/appwidget.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/appwidget.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/battery.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/battery.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/batterystats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/batterystats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/diskstats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/diskstats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/dropbox.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/dropbox.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/graphicsstats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/graphicsstats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/netstats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/netstats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/network_watchlist.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/network_watchlist.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/notification.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/notification.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/package.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/package.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/print.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/print.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/procstats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/procstats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/restricted_image.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/restricted_image.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/runtime.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/runtime.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/sensor_service.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/sensor_service.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/service/usb.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/service/usb.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/util/common.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/util/common.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/util/event_log_tags.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/util/event_log_tags.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/util/log.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/util/log.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/util/quotatracker.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/util/quotatracker.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/util/textdump.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/util/textdump.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/display.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/display.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/displaycutout.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/displaycutout.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/displayinfo.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/displayinfo.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/imefocuscontroller.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/imefocuscontroller.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/imeinsetssourceconsumer.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/imeinsetssourceconsumer.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetsanimationcontrolimpl.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetsanimationcontrolimpl.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetscontroller.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetscontroller.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetssource.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetssource.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetssourceconsumer.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetssourceconsumer.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetssourcecontrol.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetssourcecontrol.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/insetsstate.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/insetsstate.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/remote_animation_target.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/remote_animation_target.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/surface.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/surface.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/surfacecontrol.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/surfacecontrol.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/viewrootimpl.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/viewrootimpl.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/windowlayoutparams.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/frameworks/base/core/proto/android/view/windowlayoutparams.proto.h"
+  >
+  input_hash: "a46196d9bdfb11bc5c049a0e97b3fd67cde71899e802dbbbbee55267c9862e5b"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/3/gensrcs.d"
+
