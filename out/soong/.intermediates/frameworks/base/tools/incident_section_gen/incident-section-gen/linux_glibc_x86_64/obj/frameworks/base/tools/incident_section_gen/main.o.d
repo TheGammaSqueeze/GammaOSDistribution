@@ -1,0 +1,306 @@
+out/soong/.intermediates/frameworks/base/tools/incident_section_gen/incident-section-gen/linux_glibc_x86_64/obj/frameworks/base/tools/incident_section_gen/main.o: \
+  frameworks/base/tools/incident_section_gen/main.cpp \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/incident.pb.h \
+  external/libcxx/include/limits external/libcxx/include/__config \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/features.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdc-predef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/predefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/pthread.h \
+  external/libcxx/include/type_traits external/libcxx/include/cstddef \
+  external/libcxx/include/version \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr \
+  external/libcxx/include/__undef_macros external/libcxx/include/string \
+  external/libcxx/include/string_view external/libcxx/include/__string \
+  external/libcxx/include/algorithm \
+  external/libcxx/include/initializer_list \
+  external/libcxx/include/cstring external/libcxx/include/string.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/string.h \
+  external/libcxx/include/stddef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/xlocale.h \
+  external/libcxx/include/utility external/libcxx/include/__tuple \
+  external/libcxx/include/cstdint external/libcxx/include/stdint.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wchar.h \
+  external/libcxx/include/__debug external/libcxx/include/memory \
+  external/libcxx/include/typeinfo external/libcxx/include/exception \
+  external/libcxx/include/cstdlib external/libcxx/include/stdlib.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdlib.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/endian.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/endian.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/time.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/select.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/select.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigset.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/time.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/alloca.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  external/libcxx/include/new external/libcxx/include/iterator \
+  external/libcxx/include/iosfwd external/libcxx/include/wchar.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/wchar.h \
+  external/libcxx/include/stdio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdio.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  external/libcxx/include/__functional_base \
+  external/libcxx/include/tuple external/libcxx/include/stdexcept \
+  external/libcxx/include/cassert \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/assert.h \
+  external/libcxx/include/atomic external/libcxx/include/functional \
+  external/libcxx/include/bit external/libcxx/include/cstdio \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/libio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/_G_config.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  external/libcxx/include/cwchar external/libcxx/include/cwctype \
+  external/libcxx/include/cctype external/libcxx/include/ctype.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/ctype.h \
+  external/libcxx/include/wctype.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/wctype.h \
+  external/protobuf/src/google/protobuf/port_def.inc \
+  external/protobuf/src/google/protobuf/port_undef.inc \
+  external/protobuf/src/google/protobuf/io/coded_stream.h \
+  external/libcxx/include/climits external/libcxx/include/limits.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/limits.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/limits.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/limits.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/param.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/signal.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/signum.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/siginfo.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/param.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/param.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/asm/param.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/param.h \
+  external/protobuf/src/google/protobuf/stubs/common.h \
+  external/libcxx/include/iostream external/libcxx/include/ios \
+  external/libcxx/include/__locale external/libcxx/include/mutex \
+  external/libcxx/include/__mutex_base external/libcxx/include/chrono \
+  external/libcxx/include/ctime \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/timex.h \
+  external/libcxx/include/ratio external/libcxx/include/system_error \
+  external/libcxx/include/__errc external/libcxx/include/cerrno \
+  external/libcxx/include/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/asm/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno-base.h \
+  external/libcxx/include/__threading_support \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/sched.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sched.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  external/libcxx/include/locale.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/locale.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/locale.h \
+  external/libcxx/include/streambuf external/libcxx/include/istream \
+  external/libcxx/include/ostream external/libcxx/include/locale \
+  external/libcxx/include/cstdarg \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/nl_types.h \
+  external/libcxx/include/__bsd_locale_fallbacks.h \
+  external/libcxx/include/bitset external/libcxx/include/__bit_reference \
+  external/libcxx/include/map external/libcxx/include/__tree \
+  external/libcxx/include/__node_handle external/libcxx/include/optional \
+  external/libcxx/include/set external/libcxx/include/vector \
+  external/libcxx/include/__split_buffer \
+  external/protobuf/src/google/protobuf/stubs/port.h \
+  external/protobuf/src/google/protobuf/stubs/platform_macros.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/byteswap.h \
+  external/protobuf/src/google/protobuf/stubs/macros.h \
+  external/protobuf/src/google/protobuf/port.h \
+  external/protobuf/src/google/protobuf/arena.h \
+  external/protobuf/src/google/protobuf/arena_impl.h \
+  external/protobuf/src/google/protobuf/stubs/logging.h \
+  external/protobuf/src/google/protobuf/arenastring.h \
+  external/protobuf/src/google/protobuf/stubs/fastmem.h \
+  external/protobuf/src/google/protobuf/generated_message_table_driven.h \
+  external/protobuf/src/google/protobuf/map.h \
+  external/protobuf/src/google/protobuf/generated_enum_util.h \
+  external/protobuf/src/google/protobuf/message_lite.h \
+  external/protobuf/src/google/protobuf/stubs/once.h \
+  external/protobuf/src/google/protobuf/stubs/strutil.h \
+  external/protobuf/src/google/protobuf/stubs/stringpiece.h \
+  external/protobuf/src/google/protobuf/stubs/hash.h \
+  external/libcxx/include/unordered_map \
+  external/libcxx/include/__hash_table external/libcxx/include/cmath \
+  external/libcxx/include/math.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/math.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/huge_val.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/inf.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/nan.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/mathdef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  external/libcxx/include/unordered_set \
+  external/protobuf/src/google/protobuf/map_type_handler.h \
+  external/protobuf/src/google/protobuf/parse_context.h \
+  external/protobuf/src/google/protobuf/io/zero_copy_stream.h \
+  external/protobuf/src/google/protobuf/implicit_weak_message.h \
+  external/protobuf/src/google/protobuf/metadata_lite.h \
+  external/protobuf/src/google/protobuf/generated_message_util.h \
+  external/protobuf/src/google/protobuf/has_bits.h \
+  external/protobuf/src/google/protobuf/wire_format_lite.h \
+  external/protobuf/src/google/protobuf/repeated_field.h \
+  external/protobuf/src/google/protobuf/stubs/casts.h \
+  external/protobuf/src/google/protobuf/map_entry_lite.h \
+  external/protobuf/src/google/protobuf/map_field_lite.h \
+  external/protobuf/src/google/protobuf/inlined_string_field.h \
+  external/protobuf/src/google/protobuf/metadata.h \
+  external/protobuf/src/google/protobuf/unknown_field_set.h \
+  external/protobuf/src/google/protobuf/generated_message_reflection.h \
+  external/protobuf/src/google/protobuf/descriptor.h \
+  external/protobuf/src/google/protobuf/stubs/mutex.h \
+  external/protobuf/src/google/protobuf/generated_enum_reflection.h \
+  external/protobuf/src/google/protobuf/message.h \
+  external/protobuf/src/google/protobuf/extension_set.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/nfc_service.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/pendingintent.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/privacy.pb.h \
+  external/protobuf/src/google/protobuf/descriptor.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/intent.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/component_name.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/patternmatcher.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/card_emulation.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/apdu_service_info.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/aid_group.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/nfc_fservice_info.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/nfc/ndef.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/backtrace.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/batterytype.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/cpufreq.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/cpuinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/cpu_usage.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/data.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/header.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/kernelwake.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/metadata.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/pagetypeinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/procrank.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/ps.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/statsdata.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/system_properties.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings/config.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings/common.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings/global.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings/secure.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/providers/settings/system.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/activitymanagerservice.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/activitymanager.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/appexitinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/app/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/notification.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/profilerinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/configuration.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/window_configuration.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/graphics/rect.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/locale.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/package_item_info.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/internal/processstats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/bundle.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/looper.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/messagequeue.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/message.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/powermanager.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/worksource.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/intentresolver.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/windowmanagerservice.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/statusbarmanager.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/activityinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/windowcontainerthumbnail.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/surfaceanimator.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/animationadapter.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/graphics/point.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/remote_animation_target.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/surfacecontrol.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/displaycutout.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/displayinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/surface.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/windowlayoutparams.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/graphics/pixelformat.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/display.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/typedef.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/insetssource.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/view/insetssourcecontrol.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/view/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/util/common.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/alarm/alarmmanagerservice.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/alarmmanager.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/internal/locallog.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/appstatetracker.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/statlogger.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/bluetooth_manager_service.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/bluetooth/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/fingerprint.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/jobscheduler.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/clipdata.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/clipdescription.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/persistablebundle.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/net/network.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/net/networkrequest.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/net/networkcapabilities.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/net/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/util/quotatracker.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/app/job/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/server/job/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/location/context_hub.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/hardware/location/context_hub_info.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/powermanagerservice.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/wirelesschargerdetector.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/os/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/powerstatsservice.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/appwidget.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/battery.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/batterystats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/os/batterystats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/telephony/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/diskstats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/dropbox.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/graphicsstats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/netstats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/notification.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/notification_channel.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/media/audioattributes.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/notification_channel_group.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/app/notificationmanager.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/package.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/content/featureinfo.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/print.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/procstats.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/service/procstats_enum.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/restricted_image.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/sensor_service.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/service/usb.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/proto_logging/stats/enums/service/enums.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/util/event_log_tags.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/util/log.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/util/textdump.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/section.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/proto/src/ipconnectivity.pb.h \
+  out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/packages/modules/Permission/service/proto/com/android/role/roleservice.pb.h \
+  external/libcxx/include/sstream

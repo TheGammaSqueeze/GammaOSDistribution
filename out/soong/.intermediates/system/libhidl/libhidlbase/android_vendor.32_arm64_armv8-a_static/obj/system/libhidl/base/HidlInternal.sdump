@@ -1,0 +1,1028 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA92_c",
+   "name" : "char [92]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA92_c",
+   "size" : 92,
+   "source_file" : "system/libbase/include/android-base/properties.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIDn",
+   "name" : "nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIDn",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::VERBOSE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::DEBUG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::INFO"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::WARNING"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::ERROR"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "android::base::FATAL_WITHOUT_ABORT"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "android::base::FATAL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base11LogSeverityE",
+   "name" : "android::base::LogSeverity",
+   "referenced_type" : "_ZTIN7android4base11LogSeverityE",
+   "self_type" : "_ZTIN7android4base11LogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::DEFAULT"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::MAIN"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::SYSTEM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::RADIO"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::CRASH"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base5LogIdE",
+   "name" : "android::base::LogId",
+   "referenced_type" : "_ZTIN7android4base5LogIdE",
+   "self_type" : "_ZTIN7android4base5LogIdE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::hardware::details::HidlInstrumentor::SERVER_API_ENTRY"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::hardware::details::HidlInstrumentor::SERVER_API_EXIT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::hardware::details::HidlInstrumentor::CLIENT_API_ENTRY"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::hardware::details::HidlInstrumentor::CLIENT_API_EXIT"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::hardware::details::HidlInstrumentor::SYNC_CALLBACK_ENTRY"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "android::hardware::details::HidlInstrumentor::SYNC_CALLBACK_EXIT"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "android::hardware::details::HidlInstrumentor::ASYNC_CALLBACK_ENTRY"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "android::hardware::details::HidlInstrumentor::ASYNC_CALLBACK_EXIT"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "android::hardware::details::HidlInstrumentor::PASSTHROUGH_ENTRY"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "android::hardware::details::HidlInstrumentor::PASSTHROUGH_EXIT"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware7details16HidlInstrumentor20InstrumentationEventE",
+   "name" : "android::hardware::details::HidlInstrumentor::InstrumentationEvent",
+   "referenced_type" : "_ZTIN7android8hardware7details16HidlInstrumentor20InstrumentationEventE",
+   "self_type" : "_ZTIN7android8hardware7details16HidlInstrumentor20InstrumentationEventE",
+   "size" : 4,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::base::LogNullGuard<nullptr_t>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIDnE5GuardERKDn",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKDn"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<const char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPKcE5GuardES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPcE5GuardEPKc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::hardware::details::logAlwaysFatal",
+   "linker_set_key" : "_ZN7android8hardware7details14logAlwaysFatalEPKc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::getVndkSpHwPath",
+   "linker_set_key" : "_ZN7android8hardware7details15getVndkSpHwPathEPKc",
+   "parameters" :
+   [
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "android::hardware::details::HidlInstrumentor::isInstrumentationLib",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentor20isInstrumentationLibEPK6dirent",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "referenced_type" : "_ZTIPK6dirent"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "android::hardware::details::HidlInstrumentor::configureInstrumentation",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentor24configureInstrumentationEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::isInstrumentationEnabled",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentor24isInstrumentationEnabledEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::getInstrumentationCallbacks",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentor27getInstrumentationCallbacksEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    }
+   ],
+   "return_type" : "_ZTIRKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "android::hardware::details::HidlInstrumentor::registerInstrumentationCallbacks",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentor32registerInstrumentationCallbacksEPNSt3__16vectorINS3_8functionIFvNS2_20InstrumentationEventEPKcS8_S8_S8_PNS4_IPvNS3_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::HidlInstrumentor",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentorC1ERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEESB_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::HidlInstrumentor",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentorC2ERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEESB_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::~HidlInstrumentor",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentorD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::~HidlInstrumentor",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentorD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::hardware::details::HidlInstrumentor::~HidlInstrumentor",
+   "linker_set_key" : "_ZN7android8hardware7details16HidlInstrumentorD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::operator bool",
+   "linker_set_key" : "_ZNK7android4base13ErrnoRestorercvbEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "std::operator<<",
+   "linker_set_key" : "_ZStlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEEPKNS_12basic_stringIcS2_NS_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail12StorageTypes7voidptrE",
+   "name" : "android::base::log_detail::StorageTypes::voidptr",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail13IsCharPointer5valueE",
+   "name" : "android::base::log_detail::IsCharPointer::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4baseL14kEnableDChecksE",
+   "name" : "android::base::kEnableDChecks",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKDn",
+   "name" : "const nullptr_t &",
+   "referenced_type" : "_ZTIKDn",
+   "self_type" : "_ZTIRKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "name" : "const std::vector<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>, std::allocator<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> &",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPK6dirent",
+   "name" : "const dirent *",
+   "referenced_type" : "_ZTIK6dirent",
+   "self_type" : "_ZTIPK6dirent",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPK9prop_info",
+   "name" : "const prop_info *",
+   "referenced_type" : "_ZTIK9prop_info",
+   "self_type" : "_ZTIPK9prop_info",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/properties.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android8hardware7details16HidlInstrumentorE",
+   "name" : "android::hardware::details::HidlInstrumentor *",
+   "referenced_type" : "_ZTIN7android8hardware7details16HidlInstrumentorE",
+   "self_type" : "_ZTIPN7android8hardware7details16HidlInstrumentorE",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "name" : "std::vector<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>, std::allocator<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>>> *",
+   "referenced_type" : "_ZTINSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "self_type" : "_ZTIPNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK6dirent",
+   "name" : "const dirent",
+   "referenced_type" : "_ZTI6dirent",
+   "self_type" : "_ZTIK6dirent",
+   "size" : 280,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK9prop_info",
+   "name" : "const prop_info",
+   "referenced_type" : "_ZTI9prop_info",
+   "self_type" : "_ZTIK9prop_info",
+   "source_file" : "system/libbase/include/android-base/properties.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKDn",
+   "name" : "const nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "name" : "const std::unique_ptr<android::base::LogMessageData, std::default_delete<android::base::LogMessageData>>",
+   "referenced_type" : "_ZTINSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "self_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "name" : "const std::vector<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>, std::allocator<std::function<void (InstrumentationEvent, const char *, const char *, const char *, const char *, vector<void *, allocator<void *>> *)>>>",
+   "referenced_type" : "_ZTINSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "self_type" : "_ZTIKNSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE",
+   "size" : 24,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKb",
+   "name" : "const bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIKb",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "data_",
+     "referenced_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogMessageE",
+   "name" : "android::base::LogMessage",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogMessageE",
+   "self_type" : "_ZTIN7android4base10LogMessageE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "default_log_id_",
+     "referenced_type" : "_ZTIN7android4base5LogIdE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogdLoggerE",
+   "name" : "android::base::LogdLogger",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogdLoggerE",
+   "self_type" : "_ZTIN7android4base10LogdLoggerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "name" : "android::base::LogNullGuard<std::nullptr_t>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIDn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "name" : "android::base::LogNullGuard<const char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPKc" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "name" : "android::base::LogNullGuard<char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPc" ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "saved_errno_",
+     "referenced_type" : "_ZTIKi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "property_name_",
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "prop_info_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPK9prop_info"
+    },
+    {
+     "access" : "private",
+     "field_name" : "cached_area_serial_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTINSt3__18optionalIjEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "cached_property_serial_",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTINSt3__18optionalIjEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "cached_value_",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIA92_c"
+    },
+    {
+     "access" : "private",
+     "field_name" : "is_read_only_",
+     "field_offset" : 1120,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "read_only_property_",
+     "field_offset" : 1152,
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base14CachedPropertyE",
+   "name" : "android::base::CachedProperty",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base14CachedPropertyE",
+   "self_type" : "_ZTIN7android4base14CachedPropertyE",
+   "size" : 152,
+   "source_file" : "system/libbase/include/android-base/properties.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "old_",
+     "referenced_type" : "_ZTIN7android4base11LogSeverityE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "name" : "android::base::ScopedLogSeverity",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "self_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "protected",
+     "field_name" : "mInstrumentationCallbacks",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTINSt3__16vectorINS_8functionIFvN7android8hardware7details16HidlInstrumentor20InstrumentationEventEPKcS8_S8_S8_PNS0_IPvNS_9allocatorIS9_EEEEEEENSA_ISF_EEEE"
+    },
+    {
+     "access" : "protected",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIN7android8hardware7details16HidlInstrumentorUt_E"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mInstrumentationLibPackage",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mInterfaceName",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware7details16HidlInstrumentorE",
+   "name" : "android::hardware::details::HidlInstrumentor",
+   "referenced_type" : "_ZTIN7android8hardware7details16HidlInstrumentorE",
+   "self_type" : "_ZTIN7android8hardware7details16HidlInstrumentorE",
+   "size" : 88,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware7details16HidlInstrumentorE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware7details16HidlInstrumentorD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware7details16HidlInstrumentorD0Ev"
+    }
+   ]
+  },
+  {
+   "access" : "protected",
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "mEnableInstrumentation",
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "field_name" : "mReserved0",
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN7android8hardware7details16HidlInstrumentorUt_E",
+   "name" : "android::hardware::details::HidlInstrumentor::(anonymous union at system/libhidl/base/include/hidl/HidlInternal.h:204:5)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN7android8hardware7details16HidlInstrumentorUt_E",
+   "self_type" : "_ZTIN7android8hardware7details16HidlInstrumentorUt_E",
+   "size" : 8,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware7details5i_tagE",
+   "name" : "android::hardware::details::i_tag",
+   "referenced_type" : "_ZTIN7android8hardware7details5i_tagE",
+   "self_type" : "_ZTIN7android8hardware7details5i_tagE",
+   "size" : 1,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware7details6bs_tagE",
+   "name" : "android::hardware::details::bs_tag",
+   "referenced_type" : "_ZTIN7android8hardware7details6bs_tagE",
+   "self_type" : "_ZTIN7android8hardware7details6bs_tagE",
+   "size" : 1,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware7details8bnhw_tagE",
+   "name" : "android::hardware::details::bnhw_tag",
+   "referenced_type" : "_ZTIN7android8hardware7details8bnhw_tagE",
+   "self_type" : "_ZTIN7android8hardware7details8bnhw_tagE",
+   "size" : 1,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware7details8bphw_tagE",
+   "name" : "android::hardware::details::bphw_tag",
+   "referenced_type" : "_ZTIN7android8hardware7details8bphw_tagE",
+   "self_type" : "_ZTIN7android8hardware7details8bphw_tagE",
+   "size" : 1,
+   "source_file" : "system/libhidl/base/include/hidl/HidlInternal.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

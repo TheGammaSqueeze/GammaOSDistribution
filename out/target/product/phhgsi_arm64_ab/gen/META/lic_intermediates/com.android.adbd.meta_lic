@@ -1,0 +1,532 @@
+license_package_name: "packages_modules_adb_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "out/soong/.intermediates/packages/modules/adb/apex/com.android.adbd/android_common_com.android.adbd_image/NOTICE_FILES/src/system/apex/com.android.adbd.apex.txt"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.android.adbd_intermediates/com.android.adbd.capex"
+target: "out/target/product/phhgsi_arm64_ab/system/apex/com.android.adbd.capex"
+install_map: "adbd.com.android.adbd:bin/adbd"
+install_map: "apex_manifest.pb.com.android.adbd:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.adbd:./apex_pubkey"
+install_map: "com.android.adbd.init.rc.com.android.adbd:etc/init.rc"
+install_map: "libadb_pairing_auth.com.android.adbd:lib/libadb_pairing_auth.so"
+install_map: "libadb_pairing_auth.com.android.adbd:lib64/libadb_pairing_auth.so"
+install_map: "libadb_pairing_connection.com.android.adbd:lib/libadb_pairing_connection.so"
+install_map: "libadb_pairing_connection.com.android.adbd:lib64/libadb_pairing_connection.so"
+install_map: "libadb_pairing_server.com.android.adbd:lib/libadb_pairing_server.so"
+install_map: "libadb_pairing_server.com.android.adbd:lib64/libadb_pairing_server.so"
+install_map: "libadb_protos.com.android.adbd:lib64/libadb_protos.so"
+install_map: "libadbconnection_client.com.android.adbd:lib/libadbconnection_client.so"
+install_map: "libadbconnection_client.com.android.adbd:lib64/libadbconnection_client.so"
+install_map: "libbase.com.android.adbd:lib/libbase.so"
+install_map: "libbase.com.android.adbd:lib64/libbase.so"
+install_map: "libc++.com.android.adbd:lib/libc++.so"
+install_map: "libc++.com.android.adbd:lib64/libc++.so"
+install_map: "libcrypto.com.android.adbd:lib/libcrypto.so"
+install_map: "libcrypto.com.android.adbd:lib64/libcrypto.so"
+install_map: "libcrypto_utils.com.android.adbd:lib/libcrypto_utils.so"
+install_map: "libcrypto_utils.com.android.adbd:lib64/libcrypto_utils.so"
+install_map: "libcutils.com.android.adbd:lib/libcutils.so"
+install_map: "libcutils.com.android.adbd:lib64/libcutils.so"
+install_map: "libprotobuf-cpp-lite.com.android.adbd:lib64/libprotobuf-cpp-lite.so"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.adbd.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.adbd"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.adbd/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.adbd_intermediates/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.adbd.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.adbd"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.adbd/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.adbd_intermediates/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.android.adbd.flattened.meta_lic
+  dep_package_name:  "packages_modules_adb_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.adbd.flattened-timestamp"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.adbd.flattened_intermediates/com.android.adbd.flattened-timestamp"
+  dep_install_map: "adbd.com.android.adbd.flattened:bin/adbd"
+  dep_install_map: "apex_manifest.pb.com.android.adbd.flattened:./apex_manifest.pb"
+  dep_install_map: "apex_pubkey.com.android.adbd.flattened:./apex_pubkey"
+  dep_install_map: "com.android.adbd.init.rc.com.android.adbd.flattened:etc/init.rc"
+  dep_install_map: "libadb_pairing_auth.com.android.adbd.flattened:lib/libadb_pairing_auth.so"
+  dep_install_map: "libadb_pairing_auth.com.android.adbd.flattened:lib64/libadb_pairing_auth.so"
+  dep_install_map: "libadb_pairing_connection.com.android.adbd.flattened:lib/libadb_pairing_connection.so"
+  dep_install_map: "libadb_pairing_connection.com.android.adbd.flattened:lib64/libadb_pairing_connection.so"
+  dep_install_map: "libadb_pairing_server.com.android.adbd.flattened:lib/libadb_pairing_server.so"
+  dep_install_map: "libadb_pairing_server.com.android.adbd.flattened:lib64/libadb_pairing_server.so"
+  dep_install_map: "libadb_protos.com.android.adbd.flattened:lib64/libadb_protos.so"
+  dep_install_map: "libadbconnection_client.com.android.adbd.flattened:lib/libadbconnection_client.so"
+  dep_install_map: "libadbconnection_client.com.android.adbd.flattened:lib64/libadbconnection_client.so"
+  dep_install_map: "libbase:lib/libbase.so"
+  dep_install_map: "libbase:lib64/libbase.so"
+  dep_install_map: "libc++:lib/libc++.so"
+  dep_install_map: "libc++:lib64/libc++.so"
+  dep_install_map: "libcrypto:lib/libcrypto.so"
+  dep_install_map: "libcrypto:lib64/libcrypto.so"
+  dep_install_map: "libcrypto_utils:lib/libcrypto_utils.so"
+  dep_install_map: "libcrypto_utils:lib64/libcrypto_utils.so"
+  dep_install_map: "libcutils:lib/libcutils.so"
+  dep_install_map: "libcutils:lib64/libcutils.so"
+  dep_install_map: "libprotobuf-cpp-lite:lib64/libprotobuf-cpp-lite.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.adbd.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.adbd.flattened.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libadbd_auth.meta_lic
+  dep_package_name:  "frameworks_native_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "legacy_notice"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libadbd_auth.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libadbd_auth_intermediates/libadbd_auth.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libadbd_auth_intermediates/libadbd_auth.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libadbd_auth_intermediates/libadbd_auth.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libadbd_auth_intermediates/libadbd_auth.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libadbd_auth.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_sockets.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libprocessgroup_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libadbd_fs.meta_lic
+  dep_package_name:  "packages_modules_adb_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "packages/modules/adb/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libadbd_fs.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libadbd_fs_intermediates/libadbd_fs.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libadbd_fs_intermediates/libadbd_fs.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libadbd_fs_intermediates/libadbd_fs.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libadbd_fs_intermediates/libadbd_fs.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libadbd_fs.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbuildversion.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_sockets.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libprocessgroup_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbinder_ndk.meta_lic
+  dep_package_name:  "frameworks_native_libs_binder_ndk_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/binder/ndk/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libbinder_ndk.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libbinder_ndk_intermediates/libbinder_ndk.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libbinder_ndk_intermediates/libbinder_ndk.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libbinder_ndk_intermediates/libbinder_ndk.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libbinder_ndk.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/jni_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog.meta_lic
+  dep_package_name:  "system_logging_liblog_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/logging/liblog/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/liblog.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/liblog_intermediates/liblog.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/liblog.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/liblog_intermediates/liblog.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/liblog_intermediates/liblog.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/liblog.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libselinux.meta_lic
+  dep_package_name:  "external_selinux_libselinux_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-GPL-2.0"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "external/selinux/libselinux/LICENSE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libselinux.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libselinux_intermediates/libselinux.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libselinux_intermediates/libselinux.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libselinux_intermediates/libselinux.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libselinux_intermediates/libselinux.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libselinux.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libpackagelistparser.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libpcre2.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.adbd.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.adbd.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.adbd.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.adbd/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.adbd.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.adbd.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.adbd.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.adbd/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_package_name:  "external_fmtlib_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-CC0-1.0"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-PSF-2.0"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "external/fmtlib/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/fmtlib_intermediates/fmtlib.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/fmtlib_intermediates/fmtlib.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "unencumbered"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/jni_headers.meta_lic
+  dep_package_name:  "libnativehelper_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "libnativehelper/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/jni_headers_intermediates/jni_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/jni_headers_intermediates/jni_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase.meta_lic
+  dep_package_name:  "system_libbase_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/libbase/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libbase.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libbase_intermediates/libbase.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libbase_intermediates/libbase.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libbase_intermediates/libbase.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libbase_intermediates/libbase.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libbase.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_package_name:  "system_libbase_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/libbase/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libbase_headers_intermediates/libbase_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libbase_headers_intermediates/libbase_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbuildversion.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libbuildversion_intermediates/libbuildversion.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libbuildversion_intermediates/libbuildversion.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_package_name:  "external_libcxx_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxx/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/libc++_static.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++_static_intermediates/libc++_static.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_package_name:  "external_libcxxabi_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxxabi/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/libc++abi.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++abi_intermediates/libc++abi.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_package_name:  "external_libcxxabi_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxxabi/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++demangle_intermediates/libc++demangle.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_package_name:  "prebuilts_clang_host_linux-x86_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-LGPL"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_kind: "SPDX-license-identifier-PSF-2.0"
+  dep_license_kind: "SPDX-license-identifier-Zlib"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libclang_rt.builtins-aarch64-android_intermediates/libclang_rt.builtins-aarch64-android.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils.meta_lic
+  dep_package_name:  "system_core_libcutils_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libcutils/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libcutils.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libcutils_intermediates/libcutils.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_intermediates/libcutils.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libcutils_intermediates/libcutils.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libcutils_intermediates/libcutils.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libcutils.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_sockets.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libprocessgroup_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_package_name:  "system_core_libcutils_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libcutils/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_sockets.meta_lic
+  dep_package_name:  "system_core_libcutils_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libcutils/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libcutils_sockets.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libcutils_sockets_intermediates/libcutils_sockets.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libcutils_sockets_intermediates/libcutils_sockets.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libcutils_sockets_intermediates/libcutils_sockets.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libcutils_sockets_intermediates/libcutils_sockets.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libcutils_sockets.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/fmtlib.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_package_name:  "system_logging_liblog_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/logging/liblog/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/liblog_headers_intermediates/liblog_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/liblog_headers_intermediates/liblog_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libpackagelistparser.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libpackagelistparser_intermediates/libpackagelistparser.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libpackagelistparser_intermediates/libpackagelistparser.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libpackagelistparser.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libpcre2.meta_lic
+  dep_package_name:  "external_pcre_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-FSFAP"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "legacy_notice"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "external/pcre/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/libpcre2.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/libpcre2_intermediates/libpcre2.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libpcre2_intermediates/libpcre2.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libpcre2_intermediates/libpcre2.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libpcre2_intermediates/libpcre2.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libpcre2.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "unencumbered"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libprocessgroup_headers.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libprocessgroup_headers_intermediates/libprocessgroup_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libprocessgroup_headers_intermediates/libprocessgroup_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
