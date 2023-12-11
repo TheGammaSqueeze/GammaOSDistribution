@@ -1,0 +1,841 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/net/annotations/PolicyDirection.java"
+    to: "frameworks/base/core/java/android/net/annotations/PolicyDirection.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/com/android/internal/util/HexDump.java"
+    to: "frameworks/base/core/java/com/android/internal/util/HexDump.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/com/android/internal/util/IState.java"
+    to: "frameworks/base/core/java/com/android/internal/util/IState.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/com/android/internal/util/State.java"
+    to: "frameworks/base/core/java/com/android/internal/util/State.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/com/android/internal/util/StateMachine.java"
+    to: "frameworks/base/core/java/com/android/internal/util/StateMachine.java"
+  >
+  copy_before: <
+    from: "frameworks/base/services/core/java/com/android/server/vcn/util/PersistableBundleUtils.java"
+    to: "frameworks/base/services/core/java/com/android/server/vcn/util/PersistableBundleUtils.java"
+  >
+  copy_before: <
+    from: "frameworks/base/telephony/java/android/telephony/Annotation.java"
+    to: "frameworks/base/telephony/java/android/telephony/Annotation.java"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/conscrypt/conscrypt.module.public.api.stubs/android_common/turbine-combined/conscrypt.module.public.api.stubs.jar"
+    to: "out/.intermediates/external/conscrypt/conscrypt.module.public.api.stubs/android_common/turbine-combined/conscrypt.module.public.api.stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+    to: "out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+    to: "out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/IPsec/ike-internals/android_common/turbine-combined/ike-internals.jar"
+    to: "out/.intermediates/packages/modules/IPsec/ike-internals/android_common/turbine-combined/ike-internals.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.net.ipsec.ike-incompatibilities.api.system.latest/gen/android.net.ipsec.ike-incompatibilities.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.net.ipsec.ike-incompatibilities.api.system.latest/gen/android.net.ipsec.ike-incompatibilities.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.net.ipsec.ike-removed.api.system.latest/gen/android.net.ipsec.ike-removed.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.net.ipsec.ike-removed.api.system.latest/gen/android.net.ipsec.ike-removed.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.net.ipsec.ike.api.system.latest/gen/android.net.ipsec.ike.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.net.ipsec.ike.api.system.latest/gen/android.net.ipsec.ike.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar"
+    to: "out/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/eap/EapSessionConfig.java"
+    to: "packages/modules/IPsec/src/java/android/net/eap/EapSessionConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSaProposal.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSaProposal.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionCallback.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionConfiguration.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ChildSessionParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeDerAsn1DnIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeDerAsn1DnIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeFqdnIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeFqdnIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIpv4AddrIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIpv4AddrIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIpv6AddrIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeIpv6AddrIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeKeyIdIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeKeyIdIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeManager.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeRfc822AddrIdentification.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeRfc822AddrIdentification.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSaProposal.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSaProposal.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSession.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSession.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionCallback.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionConfiguration.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionConnectionInfo.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionConnectionInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeSessionParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeTrafficSelector.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeTrafficSelector.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeTunnelConnectionParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/IkeTunnelConnectionParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/SaProposal.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/SaProposal.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/TransportModeChildSessionParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/TransportModeChildSessionParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/TunnelModeChildSessionParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/TunnelModeChildSessionParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/AuthenticationFailedException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/AuthenticationFailedException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/ChildSaNotFoundException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/ChildSaNotFoundException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/FailedCpRequiredException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/FailedCpRequiredException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeInternalException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeInternalException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeNetworkLostException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeNetworkLostException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeNonProtocolException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeNonProtocolException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeProtocolException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/IkeProtocolException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InternalAddressFailureException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InternalAddressFailureException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidIkeSpiException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidIkeSpiException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidKeException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidKeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidMajorVersionException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidMajorVersionException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidMessageIdException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidMessageIdException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidSelectorsException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidSelectorsException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidSyntaxException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/InvalidSyntaxException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/NoAdditionalSasException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/NoAdditionalSasException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/NoValidProposalChosenException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/NoValidProposalChosenException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/SinglePairRequiredException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/SinglePairRequiredException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/TemporaryFailureException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/TemporaryFailureException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/TsUnacceptableException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/TsUnacceptableException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/UnrecognizedIkeProtocolException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/UnrecognizedIkeProtocolException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/UnsupportedCriticalPayloadException.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/exceptions/UnsupportedCriticalPayloadException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppBackoffTimer.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppBackoffTimer.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppData.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppExtension.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppExtension.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppN1ModeInformation.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppN1ModeInformation.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppParams.java"
+    to: "packages/modules/IPsec/src/java/android/net/ipsec/ike/ike3gpp/Ike3gppParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/crypto/KeyGenerationUtils.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/crypto/KeyGenerationUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/EapAuthenticator.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/EapAuthenticator.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/EapResult.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/EapResult.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/IEapCallback.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/IEapCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/Fips186_2Prf.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/Fips186_2Prf.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/HmacSha256ByteSigner.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/HmacSha256ByteSigner.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/ParityBitUtil.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/ParityBitUtil.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/TlsSession.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/TlsSession.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/TlsSessionFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/crypto/TlsSessionFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapInvalidPacketLengthException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapInvalidPacketLengthException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapInvalidRequestException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapInvalidRequestException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapSilentException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/EapSilentException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/InvalidEapCodeException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/InvalidEapCodeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/InvalidEapResponseException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/InvalidEapResponseException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/UnsupportedEapTypeException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/UnsupportedEapTypeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/mschapv2/EapMsChapV2ParsingException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/mschapv2/EapMsChapV2ParsingException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapAkaInvalidAuthenticationResponse.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapAkaInvalidAuthenticationResponse.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaAuthenticationFailureException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaAuthenticationFailureException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaIdentityUnavailableException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaIdentityUnavailableException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidAtPaddingException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidAtPaddingException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidAttributeException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidAttributeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidLengthException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaInvalidLengthException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaUnsupportedAttributeException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimAkaUnsupportedAttributeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimInvalidAtRandException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimInvalidAtRandException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimInvalidTypeDataException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/simaka/EapSimInvalidTypeDataException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/ttls/EapTtlsHandshakeException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/ttls/EapTtlsHandshakeException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/ttls/EapTtlsParsingException.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/exceptions/ttls/EapTtlsParsingException.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/EapData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/EapData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/EapMessage.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/EapMessage.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/mschapv2/EapMsChapV2TypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/mschapv2/EapMsChapV2TypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaAttributeFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaAttributeFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaPrimeAttributeFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaPrimeAttributeFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaPrimeTypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaPrimeTypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaTypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapAkaTypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaAttribute.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaAttribute.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaAttributeFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaAttributeFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaTypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAkaTypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAttributeFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimAttributeFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimTypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/simaka/EapSimTypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsAvp.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsAvp.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsInboundFragmentationHelper.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsInboundFragmentationHelper.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsOutboundFragmentationHelper.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsOutboundFragmentationHelper.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsTypeData.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/message/ttls/EapTtlsTypeData.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapAkaMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapAkaMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapAkaPrimeMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapAkaPrimeMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapMsChapV2MethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapMsChapV2MethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapSimAkaMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapSimAkaMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapSimMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapSimMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapTtlsMethodStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/eap/statemachine/EapTtlsMethodStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/AbstractSessionStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/AbstractSessionStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ChildSessionStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ChildSessionStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ChildSessionStateMachineFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ChildSessionStateMachineFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeDhParams.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeDhParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeEapAuthenticatorFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeEapAuthenticatorFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeLocalRequestScheduler.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeLocalRequestScheduler.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSessionStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSessionStateMachine.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSocket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSocket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSocketConfig.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeSocketConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp4Socket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp4Socket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp6Socket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp6Socket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp6WithEncapPortSocket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdp6WithEncapPortSocket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpEncapPortPacketHandler.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpEncapPortPacketHandler.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpEncapSocket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpEncapSocket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpSocket.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/IkeUdpSocket.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/SaRecord.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/SaRecord.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/AesXCbcImpl.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/AesXCbcImpl.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCipher.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCipher.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCombinedModeCipher.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCombinedModeCipher.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCrypto.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeCrypto.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMac.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMac.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMacIntegrity.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMacIntegrity.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMacPrf.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeMacPrf.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeNormalModeCipher.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/crypto/IkeNormalModeCipher.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppBackoffTimerUtils.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppBackoffTimerUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppExchangeBase.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppExchangeBase.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppExtensionExchange.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppExtensionExchange.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppIkeAuth.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppIkeAuth.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppN1ModeUtils.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/ike3gpp/Ike3gppN1ModeUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/HardwareKeepaliveImpl.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/HardwareKeepaliveImpl.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/IkeNattKeepalive.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/IkeNattKeepalive.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/SoftwareKeepaliveImpl.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/keepalive/SoftwareKeepaliveImpl.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthDigitalSignPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthDigitalSignPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthPskPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeAuthPskPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertReqPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertReqPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertX509CertPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeCertX509CertPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeConfigPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeConfigPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeDeletePayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeDeletePayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeEapPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeEapPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeEncryptedPayloadBody.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeEncryptedPayloadBody.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeHeader.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeHeader.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeIdPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeIdPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeInformationalPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeInformationalPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeKePayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeKePayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeMessage.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeMessage.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeNoncePayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeNoncePayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeNotifyPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeNotifyPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkePayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkePayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkePayloadFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkePayloadFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSaPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSaPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSkPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSkPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSkfPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeSkfPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeTsPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeTsPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeUnsupportedPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeUnsupportedPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeVendorPayload.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/message/IkeVendorPayload.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeDefaultNetworkCallback.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeDefaultNetworkCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeLocalAddressGenerator.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeLocalAddressGenerator.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeNetworkCallbackBase.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeNetworkCallbackBase.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeNetworkUpdater.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeNetworkUpdater.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeSpecificNetworkCallback.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/net/IkeSpecificNetworkCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/testmode/DeterministicSecureRandom.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/testmode/DeterministicSecureRandom.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/FdEventsReader.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/FdEventsReader.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeAlarmReceiver.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeAlarmReceiver.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeCertUtils.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeCertUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeSecurityParameterIndex.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeSecurityParameterIndex.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeSpiGenerator.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IkeSpiGenerator.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IpSecSpiGenerator.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/IpSecSpiGenerator.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/PacketReader.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/PacketReader.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/RandomnessFactory.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/RandomnessFactory.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/Retransmitter.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/ipsec/ike/utils/Retransmitter.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/utils/BigIntegerUtils.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/utils/BigIntegerUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/utils/Log.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/utils/Log.java"
+  >
+  copy_before: <
+    from: "packages/modules/IPsec/src/java/com/android/internal/net/utils/SimpleStateMachine.java"
+    to: "packages/modules/IPsec/src/java/com/android/internal/net/utils/SimpleStateMachine.java"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" && rm -rf out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/home && mkdir -p out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/external/conscrypt/conscrypt.module.public.api.stubs/android_common/turbine-combined/conscrypt.module.public.api.stubs.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/IPsec/ike-internals/android_common/turbine-combined/ike-internals.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/android.net.ipsec.ike.stubs.source.system_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/android.net.ipsec.ike.stubs.source.system_removed.txt --stubs out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/stubsDir --exclude-documentation-from-stubs --include-annotations --exclude-annotation androidx.annotation.RequiresApi --migrate-nullness __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.net.ipsec.ike.api.system.latest/gen/android.net.ipsec.ike.api.system.latest --extract-annotations __SBOX_SANDBOX_DIR__/out/android.net.ipsec.ike.stubs.source.system_annotations.zip --hide HiddenTypedefConstant --hide SuperfluousPrefix --hide AnnotationExtraction --stub-packages android.net.eap:android.net.ipsec.ike:android.net.ipsec.ike.exceptions:android.net.ipsec.ike.exceptions.protocol:android.net.ipsec.ike.ike3gpp  --hide-package com.android.internal.net --error UnhiddenSystemApi --hide BroadcastBehavior --hide CallbackInterface --hide DeprecationMismatch --hide HiddenSuperclass --hide HiddenTypedefConstant --hide HiddenTypeParameter --hide MissingPermission --hide RequiresPermission --hide SdkConstant --hide Todo --hide Typo --hide UnavailableSymbol  --hide MissingPermission --hide BroadcastBehavior --hide HiddenSuperclass --hide DeprecationMismatch --hide UnavailableSymbol --hide SdkConstant --hide HiddenTypeParameter --hide Todo --hide Typo --show-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.PRIVILEGED_APPS)' --api-lint __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.net.ipsec.ike.api.system.latest/gen/android.net.ipsec.ike.api.system.latest --report-even-if-suppressed __SBOX_SANDBOX_DIR__/out/api_lint_report.txt --lints-as-errors --warnings-as-errors --error-message:api-lint $'************************************************************\\nYour API changes are triggering API Lint warnings or errors.\\nTo make these errors go away, fix the code according to the\\nerror and/or warning messages above.\\n\\nIf it is not possible to do so, there are workarounds:\\n\\n1. You can suppress the errors with @SuppressLint(\"<id>\")\\n2. You can add a baseline file of existing lint failures\\n   to the build rule of android.net.ipsec.ike.stubs.source.system.\\n************************************************************\\n' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.net.ipsec.ike.api.system.latest/gen/android.net.ipsec.ike.api.system.latest --check-compatibility:removed:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.net.ipsec.ike-removed.api.system.latest/gen/android.net.ipsec.ike-removed.api.system.latest --baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.net.ipsec.ike-incompatibilities.api.system.latest/gen/android.net.ipsec.ike-incompatibilities.api.system.latest --update-baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/last_released_baseline.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/android.net.ipsec.ike.stubs.source.system-stubs.srcjar -C out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/stubsDir -D out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/api_lint.timestamp && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/android.net.ipsec.ike.stubs.source.system-stubs.srcjar"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/android.net.ipsec.ike.stubs.source.system-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/android.net.ipsec.ike.stubs.source.system_annotations.zip"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/android.net.ipsec.ike.stubs.source.system_annotations.zip"
+  >
+  copy_after: <
+    from: "out/android.net.ipsec.ike.stubs.source.system_api.txt"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/android.net.ipsec.ike.stubs.source.system_api.txt"
+  >
+  copy_after: <
+    from: "out/android.net.ipsec.ike.stubs.source.system_removed.txt"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/android.net.ipsec.ike.stubs.source.system_removed.txt"
+  >
+  copy_after: <
+    from: "out/api_lint.timestamp"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/api_lint.timestamp"
+  >
+  copy_after: <
+    from: "out/api_lint_report.txt"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/api_lint_report.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/check_last_released_api.timestamp"
+  >
+  copy_after: <
+    from: "out/last_released_baseline.txt"
+    to: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava/last_released_baseline.txt"
+  >
+  input_hash: "2ac7f9cb3d9e74098c7877bab7949dd0d6b0f4e8ecd77cc4e3017888ff6dfe53"
+  rsp_files: <
+    file: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source.system/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+
