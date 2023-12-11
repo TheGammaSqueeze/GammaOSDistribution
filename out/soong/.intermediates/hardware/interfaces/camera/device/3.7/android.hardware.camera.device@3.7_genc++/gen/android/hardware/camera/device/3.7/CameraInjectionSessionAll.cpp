@@ -1,0 +1,804 @@
+#define LOG_TAG "android.hardware.camera.device@3.7::CameraInjectionSession"
+
+#include <log/log.h>
+#include <cutils/trace.h>
+#include <hidl/HidlTransportSupport.h>
+
+#include <hidl/Static.h>
+#include <hwbinder/ProcessState.h>
+#include <utils/Trace.h>
+#include <android/hidl/manager/1.0/IServiceManager.h>
+#include <android/hardware/camera/device/3.7/BpHwCameraInjectionSession.h>
+#include <android/hardware/camera/device/3.7/BnHwCameraInjectionSession.h>
+#include <android/hardware/camera/device/3.7/BsCameraInjectionSession.h>
+#include <android/hardware/camera/device/3.7/BpHwCameraDeviceSession.h>
+#include <android/hardware/camera/device/3.6/BpHwCameraDeviceSession.h>
+#include <android/hardware/camera/device/3.5/BpHwCameraDeviceSession.h>
+#include <android/hardware/camera/device/3.4/BpHwCameraDeviceSession.h>
+#include <android/hardware/camera/device/3.3/BpHwCameraDeviceSession.h>
+#include <android/hardware/camera/device/3.2/BpHwCameraDeviceSession.h>
+#include <android/hidl/base/1.0/BpHwBase.h>
+#include <hidl/ServiceManagement.h>
+
+namespace android {
+namespace hardware {
+namespace camera {
+namespace device {
+namespace V3_7 {
+
+const char* ICameraInjectionSession::descriptor("android.hardware.camera.device@3.7::ICameraInjectionSession");
+
+__attribute__((constructor)) static void static_constructor() {
+    ::android::hardware::details::getBnConstructorMap().set(ICameraInjectionSession::descriptor,
+            [](void *iIntf) -> ::android::sp<::android::hardware::IBinder> {
+                return new BnHwCameraInjectionSession(static_cast<ICameraInjectionSession *>(iIntf));
+            });
+    ::android::hardware::details::getBsConstructorMap().set(ICameraInjectionSession::descriptor,
+            [](void *iIntf) -> ::android::sp<::android::hidl::base::V1_0::IBase> {
+                return new BsCameraInjectionSession(static_cast<ICameraInjectionSession *>(iIntf));
+            });
+}
+
+__attribute__((destructor))static void static_destructor() {
+    ::android::hardware::details::getBnConstructorMap().erase(ICameraInjectionSession::descriptor);
+    ::android::hardware::details::getBsConstructorMap().erase(ICameraInjectionSession::descriptor);
+}
+
+// Methods from ::android::hardware::camera::device::V3_2::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::constructDefaultRequestSettings(::android::hardware::camera::device::V3_2::RequestTemplate type, constructDefaultRequestSettings_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams(const ::android::hardware::camera::device::V3_2::StreamConfiguration& requestedConfiguration, configureStreams_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::processCaptureRequest(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::getCaptureRequestMetadataQueue(getCaptureRequestMetadataQueue_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::getCaptureResultMetadataQueue(getCaptureResultMetadataQueue_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status> ICameraInjectionSession::flush()
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::close()
+
+// Methods from ::android::hardware::camera::device::V3_3::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams_3_3(const ::android::hardware::camera::device::V3_2::StreamConfiguration& requestedConfiguration, configureStreams_3_3_cb _hidl_cb)
+
+// Methods from ::android::hardware::camera::device::V3_4::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams_3_4(const ::android::hardware::camera::device::V3_4::StreamConfiguration& requestedConfiguration, configureStreams_3_4_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::processCaptureRequest_3_4(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_4::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_3_4_cb _hidl_cb)
+
+// Methods from ::android::hardware::camera::device::V3_5::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams_3_5(const ::android::hardware::camera::device::V3_5::StreamConfiguration& requestedConfiguration, configureStreams_3_5_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::signalStreamFlush(const ::android::hardware::hidl_vec<int32_t>& streamIds, uint32_t streamConfigCounter)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::isReconfigurationRequired(const ::android::hardware::hidl_vec<uint8_t>& oldSessionParams, const ::android::hardware::hidl_vec<uint8_t>& newSessionParams, isReconfigurationRequired_cb _hidl_cb)
+
+// Methods from ::android::hardware::camera::device::V3_6::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams_3_6(const ::android::hardware::camera::device::V3_5::StreamConfiguration& requestedConfiguration, configureStreams_3_6_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::switchToOffline(const ::android::hardware::hidl_vec<int32_t>& streamsToKeep, switchToOffline_cb _hidl_cb)
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraDeviceSession follow.
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::configureStreams_3_7(const ::android::hardware::camera::device::V3_7::StreamConfiguration& requestedConfiguration, configureStreams_3_7_cb _hidl_cb)
+// no default implementation for: ::android::hardware::Return<void> ICameraInjectionSession::processCaptureRequest_3_7(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_7::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_3_7_cb _hidl_cb)
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraInjectionSession follow.
+// no default implementation for: ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status> ICameraInjectionSession::configureInjectionStreams(const ::android::hardware::camera::device::V3_7::StreamConfiguration& requestedConfiguration, const ::android::hardware::hidl_vec<uint8_t>& characteristics)
+
+// Methods from ::android::hidl::base::V1_0::IBase follow.
+::android::hardware::Return<void> ICameraInjectionSession::interfaceChain(interfaceChain_cb _hidl_cb){
+    _hidl_cb({
+        ::android::hardware::camera::device::V3_7::ICameraInjectionSession::descriptor,
+        ::android::hardware::camera::device::V3_7::ICameraDeviceSession::descriptor,
+        ::android::hardware::camera::device::V3_6::ICameraDeviceSession::descriptor,
+        ::android::hardware::camera::device::V3_5::ICameraDeviceSession::descriptor,
+        ::android::hardware::camera::device::V3_4::ICameraDeviceSession::descriptor,
+        ::android::hardware::camera::device::V3_3::ICameraDeviceSession::descriptor,
+        ::android::hardware::camera::device::V3_2::ICameraDeviceSession::descriptor,
+        ::android::hidl::base::V1_0::IBase::descriptor,
+    });
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::debug(const ::android::hardware::hidl_handle& fd, const ::android::hardware::hidl_vec<::android::hardware::hidl_string>& options){
+    (void)fd;
+    (void)options;
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::interfaceDescriptor(interfaceDescriptor_cb _hidl_cb){
+    _hidl_cb(::android::hardware::camera::device::V3_7::ICameraInjectionSession::descriptor);
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::getHashChain(getHashChain_cb _hidl_cb){
+    _hidl_cb({
+        (uint8_t[32]){55,64,236,119,59,46,184,250,107,216,198,232,121,238,219,86,196,228,48,107,136,241,194,15,165,17,3,215,145,216,113,177} /* 3740ec773b2eb8fa6bd8c6e879eedb56c4e4306b88f1c20fa51103d791d871b1 */,
+        (uint8_t[32]){59,230,250,163,209,26,217,199,236,1,161,160,160,9,207,17,203,101,215,1,209,9,218,179,118,19,206,156,251,60,221,96} /* 3be6faa3d11ad9c7ec01a1a0a009cf11cb65d701d109dab37613ce9cfb3cdd60 */,
+        (uint8_t[32]){235,144,196,211,102,240,90,2,93,29,26,54,114,248,180,195,227,62,66,15,163,135,247,63,33,178,100,100,91,253,248,69} /* eb90c4d366f05a025d1d1a3672f8b4c3e33e420fa387f73f21b264645bfdf845 */,
+        (uint8_t[32]){254,171,240,183,202,169,71,117,123,247,67,117,172,235,73,25,165,170,153,221,106,54,33,104,67,85,59,106,222,199,235,93} /* feabf0b7caa947757bf74375aceb4919a5aa99dd6a36216843553b6adec7eb5d */,
+        (uint8_t[32]){104,71,2,166,13,238,240,58,30,128,147,150,29,192,161,140,85,92,133,122,213,167,123,167,52,11,6,53,174,1,235,112} /* 684702a60deef03a1e8093961dc0a18c555c857ad5a77ba7340b0635ae01eb70 */,
+        (uint8_t[32]){187,207,195,247,72,176,120,246,166,108,78,34,128,132,166,121,211,11,214,27,253,232,187,122,145,239,213,7,185,28,27,253} /* bbcfc3f748b078f6a66c4e228084a679d30bd61bfde8bb7a91efd507b91c1bfd */,
+        (uint8_t[32]){140,175,145,4,220,104,133,133,44,11,17,125,133,61,217,63,109,75,97,160,163,101,19,130,149,235,139,205,65,179,100,35} /* 8caf9104dc6885852c0b117d853dd93f6d4b61a0a365138295eb8bcd41b36423 */,
+        (uint8_t[32]){236,127,215,158,208,45,250,133,188,73,148,38,173,174,62,190,35,239,5,36,243,205,105,87,19,147,36,184,59,24,202,76} /* ec7fd79ed02dfa85bc499426adae3ebe23ef0524f3cd6957139324b83b18ca4c */});
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::setHALInstrumentation(){
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<bool> ICameraInjectionSession::linkToDeath(const ::android::sp<::android::hardware::hidl_death_recipient>& recipient, uint64_t cookie){
+    (void)cookie;
+    return (recipient != nullptr);
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::ping(){
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::getDebugInfo(getDebugInfo_cb _hidl_cb){
+    ::android::hidl::base::V1_0::DebugInfo info = {};
+    info.pid = -1;
+    info.ptr = 0;
+    info.arch = 
+    #if defined(__LP64__)
+    ::android::hidl::base::V1_0::DebugInfo::Architecture::IS_64BIT
+    #else
+    ::android::hidl::base::V1_0::DebugInfo::Architecture::IS_32BIT
+    #endif
+    ;
+    _hidl_cb(info);
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<void> ICameraInjectionSession::notifySyspropsChanged(){
+    ::android::report_sysprop_change();
+    return ::android::hardware::Void();
+}
+
+::android::hardware::Return<bool> ICameraInjectionSession::unlinkToDeath(const ::android::sp<::android::hardware::hidl_death_recipient>& recipient){
+    return (recipient != nullptr);
+}
+
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>& parent, bool /* emitError */) {
+    return parent;
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_7::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_7::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_6::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_6::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_5::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_5::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_4::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_4::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_3::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_3::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hardware::camera::device::V3_2::ICameraDeviceSession>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hardware::camera::device::V3_2::ICameraDeviceSession, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+::android::hardware::Return<::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession>> ICameraInjectionSession::castFrom(const ::android::sp<::android::hidl::base::V1_0::IBase>& parent, bool emitError) {
+    return ::android::hardware::details::castInterface<ICameraInjectionSession, ::android::hidl::base::V1_0::IBase, BpHwCameraInjectionSession>(
+            parent, "android.hardware.camera.device@3.7::ICameraInjectionSession", emitError);
+}
+
+BpHwCameraInjectionSession::BpHwCameraInjectionSession(const ::android::sp<::android::hardware::IBinder> &_hidl_impl)
+        : BpInterface<ICameraInjectionSession>(_hidl_impl),
+          ::android::hardware::details::HidlInstrumentor("android.hardware.camera.device@3.7", "ICameraInjectionSession") {
+}
+
+void BpHwCameraInjectionSession::onLastStrongRef(const void* id) {
+    {
+        std::unique_lock<std::mutex> lock(_hidl_mMutex);
+        _hidl_mDeathRecipients.clear();
+    }
+
+    BpInterface<ICameraInjectionSession>::onLastStrongRef(id);
+}
+// Methods from ::android::hardware::camera::device::V3_7::ICameraInjectionSession follow.
+::android::hardware::Return<::android::hardware::camera::common::V1_0::Status> BpHwCameraInjectionSession::_hidl_configureInjectionStreams(::android::hardware::IInterface *_hidl_this, ::android::hardware::details::HidlInstrumentor *_hidl_this_instrumentor, const ::android::hardware::camera::device::V3_7::StreamConfiguration& requestedConfiguration, const ::android::hardware::hidl_vec<uint8_t>& characteristics) {
+    #ifdef __ANDROID_DEBUGGABLE__
+    bool mEnableInstrumentation = _hidl_this_instrumentor->isInstrumentationEnabled();
+    const auto &mInstrumentationCallbacks = _hidl_this_instrumentor->getInstrumentationCallbacks();
+    #else
+    (void) _hidl_this_instrumentor;
+    #endif // __ANDROID_DEBUGGABLE__
+    ::android::ScopedTrace PASTE(___tracer, __LINE__) (ATRACE_TAG_HAL, "HIDL::ICameraInjectionSession::configureInjectionStreams::client");
+    #ifdef __ANDROID_DEBUGGABLE__
+    if (UNLIKELY(mEnableInstrumentation)) {
+        std::vector<void *> _hidl_args;
+        _hidl_args.push_back((void *)&requestedConfiguration);
+        _hidl_args.push_back((void *)&characteristics);
+        for (const auto &callback: mInstrumentationCallbacks) {
+            callback(InstrumentationEvent::CLIENT_API_ENTRY, "android.hardware.camera.device", "3.7", "ICameraInjectionSession", "configureInjectionStreams", &_hidl_args);
+        }
+    }
+    #endif // __ANDROID_DEBUGGABLE__
+
+    ::android::hardware::Parcel _hidl_data;
+    ::android::hardware::Parcel _hidl_reply;
+    ::android::status_t _hidl_err;
+    ::android::status_t _hidl_transact_err;
+    ::android::hardware::Status _hidl_status;
+
+    ::android::hardware::camera::common::V1_0::Status _hidl_out_status;
+
+    _hidl_err = _hidl_data.writeInterfaceToken(BpHwCameraInjectionSession::descriptor);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    size_t _hidl_requestedConfiguration_parent;
+
+    _hidl_err = _hidl_data.writeBuffer(&requestedConfiguration, sizeof(requestedConfiguration), &_hidl_requestedConfiguration_parent);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    _hidl_err = writeEmbeddedToParcel(
+            requestedConfiguration,
+            &_hidl_data,
+            _hidl_requestedConfiguration_parent,
+            0 /* parentOffset */);
+
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    size_t _hidl_characteristics_parent;
+
+    _hidl_err = _hidl_data.writeBuffer(&characteristics, sizeof(characteristics), &_hidl_characteristics_parent);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    size_t _hidl_characteristics_child;
+
+    _hidl_err = ::android::hardware::writeEmbeddedToParcel(
+            characteristics,
+            &_hidl_data,
+            _hidl_characteristics_parent,
+            0 /* parentOffset */, &_hidl_characteristics_child);
+
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    _hidl_transact_err = ::android::hardware::IInterface::asBinder(_hidl_this)->transact(18 /* configureInjectionStreams */, _hidl_data, &_hidl_reply, 0 /* flags */);
+    if (_hidl_transact_err != ::android::OK) 
+    {
+        _hidl_err = _hidl_transact_err;
+        goto _hidl_error;
+    }
+
+    _hidl_err = ::android::hardware::readFromParcel(&_hidl_status, _hidl_reply);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    if (!_hidl_status.isOk()) { return _hidl_status; }
+
+    _hidl_err = _hidl_reply.readUint32((uint32_t *)&_hidl_out_status);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+    #ifdef __ANDROID_DEBUGGABLE__
+    if (UNLIKELY(mEnableInstrumentation)) {
+        std::vector<void *> _hidl_args;
+        _hidl_args.push_back((void *)&_hidl_out_status);
+        for (const auto &callback: mInstrumentationCallbacks) {
+            callback(InstrumentationEvent::CLIENT_API_EXIT, "android.hardware.camera.device", "3.7", "ICameraInjectionSession", "configureInjectionStreams", &_hidl_args);
+        }
+    }
+    #endif // __ANDROID_DEBUGGABLE__
+
+    return ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status>(_hidl_out_status);
+
+_hidl_error:
+    _hidl_status.setFromStatusT(_hidl_err);
+    return ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status>(_hidl_status);
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_2::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::constructDefaultRequestSettings(::android::hardware::camera::device::V3_2::RequestTemplate type, constructDefaultRequestSettings_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_constructDefaultRequestSettings(this, this, type, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams(const ::android::hardware::camera::device::V3_2::StreamConfiguration& requestedConfiguration, configureStreams_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_configureStreams(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::processCaptureRequest(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_processCaptureRequest(this, this, requests, cachesToRemove, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::getCaptureRequestMetadataQueue(getCaptureRequestMetadataQueue_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_getCaptureRequestMetadataQueue(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::getCaptureResultMetadataQueue(getCaptureResultMetadataQueue_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_getCaptureResultMetadataQueue(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<::android::hardware::camera::common::V1_0::Status> BpHwCameraInjectionSession::flush(){
+    ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_flush(this, this);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::close(){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_2::BpHwCameraDeviceSession::_hidl_close(this, this);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_3::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams_3_3(const ::android::hardware::camera::device::V3_2::StreamConfiguration& requestedConfiguration, configureStreams_3_3_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_3::BpHwCameraDeviceSession::_hidl_configureStreams_3_3(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_4::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams_3_4(const ::android::hardware::camera::device::V3_4::StreamConfiguration& requestedConfiguration, configureStreams_3_4_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_4::BpHwCameraDeviceSession::_hidl_configureStreams_3_4(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::processCaptureRequest_3_4(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_4::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_3_4_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_4::BpHwCameraDeviceSession::_hidl_processCaptureRequest_3_4(this, this, requests, cachesToRemove, _hidl_cb);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_5::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams_3_5(const ::android::hardware::camera::device::V3_5::StreamConfiguration& requestedConfiguration, configureStreams_3_5_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_5::BpHwCameraDeviceSession::_hidl_configureStreams_3_5(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::signalStreamFlush(const ::android::hardware::hidl_vec<int32_t>& streamIds, uint32_t streamConfigCounter){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_5::BpHwCameraDeviceSession::_hidl_signalStreamFlush(this, this, streamIds, streamConfigCounter);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::isReconfigurationRequired(const ::android::hardware::hidl_vec<uint8_t>& oldSessionParams, const ::android::hardware::hidl_vec<uint8_t>& newSessionParams, isReconfigurationRequired_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_5::BpHwCameraDeviceSession::_hidl_isReconfigurationRequired(this, this, oldSessionParams, newSessionParams, _hidl_cb);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_6::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams_3_6(const ::android::hardware::camera::device::V3_5::StreamConfiguration& requestedConfiguration, configureStreams_3_6_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_6::BpHwCameraDeviceSession::_hidl_configureStreams_3_6(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::switchToOffline(const ::android::hardware::hidl_vec<int32_t>& streamsToKeep, switchToOffline_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_6::BpHwCameraDeviceSession::_hidl_switchToOffline(this, this, streamsToKeep, _hidl_cb);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraDeviceSession follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::configureStreams_3_7(const ::android::hardware::camera::device::V3_7::StreamConfiguration& requestedConfiguration, configureStreams_3_7_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_7::BpHwCameraDeviceSession::_hidl_configureStreams_3_7(this, this, requestedConfiguration, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::processCaptureRequest_3_7(const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_7::CaptureRequest>& requests, const ::android::hardware::hidl_vec<::android::hardware::camera::device::V3_2::BufferCache>& cachesToRemove, processCaptureRequest_3_7_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hardware::camera::device::V3_7::BpHwCameraDeviceSession::_hidl_processCaptureRequest_3_7(this, this, requests, cachesToRemove, _hidl_cb);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraInjectionSession follow.
+::android::hardware::Return<::android::hardware::camera::common::V1_0::Status> BpHwCameraInjectionSession::configureInjectionStreams(const ::android::hardware::camera::device::V3_7::StreamConfiguration& requestedConfiguration, const ::android::hardware::hidl_vec<uint8_t>& characteristics){
+    ::android::hardware::Return<::android::hardware::camera::common::V1_0::Status>  _hidl_out = ::android::hardware::camera::device::V3_7::BpHwCameraInjectionSession::_hidl_configureInjectionStreams(this, this, requestedConfiguration, characteristics);
+
+    return _hidl_out;
+}
+
+
+// Methods from ::android::hidl::base::V1_0::IBase follow.
+::android::hardware::Return<void> BpHwCameraInjectionSession::interfaceChain(interfaceChain_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_interfaceChain(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::debug(const ::android::hardware::hidl_handle& fd, const ::android::hardware::hidl_vec<::android::hardware::hidl_string>& options){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_debug(this, this, fd, options);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::interfaceDescriptor(interfaceDescriptor_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_interfaceDescriptor(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::getHashChain(getHashChain_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_getHashChain(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::setHALInstrumentation(){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_setHALInstrumentation(this, this);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<bool> BpHwCameraInjectionSession::linkToDeath(const ::android::sp<::android::hardware::hidl_death_recipient>& recipient, uint64_t cookie){
+    ::android::hardware::ProcessState::self()->startThreadPool();
+    ::android::hardware::hidl_binder_death_recipient *binder_recipient = new ::android::hardware::hidl_binder_death_recipient(recipient, cookie, this);
+    std::unique_lock<std::mutex> lock(_hidl_mMutex);
+    _hidl_mDeathRecipients.push_back(binder_recipient);
+    return (remote()->linkToDeath(binder_recipient) == ::android::OK);
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::ping(){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_ping(this, this);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::getDebugInfo(getDebugInfo_cb _hidl_cb){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_getDebugInfo(this, this, _hidl_cb);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<void> BpHwCameraInjectionSession::notifySyspropsChanged(){
+    ::android::hardware::Return<void>  _hidl_out = ::android::hidl::base::V1_0::BpHwBase::_hidl_notifySyspropsChanged(this, this);
+
+    return _hidl_out;
+}
+
+::android::hardware::Return<bool> BpHwCameraInjectionSession::unlinkToDeath(const ::android::sp<::android::hardware::hidl_death_recipient>& recipient){
+    std::unique_lock<std::mutex> lock(_hidl_mMutex);
+    for (auto it = _hidl_mDeathRecipients.rbegin();it != _hidl_mDeathRecipients.rend();++it) {
+        if ((*it)->getRecipient() == recipient) {
+            ::android::status_t status = remote()->unlinkToDeath(*it);
+            _hidl_mDeathRecipients.erase(it.base()-1);
+            return status == ::android::OK;
+        }
+    }
+    return false;
+}
+
+
+BnHwCameraInjectionSession::BnHwCameraInjectionSession(const ::android::sp<ICameraInjectionSession> &_hidl_impl)
+        : ::android::hidl::base::V1_0::BnHwBase(_hidl_impl, "android.hardware.camera.device@3.7", "ICameraInjectionSession") { 
+            _hidl_mImpl = _hidl_impl;
+            auto prio = ::android::hardware::getMinSchedulerPolicy(_hidl_impl);
+            mSchedPolicy = prio.sched_policy;
+            mSchedPriority = prio.prio;
+            setRequestingSid(::android::hardware::getRequestingSid(_hidl_impl));
+}
+
+BnHwCameraInjectionSession::~BnHwCameraInjectionSession() {
+    ::android::hardware::details::gBnMap->eraseIfEqual(_hidl_mImpl.get(), this);
+}
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraInjectionSession follow.
+::android::status_t BnHwCameraInjectionSession::_hidl_configureInjectionStreams(
+        ::android::hidl::base::V1_0::BnHwBase* _hidl_this,
+        const ::android::hardware::Parcel &_hidl_data,
+        ::android::hardware::Parcel *_hidl_reply,
+        TransactCallback _hidl_cb) {
+    #ifdef __ANDROID_DEBUGGABLE__
+    bool mEnableInstrumentation = _hidl_this->isInstrumentationEnabled();
+    const auto &mInstrumentationCallbacks = _hidl_this->getInstrumentationCallbacks();
+    #endif // __ANDROID_DEBUGGABLE__
+
+    ::android::status_t _hidl_err = ::android::OK;
+    if (!_hidl_data.enforceInterface(BnHwCameraInjectionSession::Pure::descriptor)) {
+        _hidl_err = ::android::BAD_TYPE;
+        return _hidl_err;
+    }
+
+    ::android::hardware::camera::device::V3_7::StreamConfiguration* requestedConfiguration;
+    const ::android::hardware::hidl_vec<uint8_t>* characteristics;
+
+    size_t _hidl_requestedConfiguration_parent;
+
+    _hidl_err = _hidl_data.readBuffer(sizeof(*requestedConfiguration), &_hidl_requestedConfiguration_parent,  const_cast<const void**>(reinterpret_cast<void **>(&requestedConfiguration)));
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    _hidl_err = readEmbeddedFromParcel(
+            const_cast<::android::hardware::camera::device::V3_7::StreamConfiguration &>(*requestedConfiguration),
+            _hidl_data,
+            _hidl_requestedConfiguration_parent,
+            0 /* parentOffset */);
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    size_t _hidl_characteristics_parent;
+
+    _hidl_err = _hidl_data.readBuffer(sizeof(*characteristics), &_hidl_characteristics_parent,  reinterpret_cast<const void **>(&characteristics));
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    size_t _hidl_characteristics_child;
+
+    _hidl_err = ::android::hardware::readEmbeddedFromParcel(
+            const_cast<::android::hardware::hidl_vec<uint8_t> &>(*characteristics),
+            _hidl_data,
+            _hidl_characteristics_parent,
+            0 /* parentOffset */, &_hidl_characteristics_child);
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    atrace_begin(ATRACE_TAG_HAL, "HIDL::ICameraInjectionSession::configureInjectionStreams::server");
+    #ifdef __ANDROID_DEBUGGABLE__
+    if (UNLIKELY(mEnableInstrumentation)) {
+        std::vector<void *> _hidl_args;
+        _hidl_args.push_back((void *)requestedConfiguration);
+        _hidl_args.push_back((void *)characteristics);
+        for (const auto &callback: mInstrumentationCallbacks) {
+            callback(InstrumentationEvent::SERVER_API_ENTRY, "android.hardware.camera.device", "3.7", "ICameraInjectionSession", "configureInjectionStreams", &_hidl_args);
+        }
+    }
+    #endif // __ANDROID_DEBUGGABLE__
+
+    ::android::hardware::camera::common::V1_0::Status _hidl_out_status = static_cast<ICameraInjectionSession*>(_hidl_this->getImpl().get())->configureInjectionStreams(*requestedConfiguration, *characteristics);
+
+    ::android::hardware::writeToParcel(::android::hardware::Status::ok(), _hidl_reply);
+
+    _hidl_err = _hidl_reply->writeUint32((uint32_t)_hidl_out_status);
+    if (_hidl_err != ::android::OK) { goto _hidl_error; }
+
+_hidl_error:
+    atrace_end(ATRACE_TAG_HAL);
+    #ifdef __ANDROID_DEBUGGABLE__
+    if (UNLIKELY(mEnableInstrumentation)) {
+        std::vector<void *> _hidl_args;
+        _hidl_args.push_back((void *)&_hidl_out_status);
+        for (const auto &callback: mInstrumentationCallbacks) {
+            callback(InstrumentationEvent::SERVER_API_EXIT, "android.hardware.camera.device", "3.7", "ICameraInjectionSession", "configureInjectionStreams", &_hidl_args);
+        }
+    }
+    #endif // __ANDROID_DEBUGGABLE__
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+    _hidl_cb(*_hidl_reply);
+    return _hidl_err;
+}
+
+
+// Methods from ::android::hardware::camera::device::V3_2::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_3::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_4::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_5::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_6::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraDeviceSession follow.
+
+// Methods from ::android::hardware::camera::device::V3_7::ICameraInjectionSession follow.
+
+// Methods from ::android::hidl::base::V1_0::IBase follow.
+::android::hardware::Return<void> BnHwCameraInjectionSession::ping() {
+    return ::android::hardware::Void();
+}
+::android::hardware::Return<void> BnHwCameraInjectionSession::getDebugInfo(getDebugInfo_cb _hidl_cb) {
+    ::android::hidl::base::V1_0::DebugInfo info = {};
+    info.pid = ::android::hardware::details::getPidIfSharable();
+    info.ptr = ::android::hardware::details::debuggable()? reinterpret_cast<uint64_t>(this) : 0;
+    info.arch = 
+    #if defined(__LP64__)
+    ::android::hidl::base::V1_0::DebugInfo::Architecture::IS_64BIT
+    #else
+    ::android::hidl::base::V1_0::DebugInfo::Architecture::IS_32BIT
+    #endif
+    ;
+    _hidl_cb(info);
+    return ::android::hardware::Void();
+}
+
+::android::status_t BnHwCameraInjectionSession::onTransact(
+        uint32_t _hidl_code,
+        const ::android::hardware::Parcel &_hidl_data,
+        ::android::hardware::Parcel *_hidl_reply,
+        uint32_t _hidl_flags,
+        TransactCallback _hidl_cb) {
+    ::android::status_t _hidl_err = ::android::OK;
+
+    switch (_hidl_code) {
+        case 1 /* constructDefaultRequestSettings */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_constructDefaultRequestSettings(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 2 /* configureStreams */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_configureStreams(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 3 /* processCaptureRequest */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_processCaptureRequest(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 4 /* getCaptureRequestMetadataQueue */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_getCaptureRequestMetadataQueue(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 5 /* getCaptureResultMetadataQueue */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_getCaptureResultMetadataQueue(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 6 /* flush */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_flush(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 7 /* close */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_close(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 8 /* configureStreams_3_3 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_3::BnHwCameraDeviceSession::_hidl_configureStreams_3_3(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 9 /* configureStreams_3_4 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_4::BnHwCameraDeviceSession::_hidl_configureStreams_3_4(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 10 /* processCaptureRequest_3_4 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_4::BnHwCameraDeviceSession::_hidl_processCaptureRequest_3_4(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 11 /* configureStreams_3_5 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_5::BnHwCameraDeviceSession::_hidl_configureStreams_3_5(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 12 /* signalStreamFlush */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_5::BnHwCameraDeviceSession::_hidl_signalStreamFlush(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 13 /* isReconfigurationRequired */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_5::BnHwCameraDeviceSession::_hidl_isReconfigurationRequired(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 14 /* configureStreams_3_6 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_6::BnHwCameraDeviceSession::_hidl_configureStreams_3_6(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 15 /* switchToOffline */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_6::BnHwCameraDeviceSession::_hidl_switchToOffline(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 16 /* configureStreams_3_7 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_7::BnHwCameraDeviceSession::_hidl_configureStreams_3_7(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 17 /* processCaptureRequest_3_7 */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_7::BnHwCameraDeviceSession::_hidl_processCaptureRequest_3_7(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        case 18 /* configureInjectionStreams */:
+        {
+            _hidl_err = ::android::hardware::camera::device::V3_7::BnHwCameraInjectionSession::_hidl_configureInjectionStreams(this, _hidl_data, _hidl_reply, _hidl_cb);
+            break;
+        }
+
+        default:
+        {
+            return ::android::hidl::base::V1_0::BnHwBase::onTransact(
+                    _hidl_code, _hidl_data, _hidl_reply, _hidl_flags, _hidl_cb);
+        }
+    }
+
+    if (_hidl_err == ::android::UNEXPECTED_NULL) {
+        _hidl_err = ::android::hardware::writeToParcel(
+                ::android::hardware::Status::fromExceptionCode(::android::hardware::Status::EX_NULL_POINTER),
+                _hidl_reply);
+    }return _hidl_err;
+}
+
+BsCameraInjectionSession::BsCameraInjectionSession(const ::android::sp<::android::hardware::camera::device::V3_7::ICameraInjectionSession> impl) : ::android::hardware::details::HidlInstrumentor("android.hardware.camera.device@3.7", "ICameraInjectionSession"), mImpl(impl) {
+    mOnewayQueue.start(3000 /* similar limit to binderized */);
+}
+
+::android::hardware::Return<void> BsCameraInjectionSession::addOnewayTask(std::function<void(void)> fun) {
+    if (!mOnewayQueue.push(fun)) {
+        return ::android::hardware::Status::fromExceptionCode(
+                ::android::hardware::Status::EX_TRANSACTION_FAILED,
+                "Passthrough oneway function queue exceeds maximum size.");
+    }
+    return ::android::hardware::Status();
+}
+
+::android::sp<ICameraInjectionSession> ICameraInjectionSession::tryGetService(const std::string &serviceName, const bool getStub) {
+    return ::android::hardware::details::getServiceInternal<BpHwCameraInjectionSession>(serviceName, false, getStub);
+}
+
+::android::sp<ICameraInjectionSession> ICameraInjectionSession::getService(const std::string &serviceName, const bool getStub) {
+    return ::android::hardware::details::getServiceInternal<BpHwCameraInjectionSession>(serviceName, true, getStub);
+}
+
+::android::status_t ICameraInjectionSession::registerAsService(const std::string &serviceName) {
+    return ::android::hardware::details::registerAsServiceInternal(this, serviceName);
+}
+
+bool ICameraInjectionSession::registerForNotifications(
+        const std::string &serviceName,
+        const ::android::sp<::android::hidl::manager::V1_0::IServiceNotification> &notification) {
+    const ::android::sp<::android::hidl::manager::V1_0::IServiceManager> sm
+            = ::android::hardware::defaultServiceManager();
+    if (sm == nullptr) {
+        return false;
+    }
+    ::android::hardware::Return<bool> success =
+            sm->registerForNotifications("android.hardware.camera.device@3.7::ICameraInjectionSession",
+                    serviceName, notification);
+    return success.isOk() && success;
+}
+
+static_assert(sizeof(::android::hardware::MQDescriptor<char, ::android::hardware::kSynchronizedReadWrite>) == 32, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_handle) == 16, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_memory) == 40, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_string) == 16, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_vec<char>) == 16, "wrong size");
+
+}  // namespace V3_7
+}  // namespace device
+}  // namespace camera
+}  // namespace hardware
+}  // namespace android
