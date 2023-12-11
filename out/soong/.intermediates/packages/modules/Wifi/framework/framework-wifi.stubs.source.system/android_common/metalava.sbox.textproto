@@ -1,0 +1,753 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "frameworks/libs/modules-utils/java/com/android/modules/utils/ParceledListSlice.aidl"
+    to: "frameworks/libs/modules-utils/java/com/android/modules/utils/ParceledListSlice.aidl"
+  >
+  copy_before: <
+    from: "frameworks/libs/modules-utils/java/com/android/modules/utils/StringParceledListSlice.aidl"
+    to: "frameworks/libs/modules-utils/java/com/android/modules/utils/StringParceledListSlice.aidl"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+    to: "out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/framework-wifi-util-lib/android_common/turbine-combined/framework-wifi-util-lib.jar"
+    to: "out/.intermediates/frameworks/base/framework-wifi-util-lib/android_common/turbine-combined/framework-wifi-util-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/build/modules-utils-build/android_common/turbine-combined/modules-utils-build.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/build/modules-utils-build/android_common/turbine-combined/modules-utils-build.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/hardware/interfaces/wifi/1.0/android.hardware.wifi-V1.0-java-constants/android_common/turbine-combined/android.hardware.wifi-V1.0-java-constants.jar"
+    to: "out/.intermediates/hardware/interfaces/wifi/1.0/android.hardware.wifi-V1.0-java-constants/android_common/turbine-combined/android.hardware.wifi-V1.0-java-constants.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+    to: "out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl0.srcjar"
+    to: "out/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl0.srcjar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl1.srcjar"
+    to: "out/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl1.srcjar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar"
+    to: "out/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-wifi-incompatibilities.api.system.latest/gen/framework-wifi-incompatibilities.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-wifi-incompatibilities.api.system.latest/gen/framework-wifi-incompatibilities.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-wifi-removed.api.system.latest/gen/framework-wifi-removed.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-wifi-removed.api.system.latest/gen/framework-wifi-removed.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-wifi.api.system.latest/gen/framework-wifi.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-wifi.api.system.latest/gen/framework-wifi.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar"
+    to: "out/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/CoexUnsafeChannel.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/CoexUnsafeChannel.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/ScanResult.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/ScanResult.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApCapability.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApCapability.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApConfiguration.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApConfiguration.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiAvailableChannel.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiAvailableChannel.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiClient.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiClient.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConfiguration.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConfiguration.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConnectedSessionInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConnectedSessionInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiEnterpriseConfig.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiEnterpriseConfig.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkConnectionStatistics.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkConnectionStatistics.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkSuggestion.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkSuggestion.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiUsabilityStatsEntry.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiUsabilityStatsEntry.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WpsInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/WpsInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/AwareResources.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/AwareResources.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/Characteristics.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/Characteristics.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/PublishConfig.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/PublishConfig.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/SubscribeConfig.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/aware/SubscribeConfig.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/OsuProvider.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/OsuProvider.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/PasspointConfiguration.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/PasspointConfiguration.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/pps/Credential.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/pps/Credential.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/pps/HomeSp.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/pps/HomeSp.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pConfig.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pConfig.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pDevice.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pDevice.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pDeviceList.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pDeviceList.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pGroup.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pGroup.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/WifiP2pInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/nsd/WifiP2pServiceInfo.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/nsd/WifiP2pServiceInfo.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/RangingRequest.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/RangingRequest.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/RangingResult.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/RangingResult.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/ResponderConfig.aidl"
+    to: "packages/modules/Wifi/framework/aidl-export/android/net/wifi/rtt/ResponderConfig.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/api/system-lint-baseline.txt"
+    to: "packages/modules/Wifi/framework/api/system-lint-baseline.txt"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/AnqpInformationElement.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/AnqpInformationElement.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/BatchedScanResult.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/BatchedScanResult.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/CoexUnsafeChannel.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/CoexUnsafeChannel.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/EAPConstants.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/EAPConstants.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/EasyConnectStatusCallback.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/EasyConnectStatusCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IActionListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IActionListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ICoexCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ICoexCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IDppCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IDppCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ILocalOnlyHotspotCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ILocalOnlyHotspotCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestMatchCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestMatchCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestUserSelectionCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestUserSelectionCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiActivityEnergyInfoListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiActivityEnergyInfoListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IScoreUpdateObserver.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IScoreUpdateObserver.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ISoftApCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ISoftApCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ISubsystemRestartCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ISubsystemRestartCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionConnectionStatusListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionConnectionStatusListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionUserApprovalStatusListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionUserApprovalStatusListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ITrafficStateCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ITrafficStateCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiConnectedNetworkScorer.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiConnectedNetworkScorer.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiScanner.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiScanner.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiVerboseLoggingStatusChangedListener.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/IWifiVerboseLoggingStatusChangedListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ParcelUtil.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ParcelUtil.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/RttManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/RttManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/RttManager.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/RttManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/ScanResult.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/ScanResult.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SecurityParams.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SecurityParams.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApCapability.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApCapability.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApConfiguration.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SoftApInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SupplicantState.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SupplicantState.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/SynchronousExecutor.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/SynchronousExecutor.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiAnnotations.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiAnnotations.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiAvailableChannel.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiAvailableChannel.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiClient.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiClient.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiConfiguration.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiConnectedSessionInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiConnectedSessionInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiEnterpriseConfig.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiEnterpriseConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiFrameworkInitializer.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiFrameworkInitializer.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkAgentSpecifier.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkAgentSpecifier.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkConnectionStatistics.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkConnectionStatistics.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkSpecifier.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkSpecifier.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkSuggestion.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiNetworkSuggestion.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiScanner.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiScanner.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiSsid.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiSsid.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WifiUsabilityStatsEntry.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WifiUsabilityStatsEntry.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/WpsInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/WpsInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/AttachCallback.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/AttachCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/AwareResources.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/AwareResources.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/Characteristics.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/Characteristics.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ConfigRequest.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ConfigRequest.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ConfigRequest.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ConfigRequest.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/DiscoverySession.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/DiscoverySession.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/DiscoverySessionCallback.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/DiscoverySessionCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareDiscoverySessionCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareDiscoverySessionCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareEventCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareEventCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareMacAddressProvider.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareMacAddressProvider.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IWifiAwareManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IdentityChangedListener.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/IdentityChangedListener.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ParcelablePeerHandle.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/ParcelablePeerHandle.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PeerHandle.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PeerHandle.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PublishConfig.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PublishConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PublishDiscoverySession.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/PublishDiscoverySession.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/SubscribeConfig.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/SubscribeConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/SubscribeDiscoverySession.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/SubscribeDiscoverySession.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/TlvBufferUtils.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/TlvBufferUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareAgentNetworkSpecifier.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareAgentNetworkSpecifier.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareManager.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareNetworkInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareNetworkInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareNetworkSpecifier.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareNetworkSpecifier.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareSession.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareSession.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareUtils.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/aware/WifiAwareUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/ConfigParser.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/ConfigParser.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/IProvisioningCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/IProvisioningCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/OsuProvider.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/OsuProvider.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/PasspointConfiguration.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/PasspointConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/ProvisioningCallback.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/ProvisioningCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/PpsMoParser.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/PpsMoParser.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/XMLNode.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/XMLNode.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/XMLParser.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/omadm/XMLParser.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/Credential.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/Credential.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/HomeSp.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/HomeSp.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/Policy.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/Policy.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/UpdateParameter.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/pps/UpdateParameter.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/IWifiP2pManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/IWifiP2pManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pConfig.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pDevice.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pDevice.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pDeviceList.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pDeviceList.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pGroup.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pGroup.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pGroupList.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pGroupList.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pManager.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pProvDiscEvent.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pProvDiscEvent.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pWfdInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/WifiP2pWfdInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceRequest.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceResponse.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pServiceResponse.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceInfo.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/CivicLocation.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/CivicLocation.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/CivicLocationKeys.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/CivicLocationKeys.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/IRttCallback.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/IRttCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/IWifiRttManager.aidl"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/IWifiRttManager.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingRequest.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingRequest.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingResult.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingResult.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingResultCallback.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/RangingResultCallback.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/ResponderConfig.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/ResponderConfig.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/ResponderLocation.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/ResponderLocation.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/WifiRttManager.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/rtt/WifiRttManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Wifi/framework/java/android/net/wifi/util/HexEncoding.java"
+    to: "packages/modules/Wifi/framework/java/android/net/wifi/util/HexEncoding.java"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" __SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl0.srcjar __SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/gen/aidl/aidl1.srcjar && rm -rf out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/home && mkdir -p out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/tools/platform-compat/java/android/compat/annotation/unsupportedappusage/android_common/turbine-combined/unsupportedappusage.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/framework-wifi-util-lib/android_common/turbine-combined/framework-wifi-util-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/hardware/interfaces/wifi/1.0/android.hardware.wifi-V1.0-java-constants/android_common/turbine-combined/android.hardware.wifi-V1.0-java-constants.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/build/modules-utils-build/android_common/turbine-combined/modules-utils-build.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/framework-wifi.stubs.source.system_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/framework-wifi.stubs.source.system_removed.txt --stubs out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/stubsDir --exclude-documentation-from-stubs --include-annotations --exclude-annotation androidx.annotation.RequiresApi --migrate-nullness __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-wifi.api.system.latest/gen/framework-wifi.api.system.latest --extract-annotations __SBOX_SANDBOX_DIR__/out/framework-wifi.stubs.source.system_annotations.zip --hide HiddenTypedefConstant --hide SuperfluousPrefix --hide AnnotationExtraction --error UnhiddenSystemApi --hide BroadcastBehavior --hide CallbackInterface --hide DeprecationMismatch --hide HiddenSuperclass --hide HiddenTypedefConstant --hide HiddenTypeParameter --hide MissingPermission --hide RequiresPermission --hide SdkConstant --hide Todo --hide Typo --hide UnavailableSymbol  --hide MissingPermission --hide BroadcastBehavior --hide HiddenSuperclass --hide DeprecationMismatch --hide UnavailableSymbol --hide SdkConstant --hide HiddenTypeParameter --hide Todo --hide Typo --show-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.PRIVILEGED_APPS)' --api-lint __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-wifi.api.system.latest/gen/framework-wifi.api.system.latest --report-even-if-suppressed __SBOX_SANDBOX_DIR__/out/api_lint_report.txt --lints-as-errors --warnings-as-errors --baseline:api-lint packages/modules/Wifi/framework/api/system-lint-baseline.txt --update-baseline:api-lint __SBOX_SANDBOX_DIR__/out/api_lint_baseline.txt --error-message:api-lint $'************************************************************\\nYour API changes are triggering API Lint warnings or errors.\\nTo make these errors go away, fix the code according to the\\nerror and/or warning messages above.\\n\\nIf it is not possible to do so, there are workarounds:\\n\\n1. You can suppress the errors with @SuppressLint(\"<id>\")\\n2. You can update the baseline by executing the following\\n   command:\\n       (cd $ANDROID_BUILD_TOP && cp \\\\\\n       \"out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/api_lint_baseline.txt\" \\\\\\n       \"packages/modules/Wifi/framework/api/system-lint-baseline.txt\")\\n   To submit the revised baseline.txt to the main Android\\n   repository, you will need approval.\\n************************************************************\\n' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-wifi.api.system.latest/gen/framework-wifi.api.system.latest --check-compatibility:removed:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-wifi-removed.api.system.latest/gen/framework-wifi-removed.api.system.latest --baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-wifi-incompatibilities.api.system.latest/gen/framework-wifi-incompatibilities.api.system.latest --update-baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/last_released_baseline.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/framework-wifi.stubs.source.system-stubs.srcjar -C out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/stubsDir -D out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/api_lint.timestamp && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/api_lint.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/api_lint.timestamp"
+  >
+  copy_after: <
+    from: "out/api_lint_baseline.txt"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/api_lint_baseline.txt"
+  >
+  copy_after: <
+    from: "out/api_lint_report.txt"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/api_lint_report.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/check_last_released_api.timestamp"
+  >
+  copy_after: <
+    from: "out/framework-wifi.stubs.source.system-stubs.srcjar"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/framework-wifi.stubs.source.system-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/framework-wifi.stubs.source.system_annotations.zip"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/framework-wifi.stubs.source.system_annotations.zip"
+  >
+  copy_after: <
+    from: "out/framework-wifi.stubs.source.system_api.txt"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/framework-wifi.stubs.source.system_api.txt"
+  >
+  copy_after: <
+    from: "out/framework-wifi.stubs.source.system_removed.txt"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/framework-wifi.stubs.source.system_removed.txt"
+  >
+  copy_after: <
+    from: "out/last_released_baseline.txt"
+    to: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava/last_released_baseline.txt"
+  >
+  input_hash: "2ce425b4ee09a0edd50de6e654cf33f1cea1a63d9d7286f0a89eece9647bb8e3"
+  rsp_files: <
+    file: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source.system/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+
