@@ -1,0 +1,940 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 3ea427c
+# common_typos_disable
+com.android.bips.BuiltInPrintService -> com.android.bips.BuiltInPrintService:
+    58:72:void <clinit>() -> <clinit>
+    57:57:void <init>() -> <init>
+    294:299:void createNotificationChannel() -> createNotificationChannel
+    256:257:com.android.bips.DelayedAction delay(int,java.lang.Runnable) -> delay
+    237:237:com.android.bips.ipp.CapabilitiesCache getCapabilitiesCache() -> getCapabilitiesCache
+    244:244:com.android.bips.ipp.CertificateStore getCertificateStore() -> getCertificateStore
+    264:270:java.lang.String getDescription(com.android.bips.discovery.DiscoveredPrinter) -> getDescription
+    181:181:com.android.bips.discovery.Discovery getDiscovery() -> getDiscovery
+    100:100:com.android.bips.BuiltInPrintService getInstance() -> getInstance
+    251:251:android.os.Handler getMainHandler() -> getMainHandler
+    195:195:com.android.bips.discovery.ManualDiscovery getManualDiscovery() -> getManualDiscovery
+    188:188:com.android.bips.discovery.Discovery getMdnsDiscovery() -> getMdnsDiscovery
+    216:216:com.android.bips.discovery.NsdResolveQueue getNsdResolveQueue() -> getNsdResolveQueue
+    202:202:com.android.bips.discovery.P2pDiscovery getP2pDiscovery() -> getP2pDiscovery
+    209:209:com.android.bips.p2p.P2pMonitor getP2pMonitor() -> getP2pMonitor
+    223:223:com.android.bips.P2pPermissionManager getP2pPermissionManager() -> getP2pPermissionManager
+    257:257:void lambda$delay$0(java.lang.Runnable) -> lambda$delay$0
+    278:279:void lockWifi() -> lockWifi
+    311:354:void notifyCertificateChange(java.lang.String,android.print.PrinterId,java.lang.String,byte[]) -> notifyCertificateChange
+    113:143:void onCreate() -> onCreate
+    162:162:android.printservice.PrinterDiscoverySession onCreatePrinterDiscoverySession() -> onCreatePrinterDiscoverySession
+    149:156:void onDestroy() -> onDestroy
+    168:168:void onPrintJobQueued(android.printservice.PrintJob) -> onPrintJobQueued
+    174:174:void onRequestCancelPrintJob(android.printservice.PrintJob) -> onRequestCancelPrintJob
+    360:383:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    230:230:com.android.bips.util.BroadcastMonitor receiveBroadcasts(android.content.BroadcastReceiver,java.lang.String[]) -> receiveBroadcasts
+    285:286:void unlockWifi() -> unlockWifi
+com.android.bips.BuiltInPrintService$$ExternalSyntheticLambda0 -> com.android.bips.BuiltInPrintService$$ExternalSyntheticLambda0:
+    java.lang.Runnable com.android.bips.BuiltInPrintService$$InternalSyntheticLambda$1$9d72aee195894c423944b854c2f7bbb1e4f6e07bfae49b3c216d724d1414a4a6$0.f$1 -> f$1
+    com.android.bips.BuiltInPrintService com.android.bips.BuiltInPrintService$$InternalSyntheticLambda$1$9d72aee195894c423944b854c2f7bbb1e4f6e07bfae49b3c216d724d1414a4a6$0.f$0 -> f$0
+    void com.android.bips.BuiltInPrintService$$InternalSyntheticLambda$1$9d72aee195894c423944b854c2f7bbb1e4f6e07bfae49b3c216d724d1414a4a6$0.<init>(com.android.bips.BuiltInPrintService,java.lang.Runnable) -> <init>
+    void com.android.bips.BuiltInPrintService$$InternalSyntheticLambda$1$9d72aee195894c423944b854c2f7bbb1e4f6e07bfae49b3c216d724d1414a4a6$0.cancel() -> cancel
+com.android.bips.ImagePrintActivity -> com.android.bips.ImagePrintActivity:
+    61:65:void <clinit>() -> <clinit>
+    57:77:void <init>() -> <init>
+    57:57:java.lang.String access$100() -> access$100
+    57:57:android.os.AsyncTask access$1002(com.android.bips.ImagePrintActivity,android.os.AsyncTask) -> access$1002
+    57:57:android.graphics.Bitmap access$1100(com.android.bips.ImagePrintActivity,android.print.PrintAttributes) -> access$1100
+    57:57:android.os.CancellationSignal access$200(com.android.bips.ImagePrintActivity) -> access$200
+    57:57:android.os.CancellationSignal access$202(com.android.bips.ImagePrintActivity,android.os.CancellationSignal) -> access$202
+    57:57:android.print.PrintAttributes$MediaSize access$300(com.android.bips.ImagePrintActivity) -> access$300
+    57:57:android.print.PrintJob access$400(com.android.bips.ImagePrintActivity) -> access$400
+    57:57:android.print.PrintJob access$402(com.android.bips.ImagePrintActivity,android.print.PrintJob) -> access$402
+    57:57:java.lang.String access$500(com.android.bips.ImagePrintActivity) -> access$500
+    57:57:android.graphics.Bitmap access$700(com.android.bips.ImagePrintActivity) -> access$700
+    57:57:android.graphics.Bitmap access$702(com.android.bips.ImagePrintActivity,android.graphics.Bitmap) -> access$702
+    57:57:java.lang.Runnable access$800(com.android.bips.ImagePrintActivity) -> access$800
+    57:57:java.lang.Runnable access$802(com.android.bips.ImagePrintActivity,java.lang.Runnable) -> access$802
+    57:57:android.util.DisplayMetrics access$900(com.android.bips.ImagePrintActivity) -> access$900
+    292:305:android.graphics.Bitmap getBitmap(android.print.PrintAttributes) -> getBitmap
+    180:193:android.print.PrintAttributes$MediaSize getLocaleDefaultMediaSize() -> getLocaleDefaultMediaSize
+    81:99:void onCreate(android.os.Bundle) -> onCreate
+    199:212:void onDestroy() -> onDestroy
+com.android.bips.ImagePrintActivity$ImageAdapter -> com.android.bips.ImagePrintActivity$ImageAdapter:
+    218:218:void <init>(com.android.bips.ImagePrintActivity) -> <init>
+    218:218:void <init>(com.android.bips.ImagePrintActivity,com.android.bips.ImagePrintActivity$1) -> <init>
+    231:231:void lambda$onLayout$0(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter$LayoutResultCallback,android.os.Bundle) -> lambda$onLayout$0
+    284:284:void onFinish() -> onFinish
+    228:253:void onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter$LayoutResultCallback,android.os.Bundle) -> onLayout
+    260:278:void onWrite(android.print.PageRange[],android.os.ParcelFileDescriptor,android.os.CancellationSignal,android.print.PrintDocumentAdapter$WriteResultCallback) -> onWrite
+com.android.bips.ImagePrintActivity$ImageAdapter$$ExternalSyntheticLambda0 -> com.android.bips.ImagePrintActivity$ImageAdapter$$ExternalSyntheticLambda0:
+    com.android.bips.ImagePrintActivity$ImageAdapter com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$0 -> f$0
+    android.print.PrintAttributes com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$2 -> f$2
+    android.print.PrintAttributes com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$1 -> f$1
+    android.os.Bundle com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$5 -> f$5
+    android.os.CancellationSignal com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$3 -> f$3
+    android.print.PrintDocumentAdapter$LayoutResultCallback com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.f$4 -> f$4
+    void com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.<init>(com.android.bips.ImagePrintActivity$ImageAdapter,android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter$LayoutResultCallback,android.os.Bundle) -> <init>
+    void com.android.bips.ImagePrintActivity$ImageAdapter$$InternalSyntheticLambda$0$8389c24f42119760198940442ac02bf4f9526e1e3d5c92bdec068dad5d2873ea$0.run() -> run
+com.android.bips.ImagePrintActivity$ImageAdapter$1 -> com.android.bips.ImagePrintActivity$ImageAdapter$1:
+    263:263:void <init>(com.android.bips.ImagePrintActivity$ImageAdapter,android.content.Context,android.graphics.Bitmap,android.print.PrintAttributes,int,android.os.CancellationSignal,android.os.CancellationSignal,android.print.PrintDocumentAdapter$WriteResultCallback) -> <init>
+    263:263:void onPostExecute(java.lang.Object) -> onPostExecute
+    266:276:void onPostExecute(java.lang.Throwable) -> onPostExecute
+com.android.bips.ImagePrintActivity$LoadBitmapTask -> com.android.bips.ImagePrintActivity$LoadBitmapTask:
+    105:105:void <init>(com.android.bips.ImagePrintActivity) -> <init>
+    105:105:void <init>(com.android.bips.ImagePrintActivity,com.android.bips.ImagePrintActivity$1) -> <init>
+    105:105:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    109:123:android.graphics.Bitmap doInBackground(android.net.Uri[]) -> doInBackground
+    131:134:android.graphics.Bitmap loadBitmap(android.net.Uri,android.graphics.BitmapFactory$Options) -> loadBitmap
+    105:105:void onPostExecute(java.lang.Object) -> onPostExecute
+    160:173:void onPostExecute(android.graphics.Bitmap) -> onPostExecute
+    105:105:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    142:155:void onProgressUpdate(java.lang.Boolean[]) -> onProgressUpdate
+com.android.bips.ImageToPdfTask -> com.android.bips.ImageToPdfTask:
+    40:40:void <clinit>() -> <clinit>
+    51:56:void <init>(android.content.Context,android.graphics.Bitmap,android.print.PrintAttributes,int,android.os.CancellationSignal) -> <init>
+    39:39:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    61:70:java.lang.Throwable doInBackground(android.os.ParcelFileDescriptor[]) -> doInBackground
+    118:135:void drawDirect(android.graphics.pdf.PdfDocument$Page,android.graphics.RectF,boolean,boolean) -> drawDirect
+    142:158:void drawOptimized(android.graphics.pdf.PdfDocument$Page,android.graphics.RectF,float,boolean) -> drawOptimized
+    77:84:void writeBitmapToDocument() -> writeBitmapToDocument
+    88:108:void writeBitmapToPage(android.graphics.pdf.PdfDocument$Page,boolean) -> writeBitmapToPage
+com.android.bips.JobQueue -> com.android.bips.JobQueue:
+    29:30:void <init>() -> <init>
+    41:48:void cancel(android.print.PrinterId) -> cancel
+    62:71:void cancel(android.print.PrintJobId) -> cancel
+    83:84:void lambda$startNextJob$0(com.android.bips.LocalPrintJob) -> lambda$startNextJob$0
+    35:36:void print(com.android.bips.LocalPrintJob) -> print
+    54:55:void restart(android.print.PrinterId) -> restart
+    77:82:void startNextJob() -> startNextJob
+com.android.bips.JobQueue$$ExternalSyntheticLambda0 -> com.android.bips.JobQueue$$ExternalSyntheticLambda0:
+    com.android.bips.JobQueue com.android.bips.JobQueue$$InternalSyntheticLambda$0$293347193797a5dfe464106f189be5f7f796e574d47c20e3b48052a070dc2827$0.f$0 -> f$0
+    void com.android.bips.JobQueue$$InternalSyntheticLambda$0$293347193797a5dfe464106f189be5f7f796e574d47c20e3b48052a070dc2827$0.<init>(com.android.bips.JobQueue) -> <init>
+    void com.android.bips.JobQueue$$InternalSyntheticLambda$0$293347193797a5dfe464106f189be5f7f796e574d47c20e3b48052a070dc2827$0.accept(java.lang.Object) -> accept
+com.android.bips.LocalDiscoverySession -> com.android.bips.LocalDiscoverySession:
+    45:45:void <clinit>() -> <clinit>
+    52:74:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    217:242:void handlePrinter(com.android.bips.LocalPrinter) -> handlePrinter
+    268:278:boolean isHandledByOtherService(com.android.bips.LocalPrinter) -> isHandledByOtherService
+    257:257:boolean isKnown(android.print.PrinterId) -> isKnown
+    250:250:boolean isPriority(android.print.PrinterId) -> isPriority
+    189:207:void lambda$monitorExpiredPrinters$1() -> lambda$monitorExpiredPrinters$1
+    158:158:com.android.bips.LocalPrinter lambda$onPrinterFound$0(com.android.bips.discovery.DiscoveredPrinter,android.print.PrinterId) -> lambda$onPrinterFound$0
+    187:188:void monitorExpiredPrinters() -> monitorExpiredPrinters
+    142:142:void onDestroy() -> onDestroy
+    312:335:void onPrintServiceRecommendationsChanged() -> onPrintServiceRecommendationsChanged
+    340:355:void onPrintServicesChanged() -> onPrintServicesChanged
+    292:307:void onPrintServicesStateUpdated() -> onPrintServicesStateUpdated
+    151:162:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+    173:183:void onPrinterLost(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterLost
+    82:93:void onStartPrinterDiscovery(java.util.List) -> onStartPrinterDiscovery
+    119:126:void onStartPrinterStateTracking(android.print.PrinterId) -> onStartPrinterStateTracking
+    99:107:void onStopPrinterDiscovery() -> onStopPrinterDiscovery
+    132:136:void onStopPrinterStateTracking(android.print.PrinterId) -> onStopPrinterStateTracking
+com.android.bips.LocalDiscoverySession$$ExternalSyntheticLambda0 -> com.android.bips.LocalDiscoverySession$$ExternalSyntheticLambda0:
+    com.android.bips.LocalDiscoverySession com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$3b5b5a9cc425dbafc2866310b0ebbd5d28d707a5c9c95277b209410f1a6cb3c5$0.f$0 -> f$0
+    void com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$3b5b5a9cc425dbafc2866310b0ebbd5d28d707a5c9c95277b209410f1a6cb3c5$0.<init>(com.android.bips.LocalDiscoverySession) -> <init>
+    void com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$3b5b5a9cc425dbafc2866310b0ebbd5d28d707a5c9c95277b209410f1a6cb3c5$0.run() -> run
+com.android.bips.LocalDiscoverySession$$ExternalSyntheticLambda1 -> com.android.bips.LocalDiscoverySession$$ExternalSyntheticLambda1:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$70caf52436f8cbe8a42d5a7fdbdeb6fc6824293469c386661773aa5f9b6a4b71$0.f$1 -> f$1
+    com.android.bips.LocalDiscoverySession com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$70caf52436f8cbe8a42d5a7fdbdeb6fc6824293469c386661773aa5f9b6a4b71$0.f$0 -> f$0
+    void com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$70caf52436f8cbe8a42d5a7fdbdeb6fc6824293469c386661773aa5f9b6a4b71$0.<init>(com.android.bips.LocalDiscoverySession,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    java.lang.Object com.android.bips.LocalDiscoverySession$$InternalSyntheticLambda$0$70caf52436f8cbe8a42d5a7fdbdeb6fc6824293469c386661773aa5f9b6a4b71$0.apply(java.lang.Object) -> apply
+com.android.bips.LocalDiscoverySessionInfo -> com.android.bips.LocalDiscoverySessionInfo:
+    36:39:void <clinit>() -> <clinit>
+    47:53:void <init>(android.printservice.PrintService) -> <init>
+    128:128:boolean isKnownGood(android.print.PrinterId) -> isKnownGood
+    60:80:void load() -> load
+    85:91:java.util.List loadPrinterIds(android.util.JsonReader) -> loadPrinterIds
+    99:110:void save() -> save
+    116:121:void savePrinterIds(android.util.JsonWriter,java.util.List,int) -> savePrinterIds
+    132:133:void setKnownGood(android.print.PrinterId) -> setKnownGood
+com.android.bips.LocalPrintJob -> com.android.bips.LocalPrintJob:
+    76:85:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.ipp.Backend,android.printservice.PrintJob) -> <init>
+    131:143:void cancel() -> cancel
+    250:266:void deliver() -> deliver
+    347:366:void finish(boolean,java.lang.String) -> finish
+    226:226:android.printservice.PrintJob getPrintJob() -> getPrintJob
+    149:149:android.print.PrintJobId getPrintJobId() -> getPrintJobId
+    326:335:void handleBadCertificate(com.android.bips.ipp.JobStatus) -> handleBadCertificate
+    273:320:void handleJobStatus(com.android.bips.ipp.JobStatus) -> handleJobStatus
+    109:110:void lambda$start$0() -> lambda$start$0
+    232:244:void onCapabilities(com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+    197:204:void onConnectionComplete(com.android.bips.discovery.DiscoveredPrinter) -> onConnectionComplete
+    213:221:void onConnectionDelayed(boolean) -> onConnectionDelayed
+    154:186:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+    122:124:void restart() -> restart
+    96:114:void start(java.util.function.Consumer) -> start
+com.android.bips.LocalPrintJob$$ExternalSyntheticLambda0 -> com.android.bips.LocalPrintJob$$ExternalSyntheticLambda0:
+    com.android.bips.LocalPrintJob com.android.bips.LocalPrintJob$$InternalSyntheticLambda$1$c4a49b07d29d6a50656b55615b1a4791f4d2b1c36108da2601f9deabf16b9ae1$0.f$0 -> f$0
+    void com.android.bips.LocalPrintJob$$InternalSyntheticLambda$1$c4a49b07d29d6a50656b55615b1a4791f4d2b1c36108da2601f9deabf16b9ae1$0.<init>(com.android.bips.LocalPrintJob) -> <init>
+    void com.android.bips.LocalPrintJob$$InternalSyntheticLambda$1$c4a49b07d29d6a50656b55615b1a4791f4d2b1c36108da2601f9deabf16b9ae1$0.run() -> run
+com.android.bips.LocalPrintJob$$ExternalSyntheticLambda1 -> com.android.bips.LocalPrintJob$$ExternalSyntheticLambda1:
+    com.android.bips.LocalPrintJob com.android.bips.LocalPrintJob$$InternalSyntheticLambda$0$b27ed201e37557a895758c660e56c1dd3b4285fecd8d392f68b79d1f56b8d9dc$0.f$0 -> f$0
+    void com.android.bips.LocalPrintJob$$InternalSyntheticLambda$0$b27ed201e37557a895758c660e56c1dd3b4285fecd8d392f68b79d1f56b8d9dc$0.<init>(com.android.bips.LocalPrintJob) -> <init>
+    void com.android.bips.LocalPrintJob$$InternalSyntheticLambda$0$b27ed201e37557a895758c660e56c1dd3b4285fecd8d392f68b79d1f56b8d9dc$0.accept(java.lang.Object) -> accept
+com.android.bips.LocalPrinter -> com.android.bips.LocalPrinter:
+    51:63:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.LocalDiscoverySession,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    44:44:com.android.bips.p2p.P2pPrinterConnection access$002(com.android.bips.LocalPrinter,com.android.bips.p2p.P2pPrinterConnection) -> access$002
+    44:44:com.android.bips.BuiltInPrintService access$100(com.android.bips.LocalPrinter) -> access$100
+    87:129:android.print.PrinterInfo createPrinterInfo(boolean) -> createPrinterInfo
+    160:178:void found(com.android.bips.discovery.DiscoveredPrinter) -> found
+    68:69:java.net.InetAddress getAddress() -> getAddress
+    82:82:com.android.bips.jni.LocalPrinterCapabilities getCapabilities() -> getCapabilities
+    257:262:android.app.PendingIntent getMoreOptionsActivityPendingIntent() -> getMoreOptionsActivityPendingIntent
+    148:148:android.print.PrinterId getPrinterId() -> getPrinterId
+    244:244:android.net.Uri getUuid() -> getUuid
+    76:76:boolean isExpired() -> isExpired
+    153:153:boolean isFound() -> isFound
+    238:239:void notFound() -> notFound
+    134:143:void onCapabilities(com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+    192:218:void startTracking() -> startTracking
+    227:231:void stopTracking() -> stopTracking
+    249:249:java.lang.String toString() -> toString
+    188:188:void track() -> track
+com.android.bips.LocalPrinter$1 -> com.android.bips.LocalPrinter$1:
+    200:200:void <init>(com.android.bips.LocalPrinter) -> <init>
+    205:205:void onConnectionComplete(com.android.bips.discovery.DiscoveredPrinter) -> onConnectionComplete
+    213:214:void onConnectionDelayed(boolean) -> onConnectionDelayed
+com.android.bips.P2pPermissionManager -> com.android.bips.P2pPermissionManager:
+    53:53:void <clinit>() -> <clinit>
+    59:62:void <init>(android.content.Context) -> <init>
+    43:43:android.content.SharedPreferences access$000(com.android.bips.P2pPermissionManager) -> access$000
+    93:103:void applyPermissionChange(boolean) -> applyPermissionChange
+    301:301:void closeNotification() -> closeNotification
+    173:176:void explain(android.app.Activity) -> explain
+    268:283:com.android.bips.P2pPermissionManager$State getState() -> getState
+    112:112:boolean hasP2pPermission() -> hasP2pPermission
+    292:294:boolean isLocationEnabled() -> isLocationEnabled
+    86:86:boolean isP2pEnabled() -> isP2pEnabled
+    175:175:void lambda$explain$2(android.app.Activity,android.content.DialogInterface,int) -> lambda$explain$2
+    158:159:void lambda$request$1(android.content.SharedPreferences$OnSharedPreferenceChangeListener) -> lambda$request$1
+    186:186:void lambda$requestLocation$3(android.app.Activity,android.content.DialogInterface,int) -> lambda$requestLocation$3
+    190:191:void lambda$requestLocation$4(android.content.DialogInterface) -> lambda$requestLocation$4
+    199:211:android.content.SharedPreferences$OnSharedPreferenceChangeListener listenForPreferenceChanges(com.android.bips.P2pPermissionManager$P2pPermissionListener) -> listenForPreferenceChanges
+    127:156:com.android.bips.P2pPermissionManager$P2pPermissionRequest request(boolean,com.android.bips.P2pPermissionManager$P2pPermissionListener) -> request
+    167:167:void request(android.app.Activity) -> request
+    183:194:void requestLocation(android.app.Activity) -> requestLocation
+    69:70:void reset() -> reset
+    79:79:void setState(com.android.bips.P2pPermissionManager$State) -> setState
+    220:260:void showNotification() -> showNotification
+com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda0 -> com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda0:
+    com.android.bips.P2pPermissionManager com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$1.f$0 -> f$0
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$1.<init>(com.android.bips.P2pPermissionManager) -> <init>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$1.onCancel(android.content.DialogInterface) -> onCancel
+com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda1 -> com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda1:
+    android.app.Activity com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$0.f$0 -> f$0
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$0.<init>(android.app.Activity) -> <init>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$cca24982a657d3dcfa38fa05a43f6ad50d13e2c83d5ad583f0fc42567353698d$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda2 -> com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda2:
+    com.android.bips.P2pPermissionManager com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$04813a4ab3d6942cffea3e4aebd664782d52d8d114dfdde78ef8481653b68cab$0.f$0 -> f$0
+    android.app.Activity com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$04813a4ab3d6942cffea3e4aebd664782d52d8d114dfdde78ef8481653b68cab$0.f$1 -> f$1
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$04813a4ab3d6942cffea3e4aebd664782d52d8d114dfdde78ef8481653b68cab$0.<init>(com.android.bips.P2pPermissionManager,android.app.Activity) -> <init>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$2$04813a4ab3d6942cffea3e4aebd664782d52d8d114dfdde78ef8481653b68cab$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda3 -> com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda3:
+    com.android.bips.P2pPermissionManager com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$1$b46749959bfaf154ccbfc8794c9220412f3c7ef52251a4730801d0133f0a73c1$0.f$0 -> f$0
+    android.content.SharedPreferences$OnSharedPreferenceChangeListener com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$1$b46749959bfaf154ccbfc8794c9220412f3c7ef52251a4730801d0133f0a73c1$0.f$1 -> f$1
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$1$b46749959bfaf154ccbfc8794c9220412f3c7ef52251a4730801d0133f0a73c1$0.<init>(com.android.bips.P2pPermissionManager,android.content.SharedPreferences$OnSharedPreferenceChangeListener) -> <init>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$1$b46749959bfaf154ccbfc8794c9220412f3c7ef52251a4730801d0133f0a73c1$0.close() -> close
+com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda4 -> com.android.bips.P2pPermissionManager$$ExternalSyntheticLambda4:
+    com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$0$6fa24c0c529532395a93cfaf9de2c8151829ece71dbef96f1d854fd73a9abc37$0 com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$0$6fa24c0c529532395a93cfaf9de2c8151829ece71dbef96f1d854fd73a9abc37$0.INSTANCE -> INSTANCE
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$0$6fa24c0c529532395a93cfaf9de2c8151829ece71dbef96f1d854fd73a9abc37$0.<clinit>() -> <clinit>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$0$6fa24c0c529532395a93cfaf9de2c8151829ece71dbef96f1d854fd73a9abc37$0.<init>() -> <init>
+    void com.android.bips.P2pPermissionManager$$InternalSyntheticLambda$0$6fa24c0c529532395a93cfaf9de2c8151829ece71dbef96f1d854fd73a9abc37$0.close() -> close
+com.android.bips.P2pPermissionManager$1 -> com.android.bips.P2pPermissionManager$1:
+    200:200:void <init>(com.android.bips.P2pPermissionManager,com.android.bips.P2pPermissionManager$P2pPermissionListener) -> <init>
+    204:207:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+com.android.bips.P2pPermissionManager$State -> com.android.bips.P2pPermissionManager$State:
+    307:315:void <clinit>() -> <clinit>
+    307:307:void <init>(java.lang.String,int) -> <init>
+    319:319:boolean isTerminal() -> isTerminal
+    307:307:com.android.bips.P2pPermissionManager$State valueOf(java.lang.String) -> valueOf
+    307:307:com.android.bips.P2pPermissionManager$State[] values() -> values
+com.android.bips.PdfPrintActivity -> com.android.bips.PdfPrintActivity:
+    43:49:void <init>() -> <init>
+    43:43:java.lang.String access$100(com.android.bips.PdfPrintActivity) -> access$100
+    43:43:android.os.CancellationSignal access$200(com.android.bips.PdfPrintActivity) -> access$200
+    43:43:android.os.CancellationSignal access$202(com.android.bips.PdfPrintActivity,android.os.CancellationSignal) -> access$202
+    43:43:java.lang.String access$300() -> access$300
+    53:76:void onCreate(android.os.Bundle) -> onCreate
+    82:85:void onDestroy() -> onDestroy
+com.android.bips.PdfPrintActivity$PdfAdapter -> com.android.bips.PdfPrintActivity$PdfAdapter:
+    88:88:void <init>(com.android.bips.PdfPrintActivity) -> <init>
+    88:88:void <init>(com.android.bips.PdfPrintActivity,com.android.bips.PdfPrintActivity$1) -> <init>
+    113:113:void onFinish() -> onFinish
+    95:99:void onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter$LayoutResultCallback,android.os.Bundle) -> onLayout
+    106:107:void onWrite(android.print.PageRange[],android.os.ParcelFileDescriptor,android.os.CancellationSignal,android.print.PrintDocumentAdapter$WriteResultCallback) -> onWrite
+com.android.bips.PdfPrintActivity$PdfDeliverTask -> com.android.bips.PdfPrintActivity$PdfDeliverTask:
+    122:124:void <init>(com.android.bips.PdfPrintActivity,android.os.ParcelFileDescriptor,android.print.PrintDocumentAdapter$WriteResultCallback) -> <init>
+    117:117:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    129:147:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.bips.discovery.DelayedDiscovery -> com.android.bips.discovery.DelayedDiscovery:
+    39:52:void <init>(com.android.bips.discovery.Discovery,int,int) -> <init>
+    32:32:java.util.Map access$000(com.android.bips.discovery.DelayedDiscovery) -> access$000
+    105:105:java.util.Collection getChildren() -> getChildren
+    86:89:void lambda$onStart$0() -> lambda$onStart$0
+    82:85:void onStart() -> onStart
+    96:100:void onStop() -> onStop
+com.android.bips.discovery.DelayedDiscovery$$ExternalSyntheticLambda0 -> com.android.bips.discovery.DelayedDiscovery$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.DelayedDiscovery com.android.bips.discovery.DelayedDiscovery$$InternalSyntheticLambda$0$3ff382a514fd57a0834e4b304ae59d8944251625a838b96351b04aba36b4ffd7$0.f$0 -> f$0
+    void com.android.bips.discovery.DelayedDiscovery$$InternalSyntheticLambda$0$3ff382a514fd57a0834e4b304ae59d8944251625a838b96351b04aba36b4ffd7$0.<init>(com.android.bips.discovery.DelayedDiscovery) -> <init>
+    void com.android.bips.discovery.DelayedDiscovery$$InternalSyntheticLambda$0$3ff382a514fd57a0834e4b304ae59d8944251625a838b96351b04aba36b4ffd7$0.run() -> run
+com.android.bips.discovery.DelayedDiscovery$1 -> com.android.bips.discovery.DelayedDiscovery$1:
+    52:52:void <init>(com.android.bips.discovery.DelayedDiscovery,int) -> <init>
+    63:66:void lambda$onPrinterFound$0(com.android.bips.discovery.DiscoveredPrinter) -> lambda$onPrinterFound$0
+    55:62:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+    74:75:void onPrinterLost(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterLost
+com.android.bips.discovery.DelayedDiscovery$1$$ExternalSyntheticLambda0 -> com.android.bips.discovery.DelayedDiscovery$1$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.discovery.DelayedDiscovery$1$$InternalSyntheticLambda$0$68ad877a5ae7f6e367809891ebdcfc222087ddd197740364519fa2797d10bdf0$0.f$1 -> f$1
+    com.android.bips.discovery.DelayedDiscovery$1 com.android.bips.discovery.DelayedDiscovery$1$$InternalSyntheticLambda$0$68ad877a5ae7f6e367809891ebdcfc222087ddd197740364519fa2797d10bdf0$0.f$0 -> f$0
+    void com.android.bips.discovery.DelayedDiscovery$1$$InternalSyntheticLambda$0$68ad877a5ae7f6e367809891ebdcfc222087ddd197740364519fa2797d10bdf0$0.<init>(com.android.bips.discovery.DelayedDiscovery$1,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    void com.android.bips.discovery.DelayedDiscovery$1$$InternalSyntheticLambda$0$68ad877a5ae7f6e367809891ebdcfc222087ddd197740364519fa2797d10bdf0$0.run() -> run
+com.android.bips.discovery.DiscoveredPrinter -> com.android.bips.discovery.DiscoveredPrinter:
+    61:66:void <init>(android.net.Uri,java.lang.String,java.util.List,java.lang.String) -> <init>
+    78:78:void <init>(android.net.Uri,java.lang.String,android.net.Uri,java.lang.String) -> <init>
+    82:113:void <init>(android.util.JsonReader) -> <init>
+    167:174:boolean equals(java.lang.Object) -> equals
+    140:140:java.lang.String getHost() -> getHost
+    145:148:android.print.PrinterId getId(android.printservice.PrintService) -> getId
+    121:121:android.net.Uri getUri() -> getUri
+    180:183:int hashCode() -> hashCode
+    189:194:java.lang.String toString() -> toString
+    153:162:void write(android.util.JsonWriter) -> write
+com.android.bips.discovery.Discovery -> com.android.bips.discovery.Discovery:
+    47:54:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    172:173:void allPrintersLost() -> allPrintersLost
+    196:196:java.util.Collection getChildren() -> getChildren
+    107:107:android.os.Handler getHandler() -> getHandler
+    99:99:com.android.bips.BuiltInPrintService getPrintService() -> getPrintService
+    188:188:com.android.bips.discovery.DiscoveredPrinter getPrinter(android.net.Uri) -> getPrinter
+    181:181:java.util.Collection getPrinters() -> getPrinters
+    204:207:java.util.Collection getSavedPrinters() -> getSavedPrinters
+    92:92:boolean isStarted() -> isStarted
+    146:153:void printerFound(com.android.bips.discovery.DiscoveredPrinter) -> printerFound
+    161:166:void printerLost(android.net.Uri) -> printerLost
+    218:220:void removeSavedPrinter(android.net.Uri) -> removeSavedPrinter
+    62:74:void start(com.android.bips.discovery.Discovery$Listener) -> start
+    114:116:void start() -> start
+    82:84:void stop(com.android.bips.discovery.Discovery$Listener) -> stop
+    124:128:void stop() -> stop
+com.android.bips.discovery.ManualDiscovery -> com.android.bips.discovery.ManualDiscovery:
+    43:47:void <clinit>() -> <clinit>
+    51:55:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    38:38:com.android.bips.ipp.CapabilitiesCache access$200(com.android.bips.discovery.ManualDiscovery) -> access$200
+    38:38:java.util.List access$300(com.android.bips.discovery.ManualDiscovery) -> access$300
+    99:119:void addManualPrinter(android.net.Uri,com.android.bips.discovery.ManualDiscovery$PrinterAddCallback) -> addManualPrinter
+    127:130:void cancelAddManualPrinter(com.android.bips.discovery.ManualDiscovery$PrinterAddCallback) -> cancelAddManualPrinter
+    68:68:void lambda$onStart$0(com.android.bips.discovery.DiscoveredPrinter,com.android.bips.jni.LocalPrinterCapabilities) -> lambda$onStart$0
+    65:73:void lambda$onStart$1(boolean) -> lambda$onStart$1
+    63:63:void onStart() -> onStart
+    81:82:void onStop() -> onStop
+com.android.bips.discovery.ManualDiscovery$$ExternalSyntheticLambda0 -> com.android.bips.discovery.ManualDiscovery$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$1$662cd8d5f595f355ebed7b11e197c014350ccfaa3b759e8559b27b847ac9a1f5$0.f$1 -> f$1
+    com.android.bips.discovery.ManualDiscovery com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$1$662cd8d5f595f355ebed7b11e197c014350ccfaa3b759e8559b27b847ac9a1f5$0.f$0 -> f$0
+    void com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$1$662cd8d5f595f355ebed7b11e197c014350ccfaa3b759e8559b27b847ac9a1f5$0.<init>(com.android.bips.discovery.ManualDiscovery,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    void com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$1$662cd8d5f595f355ebed7b11e197c014350ccfaa3b759e8559b27b847ac9a1f5$0.onCapabilities(com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+com.android.bips.discovery.ManualDiscovery$$ExternalSyntheticLambda1 -> com.android.bips.discovery.ManualDiscovery$$ExternalSyntheticLambda1:
+    com.android.bips.discovery.ManualDiscovery com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$0$e56edff8d47f1963e66c5bc2d1a9121b41cf1d07335ec5e9fdfa257933ead2f2$0.f$0 -> f$0
+    void com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$0$e56edff8d47f1963e66c5bc2d1a9121b41cf1d07335ec5e9fdfa257933ead2f2$0.<init>(com.android.bips.discovery.ManualDiscovery) -> <init>
+    void com.android.bips.discovery.ManualDiscovery$$InternalSyntheticLambda$0$e56edff8d47f1963e66c5bc2d1a9121b41cf1d07335ec5e9fdfa257933ead2f2$0.onConnectionStateChanged(boolean) -> onConnectionStateChanged
+com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder -> com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder:
+    159:184:void <init>(com.android.bips.discovery.ManualDiscovery,java.util.Collection,com.android.bips.discovery.ManualDiscovery$PrinterAddCallback) -> <init>
+    157:157:com.android.bips.discovery.ManualDiscovery$PrinterAddCallback access$000(com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder) -> access$000
+    157:157:java.util.List access$100(com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder) -> access$100
+    227:230:void cancel() -> cancel
+    194:222:void handleCapabilities(android.net.Uri,com.android.bips.jni.LocalPrinterCapabilities) -> handleCapabilities
+com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder$1 -> com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder$1:
+    173:173:void <init>(com.android.bips.discovery.ManualDiscovery$CapabilitiesFinder,com.android.bips.discovery.ManualDiscovery,android.net.Uri) -> <init>
+    176:177:void onCapabilities(com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+com.android.bips.discovery.MdnsDiscovery -> com.android.bips.discovery.MdnsDiscovery:
+    60:80:void <init>(com.android.bips.BuiltInPrintService,java.lang.String) -> <init>
+    38:38:java.lang.String access$100() -> access$100
+    38:38:java.util.List access$200(com.android.bips.discovery.MdnsDiscovery) -> access$200
+    38:38:com.android.bips.discovery.NsdResolveQueue access$300(com.android.bips.discovery.MdnsDiscovery) -> access$300
+    38:38:com.android.bips.discovery.DiscoveredPrinter access$400(android.net.nsd.NsdServiceInfo) -> access$400
+    124:127:java.lang.String getStringAttribute(android.net.nsd.NsdServiceInfo,java.lang.String) -> getStringAttribute
+    136:154:void onStart() -> onStart
+    160:172:void onStop() -> onStop
+    86:119:com.android.bips.discovery.DiscoveredPrinter toNetworkPrinter(android.net.nsd.NsdServiceInfo) -> toNetworkPrinter
+com.android.bips.discovery.MdnsDiscovery$1 -> com.android.bips.discovery.MdnsDiscovery$1:
+    136:136:void <init>(com.android.bips.discovery.MdnsDiscovery) -> <init>
+com.android.bips.discovery.MdnsDiscovery$NsdServiceListener -> com.android.bips.discovery.MdnsDiscovery$NsdServiceListener:
+    179:179:void <init>(com.android.bips.discovery.MdnsDiscovery) -> <init>
+    179:179:void <init>(com.android.bips.discovery.MdnsDiscovery,com.android.bips.discovery.MdnsDiscovery$1) -> <init>
+    198:198:void lambda$onServiceFound$0(android.net.nsd.NsdServiceInfo) -> lambda$onServiceFound$0
+    207:209:void lambda$onServiceLost$1(android.net.nsd.NsdServiceInfo) -> lambda$onServiceLost$1
+    192:192:void onDiscoveryStopped(java.lang.String) -> onDiscoveryStopped
+    198:198:void onServiceFound(android.net.nsd.NsdServiceInfo) -> onServiceFound
+    206:206:void onServiceLost(android.net.nsd.NsdServiceInfo) -> onServiceLost
+    182:182:void onStopDiscoveryFailed(java.lang.String,int) -> onStopDiscoveryFailed
+com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda0 -> com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.MdnsDiscovery$NsdServiceListener com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$5fe7a543d7fed33c519460961c736aa49c866f2d628c84ea092d89c64640ad50$0.f$0 -> f$0
+    android.net.nsd.NsdServiceInfo com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$5fe7a543d7fed33c519460961c736aa49c866f2d628c84ea092d89c64640ad50$0.f$1 -> f$1
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$5fe7a543d7fed33c519460961c736aa49c866f2d628c84ea092d89c64640ad50$0.<init>(com.android.bips.discovery.MdnsDiscovery$NsdServiceListener,android.net.nsd.NsdServiceInfo) -> <init>
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$5fe7a543d7fed33c519460961c736aa49c866f2d628c84ea092d89c64640ad50$0.run() -> run
+com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda1 -> com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda1:
+    com.android.bips.discovery.MdnsDiscovery$NsdServiceListener com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$20d1823446d63a3508a197b272e9fa5fee12c59b3e820da17680cf146ec2a4bb$0.f$0 -> f$0
+    android.net.nsd.NsdServiceInfo com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$20d1823446d63a3508a197b272e9fa5fee12c59b3e820da17680cf146ec2a4bb$0.f$1 -> f$1
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$20d1823446d63a3508a197b272e9fa5fee12c59b3e820da17680cf146ec2a4bb$0.<init>(com.android.bips.discovery.MdnsDiscovery$NsdServiceListener,android.net.nsd.NsdServiceInfo) -> <init>
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$20d1823446d63a3508a197b272e9fa5fee12c59b3e820da17680cf146ec2a4bb$0.run() -> run
+com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda2 -> com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$ExternalSyntheticLambda2:
+    com.android.bips.discovery.MdnsDiscovery com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$09727ed98d63c5f36c7cb670b8c11f3036d57754661c376de2f4b97633e0d07c$0.f$0 -> f$0
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$09727ed98d63c5f36c7cb670b8c11f3036d57754661c376de2f4b97633e0d07c$0.<init>(com.android.bips.discovery.MdnsDiscovery) -> <init>
+    void com.android.bips.discovery.MdnsDiscovery$NsdServiceListener$$InternalSyntheticLambda$0$09727ed98d63c5f36c7cb670b8c11f3036d57754661c376de2f4b97633e0d07c$0.run() -> run
+com.android.bips.discovery.MdnsDiscovery$Resolver -> com.android.bips.discovery.MdnsDiscovery$Resolver:
+    223:224:void <init>(com.android.bips.discovery.MdnsDiscovery,android.net.nsd.NsdServiceInfo) -> <init>
+    248:248:void cancel() -> cancel
+    229:229:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    234:244:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+com.android.bips.discovery.MultiDiscovery -> com.android.bips.discovery.MultiDiscovery:
+    33:44:void <init>(com.android.bips.discovery.Discovery,com.android.bips.discovery.Discovery[]) -> <init>
+    29:29:com.android.bips.discovery.DiscoveredPrinter access$000(com.android.bips.discovery.MultiDiscovery,android.net.Uri) -> access$000
+    118:120:java.util.Collection getChildren() -> getChildren
+    70:84:com.android.bips.discovery.DiscoveredPrinter merged(android.net.Uri) -> merged
+    96:98:void onStart() -> onStart
+    113:113:void onStop() -> onStop
+    103:107:void stopAndClearAll() -> stopAndClearAll
+com.android.bips.discovery.MultiDiscovery$1 -> com.android.bips.discovery.MultiDiscovery$1:
+    44:44:void <init>(com.android.bips.discovery.MultiDiscovery) -> <init>
+    47:47:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+    53:57:void onPrinterLost(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterLost
+com.android.bips.discovery.NsdResolveQueue -> com.android.bips.discovery.NsdResolveQueue:
+    38:42:void <init>(android.content.Context,android.net.nsd.NsdManager) -> <init>
+    30:30:java.util.LinkedList access$200(com.android.bips.discovery.NsdResolveQueue) -> access$200
+    30:30:android.os.Handler access$300(com.android.bips.discovery.NsdResolveQueue) -> access$300
+    30:30:void access$400(com.android.bips.discovery.NsdResolveQueue) -> access$400
+    47:47:android.net.nsd.NsdManager getNsdManager() -> getNsdManager
+    62:65:com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest resolve(android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener) -> resolve
+    74:75:void resolveNextRequest() -> resolveNextRequest
+com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest -> com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest:
+    82:82:void <init>(com.android.bips.discovery.NsdResolveQueue,android.net.nsd.NsdManager,android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener,com.android.bips.discovery.NsdResolveQueue$1) -> <init>
+    90:93:void <init>(com.android.bips.discovery.NsdResolveQueue,android.net.nsd.NsdManager,android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener) -> <init>
+    82:82:void access$100(com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest) -> access$100
+    104:105:void cancel() -> cancel
+    116:118:void lambda$onResolveFailed$0(android.net.nsd.NsdServiceInfo,int) -> lambda$onResolveFailed$0
+    129:131:void lambda$onServiceResolved$1(android.net.nsd.NsdServiceInfo) -> lambda$onServiceResolved$1
+    115:115:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    128:128:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+    97:99:void start() -> start
+com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$ExternalSyntheticLambda0 -> com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$42491bd25ea9abdc88394c62260222c058a4e94c5998a1e7d391b71d3cb1030f$0.f$0 -> f$0
+    android.net.nsd.NsdServiceInfo com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$42491bd25ea9abdc88394c62260222c058a4e94c5998a1e7d391b71d3cb1030f$0.f$1 -> f$1
+    void com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$42491bd25ea9abdc88394c62260222c058a4e94c5998a1e7d391b71d3cb1030f$0.<init>(com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest,android.net.nsd.NsdServiceInfo) -> <init>
+    void com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$42491bd25ea9abdc88394c62260222c058a4e94c5998a1e7d391b71d3cb1030f$0.run() -> run
+com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$ExternalSyntheticLambda1 -> com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$ExternalSyntheticLambda1:
+    int com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$edda3c225af9c844eaaba2925452b41a2cbf21630893ee7639080f5f269c3c87$0.f$2 -> f$2
+    com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$edda3c225af9c844eaaba2925452b41a2cbf21630893ee7639080f5f269c3c87$0.f$0 -> f$0
+    android.net.nsd.NsdServiceInfo com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$edda3c225af9c844eaaba2925452b41a2cbf21630893ee7639080f5f269c3c87$0.f$1 -> f$1
+    void com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$edda3c225af9c844eaaba2925452b41a2cbf21630893ee7639080f5f269c3c87$0.<init>(com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest,android.net.nsd.NsdServiceInfo,int) -> <init>
+    void com.android.bips.discovery.NsdResolveQueue$NsdResolveRequest$$InternalSyntheticLambda$1$edda3c225af9c844eaaba2925452b41a2cbf21630893ee7639080f5f269c3c87$0.run() -> run
+com.android.bips.discovery.P2pDiscovery -> com.android.bips.discovery.P2pDiscovery:
+    35:39:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    116:119:void addValidPrinter(com.android.bips.discovery.DiscoveredPrinter) -> addValidPrinter
+    87:90:void lambda$startPeerDiscovery$0(boolean) -> lambda$startPeerDiscovery$0
+    96:102:void onPeerFound(android.net.wifi.p2p.WifiP2pDevice) -> onPeerFound
+    109:111:void onPeerLost(android.net.wifi.p2p.WifiP2pDevice) -> onPeerLost
+    60:60:void onStart() -> onStart
+    66:73:void onStop() -> onStop
+    79:85:void startPeerDiscovery() -> startPeerDiscovery
+    54:54:android.net.Uri toPath(android.net.wifi.p2p.WifiP2pDevice) -> toPath
+    44:49:com.android.bips.discovery.DiscoveredPrinter toPrinter(android.net.wifi.p2p.WifiP2pDevice) -> toPrinter
+com.android.bips.discovery.P2pDiscovery$$ExternalSyntheticLambda0 -> com.android.bips.discovery.P2pDiscovery$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.P2pDiscovery com.android.bips.discovery.P2pDiscovery$$InternalSyntheticLambda$0$b8674475916e4ac1d539c0b08549b1d42bb5a727750fdfebb056f4e45a0df0a3$0.f$0 -> f$0
+    void com.android.bips.discovery.P2pDiscovery$$InternalSyntheticLambda$0$b8674475916e4ac1d539c0b08549b1d42bb5a727750fdfebb056f4e45a0df0a3$0.<init>(com.android.bips.discovery.P2pDiscovery) -> <init>
+    void com.android.bips.discovery.P2pDiscovery$$InternalSyntheticLambda$0$b8674475916e4ac1d539c0b08549b1d42bb5a727750fdfebb056f4e45a0df0a3$0.onP2pPermissionComplete(boolean) -> onP2pPermissionComplete
+com.android.bips.discovery.SavedDiscovery -> com.android.bips.discovery.SavedDiscovery:
+    46:46:void <clinit>() -> <clinit>
+    53:55:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    62:72:boolean addSavedPrinter(com.android.bips.discovery.DiscoveredPrinter) -> addSavedPrinter
+    80:81:com.android.bips.discovery.DiscoveredPrinter find(android.net.Uri) -> find
+    41:41:java.util.Collection getSavedPrinters() -> getSavedPrinters
+    107:107:java.util.List getSavedPrinters() -> getSavedPrinters
+    114:133:java.util.List load() -> load
+    93:96:void removeSavedPrinter(android.net.Uri) -> removeSavedPrinter
+    143:157:void save() -> save
+com.android.bips.ipp.Backend -> com.android.bips.ipp.Backend:
+    63:77:void <init>(android.content.Context) -> <init>
+    44:44:android.os.AsyncTask access$002(com.android.bips.ipp.Backend,android.os.AsyncTask) -> access$002
+    44:44:com.android.bips.ipp.JobStatus access$100(com.android.bips.ipp.Backend) -> access$100
+    44:44:com.android.bips.ipp.JobStatus access$102(com.android.bips.ipp.Backend,com.android.bips.ipp.JobStatus) -> access$102
+    44:44:java.util.function.Consumer access$200(com.android.bips.ipp.Backend) -> access$200
+    44:44:java.util.function.Consumer access$202(com.android.bips.ipp.Backend,java.util.function.Consumer) -> access$202
+    155:161:void cancel() -> cancel
+    180:181:void close() -> close
+    172:172:void closeDocument() -> closeDocument
+    83:85:java.lang.String getApplicationVersion(android.content.Context) -> getApplicationVersion
+    96:102:com.android.bips.ipp.GetCapabilitiesTask getCapabilities(android.net.Uri,long,boolean,java.util.function.Consumer) -> getCapabilities
+    243:244:java.lang.String getIp(java.lang.String) -> getIp
+    187:187:void jobCallback(int,com.android.bips.jni.JobCallbackParams) -> jobCallback
+    190:219:void lambda$jobCallback$0(int,com.android.bips.jni.JobCallbackParams) -> lambda$jobCallback$0
+    114:148:void print(android.net.Uri,android.printservice.PrintJob,com.android.bips.jni.LocalPrinterCapabilities,java.util.function.Consumer) -> print
+    226:230:void updateBlockedReasons(com.android.bips.ipp.JobStatus$Builder,com.android.bips.jni.JobCallbackParams) -> updateBlockedReasons
+com.android.bips.ipp.Backend$$ExternalSyntheticLambda0 -> com.android.bips.ipp.Backend$$ExternalSyntheticLambda0:
+    com.android.bips.ipp.Backend com.android.bips.ipp.Backend$$InternalSyntheticLambda$0$c6abcb6b546f713c658fb943b94f4f8b1b691f09dc223e9d59d8bcd78698a256$0.f$0 -> f$0
+    com.android.bips.jni.JobCallbackParams com.android.bips.ipp.Backend$$InternalSyntheticLambda$0$c6abcb6b546f713c658fb943b94f4f8b1b691f09dc223e9d59d8bcd78698a256$0.f$2 -> f$2
+    int com.android.bips.ipp.Backend$$InternalSyntheticLambda$0$c6abcb6b546f713c658fb943b94f4f8b1b691f09dc223e9d59d8bcd78698a256$0.f$1 -> f$1
+    void com.android.bips.ipp.Backend$$InternalSyntheticLambda$0$c6abcb6b546f713c658fb943b94f4f8b1b691f09dc223e9d59d8bcd78698a256$0.<init>(com.android.bips.ipp.Backend,int,com.android.bips.jni.JobCallbackParams) -> <init>
+    void com.android.bips.ipp.Backend$$InternalSyntheticLambda$0$c6abcb6b546f713c658fb943b94f4f8b1b691f09dc223e9d59d8bcd78698a256$0.run() -> run
+com.android.bips.ipp.Backend$1 -> com.android.bips.ipp.Backend$1:
+    96:96:void <init>(com.android.bips.ipp.Backend,com.android.bips.ipp.Backend,android.net.Uri,long,boolean,java.util.function.Consumer) -> <init>
+    96:96:void onPostExecute(java.lang.Object) -> onPostExecute
+    99:99:void onPostExecute(com.android.bips.jni.LocalPrinterCapabilities) -> onPostExecute
+com.android.bips.ipp.Backend$2 -> com.android.bips.ipp.Backend$2:
+    117:117:void <init>(com.android.bips.ipp.Backend,android.content.Context,com.android.bips.ipp.Backend,android.net.Uri,android.printservice.PrintJob,com.android.bips.jni.LocalPrinterCapabilities) -> <init>
+    117:117:void onCancelled(java.lang.Object) -> onCancelled
+    121:121:void onCancelled(java.lang.Integer) -> onCancelled
+    117:117:void onPostExecute(java.lang.Object) -> onPostExecute
+    127:144:void onPostExecute(java.lang.Integer) -> onPostExecute
+com.android.bips.ipp.CancelJobTask -> com.android.bips.ipp.CancelJobTask:
+    25:25:void <clinit>() -> <clinit>
+    31:33:void <init>(com.android.bips.ipp.Backend,int) -> <init>
+    24:24:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    41:41:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.bips.ipp.CapabilitiesCache -> com.android.bips.ipp.CapabilitiesCache:
+    50:50:void <clinit>() -> <clinit>
+    67:105:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.ipp.Backend,int) -> <init>
+    49:49:java.util.Set access$000(com.android.bips.ipp.CapabilitiesCache) -> access$000
+    49:49:android.util.LruCache access$100(com.android.bips.ipp.CapabilitiesCache) -> access$100
+    49:49:com.android.bips.ipp.Backend access$400(com.android.bips.ipp.CapabilitiesCache) -> access$400
+    49:49:boolean access$500(com.android.bips.ipp.CapabilitiesCache) -> access$500
+    49:49:java.util.Map access$600(com.android.bips.ipp.CapabilitiesCache) -> access$600
+    49:49:java.lang.String access$700() -> access$700
+    49:49:void access$800(com.android.bips.ipp.CapabilitiesCache) -> access$800
+    49:49:com.android.bips.BuiltInPrintService access$900(com.android.bips.ipp.CapabilitiesCache) -> access$900
+    195:205:void cancel(com.android.bips.ipp.CapabilitiesCache$OnLocalPrinterCapabilities) -> cancel
+    120:122:void close() -> close
+    175:178:com.android.bips.jni.LocalPrinterCapabilities get(com.android.bips.discovery.DiscoveredPrinter) -> get
+    223:234:com.android.bips.ipp.CapabilitiesCache$Request getNextRequest() -> getNextRequest
+    109:112:void lambda$new$0(boolean) -> lambda$new$0
+    160:160:com.android.bips.ipp.CapabilitiesCache$Request lambda$request$1(com.android.bips.discovery.DiscoveredPrinter,boolean,android.net.Uri) -> lambda$request$1
+    188:188:com.android.bips.jni.LocalPrinterCapabilities remove(android.net.Uri) -> remove
+    144:168:void request(com.android.bips.discovery.DiscoveredPrinter,boolean,com.android.bips.ipp.CapabilitiesCache$OnLocalPrinterCapabilities) -> request
+    211:216:void startNextRequest() -> startNextRequest
+com.android.bips.ipp.CapabilitiesCache$$ExternalSyntheticLambda0 -> com.android.bips.ipp.CapabilitiesCache$$ExternalSyntheticLambda0:
+    com.android.bips.ipp.CapabilitiesCache com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$7e328c532d63f1e39c9644e6028679a20b280a00ed6ecd9ea33c726da2493acb$0.f$0 -> f$0
+    void com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$7e328c532d63f1e39c9644e6028679a20b280a00ed6ecd9ea33c726da2493acb$0.<init>(com.android.bips.ipp.CapabilitiesCache) -> <init>
+    void com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$7e328c532d63f1e39c9644e6028679a20b280a00ed6ecd9ea33c726da2493acb$0.onConnectionStateChanged(boolean) -> onConnectionStateChanged
+com.android.bips.ipp.CapabilitiesCache$$ExternalSyntheticLambda1 -> com.android.bips.ipp.CapabilitiesCache$$ExternalSyntheticLambda1:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$aa2c1dc59b0af6863d78ff3ffdd2fc2eb73fb10fc092c31625fe8b15eb718199$0.f$1 -> f$1
+    com.android.bips.ipp.CapabilitiesCache com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$aa2c1dc59b0af6863d78ff3ffdd2fc2eb73fb10fc092c31625fe8b15eb718199$0.f$0 -> f$0
+    boolean com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$aa2c1dc59b0af6863d78ff3ffdd2fc2eb73fb10fc092c31625fe8b15eb718199$0.f$2 -> f$2
+    void com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$aa2c1dc59b0af6863d78ff3ffdd2fc2eb73fb10fc092c31625fe8b15eb718199$0.<init>(com.android.bips.ipp.CapabilitiesCache,com.android.bips.discovery.DiscoveredPrinter,boolean) -> <init>
+    java.lang.Object com.android.bips.ipp.CapabilitiesCache$$InternalSyntheticLambda$0$aa2c1dc59b0af6863d78ff3ffdd2fc2eb73fb10fc092c31625fe8b15eb718199$0.apply(java.lang.Object) -> apply
+com.android.bips.ipp.CapabilitiesCache$1 -> com.android.bips.ipp.CapabilitiesCache$1:
+    90:90:void <init>(com.android.bips.ipp.CapabilitiesCache) -> <init>
+    93:100:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.bips.ipp.CapabilitiesCache$Request -> com.android.bips.ipp.CapabilitiesCache$Request:
+    244:251:void <init>(com.android.bips.ipp.CapabilitiesCache,com.android.bips.discovery.DiscoveredPrinter,long) -> <init>
+    242:242:void accept(java.lang.Object) -> accept
+    267:307:void accept(com.android.bips.jni.LocalPrinterCapabilities) -> accept
+    242:242:void access$200(com.android.bips.ipp.CapabilitiesCache$Request) -> access$200
+    242:242:void access$300(com.android.bips.ipp.CapabilitiesCache$Request) -> access$300
+    259:261:void cancel() -> cancel
+    255:255:void start() -> start
+com.android.bips.ipp.CertificateStore -> com.android.bips.ipp.CertificateStore:
+    154:154:void <clinit>() -> <clinit>
+    47:51:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    162:168:java.lang.String bytesToHex(byte[]) -> bytesToHex
+    73:73:byte[] get(java.lang.String) -> get
+    177:185:byte[] hexToBytes(java.lang.String) -> hexToBytes
+    102:122:void load() -> load
+    131:150:void loadItem(android.util.JsonReader) -> loadItem
+    56:60:void put(java.lang.String,byte[]) -> put
+    66:67:void remove(java.lang.String) -> remove
+    78:96:void save() -> save
+com.android.bips.ipp.GetCapabilitiesTask -> com.android.bips.ipp.GetCapabilitiesTask:
+    36:40:void <clinit>() -> <clinit>
+    48:52:void <init>(com.android.bips.ipp.Backend,android.net.Uri,long,boolean) -> <init>
+    35:35:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    83:119:com.android.bips.jni.LocalPrinterCapabilities doInBackground(java.lang.Void[]) -> doInBackground
+    70:74:void forceCancel() -> forceCancel
+    56:65:boolean isDeviceOnline(android.net.Uri) -> isDeviceOnline
+com.android.bips.ipp.JobStatus -> com.android.bips.ipp.JobStatus:
+    34:57:void <clinit>() -> <clinit>
+    30:30:void <init>(com.android.bips.ipp.JobStatus,com.android.bips.ipp.JobStatus$1) -> <init>
+    67:69:void <init>() -> <init>
+    73:78:void <init>(com.android.bips.ipp.JobStatus) -> <init>
+    30:30:int access$102(com.android.bips.ipp.JobStatus,int) -> access$102
+    30:30:java.lang.String access$202(com.android.bips.ipp.JobStatus,java.lang.String) -> access$202
+    30:30:java.lang.String access$302(com.android.bips.ipp.JobStatus,java.lang.String) -> access$302
+    30:30:byte[] access$402(com.android.bips.ipp.JobStatus,byte[]) -> access$402
+    30:30:java.util.Set access$500(com.android.bips.ipp.JobStatus) -> access$500
+    83:85:int getBlockedReasonId() -> getBlockedReasonId
+    113:113:byte[] getCertificate() -> getCertificate
+    103:103:int getId() -> getId
+    98:98:java.lang.String getJobResult() -> getJobResult
+    93:93:java.lang.String getJobState() -> getJobState
+    108:108:boolean isJobDone() -> isJobDone
+    118:118:java.lang.String toString() -> toString
+com.android.bips.ipp.JobStatus$Builder -> com.android.bips.ipp.JobStatus$Builder:
+    129:130:void <init>() -> <init>
+    133:134:void <init>(com.android.bips.ipp.JobStatus) -> <init>
+    163:163:com.android.bips.ipp.JobStatus$Builder addBlockedReason(java.lang.String) -> addBlockedReason
+    168:168:com.android.bips.ipp.JobStatus build() -> build
+    158:158:com.android.bips.ipp.JobStatus$Builder clearBlockedReasons() -> clearBlockedReasons
+    153:153:com.android.bips.ipp.JobStatus$Builder setCertificate(byte[]) -> setCertificate
+    138:138:com.android.bips.ipp.JobStatus$Builder setId(int) -> setId
+    148:148:com.android.bips.ipp.JobStatus$Builder setJobResult(java.lang.String) -> setJobResult
+    143:143:com.android.bips.ipp.JobStatus$Builder setJobState(java.lang.String) -> setJobState
+com.android.bips.ipp.StartJobTask -> com.android.bips.ipp.StartJobTask:
+    48:48:void <clinit>() -> <clinit>
+    84:94:void <init>(android.content.Context,com.android.bips.ipp.Backend,android.net.Uri,android.printservice.PrintJob,com.android.bips.jni.LocalPrinterCapabilities) -> <init>
+    47:47:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    127:191:java.lang.Integer doInBackground(java.lang.Void[]) -> doInBackground
+    244:244:int getColorSpace() -> getColorSpace
+    254:254:java.lang.String getDocumentCategory() -> getDocumentCategory
+    217:217:boolean getFillPage() -> getFillPage
+    229:234:int getMediaType() -> getMediaType
+    201:205:int getSides() -> getSides
+    195:196:boolean isBorderless() -> isBorderless
+    98:121:void populateJobParams() -> populateJobParams
+com.android.bips.jni.BackendConstants -> com.android.bips.jni.BackendConstants:
+    22:22:void <init>() -> <init>
+com.android.bips.jni.JobCallbackParams -> com.android.bips.jni.JobCallbackParams:
+    21:21:void <init>() -> <init>
+com.android.bips.jni.LocalJobParams -> com.android.bips.jni.LocalJobParams:
+    20:62:void <init>() -> <init>
+    67:67:java.lang.String toString() -> toString
+com.android.bips.jni.LocalPrinterCapabilities -> com.android.bips.jni.LocalPrinterCapabilities:
+    35:35:void <init>() -> <init>
+    62:109:void buildCapabilities(com.android.bips.BuiltInPrintService,android.print.PrinterCapabilitiesInfo$Builder) -> buildCapabilities
+    115:126:java.lang.String toString() -> toString
+com.android.bips.jni.MediaSizes -> com.android.bips.jni.MediaSizes:
+    67:109:void <clinit>() -> <clinit>
+    112:157:void <init>(android.content.Context) -> <init>
+    161:164:com.android.bips.jni.MediaSizes getInstance(android.content.Context) -> getInstance
+    171:173:int toMediaCode(java.lang.String) -> toMediaCode
+    198:201:int toMediaCode(android.print.PrintAttributes$MediaSize) -> toMediaCode
+    183:183:java.lang.String toMediaName(int) -> toMediaName
+    191:191:android.print.PrintAttributes$MediaSize toMediaSize(java.lang.String) -> toMediaSize
+com.android.bips.jni.PdfRender -> com.android.bips.jni.PdfRender:
+    46:46:void <clinit>() -> <clinit>
+    68:84:void <init>(android.content.Context) -> <init>
+    41:41:com.android.bips.render.IPdfRender access$002(com.android.bips.jni.PdfRender,com.android.bips.render.IPdfRender) -> access$002
+    41:41:java.lang.String access$100() -> access$100
+    41:41:android.content.Intent access$200(com.android.bips.jni.PdfRender) -> access$200
+    41:41:android.content.Context access$300(com.android.bips.jni.PdfRender) -> access$300
+    89:94:void close() -> close
+    193:198:void closeDocument() -> closeDocument
+    59:65:com.android.bips.jni.PdfRender getInstance(android.content.Context) -> getInstance
+    128:135:com.android.bips.jni.SizeD getPageSize(int) -> getPageSize
+    103:116:int openDocument(java.lang.String) -> openDocument
+    156:183:boolean renderPageStripe(int,int,int,int,double,java.nio.ByteBuffer) -> renderPageStripe
+com.android.bips.jni.PdfRender$1 -> com.android.bips.jni.PdfRender$1:
+    68:68:void <init>(com.android.bips.jni.PdfRender) -> <init>
+    71:71:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    75:77:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.android.bips.jni.SizeD -> com.android.bips.jni.SizeD:
+    67:67:void <clinit>() -> <clinit>
+    30:34:void <init>(double,double) -> <init>
+    45:45:void <init>(android.os.Parcel) -> <init>
+    53:53:double getHeight() -> getHeight
+    49:49:double getWidth() -> getWidth
+    39:40:void validate(java.lang.String,double) -> validate
+    63:64:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.android.bips.jni.SizeD$1 -> com.android.bips.jni.SizeD$1:
+    67:67:void <init>() -> <init>
+    67:67:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    69:69:com.android.bips.jni.SizeD createFromParcel(android.os.Parcel) -> createFromParcel
+    67:67:java.lang.Object[] newArray(int) -> newArray
+    73:73:com.android.bips.jni.SizeD[] newArray(int) -> newArray
+com.android.bips.p2p.P2pConnectionProcedure -> com.android.bips.p2p.P2pConnectionProcedure:
+    44:44:void <clinit>() -> <clinit>
+    53:72:void <init>(com.android.bips.BuiltInPrintService,android.net.wifi.p2p.WifiP2pManager,android.net.wifi.p2p.WifiP2pDevice,com.android.bips.p2p.P2pConnectionListener) -> <init>
+    99:102:void addListener(com.android.bips.p2p.P2pConnectionListener) -> addListener
+    116:125:void close() -> close
+    76:83:android.net.wifi.p2p.WifiP2pConfig configForPeer(android.net.wifi.p2p.WifiP2pDevice) -> configForPeer
+    110:110:int getListenerCount() -> getListenerCount
+    90:90:android.net.wifi.p2p.WifiP2pDevice getPeer() -> getPeer
+    95:95:boolean hasListener(com.android.bips.p2p.P2pConnectionListener) -> hasListener
+    187:192:boolean isConnectedToPeer(android.net.wifi.p2p.WifiP2pGroup) -> isConnectedToPeer
+    176:178:void lambda$onReceive$0() -> lambda$onReceive$0
+    131:175:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    106:106:void removeListener(com.android.bips.p2p.P2pConnectionListener) -> removeListener
+com.android.bips.p2p.P2pConnectionProcedure$$ExternalSyntheticLambda0 -> com.android.bips.p2p.P2pConnectionProcedure$$ExternalSyntheticLambda0:
+    com.android.bips.p2p.P2pConnectionProcedure com.android.bips.p2p.P2pConnectionProcedure$$InternalSyntheticLambda$1$eb2028945dc6883f26344adeaf488b0a5671e966cdf66ad1ea6b11f76f1a676b$0.f$0 -> f$0
+    void com.android.bips.p2p.P2pConnectionProcedure$$InternalSyntheticLambda$1$eb2028945dc6883f26344adeaf488b0a5671e966cdf66ad1ea6b11f76f1a676b$0.<init>(com.android.bips.p2p.P2pConnectionProcedure) -> <init>
+    void com.android.bips.p2p.P2pConnectionProcedure$$InternalSyntheticLambda$1$eb2028945dc6883f26344adeaf488b0a5671e966cdf66ad1ea6b11f76f1a676b$0.run() -> run
+com.android.bips.p2p.P2pDiscoveryProcedure -> com.android.bips.p2p.P2pDiscoveryProcedure:
+    47:47:void <clinit>() -> <clinit>
+    50:92:void <init>(com.android.bips.BuiltInPrintService,android.net.wifi.p2p.WifiP2pManager,com.android.bips.p2p.P2pPeerListener) -> <init>
+    42:42:android.net.wifi.p2p.WifiP2pManager$Channel access$000(com.android.bips.p2p.P2pDiscoveryProcedure) -> access$000
+    42:42:android.net.wifi.p2p.WifiP2pManager access$100(com.android.bips.p2p.P2pDiscoveryProcedure) -> access$100
+    42:42:void access$200(com.android.bips.p2p.P2pDiscoveryProcedure,java.util.Collection) -> access$200
+    96:99:void addListener(com.android.bips.p2p.P2pPeerListener) -> addListener
+    160:164:void cancel() -> cancel
+    149:150:android.net.wifi.p2p.WifiP2pDevice getDevice(java.util.Collection,java.lang.String) -> getDevice
+    109:109:java.util.List getListeners() -> getListeners
+    105:105:void removeListener(com.android.bips.p2p.P2pPeerListener) -> removeListener
+    116:142:void updatePeers(java.util.Collection) -> updatePeers
+com.android.bips.p2p.P2pDiscoveryProcedure$1 -> com.android.bips.p2p.P2pDiscoveryProcedure$1:
+    62:62:void <init>(com.android.bips.p2p.P2pDiscoveryProcedure) -> <init>
+    65:83:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.bips.p2p.P2pMonitor -> com.android.bips.p2p.P2pMonitor:
+    40:42:void <init>(com.android.bips.BuiltInPrintService) -> <init>
+    30:30:java.lang.String access$002(com.android.bips.p2p.P2pMonitor,java.lang.String) -> access$002
+    110:150:void connect(android.net.wifi.p2p.WifiP2pDevice,com.android.bips.p2p.P2pConnectionListener) -> connect
+    78:84:void discover(com.android.bips.p2p.P2pPeerListener) -> discover
+    180:180:java.lang.String getConnectedInterface() -> getConnectedInterface
+    175:175:com.android.bips.p2p.P2pConnectionProcedure getConnection() -> getConnection
+    185:192:void stopAll() -> stopAll
+    158:169:void stopConnect(com.android.bips.p2p.P2pConnectionListener) -> stopConnect
+    94:98:void stopDiscover(com.android.bips.p2p.P2pPeerListener) -> stopDiscover
+com.android.bips.p2p.P2pMonitor$1 -> com.android.bips.p2p.P2pMonitor$1:
+    134:134:void <init>(com.android.bips.p2p.P2pMonitor) -> <init>
+    142:142:void onConnectionClosed() -> onConnectionClosed
+    137:137:void onConnectionOpen(java.lang.String,android.net.wifi.p2p.WifiP2pInfo) -> onConnectionOpen
+com.android.bips.p2p.P2pPrinterConnection -> com.android.bips.p2p.P2pPrinterConnection:
+    55:58:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.discovery.ConnectionListener) -> <init>
+    64:66:void <init>(com.android.bips.BuiltInPrintService,android.net.wifi.p2p.WifiP2pDevice,com.android.bips.discovery.ConnectionListener) -> <init>
+    72:81:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.discovery.DiscoveredPrinter,com.android.bips.discovery.ConnectionListener) -> <init>
+    205:213:void close() -> close
+    85:86:void connectToPeer(android.net.wifi.p2p.WifiP2pDevice) -> connectToPeer
+    131:135:void lambda$onConnectionOpen$0() -> lambda$onConnectionOpen$0
+    177:177:void lambda$onPrinterFound$1(com.android.bips.discovery.DiscoveredPrinter,com.android.bips.jni.LocalPrinterCapabilities) -> lambda$onPrinterFound$1
+    182:194:void onCapabilities(com.android.bips.discovery.DiscoveredPrinter,com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+    144:147:void onConnectionClosed() -> onConnectionClosed
+    152:155:void onConnectionDelayed(boolean) -> onConnectionDelayed
+    111:138:void onConnectionOpen(java.lang.String,android.net.wifi.p2p.WifiP2pInfo) -> onConnectionOpen
+    91:100:void onPeerFound(android.net.wifi.p2p.WifiP2pDevice) -> onPeerFound
+    161:176:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+com.android.bips.p2p.P2pPrinterConnection$$ExternalSyntheticLambda0 -> com.android.bips.p2p.P2pPrinterConnection$$ExternalSyntheticLambda0:
+    com.android.bips.p2p.P2pPrinterConnection com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$0$7b3ad5435004608fe806dae9c2b99d29dda04db3c1adfd600eaaa86c21806d38$0.f$0 -> f$0
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$0$7b3ad5435004608fe806dae9c2b99d29dda04db3c1adfd600eaaa86c21806d38$0.f$1 -> f$1
+    void com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$0$7b3ad5435004608fe806dae9c2b99d29dda04db3c1adfd600eaaa86c21806d38$0.<init>(com.android.bips.p2p.P2pPrinterConnection,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    void com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$0$7b3ad5435004608fe806dae9c2b99d29dda04db3c1adfd600eaaa86c21806d38$0.onCapabilities(com.android.bips.jni.LocalPrinterCapabilities) -> onCapabilities
+com.android.bips.p2p.P2pPrinterConnection$$ExternalSyntheticLambda1 -> com.android.bips.p2p.P2pPrinterConnection$$ExternalSyntheticLambda1:
+    com.android.bips.p2p.P2pPrinterConnection com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$1$4ae395ab24a5273fb0a905375e96c6ca52202b993f459caf3c40be1040440bcf$0.f$0 -> f$0
+    void com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$1$4ae395ab24a5273fb0a905375e96c6ca52202b993f459caf3c40be1040440bcf$0.<init>(com.android.bips.p2p.P2pPrinterConnection) -> <init>
+    void com.android.bips.p2p.P2pPrinterConnection$$InternalSyntheticLambda$1$4ae395ab24a5273fb0a905375e96c6ca52202b993f459caf3c40be1040440bcf$0.run() -> run
+com.android.bips.p2p.P2pUtils -> com.android.bips.p2p.P2pUtils:
+    39:39:void <clinit>() -> <clinit>
+    86:88:boolean isOnConnectedInterface(com.android.bips.BuiltInPrintService,com.android.bips.discovery.DiscoveredPrinter) -> isOnConnectedInterface
+    44:47:boolean isOnInterface(java.lang.String,android.net.Uri) -> isOnInterface
+    93:104:boolean isOnInterface(java.net.NetworkInterface,java.net.Inet4Address) -> isOnInterface
+    78:78:boolean isP2p(com.android.bips.discovery.DiscoveredPrinter) -> isP2p
+    52:56:java.net.Inet4Address toInet4Address(android.net.Uri) -> toInet4Address
+    112:113:long toLong(java.net.Inet4Address) -> toLong
+    68:68:java.net.NetworkInterface toNetworkInterface(java.lang.String) -> toNetworkInterface
+com.android.bips.render.IPdfRender$Stub -> com.android.bips.render.IPdfRender$Stub:
+    58:59:void <init>() -> <init>
+    70:74:com.android.bips.render.IPdfRender asInterface(android.os.IBinder) -> asInterface
+    320:320:com.android.bips.render.IPdfRender getDefaultImpl() -> getDefaultImpl
+    87:156:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.bips.render.IPdfRender$Stub$Proxy -> com.android.bips.render.IPdfRender$Stub$Proxy:
+    164:165:void <init>(android.os.IBinder) -> <init>
+    169:169:android.os.IBinder asBinder() -> asBinder
+    285:298:void closeDocument() -> closeDocument
+    212:235:com.android.bips.jni.SizeD getPageSize(int) -> getPageSize
+    180:204:int openDocument(android.os.ParcelFileDescriptor) -> openDocument
+    250:277:android.os.ParcelFileDescriptor renderPageStripe(int,int,int,int,double) -> renderPageStripe
+com.android.bips.render.PdfRenderService -> com.android.bips.render.PdfRenderService:
+    40:40:void <clinit>() -> <clinit>
+    39:63:void <init>() -> <init>
+    39:39:android.graphics.pdf.PdfRenderer access$000(com.android.bips.render.PdfRenderService) -> access$000
+    39:39:android.graphics.pdf.PdfRenderer access$002(com.android.bips.render.PdfRenderService,android.graphics.pdf.PdfRenderer) -> access$002
+    39:39:android.graphics.pdf.PdfRenderer$Page access$100(com.android.bips.render.PdfRenderService) -> access$100
+    39:39:android.graphics.pdf.PdfRenderer$Page access$102(com.android.bips.render.PdfRenderService,android.graphics.pdf.PdfRenderer$Page) -> access$102
+    39:39:void access$200(com.android.bips.render.PdfRenderService) -> access$200
+    39:39:java.lang.String access$300() -> access$300
+    39:39:void access$400(com.android.bips.render.PdfRenderService) -> access$400
+    39:39:java.lang.Object access$500(com.android.bips.render.PdfRenderService) -> access$500
+    161:165:void closeAll() -> closeAll
+    149:153:void closePage() -> closePage
+    54:54:android.os.IBinder onBind(android.content.Intent) -> onBind
+    59:60:boolean onUnbind(android.content.Intent) -> onUnbind
+com.android.bips.render.PdfRenderService$1 -> com.android.bips.render.PdfRenderService$1:
+    63:63:void <init>(com.android.bips.render.PdfRenderService) -> <init>
+    106:106:void closeDocument() -> closeDocument
+    74:77:com.android.bips.jni.SizeD getPageSize(int) -> getPageSize
+    114:119:boolean open(android.os.ParcelFileDescriptor) -> open
+    66:69:int openDocument(android.os.ParcelFileDescriptor) -> openDocument
+    130:141:boolean openPage(int) -> openPage
+    84:100:android.os.ParcelFileDescriptor renderPageStripe(int,int,int,int,double) -> renderPageStripe
+com.android.bips.render.PdfRenderService$RenderThread -> com.android.bips.render.PdfRenderService$RenderThread:
+    183:193:void <init>(com.android.bips.render.PdfRenderService,android.graphics.pdf.PdfRenderer$Page,int,int,int,double,android.os.ParcelFileDescriptor) -> <init>
+    231:238:void renderToBitmap(int,android.graphics.Bitmap) -> renderToBitmap
+    201:226:void run() -> run
+    244:258:void writeRgb(android.graphics.Bitmap,int,java.io.OutputStream) -> writeRgb
+com.android.bips.ui.AddManualPrinterDialog -> com.android.bips.ui.AddManualPrinterDialog:
+    51:60:void <clinit>() -> <clinit>
+    69:71:void <init>(android.app.Activity,com.android.bips.discovery.ManualDiscovery) -> <init>
+    132:145:void addPrinter() -> addPrinter
+    182:182:void afterTextChanged(android.text.Editable) -> afterTextChanged
+    166:169:void error(java.lang.String) -> error
+    91:91:void lambda$onCreate$0(android.view.View) -> lambda$onCreate$0
+    78:101:void onCreate(android.os.Bundle) -> onCreate
+    187:188:boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent) -> onEditorAction
+    152:155:void onFound(com.android.bips.discovery.DiscoveredPrinter,boolean) -> onFound
+    196:197:boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+    161:161:void onNotFound() -> onNotFound
+    107:108:void onStop() -> onStop
+    112:120:void openKeyboard(android.widget.TextView) -> openKeyboard
+    124:126:void updateButtonState() -> updateButtonState
+com.android.bips.ui.AddManualPrinterDialog$$ExternalSyntheticLambda0 -> com.android.bips.ui.AddManualPrinterDialog$$ExternalSyntheticLambda0:
+    com.android.bips.ui.AddManualPrinterDialog com.android.bips.ui.AddManualPrinterDialog$$InternalSyntheticLambda$2$54edf0a22c3daf6c814ca6346c8ded86e8ad0acdf15ac133044000d7c75a057c$0.f$0 -> f$0
+    void com.android.bips.ui.AddManualPrinterDialog$$InternalSyntheticLambda$2$54edf0a22c3daf6c814ca6346c8ded86e8ad0acdf15ac133044000d7c75a057c$0.<init>(com.android.bips.ui.AddManualPrinterDialog) -> <init>
+    void com.android.bips.ui.AddManualPrinterDialog$$InternalSyntheticLambda$2$54edf0a22c3daf6c814ca6346c8ded86e8ad0acdf15ac133044000d7c75a057c$0.onClick(android.view.View) -> onClick
+com.android.bips.ui.AddP2pPrinterDialog -> com.android.bips.ui.AddP2pPrinterDialog:
+    43:46:void <init>(android.app.Fragment,com.android.bips.BuiltInPrintService,android.net.wifi.p2p.WifiP2pDevice) -> <init>
+    91:96:void fail() -> fail
+    74:76:void lambda$onConnectionComplete$1(com.android.bips.discovery.DiscoveredPrinter) -> lambda$onConnectionComplete$1
+    63:63:void lambda$onCreate$0(android.content.DialogInterface) -> lambda$onCreate$0
+    73:80:void onConnectionComplete(com.android.bips.discovery.DiscoveredPrinter) -> onConnectionComplete
+    86:86:void onConnectionDelayed(boolean) -> onConnectionDelayed
+    53:66:void onCreate(android.os.Bundle) -> onCreate
+com.android.bips.ui.AddP2pPrinterDialog$$ExternalSyntheticLambda0 -> com.android.bips.ui.AddP2pPrinterDialog$$ExternalSyntheticLambda0:
+    com.android.bips.ui.AddP2pPrinterDialog com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$3f2dcc750b26c1019b188b0fd740b1d1619caa95e90d17526c5dd31f84ef808a$0.f$0 -> f$0
+    void com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$3f2dcc750b26c1019b188b0fd740b1d1619caa95e90d17526c5dd31f84ef808a$0.<init>(com.android.bips.ui.AddP2pPrinterDialog) -> <init>
+    void com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$3f2dcc750b26c1019b188b0fd740b1d1619caa95e90d17526c5dd31f84ef808a$0.onDismiss(android.content.DialogInterface) -> onDismiss
+com.android.bips.ui.AddP2pPrinterDialog$$ExternalSyntheticLambda1 -> com.android.bips.ui.AddP2pPrinterDialog$$ExternalSyntheticLambda1:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$49798525d47edbbcb27893adf485c414997244dd5e4f78d506748f42db5ed162$0.f$1 -> f$1
+    com.android.bips.ui.AddP2pPrinterDialog com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$49798525d47edbbcb27893adf485c414997244dd5e4f78d506748f42db5ed162$0.f$0 -> f$0
+    void com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$49798525d47edbbcb27893adf485c414997244dd5e4f78d506748f42db5ed162$0.<init>(com.android.bips.ui.AddP2pPrinterDialog,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    void com.android.bips.ui.AddP2pPrinterDialog$$InternalSyntheticLambda$2$49798525d47edbbcb27893adf485c414997244dd5e4f78d506748f42db5ed162$0.run() -> run
+com.android.bips.ui.AddPrintersActivity -> com.android.bips.ui.AddPrintersActivity:
+    30:30:void <init>() -> <init>
+    33:40:void onCreate(android.os.Bundle) -> onCreate
+    46:52:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    60:62:void onRequestPermissionsResult(int,java.lang.String[],int[]) -> onRequestPermissionsResult
+com.android.bips.ui.AddPrintersFragment -> com.android.bips.ui.AddPrintersFragment:
+    43:43:void <clinit>() -> <clinit>
+    42:42:void <init>() -> <init>
+    71:74:boolean lambda$onCreate$0(android.preference.Preference) -> lambda$onCreate$0
+    140:140:void lambda$onServiceConnected$4(android.content.DialogInterface) -> lambda$onServiceConnected$4
+    138:141:boolean lambda$onServiceConnected$5(android.preference.Preference) -> lambda$onServiceConnected$5
+    98:101:void lambda$onStart$1(boolean) -> lambda$onStart$1
+    114:114:void lambda$onStart$2(boolean) -> lambda$onStart$2
+    107:118:boolean lambda$onStart$3(android.preference.Preference) -> lambda$onStart$3
+    219:220:void lambda$showRemovalDialog$7(com.android.bips.discovery.DiscoveredPrinter,android.content.DialogInterface,int) -> lambda$showRemovalDialog$7
+    199:199:boolean lambda$updateSavedPrinters$6(com.android.bips.discovery.DiscoveredPrinter,android.preference.Preference) -> lambda$updateSavedPrinters$6
+    64:80:void onCreate(android.os.Bundle) -> onCreate
+    135:145:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    169:169:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    85:106:void onStart() -> onStart
+    126:129:void onStop() -> onStop
+    209:221:void showRemovalDialog(com.android.bips.discovery.DiscoveredPrinter) -> showRemovalDialog
+    150:164:void updateP2pPreferences() -> updateP2pPreferences
+    173:202:void updateSavedPrinters() -> updateSavedPrinters
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda0 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda0:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$2$dbae2b4a952d94ffa8f4712660745f19e72b800beb522fd3c353fb62ea8cd8e6$0.f$1 -> f$1
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$2$dbae2b4a952d94ffa8f4712660745f19e72b800beb522fd3c353fb62ea8cd8e6$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$2$dbae2b4a952d94ffa8f4712660745f19e72b800beb522fd3c353fb62ea8cd8e6$0.<init>(com.android.bips.ui.AddPrintersFragment,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$2$dbae2b4a952d94ffa8f4712660745f19e72b800beb522fd3c353fb62ea8cd8e6$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda1 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda1:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$5d30a6269c5a6ee89729fccdac52ac7d259a98408812fac12fee94ece0c3e6af$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$5d30a6269c5a6ee89729fccdac52ac7d259a98408812fac12fee94ece0c3e6af$0.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$5d30a6269c5a6ee89729fccdac52ac7d259a98408812fac12fee94ece0c3e6af$0.onDismiss(android.content.DialogInterface) -> onDismiss
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda2 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda2:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$1.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$1.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    boolean com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$1.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda3 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda3:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$587e0016b07a7782b6cf1344b491e862fc7971c67416f731f2e04036728487ae$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$587e0016b07a7782b6cf1344b491e862fc7971c67416f731f2e04036728487ae$0.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    boolean com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$587e0016b07a7782b6cf1344b491e862fc7971c67416f731f2e04036728487ae$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda4 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda4:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$7a70613c3f2e9e22998e90eb52232bc6cff9711280d3056520b5f3464f4bbd6b$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$7a70613c3f2e9e22998e90eb52232bc6cff9711280d3056520b5f3464f4bbd6b$0.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    boolean com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$7a70613c3f2e9e22998e90eb52232bc6cff9711280d3056520b5f3464f4bbd6b$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda5 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda5:
+    com.android.bips.discovery.DiscoveredPrinter com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$086802c8969eb9ebf5c38c2a321c3c06afae373fea5da20abd125a9910ebfa91$0.f$1 -> f$1
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$086802c8969eb9ebf5c38c2a321c3c06afae373fea5da20abd125a9910ebfa91$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$086802c8969eb9ebf5c38c2a321c3c06afae373fea5da20abd125a9910ebfa91$0.<init>(com.android.bips.ui.AddPrintersFragment,com.android.bips.discovery.DiscoveredPrinter) -> <init>
+    boolean com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$086802c8969eb9ebf5c38c2a321c3c06afae373fea5da20abd125a9910ebfa91$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda6 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda6:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$0.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$0$8f9cea7dbd23d90ff45d89f8e7ad6f399f0099625a4cba186c0789484e08cd38$0.onP2pPermissionComplete(boolean) -> onP2pPermissionComplete
+com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda7 -> com.android.bips.ui.AddPrintersFragment$$ExternalSyntheticLambda7:
+    com.android.bips.ui.AddPrintersFragment com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$fd9b5af57eb2c9fd67ca1ad770897708afafd27f08448e57634ab0b48bf4cff3$0.f$0 -> f$0
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$fd9b5af57eb2c9fd67ca1ad770897708afafd27f08448e57634ab0b48bf4cff3$0.<init>(com.android.bips.ui.AddPrintersFragment) -> <init>
+    void com.android.bips.ui.AddPrintersFragment$$InternalSyntheticLambda$1$fd9b5af57eb2c9fd67ca1ad770897708afafd27f08448e57634ab0b48bf4cff3$0.onP2pPermissionComplete(boolean) -> onP2pPermissionComplete
+com.android.bips.ui.FindP2pPrintersFragment -> com.android.bips.ui.FindP2pPrintersFragment:
+    43:43:void <clinit>() -> <clinit>
+    42:42:void <init>() -> <init>
+    42:42:com.android.bips.BuiltInPrintService access$100(com.android.bips.ui.FindP2pPrintersFragment) -> access$100
+    42:42:android.preference.PreferenceCategory access$200(com.android.bips.ui.FindP2pPrintersFragment) -> access$200
+    54:57:void onCreate(android.os.Bundle) -> onCreate
+    84:91:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    97:97:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    62:65:void onStart() -> onStart
+    71:78:void onStop() -> onStop
+com.android.bips.ui.FindP2pPrintersFragment$P2pListener -> com.android.bips.ui.FindP2pPrintersFragment$P2pListener:
+    101:101:void <init>(com.android.bips.ui.FindP2pPrintersFragment) -> <init>
+    101:101:void <init>(com.android.bips.ui.FindP2pPrintersFragment,com.android.bips.ui.FindP2pPrintersFragment$1) -> <init>
+    151:154:com.android.bips.ui.PrinterPreference getPrinterPreference(android.net.Uri) -> getPrinterPreference
+    126:127:boolean lambda$onPeerFound$0(android.net.wifi.p2p.WifiP2pDevice,android.preference.Preference) -> lambda$onPeerFound$0
+    105:130:void onPeerFound(android.net.wifi.p2p.WifiP2pDevice) -> onPeerFound
+    137:146:void onPeerLost(android.net.wifi.p2p.WifiP2pDevice) -> onPeerLost
+com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$ExternalSyntheticLambda0 -> com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$ExternalSyntheticLambda0:
+    android.net.wifi.p2p.WifiP2pDevice com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$InternalSyntheticLambda$1$3381417776efeeaa09d3c96acb71843a3fd243582288107672e5b80d5f5b928d$0.f$1 -> f$1
+    com.android.bips.ui.FindP2pPrintersFragment$P2pListener com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$InternalSyntheticLambda$1$3381417776efeeaa09d3c96acb71843a3fd243582288107672e5b80d5f5b928d$0.f$0 -> f$0
+    void com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$InternalSyntheticLambda$1$3381417776efeeaa09d3c96acb71843a3fd243582288107672e5b80d5f5b928d$0.<init>(com.android.bips.ui.FindP2pPrintersFragment$P2pListener,android.net.wifi.p2p.WifiP2pDevice) -> <init>
+    boolean com.android.bips.ui.FindP2pPrintersFragment$P2pListener$$InternalSyntheticLambda$1$3381417776efeeaa09d3c96acb71843a3fd243582288107672e5b80d5f5b928d$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.MoreOptionsActivity -> com.android.bips.ui.MoreOptionsActivity:
+    45:45:void <clinit>() -> <clinit>
+    44:44:void <init>() -> <init>
+    57:73:void onCreate(android.os.Bundle) -> onCreate
+    78:83:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    115:128:void onPrinterFound(com.android.bips.discovery.DiscoveredPrinter) -> onPrinterFound
+    104:105:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    110:110:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    88:89:void onStart() -> onStart
+    95:99:void onStop() -> onStop
+com.android.bips.ui.MoreOptionsFragment -> com.android.bips.ui.MoreOptionsFragment:
+    46:52:void <clinit>() -> <clinit>
+    44:59:void <init>() -> <init>
+    44:44:android.preference.PreferenceCategory access$000(com.android.bips.ui.MoreOptionsFragment) -> access$000
+    44:44:boolean access$100(com.android.bips.ui.MoreOptionsFragment) -> access$100
+    44:44:android.content.pm.PackageManager access$200(com.android.bips.ui.MoreOptionsFragment) -> access$200
+    44:44:java.text.Collator access$300() -> access$300
+    145:151:com.android.bips.ui.MoreOptionsFragment$RecommendationItem getOrCreateItem(android.printservice.recommendation.RecommendationInfo) -> getOrCreateItem
+    72:73:boolean lambda$onCreate$0(android.preference.Preference) -> lambda$onCreate$0
+    63:71:void onCreate(android.os.Bundle) -> onCreate
+    107:140:void onPrintServiceRecommendationsChanged() -> onPrintServiceRecommendationsChanged
+    80:96:void onStart() -> onStart
+    101:102:void onStop() -> onStop
+com.android.bips.ui.MoreOptionsFragment$$ExternalSyntheticLambda0 -> com.android.bips.ui.MoreOptionsFragment$$ExternalSyntheticLambda0:
+    com.android.bips.ui.MoreOptionsFragment com.android.bips.ui.MoreOptionsFragment$$InternalSyntheticLambda$0$cccd888aaf5967d963b8159f9139fd11ddea6bab6bea645a087360eeb2732589$0.f$0 -> f$0
+    void com.android.bips.ui.MoreOptionsFragment$$InternalSyntheticLambda$0$cccd888aaf5967d963b8159f9139fd11ddea6bab6bea645a087360eeb2732589$0.<init>(com.android.bips.ui.MoreOptionsFragment) -> <init>
+    boolean com.android.bips.ui.MoreOptionsFragment$$InternalSyntheticLambda$0$cccd888aaf5967d963b8159f9139fd11ddea6bab6bea645a087360eeb2732589$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.MoreOptionsFragment$RecommendationItem -> com.android.bips.ui.MoreOptionsFragment$RecommendationItem:
+    160:166:void <init>(com.android.bips.ui.MoreOptionsFragment,android.printservice.recommendation.RecommendationInfo) -> <init>
+    157:157:int compareTo(java.lang.Object) -> compareTo
+    225:231:int compareTo(com.android.bips.ui.MoreOptionsFragment$RecommendationItem) -> compareTo
+    212:214:boolean lambda$updateDownloader$1(android.preference.Preference) -> lambda$updateDownloader$1
+    201:202:boolean lambda$updateEnabler$0(android.preference.Preference) -> lambda$updateEnabler$0
+    209:211:void updateDownloader() -> updateDownloader
+    192:199:void updateEnabler() -> updateEnabler
+    170:184:void updatePreference(int) -> updatePreference
+com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$ExternalSyntheticLambda0 -> com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$ExternalSyntheticLambda0:
+    com.android.bips.ui.MoreOptionsFragment$RecommendationItem com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$511905e29a6034450f7a493b3cd5a6fd67bf6a53fe4d1148d54e78cee6e9014f$0.f$0 -> f$0
+    void com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$511905e29a6034450f7a493b3cd5a6fd67bf6a53fe4d1148d54e78cee6e9014f$0.<init>(com.android.bips.ui.MoreOptionsFragment$RecommendationItem) -> <init>
+    boolean com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$511905e29a6034450f7a493b3cd5a6fd67bf6a53fe4d1148d54e78cee6e9014f$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$ExternalSyntheticLambda1 -> com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$ExternalSyntheticLambda1:
+    com.android.bips.ui.MoreOptionsFragment$RecommendationItem com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$bbe4cf4c1b9ddc6670fd546571e99a72cdc815d7208a65eee12b2515fb5d22f5$0.f$0 -> f$0
+    void com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$bbe4cf4c1b9ddc6670fd546571e99a72cdc815d7208a65eee12b2515fb5d22f5$0.<init>(com.android.bips.ui.MoreOptionsFragment$RecommendationItem) -> <init>
+    boolean com.android.bips.ui.MoreOptionsFragment$RecommendationItem$$InternalSyntheticLambda$0$bbe4cf4c1b9ddc6670fd546571e99a72cdc815d7208a65eee12b2515fb5d22f5$0.onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+com.android.bips.ui.PrinterPreference -> com.android.bips.ui.PrinterPreference:
+    29:37:void <init>(android.content.Context,com.android.bips.BuiltInPrintService,com.android.bips.discovery.DiscoveredPrinter,boolean) -> <init>
+    54:54:com.android.bips.discovery.DiscoveredPrinter getPrinter() -> getPrinter
+    41:50:void updatePrinter(com.android.bips.discovery.DiscoveredPrinter) -> updatePrinter
+com.android.bips.util.BroadcastMonitor -> com.android.bips.util.BroadcastMonitor:
+    37:44:void <init>(android.content.Context,android.content.BroadcastReceiver,java.lang.String[]) -> <init>
+    49:51:void close() -> close
+    57:58:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.bips.util.FileUtils -> com.android.bips.util.FileUtils:
+    45:53:void copy(java.io.InputStream,java.io.OutputStream) -> copy
+    35:40:void deleteAll(java.io.File) -> deleteAll
+    62:65:boolean makeDirectory(java.io.File) -> makeDirectory
+com.android.bips.util.PriorityLock -> com.android.bips.util.PriorityLock:
+    26:28:void <init>() -> <init>
+    34:46:void lock(int) -> lock
+    52:57:void unlock() -> unlock
+com.android.bips.util.WifiMonitor -> com.android.bips.util.WifiMonitor:
+    44:53:void <init>(com.android.bips.BuiltInPrintService,com.android.bips.util.WifiMonitor$Listener) -> <init>
+    30:30:com.android.bips.util.WifiMonitor$Listener access$000(com.android.bips.util.WifiMonitor) -> access$000
+    30:30:java.lang.Boolean access$100(com.android.bips.util.WifiMonitor) -> access$100
+    30:30:java.lang.Boolean access$102(com.android.bips.util.WifiMonitor,java.lang.Boolean) -> access$102
+    71:74:void close() -> close
+com.android.bips.util.WifiMonitor$1 -> com.android.bips.util.WifiMonitor$1:
+    53:53:void <init>(com.android.bips.util.WifiMonitor,android.net.ConnectivityManager) -> <init>
+    56:61:void onReceive(android.content.Context,android.content.Intent) -> onReceive
