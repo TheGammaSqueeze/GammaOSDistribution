@@ -1,0 +1,4094 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "google::protobuf::LOGLEVEL_INFO"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "google::protobuf::LOGLEVEL_WARNING"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "google::protobuf::LOGLEVEL_ERROR"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "google::protobuf::LOGLEVEL_FATAL"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "google::protobuf::LOGLEVEL_DFATAL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf8LogLevelE",
+   "name" : "google::protobuf::LogLevel",
+   "referenced_type" : "_ZTIN6google8protobuf8LogLevelE",
+   "self_type" : "_ZTIN6google8protobuf8LogLevelE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvvE",
+   "name" : "void ()",
+   "referenced_type" : "_ZTIFvvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvvE",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "google::protobuf::NewCallback",
+   "linker_set_key" : "_ZN6google8protobuf11NewCallbackEPFvvE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFvvE"
+    }
+   ],
+   "return_type" : "_ZTIPN6google8protobuf7ClosureE",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::string_as_array",
+   "linker_set_key" : "_ZN6google8protobuf15string_as_arrayEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/stl_util.h"
+  },
+  {
+   "function_name" : "google::protobuf::NewPermanentCallback",
+   "linker_set_key" : "_ZN6google8protobuf20NewPermanentCallbackEPFvvE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFvvE"
+    }
+   ],
+   "return_type" : "_ZTIPN6google8protobuf7ClosureE",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD16",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD16EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD32",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD32EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD64",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD64EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE16",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE16EPvt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE32",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE32EPvj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE64",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE64EPvy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::STLStringResizeUninitialized",
+   "linker_set_key" : "_ZN6google8protobuf28STLStringResizeUninitializedEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/stl_util.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::as_string_data",
+   "linker_set_key" : "_ZN6google8protobuf2io14as_string_dataEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__14pairIPcbEE",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::SetCloseOnDelete",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream16SetCloseOnDeleteEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::SetCloseOnDelete",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream16SetCloseOnDeleteEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::Read",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream4ReadEPvi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::Skip",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream4SkipEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::Close",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream5CloseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::CopyingFileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamC1Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::CopyingFileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamC2Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::~CopyingFileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::~CopyingFileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::~CopyingFileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::Next",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream4NextEPPKvPi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::Skip",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream4SkipEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::Close",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream5CloseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::BackUp",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStream6BackUpEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::FileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStreamC1Eii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::FileInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io15FileInputStreamC2Eii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayInputStream::~ArrayInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16ArrayInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16ArrayInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayInputStream::~ArrayInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16ArrayInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16ArrayInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayInputStream::~ArrayInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16ArrayInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16ArrayInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::SetCloseOnDelete",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream16SetCloseOnDeleteEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::SetCloseOnDelete",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStream16SetCloseOnDeleteEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::Close",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStream5CloseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::Write",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStream5WriteEPKvi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::CopyingFileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamC1Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::CopyingFileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamC2Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::~CopyingFileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::~CopyingFileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::~CopyingFileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::Next",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream4NextEPPvPi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::Close",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream5CloseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::Flush",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream5FlushEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::BackUp",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStream6BackUpEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::FileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStreamC1Eii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::FileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStreamC2Eii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::~FileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::~FileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::~FileOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io16FileOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayOutputStream::~ArrayOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io17ArrayOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io17ArrayOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayOutputStream::~ArrayOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io17ArrayOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io17ArrayOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ArrayOutputStream::~ArrayOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io17ArrayOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io17ArrayOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingInputStream::~CopyingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18CopyingInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingInputStream::~CopyingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18CopyingInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingInputStream::~CopyingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18CopyingInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::Read",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStream4ReadEPvi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::CopyingIstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamC1EPNSt3__113basic_istreamIcNS4_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::CopyingIstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamC2EPNSt3__113basic_istreamIcNS4_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::~CopyingIstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::~CopyingIstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream::~CopyingIstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::Next",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream4NextEPPKvPi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::Skip",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream4SkipEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::BackUp",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStream6BackUpEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::IstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStreamC1EPNSt3__113basic_istreamIcNS3_11char_traitsIcEEEEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::IstreamInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18IstreamInputStreamC2EPNSt3__113basic_istreamIcNS3_11char_traitsIcEEEEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::StringOutputStream::~StringOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18StringOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18StringOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::StringOutputStream::~StringOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18StringOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18StringOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::StringOutputStream::~StringOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io18StringOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18StringOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingOutputStream::~CopyingOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19CopyingOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingOutputStream::~CopyingOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19CopyingOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingOutputStream::~CopyingOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19CopyingOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::Write",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStream5WriteEPKvi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::CopyingOstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamC1EPNSt3__113basic_ostreamIcNS4_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::CopyingOstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamC2EPNSt3__113basic_ostreamIcNS4_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::~CopyingOstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::~CopyingOstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream::~CopyingOstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::Next",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream4NextEPPvPi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::BackUp",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStream6BackUpEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::OstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStreamC1EPNSt3__113basic_ostreamIcNS3_11char_traitsIcEEEEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::OstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStreamC2EPNSt3__113basic_ostreamIcNS3_11char_traitsIcEEEEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::~OstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::~OstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::~OstreamOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19OstreamOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyInputStream::ZeroCopyInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19ZeroCopyInputStreamC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyInputStream::~ZeroCopyInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19ZeroCopyInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyInputStream::~ZeroCopyInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyInputStream::~ZeroCopyInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io19ZeroCopyInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::mutable_string_data",
+   "linker_set_key" : "_ZN6google8protobuf2io19mutable_string_dataEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyOutputStream::ZeroCopyOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyOutputStream::~ZeroCopyOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyOutputStream::~ZeroCopyOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyOutputStream::~ZeroCopyOutputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::Next",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStream4NextEPPKvPi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::Skip",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStream4SkipEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::BackUp",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStream6BackUpEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::ConcatenatingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStreamC1EPKPNS1_19ZeroCopyInputStreamEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPKPN6google8protobuf2io19ZeroCopyInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::ConcatenatingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStreamC2EPKPNS1_19ZeroCopyInputStreamEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIPKPN6google8protobuf2io19ZeroCopyInputStreamE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::~ConcatenatingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStreamD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::~ConcatenatingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStreamD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::~ConcatenatingInputStream",
+   "linker_set_key" : "_ZN6google8protobuf2io24ConcatenatingInputStreamD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingInputStreamAdaptor::SetOwnsCopyingStream",
+   "linker_set_key" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptor20SetOwnsCopyingStreamEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io25CopyingInputStreamAdaptorE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::CopyingOutputStreamAdaptor::SetOwnsCopyingStream",
+   "linker_set_key" : "_ZN6google8protobuf2io26CopyingOutputStreamAdaptor20SetOwnsCopyingStreamEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf2io26CopyingOutputStreamAdaptorE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero",
+   "linker_set_key" : "_ZN6google8protobuf4Bits16Log2FloorNonZeroEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero64",
+   "linker_set_key" : "_ZN6google8protobuf4Bits18Log2FloorNonZero64Ey",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero_Portable",
+   "linker_set_key" : "_ZN6google8protobuf4Bits25Log2FloorNonZero_PortableEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero64_Portable",
+   "linker_set_key" : "_ZN6google8protobuf4Bits27Log2FloorNonZero64_PortableEy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::Closure::Closure",
+   "linker_set_key" : "_ZN6google8protobuf7ClosureC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf7ClosureE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::FunctionClosure0::Run",
+   "linker_set_key" : "_ZN6google8protobuf8internal16FunctionClosure03RunEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf8internal16FunctionClosure0E"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::FunctionClosure0::FunctionClosure0",
+   "linker_set_key" : "_ZN6google8protobuf8internal16FunctionClosure0C1EPFvvEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf8internal16FunctionClosure0E"
+    },
+    {
+     "referenced_type" : "_ZTIPFvvE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::FunctionClosure0::FunctionClosure0",
+   "linker_set_key" : "_ZN6google8protobuf8internal16FunctionClosure0C2EPFvvEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6google8protobuf8internal16FunctionClosure0E"
+    },
+    {
+     "referenced_type" : "_ZTIPFvvE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::IsStructurallyValidUTF8",
+   "linker_set_key" : "_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::IsOk",
+   "linker_set_key" : "_ZN6google8protobuf8internal4IsOkIbEEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost16Et",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost32Ej",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost64Ey",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::IsLittleEndian",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian14IsLittleEndianEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load16EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load32EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load64EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store16EPvt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store32EPvj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store64EPvy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost16Et",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost32Ej",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost64Ey",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream::GetErrno",
+   "linker_set_key" : "_ZNK6google8protobuf2io15FileInputStream22CopyingFileInputStream8GetErrnoEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::GetErrno",
+   "linker_set_key" : "_ZNK6google8protobuf2io15FileInputStream8GetErrnoEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io15FileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileInputStream::ByteCount",
+   "linker_set_key" : "_ZNK6google8protobuf2io15FileInputStream9ByteCountEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io15FileInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream::GetErrno",
+   "linker_set_key" : "_ZNK6google8protobuf2io16FileOutputStream23CopyingFileOutputStream8GetErrnoEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::GetErrno",
+   "linker_set_key" : "_ZNK6google8protobuf2io16FileOutputStream8GetErrnoEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::FileOutputStream::ByteCount",
+   "linker_set_key" : "_ZNK6google8protobuf2io16FileOutputStream9ByteCountEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io16FileOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::IstreamInputStream::ByteCount",
+   "linker_set_key" : "_ZNK6google8protobuf2io18IstreamInputStream9ByteCountEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io18IstreamInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::OstreamOutputStream::ByteCount",
+   "linker_set_key" : "_ZNK6google8protobuf2io19OstreamOutputStream9ByteCountEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io19OstreamOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ZeroCopyOutputStream::AllowsAliasing",
+   "linker_set_key" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::ConcatenatingInputStream::ByteCount",
+   "linker_set_key" : "_ZNK6google8protobuf2io24ConcatenatingInputStream9ByteCountEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN6google8protobuf2io24ConcatenatingInputStreamE"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "access" : "private",
+   "linker_set_key" : "_ZN6google8protobuf2io18StringOutputStream12kMinimumSizeE",
+   "name" : "google::protobuf::io::StringOutputStream::kMinimumSize",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobuf8internalL26kMinHeaderVersionForProtocE",
+   "name" : "google::protobuf::internal::kMinHeaderVersionForProtoc",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobuf8internalL27kMinHeaderVersionForLibraryE",
+   "name" : "google::protobuf::internal::kMinHeaderVersionForLibrary",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL10kuint32maxE",
+   "name" : "google::protobuf::kuint32max",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL10kuint64maxE",
+   "name" : "google::protobuf::kuint64max",
+   "referenced_type" : "_ZTIKy",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint32maxE",
+   "name" : "google::protobuf::kint32max",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint32minE",
+   "name" : "google::protobuf::kint32min",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint64maxE",
+   "name" : "google::protobuf::kint64max",
+   "referenced_type" : "_ZTIKx",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint64minE",
+   "name" : "google::protobuf::kint64min",
+   "referenced_type" : "_ZTIKx",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvvE",
+   "name" : "void (*)()",
+   "referenced_type" : "_ZTIFvvE",
+   "self_type" : "_ZTIPFvvE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "name" : "const google::protobuf::io::FileInputStream::CopyingFileInputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io15FileInputStreamE",
+   "name" : "const google::protobuf::io::FileInputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io15FileInputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io15FileInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "name" : "const google::protobuf::io::FileOutputStream::CopyingFileOutputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io16FileOutputStreamE",
+   "name" : "const google::protobuf::io::FileOutputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io16FileOutputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io16FileOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io18IstreamInputStreamE",
+   "name" : "const google::protobuf::io::IstreamInputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io18IstreamInputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io18IstreamInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io19OstreamOutputStreamE",
+   "name" : "const google::protobuf::io::OstreamOutputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io19OstreamOutputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io19OstreamOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "name" : "const google::protobuf::io::ZeroCopyOutputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN6google8protobuf2io24ConcatenatingInputStreamE",
+   "name" : "const google::protobuf::io::ConcatenatingInputStream *",
+   "referenced_type" : "_ZTIKN6google8protobuf2io24ConcatenatingInputStreamE",
+   "self_type" : "_ZTIPKN6google8protobuf2io24ConcatenatingInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyInputStream *const *",
+   "referenced_type" : "_ZTIKPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "self_type" : "_ZTIPKPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io15FileInputStreamE",
+   "name" : "google::protobuf::io::FileInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io15FileInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io16ArrayInputStreamE",
+   "name" : "google::protobuf::io::ArrayInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io16ArrayInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io16ArrayInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io16FileOutputStreamE",
+   "name" : "google::protobuf::io::FileOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io16FileOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io17ArrayOutputStreamE",
+   "name" : "google::protobuf::io::ArrayOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io17ArrayOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io17ArrayOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE",
+   "name" : "google::protobuf::io::CopyingInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io18CopyingInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE",
+   "name" : "google::protobuf::io::IstreamInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io18IstreamInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io18StringOutputStreamE",
+   "name" : "google::protobuf::io::StringOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io18StringOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io18StringOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE",
+   "name" : "google::protobuf::io::CopyingOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE",
+   "name" : "google::protobuf::io::OstreamOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io19OstreamOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyOutputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE",
+   "name" : "google::protobuf::io::ConcatenatingInputStream *",
+   "referenced_type" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE",
+   "self_type" : "_ZTIPN6google8protobuf2io24ConcatenatingInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "name" : "google::protobuf::io::CopyingInputStreamAdaptor *",
+   "referenced_type" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "self_type" : "_ZTIPN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "name" : "google::protobuf::io::CopyingOutputStreamAdaptor *",
+   "referenced_type" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "self_type" : "_ZTIPN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf7ClosureE",
+   "name" : "google::protobuf::Closure *",
+   "referenced_type" : "_ZTIN6google8protobuf7ClosureE",
+   "self_type" : "_ZTIPN6google8protobuf7ClosureE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6google8protobuf8internal16FunctionClosure0E",
+   "name" : "google::protobuf::internal::FunctionClosure0 *",
+   "referenced_type" : "_ZTIN6google8protobuf8internal16FunctionClosure0E",
+   "self_type" : "_ZTIPN6google8protobuf8internal16FunctionClosure0E",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/stl_util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_istream<char, std::char_traits<char>> *",
+   "referenced_type" : "_ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> *",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPKv",
+   "name" : "const void **",
+   "referenced_type" : "_ZTIPKv",
+   "self_type" : "_ZTIPPKv",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPv",
+   "name" : "void **",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIPPv",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/stl_util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "name" : "const google::protobuf::io::FileInputStream::CopyingFileInputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "size" : 20,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io15FileInputStreamE",
+   "name" : "const google::protobuf::io::FileInputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io15FileInputStreamE",
+   "size" : 64,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "name" : "const google::protobuf::io::FileOutputStream::CopyingFileOutputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "size" : 16,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io16FileOutputStreamE",
+   "name" : "const google::protobuf::io::FileOutputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io16FileOutputStreamE",
+   "size" : 64,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io18IstreamInputStreamE",
+   "name" : "const google::protobuf::io::IstreamInputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io18IstreamInputStreamE",
+   "size" : 56,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io19OstreamOutputStreamE",
+   "name" : "const google::protobuf::io::OstreamOutputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io19OstreamOutputStreamE",
+   "size" : 56,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "name" : "const google::protobuf::io::ZeroCopyOutputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6google8protobuf2io24ConcatenatingInputStreamE",
+   "name" : "const google::protobuf::io::ConcatenatingInputStream",
+   "referenced_type" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE",
+   "self_type" : "_ZTIKN6google8protobuf2io24ConcatenatingInputStreamE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 12,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPKh",
+   "name" : "const unsigned char *const",
+   "referenced_type" : "_ZTIPKh",
+   "self_type" : "_ZTIKPKh",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyInputStream *const",
+   "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "self_type" : "_ZTIKPN6google8protobuf2io19ZeroCopyInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPh",
+   "name" : "unsigned char *const",
+   "referenced_type" : "_ZTIPh",
+   "self_type" : "_ZTIKPh",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKx",
+   "name" : "const long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIKx",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKy",
+   "name" : "const unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIKy",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf11LogSilencerE",
+   "name" : "google::protobuf::LogSilencer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf11LogSilencerE",
+   "self_type" : "_ZTIN6google8protobuf11LogSilencerE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "access" : "private",
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io18CopyingInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "file_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "close_on_delete_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "is_closed_",
+     "field_offset" : 72,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "errno_",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "previous_seek_failed_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "name" : "google::protobuf::io::FileInputStream::CopyingFileInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE",
+   "size" : 20,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream4ReadEPvi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream22CopyingFileInputStream4SkipEi"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_input_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStream22CopyingFileInputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "impl_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io15FileInputStreamE",
+   "name" : "google::protobuf::io::FileInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io15FileInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io15FileInputStreamE",
+   "size" : 64,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io15FileInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io15FileInputStream4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io15FileInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "data_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKPKh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "size_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "block_size_",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "position_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "last_returned_size_",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io16ArrayInputStreamE",
+   "name" : "google::protobuf::io::ArrayInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io16ArrayInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io16ArrayInputStreamE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io16ArrayInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16ArrayInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16ArrayInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16ArrayInputStream4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16ArrayInputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16ArrayInputStream4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io16ArrayInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "file_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "close_on_delete_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "is_closed_",
+     "field_offset" : 72,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "errno_",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "name" : "google::protobuf::io::FileOutputStream::CopyingFileOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE",
+   "size" : 16,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStream23CopyingFileOutputStream5WriteEPKvi"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_output_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStream23CopyingFileOutputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "impl_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io16FileOutputStreamE",
+   "name" : "google::protobuf::io::FileOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io16FileOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io16FileOutputStreamE",
+   "size" : 64,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io16FileOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStream4NextEPPvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io16FileOutputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io16FileOutputStream9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "data_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "size_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "block_size_",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "position_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "last_returned_size_",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io17ArrayOutputStreamE",
+   "name" : "google::protobuf::io::ArrayOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io17ArrayOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io17ArrayOutputStreamE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io17ArrayOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io17ArrayOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io17ArrayOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io17ArrayOutputStream4NextEPPvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io17ArrayOutputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io17ArrayOutputStream9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIN6google8protobuf2io18CopyingInputStreamE",
+   "name" : "google::protobuf::io::CopyingInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io18CopyingInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io18CopyingInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io18CopyingInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18CopyingInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18CopyingInputStreamD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io18CopyingInputStream4ReadEPvi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18CopyingInputStream4SkipEi"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io18CopyingInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "input_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPNSt3__113basic_istreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "name" : "google::protobuf::io::IstreamInputStream::CopyingIstreamInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStream4ReadEPvi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18CopyingInputStream4SkipEi"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_input_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStream25CopyingIstreamInputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "impl_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io18IstreamInputStreamE",
+   "name" : "google::protobuf::io::IstreamInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io18IstreamInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io18IstreamInputStreamE",
+   "size" : 56,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io18IstreamInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18IstreamInputStream4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io18IstreamInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "target_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io18StringOutputStreamE",
+   "name" : "google::protobuf::io::StringOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io18StringOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io18StringOutputStreamE",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io18StringOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18StringOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io18StringOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18StringOutputStream4NextEPPvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io18StringOutputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io18StringOutputStream9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE",
+   "name" : "google::protobuf::io::CopyingOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19CopyingOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19CopyingOutputStreamD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io19CopyingOutputStream5WriteEPKvi"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "input_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19ZeroCopyInputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "limit_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "access" : "private",
+     "field_name" : "prior_bytes_read_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIx"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io19LimitingInputStreamE",
+   "name" : "google::protobuf::io::LimitingInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io19LimitingInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io19LimitingInputStreamE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io19LimitingInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19LimitingInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19LimitingInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19LimitingInputStream4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19LimitingInputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19LimitingInputStream4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io19LimitingInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19CopyingOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "output_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "name" : "google::protobuf::io::OstreamOutputStream::CopyingOstreamOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStream5WriteEPKvi"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_output_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStream26CopyingOstreamOutputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "impl_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE",
+   "name" : "google::protobuf::io::OstreamOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE",
+   "size" : 56,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io19OstreamOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStream4NextEPPvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io19OstreamOutputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io19OstreamOutputStream9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19ZeroCopyInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io19ZeroCopyInputStreamD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io19ZeroCopyInputStream4NextEPPKvPi"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io19ZeroCopyInputStream6BackUpEi"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io19ZeroCopyInputStream4SkipEi"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK6google8protobuf2io19ZeroCopyInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "name" : "google::protobuf::io::ZeroCopyOutputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStreamD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream4NextEPPvPi"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream6BackUpEi"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "streams_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPKPN6google8protobuf2io19ZeroCopyInputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "stream_count_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "bytes_retired_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIx"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE",
+   "name" : "google::protobuf::io::ConcatenatingInputStream",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE",
+   "self_type" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io24ConcatenatingInputStreamE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io24ConcatenatingInputStreamD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io24ConcatenatingInputStreamD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io24ConcatenatingInputStream4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io24ConcatenatingInputStream6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io24ConcatenatingInputStream4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io24ConcatenatingInputStream9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io19ZeroCopyInputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_stream_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPN6google8protobuf2io18CopyingInputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "owns_copying_stream_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "failed_",
+     "field_offset" : 72,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "position_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTINSt3__110unique_ptrIA_hNS_14default_deleteIS1_EEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_size_",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_used_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "backup_bytes_",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "name" : "google::protobuf::io::CopyingInputStreamAdaptor",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "self_type" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE",
+   "size" : 40,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io25CopyingInputStreamAdaptorE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptorD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptorD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptor4NextEPPKvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptor6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io25CopyingInputStreamAdaptor4SkipEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io25CopyingInputStreamAdaptor9ByteCountEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf2io20ZeroCopyOutputStreamE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "copying_stream_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPN6google8protobuf2io19CopyingOutputStreamE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "owns_copying_stream_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "failed_",
+     "field_offset" : 72,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "position_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTINSt3__110unique_ptrIA_hNS_14default_deleteIS1_EEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_size_",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buffer_used_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "name" : "google::protobuf::io::CopyingOutputStreamAdaptor",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "self_type" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE",
+   "size" : 40,
+   "source_file" : "external/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf2io26CopyingOutputStreamAdaptorE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io26CopyingOutputStreamAdaptorD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf2io26CopyingOutputStreamAdaptorD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io26CopyingOutputStreamAdaptor4NextEPPvPi"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io26CopyingOutputStreamAdaptor6BackUpEi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io26CopyingOutputStreamAdaptor9ByteCountEv"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf2io20ZeroCopyOutputStream15WriteAliasedRawEPKvi"
+    },
+    {
+     "mangled_component_name" : "_ZNK6google8protobuf2io20ZeroCopyOutputStream14AllowsAliasingEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf4BitsE",
+   "name" : "google::protobuf::Bits",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf4BitsE",
+   "self_type" : "_ZTIN6google8protobuf4BitsE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIN6google8protobuf7ClosureE",
+   "name" : "google::protobuf::Closure",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf7ClosureE",
+   "self_type" : "_ZTIN6google8protobuf7ClosureE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf7ClosureE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf7ClosureD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf7ClosureD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN6google8protobuf7Closure3RunEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "level_",
+     "referenced_type" : "_ZTIN6google8protobuf8LogLevelE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "filename_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "access" : "private",
+     "field_name" : "line_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "message_",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "name" : "google::protobuf::internal::LogMessage",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "self_type" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "name" : "google::protobuf::internal::LogFinisher",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "self_type" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN6google8protobuf7ClosureE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "function_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPFvvE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "self_deleting_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf8internal16FunctionClosure0E",
+   "name" : "google::protobuf::internal::FunctionClosure0",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf8internal16FunctionClosure0E",
+   "self_type" : "_ZTIN6google8protobuf8internal16FunctionClosure0E",
+   "size" : 12,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/callback.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN6google8protobuf8internal16FunctionClosure0E"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf8internal16FunctionClosure0D1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN6google8protobuf8internal16FunctionClosure0D0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN6google8protobuf8internal16FunctionClosure03RunEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf9BigEndianE",
+   "name" : "google::protobuf::BigEndian",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf9BigEndianE",
+   "self_type" : "_ZTIN6google8protobuf9BigEndianE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
