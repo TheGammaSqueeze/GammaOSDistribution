@@ -1,0 +1,225 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-cppstream/linux_glibc_x86_64/protoc-gen-cppstream"
+    to: "tools/out/bin/protoc-gen-cppstream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batterystats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/batterystats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batterytype.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/batterytype.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batteryusagestats.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/batteryusagestats.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/bundle.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/bundle.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpu_usage.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/cpu_usage.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpufreq.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/cpufreq.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpuinfo.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/cpuinfo.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/data.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/data.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/header.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/header.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/incident.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/incident.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/kernelwake.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/kernelwake.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/looper.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/looper.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/message.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/message.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/messagequeue.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/messagequeue.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/metadata.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/metadata.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/pagetypeinfo.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/pagetypeinfo.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/patternmatcher.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/patternmatcher.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/persistablebundle.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/persistablebundle.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/powermanager.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/powermanager.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/procrank.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/procrank.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/ps.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/ps.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/statsdata.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/statsdata.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/system_properties.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/system_properties.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/worksource.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/os/worksource.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/common.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings/common.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/config.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings/config.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/global.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings/global.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/secure.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings/secure.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/system.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/providers/settings/system.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/accessibility.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/accessibility.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/accessibilitytrace.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/accessibilitytrace.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/activitymanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/activitymanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/animationadapter.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/animationadapter.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/apphibernationservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/apphibernationservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/appstatetracker.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/appstatetracker.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/biometrics.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/biometrics.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/blobstoremanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/blobstoremanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/bluetooth_manager_service.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/bluetooth_manager_service.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/face.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/face.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/fingerprint.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/fingerprint.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/intentresolver.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/intentresolver.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/jobscheduler.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/jobscheduler.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/notificationhistory.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/notificationhistory.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/peopleservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/peopleservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/powermanagerservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/powermanagerservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/powerstatsservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/powerstatsservice.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/statlogger.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/statlogger.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/surfaceanimator.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/surfaceanimator.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/syncstorageengine.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/server/syncstorageengine.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batterystats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batterytype.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/batteryusagestats.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/bundle.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpu_usage.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpufreq.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/cpuinfo.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/data.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/header.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/incident.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/kernelwake.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/looper.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/message.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/messagequeue.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/metadata.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/pagetypeinfo.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/patternmatcher.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/persistablebundle.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/powermanager.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/procrank.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/ps.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/statsdata.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/system_properties.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/os/worksource.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/common.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/config.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/global.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/secure.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/providers/settings/system.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/accessibility.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/accessibilitytrace.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/activitymanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/animationadapter.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/apphibernationservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/appstatetracker.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/biometrics.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/blobstoremanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/bluetooth_manager_service.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/face.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/fingerprint.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/intentresolver.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/jobscheduler.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/notificationhistory.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/peopleservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/powermanagerservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/powerstatsservice.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/statlogger.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/surfaceanimator.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/server/syncstorageengine.proto.d"
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/batterystats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/batterystats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/batterytype.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/batterytype.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/batteryusagestats.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/batteryusagestats.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/bundle.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/bundle.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/cpu_usage.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/cpu_usage.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/cpufreq.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/cpufreq.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/cpuinfo.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/cpuinfo.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/data.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/data.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/header.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/header.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/incident.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/incident.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/kernelwake.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/kernelwake.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/looper.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/looper.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/message.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/message.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/messagequeue.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/messagequeue.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/metadata.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/metadata.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/pagetypeinfo.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/pagetypeinfo.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/patternmatcher.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/patternmatcher.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/persistablebundle.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/persistablebundle.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/powermanager.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/powermanager.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/procrank.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/procrank.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/ps.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/ps.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/statsdata.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/statsdata.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/system_properties.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/system_properties.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/os/worksource.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/os/worksource.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings/common.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings/common.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings/config.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings/config.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings/global.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings/global.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings/secure.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings/secure.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/providers/settings/system.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/providers/settings/system.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/accessibility.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/accessibility.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/accessibilitytrace.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/accessibilitytrace.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/activitymanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/activitymanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/animationadapter.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/animationadapter.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/apphibernationservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/apphibernationservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/appstatetracker.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/appstatetracker.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/biometrics.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/biometrics.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/blobstoremanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/blobstoremanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/bluetooth_manager_service.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/bluetooth_manager_service.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/face.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/face.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/fingerprint.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/fingerprint.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/intentresolver.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/intentresolver.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/jobscheduler.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/jobscheduler.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/notificationhistory.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/notificationhistory.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/peopleservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/peopleservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/powermanagerservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/powermanagerservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/powerstatsservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/powerstatsservice.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/statlogger.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/statlogger.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/surfaceanimator.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/surfaceanimator.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/server/syncstorageengine.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/frameworks/base/core/proto/android/server/syncstorageengine.proto.h"
+  >
+  input_hash: "e1e55bb51623b2ae90ee2467f75943396e66c7e758f3278defff99d7c55183b0"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/2/gensrcs.d"
+
