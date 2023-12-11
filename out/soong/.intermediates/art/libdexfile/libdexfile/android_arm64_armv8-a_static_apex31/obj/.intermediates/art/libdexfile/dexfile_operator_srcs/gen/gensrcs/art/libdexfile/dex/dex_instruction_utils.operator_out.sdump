@@ -1,0 +1,5180 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA5_j",
+   "name" : "unsigned int [5]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA5_j",
+   "size" : 20,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_N3art11Instruction21InstructionDescriptorE",
+   "name" : "art::Instruction::InstructionDescriptor []",
+   "referenced_type" : "_ZTIN3art11Instruction21InstructionDescriptorE",
+   "self_type" : "_ZTIA_N3art11Instruction21InstructionDescriptorE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_PKc",
+   "name" : "const char *[]",
+   "referenced_type" : "_ZTIPKc",
+   "self_type" : "_ZTIA_PKc",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_h",
+   "name" : "unsigned char []",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA_h",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_i",
+   "name" : "int []",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA_i",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIDn",
+   "name" : "nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIDn",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIa",
+   "name" : "signed char",
+   "referenced_type" : "_ZTIa",
+   "self_type" : "_ZTIa",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 256,
+     "name" : "art::Instruction::kPackedSwitchSignature"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "art::Instruction::kSparseSwitchSignature"
+    },
+    {
+     "enum_field_value" : 768,
+     "name" : "art::Instruction::kArrayDataSignature"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction10SignaturesE",
+   "name" : "art::Instruction::Signatures",
+   "referenced_type" : "_ZTIN3art11Instruction10SignaturesE",
+   "self_type" : "_ZTIN3art11Instruction10SignaturesE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::Instruction::kVerifyNothing"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::Instruction::kVerifyRegA"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::Instruction::kVerifyRegAWide"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::Instruction::kVerifyRegB"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "art::Instruction::kVerifyRegBField"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "art::Instruction::kVerifyRegBMethod"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "art::Instruction::kVerifyRegBNewInstance"
+    },
+    {
+     "enum_field_value" : 64,
+     "name" : "art::Instruction::kVerifyRegBString"
+    },
+    {
+     "enum_field_value" : 128,
+     "name" : "art::Instruction::kVerifyRegBType"
+    },
+    {
+     "enum_field_value" : 256,
+     "name" : "art::Instruction::kVerifyRegBWide"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "art::Instruction::kVerifyRegC"
+    },
+    {
+     "enum_field_value" : 1024,
+     "name" : "art::Instruction::kVerifyRegCField"
+    },
+    {
+     "enum_field_value" : 2048,
+     "name" : "art::Instruction::kVerifyRegCNewArray"
+    },
+    {
+     "enum_field_value" : 4096,
+     "name" : "art::Instruction::kVerifyRegCType"
+    },
+    {
+     "enum_field_value" : 8192,
+     "name" : "art::Instruction::kVerifyRegCWide"
+    },
+    {
+     "enum_field_value" : 16384,
+     "name" : "art::Instruction::kVerifyArrayData"
+    },
+    {
+     "enum_field_value" : 32768,
+     "name" : "art::Instruction::kVerifyBranchTarget"
+    },
+    {
+     "enum_field_value" : 65536,
+     "name" : "art::Instruction::kVerifySwitchTargets"
+    },
+    {
+     "enum_field_value" : 131072,
+     "name" : "art::Instruction::kVerifyVarArg"
+    },
+    {
+     "enum_field_value" : 262144,
+     "name" : "art::Instruction::kVerifyVarArgNonZero"
+    },
+    {
+     "enum_field_value" : 524288,
+     "name" : "art::Instruction::kVerifyVarArgRange"
+    },
+    {
+     "enum_field_value" : 1048576,
+     "name" : "art::Instruction::kVerifyVarArgRangeNonZero"
+    },
+    {
+     "enum_field_value" : 2097152,
+     "name" : "art::Instruction::kVerifyRuntimeOnly"
+    },
+    {
+     "enum_field_value" : 4194304,
+     "name" : "art::Instruction::kVerifyError"
+    },
+    {
+     "enum_field_value" : 8388608,
+     "name" : "art::Instruction::kVerifyRegHPrototype"
+    },
+    {
+     "enum_field_value" : 16777216,
+     "name" : "art::Instruction::kVerifyRegBCallSite"
+    },
+    {
+     "enum_field_value" : 33554432,
+     "name" : "art::Instruction::kVerifyRegBMethodHandle"
+    },
+    {
+     "enum_field_value" : 67108864,
+     "name" : "art::Instruction::kVerifyRegBPrototype"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction10VerifyFlagE",
+   "name" : "art::Instruction::VerifyFlag",
+   "referenced_type" : "_ZTIN3art11Instruction10VerifyFlagE",
+   "self_type" : "_ZTIN3art11Instruction10VerifyFlagE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 128,
+     "name" : "art::Instruction::kAdd"
+    },
+    {
+     "enum_field_value" : 256,
+     "name" : "art::Instruction::kSubtract"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "art::Instruction::kMultiply"
+    },
+    {
+     "enum_field_value" : 1024,
+     "name" : "art::Instruction::kDivide"
+    },
+    {
+     "enum_field_value" : 2048,
+     "name" : "art::Instruction::kRemainder"
+    },
+    {
+     "enum_field_value" : 4096,
+     "name" : "art::Instruction::kAnd"
+    },
+    {
+     "enum_field_value" : 8192,
+     "name" : "art::Instruction::kOr"
+    },
+    {
+     "enum_field_value" : 16384,
+     "name" : "art::Instruction::kXor"
+    },
+    {
+     "enum_field_value" : 32768,
+     "name" : "art::Instruction::kShl"
+    },
+    {
+     "enum_field_value" : 65536,
+     "name" : "art::Instruction::kShr"
+    },
+    {
+     "enum_field_value" : 131072,
+     "name" : "art::Instruction::kUshr"
+    },
+    {
+     "enum_field_value" : 262144,
+     "name" : "art::Instruction::kCast"
+    },
+    {
+     "enum_field_value" : 524288,
+     "name" : "art::Instruction::kStore"
+    },
+    {
+     "enum_field_value" : 1048576,
+     "name" : "art::Instruction::kLoad"
+    },
+    {
+     "enum_field_value" : 2097152,
+     "name" : "art::Instruction::kClobber"
+    },
+    {
+     "enum_field_value" : 4194304,
+     "name" : "art::Instruction::kRegCFieldOrConstant"
+    },
+    {
+     "enum_field_value" : 8388608,
+     "name" : "art::Instruction::kRegBFieldOrConstant"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction13ExtendedFlagsE",
+   "name" : "art::Instruction::ExtendedFlags",
+   "referenced_type" : "_ZTIN3art11Instruction13ExtendedFlagsE",
+   "self_type" : "_ZTIN3art11Instruction13ExtendedFlagsE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::Instruction::NOP"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::Instruction::MOVE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::Instruction::MOVE_FROM16"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "art::Instruction::MOVE_16"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::Instruction::MOVE_WIDE"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "art::Instruction::MOVE_WIDE_FROM16"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "art::Instruction::MOVE_WIDE_16"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "art::Instruction::MOVE_OBJECT"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "art::Instruction::MOVE_OBJECT_FROM16"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "art::Instruction::MOVE_OBJECT_16"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "art::Instruction::MOVE_RESULT"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "art::Instruction::MOVE_RESULT_WIDE"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "art::Instruction::MOVE_RESULT_OBJECT"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "art::Instruction::MOVE_EXCEPTION"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "art::Instruction::RETURN_VOID"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "art::Instruction::RETURN"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "art::Instruction::RETURN_WIDE"
+    },
+    {
+     "enum_field_value" : 17,
+     "name" : "art::Instruction::RETURN_OBJECT"
+    },
+    {
+     "enum_field_value" : 18,
+     "name" : "art::Instruction::CONST_4"
+    },
+    {
+     "enum_field_value" : 19,
+     "name" : "art::Instruction::CONST_16"
+    },
+    {
+     "enum_field_value" : 20,
+     "name" : "art::Instruction::CONST"
+    },
+    {
+     "enum_field_value" : 21,
+     "name" : "art::Instruction::CONST_HIGH16"
+    },
+    {
+     "enum_field_value" : 22,
+     "name" : "art::Instruction::CONST_WIDE_16"
+    },
+    {
+     "enum_field_value" : 23,
+     "name" : "art::Instruction::CONST_WIDE_32"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "art::Instruction::CONST_WIDE"
+    },
+    {
+     "enum_field_value" : 25,
+     "name" : "art::Instruction::CONST_WIDE_HIGH16"
+    },
+    {
+     "enum_field_value" : 26,
+     "name" : "art::Instruction::CONST_STRING"
+    },
+    {
+     "enum_field_value" : 27,
+     "name" : "art::Instruction::CONST_STRING_JUMBO"
+    },
+    {
+     "enum_field_value" : 28,
+     "name" : "art::Instruction::CONST_CLASS"
+    },
+    {
+     "enum_field_value" : 29,
+     "name" : "art::Instruction::MONITOR_ENTER"
+    },
+    {
+     "enum_field_value" : 30,
+     "name" : "art::Instruction::MONITOR_EXIT"
+    },
+    {
+     "enum_field_value" : 31,
+     "name" : "art::Instruction::CHECK_CAST"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "art::Instruction::INSTANCE_OF"
+    },
+    {
+     "enum_field_value" : 33,
+     "name" : "art::Instruction::ARRAY_LENGTH"
+    },
+    {
+     "enum_field_value" : 34,
+     "name" : "art::Instruction::NEW_INSTANCE"
+    },
+    {
+     "enum_field_value" : 35,
+     "name" : "art::Instruction::NEW_ARRAY"
+    },
+    {
+     "enum_field_value" : 36,
+     "name" : "art::Instruction::FILLED_NEW_ARRAY"
+    },
+    {
+     "enum_field_value" : 37,
+     "name" : "art::Instruction::FILLED_NEW_ARRAY_RANGE"
+    },
+    {
+     "enum_field_value" : 38,
+     "name" : "art::Instruction::FILL_ARRAY_DATA"
+    },
+    {
+     "enum_field_value" : 39,
+     "name" : "art::Instruction::THROW"
+    },
+    {
+     "enum_field_value" : 40,
+     "name" : "art::Instruction::GOTO"
+    },
+    {
+     "enum_field_value" : 41,
+     "name" : "art::Instruction::GOTO_16"
+    },
+    {
+     "enum_field_value" : 42,
+     "name" : "art::Instruction::GOTO_32"
+    },
+    {
+     "enum_field_value" : 43,
+     "name" : "art::Instruction::PACKED_SWITCH"
+    },
+    {
+     "enum_field_value" : 44,
+     "name" : "art::Instruction::SPARSE_SWITCH"
+    },
+    {
+     "enum_field_value" : 45,
+     "name" : "art::Instruction::CMPL_FLOAT"
+    },
+    {
+     "enum_field_value" : 46,
+     "name" : "art::Instruction::CMPG_FLOAT"
+    },
+    {
+     "enum_field_value" : 47,
+     "name" : "art::Instruction::CMPL_DOUBLE"
+    },
+    {
+     "enum_field_value" : 48,
+     "name" : "art::Instruction::CMPG_DOUBLE"
+    },
+    {
+     "enum_field_value" : 49,
+     "name" : "art::Instruction::CMP_LONG"
+    },
+    {
+     "enum_field_value" : 50,
+     "name" : "art::Instruction::IF_EQ"
+    },
+    {
+     "enum_field_value" : 51,
+     "name" : "art::Instruction::IF_NE"
+    },
+    {
+     "enum_field_value" : 52,
+     "name" : "art::Instruction::IF_LT"
+    },
+    {
+     "enum_field_value" : 53,
+     "name" : "art::Instruction::IF_GE"
+    },
+    {
+     "enum_field_value" : 54,
+     "name" : "art::Instruction::IF_GT"
+    },
+    {
+     "enum_field_value" : 55,
+     "name" : "art::Instruction::IF_LE"
+    },
+    {
+     "enum_field_value" : 56,
+     "name" : "art::Instruction::IF_EQZ"
+    },
+    {
+     "enum_field_value" : 57,
+     "name" : "art::Instruction::IF_NEZ"
+    },
+    {
+     "enum_field_value" : 58,
+     "name" : "art::Instruction::IF_LTZ"
+    },
+    {
+     "enum_field_value" : 59,
+     "name" : "art::Instruction::IF_GEZ"
+    },
+    {
+     "enum_field_value" : 60,
+     "name" : "art::Instruction::IF_GTZ"
+    },
+    {
+     "enum_field_value" : 61,
+     "name" : "art::Instruction::IF_LEZ"
+    },
+    {
+     "enum_field_value" : 62,
+     "name" : "art::Instruction::UNUSED_3E"
+    },
+    {
+     "enum_field_value" : 63,
+     "name" : "art::Instruction::UNUSED_3F"
+    },
+    {
+     "enum_field_value" : 64,
+     "name" : "art::Instruction::UNUSED_40"
+    },
+    {
+     "enum_field_value" : 65,
+     "name" : "art::Instruction::UNUSED_41"
+    },
+    {
+     "enum_field_value" : 66,
+     "name" : "art::Instruction::UNUSED_42"
+    },
+    {
+     "enum_field_value" : 67,
+     "name" : "art::Instruction::UNUSED_43"
+    },
+    {
+     "enum_field_value" : 68,
+     "name" : "art::Instruction::AGET"
+    },
+    {
+     "enum_field_value" : 69,
+     "name" : "art::Instruction::AGET_WIDE"
+    },
+    {
+     "enum_field_value" : 70,
+     "name" : "art::Instruction::AGET_OBJECT"
+    },
+    {
+     "enum_field_value" : 71,
+     "name" : "art::Instruction::AGET_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 72,
+     "name" : "art::Instruction::AGET_BYTE"
+    },
+    {
+     "enum_field_value" : 73,
+     "name" : "art::Instruction::AGET_CHAR"
+    },
+    {
+     "enum_field_value" : 74,
+     "name" : "art::Instruction::AGET_SHORT"
+    },
+    {
+     "enum_field_value" : 75,
+     "name" : "art::Instruction::APUT"
+    },
+    {
+     "enum_field_value" : 76,
+     "name" : "art::Instruction::APUT_WIDE"
+    },
+    {
+     "enum_field_value" : 77,
+     "name" : "art::Instruction::APUT_OBJECT"
+    },
+    {
+     "enum_field_value" : 78,
+     "name" : "art::Instruction::APUT_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 79,
+     "name" : "art::Instruction::APUT_BYTE"
+    },
+    {
+     "enum_field_value" : 80,
+     "name" : "art::Instruction::APUT_CHAR"
+    },
+    {
+     "enum_field_value" : 81,
+     "name" : "art::Instruction::APUT_SHORT"
+    },
+    {
+     "enum_field_value" : 82,
+     "name" : "art::Instruction::IGET"
+    },
+    {
+     "enum_field_value" : 83,
+     "name" : "art::Instruction::IGET_WIDE"
+    },
+    {
+     "enum_field_value" : 84,
+     "name" : "art::Instruction::IGET_OBJECT"
+    },
+    {
+     "enum_field_value" : 85,
+     "name" : "art::Instruction::IGET_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 86,
+     "name" : "art::Instruction::IGET_BYTE"
+    },
+    {
+     "enum_field_value" : 87,
+     "name" : "art::Instruction::IGET_CHAR"
+    },
+    {
+     "enum_field_value" : 88,
+     "name" : "art::Instruction::IGET_SHORT"
+    },
+    {
+     "enum_field_value" : 89,
+     "name" : "art::Instruction::IPUT"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "art::Instruction::IPUT_WIDE"
+    },
+    {
+     "enum_field_value" : 91,
+     "name" : "art::Instruction::IPUT_OBJECT"
+    },
+    {
+     "enum_field_value" : 92,
+     "name" : "art::Instruction::IPUT_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 93,
+     "name" : "art::Instruction::IPUT_BYTE"
+    },
+    {
+     "enum_field_value" : 94,
+     "name" : "art::Instruction::IPUT_CHAR"
+    },
+    {
+     "enum_field_value" : 95,
+     "name" : "art::Instruction::IPUT_SHORT"
+    },
+    {
+     "enum_field_value" : 96,
+     "name" : "art::Instruction::SGET"
+    },
+    {
+     "enum_field_value" : 97,
+     "name" : "art::Instruction::SGET_WIDE"
+    },
+    {
+     "enum_field_value" : 98,
+     "name" : "art::Instruction::SGET_OBJECT"
+    },
+    {
+     "enum_field_value" : 99,
+     "name" : "art::Instruction::SGET_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 100,
+     "name" : "art::Instruction::SGET_BYTE"
+    },
+    {
+     "enum_field_value" : 101,
+     "name" : "art::Instruction::SGET_CHAR"
+    },
+    {
+     "enum_field_value" : 102,
+     "name" : "art::Instruction::SGET_SHORT"
+    },
+    {
+     "enum_field_value" : 103,
+     "name" : "art::Instruction::SPUT"
+    },
+    {
+     "enum_field_value" : 104,
+     "name" : "art::Instruction::SPUT_WIDE"
+    },
+    {
+     "enum_field_value" : 105,
+     "name" : "art::Instruction::SPUT_OBJECT"
+    },
+    {
+     "enum_field_value" : 106,
+     "name" : "art::Instruction::SPUT_BOOLEAN"
+    },
+    {
+     "enum_field_value" : 107,
+     "name" : "art::Instruction::SPUT_BYTE"
+    },
+    {
+     "enum_field_value" : 108,
+     "name" : "art::Instruction::SPUT_CHAR"
+    },
+    {
+     "enum_field_value" : 109,
+     "name" : "art::Instruction::SPUT_SHORT"
+    },
+    {
+     "enum_field_value" : 110,
+     "name" : "art::Instruction::INVOKE_VIRTUAL"
+    },
+    {
+     "enum_field_value" : 111,
+     "name" : "art::Instruction::INVOKE_SUPER"
+    },
+    {
+     "enum_field_value" : 112,
+     "name" : "art::Instruction::INVOKE_DIRECT"
+    },
+    {
+     "enum_field_value" : 113,
+     "name" : "art::Instruction::INVOKE_STATIC"
+    },
+    {
+     "enum_field_value" : 114,
+     "name" : "art::Instruction::INVOKE_INTERFACE"
+    },
+    {
+     "enum_field_value" : 115,
+     "name" : "art::Instruction::UNUSED_73"
+    },
+    {
+     "enum_field_value" : 116,
+     "name" : "art::Instruction::INVOKE_VIRTUAL_RANGE"
+    },
+    {
+     "enum_field_value" : 117,
+     "name" : "art::Instruction::INVOKE_SUPER_RANGE"
+    },
+    {
+     "enum_field_value" : 118,
+     "name" : "art::Instruction::INVOKE_DIRECT_RANGE"
+    },
+    {
+     "enum_field_value" : 119,
+     "name" : "art::Instruction::INVOKE_STATIC_RANGE"
+    },
+    {
+     "enum_field_value" : 120,
+     "name" : "art::Instruction::INVOKE_INTERFACE_RANGE"
+    },
+    {
+     "enum_field_value" : 121,
+     "name" : "art::Instruction::UNUSED_79"
+    },
+    {
+     "enum_field_value" : 122,
+     "name" : "art::Instruction::UNUSED_7A"
+    },
+    {
+     "enum_field_value" : 123,
+     "name" : "art::Instruction::NEG_INT"
+    },
+    {
+     "enum_field_value" : 124,
+     "name" : "art::Instruction::NOT_INT"
+    },
+    {
+     "enum_field_value" : 125,
+     "name" : "art::Instruction::NEG_LONG"
+    },
+    {
+     "enum_field_value" : 126,
+     "name" : "art::Instruction::NOT_LONG"
+    },
+    {
+     "enum_field_value" : 127,
+     "name" : "art::Instruction::NEG_FLOAT"
+    },
+    {
+     "enum_field_value" : 128,
+     "name" : "art::Instruction::NEG_DOUBLE"
+    },
+    {
+     "enum_field_value" : 129,
+     "name" : "art::Instruction::INT_TO_LONG"
+    },
+    {
+     "enum_field_value" : 130,
+     "name" : "art::Instruction::INT_TO_FLOAT"
+    },
+    {
+     "enum_field_value" : 131,
+     "name" : "art::Instruction::INT_TO_DOUBLE"
+    },
+    {
+     "enum_field_value" : 132,
+     "name" : "art::Instruction::LONG_TO_INT"
+    },
+    {
+     "enum_field_value" : 133,
+     "name" : "art::Instruction::LONG_TO_FLOAT"
+    },
+    {
+     "enum_field_value" : 134,
+     "name" : "art::Instruction::LONG_TO_DOUBLE"
+    },
+    {
+     "enum_field_value" : 135,
+     "name" : "art::Instruction::FLOAT_TO_INT"
+    },
+    {
+     "enum_field_value" : 136,
+     "name" : "art::Instruction::FLOAT_TO_LONG"
+    },
+    {
+     "enum_field_value" : 137,
+     "name" : "art::Instruction::FLOAT_TO_DOUBLE"
+    },
+    {
+     "enum_field_value" : 138,
+     "name" : "art::Instruction::DOUBLE_TO_INT"
+    },
+    {
+     "enum_field_value" : 139,
+     "name" : "art::Instruction::DOUBLE_TO_LONG"
+    },
+    {
+     "enum_field_value" : 140,
+     "name" : "art::Instruction::DOUBLE_TO_FLOAT"
+    },
+    {
+     "enum_field_value" : 141,
+     "name" : "art::Instruction::INT_TO_BYTE"
+    },
+    {
+     "enum_field_value" : 142,
+     "name" : "art::Instruction::INT_TO_CHAR"
+    },
+    {
+     "enum_field_value" : 143,
+     "name" : "art::Instruction::INT_TO_SHORT"
+    },
+    {
+     "enum_field_value" : 144,
+     "name" : "art::Instruction::ADD_INT"
+    },
+    {
+     "enum_field_value" : 145,
+     "name" : "art::Instruction::SUB_INT"
+    },
+    {
+     "enum_field_value" : 146,
+     "name" : "art::Instruction::MUL_INT"
+    },
+    {
+     "enum_field_value" : 147,
+     "name" : "art::Instruction::DIV_INT"
+    },
+    {
+     "enum_field_value" : 148,
+     "name" : "art::Instruction::REM_INT"
+    },
+    {
+     "enum_field_value" : 149,
+     "name" : "art::Instruction::AND_INT"
+    },
+    {
+     "enum_field_value" : 150,
+     "name" : "art::Instruction::OR_INT"
+    },
+    {
+     "enum_field_value" : 151,
+     "name" : "art::Instruction::XOR_INT"
+    },
+    {
+     "enum_field_value" : 152,
+     "name" : "art::Instruction::SHL_INT"
+    },
+    {
+     "enum_field_value" : 153,
+     "name" : "art::Instruction::SHR_INT"
+    },
+    {
+     "enum_field_value" : 154,
+     "name" : "art::Instruction::USHR_INT"
+    },
+    {
+     "enum_field_value" : 155,
+     "name" : "art::Instruction::ADD_LONG"
+    },
+    {
+     "enum_field_value" : 156,
+     "name" : "art::Instruction::SUB_LONG"
+    },
+    {
+     "enum_field_value" : 157,
+     "name" : "art::Instruction::MUL_LONG"
+    },
+    {
+     "enum_field_value" : 158,
+     "name" : "art::Instruction::DIV_LONG"
+    },
+    {
+     "enum_field_value" : 159,
+     "name" : "art::Instruction::REM_LONG"
+    },
+    {
+     "enum_field_value" : 160,
+     "name" : "art::Instruction::AND_LONG"
+    },
+    {
+     "enum_field_value" : 161,
+     "name" : "art::Instruction::OR_LONG"
+    },
+    {
+     "enum_field_value" : 162,
+     "name" : "art::Instruction::XOR_LONG"
+    },
+    {
+     "enum_field_value" : 163,
+     "name" : "art::Instruction::SHL_LONG"
+    },
+    {
+     "enum_field_value" : 164,
+     "name" : "art::Instruction::SHR_LONG"
+    },
+    {
+     "enum_field_value" : 165,
+     "name" : "art::Instruction::USHR_LONG"
+    },
+    {
+     "enum_field_value" : 166,
+     "name" : "art::Instruction::ADD_FLOAT"
+    },
+    {
+     "enum_field_value" : 167,
+     "name" : "art::Instruction::SUB_FLOAT"
+    },
+    {
+     "enum_field_value" : 168,
+     "name" : "art::Instruction::MUL_FLOAT"
+    },
+    {
+     "enum_field_value" : 169,
+     "name" : "art::Instruction::DIV_FLOAT"
+    },
+    {
+     "enum_field_value" : 170,
+     "name" : "art::Instruction::REM_FLOAT"
+    },
+    {
+     "enum_field_value" : 171,
+     "name" : "art::Instruction::ADD_DOUBLE"
+    },
+    {
+     "enum_field_value" : 172,
+     "name" : "art::Instruction::SUB_DOUBLE"
+    },
+    {
+     "enum_field_value" : 173,
+     "name" : "art::Instruction::MUL_DOUBLE"
+    },
+    {
+     "enum_field_value" : 174,
+     "name" : "art::Instruction::DIV_DOUBLE"
+    },
+    {
+     "enum_field_value" : 175,
+     "name" : "art::Instruction::REM_DOUBLE"
+    },
+    {
+     "enum_field_value" : 176,
+     "name" : "art::Instruction::ADD_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 177,
+     "name" : "art::Instruction::SUB_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 178,
+     "name" : "art::Instruction::MUL_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 179,
+     "name" : "art::Instruction::DIV_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 180,
+     "name" : "art::Instruction::REM_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 181,
+     "name" : "art::Instruction::AND_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 182,
+     "name" : "art::Instruction::OR_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 183,
+     "name" : "art::Instruction::XOR_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 184,
+     "name" : "art::Instruction::SHL_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 185,
+     "name" : "art::Instruction::SHR_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 186,
+     "name" : "art::Instruction::USHR_INT_2ADDR"
+    },
+    {
+     "enum_field_value" : 187,
+     "name" : "art::Instruction::ADD_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 188,
+     "name" : "art::Instruction::SUB_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 189,
+     "name" : "art::Instruction::MUL_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 190,
+     "name" : "art::Instruction::DIV_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 191,
+     "name" : "art::Instruction::REM_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 192,
+     "name" : "art::Instruction::AND_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 193,
+     "name" : "art::Instruction::OR_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 194,
+     "name" : "art::Instruction::XOR_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 195,
+     "name" : "art::Instruction::SHL_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 196,
+     "name" : "art::Instruction::SHR_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 197,
+     "name" : "art::Instruction::USHR_LONG_2ADDR"
+    },
+    {
+     "enum_field_value" : 198,
+     "name" : "art::Instruction::ADD_FLOAT_2ADDR"
+    },
+    {
+     "enum_field_value" : 199,
+     "name" : "art::Instruction::SUB_FLOAT_2ADDR"
+    },
+    {
+     "enum_field_value" : 200,
+     "name" : "art::Instruction::MUL_FLOAT_2ADDR"
+    },
+    {
+     "enum_field_value" : 201,
+     "name" : "art::Instruction::DIV_FLOAT_2ADDR"
+    },
+    {
+     "enum_field_value" : 202,
+     "name" : "art::Instruction::REM_FLOAT_2ADDR"
+    },
+    {
+     "enum_field_value" : 203,
+     "name" : "art::Instruction::ADD_DOUBLE_2ADDR"
+    },
+    {
+     "enum_field_value" : 204,
+     "name" : "art::Instruction::SUB_DOUBLE_2ADDR"
+    },
+    {
+     "enum_field_value" : 205,
+     "name" : "art::Instruction::MUL_DOUBLE_2ADDR"
+    },
+    {
+     "enum_field_value" : 206,
+     "name" : "art::Instruction::DIV_DOUBLE_2ADDR"
+    },
+    {
+     "enum_field_value" : 207,
+     "name" : "art::Instruction::REM_DOUBLE_2ADDR"
+    },
+    {
+     "enum_field_value" : 208,
+     "name" : "art::Instruction::ADD_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 209,
+     "name" : "art::Instruction::RSUB_INT"
+    },
+    {
+     "enum_field_value" : 210,
+     "name" : "art::Instruction::MUL_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 211,
+     "name" : "art::Instruction::DIV_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 212,
+     "name" : "art::Instruction::REM_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 213,
+     "name" : "art::Instruction::AND_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 214,
+     "name" : "art::Instruction::OR_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 215,
+     "name" : "art::Instruction::XOR_INT_LIT16"
+    },
+    {
+     "enum_field_value" : 216,
+     "name" : "art::Instruction::ADD_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 217,
+     "name" : "art::Instruction::RSUB_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 218,
+     "name" : "art::Instruction::MUL_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 219,
+     "name" : "art::Instruction::DIV_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 220,
+     "name" : "art::Instruction::REM_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 221,
+     "name" : "art::Instruction::AND_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 222,
+     "name" : "art::Instruction::OR_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 223,
+     "name" : "art::Instruction::XOR_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 224,
+     "name" : "art::Instruction::SHL_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 225,
+     "name" : "art::Instruction::SHR_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 226,
+     "name" : "art::Instruction::USHR_INT_LIT8"
+    },
+    {
+     "enum_field_value" : 227,
+     "name" : "art::Instruction::UNUSED_E3"
+    },
+    {
+     "enum_field_value" : 228,
+     "name" : "art::Instruction::UNUSED_E4"
+    },
+    {
+     "enum_field_value" : 229,
+     "name" : "art::Instruction::UNUSED_E5"
+    },
+    {
+     "enum_field_value" : 230,
+     "name" : "art::Instruction::UNUSED_E6"
+    },
+    {
+     "enum_field_value" : 231,
+     "name" : "art::Instruction::UNUSED_E7"
+    },
+    {
+     "enum_field_value" : 232,
+     "name" : "art::Instruction::UNUSED_E8"
+    },
+    {
+     "enum_field_value" : 233,
+     "name" : "art::Instruction::UNUSED_E9"
+    },
+    {
+     "enum_field_value" : 234,
+     "name" : "art::Instruction::UNUSED_EA"
+    },
+    {
+     "enum_field_value" : 235,
+     "name" : "art::Instruction::UNUSED_EB"
+    },
+    {
+     "enum_field_value" : 236,
+     "name" : "art::Instruction::UNUSED_EC"
+    },
+    {
+     "enum_field_value" : 237,
+     "name" : "art::Instruction::UNUSED_ED"
+    },
+    {
+     "enum_field_value" : 238,
+     "name" : "art::Instruction::UNUSED_EE"
+    },
+    {
+     "enum_field_value" : 239,
+     "name" : "art::Instruction::UNUSED_EF"
+    },
+    {
+     "enum_field_value" : 240,
+     "name" : "art::Instruction::UNUSED_F0"
+    },
+    {
+     "enum_field_value" : 241,
+     "name" : "art::Instruction::UNUSED_F1"
+    },
+    {
+     "enum_field_value" : 242,
+     "name" : "art::Instruction::UNUSED_F2"
+    },
+    {
+     "enum_field_value" : 243,
+     "name" : "art::Instruction::UNUSED_F3"
+    },
+    {
+     "enum_field_value" : 244,
+     "name" : "art::Instruction::UNUSED_F4"
+    },
+    {
+     "enum_field_value" : 245,
+     "name" : "art::Instruction::UNUSED_F5"
+    },
+    {
+     "enum_field_value" : 246,
+     "name" : "art::Instruction::UNUSED_F6"
+    },
+    {
+     "enum_field_value" : 247,
+     "name" : "art::Instruction::UNUSED_F7"
+    },
+    {
+     "enum_field_value" : 248,
+     "name" : "art::Instruction::UNUSED_F8"
+    },
+    {
+     "enum_field_value" : 249,
+     "name" : "art::Instruction::UNUSED_F9"
+    },
+    {
+     "enum_field_value" : 250,
+     "name" : "art::Instruction::INVOKE_POLYMORPHIC"
+    },
+    {
+     "enum_field_value" : 251,
+     "name" : "art::Instruction::INVOKE_POLYMORPHIC_RANGE"
+    },
+    {
+     "enum_field_value" : 252,
+     "name" : "art::Instruction::INVOKE_CUSTOM"
+    },
+    {
+     "enum_field_value" : 253,
+     "name" : "art::Instruction::INVOKE_CUSTOM_RANGE"
+    },
+    {
+     "enum_field_value" : 254,
+     "name" : "art::Instruction::CONST_METHOD_HANDLE"
+    },
+    {
+     "enum_field_value" : 255,
+     "name" : "art::Instruction::CONST_METHOD_TYPE"
+    },
+    {
+     "enum_field_value" : 209,
+     "name" : "art::Instruction::RSUB_INT_LIT16"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction4CodeE",
+   "name" : "art::Instruction::Code",
+   "referenced_type" : "_ZTIN3art11Instruction4CodeE",
+   "self_type" : "_ZTIN3art11Instruction4CodeE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "art::Instruction::kBranch"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::Instruction::kContinue"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::Instruction::kSwitch"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "art::Instruction::kThrow"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "art::Instruction::kReturn"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "art::Instruction::kInvoke"
+    },
+    {
+     "enum_field_value" : 64,
+     "name" : "art::Instruction::kUnconditional"
+    },
+    {
+     "enum_field_value" : 128,
+     "name" : "art::Instruction::kExperimental"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction5FlagsE",
+   "name" : "art::Instruction::Flags",
+   "referenced_type" : "_ZTIN3art11Instruction5FlagsE",
+   "self_type" : "_ZTIN3art11Instruction5FlagsE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIh"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::Instruction::k10x"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::Instruction::k12x"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::Instruction::k11n"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "art::Instruction::k11x"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::Instruction::k10t"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "art::Instruction::k20t"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "art::Instruction::k22x"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "art::Instruction::k21t"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "art::Instruction::k21s"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "art::Instruction::k21h"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "art::Instruction::k21c"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "art::Instruction::k23x"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "art::Instruction::k22b"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "art::Instruction::k22t"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "art::Instruction::k22s"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "art::Instruction::k22c"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "art::Instruction::k32x"
+    },
+    {
+     "enum_field_value" : 17,
+     "name" : "art::Instruction::k30t"
+    },
+    {
+     "enum_field_value" : 18,
+     "name" : "art::Instruction::k31t"
+    },
+    {
+     "enum_field_value" : 19,
+     "name" : "art::Instruction::k31i"
+    },
+    {
+     "enum_field_value" : 20,
+     "name" : "art::Instruction::k31c"
+    },
+    {
+     "enum_field_value" : 21,
+     "name" : "art::Instruction::k35c"
+    },
+    {
+     "enum_field_value" : 22,
+     "name" : "art::Instruction::k3rc"
+    },
+    {
+     "enum_field_value" : 23,
+     "name" : "art::Instruction::k45cc"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "art::Instruction::k4rcc"
+    },
+    {
+     "enum_field_value" : 25,
+     "name" : "art::Instruction::k51l"
+    },
+    {
+     "enum_field_value" : 26,
+     "name" : "art::Instruction::kInvalidFormat"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction6FormatE",
+   "name" : "art::Instruction::Format",
+   "referenced_type" : "_ZTIN3art11Instruction6FormatE",
+   "self_type" : "_ZTIN3art11Instruction6FormatE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIh"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::Instruction::kIndexUnknown"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::Instruction::kIndexNone"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::Instruction::kIndexTypeRef"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "art::Instruction::kIndexStringRef"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::Instruction::kIndexMethodRef"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "art::Instruction::kIndexFieldRef"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "art::Instruction::kIndexFieldOffset"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "art::Instruction::kIndexVtableOffset"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "art::Instruction::kIndexMethodAndProtoRef"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "art::Instruction::kIndexCallSiteRef"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "art::Instruction::kIndexMethodHandleRef"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "art::Instruction::kIndexProtoRef"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction9IndexTypeE",
+   "name" : "art::Instruction::IndexType",
+   "referenced_type" : "_ZTIN3art11Instruction9IndexTypeE",
+   "self_type" : "_ZTIN3art11Instruction9IndexTypeE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIh"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::kDexInvokeVirtual"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::kDexInvokeSuper"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::kDexInvokeDirect"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "art::kDexInvokeStatic"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::kDexInvokeInterface"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "art::kDexInvokeTypeCount"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art13DexInvokeTypeE",
+   "name" : "art::DexInvokeType",
+   "referenced_type" : "_ZTIN3art13DexInvokeTypeE",
+   "self_type" : "_ZTIN3art13DexInvokeTypeE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h",
+   "underlying_type" : "_ZTIh"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "art::kDexMemAccessWord"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "art::kDexMemAccessWide"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "art::kDexMemAccessObject"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "art::kDexMemAccessBoolean"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "art::kDexMemAccessByte"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "art::kDexMemAccessChar"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "art::kDexMemAccessShort"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "art::kDexMemAccessTypeCount"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art16DexMemAccessTypeE",
+   "name" : "art::DexMemAccessType",
+   "referenced_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "self_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h",
+   "underlying_type" : "_ZTIh"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 256,
+     "name" : "art::kNumPackedOpcodes"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art18$kNumPackedOpcodesE",
+   "name" : "art::(anonymous enum at art/libdexfile/dex/dex_instruction.h:32:1)",
+   "referenced_type" : "_ZTIN3art18$kNumPackedOpcodesE",
+   "self_type" : "_ZTIN3art18$kNumPackedOpcodesE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::VERBOSE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::DEBUG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::INFO"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::WARNING"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::ERROR"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "android::base::FATAL_WITHOUT_ABORT"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "android::base::FATAL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base11LogSeverityE",
+   "name" : "android::base::LogSeverity",
+   "referenced_type" : "_ZTIN7android4base11LogSeverityE",
+   "self_type" : "_ZTIN7android4base11LogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::DEFAULT"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::MAIN"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::SYSTEM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::RADIO"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::CRASH"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base5LogIdE",
+   "name" : "android::base::LogId",
+   "referenced_type" : "_ZTIN7android4base5LogIdE",
+   "self_type" : "_ZTIN7android4base5LogIdE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "art::Instruction::IndexTypeOf",
+   "linker_set_key" : "_ZN3art11Instruction11IndexTypeOfENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art11Instruction9IndexTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegA_10x",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegA_10xEh",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegA_21c",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegA_21cEh",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegB_21c",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegB_21cEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegB_35c",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegB_35cEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegB_3rc",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegB_3rcEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetVRegC_22c",
+   "linker_set_key" : "_ZN3art11Instruction12SetVRegC_22cEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VerifyFlagsOf",
+   "linker_set_key" : "_ZN3art11Instruction13VerifyFlagsOfENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::At",
+   "linker_set_key" : "_ZN3art11Instruction2AtEPKt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Name",
+   "linker_set_key" : "_ZN3art11Instruction4NameENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::FlagsOf",
+   "linker_set_key" : "_ZN3art11Instruction7FlagsOfENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::FormatOf",
+   "linker_set_key" : "_ZN3art11Instruction8FormatOfENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art11Instruction6FormatE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SetOpcode",
+   "linker_set_key" : "_ZN3art11Instruction9SetOpcodeENS0_4CodeE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::AGetMemAccessType",
+   "linker_set_key" : "_ZN3art17AGetMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::APutMemAccessType",
+   "linker_set_key" : "_ZN3art17APutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IGetMemAccessType",
+   "linker_set_key" : "_ZN3art17IGetMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IPutMemAccessType",
+   "linker_set_key" : "_ZN3art17IPutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionAGet",
+   "linker_set_key" : "_ZN3art17IsInstructionAGetENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionAPut",
+   "linker_set_key" : "_ZN3art17IsInstructionAPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionGoto",
+   "linker_set_key" : "_ZN3art17IsInstructionGotoENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionIGet",
+   "linker_set_key" : "_ZN3art17IsInstructionIGetENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionIPut",
+   "linker_set_key" : "_ZN3art17IsInstructionIPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionIfCc",
+   "linker_set_key" : "_ZN3art17IsInstructionIfCcENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionSGet",
+   "linker_set_key" : "_ZN3art17IsInstructionSGetENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionSPut",
+   "linker_set_key" : "_ZN3art17IsInstructionSPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::SGetMemAccessType",
+   "linker_set_key" : "_ZN3art17SGetMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::SPutMemAccessType",
+   "linker_set_key" : "_ZN3art17SPutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionIfCcZ",
+   "linker_set_key" : "_ZN3art18IsInstructionIfCcZENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::InstructionOperands::InstructionOperands",
+   "linker_set_key" : "_ZN3art19InstructionOperandsC2Em",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art19InstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::InstructionOperands::~InstructionOperands",
+   "linker_set_key" : "_ZN3art19InstructionOperandsD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::InstructionOperands::~InstructionOperands",
+   "linker_set_key" : "_ZN3art19InstructionOperandsD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::InstructionOperands::~InstructionOperands",
+   "linker_set_key" : "_ZN3art19InstructionOperandsD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::IsInstructionInvoke",
+   "linker_set_key" : "_ZN3art19IsInstructionInvokeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionReturn",
+   "linker_set_key" : "_ZN3art19IsInstructionReturnENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::InvokeInstructionType",
+   "linker_set_key" : "_ZN3art21InvokeInstructionTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art13DexInvokeTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionConstWide",
+   "linker_set_key" : "_ZN3art22IsInstructionConstWideENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::AGetOrAPutMemAccessType",
+   "linker_set_key" : "_ZN3art23AGetOrAPutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IGetOrIPutMemAccessType",
+   "linker_set_key" : "_ZN3art23IGetOrIPutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionAGetOrAPut",
+   "linker_set_key" : "_ZN3art23IsInstructionAGetOrAPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionBinOp2Addr",
+   "linker_set_key" : "_ZN3art23IsInstructionBinOp2AddrENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionIGetOrIPut",
+   "linker_set_key" : "_ZN3art23IsInstructionIGetOrIPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionSGetOrSPut",
+   "linker_set_key" : "_ZN3art23IsInstructionSGetOrSPutENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::SGetOrSPutMemAccessType",
+   "linker_set_key" : "_ZN3art23SGetOrSPutMemAccessTypeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIN3art16DexMemAccessTypeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInstructionDirectConst",
+   "linker_set_key" : "_ZN3art24IsInstructionDirectConstENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::IsInvokeInstructionRange",
+   "linker_set_key" : "_ZN3art24IsInvokeInstructionRangeENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::RangeInstructionOperands::RangeInstructionOperands",
+   "linker_set_key" : "_ZN3art24RangeInstructionOperandsC1Ejm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art24RangeInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::RangeInstructionOperands::RangeInstructionOperands",
+   "linker_set_key" : "_ZN3art24RangeInstructionOperandsC2Ejm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art24RangeInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::RangeInstructionOperands::~RangeInstructionOperands",
+   "linker_set_key" : "_ZN3art24RangeInstructionOperandsD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art24RangeInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::RangeInstructionOperands::~RangeInstructionOperands",
+   "linker_set_key" : "_ZN3art24RangeInstructionOperandsD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art24RangeInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::RangeInstructionOperands::~RangeInstructionOperands",
+   "linker_set_key" : "_ZN3art24RangeInstructionOperandsD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art24RangeInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::IsInstructionInvokeStatic",
+   "linker_set_key" : "_ZN3art25IsInstructionInvokeStaticENS_11Instruction4CodeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art11Instruction4CodeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "art::VarArgsInstructionOperands::VarArgsInstructionOperands",
+   "linker_set_key" : "_ZN3art26VarArgsInstructionOperandsC1ERA5_Kjm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art26VarArgsInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIRA5_Kj"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::VarArgsInstructionOperands::VarArgsInstructionOperands",
+   "linker_set_key" : "_ZN3art26VarArgsInstructionOperandsC2ERA5_Kjm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art26VarArgsInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIRA5_Kj"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::VarArgsInstructionOperands::~VarArgsInstructionOperands",
+   "linker_set_key" : "_ZN3art26VarArgsInstructionOperandsD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art26VarArgsInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::VarArgsInstructionOperands::~VarArgsInstructionOperands",
+   "linker_set_key" : "_ZN3art26VarArgsInstructionOperandsD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art26VarArgsInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::VarArgsInstructionOperands::~VarArgsInstructionOperands",
+   "linker_set_key" : "_ZN3art26VarArgsInstructionOperandsD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art26VarArgsInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::NoReceiverInstructionOperands::NoReceiverInstructionOperands",
+   "linker_set_key" : "_ZN3art29NoReceiverInstructionOperandsC1EPKNS_19InstructionOperandsE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIKPKN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::NoReceiverInstructionOperands::NoReceiverInstructionOperands",
+   "linker_set_key" : "_ZN3art29NoReceiverInstructionOperandsC2EPKNS_19InstructionOperandsE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE"
+    },
+    {
+     "referenced_type" : "_ZTIKPKN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::NoReceiverInstructionOperands::~NoReceiverInstructionOperands",
+   "linker_set_key" : "_ZN3art29NoReceiverInstructionOperandsD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::NoReceiverInstructionOperands::~NoReceiverInstructionOperands",
+   "linker_set_key" : "_ZN3art29NoReceiverInstructionOperandsD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::NoReceiverInstructionOperands::~NoReceiverInstructionOperands",
+   "linker_set_key" : "_ZN3art29NoReceiverInstructionOperandsD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::operator<<",
+   "linker_set_key" : "_ZN3artlsERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEENS_16DexMemAccessTypeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN3art16DexMemAccessTypeE"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "art/libdexfile/dex/dex_instruction_utils.h"
+  },
+  {
+   "function_name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned int>::EagerEvaluator",
+   "linker_set_key" : "_ZN7android4base10log_detail14EagerEvaluatorItjEC1ItjEEOT_OT0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorItjEE"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    },
+    {
+     "referenced_type" : "_ZTIOj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIj" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned int>::EagerEvaluator",
+   "linker_set_key" : "_ZN7android4base10log_detail14EagerEvaluatorItjEC2ItjEEOT_OT0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorItjEE"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    },
+    {
+     "referenced_type" : "_ZTIOj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIj" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned short>::EagerEvaluator",
+   "linker_set_key" : "_ZN7android4base10log_detail14EagerEvaluatorIttEC1IRttEEOT_OT0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorIttEE"
+    },
+    {
+     "referenced_type" : "_ZTIRt"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIRt", "_ZTIt" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned short>::EagerEvaluator",
+   "linker_set_key" : "_ZN7android4base10log_detail14EagerEvaluatorIttEC2IRttEEOT_OT0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorIttEE"
+    },
+    {
+     "referenced_type" : "_ZTIRt"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIRt", "_ZTIt" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned int>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageIjEC1IjEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageIjEE"
+    },
+    {
+     "referenced_type" : "_ZTIOj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned int>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageIjEC2IjEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageIjEE"
+    },
+    {
+     "referenced_type" : "_ZTIOj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned short>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageItEC1IRtEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "referenced_type" : "_ZTIRt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIRt" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned short>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageItEC1ItEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned short>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageItEC2IRtEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "referenced_type" : "_ZTIRt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIRt" ]
+  },
+  {
+   "function_name" : "android::base::log_detail::Storage<unsigned short>::Storage",
+   "linker_set_key" : "_ZN7android4base10log_detail7StorageItEC2ItEEOT_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<nullptr_t>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIDnE5GuardERKDn",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKDn"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<const char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPKcE5GuardES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPcE5GuardEPKc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<unsigned int>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIjE5GuardERKj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKj"
+    }
+   ],
+   "return_type" : "_ZTIRKj",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<unsigned short>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardItE5GuardERKt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKt"
+    }
+   ],
+   "return_type" : "_ZTIRKt",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::MakeEagerEvaluator",
+   "linker_set_key" : "_ZN7android4base18MakeEagerEvaluatorIRttEEDaOT_OT0_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRt"
+    },
+    {
+     "referenced_type" : "_ZTIOt"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorIttEE",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIRt", "_ZTIt" ]
+  },
+  {
+   "function_name" : "android::base::MakeEagerEvaluator",
+   "linker_set_key" : "_ZN7android4base18MakeEagerEvaluatorItjEEDaOT_OT0_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIOt"
+    },
+    {
+     "referenced_type" : "_ZTIOj"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorItjEE",
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIj" ]
+  },
+  {
+   "function_name" : "android::base::ScopedLockAssertion::ScopedLockAssertion",
+   "linker_set_key" : "_ZN7android4base19ScopedLockAssertionC1ERNSt3__15mutexE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base19ScopedLockAssertionE"
+    },
+    {
+     "referenced_type" : "_ZTIRNSt3__15mutexE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "function_name" : "android::base::ScopedLockAssertion::ScopedLockAssertion",
+   "linker_set_key" : "_ZN7android4base19ScopedLockAssertionC2ERNSt3__15mutexE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base19ScopedLockAssertionE"
+    },
+    {
+     "referenced_type" : "_ZTIRNSt3__15mutexE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "function_name" : "android::base::ScopedLockAssertion::~ScopedLockAssertion",
+   "linker_set_key" : "_ZN7android4base19ScopedLockAssertionD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base19ScopedLockAssertionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "function_name" : "android::base::ScopedLockAssertion::~ScopedLockAssertion",
+   "linker_set_key" : "_ZN7android4base19ScopedLockAssertionD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base19ScopedLockAssertionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVarArgs",
+   "linker_set_key" : "_ZNK3art11Instruction10GetVarArgsEPj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::RelativeAt",
+   "linker_set_key" : "_ZNK3art11Instruction10RelativeAtEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_45cc",
+   "linker_set_key" : "_ZNK3art11Instruction10VRegA_45ccEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_4rcc",
+   "linker_set_key" : "_ZNK3art11Instruction10VRegA_4rccEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsQuickened",
+   "linker_set_key" : "_ZNK3art11Instruction11IsQuickenedEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsExperimental",
+   "linker_set_key" : "_ZNK3art11Instruction14IsExperimentalEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsBasicBlockEnd",
+   "linker_set_key" : "_ZNK3art11Instruction15IsBasicBlockEndEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsUnconditional",
+   "linker_set_key" : "_ZNK3art11Instruction15IsUnconditionalEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SizeInCodeUnits",
+   "linker_set_key" : "_ZNK3art11Instruction15SizeInCodeUnitsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyExtraFlags",
+   "linker_set_key" : "_ZNK3art11Instruction19GetVerifyExtraFlagsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SparseSwitchPayload::GetTargets",
+   "linker_set_key" : "_ZNK3art11Instruction19SparseSwitchPayload10GetTargetsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11Instruction19SparseSwitchPayloadE"
+    }
+   ],
+   "return_type" : "_ZTIPKi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::SparseSwitchPayload::GetKeys",
+   "linker_set_key" : "_ZNK3art11Instruction19SparseSwitchPayload7GetKeysEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11Instruction19SparseSwitchPayloadE"
+    }
+   ],
+   "return_type" : "_ZTIPKi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyIsRuntimeOnly",
+   "linker_set_key" : "_ZNK3art11Instruction22GetVerifyIsRuntimeOnlyEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyTypeArgumentA",
+   "linker_set_key" : "_ZNK3art11Instruction22GetVerifyTypeArgumentAEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyTypeArgumentB",
+   "linker_set_key" : "_ZNK3art11Instruction22GetVerifyTypeArgumentBEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyTypeArgumentC",
+   "linker_set_key" : "_ZNK3art11Instruction22GetVerifyTypeArgumentCEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetVerifyTypeArgumentH",
+   "linker_set_key" : "_ZNK3art11Instruction22GetVerifyTypeArgumentHEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::CodeUnitsRequiredForSizeComputation",
+   "linker_set_key" : "_ZNK3art11Instruction35CodeUnitsRequiredForSizeComputationEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Name",
+   "linker_set_key" : "_ZNK3art11Instruction4NameEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next",
+   "linker_set_key" : "_ZNK3art11Instruction4NextEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstA",
+   "linker_set_key" : "_ZNK3art11Instruction5InstAEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstA",
+   "linker_set_key" : "_ZNK3art11Instruction5InstAEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstB",
+   "linker_set_key" : "_ZNK3art11Instruction5InstBEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstB",
+   "linker_set_key" : "_ZNK3art11Instruction5InstBEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstAA",
+   "linker_set_key" : "_ZNK3art11Instruction6InstAAEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::InstAA",
+   "linker_set_key" : "_ZNK3art11Instruction6InstAAEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Opcode",
+   "linker_set_key" : "_ZNK3art11Instruction6OpcodeEt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIN3art11Instruction4CodeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Opcode",
+   "linker_set_key" : "_ZNK3art11Instruction6OpcodeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIN3art11Instruction4CodeE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Fetch16",
+   "linker_set_key" : "_ZNK3art11Instruction7Fetch16Em",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "art::Instruction::Fetch32",
+   "linker_set_key" : "_ZNK3art11Instruction7Fetch32Em",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsThrow",
+   "linker_set_key" : "_ZNK3art11Instruction7IsThrowEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::GetDexPc",
+   "linker_set_key" : "_ZNK3art11Instruction8GetDexPcEPKt",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsBranch",
+   "linker_set_key" : "_ZNK3art11Instruction8IsBranchEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsInvoke",
+   "linker_set_key" : "_ZNK3art11Instruction8IsInvokeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsReturn",
+   "linker_set_key" : "_ZNK3art11Instruction8IsReturnEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::IsSwitch",
+   "linker_set_key" : "_ZNK3art11Instruction8IsSwitchEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next_1xx",
+   "linker_set_key" : "_ZNK3art11Instruction8Next_1xxEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next_2xx",
+   "linker_set_key" : "_ZNK3art11Instruction8Next_2xxEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next_3xx",
+   "linker_set_key" : "_ZNK3art11Instruction8Next_3xxEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next_4xx",
+   "linker_set_key" : "_ZNK3art11Instruction8Next_4xxEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::Next_51l",
+   "linker_set_key" : "_ZNK3art11Instruction8Next_51lEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIPKN3art11InstructionE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_10t",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_10tEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIa",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_10x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_10xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_11n",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_11nEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_11x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_11xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_12x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_12xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_21c",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_21cEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_21h",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_21hEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_21s",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_21sEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_21t",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_21tEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_22b",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_22bEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_22c",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_22cEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_22s",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_22sEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_22t",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_22tEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_22x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_22xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_23x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_23xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_31c",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_31cEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_31i",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_31iEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_31t",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_31tEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_35c",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_35cEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_3rc",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_3rcEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegA_51l",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegA_51lEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegB_11n",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegB_11nEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIa",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegB_12x",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegB_12xEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegB_22c",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegB_22cEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegB_22s",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegB_22sEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::Instruction::VRegB_22t",
+   "linker_set_key" : "_ZNK3art11Instruction9VRegB_22tEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art11InstructionE"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "art::InstructionOperands::GetNumberOfOperands",
+   "linker_set_key" : "_ZNK3art19InstructionOperands19GetNumberOfOperandsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3art19InstructionOperandsE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::operator bool",
+   "linker_set_key" : "_ZNK7android4base13ErrnoRestorercvbEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "std::operator<<",
+   "linker_set_key" : "_ZStlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEEPKNS_12basic_stringIcS2_NS_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN3art11Instruction14kMaxVarArgRegsE",
+   "name" : "art::Instruction::kMaxVarArgRegs",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "linker_set_key" : "_ZN3art11Instruction17kInstructionNamesE",
+   "name" : "art::Instruction::kInstructionNames",
+   "referenced_type" : "_ZTIA_KPKc",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "access" : "private",
+   "linker_set_key" : "_ZN3art11Instruction23kInstructionDescriptorsE",
+   "name" : "art::Instruction::kInstructionDescriptors",
+   "referenced_type" : "_ZTIA_KN3art11Instruction21InstructionDescriptorE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZN3art11Instruction29kHaveExperimentalInstructionsE",
+   "name" : "art::Instruction::kHaveExperimentalInstructions",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL12kBitsPerByteE",
+   "name" : "art::kBitsPerByte",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL13kIsDebugBuildE",
+   "name" : "art::kIsDebugBuild",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL14kIsTargetBuildE",
+   "name" : "art::kIsTargetBuild",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL14kIsTargetLinuxE",
+   "name" : "art::kIsTargetLinux",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL15kBitsPerIntPtrTE",
+   "name" : "art::kBitsPerIntPtrT",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL15kStackAlignmentE",
+   "name" : "art::kStackAlignment",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL16kBitsPerByteLog2E",
+   "name" : "art::kBitsPerByteLog2",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL16kIsTargetFuchsiaE",
+   "name" : "art::kIsTargetFuchsia",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL21kIsPGOInstrumentationE",
+   "name" : "art::kIsPGOInstrumentation",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL23kHostStaticBuildEnabledE",
+   "name" : "art::kHostStaticBuildEnabled",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL2GBE",
+   "name" : "art::GB",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL2KBE",
+   "name" : "art::KB",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL2MBE",
+   "name" : "art::MB",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN3artL9kPageSizeE",
+   "name" : "art::kPageSize",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail12StorageTypes7voidptrE",
+   "name" : "android::base::log_detail::StorageTypes::voidptr",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail12StorageTypesItjE7voidptrE",
+   "name" : "android::base::log_detail::StorageTypes<unsigned short, unsigned int>::voidptr",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail12StorageTypesIttE7voidptrE",
+   "name" : "android::base::log_detail::StorageTypes<unsigned short, unsigned short>::voidptr",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail13IsCharPointer5valueE",
+   "name" : "android::base::log_detail::IsCharPointer::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail13IsCharPointerIjE5valueE",
+   "name" : "android::base::log_detail::IsCharPointer<unsigned int>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail13IsCharPointerItE5valueE",
+   "name" : "android::base::log_detail::IsCharPointer<unsigned short>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4baseL14kEnableDChecksE",
+   "name" : "android::base::kEnableDChecks",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRA5_Kj",
+   "name" : "unsigned int const (&)[5]",
+   "referenced_type" : "_ZTIA5_Kj",
+   "self_type" : "_ZTIRA5_Kj",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKDn",
+   "name" : "const nullptr_t &",
+   "referenced_type" : "_ZTIKDn",
+   "self_type" : "_ZTIRKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKj",
+   "name" : "const unsigned int &",
+   "referenced_type" : "_ZTIKj",
+   "self_type" : "_ZTIRKj",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKt",
+   "name" : "const unsigned short &",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIRKt",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> &",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__15mutexE",
+   "name" : "std::mutex &",
+   "referenced_type" : "_ZTINSt3__15mutexE",
+   "self_type" : "_ZTIRNSt3__15mutexE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRt",
+   "name" : "unsigned short &",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIRt",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN3art11Instruction19SparseSwitchPayloadE",
+   "name" : "const art::Instruction::SparseSwitchPayload *",
+   "referenced_type" : "_ZTIKN3art11Instruction19SparseSwitchPayloadE",
+   "self_type" : "_ZTIPKN3art11Instruction19SparseSwitchPayloadE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN3art11InstructionE",
+   "name" : "const art::Instruction *",
+   "referenced_type" : "_ZTIKN3art11InstructionE",
+   "self_type" : "_ZTIPKN3art11InstructionE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN3art19InstructionOperandsE",
+   "name" : "const art::InstructionOperands *",
+   "referenced_type" : "_ZTIKN3art19InstructionOperandsE",
+   "self_type" : "_ZTIPKN3art19InstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKi",
+   "name" : "const int *",
+   "referenced_type" : "_ZTIKi",
+   "self_type" : "_ZTIPKi",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKt",
+   "name" : "const unsigned short *",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIPKt",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3art11InstructionE",
+   "name" : "art::Instruction *",
+   "referenced_type" : "_ZTIN3art11InstructionE",
+   "self_type" : "_ZTIPN3art11InstructionE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3art19InstructionOperandsE",
+   "name" : "art::InstructionOperands *",
+   "referenced_type" : "_ZTIN3art19InstructionOperandsE",
+   "self_type" : "_ZTIPN3art19InstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3art24RangeInstructionOperandsE",
+   "name" : "art::RangeInstructionOperands *",
+   "referenced_type" : "_ZTIN3art24RangeInstructionOperandsE",
+   "self_type" : "_ZTIPN3art24RangeInstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3art26VarArgsInstructionOperandsE",
+   "name" : "art::VarArgsInstructionOperands *",
+   "referenced_type" : "_ZTIN3art26VarArgsInstructionOperandsE",
+   "self_type" : "_ZTIPN3art26VarArgsInstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3art29NoReceiverInstructionOperandsE",
+   "name" : "art::NoReceiverInstructionOperands *",
+   "referenced_type" : "_ZTIN3art29NoReceiverInstructionOperandsE",
+   "self_type" : "_ZTIPN3art29NoReceiverInstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base10log_detail14EagerEvaluatorItjEE",
+   "name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned int> *",
+   "referenced_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorItjEE",
+   "self_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorItjEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base10log_detail14EagerEvaluatorIttEE",
+   "name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned short> *",
+   "referenced_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorIttEE",
+   "self_type" : "_ZTIPN7android4base10log_detail14EagerEvaluatorIttEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base10log_detail7StorageIjEE",
+   "name" : "android::base::log_detail::Storage<unsigned int> *",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageIjEE",
+   "self_type" : "_ZTIPN7android4base10log_detail7StorageIjEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base10log_detail7StorageItEE",
+   "name" : "android::base::log_detail::Storage<unsigned short> *",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageItEE",
+   "self_type" : "_ZTIPN7android4base10log_detail7StorageItEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base19ScopedLockAssertionE",
+   "name" : "android::base::ScopedLockAssertion *",
+   "referenced_type" : "_ZTIN7android4base19ScopedLockAssertionE",
+   "self_type" : "_ZTIPN7android4base19ScopedLockAssertionE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA5_Kj",
+   "name" : "unsigned int const[5]",
+   "referenced_type" : "_ZTIA5_j",
+   "self_type" : "_ZTIA5_Kj",
+   "size" : 20,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_KN3art11Instruction21InstructionDescriptorE",
+   "name" : "art::Instruction::InstructionDescriptor const[]",
+   "referenced_type" : "_ZTIA_N3art11Instruction21InstructionDescriptorE",
+   "self_type" : "_ZTIA_KN3art11Instruction21InstructionDescriptorE",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_KPKc",
+   "name" : "const char *const[]",
+   "referenced_type" : "_ZTIA_PKc",
+   "self_type" : "_ZTIA_KPKc",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_Kh",
+   "name" : "unsigned char const[]",
+   "referenced_type" : "_ZTIA_h",
+   "self_type" : "_ZTIA_Kh",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_Ki",
+   "name" : "int const[]",
+   "referenced_type" : "_ZTIA_i",
+   "self_type" : "_ZTIA_Ki",
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKDn",
+   "name" : "const nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN3art11Instruction19SparseSwitchPayloadE",
+   "name" : "const art::Instruction::SparseSwitchPayload",
+   "referenced_type" : "_ZTIN3art11Instruction19SparseSwitchPayloadE",
+   "self_type" : "_ZTIKN3art11Instruction19SparseSwitchPayloadE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN3art11InstructionE",
+   "name" : "const art::Instruction",
+   "referenced_type" : "_ZTIN3art11InstructionE",
+   "self_type" : "_ZTIKN3art11InstructionE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN3art19InstructionOperandsE",
+   "name" : "const art::InstructionOperands",
+   "referenced_type" : "_ZTIN3art19InstructionOperandsE",
+   "self_type" : "_ZTIKN3art19InstructionOperandsE",
+   "size" : 16,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base10log_detail7StorageIjEE",
+   "name" : "const android::base::log_detail::Storage<unsigned int>",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageIjEE",
+   "self_type" : "_ZTIKN7android4base10log_detail7StorageIjEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base10log_detail7StorageItEE",
+   "name" : "const android::base::log_detail::Storage<unsigned short>",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageItEE",
+   "self_type" : "_ZTIKN7android4base10log_detail7StorageItEE",
+   "size" : 2,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "name" : "const std::unique_ptr<android::base::LogMessageData, std::default_delete<android::base::LogMessageData>>",
+   "referenced_type" : "_ZTINSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "self_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPKN3art19InstructionOperandsE",
+   "name" : "const art::InstructionOperands *const",
+   "referenced_type" : "_ZTIPKN3art19InstructionOperandsE",
+   "self_type" : "_ZTIKPKN3art19InstructionOperandsE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKb",
+   "name" : "const bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIKb",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "art/libartbase/base/globals.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKt",
+   "name" : "const unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIKt",
+   "size" : 2,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ident",
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "element_width",
+     "field_offset" : 16,
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "element_count",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIA_Kh"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction16ArrayDataPayloadE",
+   "name" : "art::Instruction::ArrayDataPayload",
+   "referenced_type" : "_ZTIN3art11Instruction16ArrayDataPayloadE",
+   "self_type" : "_ZTIN3art11Instruction16ArrayDataPayloadE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ident",
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "case_count",
+     "field_offset" : 16,
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "first_key",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKi"
+    },
+    {
+     "field_name" : "targets",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIA_Ki"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction19PackedSwitchPayloadE",
+   "name" : "art::Instruction::PackedSwitchPayload",
+   "referenced_type" : "_ZTIN3art11Instruction19PackedSwitchPayloadE",
+   "self_type" : "_ZTIN3art11Instruction19PackedSwitchPayloadE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ident",
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "case_count",
+     "field_offset" : 16,
+     "referenced_type" : "_ZTIKt"
+    },
+    {
+     "field_name" : "keys_and_targets",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIA_Ki"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction19SparseSwitchPayloadE",
+   "name" : "art::Instruction::SparseSwitchPayload",
+   "referenced_type" : "_ZTIN3art11Instruction19SparseSwitchPayloadE",
+   "self_type" : "_ZTIN3art11Instruction19SparseSwitchPayloadE",
+   "size" : 4,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "verify_flags",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN3art11Instruction6FormatE"
+    },
+    {
+     "field_name" : "index_type",
+     "field_offset" : 40,
+     "referenced_type" : "_ZTIN3art11Instruction9IndexTypeE"
+    },
+    {
+     "field_name" : "flags",
+     "field_offset" : 48,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "size_in_code_units",
+     "field_offset" : 56,
+     "referenced_type" : "_ZTIa"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art11Instruction21InstructionDescriptorE",
+   "name" : "art::Instruction::InstructionDescriptor",
+   "referenced_type" : "_ZTIN3art11Instruction21InstructionDescriptorE",
+   "self_type" : "_ZTIN3art11Instruction21InstructionDescriptorE",
+   "size" : 8,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN3art11InstructionE",
+   "name" : "art::Instruction",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3art11InstructionE",
+   "self_type" : "_ZTIN3art11InstructionE",
+   "size" : 1,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "num_operands_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKm"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art19InstructionOperandsE",
+   "name" : "art::InstructionOperands",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3art19InstructionOperandsE",
+   "self_type" : "_ZTIN3art19InstructionOperandsE",
+   "size" : 16,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN3art19InstructionOperandsE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN3art19InstructionOperandsD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN3art19InstructionOperandsD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK3art19InstructionOperands10GetOperandEm"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art19InstructionOperandsE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "first_operand_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIKj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art24RangeInstructionOperandsE",
+   "name" : "art::RangeInstructionOperands",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3art24RangeInstructionOperandsE",
+   "self_type" : "_ZTIN3art24RangeInstructionOperandsE",
+   "size" : 24,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN3art24RangeInstructionOperandsE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN3art24RangeInstructionOperandsD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN3art24RangeInstructionOperandsD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZNK3art24RangeInstructionOperands10GetOperandEm"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art19InstructionOperandsE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "operands_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIRA5_Kj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art26VarArgsInstructionOperandsE",
+   "name" : "art::VarArgsInstructionOperands",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3art26VarArgsInstructionOperandsE",
+   "self_type" : "_ZTIN3art26VarArgsInstructionOperandsE",
+   "size" : 24,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN3art26VarArgsInstructionOperandsE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN3art26VarArgsInstructionOperandsD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN3art26VarArgsInstructionOperandsD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZNK3art26VarArgsInstructionOperands10GetOperandEm"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN3art19InstructionOperandsE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "inner_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIKPKN3art19InstructionOperandsE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3art29NoReceiverInstructionOperandsE",
+   "name" : "art::NoReceiverInstructionOperands",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3art29NoReceiverInstructionOperandsE",
+   "self_type" : "_ZTIN3art29NoReceiverInstructionOperandsE",
+   "size" : 24,
+   "source_file" : "art/libdexfile/dex/dex_instruction.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN3art29NoReceiverInstructionOperandsE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN3art29NoReceiverInstructionOperandsD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN3art29NoReceiverInstructionOperandsD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZNK3art29NoReceiverInstructionOperands10GetOperandEm"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "data_",
+     "referenced_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogMessageE",
+   "name" : "android::base::LogMessage",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogMessageE",
+   "self_type" : "_ZTIN7android4base10LogMessageE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "default_log_id_",
+     "referenced_type" : "_ZTIN7android4base5LogIdE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogdLoggerE",
+   "name" : "android::base::LogdLogger",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogdLoggerE",
+   "self_type" : "_ZTIN7android4base10LogdLoggerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base10log_detail12StorageTypesItjEE",
+   "name" : "android::base::log_detail::StorageTypes<unsigned short, unsigned int>",
+   "referenced_type" : "_ZTIN7android4base10log_detail12StorageTypesItjEE",
+   "self_type" : "_ZTIN7android4base10log_detail12StorageTypesItjEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base10log_detail12StorageTypesIttEE",
+   "name" : "android::base::log_detail::StorageTypes<unsigned short, unsigned short>",
+   "referenced_type" : "_ZTIN7android4base10log_detail12StorageTypesIttEE",
+   "self_type" : "_ZTIN7android4base10log_detail12StorageTypesIttEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIt" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base10log_detail13IsCharPointerIjEE",
+   "name" : "android::base::log_detail::IsCharPointer<unsigned int>",
+   "referenced_type" : "_ZTIN7android4base10log_detail13IsCharPointerIjEE",
+   "self_type" : "_ZTIN7android4base10log_detail13IsCharPointerIjEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base10log_detail13IsCharPointerItEE",
+   "name" : "android::base::log_detail::IsCharPointer<unsigned short>",
+   "referenced_type" : "_ZTIN7android4base10log_detail13IsCharPointerItEE",
+   "self_type" : "_ZTIN7android4base10log_detail13IsCharPointerItEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "lhs",
+     "referenced_type" : "_ZTIKN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "field_name" : "rhs",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKN7android4base10log_detail7StorageIjEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10log_detail14EagerEvaluatorItjEE",
+   "name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned int>",
+   "referenced_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorItjEE",
+   "self_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorItjEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIj" ]
+  },
+  {
+   "alignment" : 2,
+   "fields" :
+   [
+    {
+     "field_name" : "lhs",
+     "referenced_type" : "_ZTIKN7android4base10log_detail7StorageItEE"
+    },
+    {
+     "field_name" : "rhs",
+     "field_offset" : 16,
+     "referenced_type" : "_ZTIKN7android4base10log_detail7StorageItEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10log_detail14EagerEvaluatorIttEE",
+   "name" : "android::base::log_detail::EagerEvaluator<unsigned short, unsigned short>",
+   "referenced_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorIttEE",
+   "self_type" : "_ZTIN7android4base10log_detail14EagerEvaluatorIttEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt", "_ZTIt" ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "v",
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10log_detail7StorageIjEE",
+   "name" : "android::base::log_detail::Storage<unsigned int>",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageIjEE",
+   "self_type" : "_ZTIN7android4base10log_detail7StorageIjEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 2,
+   "fields" :
+   [
+    {
+     "field_name" : "v",
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10log_detail7StorageItEE",
+   "name" : "android::base::log_detail::Storage<unsigned short>",
+   "referenced_type" : "_ZTIN7android4base10log_detail7StorageItEE",
+   "self_type" : "_ZTIN7android4base10log_detail7StorageItEE",
+   "size" : 2,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "name" : "android::base::LogNullGuard<std::nullptr_t>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIDn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "name" : "android::base::LogNullGuard<const char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPKc" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "name" : "android::base::LogNullGuard<char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPc" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIjEE",
+   "name" : "android::base::LogNullGuard<unsigned int>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIjEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIjEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardItEE",
+   "name" : "android::base::LogNullGuard<unsigned short>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardItEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardItEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "saved_errno_",
+     "referenced_type" : "_ZTIKi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "old_",
+     "referenced_type" : "_ZTIN7android4base11LogSeverityE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "name" : "android::base::ScopedLogSeverity",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "self_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base19ScopedLockAssertionE",
+   "name" : "android::base::ScopedLockAssertion",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base19ScopedLockAssertionE",
+   "self_type" : "_ZTIN7android4base19ScopedLockAssertionE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/thread_annotations.h"
+  }
+ ],
+ "rvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIOj",
+   "name" : "unsigned int &&",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIOj",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIOt",
+   "name" : "unsigned short &&",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIOt",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ]
+}
