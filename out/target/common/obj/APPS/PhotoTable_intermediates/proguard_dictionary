@@ -1,0 +1,366 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: ba1d1ab
+# common_typos_disable
+com.android.dreams.phototable.AlbumDataAdapter -> com.android.dreams.phototable.AlbumDataAdapter:
+    50:60:void <init>(android.content.Context,android.content.SharedPreferences,int,java.util.List) -> <init>
+    36:36:com.android.dreams.phototable.AlbumSettings access$100(com.android.dreams.phototable.AlbumDataAdapter) -> access$100
+    69:69:boolean areAllSelected() -> areAllSelected
+    85:102:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    64:65:boolean isSelected(int) -> isSelected
+    74:78:void selectAll(boolean) -> selectAll
+com.android.dreams.phototable.AlbumDataAdapter$AccountComparator -> com.android.dreams.phototable.AlbumDataAdapter$AccountComparator:
+    108:109:void <init>() -> <init>
+    106:106:int compare(java.lang.Object,java.lang.Object) -> compare
+    114:139:int compare(com.android.dreams.phototable.PhotoSource$AlbumData,com.android.dreams.phototable.PhotoSource$AlbumData) -> compare
+com.android.dreams.phototable.AlbumDataAdapter$ItemClickListener -> com.android.dreams.phototable.AlbumDataAdapter$ItemClickListener:
+    168:168:void <init>(com.android.dreams.phototable.AlbumDataAdapter) -> <init>
+    168:168:void <init>(com.android.dreams.phototable.AlbumDataAdapter,com.android.dreams.phototable.AlbumDataAdapter$1) -> <init>
+    171:185:void onClick(android.view.View) -> onClick
+com.android.dreams.phototable.AlbumDataAdapter$RecencyComparator -> com.android.dreams.phototable.AlbumDataAdapter$RecencyComparator:
+    147:148:void <init>() -> <init>
+    145:145:int compare(java.lang.Object,java.lang.Object) -> compare
+    153:156:int compare(com.android.dreams.phototable.PhotoSource$AlbumData,com.android.dreams.phototable.PhotoSource$AlbumData) -> compare
+com.android.dreams.phototable.AlbumDataAdapter$TitleComparator -> com.android.dreams.phototable.AlbumDataAdapter$TitleComparator:
+    161:161:void <init>() -> <init>
+    161:161:int compare(java.lang.Object,java.lang.Object) -> compare
+    164:164:int compare(com.android.dreams.phototable.PhotoSource$AlbumData,com.android.dreams.phototable.PhotoSource$AlbumData) -> compare
+com.android.dreams.phototable.AlbumSettings -> com.android.dreams.phototable.AlbumSettings:
+    109:112:void <init>(android.content.SharedPreferences) -> <init>
+    59:61:boolean areAllEnabled(java.util.Collection) -> areAllEnabled
+    79:82:void disableAllAlbums() -> disableAllAlbums
+    86:90:void enableAllAlbums(java.util.Collection) -> enableAllAlbums
+    37:43:com.android.dreams.phototable.AlbumSettings getAlbumSettings(android.content.SharedPreferences) -> getAlbumSettings
+    53:55:boolean isAlbumEnabled(java.lang.String) -> isAlbumEnabled
+    104:106:boolean isConfigured() -> isConfigured
+    94:99:void pruneObsoleteSettings(java.util.Collection) -> pruneObsoleteSettings
+    47:49:void readEnabledAlbums() -> readEnabledAlbums
+    116:119:void readEnabledAlbumsLocked() -> readEnabledAlbumsLocked
+    65:74:void setAlbumEnabled(java.lang.String,boolean) -> setAlbumEnabled
+    124:127:void writeEnabledAlbumsLocked() -> writeEnabledAlbumsLocked
+com.android.dreams.phototable.BummerView -> com.android.dreams.phototable.BummerView:
+    30:73:void <init>(android.content.Context) -> <init>
+    77:77:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    30:81:void <init>(android.content.Context,android.util.AttributeSet,int) -> <init>
+    26:26:boolean access$000(com.android.dreams.phototable.BummerView) -> access$000
+    26:26:int access$100(com.android.dreams.phototable.BummerView) -> access$100
+    26:26:int access$200(com.android.dreams.phototable.BummerView) -> access$200
+    26:26:android.os.Handler access$300(com.android.dreams.phototable.BummerView) -> access$300
+    92:103:void onAttachedToWindow() -> onAttachedToWindow
+    85:87:void setAnimationParams(boolean,int,int) -> setAnimationParams
+com.android.dreams.phototable.BummerView$1 -> com.android.dreams.phototable.BummerView$1:
+    34:34:void <init>(com.android.dreams.phototable.BummerView) -> <init>
+    38:66:void handleMessage(android.os.Message) -> handleMessage
+com.android.dreams.phototable.BummerView$2 -> com.android.dreams.phototable.BummerView$2:
+    93:93:void <init>(com.android.dreams.phototable.BummerView,android.view.View) -> <init>
+    96:98:void onLayoutChange(android.view.View,int,int,int,int,int,int,int,int) -> onLayoutChange
+com.android.dreams.phototable.CursorPhotoSource -> com.android.dreams.phototable.CursorPhotoSource:
+    33:33:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    78:79:void donePaging(com.android.dreams.phototable.PhotoSource$ImageData) -> donePaging
+    42:53:com.android.dreams.phototable.PhotoSource$ImageData naturalNext(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalNext
+    60:71:com.android.dreams.phototable.PhotoSource$ImageData naturalPrevious(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalPrevious
+com.android.dreams.phototable.DragGestureDetector -> com.android.dreams.phototable.DragGestureDetector:
+    36:41:void <init>(android.content.Context,com.android.dreams.phototable.PhotoTable) -> <init>
+    45:45:void computeAveragePosition(android.view.MotionEvent,float[]) -> computeAveragePosition
+    49:61:void computeAveragePosition(android.view.MotionEvent,float[],int) -> computeAveragePosition
+    105:110:void move(android.view.MotionEvent,boolean) -> move
+    65:101:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.android.dreams.phototable.EdgeSwipeDetector -> com.android.dreams.phototable.EdgeSwipeDetector:
+    34:38:void <init>(android.content.Context,com.android.dreams.phototable.PhotoTable) -> <init>
+    42:67:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.android.dreams.phototable.FlipperDream -> com.android.dreams.phototable.FlipperDream:
+    23:23:void <init>() -> <init>
+    34:43:void onAttachedToWindow() -> onAttachedToWindow
+    28:29:void onDreamingStarted() -> onDreamingStarted
+com.android.dreams.phototable.FlipperDreamSettings -> com.android.dreams.phototable.FlipperDreamSettings:
+    34:34:void <init>() -> <init>
+    34:34:com.android.dreams.phototable.SectionedAlbumDataAdapter access$000(com.android.dreams.phototable.FlipperDreamSettings) -> access$000
+    34:34:com.android.dreams.phototable.SectionedAlbumDataAdapter access$002(com.android.dreams.phototable.FlipperDreamSettings,com.android.dreams.phototable.SectionedAlbumDataAdapter) -> access$002
+    34:34:com.android.dreams.phototable.PhotoSourcePlexor access$100(com.android.dreams.phototable.FlipperDreamSettings) -> access$100
+    34:34:void access$200(com.android.dreams.phototable.FlipperDreamSettings) -> access$200
+    34:34:void access$300(com.android.dreams.phototable.FlipperDreamSettings,boolean) -> access$300
+    60:95:void init() -> init
+    48:50:void onCreate(android.os.Bundle) -> onCreate
+    100:103:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    109:116:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    55:56:void onResume() -> onResume
+    121:125:void showApology(boolean) -> showApology
+    130:134:void updateActionItem() -> updateActionItem
+com.android.dreams.phototable.FlipperDreamSettings$1 -> com.android.dreams.phototable.FlipperDreamSettings$1:
+    66:66:void <init>(com.android.dreams.phototable.FlipperDreamSettings) -> <init>
+    66:66:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    69:73:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+    66:66:void onPostExecute(java.lang.Object) -> onPostExecute
+    79:92:void onPostExecute(java.lang.Void) -> onPostExecute
+com.android.dreams.phototable.FlipperDreamSettings$1$1 -> com.android.dreams.phototable.FlipperDreamSettings$1$1:
+    79:79:void <init>(com.android.dreams.phototable.FlipperDreamSettings$1) -> <init>
+    82:82:void onChanged() -> onChanged
+    86:86:void onInvalidated() -> onInvalidated
+com.android.dreams.phototable.KeyboardInterpreter -> com.android.dreams.phototable.KeyboardInterpreter:
+    33:35:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    38:115:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.android.dreams.phototable.LocalSource -> com.android.dreams.phototable.LocalSource:
+    43:48:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    122:122:java.lang.String constructId(boolean,java.lang.String) -> constructId
+    60:67:java.util.Collection findAlbums() -> findAlbums
+    71:117:void findAlbums(boolean,java.util.HashMap) -> findAlbums
+    179:184:java.util.Collection findImages(int) -> findImages
+    189:234:void findImages(boolean,int,java.util.LinkedList) -> findImages
+    138:153:void findPosition(com.android.dreams.phototable.PhotoSource$ImageData) -> findPosition
+    52:55:java.util.Set getFoundAlbums() -> getFoundAlbums
+    246:249:java.io.InputStream getStream(com.android.dreams.phototable.PhotoSource$ImageData,int) -> getStream
+    239:239:boolean isInternalId(java.lang.String) -> isInternalId
+    127:133:void openCursor(com.android.dreams.phototable.PhotoSource$ImageData) -> openCursor
+    162:172:com.android.dreams.phototable.PhotoSource$ImageData unpackImageData(android.database.Cursor,com.android.dreams.phototable.PhotoSource$ImageData) -> unpackImageData
+com.android.dreams.phototable.PhotoCarousel -> com.android.dreams.phototable.PhotoCarousel:
+    97:111:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    39:39:void access$000(com.android.dreams.phototable.PhotoCarousel) -> access$000
+    39:39:java.util.LinkedList access$100(com.android.dreams.phototable.PhotoCarousel) -> access$100
+    39:39:int access$1000(com.android.dreams.phototable.PhotoCarousel) -> access$1000
+    39:39:com.android.dreams.phototable.PhotoSourcePlexor access$1100(com.android.dreams.phototable.PhotoCarousel) -> access$1100
+    39:39:android.view.View access$200(com.android.dreams.phototable.PhotoCarousel) -> access$200
+    39:39:long access$300(com.android.dreams.phototable.PhotoCarousel) -> access$300
+    39:39:long access$302(com.android.dreams.phototable.PhotoCarousel,long) -> access$302
+    39:39:int access$400(com.android.dreams.phototable.PhotoCarousel) -> access$400
+    39:39:boolean access$500(com.android.dreams.phototable.PhotoCarousel) -> access$500
+    39:39:boolean access$600(com.android.dreams.phototable.PhotoCarousel) -> access$600
+    39:39:com.android.dreams.phototable.PhotoCarousel$Flipper access$700(com.android.dreams.phototable.PhotoCarousel) -> access$700
+    39:39:void access$800(com.android.dreams.phototable.PhotoCarousel,java.lang.String) -> access$800
+    39:39:int access$900(com.android.dreams.phototable.PhotoCarousel) -> access$900
+    180:180:boolean canFlip() -> canFlip
+    184:198:boolean changePhoto() -> changePhoto
+    228:266:void flip(float) -> flip
+    176:176:android.widget.ImageView getBackface() -> getBackface
+    123:123:float lockTo180(float) -> lockTo180
+    158:171:void maybeLoadMore() -> maybeLoadMore
+    271:274:void onAttachedToWindow() -> onAttachedToWindow
+    279:291:void onLayout(boolean,int,int,int,int) -> onLayout
+    296:296:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    207:223:void setScaleType(android.view.View) -> setScaleType
+    127:127:float wrap360(float) -> wrap360
+com.android.dreams.phototable.PhotoCarousel$1 -> com.android.dreams.phototable.PhotoCarousel$1:
+    112:112:void <init>(com.android.dreams.phototable.PhotoCarousel) -> <init>
+    115:116:boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+com.android.dreams.phototable.PhotoCarousel$2 -> com.android.dreams.phototable.PhotoCarousel$2:
+    258:258:void <init>(com.android.dreams.phototable.PhotoCarousel) -> <init>
+    261:261:void run() -> run
+com.android.dreams.phototable.PhotoCarousel$Flipper -> com.android.dreams.phototable.PhotoCarousel$Flipper:
+    64:64:void <init>(com.android.dreams.phototable.PhotoCarousel) -> <init>
+    67:85:void run() -> run
+    91:92:void scheduleNext(long) -> scheduleNext
+com.android.dreams.phototable.PhotoCarousel$PhotoLoadTask -> com.android.dreams.phototable.PhotoCarousel$PhotoLoadTask:
+    133:135:void <init>(com.android.dreams.phototable.PhotoCarousel) -> <init>
+    130:130:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    141:144:android.graphics.Bitmap doInBackground(java.lang.Void[]) -> doInBackground
+    130:130:void onPostExecute(java.lang.Object) -> onPostExecute
+    151:153:void onPostExecute(android.graphics.Bitmap) -> onPostExecute
+com.android.dreams.phototable.PhotoSource -> com.android.dreams.phototable.PhotoSource:
+    104:104:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    107:119:void <init>(android.content.Context,android.content.SharedPreferences,com.android.dreams.phototable.PhotoSource) -> <init>
+    312:314:void donePaging(android.graphics.Bitmap) -> donePaging
+    123:126:void fillQueue() -> fillQueue
+    160:260:android.graphics.Bitmap load(com.android.dreams.phototable.PhotoSource$ImageData,android.graphics.BitmapFactory$Options,int,int) -> load
+    286:291:android.graphics.Bitmap naturalNext(android.graphics.Bitmap,android.graphics.BitmapFactory$Options,int,int) -> naturalNext
+    300:305:android.graphics.Bitmap naturalPrevious(android.graphics.Bitmap,android.graphics.BitmapFactory$Options,int,int) -> naturalPrevious
+    130:152:android.graphics.Bitmap next(android.graphics.BitmapFactory$Options,int,int) -> next
+    279:279:int pickRandomStart(int,int) -> pickRandomStart
+    320:321:void recycle(android.graphics.Bitmap) -> recycle
+com.android.dreams.phototable.PhotoSource$AlbumData -> com.android.dreams.phototable.PhotoSource$AlbumData:
+    74:74:void <init>(com.android.dreams.phototable.PhotoSource) -> <init>
+    82:83:java.lang.String getType() -> getType
+com.android.dreams.phototable.PhotoSource$ImageData -> com.android.dreams.phototable.PhotoSource$ImageData:
+    50:50:void <init>(com.android.dreams.phototable.PhotoSource) -> <init>
+    70:70:void donePaging() -> donePaging
+    61:61:java.io.InputStream getStream(int) -> getStream
+    64:64:com.android.dreams.phototable.PhotoSource$ImageData naturalNext() -> naturalNext
+    67:67:com.android.dreams.phototable.PhotoSource$ImageData naturalPrevious() -> naturalPrevious
+com.android.dreams.phototable.PhotoSourcePlexor -> com.android.dreams.phototable.PhotoSourcePlexor:
+    35:38:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    86:86:void donePaging(com.android.dreams.phototable.PhotoSource$ImageData) -> donePaging
+    43:50:java.util.Collection findAlbums() -> findAlbums
+    57:64:java.util.Collection findImages(int) -> findImages
+    71:71:java.io.InputStream getStream(com.android.dreams.phototable.PhotoSource$ImageData,int) -> getStream
+    76:76:com.android.dreams.phototable.PhotoSource$ImageData naturalNext(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalNext
+    81:81:com.android.dreams.phototable.PhotoSource$ImageData naturalPrevious(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalPrevious
+com.android.dreams.phototable.PhotoTable -> com.android.dreams.phototable.PhotoTable:
+    54:82:void <clinit>() -> <clinit>
+    131:168:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    54:54:int access$000(com.android.dreams.phototable.PhotoTable) -> access$000
+    54:54:void access$100(java.lang.String,java.lang.Object[]) -> access$100
+    54:54:void access$1100(com.android.dreams.phototable.PhotoTable,android.view.View,int) -> access$1100
+    54:54:void access$1200(com.android.dreams.phototable.PhotoTable,android.view.View) -> access$1200
+    54:54:void access$1300(com.android.dreams.phototable.PhotoTable,android.view.View) -> access$1300
+    54:54:java.util.LinkedList access$1400(com.android.dreams.phototable.PhotoTable) -> access$1400
+    54:54:int access$1500(com.android.dreams.phototable.PhotoTable) -> access$1500
+    54:54:int access$1600(com.android.dreams.phototable.PhotoTable) -> access$1600
+    54:54:int access$1700(com.android.dreams.phototable.PhotoTable) -> access$1700
+    54:54:void access$1800(com.android.dreams.phototable.PhotoTable) -> access$1800
+    54:54:android.view.View access$1900(com.android.dreams.phototable.PhotoTable) -> access$1900
+    54:54:android.graphics.Bitmap access$200(com.android.dreams.phototable.PhotoTable,android.view.View) -> access$200
+    54:54:android.view.ViewGroup access$2000(com.android.dreams.phototable.PhotoTable) -> access$2000
+    54:54:int access$2100(com.android.dreams.phototable.PhotoTable) -> access$2100
+    54:54:java.util.Set access$2200(com.android.dreams.phototable.PhotoTable) -> access$2200
+    54:54:int access$300(com.android.dreams.phototable.PhotoTable) -> access$300
+    54:54:int access$400(com.android.dreams.phototable.PhotoTable) -> access$400
+    54:54:com.android.dreams.phototable.PhotoSource access$500(com.android.dreams.phototable.PhotoTable) -> access$500
+    54:54:android.view.View access$600(com.android.dreams.phototable.PhotoTable,android.graphics.BitmapFactory$Options,android.graphics.Bitmap) -> access$600
+    54:54:android.view.View[] access$700(com.android.dreams.phototable.PhotoTable) -> access$700
+    54:54:int access$800(com.android.dreams.phototable.PhotoTable) -> access$800
+    54:54:int access$900(com.android.dreams.phototable.PhotoTable) -> access$900
+    463:484:android.view.View applyFrame(com.android.dreams.phototable.PhotoTable,android.graphics.BitmapFactory$Options,android.graphics.Bitmap) -> applyFrame
+    282:285:void clearFocus() -> clearFocus
+    191:207:void clearSelection() -> clearSelection
+    340:340:double cross(double[],double[]) -> cross
+    835:835:void dropOnTable(android.view.View) -> dropOnTable
+    840:875:void dropOnTable(android.view.View,android.view.animation.Interpolator) -> dropOnTable
+    892:893:void exitStageLeft(android.view.View) -> exitStageLeft
+    672:680:void fadeAway(android.view.View,boolean) -> fadeAway
+    634:653:void fadeInBackground(android.view.View) -> fadeInBackground
+    613:627:void fadeOutBackground(android.view.View) -> fadeOutBackground
+    773:789:void fling(android.view.View) -> fling
+    794:813:void fling(android.view.View,float,float,int,boolean) -> fling
+    965:974:android.graphics.Bitmap getBitmap(android.view.View) -> getBitmap
+    348:351:double[] getCenter(android.view.View) -> getCenter
+    278:278:android.view.View getFocus() -> getFocus
+    187:187:android.view.View getSelection() -> getSelection
+    274:274:boolean hasFocus() -> hasFocus
+    183:183:boolean hasSelection() -> hasSelection
+    913:913:boolean isInBackground(android.view.View) -> isInBackground
+    599:606:void launch() -> launch
+    740:744:void move(android.view.View,float,float,float) -> move
+    760:766:void move(android.view.View,float,float,boolean) -> move
+    356:356:android.view.View moveFocus(android.view.View,float) -> moveFocus
+    361:396:android.view.View moveFocus(android.view.View,float,float) -> moveFocus
+    884:886:void moveToBackground(android.view.View) -> moveToBackground
+    905:907:void moveToForeground(android.view.View) -> moveToForeground
+    698:705:void moveToTopOfPile(android.view.View) -> moveToTopOfPile
+    344:344:double norm(double[]) -> norm
+    173:175:void onFinishInflate() -> onFinishInflate
+    406:406:boolean onGenericMotionEvent(android.view.MotionEvent) -> onGenericMotionEvent
+    401:401:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    426:452:void onLayout(boolean,int,int,int,int) -> onLayout
+    411:416:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    822:822:boolean photoOffTable(android.view.View) -> photoOffTable
+    826:830:boolean photoOffTable(android.view.View,int,int) -> photoOffTable
+    926:953:void pickUp(android.view.View) -> pickUp
+    710:734:void placeOnDeck(android.view.View,int) -> placeOnDeck
+    252:266:void promoteSelection() -> promoteSelection
+    326:335:android.graphics.PointF randMultiDrop(int,float,float,int,int) -> randMultiDrop
+    308:308:float randfrange(float,float) -> randfrange
+    979:980:void recycle(android.view.View) -> recycle
+    1013:1013:void refreshFocus() -> refreshFocus
+    1004:1004:void refreshSelection() -> refreshSelection
+    898:900:void removeViewFromParent(android.view.View) -> removeViewFromParent
+    663:666:void resolveBackgroundQueue() -> resolveBackgroundQueue
+    1017:1018:void scheduleFocusReaper(int) -> scheduleFocusReaper
+    1022:1023:void scheduleNext(int) -> scheduleNext
+    1008:1009:void scheduleSelectionReaper(int) -> scheduleSelectionReaper
+    224:233:void selectNext() -> selectNext
+    238:247:void selectPrevious() -> selectPrevious
+    289:290:void setDefaultFocus() -> setDefaultFocus
+    179:179:void setDream(android.service.dreams.DreamService) -> setDream
+    296:300:void setFocus(android.view.View) -> setFocus
+    985:990:void setHighlight(android.view.View,boolean) -> setHighlight
+    214:218:void setSelection(android.view.View) -> setSelection
+    996:999:void start() -> start
+    749:755:void throwOnTable(android.view.View) -> throwOnTable
+com.android.dreams.phototable.PhotoTable$1 -> com.android.dreams.phototable.PhotoTable$1:
+    640:640:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    643:643:void run() -> run
+com.android.dreams.phototable.PhotoTable$2 -> com.android.dreams.phototable.PhotoTable$2:
+    653:653:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    656:656:void run() -> run
+com.android.dreams.phototable.PhotoTable$3 -> com.android.dreams.phototable.PhotoTable$3:
+    680:680:void <init>(com.android.dreams.phototable.PhotoTable,android.view.View,boolean) -> <init>
+    683:689:void run() -> run
+com.android.dreams.phototable.PhotoTable$4 -> com.android.dreams.phototable.PhotoTable$4:
+    813:813:void <init>(com.android.dreams.phototable.PhotoTable,android.view.View) -> <init>
+    816:816:void run() -> run
+com.android.dreams.phototable.PhotoTable$5 -> com.android.dreams.phototable.PhotoTable$5:
+    875:875:void <init>(com.android.dreams.phototable.PhotoTable,android.view.View) -> <init>
+    878:878:void run() -> run
+com.android.dreams.phototable.PhotoTable$6 -> com.android.dreams.phototable.PhotoTable$6:
+    953:953:void <init>(com.android.dreams.phototable.PhotoTable,android.view.View) -> <init>
+    956:956:void run() -> run
+com.android.dreams.phototable.PhotoTable$FocusReaper -> com.android.dreams.phototable.PhotoTable$FocusReaper:
+    66:66:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    69:69:void run() -> run
+com.android.dreams.phototable.PhotoTable$Launcher -> com.android.dreams.phototable.PhotoTable$Launcher:
+    58:58:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    61:62:void run() -> run
+com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask -> com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask:
+    495:498:void <init>(com.android.dreams.phototable.PhotoTable,int) -> <init>
+    490:490:int access$1000(com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask) -> access$1000
+    490:490:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    503:515:android.view.View doInBackground(android.view.View[]) -> doInBackground
+    490:490:void onPostExecute(java.lang.Object) -> onPostExecute
+    521:542:void onPostExecute(android.view.View) -> onPostExecute
+com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask$1 -> com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask$1:
+    530:530:void <init>(com.android.dreams.phototable.PhotoTable$LoadNaturalSiblingTask) -> <init>
+    534:535:void onLayoutChange(android.view.View,int,int,int,int,int,int,int,int) -> onLayoutChange
+com.android.dreams.phototable.PhotoTable$PhotoLaunchTask -> com.android.dreams.phototable.PhotoTable$PhotoLaunchTask:
+    550:552:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    547:547:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    557:561:android.view.View doInBackground(java.lang.Void[]) -> doInBackground
+    547:547:void onPostExecute(java.lang.Object) -> onPostExecute
+    567:591:void onPostExecute(android.view.View) -> onPostExecute
+com.android.dreams.phototable.PhotoTable$SelectionReaper -> com.android.dreams.phototable.PhotoTable$SelectionReaper:
+    73:73:void <init>(com.android.dreams.phototable.PhotoTable) -> <init>
+    76:76:void run() -> run
+com.android.dreams.phototable.PhotoTableDream -> com.android.dreams.phototable.PhotoTableDream:
+    24:24:void <init>() -> <init>
+    47:55:void onAttachedToWindow() -> onAttachedToWindow
+    28:41:void onDreamingStarted() -> onDreamingStarted
+com.android.dreams.phototable.PhotoTableDreamSettings -> com.android.dreams.phototable.PhotoTableDreamSettings:
+    23:23:void <init>() -> <init>
+    30:32:void onCreate(android.os.Bundle) -> onCreate
+com.android.dreams.phototable.PhotoTouchListener -> com.android.dreams.phototable.PhotoTouchListener:
+    51:63:void <init>(android.content.Context,com.android.dreams.phototable.PhotoTable) -> <init>
+    69:72:float getAngle(android.view.View,android.view.MotionEvent) -> getAngle
+    89:118:void onFling(android.view.View,float,float) -> onFling
+    123:234:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    80:85:void resetTouch(android.view.View) -> resetTouch
+com.android.dreams.phototable.PicasaSource -> com.android.dreams.phototable.PicasaSource:
+    80:92:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    429:429:java.lang.String constructId(java.lang.String) -> constructId
+    329:425:java.util.Collection findAlbums() -> findAlbums
+    164:252:java.util.Collection findImages(int) -> findImages
+    120:135:void findPosition(com.android.dreams.phototable.PhotoSource$ImageData) -> findPosition
+    96:100:int getDisplayLongSide() -> getDisplayLongSide
+    321:324:java.util.Set getFoundAlbums() -> getFoundAlbums
+    436:460:java.io.InputStream getStream(com.android.dreams.phototable.PhotoSource$ImageData,int) -> getStream
+    105:114:void openCursor(com.android.dreams.phototable.PhotoSource$ImageData) -> openCursor
+    258:274:java.lang.String resolveAccount(java.lang.String) -> resolveAccount
+    280:315:java.util.Collection resolveAlbumIds(java.lang.String) -> resolveAlbumIds
+    144:158:com.android.dreams.phototable.PhotoSource$ImageData unpackImageData(android.database.Cursor,com.android.dreams.phototable.PhotoSource$ImageData) -> unpackImageData
+com.android.dreams.phototable.SectionedAlbumDataAdapter -> com.android.dreams.phototable.SectionedAlbumDataAdapter:
+    44:50:void <init>(android.content.Context,android.content.SharedPreferences,int,int,java.util.List) -> <init>
+    109:109:boolean areAllItemsEnabled() -> areAllItemsEnabled
+    54:54:boolean areAllSelected() -> areAllSelected
+    125:125:int getCount() -> getCount
+    130:133:java.lang.Object getItem(int) -> getItem
+    144:147:int getItemViewType(int) -> getItemViewType
+    178:193:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    153:153:int getViewTypeCount() -> getViewTypeCount
+    158:158:boolean hasStableIds() -> hasStableIds
+    205:205:int internalPosition(int) -> internalPosition
+    163:163:boolean isEmpty() -> isEmpty
+    114:117:boolean isEnabled(int) -> isEnabled
+    201:201:boolean isHeader(int) -> isHeader
+    71:95:void onChanged() -> onChanged
+    102:102:void onInvalidated() -> onInvalidated
+    168:168:void registerDataSetObserver(android.database.DataSetObserver) -> registerDataSetObserver
+    58:59:void selectAll(boolean) -> selectAll
+    173:173:void unregisterDataSetObserver(android.database.DataSetObserver) -> unregisterDataSetObserver
+com.android.dreams.phototable.SoftLandingInterpolator -> com.android.dreams.phototable.SoftLandingInterpolator:
+    37:45:void <init>(float,float) -> <init>
+    49:55:float getInterpolation(float) -> getInterpolation
+com.android.dreams.phototable.StockSource -> com.android.dreams.phototable.StockSource:
+    31:31:void <clinit>() -> <clinit>
+    42:62:void <init>(android.content.Context,android.content.SharedPreferences) -> <init>
+    67:71:java.util.Collection findAlbums() -> findAlbums
+    76:79:java.util.Collection findImages(int) -> findImages
+    86:90:java.io.InputStream getStream(com.android.dreams.phototable.PhotoSource$ImageData,int) -> getStream
+    99:101:com.android.dreams.phototable.PhotoSource$ImageData naturalNext(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalNext
+    106:108:com.android.dreams.phototable.PhotoSource$ImageData naturalPrevious(com.android.dreams.phototable.PhotoSource$ImageData) -> naturalPrevious
