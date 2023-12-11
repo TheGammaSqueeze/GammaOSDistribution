@@ -1,0 +1,1150 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 29
+# pg_map_id: 34da1e8
+# common_typos_disable
+android.net.captiveportal.CaptivePortalProbeResult -> android.net.captiveportal.CaptivePortalProbeResult:
+    52:56:void <clinit>() -> <clinit>
+    87:87:void <init>(int,int) -> <init>
+    97:102:void <init>(int,java.lang.String,java.lang.String,android.net.captiveportal.CaptivePortalProbeSpec,int) -> <init>
+    106:106:boolean isSuccessful() -> isSuccessful
+android.net.captiveportal.CaptivePortalProbeSpec -> android.net.captiveportal.CaptivePortalProbeSpec:
+    49:51:void <init>(java.lang.String,java.net.URL) -> <init>
+    40:40:boolean access$000(java.lang.String,java.util.regex.Pattern) -> access$000
+    203:203:java.lang.Object checkNotNull(java.lang.Object) -> checkNotNull
+    155:155:java.net.URL getUrl() -> getUrl
+    87:94:java.util.regex.Pattern parsePatternIfNonEmpty(java.lang.String,int) -> parsePatternIfNonEmpty
+    67:81:android.net.captiveportal.CaptivePortalProbeSpec parseSpec(java.lang.String) -> parseSpec
+    107:109:android.net.captiveportal.CaptivePortalProbeSpec parseSpecOrNull(java.lang.String) -> parseSpecOrNull
+    198:198:boolean safeMatch(java.lang.String,java.util.regex.Pattern) -> safeMatch
+android.net.captiveportal.CaptivePortalProbeSpec$RegexMatchProbeSpec -> android.net.captiveportal.CaptivePortalProbeSpec$RegexMatchProbeSpec:
+    173:183:void <init>(java.lang.String,java.net.URL,java.util.regex.Pattern,java.util.regex.Pattern) -> <init>
+    188:192:android.net.captiveportal.CaptivePortalProbeResult getResult(int,java.lang.String) -> getResult
+android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.graphics.drawable.IconCompatParcelizer -> android.support.v4.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesCompatParcelizer -> android.support.v4.media.AudioAttributesCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplApi21Parcelizer -> android.support.v4.media.AudioAttributesImplApi21Parcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplApi21 read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplApi21,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplApi26Parcelizer -> android.support.v4.media.AudioAttributesImplApi26Parcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplApi26 read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplApi26,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.AudioAttributesImplBaseParcelizer -> android.support.v4.media.AudioAttributesImplBaseParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.media.AudioAttributesImplBase read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.media.AudioAttributesImplBase,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.media.MediaBrowserCompat$ItemReceiver -> android.support.v4.media.MediaBrowserCompat$ItemReceiver:
+    2278:2289:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.MediaBrowserCompat$MediaItem -> android.support.v4.media.MediaBrowserCompat$MediaItem:
+    572:572:void <clinit>() -> <clinit>
+    546:548:void <init>(android.os.Parcel) -> <init>
+    565:569:java.lang.String toString() -> toString
+    558:559:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaBrowserCompat$MediaItem$1 -> android.support.v4.media.MediaBrowserCompat$MediaItem$1:
+    573:573:void <init>() -> <init>
+    573:573:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    576:576:android.support.v4.media.MediaBrowserCompat$MediaItem createFromParcel(android.os.Parcel) -> createFromParcel
+    573:573:java.lang.Object[] newArray(int) -> newArray
+    581:581:android.support.v4.media.MediaBrowserCompat$MediaItem[] newArray(int) -> newArray
+android.support.v4.media.MediaBrowserCompat$SearchResultReceiver -> android.support.v4.media.MediaBrowserCompat$SearchResultReceiver:
+    2310:2326:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.MediaDescriptionCompat -> android.support.v4.media.MediaDescriptionCompat:
+    426:426:void <clinit>() -> <clinit>
+    195:203:void <init>(java.lang.String,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.graphics.Bitmap,android.net.Uri,android.os.Bundle,android.net.Uri) -> <init>
+    206:216:void <init>(android.os.Parcel) -> <init>
+    380:418:android.support.v4.media.MediaDescriptionCompat fromMediaDescription(java.lang.Object) -> fromMediaDescription
+    336:362:java.lang.Object getMediaDescription() -> getMediaDescription
+    321:321:java.lang.String toString() -> toString
+    305:315:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaDescriptionCompat$1 -> android.support.v4.media.MediaDescriptionCompat$1:
+    427:427:void <init>() -> <init>
+    427:427:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    430:433:android.support.v4.media.MediaDescriptionCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    427:427:java.lang.Object[] newArray(int) -> newArray
+    439:439:android.support.v4.media.MediaDescriptionCompat[] newArray(int) -> newArray
+android.support.v4.media.MediaDescriptionCompat$Builder -> android.support.v4.media.MediaDescriptionCompat$Builder:
+    459:459:void <init>() -> <init>
+    560:560:android.support.v4.media.MediaDescriptionCompat build() -> build
+    503:503:android.support.v4.media.MediaDescriptionCompat$Builder setDescription(java.lang.CharSequence) -> setDescription
+    538:538:android.support.v4.media.MediaDescriptionCompat$Builder setExtras(android.os.Bundle) -> setExtras
+    515:515:android.support.v4.media.MediaDescriptionCompat$Builder setIconBitmap(android.graphics.Bitmap) -> setIconBitmap
+    527:527:android.support.v4.media.MediaDescriptionCompat$Builder setIconUri(android.net.Uri) -> setIconUri
+    469:469:android.support.v4.media.MediaDescriptionCompat$Builder setMediaId(java.lang.String) -> setMediaId
+    549:549:android.support.v4.media.MediaDescriptionCompat$Builder setMediaUri(android.net.Uri) -> setMediaUri
+    491:491:android.support.v4.media.MediaDescriptionCompat$Builder setSubtitle(java.lang.CharSequence) -> setSubtitle
+    480:480:android.support.v4.media.MediaDescriptionCompat$Builder setTitle(java.lang.CharSequence) -> setTitle
+android.support.v4.media.MediaMetadataCompat -> android.support.v4.media.MediaMetadataCompat:
+    299:632:void <clinit>() -> <clinit>
+    364:365:void <init>(android.os.Parcel) -> <init>
+    598:604:android.support.v4.media.MediaMetadataCompat fromMediaMetadata(java.lang.Object) -> fromMediaMetadata
+    553:553:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.MediaMetadataCompat$1 -> android.support.v4.media.MediaMetadataCompat$1:
+    633:633:void <init>() -> <init>
+    633:633:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    636:636:android.support.v4.media.MediaMetadataCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    633:633:java.lang.Object[] newArray(int) -> newArray
+    641:641:android.support.v4.media.MediaMetadataCompat[] newArray(int) -> newArray
+android.support.v4.media.RatingCompat -> android.support.v4.media.RatingCompat:
+    131:131:void <clinit>() -> <clinit>
+    109:111:void <init>(int,float) -> <init>
+    122:122:int describeContents() -> describeContents
+    116:117:java.lang.String toString() -> toString
+    127:128:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.RatingCompat$1 -> android.support.v4.media.RatingCompat$1:
+    132:132:void <init>() -> <init>
+    132:132:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    140:140:android.support.v4.media.RatingCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    132:132:java.lang.Object[] newArray(int) -> newArray
+    145:145:android.support.v4.media.RatingCompat[] newArray(int) -> newArray
+android.support.v4.media.session.IMediaControllerCallback$Stub -> android.support.v4.media.session.IMediaControllerCallback$Stub:
+    67:68:void <init>() -> <init>
+    96:233:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.support.v4.media.session.IMediaSession$Stub -> android.support.v4.media.session.IMediaSession$Stub:
+    212:216:android.support.v4.media.session.IMediaSession asInterface(android.os.IBinder) -> asInterface
+    2051:2051:android.support.v4.media.session.IMediaSession getDefaultImpl() -> getDefaultImpl
+android.support.v4.media.session.IMediaSession$Stub$Proxy -> android.support.v4.media.session.IMediaSession$Stub$Proxy:
+    831:832:void <init>(android.os.IBinder) -> <init>
+    836:836:android.os.IBinder asBinder() -> asBinder
+    906:921:void registerCallbackListener(android.support.v4.media.session.IMediaControllerCallback) -> registerCallbackListener
+android.support.v4.media.session.MediaControllerCompat$Callback -> android.support.v4.media.session.MediaControllerCompat$Callback:
+    696:701:void <init>() -> <init>
+    828:828:void binderDied() -> binderDied
+android.support.v4.media.session.MediaControllerCompat$Callback$MediaControllerCallbackApi21 -> android.support.v4.media.session.MediaControllerCompat$Callback$MediaControllerCallbackApi21:
+    860:861:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    934:941:void onAudioInfoChanged(android.media.session.MediaController$PlaybackInfo) -> onAudioInfoChanged
+    925:928:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    901:903:void onMetadataChanged(android.media.MediaMetadata) -> onMetadataChanged
+    888:894:void onPlaybackStateChanged(android.media.session.PlaybackState) -> onPlaybackStateChanged
+    909:911:void onQueueChanged(java.util.List) -> onQueueChanged
+    917:919:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    866:868:void onSessionDestroyed() -> onSessionDestroyed
+    874:881:void onSessionEvent(java.lang.String,android.os.Bundle) -> onSessionEvent
+android.support.v4.media.session.MediaControllerCompat$Callback$StubCompat -> android.support.v4.media.session.MediaControllerCompat$Callback$StubCompat:
+    949:950:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    1003:1006:void onCaptioningEnabledChanged(boolean) -> onCaptioningEnabledChanged
+    955:957:void onEvent(java.lang.String,android.os.Bundle) -> onEvent
+    1034:1036:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    979:981:void onMetadataChanged(android.support.v4.media.MediaMetadataCompat) -> onMetadataChanged
+    971:973:void onPlaybackStateChanged(android.support.v4.media.session.PlaybackStateCompat) -> onPlaybackStateChanged
+    987:989:void onQueueChanged(java.util.List) -> onQueueChanged
+    995:997:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    1012:1014:void onRepeatModeChanged(int) -> onRepeatModeChanged
+    963:965:void onSessionDestroyed() -> onSessionDestroyed
+    1055:1057:void onSessionReady() -> onSessionReady
+    1025:1028:void onShuffleModeChanged(int) -> onShuffleModeChanged
+    1042:1049:void onVolumeInfoChanged(android.support.v4.media.session.ParcelableVolumeInfo) -> onVolumeInfoChanged
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21 -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21:
+    2290:2305:void processPendingCallbacksLocked() -> processPendingCallbacksLocked
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver:
+    2318:2331:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraCallback -> android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraCallback:
+    2337:2337:void <init>(android.support.v4.media.session.MediaControllerCompat$Callback) -> <init>
+    2367:2367:void onExtrasChanged(android.os.Bundle) -> onExtrasChanged
+    2349:2349:void onMetadataChanged(android.support.v4.media.MediaMetadataCompat) -> onMetadataChanged
+    2355:2355:void onQueueChanged(java.util.List) -> onQueueChanged
+    2361:2361:void onQueueTitleChanged(java.lang.CharSequence) -> onQueueTitleChanged
+    2343:2343:void onSessionDestroyed() -> onSessionDestroyed
+    2373:2373:void onVolumeInfoChanged(android.support.v4.media.session.ParcelableVolumeInfo) -> onVolumeInfoChanged
+android.support.v4.media.session.MediaControllerCompat$PlaybackInfo -> android.support.v4.media.session.MediaControllerCompat$PlaybackInfo:
+    1384:1384:void <init>(int,int,int,int,int) -> <init>
+    1389:1394:void <init>(int,androidx.media.AudioAttributesCompat,int,int,int) -> <init>
+android.support.v4.media.session.MediaSessionCompat -> android.support.v4.media.session.MediaSessionCompat:
+    1059:1059:void ensureClassLoader(android.os.Bundle) -> ensureClassLoader
+    1076:1082:android.os.Bundle unparcelWithClassLoader(android.os.Bundle) -> unparcelWithClassLoader
+android.support.v4.media.session.MediaSessionCompat$QueueItem -> android.support.v4.media.session.MediaSessionCompat$QueueItem:
+    2270:2270:void <clinit>() -> <clinit>
+    2165:2174:void <init>(android.media.session.MediaSession$QueueItem,android.support.v4.media.MediaDescriptionCompat,long) -> <init>
+    2177:2179:void <init>(android.os.Parcel) -> <init>
+    2238:2246:android.support.v4.media.session.MediaSessionCompat$QueueItem fromQueueItem(java.lang.Object) -> fromQueueItem
+    2260:2265:java.util.List fromQueueItemList(java.util.List) -> fromQueueItemList
+    2286:2286:java.lang.String toString() -> toString
+    2198:2199:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$QueueItem$1 -> android.support.v4.media.session.MediaSessionCompat$QueueItem$1:
+    2271:2271:void <init>() -> <init>
+    2271:2271:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2275:2275:android.support.v4.media.session.MediaSessionCompat$QueueItem createFromParcel(android.os.Parcel) -> createFromParcel
+    2271:2271:java.lang.Object[] newArray(int) -> newArray
+    2280:2280:android.support.v4.media.session.MediaSessionCompat$QueueItem[] newArray(int) -> newArray
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper -> android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper:
+    2310:2310:void <clinit>() -> <clinit>
+    2305:2306:void <init>(android.os.Parcel) -> <init>
+    2329:2329:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1 -> android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1:
+    2310:2310:void <init>() -> <init>
+    2310:2310:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2313:2313:android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper createFromParcel(android.os.Parcel) -> createFromParcel
+    2310:2310:java.lang.Object[] newArray(int) -> newArray
+    2318:2318:android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper[] newArray(int) -> newArray
+android.support.v4.media.session.MediaSessionCompat$Token -> android.support.v4.media.session.MediaSessionCompat$Token:
+    2115:2115:void <clinit>() -> <clinit>
+    1930:1930:void <init>(java.lang.Object) -> <init>
+    1921:1940:void <init>(java.lang.Object,android.support.v4.media.session.IMediaSession,androidx.versionedparcelable.VersionedParcelable) -> <init>
+    2010:2021:boolean equals(java.lang.Object) -> equals
+    2042:2044:android.support.v4.media.session.IMediaSession getExtraBinder() -> getExtraBinder
+    1999:2002:int hashCode() -> hashCode
+    2052:2054:void setExtraBinder(android.support.v4.media.session.IMediaSession) -> setExtraBinder
+    2072:2074:void setSession2Token(androidx.versionedparcelable.VersionedParcelable) -> setSession2Token
+    1990:1993:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.MediaSessionCompat$Token$1 -> android.support.v4.media.session.MediaSessionCompat$Token$1:
+    2116:2116:void <init>() -> <init>
+    2116:2116:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2120:2125:android.support.v4.media.session.MediaSessionCompat$Token createFromParcel(android.os.Parcel) -> createFromParcel
+    2116:2116:java.lang.Object[] newArray(int) -> newArray
+    2130:2130:android.support.v4.media.session.MediaSessionCompat$Token[] newArray(int) -> newArray
+android.support.v4.media.session.ParcelableVolumeInfo -> android.support.v4.media.session.ParcelableVolumeInfo:
+    67:67:void <clinit>() -> <clinit>
+    44:49:void <init>(android.os.Parcel) -> <init>
+    59:63:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.ParcelableVolumeInfo$1 -> android.support.v4.media.session.ParcelableVolumeInfo$1:
+    68:68:void <init>() -> <init>
+    68:68:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    71:71:android.support.v4.media.session.ParcelableVolumeInfo createFromParcel(android.os.Parcel) -> createFromParcel
+    68:68:java.lang.Object[] newArray(int) -> newArray
+    76:76:android.support.v4.media.session.ParcelableVolumeInfo[] newArray(int) -> newArray
+android.support.v4.media.session.PlaybackStateCompat -> android.support.v4.media.session.PlaybackStateCompat:
+    871:871:void <clinit>() -> <clinit>
+    564:575:void <init>(int,long,long,float,long,int,java.lang.CharSequence,long,java.util.List,long,android.os.Bundle) -> <init>
+    578:590:void <init>(android.os.Parcel) -> <init>
+    807:836:android.support.v4.media.session.PlaybackStateCompat fromPlaybackState(java.lang.Object) -> fromPlaybackState
+    595:607:java.lang.String toString() -> toString
+    617:628:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.PlaybackStateCompat$1 -> android.support.v4.media.session.PlaybackStateCompat$1:
+    872:872:void <init>() -> <init>
+    872:872:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    875:875:android.support.v4.media.session.PlaybackStateCompat createFromParcel(android.os.Parcel) -> createFromParcel
+    872:872:java.lang.Object[] newArray(int) -> newArray
+    880:880:android.support.v4.media.session.PlaybackStateCompat[] newArray(int) -> newArray
+android.support.v4.media.session.PlaybackStateCompat$CustomAction -> android.support.v4.media.session.PlaybackStateCompat$CustomAction:
+    978:978:void <clinit>() -> <clinit>
+    900:904:void <init>(java.lang.String,java.lang.CharSequence,int,android.os.Bundle) -> <init>
+    907:911:void <init>(android.os.Parcel) -> <init>
+    939:953:android.support.v4.media.session.PlaybackStateCompat$CustomAction fromCustomAction(java.lang.Object) -> fromCustomAction
+    1035:1035:java.lang.String toString() -> toString
+    916:919:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.media.session.PlaybackStateCompat$CustomAction$1 -> android.support.v4.media.session.PlaybackStateCompat$CustomAction$1:
+    979:979:void <init>() -> <init>
+    979:979:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    983:983:android.support.v4.media.session.PlaybackStateCompat$CustomAction createFromParcel(android.os.Parcel) -> createFromParcel
+    979:979:java.lang.Object[] newArray(int) -> newArray
+    988:988:android.support.v4.media.session.PlaybackStateCompat$CustomAction[] newArray(int) -> newArray
+android.support.v4.os.IResultReceiver$Stub -> android.support.v4.os.IResultReceiver$Stub:
+    25:26:void <init>() -> <init>
+    37:41:android.support.v4.os.IResultReceiver asInterface(android.os.IBinder) -> asInterface
+    54:74:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.support.v4.os.IResultReceiver$Stub$Proxy -> android.support.v4.os.IResultReceiver$Stub$Proxy:
+    82:83:void <init>(android.os.IBinder) -> <init>
+    87:87:android.os.IBinder asBinder() -> asBinder
+android.support.v4.os.ResultReceiver -> android.support.v4.os.ResultReceiver:
+    144:144:void <clinit>() -> <clinit>
+    138:141:void <init>(android.os.Parcel) -> <init>
+    130:135:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.os.ResultReceiver$1 -> android.support.v4.os.ResultReceiver$1:
+    145:145:void <init>() -> <init>
+    145:145:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    148:148:android.support.v4.os.ResultReceiver createFromParcel(android.os.Parcel) -> createFromParcel
+    145:145:java.lang.Object[] newArray(int) -> newArray
+    152:152:android.support.v4.os.ResultReceiver[] newArray(int) -> newArray
+android.support.v4.os.ResultReceiver$MyResultReceiver -> android.support.v4.os.ResultReceiver$MyResultReceiver:
+    67:67:void <init>(android.support.v4.os.ResultReceiver) -> <init>
+    70:73:void send(int,android.os.Bundle) -> send
+android.support.v4.os.ResultReceiver$MyRunnable -> android.support.v4.os.ResultReceiver$MyRunnable:
+    56:58:void <init>(android.support.v4.os.ResultReceiver,int,android.os.Bundle) -> <init>
+    63:63:void run() -> run
+androidx.activity.result.ActivityResult -> androidx.activity.result.ActivityResult:
+    109:109:void <clinit>() -> <clinit>
+    50:52:void <init>(android.os.Parcel) -> <init>
+    90:90:java.lang.String resultCodeToString(int) -> resultCodeToString
+    72:73:java.lang.String toString() -> toString
+    96:99:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.activity.result.ActivityResult$1 -> androidx.activity.result.ActivityResult$1:
+    109:109:void <init>() -> <init>
+    109:109:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    112:112:androidx.activity.result.ActivityResult createFromParcel(android.os.Parcel) -> createFromParcel
+    109:109:java.lang.Object[] newArray(int) -> newArray
+    117:117:androidx.activity.result.ActivityResult[] newArray(int) -> newArray
+androidx.activity.result.IntentSenderRequest -> androidx.activity.result.IntentSenderRequest:
+    132:132:void <clinit>() -> <clinit>
+    124:128:void <init>(android.os.Parcel) -> <init>
+    151:154:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.activity.result.IntentSenderRequest$1 -> androidx.activity.result.IntentSenderRequest$1:
+    132:132:void <init>() -> <init>
+    132:132:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    135:135:androidx.activity.result.IntentSenderRequest createFromParcel(android.os.Parcel) -> createFromParcel
+    132:132:java.lang.Object[] newArray(int) -> newArray
+    140:140:androidx.activity.result.IntentSenderRequest[] newArray(int) -> newArray
+androidx.collection.ArrayMap -> androidx.collection.ArrayMap:
+    62:62:void <init>() -> <init>
+    87:88:boolean containsAll(java.util.Collection) -> containsAll
+    152:154:java.util.Set entrySet() -> entrySet
+    640:644:boolean equalsSetHelper(java.util.Set,java.lang.Object) -> equalsSetHelper
+    169:171:java.util.Set keySet() -> keySet
+    101:103:void putAll(java.util.Map) -> putAll
+    113:117:boolean removeAll(java.util.Collection) -> removeAll
+    127:133:boolean retainAll(java.util.Collection) -> retainAll
+    621:631:java.lang.Object[] toArrayHelper(java.lang.Object[],int) -> toArrayHelper
+    186:188:java.util.Collection values() -> values
+androidx.collection.ArrayMap$EntrySet -> androidx.collection.ArrayMap$EntrySet:
+    193:193:void <init>(androidx.collection.ArrayMap) -> <init>
+    193:193:boolean add(java.lang.Object) -> add
+    197:197:boolean add(java.util.Map$Entry) -> add
+    202:206:boolean addAll(java.util.Collection) -> addAll
+    211:211:void clear() -> clear
+    216:224:boolean contains(java.lang.Object) -> contains
+    229:230:boolean containsAll(java.util.Collection) -> containsAll
+    282:282:boolean equals(java.lang.Object) -> equals
+    288:292:int hashCode() -> hashCode
+    239:239:boolean isEmpty() -> isEmpty
+    244:244:java.util.Iterator iterator() -> iterator
+    250:250:boolean remove(java.lang.Object) -> remove
+    256:256:boolean removeAll(java.util.Collection) -> removeAll
+    262:262:boolean retainAll(java.util.Collection) -> retainAll
+    267:267:int size() -> size
+    272:272:java.lang.Object[] toArray() -> toArray
+    277:277:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$KeyIterator -> androidx.collection.ArrayMap$KeyIterator:
+    495:496:void <init>(androidx.collection.ArrayMap) -> <init>
+    501:501:java.lang.Object elementAt(int) -> elementAt
+    506:506:void removeAt(int) -> removeAt
+androidx.collection.ArrayMap$KeySet -> androidx.collection.ArrayMap$KeySet:
+    298:298:void <init>(androidx.collection.ArrayMap) -> <init>
+    301:301:boolean add(java.lang.Object) -> add
+    306:306:boolean addAll(java.util.Collection) -> addAll
+    311:311:void clear() -> clear
+    316:316:boolean contains(java.lang.Object) -> contains
+    321:321:boolean containsAll(java.util.Collection) -> containsAll
+    376:376:boolean equals(java.lang.Object) -> equals
+    382:384:int hashCode() -> hashCode
+    326:326:boolean isEmpty() -> isEmpty
+    331:331:java.util.Iterator iterator() -> iterator
+    336:338:boolean remove(java.lang.Object) -> remove
+    346:346:boolean removeAll(java.util.Collection) -> removeAll
+    351:351:boolean retainAll(java.util.Collection) -> retainAll
+    356:356:int size() -> size
+    361:364:java.lang.Object[] toArray() -> toArray
+    371:371:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$MapIterator -> androidx.collection.ArrayMap$MapIterator:
+    531:533:void <init>(androidx.collection.ArrayMap) -> <init>
+    589:598:boolean equals(java.lang.Object) -> equals
+    562:566:java.lang.Object getKey() -> getKey
+    571:575:java.lang.Object getValue() -> getValue
+    538:538:boolean hasNext() -> hasNext
+    603:610:int hashCode() -> hashCode
+    526:526:java.lang.Object next() -> next
+    543:545:java.util.Map$Entry next() -> next
+    551:557:void remove() -> remove
+    580:584:java.lang.Object setValue(java.lang.Object) -> setValue
+    615:615:java.lang.String toString() -> toString
+androidx.collection.ArrayMap$ValueCollection -> androidx.collection.ArrayMap$ValueCollection:
+    390:390:void <init>(androidx.collection.ArrayMap) -> <init>
+    393:393:boolean add(java.lang.Object) -> add
+    398:398:boolean addAll(java.util.Collection) -> addAll
+    403:403:void clear() -> clear
+    408:408:boolean contains(java.lang.Object) -> contains
+    413:414:boolean containsAll(java.util.Collection) -> containsAll
+    423:423:boolean isEmpty() -> isEmpty
+    428:428:java.util.Iterator iterator() -> iterator
+    433:435:boolean remove(java.lang.Object) -> remove
+    443:448:boolean removeAll(java.util.Collection) -> removeAll
+    459:464:boolean retainAll(java.util.Collection) -> retainAll
+    475:475:int size() -> size
+    480:483:java.lang.Object[] toArray() -> toArray
+    490:490:java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+androidx.collection.ArrayMap$ValueIterator -> androidx.collection.ArrayMap$ValueIterator:
+    511:512:void <init>(androidx.collection.ArrayMap) -> <init>
+    517:517:java.lang.Object elementAt(int) -> elementAt
+    522:522:void removeAt(int) -> removeAt
+androidx.collection.ContainerHelpers -> androidx.collection.ContainerHelpers:
+    20:22:void <clinit>() -> <clinit>
+    51:51:int binarySearch(int[],int,int) -> binarySearch
+    41:41:boolean equal(java.lang.Object,java.lang.Object) -> equal
+androidx.collection.IndexBasedArrayIterator -> androidx.collection.IndexBasedArrayIterator:
+    27:28:void <init>(int) -> <init>
+    36:36:boolean hasNext() -> hasNext
+    41:44:java.lang.Object next() -> next
+    50:56:void remove() -> remove
+androidx.collection.SimpleArrayMap -> androidx.collection.SimpleArrayMap:
+    236:239:void <init>() -> <init>
+    165:196:void allocArrays(int) -> allocArrays
+    77:80:int binarySearchHashes(int[],int,int) -> binarySearchHashes
+    270:280:void clear() -> clear
+    312:312:boolean containsKey(java.lang.Object) -> containsKey
+    352:352:boolean containsValue(java.lang.Object) -> containsValue
+    289:301:void ensureCapacity(int) -> ensureCapacity
+    687:721:boolean equals(java.lang.Object) -> equals
+    201:228:void freeArrays(int[],java.lang.Object[],int) -> freeArrays
+    369:369:java.lang.Object get(java.lang.Object) -> get
+    381:382:java.lang.Object getOrDefault(java.lang.Object,java.lang.Object) -> getOrDefault
+    738:743:int hashCode() -> hashCode
+    88:115:int indexOf(java.lang.Object,int) -> indexOf
+    322:322:int indexOfKey(java.lang.Object) -> indexOfKey
+    126:153:int indexOfNull() -> indexOfNull
+    326:336:int indexOfValue(java.lang.Object) -> indexOfValue
+    423:423:boolean isEmpty() -> isEmpty
+    392:392:java.lang.Object keyAt(int) -> keyAt
+    437:494:java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+    528:530:java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object) -> putIfAbsent
+    543:545:java.lang.Object remove(java.lang.Object) -> remove
+    558:562:boolean remove(java.lang.Object,java.lang.Object) -> remove
+    576:626:java.lang.Object removeAt(int) -> removeAt
+    639:641:java.lang.Object replace(java.lang.Object,java.lang.Object) -> replace
+    655:659:boolean replace(java.lang.Object,java.lang.Object,java.lang.Object) -> replace
+    414:415:java.lang.Object setValueAt(int,java.lang.Object) -> setValueAt
+    670:670:int size() -> size
+    757:782:java.lang.String toString() -> toString
+    402:402:java.lang.Object valueAt(int) -> valueAt
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState -> androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState:
+    3396:3396:void <clinit>() -> <clinit>
+    3358:3369:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    3379:3392:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1 -> androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1:
+    3397:3397:void <init>() -> <init>
+    3397:3397:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    3397:3397:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    3400:3400:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    3405:3405:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    3397:3397:java.lang.Object[] newArray(int) -> newArray
+    3410:3410:androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState[] newArray(int) -> newArray
+androidx.core.app.BundleCompat -> androidx.core.app.BundleCompat:
+    105:108:android.os.IBinder getBinder(android.os.Bundle,java.lang.String) -> getBinder
+androidx.core.app.BundleCompat$BundleCompatBaseImpl -> androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    48:64:android.os.IBinder getBinder(android.os.Bundle,java.lang.String) -> getBinder
+androidx.core.app.CoreComponentFactory -> androidx.core.app.CoreComponentFactory:
+    39:39:void <init>() -> <init>
+    80:81:java.lang.Object checkCompatWrapper(java.lang.Object) -> checkCompatWrapper
+    45:45:android.app.Activity instantiateActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateActivity
+    52:52:android.app.Application instantiateApplication(java.lang.ClassLoader,java.lang.String) -> instantiateApplication
+    67:67:android.content.ContentProvider instantiateProvider(java.lang.ClassLoader,java.lang.String) -> instantiateProvider
+    60:60:android.content.BroadcastReceiver instantiateReceiver(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateReceiver
+    75:75:android.app.Service instantiateService(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateService
+androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
+    94:94:void <init>() -> <init>
+androidx.core.app.RemoteActionCompatParcelizer -> androidx.core.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:20:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    26:32:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.IconCompat:
+    208:208:void <clinit>() -> <clinit>
+    155:379:void <init>() -> <init>
+    1211:1245:android.graphics.Bitmap createLegacyIconFromAdaptiveIcon(android.graphics.Bitmap,boolean) -> createLegacyIconFromAdaptiveIcon
+    436:442:int getResId() -> getResId
+    1157:1169:int getResId(android.graphics.drawable.Icon) -> getResId
+    937:973:void onPostParceling() -> onPostParceling
+    900:930:void onPreParceling(boolean) -> onPreParceling
+    858:895:java.lang.String toString() -> toString
+androidx.core.graphics.drawable.IconCompatParcelizer -> androidx.core.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:23:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    29:53:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.util.Preconditions -> androidx.core.util.Preconditions:
+    119:119:java.lang.Object checkNotNull(java.lang.Object) -> checkNotNull
+androidx.core.view.NestedScrollingChildHelper -> androidx.core.view.NestedScrollingChildHelper:
+    56:57:void <init>(android.view.View) -> <init>
+    348:351:boolean dispatchNestedFling(float,float,boolean) -> dispatchNestedFling
+    368:371:boolean dispatchNestedPreFling(float,float) -> dispatchNestedPreFling
+    288:288:boolean dispatchNestedPreScroll(int,int,int[],int[]) -> dispatchNestedPreScroll
+    302:332:boolean dispatchNestedPreScroll(int,int,int[],int[],int) -> dispatchNestedPreScroll
+    204:204:boolean dispatchNestedScroll(int,int,int,int,int[]) -> dispatchNestedScroll
+    231:231:void dispatchNestedScroll(int,int,int,int,int[],int,int[]) -> dispatchNestedScroll
+    238:271:boolean dispatchNestedScrollInternal(int,int,int,int,int[],int,int[]) -> dispatchNestedScrollInternal
+    406:408:android.view.ViewParent getNestedScrollingParentForType(int) -> getNestedScrollingParentForType
+    425:428:int[] getTempNestedScrollConsumed() -> getTempNestedScrollConsumed
+    100:100:boolean hasNestedScrollingParent() -> hasNestedScrollingParent
+    114:114:boolean hasNestedScrollingParent(int) -> hasNestedScrollingParent
+    86:86:boolean isNestedScrollingEnabled() -> isNestedScrollingEnabled
+    70:73:void setNestedScrollingEnabled(boolean) -> setNestedScrollingEnabled
+    416:419:void setNestedScrollingParentForType(int,android.view.ViewParent) -> setNestedScrollingParentForType
+    129:129:boolean startNestedScroll(int) -> startNestedScroll
+    145:161:boolean startNestedScroll(int,int) -> startNestedScroll
+    175:175:void stopNestedScroll() -> stopNestedScroll
+    186:189:void stopNestedScroll(int) -> stopNestedScroll
+androidx.core.view.NestedScrollingParentHelper -> androidx.core.view.NestedScrollingParentHelper:
+    50:50:void <init>(android.view.ViewGroup) -> <init>
+    92:92:int getNestedScrollAxes() -> getNestedScrollAxes
+    63:63:void onNestedScrollAccepted(android.view.View,android.view.View,int) -> onNestedScrollAccepted
+    77:79:void onNestedScrollAccepted(android.view.View,android.view.View,int,int) -> onNestedScrollAccepted
+    103:103:void onStopNestedScroll(android.view.View) -> onStopNestedScroll
+    115:117:void onStopNestedScroll(android.view.View,int) -> onStopNestedScroll
+androidx.core.view.ViewCompat -> androidx.core.view.ViewCompat:
+    470:4480:void <clinit>() -> <clinit>
+    3552:3558:void compatOffsetTopAndBottom(android.view.View,int) -> compatOffsetTopAndBottom
+    1789:1790:int getAccessibilityLiveRegion(android.view.View) -> getAccessibilityLiveRegion
+    4245:4245:java.lang.CharSequence getAccessibilityPaneTitle(android.view.View) -> getAccessibilityPaneTitle
+    491:499:android.graphics.Rect getEmptyTempRect() -> getEmptyTempRect
+    1101:1102:int getImportantForAccessibility(android.view.View) -> getImportantForAccessibility
+    3042:3046:boolean isNestedScrollingEnabled(android.view.View) -> isNestedScrollingEnabled
+    4422:4455:void notifyViewAccessibilityStateChangedIfNeeded(android.view.View,int) -> notifyViewAccessibilityStateChangedIfNeeded
+    3521:3547:void offsetTopAndBottom(android.view.View,int) -> offsetTopAndBottom
+    4249:4249:androidx.core.view.ViewCompat$AccessibilityViewProperty paneTitleProperty() -> paneTitleProperty
+    2904:2907:void setBackground(android.view.View,android.graphics.drawable.Drawable) -> setBackground
+    2341:2342:void setElevation(android.view.View,float) -> setElevation
+    1128:1138:void setImportantForAccessibility(android.view.View,int) -> setImportantForAccessibility
+    4462:4476:void setViewImportanceForAccessibilityIfNeeded(android.view.View) -> setViewImportanceForAccessibilityIfNeeded
+    3083:3086:void stopNestedScroll(android.view.View) -> stopNestedScroll
+    3612:3614:void tickleInvalidationFlag(android.view.View) -> tickleInvalidationFlag
+androidx.core.view.ViewCompat$1 -> androidx.core.view.ViewCompat$1:
+    2826:2826:void <init>() -> <init>
+androidx.core.view.ViewCompat$3 -> androidx.core.view.ViewCompat$3:
+    4250:4250:void <init>(int,java.lang.Class,int,int) -> <init>
+    4250:4250:java.lang.Object frameworkGet(android.view.View) -> frameworkGet
+    4255:4255:java.lang.CharSequence frameworkGet(android.view.View) -> frameworkGet
+androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager -> androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager:
+    4483:4485:void <init>() -> <init>
+    4527:4533:void checkPaneVisibility(android.view.View,boolean) -> checkPaneVisibility
+    4490:4492:void onGlobalLayout() -> onGlobalLayout
+    4501:4501:void onViewAttachedToWindow(android.view.View) -> onViewAttachedToWindow
+    4539:4539:void registerForLayoutCallback(android.view.View) -> registerForLayoutCallback
+androidx.core.view.ViewCompat$AccessibilityViewProperty -> androidx.core.view.ViewCompat$AccessibilityViewProperty:
+    4364:4368:void <init>(int,java.lang.Class,int,int) -> <init>
+    4402:4402:boolean extrasAvailable() -> extrasAvailable
+    4398:4398:boolean frameworkAvailable() -> frameworkAvailable
+    4387:4391:java.lang.Object get(android.view.View) -> get
+androidx.core.view.ViewParentCompat -> androidx.core.view.ViewParentCompat:
+    424:432:boolean onNestedFling(android.view.ViewParent,android.view.View,float,float,boolean) -> onNestedFling
+    461:469:boolean onNestedPreFling(android.view.ViewParent,android.view.View,float,float) -> onNestedPreFling
+    384:397:void onNestedPreScroll(android.view.ViewParent,android.view.View,int,int,int[],int) -> onNestedPreScroll
+    329:353:void onNestedScroll(android.view.ViewParent,android.view.View,int,int,int,int,int,int[]) -> onNestedScroll
+    248:262:void onNestedScrollAccepted(android.view.ViewParent,android.view.View,android.view.View,int,int) -> onNestedScrollAccepted
+    207:221:boolean onStartNestedScroll(android.view.ViewParent,android.view.View,android.view.View,int,int) -> onStartNestedScroll
+    282:295:void onStopNestedScroll(android.view.ViewParent,android.view.View,int) -> onStopNestedScroll
+androidx.core.widget.ListViewCompat -> androidx.core.widget.ListViewCompat:
+    67:85:boolean canScrollList(android.widget.ListView,int) -> canScrollList
+androidx.core.widget.NestedScrollView$SavedState -> androidx.core.widget.NestedScrollView$SavedState:
+    2197:2197:void <clinit>() -> <clinit>
+    2179:2180:void <init>(android.os.Parcel) -> <init>
+    2192:2193:java.lang.String toString() -> toString
+    2185:2186:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.core.widget.NestedScrollView$SavedState$1 -> androidx.core.widget.NestedScrollView$SavedState$1:
+    2198:2198:void <init>() -> <init>
+    2198:2198:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:androidx.core.widget.NestedScrollView$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    2198:2198:java.lang.Object[] newArray(int) -> newArray
+    2206:2206:androidx.core.widget.NestedScrollView$SavedState[] newArray(int) -> newArray
+androidx.customview.view.AbsSavedState -> androidx.customview.view.AbsSavedState:
+    32:90:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.customview.view.AbsSavedState$1) -> <init>
+    39:40:void <init>() -> <init>
+    70:72:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    87:87:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.customview.view.AbsSavedState$1 -> androidx.customview.view.AbsSavedState$1:
+    32:32:void <init>() -> <init>
+androidx.customview.view.AbsSavedState$2 -> androidx.customview.view.AbsSavedState$2:
+    90:90:void <init>() -> <init>
+    90:90:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    90:90:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    93:97:androidx.customview.view.AbsSavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    102:102:androidx.customview.view.AbsSavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    90:90:java.lang.Object[] newArray(int) -> newArray
+    107:107:androidx.customview.view.AbsSavedState[] newArray(int) -> newArray
+androidx.drawerlayout.widget.DrawerLayout$SavedState -> androidx.drawerlayout.widget.DrawerLayout$SavedState:
+    2201:2201:void <clinit>() -> <clinit>
+    2172:2184:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    2193:2198:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.drawerlayout.widget.DrawerLayout$SavedState$1 -> androidx.drawerlayout.widget.DrawerLayout$SavedState$1:
+    2201:2201:void <init>() -> <init>
+    2201:2201:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    2204:2204:androidx.drawerlayout.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    2209:2209:androidx.drawerlayout.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:java.lang.Object[] newArray(int) -> newArray
+    2214:2214:androidx.drawerlayout.widget.DrawerLayout$SavedState[] newArray(int) -> newArray
+androidx.fragment.app.BackStackRecordState -> androidx.fragment.app.BackStackRecordState:
+    204:204:void <clinit>() -> <clinit>
+    86:100:void <init>(android.os.Parcel) -> <init>
+    188:201:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.BackStackRecordState$1 -> androidx.fragment.app.BackStackRecordState$1:
+    205:205:void <init>() -> <init>
+    205:205:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    208:208:androidx.fragment.app.BackStackRecordState createFromParcel(android.os.Parcel) -> createFromParcel
+    205:205:java.lang.Object[] newArray(int) -> newArray
+    213:213:androidx.fragment.app.BackStackRecordState[] newArray(int) -> newArray
+androidx.fragment.app.BackStackState -> androidx.fragment.app.BackStackState:
+    75:75:void <clinit>() -> <clinit>
+    40:42:void <init>(android.os.Parcel) -> <init>
+    71:72:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.BackStackState$1 -> androidx.fragment.app.BackStackState$1:
+    76:76:void <init>() -> <init>
+    76:76:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    79:79:androidx.fragment.app.BackStackState createFromParcel(android.os.Parcel) -> createFromParcel
+    76:76:java.lang.Object[] newArray(int) -> newArray
+    84:84:androidx.fragment.app.BackStackState[] newArray(int) -> newArray
+androidx.fragment.app.Fragment$SavedState -> androidx.fragment.app.Fragment$SavedState:
+    490:490:void <clinit>() -> <clinit>
+    472:475:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    486:486:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.Fragment$SavedState$1 -> androidx.fragment.app.Fragment$SavedState$1:
+    491:491:void <init>() -> <init>
+    491:491:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    491:491:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    494:494:androidx.fragment.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    499:499:androidx.fragment.app.Fragment$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    491:491:java.lang.Object[] newArray(int) -> newArray
+    504:504:androidx.fragment.app.Fragment$SavedState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo -> androidx.fragment.app.FragmentManager$LaunchedFragmentInfo:
+    3783:3783:void <clinit>() -> <clinit>
+    3767:3769:void <init>(android.os.Parcel) -> <init>
+    3779:3780:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1 -> androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1:
+    3784:3784:void <init>() -> <init>
+    3784:3784:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    3787:3787:androidx.fragment.app.FragmentManager$LaunchedFragmentInfo createFromParcel(android.os.Parcel) -> createFromParcel
+    3784:3784:java.lang.Object[] newArray(int) -> newArray
+    3792:3792:androidx.fragment.app.FragmentManager$LaunchedFragmentInfo[] newArray(int) -> newArray
+androidx.fragment.app.FragmentManagerState -> androidx.fragment.app.FragmentManagerState:
+    68:68:void <clinit>() -> <clinit>
+    32:37:void <init>() -> <init>
+    32:48:void <init>(android.os.Parcel) -> <init>
+    58:65:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentManagerState$1 -> androidx.fragment.app.FragmentManagerState$1:
+    69:69:void <init>() -> <init>
+    69:69:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    72:72:androidx.fragment.app.FragmentManagerState createFromParcel(android.os.Parcel) -> createFromParcel
+    69:69:java.lang.Object[] newArray(int) -> newArray
+    77:77:androidx.fragment.app.FragmentManagerState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentState -> androidx.fragment.app.FragmentState:
+    165:165:void <clinit>() -> <clinit>
+    59:72:void <init>(android.os.Parcel) -> <init>
+    111:140:java.lang.String toString() -> toString
+    150:162:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentState$1 -> androidx.fragment.app.FragmentState$1:
+    166:166:void <init>() -> <init>
+    166:166:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    169:169:androidx.fragment.app.FragmentState createFromParcel(android.os.Parcel) -> createFromParcel
+    166:166:java.lang.Object[] newArray(int) -> newArray
+    174:174:androidx.fragment.app.FragmentState[] newArray(int) -> newArray
+androidx.fragment.app.FragmentTabHost$SavedState -> androidx.fragment.app.FragmentTabHost$SavedState:
+    114:114:void <clinit>() -> <clinit>
+    96:97:void <init>(android.os.Parcel) -> <init>
+    109:110:java.lang.String toString() -> toString
+    102:103:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.fragment.app.FragmentTabHost$SavedState$1 -> androidx.fragment.app.FragmentTabHost$SavedState$1:
+    115:115:void <init>() -> <init>
+    115:115:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    118:118:androidx.fragment.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    115:115:java.lang.Object[] newArray(int) -> newArray
+    123:123:androidx.fragment.app.FragmentTabHost$SavedState[] newArray(int) -> newArray
+androidx.interpolator.view.animation.FastOutSlowInInterpolator -> androidx.interpolator.view.animation.FastOutSlowInInterpolator:
+    36:67:void <clinit>() -> <clinit>
+    30:30:void <init>() -> <init>
+    71:71:float getInterpolation(float) -> getInterpolation
+androidx.interpolator.view.animation.LookupTableInterpolator -> androidx.interpolator.view.animation.LookupTableInterpolator:
+    38:46:float interpolate(float[],float,float) -> interpolate
+androidx.media.AudioAttributesCompat -> androidx.media.AudioAttributesCompat:
+    173:185:void <clinit>() -> <clinit>
+    250:250:void <init>() -> <init>
+    253:254:void <init>(androidx.media.AudioAttributesImpl) -> <init>
+    619:626:boolean equals(java.lang.Object) -> equals
+    493:493:int hashCode() -> hashCode
+    498:498:java.lang.String toString() -> toString
+    609:609:int toVolumeStreamType(boolean,int,int) -> toVolumeStreamType
+    536:536:java.lang.String usageToString(int) -> usageToString
+    305:311:androidx.media.AudioAttributesCompat wrap(java.lang.Object) -> wrap
+androidx.media.AudioAttributesCompat$Builder -> androidx.media.AudioAttributesCompat$Builder:
+    373:381:void <init>() -> <init>
+    409:409:androidx.media.AudioAttributesCompat build() -> build
+    486:486:androidx.media.AudioAttributesCompat$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesCompatParcelizer -> androidx.media.AudioAttributesCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:15:androidx.media.AudioAttributesCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    21:22:void write(androidx.media.AudioAttributesCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplApi21 -> androidx.media.AudioAttributesImplApi21:
+    46:56:void <init>() -> <init>
+    60:60:void <init>(android.media.AudioAttributes) -> <init>
+    46:65:void <init>(android.media.AudioAttributes,int) -> <init>
+    116:120:boolean equals(java.lang.Object) -> equals
+    111:111:int hashCode() -> hashCode
+    126:126:java.lang.String toString() -> toString
+androidx.media.AudioAttributesImplApi21$Builder -> androidx.media.AudioAttributesImplApi21$Builder:
+    132:133:void <init>() -> <init>
+    143:143:androidx.media.AudioAttributesImpl build() -> build
+    129:129:androidx.media.AudioAttributesImpl$Builder setLegacyStreamType(int) -> setLegacyStreamType
+    174:174:androidx.media.AudioAttributesImplApi21$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesImplApi21Parcelizer -> androidx.media.AudioAttributesImplApi21Parcelizer:
+    11:11:void <init>() -> <init>
+    14:16:androidx.media.AudioAttributesImplApi21 read(androidx.versionedparcelable.VersionedParcel) -> read
+    22:24:void write(androidx.media.AudioAttributesImplApi21,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplApi26 -> androidx.media.AudioAttributesImplApi26:
+    41:41:void <init>() -> <init>
+    45:45:void <init>(android.media.AudioAttributes) -> <init>
+androidx.media.AudioAttributesImplApi26$Builder -> androidx.media.AudioAttributesImplApi26$Builder:
+    55:55:void <init>() -> <init>
+    65:65:androidx.media.AudioAttributesImpl build() -> build
+androidx.media.AudioAttributesImplApi26Parcelizer -> androidx.media.AudioAttributesImplApi26Parcelizer:
+    11:11:void <init>() -> <init>
+    14:16:androidx.media.AudioAttributesImplApi26 read(androidx.versionedparcelable.VersionedParcel) -> read
+    22:24:void write(androidx.media.AudioAttributesImplApi26,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.media.AudioAttributesImplBase -> androidx.media.AudioAttributesImplBase:
+    63:91:void <init>() -> <init>
+    63:97:void <init>(int,int,int,int) -> <init>
+    156:162:boolean equals(java.lang.Object) -> equals
+    126:126:int getContentType() -> getContentType
+    136:137:int getFlags() -> getFlags
+    113:116:int getLegacyStreamType() -> getLegacyStreamType
+    131:131:int getUsage() -> getUsage
+    151:151:int hashCode() -> hashCode
+    169:180:java.lang.String toString() -> toString
+androidx.media.AudioAttributesImplBase$Builder -> androidx.media.AudioAttributesImplBase$Builder:
+    184:189:void <init>() -> <init>
+    202:202:androidx.media.AudioAttributesImpl build() -> build
+    277:313:androidx.media.AudioAttributesImplBase$Builder setInternalLegacyStreamType(int) -> setInternalLegacyStreamType
+    183:183:androidx.media.AudioAttributesImpl$Builder setLegacyStreamType(int) -> setLegacyStreamType
+    266:271:androidx.media.AudioAttributesImplBase$Builder setLegacyStreamType(int) -> setLegacyStreamType
+androidx.media.AudioAttributesImplBaseParcelizer -> androidx.media.AudioAttributesImplBaseParcelizer:
+    11:11:void <init>() -> <init>
+    14:18:androidx.media.AudioAttributesImplBase read(androidx.versionedparcelable.VersionedParcel) -> read
+    24:28:void write(androidx.media.AudioAttributesImplBase,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState -> androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState:
+    1503:1503:void <clinit>() -> <clinit>
+    1493:1494:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    1499:1500:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1 -> androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1:
+    1503:1503:void <init>() -> <init>
+    1503:1503:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    1503:1503:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1506:1506:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1511:1511:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    1503:1503:java.lang.Object[] newArray(int) -> newArray
+    1516:1516:androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState[] newArray(int) -> newArray
+androidx.swiperefreshlayout.R$styleable -> androidx.swiperefreshlayout.R$styleable:
+    620:1605:void <clinit>() -> <clinit>
+androidx.swiperefreshlayout.widget.CircleImageView -> androidx.swiperefreshlayout.widget.CircleImageView:
+    58:89:void <init>(android.content.Context) -> <init>
+    93:93:boolean elevationSupported() -> elevationSupported
+    119:121:void onAnimationEnd() -> onAnimationEnd
+    111:113:void onAnimationStart() -> onAnimationStart
+    98:100:void onMeasure(int,int) -> onMeasure
+    106:106:void setAnimationListener(android.view.animation.Animation$AnimationListener) -> setAnimationListener
+    127:129:void setBackgroundColor(int) -> setBackgroundColor
+androidx.swiperefreshlayout.widget.CircleImageView$OvalShadow -> androidx.swiperefreshlayout.widget.CircleImageView$OvalShadow:
+    143:147:void <init>(androidx.swiperefreshlayout.widget.CircleImageView,int) -> <init>
+    158:161:void draw(android.graphics.Canvas,android.graphics.Paint) -> draw
+    152:153:void onResize(float,float) -> onResize
+    165:165:void updateRadialGradient(int) -> updateRadialGradient
+androidx.swiperefreshlayout.widget.CircularProgressDrawable -> androidx.swiperefreshlayout.widget.CircularProgressDrawable:
+    67:97:void <clinit>() -> <clinit>
+    138:145:void <init>(android.content.Context) -> <init>
+    519:529:void applyFinishTranslation(float,androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring) -> applyFinishTranslation
+    537:564:void applyTransformation(float,androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring,boolean) -> applyTransformation
+    399:403:void draw(android.graphics.Canvas) -> draw
+    414:414:int getAlpha() -> getAlpha
+    441:441:boolean isRunning() -> isRunning
+    408:409:void setAlpha(int) -> setAlpha
+    280:281:void setArrowEnabled(boolean) -> setArrowEnabled
+    299:300:void setArrowScale(float) -> setArrowScale
+    419:420:void setColorFilter(android.graphics.ColorFilter) -> setColorFilter
+    350:351:void setProgressRotation(float) -> setProgressRotation
+    424:424:void setRotation(float) -> setRotation
+    151:158:void setSizeParameters(float,float,float,float) -> setSizeParameters
+    330:332:void setStartEndTrim(float,float) -> setStartEndTrim
+    192:193:void setStrokeWidth(float) -> setStrokeWidth
+    169:174:void setStyle(int) -> setStyle
+    569:618:void setupAnimators() -> setupAnimators
+    449:460:void start() -> start
+    469:474:void stop() -> stop
+    503:507:void updateRingColor(float,androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring) -> updateRingColor
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$1 -> androidx.swiperefreshlayout.widget.CircularProgressDrawable$1:
+    571:571:void <init>(androidx.swiperefreshlayout.widget.CircularProgressDrawable,androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring) -> <init>
+    574:577:void onAnimationUpdate(android.animation.ValueAnimator) -> onAnimationUpdate
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$2 -> androidx.swiperefreshlayout.widget.CircularProgressDrawable$2:
+    583:583:void <init>(androidx.swiperefreshlayout.widget.CircularProgressDrawable,androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring) -> <init>
+    602:614:void onAnimationRepeat(android.animation.Animator) -> onAnimationRepeat
+    587:587:void onAnimationStart(android.animation.Animator) -> onAnimationStart
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring -> androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring:
+    626:661:void <init>() -> <init>
+    695:723:void draw(android.graphics.Canvas,android.graphics.Rect) -> draw
+    727:754:void drawTriangle(android.graphics.Canvas,float,float,android.graphics.RectF) -> drawTriangle
+    838:838:int getAlpha() -> getAlpha
+    878:878:float getEndTrim() -> getEndTrim
+    808:808:int getNextColor() -> getNextColor
+    812:812:int getNextColorIndex() -> getNextColorIndex
+    858:858:float getStartTrim() -> getStartTrim
+    870:870:int getStartingColor() -> getStartingColor
+    866:866:float getStartingEndTrim() -> getStartingEndTrim
+    930:930:float getStartingRotation() -> getStartingRotation
+    862:862:float getStartingStartTrim() -> getStartingStartTrim
+    820:820:void goToNextColor() -> goToNextColor
+    947:952:void resetOriginals() -> resetOriginals
+    831:831:void setAlpha(int) -> setAlpha
+    671:672:void setArrowDimensions(float,float) -> setArrowDimensions
+    917:918:void setArrowScale(float) -> setArrowScale
+    893:893:void setCenterRadius(float) -> setCenterRadius
+    781:781:void setColor(int) -> setColor
+    824:824:void setColorFilter(android.graphics.ColorFilter) -> setColorFilter
+    800:801:void setColorIndex(int) -> setColorIndex
+    764:766:void setColors(int[]) -> setColors
+    874:874:void setEndTrim(float) -> setEndTrim
+    882:882:void setRotation(float) -> setRotation
+    904:905:void setShowArrow(boolean) -> setShowArrow
+    854:854:void setStartTrim(float) -> setStartTrim
+    845:846:void setStrokeWidth(float) -> setStrokeWidth
+    938:940:void storeOriginals() -> storeOriginals
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout:
+    91:149:void <clinit>() -> <clinit>
+    403:403:void <init>(android.content.Context) -> <init>
+    117:1358:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    1308:1316:void animateOffsetToCorrectPosition(int,android.view.animation.Animation$AnimationListener) -> animateOffsetToCorrectPosition
+    1320:1332:void animateOffsetToStartPosition(int,android.view.animation.Animation$AnimationListener) -> animateOffsetToStartPosition
+    735:741:boolean canChildScrollUp() -> canChildScrollUp
+    461:466:void createProgressView() -> createProgressView
+    1119:1119:boolean dispatchNestedFling(float,float,boolean) -> dispatchNestedFling
+    1124:1124:boolean dispatchNestedPreFling(float,float) -> dispatchNestedPreFling
+    1113:1113:boolean dispatchNestedPreScroll(int,int,int[],int[]) -> dispatchNestedPreScroll
+    1039:1039:void dispatchNestedScroll(int,int,int,int,int[],int,int[]) -> dispatchNestedScroll
+    1107:1107:boolean dispatchNestedScroll(int,int,int,int,int[]) -> dispatchNestedScroll
+    650:654:void ensureTarget() -> ensureTarget
+    1184:1212:void finishSpinner(float) -> finishSpinner
+    446:446:int getChildDrawingOrder(int,int) -> getChildDrawingOrder
+    996:996:int getNestedScrollAxes() -> getNestedScrollAxes
+    1101:1101:boolean hasNestedScrollingParent() -> hasNestedScrollingParent
+    1128:1128:boolean isAnimationRunning(android.view.animation.Animation) -> isAnimationRunning
+    1086:1086:boolean isNestedScrollingEnabled() -> isNestedScrollingEnabled
+    1132:1180:void moveSpinner(float) -> moveSpinner
+    1353:1355:void moveToStart(float) -> moveToStart
+    293:294:void onDetachedFromWindow() -> onDetachedFromWindow
+    755:808:boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    672:691:void onLayout(boolean,int,int,int,int) -> onLayout
+    697:714:void onMeasure(int,int) -> onMeasure
+    1029:1029:boolean onNestedFling(android.view.View,float,float,boolean) -> onNestedFling
+    1023:1023:boolean onNestedPreFling(android.view.View,float,float) -> onNestedPreFling
+    940:940:void onNestedPreScroll(android.view.View,int,int,int[],int) -> onNestedPreScroll
+    966:990:void onNestedPreScroll(android.view.View,int,int,int[]) -> onNestedPreScroll
+    864:895:void onNestedScroll(android.view.View,int,int,int,int,int,int[]) -> onNestedScroll
+    931:931:void onNestedScroll(android.view.View,int,int,int,int,int) -> onNestedScroll
+    1016:1016:void onNestedScroll(android.view.View,int,int,int,int) -> onNestedScroll
+    915:915:void onNestedScrollAccepted(android.view.View,android.view.View,int,int) -> onNestedScrollAccepted
+    955:959:void onNestedScrollAccepted(android.view.View,android.view.View,int) -> onNestedScrollAccepted
+    286:288:void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    280:281:android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    1392:1398:void onSecondaryPointerUp(android.view.MotionEvent) -> onSecondaryPointerUp
+    904:904:boolean onStartNestedScroll(android.view.View,android.view.View,int,int) -> onStartNestedScroll
+    948:948:boolean onStartNestedScroll(android.view.View,android.view.View,int) -> onStartNestedScroll
+    924:924:void onStopNestedScroll(android.view.View,int) -> onStopNestedScroll
+    1001:1010:void onStopNestedScroll(android.view.View) -> onStopNestedScroll
+    1218:1288:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    839:847:void requestDisallowInterceptTouchEvent(boolean) -> requestDisallowInterceptTouchEvent
+    218:228:void reset() -> reset
+    523:524:void setAnimationProgress(float) -> setAnimationProgress
+    298:299:void setColorViewAlpha(int) -> setColorViewAlpha
+    233:235:void setEnabled(boolean) -> setEnabled
+    1081:1081:void setNestedScrollingEnabled(boolean) -> setNestedScrollingEnabled
+    474:474:void setOnRefreshListener(androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnRefreshListener) -> setOnRefreshListener
+    484:497:void setRefreshing(boolean) -> setRefreshing
+    528:535:void setRefreshing(boolean,boolean) -> setRefreshing
+    1386:1388:void setTargetOffsetTopAndBottom(int) -> setTargetOffsetTopAndBottom
+    562:573:android.view.animation.Animation startAlphaAnimation(int,int) -> startAlphaAnimation
+    1299:1303:void startDragging(float) -> startDragging
+    1091:1091:boolean startNestedScroll(int) -> startNestedScroll
+    558:558:void startProgressAlphaMaxAnimation() -> startProgressAlphaMaxAnimation
+    554:554:void startProgressAlphaStartAnimation() -> startProgressAlphaStartAnimation
+    541:550:void startScaleDownAnimation(android.view.animation.Animation$AnimationListener) -> startScaleDownAnimation
+    1367:1382:void startScaleDownReturnToStartAnimation(int,android.view.animation.Animation$AnimationListener) -> startScaleDownReturnToStartAnimation
+    502:515:void startScaleUpAnimation(android.view.animation.Animation$AnimationListener) -> startScaleUpAnimation
+    1096:1096:void stopNestedScroll() -> stopNestedScroll
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$1 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$1:
+    190:190:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    201:212:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$2 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$2:
+    504:504:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    507:507:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$3 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$3:
+    541:541:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    544:544:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$4 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$4:
+    562:562:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout,int,int) -> <init>
+    565:565:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$5 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$5:
+    1192:1192:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    1200:1201:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$6 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$6:
+    1336:1336:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    1340:1348:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$7 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$7:
+    1358:1358:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    1361:1361:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$8 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$8:
+    1369:1369:void <init>(androidx.swiperefreshlayout.widget.SwipeRefreshLayout) -> <init>
+    1372:1374:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState:
+    264:264:void <clinit>() -> <clinit>
+    246:247:void <init>(android.os.Parcelable,boolean) -> <init>
+    254:255:void <init>(android.os.Parcel) -> <init>
+    260:261:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState$1 -> androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState$1:
+    265:265:void <init>() -> <init>
+    265:265:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    268:268:androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    265:265:java.lang.Object[] newArray(int) -> newArray
+    273:273:androidx.swiperefreshlayout.widget.SwipeRefreshLayout$SavedState[] newArray(int) -> newArray
+androidx.versionedparcelable.CustomVersionedParcelable -> androidx.versionedparcelable.CustomVersionedParcelable:
+    27:27:void <init>() -> <init>
+androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
+    60:60:void <clinit>() -> <clinit>
+    38:39:void <init>(android.os.Parcel) -> <init>
+    46:46:androidx.versionedparcelable.VersionedParcelable getVersionedParcel() -> getVersionedParcel
+    56:57:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.versionedparcelable.ParcelImpl$1 -> androidx.versionedparcelable.ParcelImpl$1:
+    60:60:void <init>() -> <init>
+    60:60:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    63:63:androidx.versionedparcelable.ParcelImpl createFromParcel(android.os.Parcel) -> createFromParcel
+    60:60:java.lang.Object[] newArray(int) -> newArray
+    68:68:androidx.versionedparcelable.ParcelImpl[] newArray(int) -> newArray
+androidx.versionedparcelable.ParcelUtils -> androidx.versionedparcelable.ParcelUtils:
+    40:40:void <init>() -> <init>
+    58:61:androidx.versionedparcelable.VersionedParcelable fromParcelable(android.os.Parcelable) -> fromParcelable
+    109:114:androidx.versionedparcelable.VersionedParcelable getVersionedParcelable(android.os.Bundle,java.lang.String) -> getVersionedParcelable
+androidx.versionedparcelable.VersionedParcel -> androidx.versionedparcelable.VersionedParcel:
+    87:90:void <init>(androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    1635:1640:java.lang.Class findParcelClass(java.lang.Class) -> findParcelClass
+    1613:1617:java.lang.reflect.Method getReadMethod(java.lang.String) -> getReadMethod
+    1624:1628:java.lang.reflect.Method getWriteMethod(java.lang.Class) -> getWriteMethod
+    400:403:boolean readBoolean(boolean,int) -> readBoolean
+    473:476:byte[] readByteArray(byte[],int) -> readByteArray
+    617:620:java.lang.CharSequence readCharSequence(java.lang.CharSequence,int) -> readCharSequence
+    1566:1582:androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel) -> readFromParcel
+    410:413:int readInt(int,int) -> readInt
+    482:485:android.os.Parcelable readParcelable(android.os.Parcelable,int) -> readParcelable
+    452:455:java.lang.String readString(java.lang.String,int) -> readString
+    1496:1499:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> readVersionedParcelable
+    1512:1516:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable() -> readVersionedParcelable
+    295:296:void writeBoolean(boolean,int) -> writeBoolean
+    305:306:void writeByteArray(byte[],int) -> writeByteArray
+    326:327:void writeCharSequence(java.lang.CharSequence,int) -> writeCharSequence
+    335:336:void writeInt(int,int) -> writeInt
+    392:393:void writeParcelable(android.os.Parcelable,int) -> writeParcelable
+    371:372:void writeString(java.lang.String,int) -> writeString
+    1591:1607:void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel) -> writeToParcel
+    1022:1023:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> writeVersionedParcelable
+    1030:1037:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelable
+    1043:1048:void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelableCreator
+androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelable.VersionedParcelParcel:
+    51:51:void <init>(android.os.Parcel) -> <init>
+    41:65:void <init>(android.os.Parcel,int,int,java.lang.String,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    99:109:void closeField() -> closeField
+    119:120:androidx.versionedparcelable.VersionedParcel createSubParcel() -> createSubParcel
+    258:258:boolean readBoolean() -> readBoolean
+    236:241:byte[] readByteArray() -> readByteArray
+    201:201:java.lang.CharSequence readCharSequence() -> readCharSequence
+    70:84:boolean readField(int) -> readField
+    206:206:int readInt() -> readInt
+    248:248:android.os.Parcelable readParcelable() -> readParcelable
+    226:226:java.lang.String readString() -> readString
+    89:94:void setOutputField(int) -> setOutputField
+    181:181:void writeBoolean(boolean) -> writeBoolean
+    127:130:void writeByteArray(byte[]) -> writeByteArray
+    196:196:void writeCharSequence(java.lang.CharSequence) -> writeCharSequence
+    146:146:void writeInt(int) -> writeInt
+    176:176:void writeParcelable(android.os.Parcelable) -> writeParcelable
+    166:166:void writeString(java.lang.String) -> writeString
+androidx.viewpager.widget.ViewPager$SavedState -> androidx.viewpager.widget.ViewPager$SavedState:
+    1403:1403:void <clinit>() -> <clinit>
+    1420:1426:void <init>(android.os.Parcel,java.lang.ClassLoader) -> <init>
+    1398:1399:java.lang.String toString() -> toString
+    1391:1393:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.viewpager.widget.ViewPager$SavedState$1 -> androidx.viewpager.widget.ViewPager$SavedState$1:
+    1403:1403:void <init>() -> <init>
+    1403:1403:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    1403:1403:java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1406:1406:androidx.viewpager.widget.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    1411:1411:androidx.viewpager.widget.ViewPager$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    1403:1403:java.lang.Object[] newArray(int) -> newArray
+    1415:1415:androidx.viewpager.widget.ViewPager$SavedState[] newArray(int) -> newArray
+com.android.captiveportallogin.CaptivePortalLoginActivity -> com.android.captiveportallogin.CaptivePortalLoginActivity:
+    962:983:void <clinit>() -> <clinit>
+    98:141:void <init>() -> <init>
+    98:98:android.net.Network access$000(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$000
+    98:98:void access$100(com.android.captiveportallogin.CaptivePortalLoginActivity,com.android.captiveportallogin.CaptivePortalLoginActivity$Result) -> access$100
+    98:98:java.net.URL access$1000(java.lang.String) -> access$1000
+    98:98:java.lang.String access$1100(java.net.URL) -> access$1100
+    98:98:java.lang.String access$1200(com.android.captiveportallogin.CaptivePortalLoginActivity,java.net.URL) -> access$1200
+    98:98:android.widget.ProgressBar access$1300(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1300
+    98:98:void access$1400(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1400
+    98:98:androidx.swiperefreshlayout.widget.SwipeRefreshLayout access$1500(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1500
+    98:98:void access$1600(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1600
+    98:98:java.lang.String access$1700(android.net.http.SslError) -> access$1700
+    98:98:android.webkit.WebView access$1800(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1800
+    98:98:boolean access$1900(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$1900
+    98:98:java.lang.Integer access$2000(android.net.http.SslError) -> access$2000
+    98:98:android.util.SparseArray access$2100(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$2100
+    98:98:int access$2208(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$2208
+    98:98:java.net.URL access$400(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$400
+    98:98:java.lang.String access$500(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$500
+    98:98:java.lang.String access$600() -> access$600
+    98:98:android.net.captiveportal.CaptivePortalProbeSpec access$700(com.android.captiveportallogin.CaptivePortalLoginActivity) -> access$700
+    98:98:boolean access$800(int,java.lang.String,android.net.captiveportal.CaptivePortalProbeSpec) -> access$800
+    98:98:boolean access$902(com.android.captiveportallogin.CaptivePortalLoginActivity,boolean) -> access$902
+    480:481:boolean callVoidMethodIfExists(java.lang.Object,java.lang.String) -> callVoidMethodIfExists
+    307:325:void done(com.android.captiveportallogin.CaptivePortalLoginActivity$Result) -> done
+    954:957:java.lang.String getHeaderSubtitle(java.net.URL) -> getHeaderSubtitle
+    914:920:java.lang.String getHeaderTitle() -> getHeaderTitle
+    925:941:java.lang.CharSequence getNetworkName(android.net.NetworkCapabilities) -> getNetworkName
+    906:906:android.widget.ProgressBar getProgressBar() -> getProgressBar
+    431:440:java.net.URL getUrl() -> getUrl
+    1004:1026:java.lang.CharSequence getVenueFriendlyName() -> getVenueFriendlyName
+    253:253:com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient getWebViewClient() -> getWebViewClient
+    910:910:android.webkit.WebView getWebview() -> getWebview
+    259:265:void handleCapabilitiesChanged(android.net.Network,android.net.NetworkCapabilities) -> handleCapabilitiesChanged
+    541:543:boolean hasVpnNetwork() -> hasVpnNetwork
+    456:456:java.lang.String host(java.net.URL) -> host
+    553:554:boolean isAlwaysOnVpnEnabled() -> isAlwaysOnVpnEnabled
+    276:276:boolean isAtLeastR() -> isAtLeastR
+    465:465:boolean isDebuggable() -> isDebuggable
+    270:272:boolean isDismissPortalEnabled() -> isDismissPortalEnabled
+    535:535:boolean isDismissed(int,java.lang.String,android.net.captiveportal.CaptivePortalProbeSpec) -> isDismissed
+    991:997:boolean isFeatureEnabled(java.lang.String,boolean) -> isFeatureEnabled
+    246:247:void lambda$onCreate$0(android.webkit.WebView) -> lambda$onCreate$0
+    445:447:java.net.URL makeURL(java.lang.String) -> makeURL
+    409:427:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    336:340:void onBackPressed() -> onBackPressed
+    155:245:void onCreate(android.os.Bundle) -> onCreate
+    330:330:boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    370:399:void onDestroy() -> onDestroy
+    348:364:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    469:474:void reevaluateNetwork() -> reevaluateNetwork
+    946:948:java.lang.String removeDoubleQuotes(java.lang.String) -> removeDoubleQuotes
+    461:461:java.lang.String sanitizeURL(java.net.URL) -> sanitizeURL
+    283:302:void setWebViewProxy() -> setWebViewProxy
+    987:987:java.lang.Integer sslErrorMessage(android.net.http.SslError) -> sslErrorMessage
+    973:973:java.lang.String sslErrorName(android.net.http.SslError) -> sslErrorName
+    490:529:void testForCaptivePortal() -> testForCaptivePortal
+com.android.captiveportallogin.CaptivePortalLoginActivity$$ExternalSyntheticLambda0 -> com.android.captiveportallogin.CaptivePortalLoginActivity$$ExternalSyntheticLambda0:
+    android.webkit.WebView com.android.captiveportallogin.CaptivePortalLoginActivity$$InternalSyntheticLambda$0$792d96a3995aa551eeba8d29fc30927f66b87c755bfce14a93108c96b09ad339$0.f$1 -> f$1
+    com.android.captiveportallogin.CaptivePortalLoginActivity com.android.captiveportallogin.CaptivePortalLoginActivity$$InternalSyntheticLambda$0$792d96a3995aa551eeba8d29fc30927f66b87c755bfce14a93108c96b09ad339$0.f$0 -> f$0
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$$InternalSyntheticLambda$0$792d96a3995aa551eeba8d29fc30927f66b87c755bfce14a93108c96b09ad339$0.<init>(com.android.captiveportallogin.CaptivePortalLoginActivity,android.webkit.WebView) -> <init>
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$$InternalSyntheticLambda$0$792d96a3995aa551eeba8d29fc30927f66b87c755bfce14a93108c96b09ad339$0.onRefresh() -> onRefresh
+com.android.captiveportallogin.CaptivePortalLoginActivity$1 -> com.android.captiveportallogin.CaptivePortalLoginActivity$1:
+    190:190:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity) -> <init>
+    199:199:void onCapabilitiesChanged(android.net.Network,android.net.NetworkCapabilities) -> onCapabilitiesChanged
+    194:194:void onLost(android.net.Network) -> onLost
+com.android.captiveportallogin.CaptivePortalLoginActivity$2 -> com.android.captiveportallogin.CaptivePortalLoginActivity$2:
+    490:490:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity) -> <init>
+    494:526:void run() -> run
+com.android.captiveportallogin.CaptivePortalLoginActivity$3 -> com.android.captiveportallogin.CaptivePortalLoginActivity$3:
+    314:314:void <clinit>() -> <clinit>
+com.android.captiveportallogin.CaptivePortalLoginActivity$DownloadRequest -> com.android.captiveportallogin.CaptivePortalLoginActivity$DownloadRequest:
+    147:149:void <init>(java.lang.String,java.lang.String) -> <init>
+com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebChromeClient -> com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebChromeClient:
+    856:856:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity) -> <init>
+    856:856:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity,com.android.captiveportallogin.CaptivePortalLoginActivity$1) -> <init>
+    859:859:void onProgressChanged(android.webkit.WebView,int) -> onProgressChanged
+com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient -> com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient:
+    558:579:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity) -> <init>
+    574:574:boolean allowBack() -> allowBack
+    699:705:java.lang.String getVpnMsgOrLinkToBrowser() -> getVpnMsgOrLinkToBrowser
+    833:833:void lambda$showSslAlertDialog$0(android.content.DialogInterface,int) -> lambda$showSslAlertDialog$0
+    835:835:void lambda$showSslAlertDialog$1(android.webkit.SslErrorHandler,android.content.DialogInterface) -> lambda$showSslAlertDialog$1
+    813:814:void loadCustomSchemeErrorPage(android.webkit.WebView) -> loadCustomSchemeErrorPage
+    766:766:java.lang.String makeCustomSchemeErrorPage() -> makeCustomSchemeErrorPage
+    711:759:java.lang.String makeErrorPage(int,int,java.lang.String) -> makeErrorPage
+    685:685:java.lang.String makeHtmlTag() -> makeHtmlTag
+    771:772:java.lang.String makeSslErrorPage() -> makeSslErrorPage
+    608:625:void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    583:603:void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    666:681:void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    841:851:void setViewSecurityCertificate(android.widget.LinearLayout,android.net.http.SslError) -> setViewSecurityCertificate
+    657:658:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldInterceptRequest
+    642:649:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldOverrideUrlLoading
+    779:794:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    818:837:void showSslAlertDialog(android.webkit.SslErrorHandler,android.net.http.SslError,java.lang.String) -> showSslAlertDialog
+    631:636:java.lang.String sp(int) -> sp
+    801:807:boolean startActivity(java.lang.String,java.lang.String) -> startActivity
+com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$ExternalSyntheticLambda0 -> com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$ExternalSyntheticLambda0:
+    android.webkit.SslErrorHandler com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$1.f$0 -> f$0
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$1.<init>(android.webkit.SslErrorHandler) -> <init>
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$1.onCancel(android.content.DialogInterface) -> onCancel
+com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$ExternalSyntheticLambda1 -> com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$ExternalSyntheticLambda1:
+    com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$0 com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$0.INSTANCE -> INSTANCE
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$0.<clinit>() -> <clinit>
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$0.<init>() -> <init>
+    void com.android.captiveportallogin.CaptivePortalLoginActivity$MyWebViewClient$$InternalSyntheticLambda$0$815b886b886ee89af7b99b89d59a17ca8e15ab0ebd48df19ada7e24bf074a6a2$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.captiveportallogin.CaptivePortalLoginActivity$PortalDownloadListener -> com.android.captiveportallogin.CaptivePortalLoginActivity$PortalDownloadListener:
+    863:863:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity) -> <init>
+    863:863:void <init>(com.android.captiveportallogin.CaptivePortalLoginActivity,com.android.captiveportallogin.CaptivePortalLoginActivity$1) -> <init>
+    867:900:void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> onDownloadStart
+com.android.captiveportallogin.CaptivePortalLoginActivity$Result -> com.android.captiveportallogin.CaptivePortalLoginActivity$Result:
+    110:113:void <clinit>() -> <clinit>
+    116:116:void <init>(java.lang.String,int,int) -> <init>
+    110:110:com.android.captiveportallogin.CaptivePortalLoginActivity$Result valueOf(java.lang.String) -> valueOf
+    110:110:com.android.captiveportallogin.CaptivePortalLoginActivity$Result[] values() -> values
+com.android.captiveportallogin.DownloadService -> com.android.captiveportallogin.DownloadService:
+    61:61:void <clinit>() -> <clinit>
+    60:98:void <init>() -> <init>
+    60:60:android.app.Notification access$1100(com.android.captiveportallogin.DownloadService,int,java.lang.String,android.net.Uri) -> access$1100
+    60:60:android.app.Notification access$1200(com.android.captiveportallogin.DownloadService,java.lang.String) -> access$1200
+    60:60:int access$1300(com.android.captiveportallogin.DownloadService) -> access$1300
+    60:60:java.util.Queue access$200(com.android.captiveportallogin.DownloadService) -> access$200
+    60:60:boolean access$302(com.android.captiveportallogin.DownloadService,boolean) -> access$302
+    60:60:android.app.Notification access$400(com.android.captiveportallogin.DownloadService,com.android.captiveportallogin.DownloadService$DownloadTask,java.lang.Integer) -> access$400
+    237:251:void createNotificationChannels() -> createNotificationChannels
+    171:174:android.content.Intent makeCreateFileIntent(java.lang.String,java.lang.String) -> makeCreateFileIntent
+    426:440:android.app.Notification makeDoneNotification(int,java.lang.String,android.net.Uri) -> makeDoneNotification
+    154:159:android.content.Intent makeDownloadIntent(android.content.Context,android.net.Network,java.lang.String,java.lang.String,java.lang.String,android.net.Uri) -> makeDownloadIntent
+    445:449:android.app.Notification makeErrorNotification(java.lang.String) -> makeErrorNotification
+    413:420:android.app.Notification makeProgressNotification(com.android.captiveportallogin.DownloadService$DownloadTask,java.lang.Integer) -> makeProgressNotification
+    181:181:void onCreate() -> onCreate
+    199:228:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+com.android.captiveportallogin.DownloadService$DownloadTask -> com.android.captiveportallogin.DownloadService$DownloadTask:
+    100:100:void <init>(int,android.net.Network,java.lang.String,java.lang.String,java.lang.String,android.net.Uri,android.content.Context,com.android.captiveportallogin.DownloadService$1) -> <init>
+    111:135:void <init>(int,android.net.Network,java.lang.String,java.lang.String,java.lang.String,android.net.Uri,android.content.Context) -> <init>
+    100:100:java.lang.String access$1000(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$1000
+    100:100:android.app.Notification$Builder access$1400(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$1400
+    100:100:java.lang.String access$500(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$500
+    100:100:android.net.Network access$600(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$600
+    100:100:java.lang.String access$700(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$700
+    100:100:android.net.Uri access$800(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$800
+    100:100:int access$900(com.android.captiveportallogin.DownloadService$DownloadTask) -> access$900
+com.android.captiveportallogin.DownloadService$ProcessingRunnable -> com.android.captiveportallogin.DownloadService$ProcessingRunnable:
+    259:259:void <init>(com.android.captiveportallogin.DownloadService) -> <init>
+    259:259:void <init>(com.android.captiveportallogin.DownloadService,com.android.captiveportallogin.DownloadService$1) -> <init>
+    346:366:boolean downloadToFile(java.io.InputStream,java.io.FileOutputStream,long,com.android.captiveportallogin.DownloadService$DownloadTask,android.app.NotificationManager) -> downloadToFile
+    384:384:java.lang.Integer getProgress(long,long) -> getProgress
+    404:405:boolean maybeNotifyProgress(int,int,long,long,com.android.captiveportallogin.DownloadService$DownloadTask,android.app.NotificationManager) -> maybeNotifyProgress
+    278:328:void processDownload(com.android.captiveportallogin.DownloadService$DownloadTask) -> processDownload
+    264:273:void run() -> run
+    376:376:void tryDeleteFile(android.net.Uri) -> tryDeleteFile
+com.google.protobuf.nano.CodedOutputByteBufferNano -> com.google.protobuf.nano.CodedOutputByteBufferNano:
+    60:60:void <init>(byte[],int,int) -> <init>
+    63:65:void <init>(java.nio.ByteBuffer) -> <init>
+    906:907:void checkNoSpaceLeft() -> checkNoSpaceLeft
+    87:87:com.google.protobuf.nano.CodedOutputByteBufferNano newInstance(byte[],int,int) -> newInstance
+    895:895:int spaceLeft() -> spaceLeft
+com.google.protobuf.nano.ExtendableMessageNano -> com.google.protobuf.nano.ExtendableMessageNano:
+    39:39:void <init>() -> <init>
+    39:39:com.google.protobuf.nano.MessageNano clone() -> clone
+    39:39:java.lang.Object clone() -> clone
+    165:166:com.google.protobuf.nano.ExtendableMessageNano clone() -> clone
+com.google.protobuf.nano.InternalNano -> com.google.protobuf.nano.InternalNano:
+    70:85:void <clinit>() -> <clinit>
+    543:543:void cloneUnknownFieldData(com.google.protobuf.nano.ExtendableMessageNano,com.google.protobuf.nano.ExtendableMessageNano) -> cloneUnknownFieldData
+com.google.protobuf.nano.MessageNano -> com.google.protobuf.nano.MessageNano:
+    41:42:void <init>() -> <init>
+    41:41:java.lang.Object clone() -> clone
+    196:196:com.google.protobuf.nano.MessageNano clone() -> clone
+    65:66:int getSerializedSize() -> getSerializedSize
+    100:101:byte[] toByteArray(com.google.protobuf.nano.MessageNano) -> toByteArray
+    116:120:void toByteArray(com.google.protobuf.nano.MessageNano,byte[],int,int) -> toByteArray
+    188:188:java.lang.String toString() -> toString
+com.google.protobuf.nano.MessageNanoPrinter -> com.google.protobuf.nano.MessageNanoPrinter:
+    258:273:void appendQuotedBytes(byte[],java.lang.StringBuffer) -> appendQuotedBytes
+    211:222:java.lang.String deCamelCaseify(java.lang.String) -> deCamelCaseify
+    240:250:java.lang.String escapeString(java.lang.String) -> escapeString
+    66:74:java.lang.String print(com.google.protobuf.nano.MessageNano) -> print
+    97:203:void print(java.lang.String,java.lang.Object,java.lang.StringBuffer,java.lang.StringBuffer) -> print
+    229:233:java.lang.String sanitizeString(java.lang.String) -> sanitizeString
+com.google.protobuf.nano.android.ParcelableExtendableMessageNano -> com.google.protobuf.nano.android.ParcelableExtendableMessageNano:
+    42:42:void <init>() -> <init>
+    52:52:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.google.protobuf.nano.android.ParcelableMessageNano -> com.google.protobuf.nano.android.ParcelableMessageNano:
+    41:41:void <init>() -> <init>
+    50:50:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.google.protobuf.nano.android.ParcelableMessageNanoCreator -> com.google.protobuf.nano.android.ParcelableMessageNanoCreator:
+    94:95:void writeToParcel(java.lang.Class,com.google.protobuf.nano.MessageNano,android.os.Parcel) -> writeToParcel
