@@ -1,0 +1,414 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: cc5bfca
+# common_typos_disable
+android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.graphics.drawable.IconCompatParcelizer -> android.support.v4.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    13:13:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    17:17:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+android.support.v4.os.IResultReceiver$Stub -> android.support.v4.os.IResultReceiver$Stub:
+    25:26:void <init>() -> <init>
+    37:41:android.support.v4.os.IResultReceiver asInterface(android.os.IBinder) -> asInterface
+    54:74:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.support.v4.os.IResultReceiver$Stub$Proxy -> android.support.v4.os.IResultReceiver$Stub$Proxy:
+    82:83:void <init>(android.os.IBinder) -> <init>
+    87:87:android.os.IBinder asBinder() -> asBinder
+android.support.v4.os.ResultReceiver -> android.support.v4.os.ResultReceiver:
+    144:144:void <clinit>() -> <clinit>
+    138:141:void <init>(android.os.Parcel) -> <init>
+    130:135:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.os.ResultReceiver$1 -> android.support.v4.os.ResultReceiver$1:
+    145:145:void <init>() -> <init>
+    145:145:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    148:148:android.support.v4.os.ResultReceiver createFromParcel(android.os.Parcel) -> createFromParcel
+    145:145:java.lang.Object[] newArray(int) -> newArray
+    152:152:android.support.v4.os.ResultReceiver[] newArray(int) -> newArray
+android.support.v4.os.ResultReceiver$MyResultReceiver -> android.support.v4.os.ResultReceiver$MyResultReceiver:
+    67:67:void <init>(android.support.v4.os.ResultReceiver) -> <init>
+    70:73:void send(int,android.os.Bundle) -> send
+android.support.v4.os.ResultReceiver$MyRunnable -> android.support.v4.os.ResultReceiver$MyRunnable:
+    56:58:void <init>(android.support.v4.os.ResultReceiver,int,android.os.Bundle) -> <init>
+    63:63:void run() -> run
+androidx.collection.ContainerHelpers -> androidx.collection.ContainerHelpers:
+    20:22:void <clinit>() -> <clinit>
+    51:51:int binarySearch(int[],int,int) -> binarySearch
+androidx.collection.SimpleArrayMap -> androidx.collection.SimpleArrayMap:
+    236:239:void <init>() -> <init>
+    165:196:void allocArrays(int) -> allocArrays
+    77:80:int binarySearchHashes(int[],int,int) -> binarySearchHashes
+    312:312:boolean containsKey(java.lang.Object) -> containsKey
+    687:721:boolean equals(java.lang.Object) -> equals
+    201:228:void freeArrays(int[],java.lang.Object[],int) -> freeArrays
+    369:369:java.lang.Object get(java.lang.Object) -> get
+    381:382:java.lang.Object getOrDefault(java.lang.Object,java.lang.Object) -> getOrDefault
+    738:743:int hashCode() -> hashCode
+    88:115:int indexOf(java.lang.Object,int) -> indexOf
+    322:322:int indexOfKey(java.lang.Object) -> indexOfKey
+    126:153:int indexOfNull() -> indexOfNull
+    423:423:boolean isEmpty() -> isEmpty
+    392:392:java.lang.Object keyAt(int) -> keyAt
+    437:494:java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+    670:670:int size() -> size
+    757:782:java.lang.String toString() -> toString
+    402:402:java.lang.Object valueAt(int) -> valueAt
+androidx.core.app.CoreComponentFactory -> androidx.core.app.CoreComponentFactory:
+    39:39:void <init>() -> <init>
+    80:81:java.lang.Object checkCompatWrapper(java.lang.Object) -> checkCompatWrapper
+    45:45:android.app.Activity instantiateActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateActivity
+    52:52:android.app.Application instantiateApplication(java.lang.ClassLoader,java.lang.String) -> instantiateApplication
+    67:67:android.content.ContentProvider instantiateProvider(java.lang.ClassLoader,java.lang.String) -> instantiateProvider
+    60:60:android.content.BroadcastReceiver instantiateReceiver(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateReceiver
+    75:75:android.app.Service instantiateService(java.lang.ClassLoader,java.lang.String,android.content.Intent) -> instantiateService
+androidx.core.app.RemoteActionCompat -> androidx.core.app.RemoteActionCompat:
+    94:94:void <init>() -> <init>
+androidx.core.app.RemoteActionCompatParcelizer -> androidx.core.app.RemoteActionCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:20:androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    26:32:void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.IconCompat:
+    208:208:void <clinit>() -> <clinit>
+    155:379:void <init>() -> <init>
+    1211:1245:android.graphics.Bitmap createLegacyIconFromAdaptiveIcon(android.graphics.Bitmap,boolean) -> createLegacyIconFromAdaptiveIcon
+    436:442:int getResId() -> getResId
+    1157:1169:int getResId(android.graphics.drawable.Icon) -> getResId
+    937:973:void onPostParceling() -> onPostParceling
+    900:930:void onPreParceling(boolean) -> onPreParceling
+    858:895:java.lang.String toString() -> toString
+androidx.core.graphics.drawable.IconCompatParcelizer -> androidx.core.graphics.drawable.IconCompatParcelizer:
+    11:11:void <init>() -> <init>
+    14:23:androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel) -> read
+    29:53:void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel) -> write
+androidx.core.widget.NestedScrollView$SavedState -> androidx.core.widget.NestedScrollView$SavedState:
+    2197:2197:void <clinit>() -> <clinit>
+    2179:2180:void <init>(android.os.Parcel) -> <init>
+    2192:2193:java.lang.String toString() -> toString
+    2185:2186:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.core.widget.NestedScrollView$SavedState$1 -> androidx.core.widget.NestedScrollView$SavedState$1:
+    2198:2198:void <init>() -> <init>
+    2198:2198:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    2201:2201:androidx.core.widget.NestedScrollView$SavedState createFromParcel(android.os.Parcel) -> createFromParcel
+    2198:2198:java.lang.Object[] newArray(int) -> newArray
+    2206:2206:androidx.core.widget.NestedScrollView$SavedState[] newArray(int) -> newArray
+androidx.versionedparcelable.CustomVersionedParcelable -> androidx.versionedparcelable.CustomVersionedParcelable:
+    27:27:void <init>() -> <init>
+androidx.versionedparcelable.ParcelImpl -> androidx.versionedparcelable.ParcelImpl:
+    60:60:void <clinit>() -> <clinit>
+    38:39:void <init>(android.os.Parcel) -> <init>
+    56:57:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+androidx.versionedparcelable.ParcelImpl$1 -> androidx.versionedparcelable.ParcelImpl$1:
+    60:60:void <init>() -> <init>
+    60:60:java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    63:63:androidx.versionedparcelable.ParcelImpl createFromParcel(android.os.Parcel) -> createFromParcel
+    60:60:java.lang.Object[] newArray(int) -> newArray
+    68:68:androidx.versionedparcelable.ParcelImpl[] newArray(int) -> newArray
+androidx.versionedparcelable.VersionedParcel -> androidx.versionedparcelable.VersionedParcel:
+    87:90:void <init>(androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    1635:1640:java.lang.Class findParcelClass(java.lang.Class) -> findParcelClass
+    1613:1617:java.lang.reflect.Method getReadMethod(java.lang.String) -> getReadMethod
+    1624:1628:java.lang.reflect.Method getWriteMethod(java.lang.Class) -> getWriteMethod
+    400:403:boolean readBoolean(boolean,int) -> readBoolean
+    473:476:byte[] readByteArray(byte[],int) -> readByteArray
+    617:620:java.lang.CharSequence readCharSequence(java.lang.CharSequence,int) -> readCharSequence
+    1566:1582:androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel) -> readFromParcel
+    410:413:int readInt(int,int) -> readInt
+    482:485:android.os.Parcelable readParcelable(android.os.Parcelable,int) -> readParcelable
+    452:455:java.lang.String readString(java.lang.String,int) -> readString
+    1496:1499:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> readVersionedParcelable
+    1512:1516:androidx.versionedparcelable.VersionedParcelable readVersionedParcelable() -> readVersionedParcelable
+    295:296:void writeBoolean(boolean,int) -> writeBoolean
+    305:306:void writeByteArray(byte[],int) -> writeByteArray
+    326:327:void writeCharSequence(java.lang.CharSequence,int) -> writeCharSequence
+    335:336:void writeInt(int,int) -> writeInt
+    392:393:void writeParcelable(android.os.Parcelable,int) -> writeParcelable
+    371:372:void writeString(java.lang.String,int) -> writeString
+    1591:1607:void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel) -> writeToParcel
+    1022:1023:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int) -> writeVersionedParcelable
+    1030:1037:void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelable
+    1043:1048:void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable) -> writeVersionedParcelableCreator
+androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelable.VersionedParcelParcel:
+    51:51:void <init>(android.os.Parcel) -> <init>
+    41:65:void <init>(android.os.Parcel,int,int,java.lang.String,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap,androidx.collection.SimpleArrayMap) -> <init>
+    99:109:void closeField() -> closeField
+    119:120:androidx.versionedparcelable.VersionedParcel createSubParcel() -> createSubParcel
+    258:258:boolean readBoolean() -> readBoolean
+    236:241:byte[] readByteArray() -> readByteArray
+    201:201:java.lang.CharSequence readCharSequence() -> readCharSequence
+    70:84:boolean readField(int) -> readField
+    206:206:int readInt() -> readInt
+    248:248:android.os.Parcelable readParcelable() -> readParcelable
+    226:226:java.lang.String readString() -> readString
+    89:94:void setOutputField(int) -> setOutputField
+    181:181:void writeBoolean(boolean) -> writeBoolean
+    127:130:void writeByteArray(byte[]) -> writeByteArray
+    196:196:void writeCharSequence(java.lang.CharSequence) -> writeCharSequence
+    146:146:void writeInt(int) -> writeInt
+    176:176:void writeParcelable(android.os.Parcelable) -> writeParcelable
+    166:166:void writeString(java.lang.String) -> writeString
+com.android.printservice.recommendation.RecommendationServiceImpl -> com.android.printservice.recommendation.RecommendationServiceImpl:
+    44:49:void <init>() -> <init>
+    154:172:void onChanged() -> onChanged
+    149:149:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    56:124:void onConnected() -> onConnected
+    131:142:void onDisconnected() -> onDisconnected
+com.android.printservice.recommendation.RemotePrintServicePlugin -> com.android.printservice.recommendation.RemotePrintServicePlugin:
+    35:87:void <init>(com.android.printservice.recommendation.PrintServicePlugin,com.android.printservice.recommendation.RemotePrintServicePlugin$OnChangedListener,boolean) -> <init>
+    127:127:java.util.List getPrinters() -> getPrinters
+    132:143:void onChanged(java.util.List) -> onChanged
+    97:102:void start() -> start
+    112:117:void stop() -> stop
+com.android.printservice.recommendation.RemotePrintServicePlugin$PluginException -> com.android.printservice.recommendation.RemotePrintServicePlugin$PluginException:
+    156:156:void <init>(com.android.printservice.recommendation.RemotePrintServicePlugin,com.android.printservice.recommendation.PrintServicePlugin,java.lang.String,java.lang.Throwable,com.android.printservice.recommendation.RemotePrintServicePlugin$1) -> <init>
+    157:158:void <init>(com.android.printservice.recommendation.RemotePrintServicePlugin,com.android.printservice.recommendation.PrintServicePlugin,java.lang.String,java.lang.Throwable) -> <init>
+com.android.printservice.recommendation.plugin.google.CloudPrintPlugin -> com.android.printservice.recommendation.plugin.google.CloudPrintPlugin:
+    58:64:void <clinit>() -> <clinit>
+    81:82:void <init>(android.content.Context) -> <init>
+    86:141:boolean lambda$new$0(android.net.nsd.NsdServiceInfo) -> lambda$new$0
+    157:157:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    167:167:void stop() -> stop
+com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$ExternalSyntheticLambda0 -> com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$ExternalSyntheticLambda0:
+    com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$InternalSyntheticLambda$0$91f93e83091d82c62b81007b870ab33e8f6ba916a1edd97615277ef480275542$0 com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$InternalSyntheticLambda$0$91f93e83091d82c62b81007b870ab33e8f6ba916a1edd97615277ef480275542$0.INSTANCE -> INSTANCE
+    void com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$InternalSyntheticLambda$0$91f93e83091d82c62b81007b870ab33e8f6ba916a1edd97615277ef480275542$0.<clinit>() -> <clinit>
+    void com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$InternalSyntheticLambda$0$91f93e83091d82c62b81007b870ab33e8f6ba916a1edd97615277ef480275542$0.<init>() -> <init>
+    boolean com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$$InternalSyntheticLambda$0$91f93e83091d82c62b81007b870ab33e8f6ba916a1edd97615277ef480275542$0.matchesCriteria(android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$1 -> com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$1:
+    58:60:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$2 -> com.android.printservice.recommendation.plugin.google.CloudPrintPlugin$2:
+    64:68:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.hp.HPRecommendationPlugin -> com.android.printservice.recommendation.plugin.hp.HPRecommendationPlugin:
+    44:44:void <clinit>() -> <clinit>
+    83:83:void <init>(android.content.Context) -> <init>
+    56:61:boolean isPrintSupported(java.lang.String) -> isPrintSupported
+    71:74:boolean isSupportedDesignjet(java.lang.String) -> isSupportedDesignjet
+    88:98:boolean matchesCriteria(java.lang.String,android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.hp.MDnsUtils -> com.android.printservice.recommendation.plugin.hp.MDnsUtils:
+    72:72:boolean containsString(java.lang.String,java.lang.String) -> containsString
+    62:65:boolean containsVendor(java.lang.String,java.lang.String[]) -> containsVendor
+    33:33:java.lang.String getString(byte[]) -> getString
+    51:55:java.lang.String getVendor(android.net.nsd.NsdServiceInfo) -> getVendor
+    39:44:boolean isVendorPrinter(android.net.nsd.NsdServiceInfo,java.lang.String[]) -> isVendorPrinter
+com.android.printservice.recommendation.plugin.hp.ServiceListener -> com.android.printservice.recommendation.plugin.hp.ServiceListener:
+    45:75:void <init>(android.content.Context,com.android.printservice.recommendation.plugin.hp.ServiceListener$Observer,java.lang.String[]) -> <init>
+    38:38:com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue access$000(com.android.printservice.recommendation.plugin.hp.ServiceListener) -> access$000
+    38:38:void access$100(com.android.printservice.recommendation.plugin.hp.ServiceListener,android.net.nsd.NsdServiceInfo) -> access$100
+    203:209:java.util.ArrayList getPrinters() -> getPrinters
+    85:125:void printerFound(android.net.nsd.NsdServiceInfo) -> printerFound
+    132:142:void printerRemoved(android.net.nsd.NsdServiceInfo) -> printerRemoved
+    80:80:void serviceResolved(android.net.nsd.NsdServiceInfo) -> serviceResolved
+    147:186:void start() -> start
+    190:196:void stop() -> stop
+com.android.printservice.recommendation.plugin.hp.ServiceListener$1 -> com.android.printservice.recommendation.plugin.hp.ServiceListener$1:
+    151:151:void <init>(com.android.printservice.recommendation.plugin.hp.ServiceListener) -> <init>
+    174:174:void onServiceFound(android.net.nsd.NsdServiceInfo) -> onServiceFound
+    179:180:void onServiceLost(android.net.nsd.NsdServiceInfo) -> onServiceLost
+com.android.printservice.recommendation.plugin.hp.ServiceRecommendationPlugin -> com.android.printservice.recommendation.plugin.hp.ServiceRecommendationPlugin:
+    35:46:void <init>(android.content.Context,int,com.android.printservice.recommendation.plugin.hp.VendorInfo,java.lang.String[]) -> <init>
+    78:80:void dataSetChanged() -> dataSetChanged
+    51:51:int getName() -> getName
+    57:57:java.lang.CharSequence getPackageName() -> getPackageName
+    89:89:java.util.ArrayList getPrinters() -> getPrinters
+    62:65:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    70:73:void stop() -> stop
+com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue -> com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue:
+    32:32:void <clinit>() -> <clinit>
+    29:58:void <init>(android.net.nsd.NsdManager) -> <init>
+    26:26:java.lang.Object access$000(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue) -> access$000
+    26:26:android.util.Pair access$100(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue) -> access$100
+    26:26:android.util.Pair access$102(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue,android.util.Pair) -> access$102
+    26:26:java.util.LinkedList access$200(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue) -> access$200
+    26:26:void access$300(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue) -> access$300
+    38:38:void createInstance(android.net.nsd.NsdManager) -> createInstance
+    42:45:com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue getInstance(android.net.nsd.NsdManager) -> getInstance
+    79:105:void makeNextRequest() -> makeNextRequest
+    62:67:void queueRequest(android.net.nsd.NsdServiceInfo,com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue$ResolveCallback) -> queueRequest
+    71:75:void removeRequest(android.net.nsd.NsdServiceInfo,com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue$ResolveCallback) -> removeRequest
+com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue$1 -> com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue$1:
+    84:84:void <init>(com.android.printservice.recommendation.plugin.hp.ServiceResolveQueue) -> <init>
+    87:90:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    95:101:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+com.android.printservice.recommendation.plugin.hp.VendorInfo -> com.android.printservice.recommendation.plugin.hp.VendorInfo:
+    30:38:void <init>(android.content.res.Resources,int) -> <init>
+com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin -> com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin:
+    40:40:void <clinit>() -> <clinit>
+    86:89:void <init>(android.content.Context,java.lang.String,java.lang.CharSequence,java.util.List) -> <init>
+    105:105:int getName() -> getName
+    95:95:java.lang.CharSequence getPackageName() -> getPackageName
+    100:100:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    110:110:void stop() -> stop
+com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin$1 -> com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin$1:
+    40:41:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin$VendorNameFilter -> com.android.printservice.recommendation.plugin.mdnsFilter.MDNSFilterPlugin$VendorNameFilter:
+    57:58:void <init>(java.util.Set) -> <init>
+    63:63:boolean matchesCriteria(android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig -> com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig:
+    44:44:void <clinit>() -> <clinit>
+    70:73:void <init>(java.lang.String,java.lang.String,java.util.List) -> <init>
+    42:42:com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig access$000(android.content.Context,org.xmlpull.v1.XmlPullParser,java.lang.String) -> access$000
+    42:42:java.lang.String access$100(android.content.Context,org.xmlpull.v1.XmlPullParser,java.lang.String,boolean) -> access$100
+    110:116:java.util.Collection getAllConfigs(android.content.Context) -> getAllConfigs
+    155:161:java.lang.String readSimpleTag(android.content.Context,org.xmlpull.v1.XmlPullParser,java.lang.String,boolean) -> readSimpleTag
+    184:196:java.util.ArrayList readTagList(org.xmlpull.v1.XmlPullParser,java.lang.String,java.lang.String,com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig$TagReader) -> readTagList
+    133:135:java.lang.String readText(org.xmlpull.v1.XmlPullParser) -> readText
+    257:309:com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig readVendorConfig(android.content.Context,org.xmlpull.v1.XmlPullParser,java.lang.String) -> readVendorConfig
+    215:239:android.util.ArrayMap readVendorConfigs(android.content.Context) -> readVendorConfigs
+    314:314:java.lang.String toString() -> toString
+com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig$1 -> com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig$1:
+    223:223:void <init>(android.content.Context) -> <init>
+    223:223:java.lang.Object readTag(org.xmlpull.v1.XmlPullParser,java.lang.String) -> readTag
+    226:226:com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig readTag(org.xmlpull.v1.XmlPullParser,java.lang.String) -> readTag
+com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig$2 -> com.android.printservice.recommendation.plugin.mdnsFilter.VendorConfig$2:
+    279:279:void <init>(android.content.Context) -> <init>
+    279:279:java.lang.Object readTag(org.xmlpull.v1.XmlPullParser,java.lang.String) -> readTag
+    282:282:java.lang.String readTag(org.xmlpull.v1.XmlPullParser,java.lang.String) -> readTag
+com.android.printservice.recommendation.plugin.mopria.MopriaRecommendationPlugin -> com.android.printservice.recommendation.plugin.mopria.MopriaRecommendationPlugin:
+    39:39:void <init>(android.content.Context) -> <init>
+    53:53:java.util.ArrayList getPrinters() -> getPrinters
+    44:48:boolean matchesCriteria(java.lang.String,android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.samsung.PrinterFilterMopria -> com.android.printservice.recommendation.plugin.samsung.PrinterFilterMopria:
+    35:35:void <clinit>() -> <clinit>
+    32:32:void <init>() -> <init>
+    48:59:boolean matchesCriteria(android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.samsung.PrinterFilterMopria$1 -> com.android.printservice.recommendation.plugin.samsung.PrinterFilterMopria$1:
+    35:37:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung -> com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung:
+    39:60:void <clinit>() -> <clinit>
+    36:36:void <init>() -> <init>
+    95:112:java.lang.String getSamsungModelName(android.net.nsd.NsdServiceInfo) -> getSamsungModelName
+    83:86:boolean isSupportedSamsungModel(java.lang.String) -> isSupportedSamsungModel
+    66:76:boolean matchesCriteria(android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung$1 -> com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung$1:
+    39:40:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung$2 -> com.android.printservice.recommendation.plugin.samsung.PrinterFilterSamsung$2:
+    60:61:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin -> com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin:
+    32:32:void <clinit>() -> <clinit>
+    40:45:void <init>(android.content.Context) -> <init>
+    58:58:java.lang.CharSequence getPackageName() -> getPackageName
+    47:48:boolean lambda$new$0(android.net.nsd.NsdServiceInfo) -> lambda$new$0
+    63:63:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    68:68:void stop() -> stop
+com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$$ExternalSyntheticLambda0 -> com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$$ExternalSyntheticLambda0:
+    com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$$InternalSyntheticLambda$0$2908066e3a7a8673ab2338e68227ef8e52935ef3d67f23bac994fa3ca793585b$0.f$0 -> f$0
+    void com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$$InternalSyntheticLambda$0$2908066e3a7a8673ab2338e68227ef8e52935ef3d67f23bac994fa3ca793585b$0.<init>(com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin) -> <init>
+    boolean com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$$InternalSyntheticLambda$0$2908066e3a7a8673ab2338e68227ef8e52935ef3d67f23bac994fa3ca793585b$0.matchesCriteria(android.net.nsd.NsdServiceInfo) -> matchesCriteria
+com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$1 -> com.android.printservice.recommendation.plugin.samsung.SamsungRecommendationPlugin$1:
+    32:34:void <init>() -> <init>
+com.android.printservice.recommendation.plugin.xerox.MDnsUtils -> com.android.printservice.recommendation.plugin.xerox.MDnsUtils:
+    63:66:boolean checkPDLSupport(android.net.nsd.NsdServiceInfo,java.lang.String[]) -> checkPDLSupport
+    91:91:boolean containsString(java.lang.String,java.lang.String) -> containsString
+    76:79:boolean containsVendor(java.lang.String,java.lang.String[]) -> containsVendor
+    86:86:java.lang.String getString(byte[]) -> getString
+    51:55:java.lang.String getVendor(android.net.nsd.NsdServiceInfo) -> getVendor
+    36:45:boolean isVendorPrinter(android.net.nsd.NsdServiceInfo,java.lang.String[]) -> isVendorPrinter
+com.android.printservice.recommendation.plugin.xerox.ServiceResolver -> com.android.printservice.recommendation.plugin.xerox.ServiceResolver:
+    39:107:void <init>(android.content.Context,com.android.printservice.recommendation.plugin.xerox.ServiceResolver$Observer,com.android.printservice.recommendation.plugin.xerox.VendorInfo,java.lang.String[],java.lang.String[]) -> <init>
+    32:32:void access$000(com.android.printservice.recommendation.plugin.xerox.ServiceResolver,android.net.nsd.NsdServiceInfo) -> access$000
+    32:32:void access$100(com.android.printservice.recommendation.plugin.xerox.ServiceResolver,android.net.nsd.NsdServiceInfo) -> access$100
+    32:32:void access$200(com.android.printservice.recommendation.plugin.xerox.ServiceResolver,android.net.nsd.NsdServiceInfo) -> access$200
+    32:32:java.lang.Object access$300(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> access$300
+    32:32:android.net.nsd.NsdServiceInfo access$400(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> access$400
+    32:32:android.net.nsd.NsdServiceInfo access$402(com.android.printservice.recommendation.plugin.xerox.ServiceResolver,android.net.nsd.NsdServiceInfo) -> access$402
+    32:32:java.util.LinkedList access$500(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> access$500
+    32:32:void access$600(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> access$600
+    32:32:void access$700(com.android.printservice.recommendation.plugin.xerox.ServiceResolver,android.net.nsd.NsdServiceInfo) -> access$700
+    126:128:void clearRequests() -> clearRequests
+    199:199:java.util.ArrayList getPrinters() -> getPrinters
+    132:157:void makeNextRequest() -> makeNextRequest
+    162:187:void printerFound(android.net.nsd.NsdServiceInfo) -> printerFound
+    193:194:void printerRemoved(android.net.nsd.NsdServiceInfo) -> printerRemoved
+    110:114:void queueRequest(android.net.nsd.NsdServiceInfo) -> queueRequest
+    118:122:void removeRequest(android.net.nsd.NsdServiceInfo) -> removeRequest
+    57:92:void start() -> start
+    97:101:void stop() -> stop
+com.android.printservice.recommendation.plugin.xerox.ServiceResolver$1 -> com.android.printservice.recommendation.plugin.xerox.ServiceResolver$1:
+    59:59:void <init>(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> <init>
+    82:82:void onServiceFound(android.net.nsd.NsdServiceInfo) -> onServiceFound
+    87:88:void onServiceLost(android.net.nsd.NsdServiceInfo) -> onServiceLost
+com.android.printservice.recommendation.plugin.xerox.ServiceResolver$2 -> com.android.printservice.recommendation.plugin.xerox.ServiceResolver$2:
+    136:136:void <init>(com.android.printservice.recommendation.plugin.xerox.ServiceResolver) -> <init>
+    139:142:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    147:153:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+com.android.printservice.recommendation.plugin.xerox.VendorInfo -> com.android.printservice.recommendation.plugin.xerox.VendorInfo:
+    29:37:void <init>(android.content.res.Resources,int) -> <init>
+com.android.printservice.recommendation.plugin.xerox.XeroxPrintServiceRecommendationPlugin -> com.android.printservice.recommendation.plugin.xerox.XeroxPrintServiceRecommendationPlugin:
+    28:40:void <init>(android.content.Context) -> <init>
+    72:76:void dataSetChanged() -> dataSetChanged
+    51:51:java.lang.CharSequence getPackageName() -> getPackageName
+    56:59:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    64:67:void stop() -> stop
+com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer -> com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer:
+    36:36:void <clinit>() -> <clinit>
+    48:67:void addListener(android.net.nsd.NsdManager,java.lang.String,android.net.nsd.NsdManager$DiscoveryListener) -> addListener
+    82:96:boolean removeListener(android.net.nsd.NsdManager,android.net.nsd.NsdManager$DiscoveryListener) -> removeListener
+com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$DiscoveryListenerSet -> com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$DiscoveryListenerSet:
+    102:102:void <init>(java.util.ArrayList,com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$MultiListener,com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$1) -> <init>
+    110:112:void <init>(java.util.ArrayList,com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$MultiListener) -> <init>
+com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$MultiListener -> com.android.printservice.recommendation.util.DiscoveryListenerMultiplexer$MultiListener:
+    128:129:void <init>(java.util.ArrayList) -> <init>
+    156:163:void onServiceFound(android.net.nsd.NsdServiceInfo) -> onServiceFound
+    168:175:void onServiceLost(android.net.nsd.NsdServiceInfo) -> onServiceLost
+    134:134:void onStartDiscoveryFailed(java.lang.String,int) -> onStartDiscoveryFailed
+    140:140:void onStopDiscoveryFailed(java.lang.String,int) -> onStopDiscoveryFailed
+com.android.printservice.recommendation.util.MDNSFilteredDiscovery -> com.android.printservice.recommendation.util.MDNSFilteredDiscovery:
+    91:99:void <init>(android.content.Context,java.util.Set,com.android.printservice.recommendation.util.MDNSFilteredDiscovery$PrinterFilter) -> <init>
+    38:38:com.android.printservice.recommendation.util.MDNSFilteredDiscovery$PrinterFilter access$000(com.android.printservice.recommendation.util.MDNSFilteredDiscovery) -> access$000
+    38:38:com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback access$100(com.android.printservice.recommendation.util.MDNSFilteredDiscovery) -> access$100
+    38:38:com.android.printservice.recommendation.util.PrinterHashMap access$200(com.android.printservice.recommendation.util.MDNSFilteredDiscovery) -> access$200
+    38:38:void access$300(com.android.printservice.recommendation.util.MDNSFilteredDiscovery) -> access$300
+    106:106:android.net.nsd.NsdManager getNDSManager() -> getNDSManager
+    110:111:void onChanged() -> onChanged
+    161:161:void onDiscoveryStopped(java.lang.String) -> onDiscoveryStopped
+    166:166:void onServiceFound(android.net.nsd.NsdServiceInfo) -> onServiceFound
+    191:193:void onServiceLost(android.net.nsd.NsdServiceInfo) -> onServiceLost
+    144:144:void onStartDiscoveryFailed(java.lang.String,int) -> onStartDiscoveryFailed
+    150:150:void onStopDiscoveryFailed(java.lang.String,int) -> onStopDiscoveryFailed
+    121:126:void start(com.android.printservice.recommendation.PrintServicePlugin$PrinterDiscoveryCallback) -> start
+    134:138:void stop() -> stop
+com.android.printservice.recommendation.util.MDNSFilteredDiscovery$1 -> com.android.printservice.recommendation.util.MDNSFilteredDiscovery$1:
+    167:167:void <init>(com.android.printservice.recommendation.util.MDNSFilteredDiscovery) -> <init>
+    170:170:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    176:181:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+com.android.printservice.recommendation.util.MDNSUtils -> com.android.printservice.recommendation.util.MDNSUtils:
+    100:100:boolean containsString(java.lang.String,java.lang.String) -> containsString
+    83:84:boolean containsVendor(java.lang.String,java.util.Set) -> containsVendor
+    111:111:java.lang.String getString(byte[]) -> getString
+    125:127:boolean isSupportedServiceType(android.net.nsd.NsdServiceInfo,java.util.Set) -> isSupportedServiceType
+    50:60:boolean isVendorPrinter(android.net.nsd.NsdServiceInfo,java.util.Set) -> isVendorPrinter
+com.android.printservice.recommendation.util.NsdResolveQueue -> com.android.printservice.recommendation.util.NsdResolveQueue:
+    33:33:void <clinit>() -> <clinit>
+    31:43:void <init>() -> <init>
+    31:31:java.lang.Object access$200(com.android.printservice.recommendation.util.NsdResolveQueue) -> access$200
+    31:31:java.util.LinkedList access$300(com.android.printservice.recommendation.util.NsdResolveQueue) -> access$300
+    31:31:void access$400(com.android.printservice.recommendation.util.NsdResolveQueue) -> access$400
+    47:53:com.android.printservice.recommendation.util.NsdResolveQueue getInstance() -> getInstance
+    81:88:void resolve(android.net.nsd.NsdManager,android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener) -> resolve
+    127:130:void resolveNextRequest() -> resolveNextRequest
+com.android.printservice.recommendation.util.NsdResolveQueue$ListenerWrapper -> com.android.printservice.recommendation.util.NsdResolveQueue$ListenerWrapper:
+    95:95:void <init>(com.android.printservice.recommendation.util.NsdResolveQueue,android.net.nsd.NsdManager$ResolveListener,com.android.printservice.recommendation.util.NsdResolveQueue$1) -> <init>
+    98:99:void <init>(com.android.printservice.recommendation.util.NsdResolveQueue,android.net.nsd.NsdManager$ResolveListener) -> <init>
+    104:109:void onResolveFailed(android.net.nsd.NsdServiceInfo,int) -> onResolveFailed
+    114:119:void onServiceResolved(android.net.nsd.NsdServiceInfo) -> onServiceResolved
+com.android.printservice.recommendation.util.NsdResolveQueue$NsdResolveRequest -> com.android.printservice.recommendation.util.NsdResolveQueue$NsdResolveRequest:
+    59:59:void <init>(android.net.nsd.NsdManager,android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener,com.android.printservice.recommendation.util.NsdResolveQueue$1) -> <init>
+    65:68:void <init>(android.net.nsd.NsdManager,android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager$ResolveListener) -> <init>
+com.android.printservice.recommendation.util.Preconditions -> com.android.printservice.recommendation.util.Preconditions:
+    269:269:int checkArgumentPositive(int,java.lang.String) -> checkArgumentPositive
+    423:430:java.util.Collection checkCollectionElementsNotNull(java.util.Collection,java.lang.String) -> checkCollectionElementsNotNull
+    452:455:java.util.Collection checkCollectionNotEmpty(java.util.Collection,java.lang.String) -> checkCollectionNotEmpty
+    129:129:java.lang.Object checkNotNull(java.lang.Object,java.lang.Object) -> checkNotNull
+    164:164:void checkState(boolean,java.lang.String) -> checkState
+    176:176:void checkState(boolean) -> checkState
+    78:79:java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence) -> checkStringNotEmpty
+    96:97:java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.Object) -> checkStringNotEmpty
+com.android.printservice.recommendation.util.PrinterHashMap -> com.android.printservice.recommendation.util.PrinterHashMap:
+    29:30:void <init>() -> <init>
+    51:51:android.net.nsd.NsdServiceInfo addPrinter(android.net.nsd.NsdServiceInfo) -> addPrinter
+    82:82:void clear() -> clear
+    40:40:java.lang.String getKey(android.net.nsd.NsdServiceInfo) -> getKey
+    69:72:java.util.ArrayList getPrinterAddresses() -> getPrinterAddresses
+    89:89:boolean isEmpty() -> isEmpty
+    62:62:android.net.nsd.NsdServiceInfo removePrinter(android.net.nsd.NsdServiceInfo) -> removePrinter

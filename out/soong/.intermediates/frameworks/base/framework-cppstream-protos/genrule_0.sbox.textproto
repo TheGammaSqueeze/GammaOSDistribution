@@ -1,0 +1,225 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-cppstream/linux_glibc_x86_64/protoc-gen-cppstream"
+    to: "tools/out/bin/protoc-gen-cppstream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/proto/src/ipconnectivity.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/proto/src/ipconnectivity.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/app/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/media_output_enum.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/app/media_output_enum.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/settings_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/app/settings_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/tvsettings_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/app/tvsettings_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/job/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/app/job/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/bluetooth/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/hci/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/bluetooth/hci/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/smp/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/bluetooth/smp/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/debug/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/debug/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hardware/biometrics/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/hardware/biometrics/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hotword/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/hotword/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/net/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/net/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/os/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/os/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/server/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/job/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/server/job/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/location/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/server/location/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/service/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/service/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/service/procstats_enum.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/service/procstats_enum.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/accessibility/accessibility_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/accessibility/accessibility_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/connectivity/tethering.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/connectivity/tethering.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/hdmi/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/hdmi/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/intelligence/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/intelligence/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/launcher/launcher.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/launcher/launcher.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/location/location_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/location/location_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/mediaprovider/mediaprovider_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/mediaprovider/mediaprovider_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/otaupdate/updateengine_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/otaupdate/updateengine_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/storage/storage_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/storage/storage_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/style/style_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/style/style_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/sysui/notification_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/sysui/notification_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/tls/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/tls/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/tv/tif_enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/tv/tif_enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/wm/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/stats/wm/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/telecomm/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/telecomm/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/telephony/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/telephony/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/view/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/view/enums.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/wifi/enums.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/proto_logging/stats/enums/wifi/enums.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/frameworks/base/proto/src/ipconnectivity.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/media_output_enum.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/settings_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/tvsettings_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/app/job/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/hci/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/bluetooth/smp/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/debug/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hardware/biometrics/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/hotword/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/net/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/os/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/job/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/server/location/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/service/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/service/procstats_enum.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/accessibility/accessibility_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/connectivity/tethering.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/hdmi/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/intelligence/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/launcher/launcher.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/location/location_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/mediaprovider/mediaprovider_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/otaupdate/updateengine_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/storage/storage_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/style/style_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/sysui/notification_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/tls/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/tv/tif_enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/stats/wm/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/telecomm/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/telephony/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/view/enums.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/proto_logging/stats/enums/wifi/enums.proto.d"
+  copy_after: <
+    from: "out/frameworks/base/proto/src/ipconnectivity.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/base/proto/src/ipconnectivity.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/app/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/app/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/app/job/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/app/job/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/app/media_output_enum.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/app/media_output_enum.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/app/settings_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/app/settings_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/app/tvsettings_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/app/tvsettings_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/bluetooth/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/bluetooth/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/bluetooth/hci/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/bluetooth/hci/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/bluetooth/smp/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/bluetooth/smp/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/debug/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/debug/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/hardware/biometrics/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/hardware/biometrics/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/hotword/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/hotword/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/net/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/net/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/os/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/os/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/server/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/server/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/server/job/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/server/job/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/server/location/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/server/location/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/service/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/service/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/service/procstats_enum.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/service/procstats_enum.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/accessibility/accessibility_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/accessibility/accessibility_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/connectivity/tethering.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/connectivity/tethering.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/hdmi/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/hdmi/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/intelligence/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/intelligence/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/launcher/launcher.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/launcher/launcher.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/location/location_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/location/location_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/mediaprovider/mediaprovider_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/mediaprovider/mediaprovider_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/otaupdate/updateengine_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/otaupdate/updateengine_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/storage/storage_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/storage/storage_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/style/style_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/style/style_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/sysui/notification_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/sysui/notification_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/tls/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/tls/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/tv/tif_enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/tv/tif_enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/stats/wm/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/stats/wm/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/telecomm/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/telecomm/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/telephony/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/telephony/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/view/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/view/enums.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/proto_logging/stats/enums/wifi/enums.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/frameworks/proto_logging/stats/enums/wifi/enums.proto.h"
+  >
+  input_hash: "9ee0e6efec455c3e6e2388091746b8c92dd3bf32d02c1e7f6d007173d6835416"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/0/gensrcs.d"
+
