@@ -1,0 +1,737 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar"
+    to: "out/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar"
+    to: "out/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+    to: "out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/services/Car/car-lib/android-car-last-released-api/gen/last-released-api.txt"
+    to: "out/.intermediates/packages/services/Car/car-lib/android-car-last-released-api/gen/last-released-api.txt"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/services/Car/car-lib/android.car/android_common/turbine-combined/android.car.jar"
+    to: "out/.intermediates/packages/services/Car/car-lib/android.car/android_common/turbine-combined/android.car.jar"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/api/lint-baseline.txt"
+    to: "packages/services/Car/car-lib/api/lint-baseline.txt"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/api/removed.txt"
+    to: "packages/services/Car/car-lib/api/removed.txt"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/AoapService.java"
+    to: "packages/services/Car/car-lib/src/android/car/AoapService.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/Car.java"
+    to: "packages/services/Car/car-lib/src/android/car/Car.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarAppFocusManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarAppFocusManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarBluetoothManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarBluetoothManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarBugreportManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarBugreportManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarFeatures.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarFeatures.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarInfoManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarInfoManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarLibLog.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarLibLog.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarManagerBase.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarManagerBase.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarNotConnectedException.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarNotConnectedException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarOccupantZoneManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarOccupantZoneManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarProjectionManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarProjectionManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/CarTransactionException.java"
+    to: "packages/services/Car/car-lib/src/android/car/CarTransactionException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/EvConnectorType.java"
+    to: "packages/services/Car/car-lib/src/android/car/EvConnectorType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/FuelType.java"
+    to: "packages/services/Car/car-lib/src/android/car/FuelType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/PortLocationType.java"
+    to: "packages/services/Car/car-lib/src/android/car/PortLocationType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaDoor.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaDoor.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaMirror.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaMirror.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaSeat.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaSeat.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaType.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaWheel.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaWheel.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleAreaWindow.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleAreaWindow.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleGear.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleGear.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleHvacFanDirection.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleHvacFanDirection.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleLightState.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleLightState.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleLightSwitch.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleLightSwitch.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleOilLevel.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleOilLevel.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehiclePropertyAccess.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehiclePropertyAccess.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehiclePropertyIds.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehiclePropertyIds.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehiclePropertyType.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehiclePropertyType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleSeatOccupancyState.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleSeatOccupancyState.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/VehicleUnit.java"
+    to: "packages/services/Car/car-lib/src/android/car/VehicleUnit.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/admin/CarDevicePolicyManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/admin/CarDevicePolicyManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/admin/CreateUserResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/admin/CreateUserResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/admin/RemoveUserResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/admin/RemoveUserResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/admin/StartUserInBackgroundResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/admin/StartUserInBackgroundResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/admin/StopUserResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/admin/StopUserResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/annotation/ExperimentalFeature.java"
+    to: "packages/services/Car/car-lib/src/android/car/annotation/ExperimentalFeature.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/annotation/MandatoryFeature.java"
+    to: "packages/services/Car/car-lib/src/android/car/annotation/MandatoryFeature.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/annotation/OptionalFeature.java"
+    to: "packages/services/Car/car-lib/src/android/car/annotation/OptionalFeature.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/annotation/RequiredFeature.java"
+    to: "packages/services/Car/car-lib/src/android/car/annotation/RequiredFeature.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/annotation/ValueTypeDef.java"
+    to: "packages/services/Car/car-lib/src/android/car/annotation/ValueTypeDef.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/app/CarActivityManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/app/CarActivityManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/CarInstrumentClusterManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/CarInstrumentClusterManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/ClusterActivityState.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/ClusterActivityState.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/ClusterHomeManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/ClusterHomeManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/renderer/InstrumentClusterRenderer.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/renderer/InstrumentClusterRenderer.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/renderer/InstrumentClusterRenderingService.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/renderer/InstrumentClusterRenderingService.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/cluster/renderer/NavigationRenderer.java"
+    to: "packages/services/Car/car-lib/src/android/car/cluster/renderer/NavigationRenderer.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/content/pm/AppBlockingPackageInfo.java"
+    to: "packages/services/Car/car-lib/src/android/car/content/pm/AppBlockingPackageInfo.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/content/pm/CarAppBlockingPolicy.java"
+    to: "packages/services/Car/car-lib/src/android/car/content/pm/CarAppBlockingPolicy.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/content/pm/CarAppBlockingPolicyService.java"
+    to: "packages/services/Car/car-lib/src/android/car/content/pm/CarAppBlockingPolicyService.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/content/pm/CarPackageManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/content/pm/CarPackageManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/diagnostic/CarDiagnosticEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/diagnostic/CarDiagnosticEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/diagnostic/CarDiagnosticManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/diagnostic/CarDiagnosticManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/diagnostic/FloatSensorIndex.java"
+    to: "packages/services/Car/car-lib/src/android/car/diagnostic/FloatSensorIndex.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/diagnostic/IntegerSensorIndex.java"
+    to: "packages/services/Car/car-lib/src/android/car/diagnostic/IntegerSensorIndex.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/drivingstate/CarDrivingStateEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/drivingstate/CarDrivingStateEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/drivingstate/CarDrivingStateManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/drivingstate/CarDrivingStateManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictions.java"
+    to: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictions.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictionsConfiguration.java"
+    to: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictionsConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictionsManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/drivingstate/CarUxRestrictionsManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/evs/CarEvsBufferDescriptor.java"
+    to: "packages/services/Car/car-lib/src/android/car/evs/CarEvsBufferDescriptor.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/evs/CarEvsManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/evs/CarEvsManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/evs/CarEvsStatus.java"
+    to: "packages/services/Car/car-lib/src/android/car/evs/CarEvsStatus.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarHvacFanDirection.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarHvacFanDirection.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarPropertyConfig.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarPropertyConfig.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarPropertyValue.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarPropertyValue.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorConfig.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorConfig.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarSensorManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/CarVendorExtensionManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/CarVendorExtensionManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/cabin/CarCabinManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/cabin/CarCabinManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/hvac/CarHvacManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/hvac/CarHvacManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerPolicy.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerPolicy.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerPolicyFilter.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/power/CarPowerPolicyFilter.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/power/PowerComponent.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/power/PowerComponent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/power/PowerComponentUtil.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/power/PowerComponentUtil.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/CarInternalErrorException.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/CarInternalErrorException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/CarPropertyEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/CarPropertyEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/CarPropertyManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/CarPropertyManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyAccessDeniedSecurityException.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyAccessDeniedSecurityException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyNotAvailableAndRetryException.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyNotAvailableAndRetryException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyNotAvailableException.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/PropertyNotAvailableException.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleElectronicTollCollectionCardStatus.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleElectronicTollCollectionCardStatus.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleElectronicTollCollectionCardType.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleElectronicTollCollectionCardType.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleHalStatusCode.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleHalStatusCode.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleVendorPermission.java"
+    to: "packages/services/Car/car-lib/src/android/car/hardware/property/VehicleVendorPermission.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/input/CarInputHandlingService.java"
+    to: "packages/services/Car/car-lib/src/android/car/input/CarInputHandlingService.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/input/CarInputManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/input/CarInputManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/input/CustomInputEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/input/CustomInputEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/input/RotaryEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/input/RotaryEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/media/CarAudioManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/media/CarAudioManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/media/CarAudioPatchHandle.java"
+    to: "packages/services/Car/car-lib/src/android/car/media/CarAudioPatchHandle.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/media/CarMediaIntents.java"
+    to: "packages/services/Car/car-lib/src/android/car/media/CarMediaIntents.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/media/CarMediaManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/media/CarMediaManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/navigation/CarNavigationInstrumentCluster.java"
+    to: "packages/services/Car/car-lib/src/android/car/navigation/CarNavigationInstrumentCluster.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/navigation/CarNavigationStatusManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/navigation/CarNavigationStatusManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/DriverMonitoringDetection.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/DriverMonitoringDetection.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/GazeDetection.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/GazeDetection.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/OccupantAwarenessDetection.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/OccupantAwarenessDetection.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/OccupantAwarenessManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/OccupantAwarenessManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/Point3D.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/Point3D.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/occupantawareness/SystemStatusEvent.java"
+    to: "packages/services/Car/car-lib/src/android/car/occupantawareness/SystemStatusEvent.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/projection/ProjectionOptions.java"
+    to: "packages/services/Car/car-lib/src/android/car/projection/ProjectionOptions.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/projection/ProjectionStatus.java"
+    to: "packages/services/Car/car-lib/src/android/car/projection/ProjectionStatus.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/settings/CarSettings.java"
+    to: "packages/services/Car/car-lib/src/android/car/settings/CarSettings.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/CarStorageMonitoringManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/CarStorageMonitoringManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/IoStats.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/IoStats.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/IoStatsEntry.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/IoStatsEntry.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/LifetimeWriteInfo.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/LifetimeWriteInfo.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/UidIoRecord.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/UidIoRecord.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/WearEstimate.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/WearEstimate.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/storagemonitoring/WearEstimateChange.java"
+    to: "packages/services/Car/car-lib/src/android/car/storagemonitoring/WearEstimateChange.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/telemetry/CarTelemetryManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/telemetry/CarTelemetryManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/test/CarLocationTestHelper.java"
+    to: "packages/services/Car/car-lib/src/android/car/test/CarLocationTestHelper.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/test/CarTestManagerBinderWrapper.java"
+    to: "packages/services/Car/car-lib/src/android/car/test/CarTestManagerBinderWrapper.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/CarUserManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/CarUserManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/CommonResults.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/CommonResults.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/ExperimentalCarUserManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/ExperimentalCarUserManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/OperationResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/OperationResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserCreationResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserCreationResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserIdentificationAssociationResponse.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserIdentificationAssociationResponse.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserRemovalResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserRemovalResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserStartResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserStartResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserStopResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserStopResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/user/UserSwitchResult.java"
+    to: "packages/services/Car/car-lib/src/android/car/user/UserSwitchResult.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/util/concurrent/AndroidAsyncFuture.java"
+    to: "packages/services/Car/car-lib/src/android/car/util/concurrent/AndroidAsyncFuture.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/util/concurrent/AsyncFuture.java"
+    to: "packages/services/Car/car-lib/src/android/car/util/concurrent/AsyncFuture.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsAssociatedLayer.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsAssociatedLayer.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsAvailableLayers.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsAvailableLayers.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsClient.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsClient.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsClientManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsClientManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsLayer.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsLayer.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsLayerDependency.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsLayerDependency.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsLayersOffering.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsLayersOffering.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsOperationRecorder.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsOperationRecorder.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsProviderInfo.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsProviderInfo.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsPublisherClientService.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsPublisherClientService.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsRegistrationInfo.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsRegistrationInfo.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriberManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriberManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriptionHelper.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriptionHelper.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriptionState.java"
+    to: "packages/services/Car/car-lib/src/android/car/vms/VmsSubscriptionState.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/CarWatchdogManager.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/CarWatchdogManager.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseAlertThreshold.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseAlertThreshold.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseConfiguration.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseStats.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/IoOveruseStats.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/PackageKillableState.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/PackageKillableState.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/PerStateBytes.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/PerStateBytes.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/ResourceOveruseConfiguration.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/ResourceOveruseConfiguration.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/android/car/watchdog/ResourceOveruseStats.java"
+    to: "packages/services/Car/car-lib/src/android/car/watchdog/ResourceOveruseStats.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/CarPermission.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/CarPermission.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/CarRatedFloatListeners.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/CarRatedFloatListeners.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/CarRatedListeners.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/CarRatedListeners.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/ExcludeFromCodeCoverageGeneratedReport.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/ExcludeFromCodeCoverageGeneratedReport.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/FeatureUtil.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/FeatureUtil.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/PropertyPermissionMapping.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/PropertyPermissionMapping.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/SingleMessageHandler.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/SingleMessageHandler.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/common/CommonConstants.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/common/CommonConstants.java"
+  >
+  copy_before: <
+    from: "packages/services/Car/car-lib/src/com/android/car/internal/common/UserHelperLite.java"
+    to: "packages/services/Car/car-lib/src/com/android/car/internal/common/UserHelperLite.java"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" && rm -rf out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/home && mkdir -p out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/services/Car/car-lib/android.car/android_common/turbine-combined/android.car.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/android.car-stubs-docs_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/android.car-stubs-docs_removed.txt --stubs out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/stubsDir --exclude-documentation-from-stubs --hide UnavailableSymbol --no-docs --stub-packages android.car* --hide-package com.android.internal  --api-lint --report-even-if-suppressed __SBOX_SANDBOX_DIR__/out/api_lint_report.txt --baseline:api-lint packages/services/Car/car-lib/api/lint-baseline.txt --update-baseline:api-lint __SBOX_SANDBOX_DIR__/out/api_lint_baseline.txt --error-message:api-lint $'************************************************************\\nYour API changes are triggering API Lint warnings or errors.\\nTo make these errors go away, fix the code according to the\\nerror and/or warning messages above.\\n\\nIf it is not possible to do so, there are workarounds:\\n\\n1. You can suppress the errors with @SuppressLint(\"<id>\")\\n2. You can update the baseline by executing the following\\n   command:\\n       (cd $ANDROID_BUILD_TOP && cp \\\\\\n       \"out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/api_lint_baseline.txt\" \\\\\\n       \"packages/services/Car/car-lib/api/lint-baseline.txt\")\\n   To submit the revised baseline.txt to the main Android\\n   repository, you will need approval.\\n************************************************************\\n' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/packages/services/Car/car-lib/android-car-last-released-api/gen/last-released-api.txt --check-compatibility:removed:released packages/services/Car/car-lib/api/removed.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/android.car-stubs-docs-stubs.srcjar -C out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/stubsDir -D out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/api_lint.timestamp && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/android.car-stubs-docs-stubs.srcjar"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/android.car-stubs-docs-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/android.car-stubs-docs_api.txt"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/android.car-stubs-docs_api.txt"
+  >
+  copy_after: <
+    from: "out/android.car-stubs-docs_removed.txt"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/android.car-stubs-docs_removed.txt"
+  >
+  copy_after: <
+    from: "out/api_lint.timestamp"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/api_lint.timestamp"
+  >
+  copy_after: <
+    from: "out/api_lint_baseline.txt"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/api_lint_baseline.txt"
+  >
+  copy_after: <
+    from: "out/api_lint_report.txt"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/api_lint_report.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/check_last_released_api.timestamp"
+  >
+  input_hash: "6c81d9c5ce939980781878553e9ef08a39db98f3792905bbfe76a0761e0930c3"
+  rsp_files: <
+    file: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+
