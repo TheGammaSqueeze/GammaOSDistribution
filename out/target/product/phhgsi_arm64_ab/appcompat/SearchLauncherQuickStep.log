@@ -1,0 +1,1792 @@
+Package name: com.android.launcher3
+Module name in Android tree: SearchLauncherQuickStep
+Local path in Android tree: vendor/partner_gms/apps/SearchLauncher
+Install path on lineage_arm64_bgN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/SearchLauncherQuickStep/SearchLauncherQuickStep.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/animation/ArgbEvaluator;->getInstance()Landroid/animation/ArgbEvaluator; use(s):
+       Lcom/android/launcher3/taskbar/NavbarButtonsViewController;->updateNavButtonDarkIntensity()V
+
+#2: Linking unsupported Landroid/app/Activity;->getActivityToken()Landroid/os/IBinder; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->invalidateHomeTaskSnapshot(Landroid/app/Activity;)V
+
+#3: Linking blocked Landroid/app/Activity;->registerRemoteAnimations(Landroid/view/RemoteAnimationDefinition;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->registerRemoteAnimations(Lcom/android/systemui/shared/system/RemoteAnimationDefinitionCompat;)V
+
+#4: Linking blocked Landroid/app/Activity;->unregisterRemoteAnimations()V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->unregisterRemoteAnimations()V
+
+#5: Linking blocked Landroid/app/ActivityClient;->getInstance()Landroid/app/ActivityClient; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->invalidateHomeTaskSnapshot(Landroid/app/Activity;)V
+
+#6: Linking blocked Landroid/app/ActivityClient;->invalidateHomeTaskSnapshot(Landroid/os/IBinder;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->invalidateHomeTaskSnapshot(Landroid/app/Activity;)V
+
+#7: Linking blocked Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData;-><init>()V use(s):
+       Lcom/android/systemui/shared/recents/model/Task;-><init>()V
+       Lcom/android/systemui/shared/recents/model/Task;-><init>(Lcom/android/systemui/shared/recents/model/Task$TaskKey;)V
+       Lcom/android/systemui/shared/recents/model/Task;-><init>(Lcom/android/systemui/shared/recents/model/Task$TaskKey;IIZZLandroid/app/ActivityManager$TaskDescription;Landroid/content/ComponentName;)V
+
+#8: Linking blocked Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData;->set(Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData;)V use(s):
+       Lcom/android/systemui/shared/recents/model/Task;-><init>(Lcom/android/systemui/shared/recents/model/Task;)V
+       Lcom/android/systemui/shared/recents/model/Task;->setLastSnapshotData(Landroid/app/ActivityManager$RecentTaskInfo;)V
+
+#9: Linking max-target-p Landroid/app/ActivityManager$TaskDescription;->getBackgroundColor()I use(s):
+       Lcom/android/quickstep/views/FloatingWidgetView;->getDefaultBackgroundColor(Landroid/content/Context;Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;)I
+       Lcom/android/systemui/shared/recents/model/Task;->from(Lcom/android/systemui/shared/recents/model/Task$TaskKey;Landroid/app/TaskInfo;Z)Lcom/android/systemui/shared/recents/model/Task;
+       Lcom/android/systemui/shared/system/TaskDescriptionCompat;->getBackgroundColor()I
+
+#10: Linking blocked,test-api Landroid/app/ActivityManager$TaskDescription;->getIconFilename()Ljava/lang/String; use(s):
+       Lcom/android/systemui/shared/system/TaskDescriptionCompat;->getIcon(Landroid/app/ActivityManager$TaskDescription;I)Landroid/graphics/Bitmap;
+
+#11: Linking unsupported Landroid/app/ActivityManager$TaskDescription;->getInMemoryIcon()Landroid/graphics/Bitmap; use(s):
+       Lcom/android/systemui/shared/system/TaskDescriptionCompat;->getIcon(Landroid/app/ActivityManager$TaskDescription;I)Landroid/graphics/Bitmap; (2 occurrences)
+
+#12: Linking unsupported Landroid/app/ActivityManager$TaskDescription;->loadTaskDescriptionIcon(Ljava/lang/String;I)Landroid/graphics/Bitmap; use(s):
+       Lcom/android/systemui/shared/system/TaskDescriptionCompat;->getIcon(Landroid/app/ActivityManager$TaskDescription;I)Landroid/graphics/Bitmap;
+
+#13: Linking unsupported Landroid/app/ActivityManager;->getService()Landroid/app/IActivityManager; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->closeSystemWindows(Ljava/lang/String;)V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getCurrentUserId()I
+       Lorg/lineageos/internal/util/ActionUtils;->getForegroundTaskPackageName(Landroid/content/Context;I)Ljava/lang/String;
+       Lorg/lineageos/internal/util/ActionUtils;->getLastTask(Landroid/content/Context;I)Landroid/app/ActivityManager$RecentTaskInfo;
+
+#14: Linking blocked,test-api Landroid/app/ActivityManager;->isHighEndGfx()Z use(s):
+       Lcom/android/systemui/shared/system/BlurUtils;->supportsBlursOnWindows()Z
+
+#15: Linking unsupported Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager; use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->killForegroundAppInternal(Landroid/content/Context;I)Z
+       Lorg/lineageos/internal/util/ActionUtils;->switchToLastAppInternal(Landroid/content/Context;I)Z
+
+#16: Linking max-target-o Landroid/app/ActivityOptions;->getRemoteAnimationAdapter()Landroid/view/RemoteAnimationAdapter; use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+
+#17: Linking blocked,test-api Landroid/app/ActivityOptions;->makeCustomTaskAnimation(Landroid/content/Context;IILandroid/os/Handler;Landroid/app/ActivityOptions$OnAnimationStartedListener;Landroid/app/ActivityOptions$OnAnimationFinishedListener;)Landroid/app/ActivityOptions; use(s):
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->makeCustomAnimation(Landroid/content/Context;IILjava/lang/Runnable;Landroid/os/Handler;)Landroid/app/ActivityOptions;
+
+#18: Linking unsupported Landroid/app/ActivityOptions;->makeMultiThumbFutureAspectScaleAnimation(Landroid/content/Context;Landroid/os/Handler;Landroid/view/IAppTransitionAnimationSpecsFuture;Landroid/app/ActivityOptions$OnAnimationStartedListener;Z)Landroid/app/ActivityOptions; use(s):
+       Lcom/android/systemui/shared/recents/view/RecentsTransition;->createAspectScaleAnimation(Landroid/content/Context;Landroid/os/Handler;ZLcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecsFuture;Ljava/lang/Runnable;)Landroid/app/ActivityOptions;
+
+#19: Linking blocked Landroid/app/ActivityOptions;->makeRemoteAnimation(Landroid/view/RemoteAnimationAdapter;Landroid/window/RemoteTransition;)Landroid/app/ActivityOptions; use(s):
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->makeRemoteAnimation(Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;)Landroid/app/ActivityOptions;
+
+#20: Linking blocked Landroid/app/ActivityOptions;->makeRemoteTransition(Landroid/window/RemoteTransition;)Landroid/app/ActivityOptions; use(s):
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->makeRemoteTransition(Lcom/android/systemui/shared/system/RemoteTransitionCompat;)Landroid/app/ActivityOptions;
+
+#21: Linking blocked Landroid/app/ActivityOptions;->setFreezeRecentTasksReordering()V use(s):
+       Lcom/android/quickstep/util/SplitSelectStateController;->launchTasks(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;ILjava/util/function/Consumer;ZF)V
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->setFreezeRecentTasksList(Landroid/app/ActivityOptions;)Landroid/app/ActivityOptions;
+
+#22: Linking blocked Landroid/app/ActivityOptions;->setLaunchCookie(Landroid/os/IBinder;)V use(s):
+       Lcom/android/launcher3/BaseQuickstepLauncher;->addLaunchCookie(Lcom/android/launcher3/model/data/ItemInfo;Landroid/app/ActivityOptions;)V
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+
+#23: Linking blocked,test-api Landroid/app/ActivityOptions;->setLaunchWindowingMode(I)V use(s):
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->addTaskInfo(Landroid/app/ActivityOptions;Lcom/android/systemui/shared/recents/model/Task$TaskKey;)V
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->makeFreeformOptions()Landroid/app/ActivityOptions;
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->makeSplitScreenOptions(ZZ)Landroid/app/ActivityOptions;
+
+#24: Linking blocked Landroid/app/ActivityOptions;->setPendingIntentLaunchFlags(I)V use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+
+#25: Linking blocked Landroid/app/ActivityOptions;->setSourceInfo(IJ)V use(s):
+       Lcom/android/systemui/shared/system/ActivityOptionsCompat;->setLauncherSourceInfo(Landroid/app/ActivityOptions;J)Landroid/app/ActivityOptions;
+
+#26: Linking blocked Landroid/app/ActivityOptions;->setSplashscreenStyle(I)V use(s):
+       Lcom/android/launcher3/BaseQuickstepLauncher;->getActivityLaunchOptions(Landroid/view/View;Lcom/android/launcher3/model/data/ItemInfo;)Lcom/android/launcher3/util/ActivityOptionsWrapper;
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+       Lcom/android/quickstep/RecentsActivity;->getActivityLaunchOptions(Landroid/view/View;Lcom/android/launcher3/model/data/ItemInfo;)Lcom/android/launcher3/util/ActivityOptionsWrapper;
+       Lcom/android/quickstep/TaskShortcutFactory$MultiWindowSystemShortcut;->onClick(Landroid/view/View;)V
+
+#27: Linking blocked Landroid/app/ActivityOptions;->setTransientLaunch()Landroid/app/ActivityOptions; use(s):
+       Lcom/android/quickstep/TaskAnimationManager;->startRecentsAnimation(Lcom/android/quickstep/GestureState;Landroid/content/Intent;Lcom/android/quickstep/RecentsAnimationCallbacks$RecentsAnimationListener;)Lcom/android/quickstep/RecentsAnimationCallbacks;
+
+#28: Linking blocked Landroid/app/ActivityTaskManager;->getInstance()Landroid/app/ActivityTaskManager; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;-><init>()V
+
+#29: Linking blocked Landroid/app/ActivityTaskManager;->getRecentTasks(III)Ljava/util/List; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getRecentTasks(II)Ljava/util/List;
+
+#30: Linking blocked Landroid/app/ActivityTaskManager;->getService()Landroid/app/IActivityTaskManager; use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+       Lcom/android/quickstep/RecentsAnimationDeviceState;-><init>(Landroid/content/Context;Z)V
+       Lcom/android/quickstep/util/AssistContentRequester;-><init>(Landroid/content/Context;)V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->cancelRecentsAnimation(Z)V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getTaskThumbnail(IZ)Lcom/android/systemui/shared/recents/model/ThumbnailData;
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isLockTaskKioskModeActive()Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isLockToAppActive()Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isScreenPinningActive()Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->removeAllRecentTasks()V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->removeTask(I)V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->startActivityFromRecents(ILandroid/app/ActivityOptions;)Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->startRecentsActivity(Landroid/content/Intent;JLcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->detachNavigationBarFromApp(Z)V
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->addListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->removeListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+       Lorg/lineageos/internal/util/ActionUtils;->killForegroundAppInternal(Landroid/content/Context;I)Z
+
+#31: Linking blocked Landroid/app/ActivityTaskManager;->getTasks(IZ)Ljava/util/List; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getRunningTask(Z)Landroid/app/ActivityManager$RunningTaskInfo;
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getRunningTasks(Z)[Landroid/app/ActivityManager$RunningTaskInfo;
+
+#32: Linking blocked,test-api Landroid/app/ActivityTaskManager;->supportsMultiWindow(Landroid/content/Context;)Z use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->supportsFreeformMultiWindow(Landroid/content/Context;)Z
+
+#33: Linking unsupported Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread; use(s):
+       Lcom/android/quickstep/util/SplitSelectStateController;->launchTasks(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;ILjava/util/function/Consumer;ZF)V (2 occurrences)
+
+#34: Linking unsupported Landroid/app/ActivityThread;->getApplicationThread()Landroid/app/ActivityThread$ApplicationThread; use(s):
+       Lcom/android/quickstep/util/SplitSelectStateController;->launchTasks(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;ILjava/util/function/Consumer;ZF)V (2 occurrences)
+
+#35: Linking unsupported Landroid/app/AppGlobals;->getInitialApplication()Landroid/app/Application; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isScreenPinningEnabled()Z
+       Lcom/android/systemui/shared/system/DevicePolicyManagerWrapper;-><clinit>()V
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+#36: Linking unsupported Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager; use(s):
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;-><clinit>()V
+
+#37: Linking unsupported Landroid/app/IActivityManager;->closeSystemDialogs(Ljava/lang/String;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->closeSystemWindows(Ljava/lang/String;)V
+
+#38: Linking unsupported Landroid/app/IActivityManager;->forceStopPackage(Ljava/lang/String;I)V use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->killForegroundAppInternal(Landroid/content/Context;I)Z
+
+#39: Linking unsupported Landroid/app/IActivityManager;->getCurrentUser()Landroid/content/pm/UserInfo; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getCurrentUserId()I
+
+#40: Linking blocked Landroid/app/IActivityManager;->getFocusedRootTaskInfo()Landroid/app/ActivityTaskManager$RootTaskInfo; use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->getForegroundTaskPackageName(Landroid/content/Context;I)Ljava/lang/String;
+
+#41: Linking unsupported Landroid/app/IActivityManager;->getRecentTasks(III)Landroid/content/pm/ParceledListSlice; use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->getLastTask(Landroid/content/Context;I)Landroid/app/ActivityManager$RecentTaskInfo;
+
+#42: Linking unsupported Landroid/app/IActivityManager;->moveTaskToFront(Landroid/app/IApplicationThread;Ljava/lang/String;IILandroid/os/Bundle;)V use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->switchToLastAppInternal(Landroid/content/Context;I)Z
+
+#43: Linking blocked Landroid/app/IActivityTaskManager;->cancelRecentsAnimation(Z)V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->cancelRecentsAnimation(Z)V
+
+#44: Linking blocked Landroid/app/IActivityTaskManager;->detachNavigationBarFromApp(Landroid/os/IBinder;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->detachNavigationBarFromApp(Z)V
+
+#45: Linking blocked Landroid/app/IActivityTaskManager;->getLockTaskModeState()I use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isLockTaskKioskModeActive()Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isLockToAppActive()Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isScreenPinningActive()Z
+       Lorg/lineageos/internal/util/ActionUtils;->killForegroundAppInternal(Landroid/content/Context;I)Z
+
+#46: Linking blocked Landroid/app/IActivityTaskManager;->getRootTaskInfo(II)Landroid/app/ActivityTaskManager$RootTaskInfo; use(s):
+       Lcom/android/quickstep/RecentsAnimationDeviceState;-><init>(Landroid/content/Context;Z)V
+
+#47: Linking blocked Landroid/app/IActivityTaskManager;->getTaskSnapshot(IZ)Landroid/window/TaskSnapshot; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getTaskThumbnail(IZ)Lcom/android/systemui/shared/recents/model/ThumbnailData;
+
+#48: Linking blocked Landroid/app/IActivityTaskManager;->registerRemoteAnimationForNextActivityStart(Ljava/lang/String;Landroid/view/RemoteAnimationAdapter;Landroid/os/IBinder;)V use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z
+
+#49: Linking blocked Landroid/app/IActivityTaskManager;->registerTaskStackListener(Landroid/app/ITaskStackListener;)V use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->addListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+
+#50: Linking blocked Landroid/app/IActivityTaskManager;->removeAllVisibleRecentTasks()V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->removeAllRecentTasks()V
+
+#51: Linking blocked Landroid/app/IActivityTaskManager;->removeTask(I)Z use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->removeTask(I)V
+
+#52: Linking blocked Landroid/app/IActivityTaskManager;->requestAssistDataForTask(Landroid/app/IAssistDataReceiver;ILjava/lang/String;)Z use(s):
+       Lcom/android/quickstep/util/AssistContentRequester;->lambda$requestAssistContent$0$AssistContentRequester(Lcom/android/quickstep/util/AssistContentRequester$Callback;I)V
+
+#53: Linking blocked Landroid/app/IActivityTaskManager;->startActivityFromRecents(ILandroid/os/Bundle;)I use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->startActivityFromRecents(ILandroid/app/ActivityOptions;)Z
+
+#54: Linking blocked Landroid/app/IActivityTaskManager;->startRecentsActivity(Landroid/content/Intent;JLandroid/view/IRecentsAnimationRunner;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->startRecentsActivity(Landroid/content/Intent;JLcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+
+#55: Linking blocked Landroid/app/IActivityTaskManager;->unregisterTaskStackListener(Landroid/app/ITaskStackListener;)V use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->removeListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+
+#56: Linking unsupported Landroid/app/IAssistDataReceiver$Stub;-><init>()V use(s):
+       Lcom/android/quickstep/util/AssistContentRequester$AssistDataReceiver;-><init>(Lcom/android/quickstep/util/AssistContentRequester$Callback;Lcom/android/quickstep/util/AssistContentRequester;)V
+
+#57: Linking max-target-p Landroid/app/KeyguardManager;->isDeviceLocked(I)Z use(s):
+       Lcom/android/systemui/shared/system/KeyguardManagerCompat;->isDeviceLocked(I)Z
+
+#58: Linking max-target-o Landroid/app/LoadedApk;->makePaths(Landroid/app/ActivityThread;ZLandroid/content/pm/ApplicationInfo;Ljava/util/List;Ljava/util/List;)V use(s):
+       Lcom/android/systemui/shared/plugins/PluginInstance$Factory;->getClassLoader(Landroid/content/pm/ApplicationInfo;Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
+
+#59: Linking blocked Landroid/app/NotificationGroup;->getName()Ljava/lang/String; use(s):
+       Llineageos/app/ProfileGroup;->matches(Landroid/app/NotificationGroup;Z)Z
+
+#60: Linking blocked Landroid/app/NotificationGroup;->getUuid()Ljava/util/UUID; use(s):
+       Llineageos/app/ProfileGroup;->matches(Landroid/app/NotificationGroup;Z)Z (2 occurrences)
+       Llineageos/app/ProfileManager;->getActiveProfileGroup(Ljava/lang/String;)Llineageos/app/ProfileGroup;
+
+#61: Linking max-target-o Landroid/app/NotificationManager;->getZenMode()I use(s):
+       Lorg/lineageos/internal/notification/LineageBatteryLights$1;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+       Lorg/lineageos/internal/notification/LineageBatteryLights;-><init>(Landroid/content/Context;Lorg/lineageos/internal/notification/LineageBatteryLights$LedUpdater;)V
+
+#62: Linking blocked,test-api Landroid/app/PictureInPictureParams;->getSourceRectHint()Landroid/graphics/Rect; use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->createWindowAnimationToPip(Lcom/android/quickstep/SwipeUpAnimationLogic$HomeAnimationFactory;Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;F)Lcom/android/quickstep/util/SwipePipToHomeAnimator;
+
+#63: Linking blocked Landroid/app/PictureInPictureParams;->isAutoEnterEnabled()Z use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->animateToProgressInternal(FFJLandroid/view/animation/Interpolator;Lcom/android/quickstep/GestureState$GestureEndTarget;Landroid/graphics/PointF;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+
+#64: Linking unsupported Landroid/app/TaskStackListener;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;-><init>(Landroid/os/Looper;)V
+
+#65: Linking blocked Landroid/app/WallpaperManager;->setWallpaperZoomOut(Landroid/os/IBinder;F)V use(s):
+       Lcom/android/systemui/shared/system/WallpaperManagerCompat;->setWallpaperZoomOut(Landroid/os/IBinder;F)V
+
+#66: Linking unsupported,test-api Landroid/app/WindowConfiguration;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#67: Linking blocked,test-api Landroid/app/WindowConfiguration;->getActivityType()I use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler$5;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+       Lcom/android/quickstep/util/AssistantUtilities;->isExcludedAssistant(Landroid/app/TaskInfo;)Z
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isHomeTask(Landroid/app/ActivityManager$RunningTaskInfo;)Z
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#68: Linking blocked,test-api Landroid/app/WindowConfiguration;->getBounds()Landroid/graphics/Rect; use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->createWindowAnimationToPip(Lcom/android/quickstep/SwipeUpAnimationLogic$HomeAnimationFactory;Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;F)Lcom/android/quickstep/util/SwipePipToHomeAnimator;
+
+#69: Linking blocked,test-api Landroid/app/WindowConfiguration;->getRotation()I use(s):
+       Lcom/android/systemui/shared/system/ConfigurationCompat;->getWindowConfigurationRotation(Landroid/content/res/Configuration;)I
+
+#70: Linking blocked,test-api Landroid/app/WindowConfiguration;->getWindowingMode()I use(s):
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#71: Linking max-target-o Landroid/app/WindowConfiguration;->windowingModeToString(I)Ljava/lang/String; use(s):
+       Lcom/android/wm/shell/util/GroupedRecentTaskInfo;->getTaskInfo(Landroid/app/ActivityManager$RecentTaskInfo;)Ljava/lang/String;
+
+#72: Linking blocked Landroid/app/admin/DevicePolicyManager;->requireSecureKeyguard()Z use(s):
+       Llineageos/profiles/LockSettings;->processOverride(Landroid/content/Context;Lcom/android/internal/policy/IKeyguardService;)V
+
+#73: Linking unsupported Landroid/content/ContentResolver;->acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider; use(s):
+       Llineageos/providers/LineageSettings$ContentProviderHolder;->getProvider(Landroid/content/ContentResolver;)Landroid/content/IContentProvider;
+
+#74: Linking max-target-o Landroid/content/ContentResolver;->createSqlQueryBundle(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#75: Linking blocked Landroid/content/ContentResolver;->getAttributionSource()Landroid/content/AttributionSource; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String; (2 occurrences)
+       Llineageos/providers/LineageSettings$NameValueCache;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+#76: Linking max-target-o Landroid/content/ContentResolver;->getUserId()I use(s):
+       Llineageos/providers/LineageSettings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;)F
+       Llineageos/providers/LineageSettings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
+       Llineageos/providers/LineageSettings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+       Llineageos/providers/LineageSettings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$Global;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;)J
+       Llineageos/providers/LineageSettings$Global;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
+       Llineageos/providers/LineageSettings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Global;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
+       Llineageos/providers/LineageSettings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$Global;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
+       Llineageos/providers/LineageSettings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$Secure;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;)F
+       Llineageos/providers/LineageSettings$Secure;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
+       Llineageos/providers/LineageSettings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+       Llineageos/providers/LineageSettings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$Secure;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;)J
+       Llineageos/providers/LineageSettings$Secure;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
+       Llineageos/providers/LineageSettings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Secure;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
+       Llineageos/providers/LineageSettings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$Secure;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
+       Llineageos/providers/LineageSettings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$System;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;)F
+       Llineageos/providers/LineageSettings$System;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
+       Llineageos/providers/LineageSettings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+       Llineageos/providers/LineageSettings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$System;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;)J
+       Llineageos/providers/LineageSettings$System;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
+       Llineageos/providers/LineageSettings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$System;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
+       Llineageos/providers/LineageSettings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$System;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
+       Llineageos/providers/LineageSettings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+#77: Linking unsupported Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V use(s):
+       Lorg/lineageos/internal/applications/LongScreen$SettingsObserver;->observe()V
+       Lorg/lineageos/internal/buttons/LineageButtons$SettingsObserver;->observe()V
+       Lorg/lineageos/internal/notification/LineageBatteryLights$SettingsObserver;->observe()V (8 occurrences)
+       Lorg/lineageos/internal/notification/LineageNotificationLights$SettingsObserver;->observe()V (11 occurrences)
+       Lorg/lineageos/internal/statusbar/NetworkTraffic$SettingsObserver;->observe()V (4 occurrences)
+
+#78: Linking unsupported Landroid/content/Context;->createApplicationContext(Landroid/content/pm/ApplicationInfo;I)Landroid/content/Context; use(s):
+       Lcom/android/systemui/shared/plugins/PluginInstance$Factory;->create(Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Landroid/content/ComponentName;Ljava/lang/Class;)Lcom/android/systemui/shared/plugins/PluginInstance;
+
+#79: Linking blocked,test-api Landroid/content/Context;->getDisplayId()I use(s):
+       Lcom/android/systemui/shared/system/RotationWatcher;->enable()V
+
+#80: Linking max-target-o Landroid/content/Context;->getIApplicationThread()Landroid/app/IApplicationThread; use(s):
+       Lcom/android/quickstep/TaskAnimationManager;->startRecentsAnimation(Lcom/android/quickstep/GestureState;Landroid/content/Intent;Lcom/android/quickstep/RecentsAnimationCallbacks$RecentsAnimationListener;)Lcom/android/quickstep/RecentsAnimationCallbacks;
+
+#81: Linking unsupported,test-api Landroid/content/Context;->getUserId()I use(s):
+       Lcom/android/quickstep/util/ImageActionUtils;->shareImage(Landroid/content/Context;Ljava/util/function/Supplier;Landroid/graphics/RectF;Landroid/content/pm/ShortcutInfo;Landroid/app/prediction/AppTarget;Ljava/lang/String;)V (3 occurrences)
+       Lcom/android/systemui/shared/system/ContextUtils;->getUserId(Landroid/content/Context;)I
+
+#82: Linking blocked Landroid/content/IContentProvider;->call(Landroid/content/AttributionSource;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$NameValueCache;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+#83: Linking blocked Landroid/content/IContentProvider;->query(Landroid/content/AttributionSource;Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ICancellationSignal;)Landroid/database/Cursor; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#84: Linking max-target-o Landroid/content/Intent;->fixUris(I)V use(s):
+       Lcom/android/quickstep/util/ImageActionUtils;->shareImage(Landroid/content/Context;Ljava/util/function/Supplier;Landroid/graphics/RectF;Landroid/content/pm/ShortcutInfo;Landroid/app/prediction/AppTarget;Ljava/lang/String;)V
+
+#85: Linking max-target-o Landroid/content/Intent;->prepareToLeaveUser(I)V use(s):
+       Lcom/android/quickstep/util/ImageActionUtils;->shareImage(Landroid/content/Context;Ljava/util/function/Supplier;Landroid/graphics/RectF;Landroid/content/pm/ShortcutInfo;Landroid/app/prediction/AppTarget;Ljava/lang/String;)V
+
+#86: Linking unsupported Landroid/content/pm/IPackageManager;->getActivityInfo(Landroid/content/ComponentName;II)Landroid/content/pm/ActivityInfo; use(s):
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;->getActivityInfo(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;
+
+#87: Linking unsupported Landroid/content/pm/IPackageManager;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName; use(s):
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName;
+
+#88: Linking unsupported Landroid/content/pm/IPackageManager;->resolveIntent(Landroid/content/Intent;Ljava/lang/String;II)Landroid/content/pm/ResolveInfo; use(s):
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+#89: Linking blocked Landroid/content/pm/LauncherApps;->getMainActivityLaunchIntent(Landroid/content/ComponentName;Landroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent; use(s):
+       Lcom/android/systemui/shared/system/LauncherAppsCompat;->getMainActivityLaunchIntent(Landroid/content/pm/LauncherApps;Landroid/content/ComponentName;Landroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;
+
+#90: Linking unsupported Landroid/content/pm/PackageManager;->queryIntentActivitiesAsUser(Landroid/content/Intent;II)Ljava/util/List; use(s):
+       Llineageos/preference/ConstraintsHelper;->resolveIntent(Landroid/content/Context;Landroid/content/Intent;)Z
+       Llineageos/preference/RemotePreference;->getReceiverIntent()Landroid/content/Intent;
+
+#91: Linking unsupported Landroid/content/pm/PackageManager;->resolveActivityAsUser(Landroid/content/Intent;II)Landroid/content/pm/ResolveInfo; use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->resolveCurrentLauncherPackage(Landroid/content/Context;I)Ljava/lang/String;
+
+#92: Linking max-target-r Landroid/content/pm/ParceledListSlice;->getList()Ljava/util/List; use(s):
+       Lorg/lineageos/internal/util/ActionUtils;->getLastTask(Landroid/content/Context;I)Landroid/app/ActivityManager$RecentTaskInfo;
+
+#93: Linking max-target-r Landroid/graphics/CanvasProperty;->createFloat(F)Landroid/graphics/CanvasProperty; use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->drawHardware(Landroid/graphics/RecordingCanvas;)V (3 occurrences)
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->enterHardware()V (10 occurrences)
+
+#94: Linking max-target-r Landroid/graphics/CanvasProperty;->createPaint(Landroid/graphics/Paint;)Landroid/graphics/CanvasProperty; use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->enterHardware()V
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->exitHardware()V
+
+#95: Linking unsupported Landroid/graphics/ColorMatrixColorFilter;->setColorMatrix(Landroid/graphics/ColorMatrix;)V use(s):
+       Lcom/android/quickstep/interaction/AllSetActivity$BgDrawable;->draw(Landroid/graphics/Canvas;)V
+
+#96: Linking blocked Landroid/graphics/RecordingCanvas;->drawCircle(Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;)V use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->drawHardware(Landroid/graphics/RecordingCanvas;)V
+
+#97: Linking blocked Landroid/graphics/RecordingCanvas;->drawRoundRect(Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;Landroid/graphics/CanvasProperty;)V use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->drawHardware(Landroid/graphics/RecordingCanvas;)V
+
+#98: Linking max-target-o Landroid/graphics/Rect;->inset(Landroid/graphics/Rect;)V use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator$Builder;->build()Lcom/android/quickstep/util/SwipePipToHomeAnimator;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndCrop(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndRotate(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#99: Linking unsupported Landroid/graphics/drawable/AnimatedVectorDrawable;->forceAnimationOnUI()V use(s):
+       Lorg/lineageos/internal/graphics/drawable/StopMotionVectorDrawable;->getAnimatorSetViaReflection()V
+
+#100: Linking blocked Landroid/hardware/devicestate/DeviceStateManager$FoldStateListener;-><init>(Landroid/content/Context;Ljava/util/function/Consumer;)V use(s):
+       Lcom/android/systemui/unfold/updates/DeviceFoldStateProvider$FoldStateListener;-><init>(Lcom/android/systemui/unfold/updates/DeviceFoldStateProvider;Landroid/content/Context;)V
+
+#101: Linking blocked,test-api Landroid/hardware/devicestate/DeviceStateManager;->registerCallback(Ljava/util/concurrent/Executor;Landroid/hardware/devicestate/DeviceStateManager$DeviceStateCallback;)V use(s):
+       Lcom/android/systemui/unfold/updates/DeviceFoldStateProvider;->start()V
+
+#102: Linking blocked,test-api Landroid/hardware/devicestate/DeviceStateManager;->unregisterCallback(Landroid/hardware/devicestate/DeviceStateManager$DeviceStateCallback;)V use(s):
+       Lcom/android/systemui/unfold/updates/DeviceFoldStateProvider;->stop()V
+
+#103: Linking unsupported Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; use(s):
+       Lcom/android/systemui/shared/system/InputMonitorCompat;-><init>(Ljava/lang/String;I)V
+
+#104: Linking blocked Landroid/hardware/input/InputManager;->monitorGestureInput(Ljava/lang/String;I)Landroid/view/InputMonitor; use(s):
+       Lcom/android/systemui/shared/system/InputMonitorCompat;-><init>(Ljava/lang/String;I)V
+
+#105: Linking unsupported Landroid/media/AudioManager;->setRingerModeInternal(I)V use(s):
+       Llineageos/profiles/RingModeSettings;->processOverride(Landroid/content/Context;)V
+
+#106: Linking unsupported Landroid/media/session/MediaSessionLegacyHelper;->getHelper(Landroid/content/Context;)Landroid/media/session/MediaSessionLegacyHelper; use(s):
+       Lorg/lineageos/internal/buttons/LineageButtons;->handleVolumeKey(Landroid/view/KeyEvent;Z)Z
+
+#107: Linking max-target-o Landroid/media/session/MediaSessionLegacyHelper;->sendVolumeKeyEvent(Landroid/view/KeyEvent;IZ)V use(s):
+       Lorg/lineageos/internal/buttons/LineageButtons;->handleVolumeKey(Landroid/view/KeyEvent;Z)Z
+
+#108: Linking max-target-o Landroid/media/session/MediaSessionManager;->dispatchVolumeKeyEventAsSystemService(Landroid/view/KeyEvent;I)V use(s):
+       Lcom/android/quickstep/inputconsumers/OverviewInputConsumer;->onKeyEvent(Landroid/view/KeyEvent;)V
+
+#109: Linking blocked Landroid/media/session/MediaSessionManager;->getActiveSessionsForUser(Landroid/content/ComponentName;Landroid/os/UserHandle;)Ljava/util/List; use(s):
+       Lorg/lineageos/internal/buttons/LineageButtons;->onSkipTrackEvent(Landroid/view/KeyEvent;)V
+
+#110: Linking unsupported Landroid/net/NetworkStats;->getValues(ILandroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats$Entry; use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#111: Linking unsupported Landroid/net/NetworkStats;->size()I use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#112: Linking unsupported Landroid/nfc/NfcAdapter;->getAdapterState()I use(s):
+       Llineageos/profiles/ConnectionSettings;->processOverride(Landroid/content/Context;)V
+
+#113: Linking unsupported Landroid/nfc/NfcAdapter;->getNfcAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter; use(s):
+       Llineageos/profiles/ConnectionSettings;->processOverride(Landroid/content/Context;)V
+
+#114: Linking unsupported Landroid/os/INetworkManagementService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/os/INetworkManagementService; use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+#115: Linking max-target-o Landroid/os/INetworkManagementService;->getNetworkStatsTethering(I)Landroid/net/NetworkStats; use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#116: Linking unsupported Landroid/os/IRemoteCallback$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/recents/view/RecentsTransition$2;-><init>(Landroid/os/Handler;Ljava/lang/Runnable;)V
+
+#117: Linking unsupported Landroid/os/Message;->setCallback(Ljava/lang/Runnable;)Landroid/os/Message; use(s):
+       Lcom/android/systemui/shared/recents/utilities/Utilities;->postAtFrontOfQueueAsynchronously(Landroid/os/Handler;Ljava/lang/Runnable;)V
+
+#118: Linking unsupported Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->showVoiceSession(Landroid/os/IBinder;Landroid/os/Bundle;I)Z
+       Llineageos/app/LineageGlobalActions;->getService()Llineageos/app/ILineageGlobalActions;
+       Llineageos/app/ProfileManager;->getService()Llineageos/app/IProfileManager;
+       Llineageos/hardware/LineageHardwareManager;->getService()Llineageos/hardware/ILineageHardwareService;
+       Llineageos/hardware/LiveDisplayManager;->getService()Llineageos/hardware/ILiveDisplayService;
+       Llineageos/trust/TrustInterface;->getService()Llineageos/trust/ITrustInterface;
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+#119: Linking unsupported Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V use(s):
+       Lcom/android/systemui/shared/recents/utilities/AppTrace;->start(Ljava/lang/String;)V
+       Lcom/android/systemui/shared/recents/utilities/AppTrace;->start(Ljava/lang/String;I)V
+
+#120: Linking unsupported Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V use(s):
+       Lcom/android/systemui/shared/recents/utilities/AppTrace;->end(Ljava/lang/String;)V
+       Lcom/android/systemui/shared/recents/utilities/AppTrace;->end(Ljava/lang/String;I)V
+
+#121: Linking unsupported Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V use(s):
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$2;->onFrameDraw(J)V
+
+#122: Linking unsupported Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V use(s):
+       Lcom/android/systemui/shared/recents/utilities/AppTrace;->count(Ljava/lang/String;I)V
+
+#123: Linking unsupported Landroid/os/Trace;->traceEnd(J)V use(s):
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$2;->onFrameDraw(J)V
+
+#124: Linking unsupported Landroid/os/UserHandle;-><init>(I)V use(s):
+       Llineageos/profiles/ConnectionSettings;->processOverride(Landroid/content/Context;)V
+
+#125: Linking unsupported Landroid/os/UserHandle;->getCallingUserId()I use(s):
+       Lcom/android/systemui/shared/system/PackageManagerWrapper;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+       Lorg/lineageos/internal/util/PowerMenuUtils;->isAdvancedRestartPossible(Landroid/content/Context;)Z
+
+#126: Linking unsupported Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z use(s):
+       Llineageos/app/Profile;->doSelect(Landroid/content/Context;Lcom/android/internal/policy/IKeyguardService;)V
+
+#127: Linking unsupported Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I use(s):
+       Lorg/lineageos/internal/notification/LineageNotificationLights$SettingsObserver;->update()V
+
+#128: Linking unsupported Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z use(s):
+       Llineageos/app/Profile;->doSelect(Landroid/content/Context;Lcom/android/internal/policy/IKeyguardService;)V
+
+#129: Linking blocked Landroid/service/wallpaper/IWallpaperEngine;->scalePreview(Landroid/graphics/Rect;)V use(s):
+       Lcom/android/systemui/shared/system/WallpaperEngineCompat;->scalePreview(Landroid/graphics/Rect;)V
+
+#130: Linking unsupported Landroid/util/MathUtils;->constrain(III)I use(s):
+       Llineageos/util/ColorUtils;->temperatureToRGB(I)[F
+
+#131: Linking unsupported Landroid/util/MathUtils;->lerp(FFF)F use(s):
+       Llineageos/util/ColorUtils;->interp(IF)F
+
+#132: Linking blocked Landroid/util/MathUtils;->saturate(F)F use(s):
+       Lcom/android/systemui/unfold/progress/PhysicsBasedUnfoldTransitionProgressProvider;->onHingeAngleUpdate(F)V
+
+#133: Linking unsupported Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I use(s):
+       Lorg/lineageos/internal/notification/LineageNotificationLights;->parseNotificationPulseCustomValuesString(Ljava/lang/String;)V (3 occurrences)
+
+#134: Linking unsupported Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I use(s):
+       Lorg/lineageos/internal/notification/LineageNotificationLights;->generateLedColorForPackageName(Ljava/lang/String;)I
+
+#135: Linking unsupported Landroid/view/AppTransitionAnimationSpec;-><init>(ILandroid/hardware/HardwareBuffer;Landroid/graphics/Rect;)V use(s):
+       Lcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecCompat;->toAppTransitionAnimationSpec()Landroid/view/AppTransitionAnimationSpec;
+
+#136: Linking unsupported Landroid/view/BatchedInputEventReceiver;-><init>(Landroid/view/InputChannel;Landroid/os/Looper;Landroid/view/Choreographer;)V use(s):
+       Lcom/android/systemui/shared/system/InputChannelCompat$InputEventReceiver$1;-><init>(Lcom/android/systemui/shared/system/InputChannelCompat$InputEventReceiver;Landroid/view/InputChannel;Landroid/os/Looper;Landroid/view/Choreographer;Lcom/android/systemui/shared/system/InputChannelCompat$InputEventListener;)V
+       Lcom/android/systemui/shared/system/InputConsumerController$InputEventReceiver;-><init>(Lcom/android/systemui/shared/system/InputConsumerController;Landroid/view/InputChannel;Landroid/os/Looper;Landroid/view/Choreographer;)V
+
+#137: Linking max-target-o Landroid/view/BatchedInputEventReceiver;->dispose()V use(s):
+       Lcom/android/systemui/shared/system/InputChannelCompat$InputEventReceiver;->dispose()V
+
+#138: Linking blocked Landroid/view/BatchedInputEventReceiver;->setBatchingEnabled(Z)V use(s):
+       Lcom/android/systemui/shared/system/InputChannelCompat$InputEventReceiver;->setBatchingEnabled(Z)V
+
+#139: Linking max-target-o Landroid/view/Choreographer;->getMainThreadInstance()Landroid/view/Choreographer; use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;->scheduleFrameUpdate()V
+
+#140: Linking unsupported Landroid/view/Choreographer;->getSfInstance()Landroid/view/Choreographer; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newSurfaceControlTransaction()Landroid/view/SurfaceControl$Transaction;
+       Lcom/android/systemui/shared/system/InputConsumerController;->registerInputConsumer(Z)V
+
+#141: Linking blocked Landroid/view/Choreographer;->getVsyncId()J use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newSurfaceControlTransaction()Landroid/view/SurfaceControl$Transaction;
+
+#142: Linking blocked Landroid/view/CompositionSamplingListener;-><init>(Ljava/util/concurrent/Executor;)V use(s):
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper$3;-><init>(Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;Ljava/util/concurrent/Executor;)V
+
+#143: Linking blocked Landroid/view/CompositionSamplingListener;->destroy()V use(s):
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->stopAndDestroy()V
+
+#144: Linking blocked Landroid/view/CompositionSamplingListener;->register(Landroid/view/CompositionSamplingListener;ILandroid/view/SurfaceControl;Landroid/graphics/Rect;)V use(s):
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->lambda$updateSamplingListener$0$RegionSamplingHelper(Landroid/view/SurfaceControl;)V
+
+#145: Linking blocked Landroid/view/CompositionSamplingListener;->unregister(Landroid/view/CompositionSamplingListener;)V use(s):
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->lambda$unregisterSamplingListener$1$RegionSamplingHelper(Landroid/view/SurfaceControl;)V
+
+#146: Linking blocked Landroid/view/CrossWindowBlurListeners;->addListener(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V use(s):
+       Lcom/android/launcher3/statehandlers/DepthController;->onAttached()V
+
+#147: Linking blocked Landroid/view/CrossWindowBlurListeners;->getInstance()Landroid/view/CrossWindowBlurListeners; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController$5;->onViewDetachedFromWindow(Landroid/view/View;)V
+       Lcom/android/launcher3/statehandlers/DepthController;->onAttached()V
+
+#148: Linking blocked Landroid/view/CrossWindowBlurListeners;->removeListener(Ljava/util/function/Consumer;)V use(s):
+       Lcom/android/launcher3/statehandlers/DepthController$5;->onViewDetachedFromWindow(Landroid/view/View;)V
+
+#149: Linking max-target-p Landroid/view/Display;->getDisplayInfo(Landroid/view/DisplayInfo;)Z use(s):
+       Lorg/lineageos/internal/util/ScreenType;->getScreenType(Landroid/content/Context;)I
+
+#150: Linking unsupported,test-api Landroid/view/Display;->getType()I use(s):
+       Lcom/android/launcher3/uioverrides/ApiWrapper;->isInternalDisplay(Landroid/view/Display;)Z
+
+#151: Linking blocked Landroid/view/Display;->getUniqueId()Ljava/lang/String; use(s):
+       Lcom/android/launcher3/uioverrides/ApiWrapper;->getUniqueId(Landroid/view/Display;)Ljava/lang/String;
+
+#152: Linking max-target-p Landroid/view/DisplayInfo;-><init>()V use(s):
+       Lorg/lineageos/internal/util/ScreenType;->getScreenType(Landroid/content/Context;)I
+
+#153: Linking max-target-p Landroid/view/GhostView;->addGhost(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/GhostView; use(s):
+       Lcom/android/quickstep/views/FloatingWidgetView;->init(Lcom/android/launcher3/dragndrop/DragLayer;Lcom/android/launcher3/widget/LauncherAppWidgetHostView;Landroid/graphics/RectF;Landroid/util/Size;FZI)V
+
+#154: Linking max-target-p Landroid/view/GhostView;->removeGhost(Landroid/view/View;)V use(s):
+       Lcom/android/quickstep/views/FloatingWidgetView;->finish(Lcom/android/launcher3/dragndrop/DragLayer;)V
+
+#155: Linking max-target-o Landroid/view/GhostView;->setMatrix(Landroid/graphics/Matrix;)V use(s):
+       Lcom/android/quickstep/views/FloatingWidgetView;->positionViews()V
+
+#156: Linking unsupported Landroid/view/IAppTransitionAnimationSpecsFuture$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecsFuture$2;-><init>(Lcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecsFuture;)V
+
+#157: Linking unsupported Landroid/view/IDockedStackListener$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/DockedStackListenerCompat$1;-><init>(Lcom/android/systemui/shared/system/DockedStackListenerCompat;)V
+
+#158: Linking blocked Landroid/view/IRecentsAnimationController;->animateNavigationBarToApp(J)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->animateNavigationBarToApp(J)V
+
+#159: Linking blocked Landroid/view/IRecentsAnimationController;->cleanupScreenshot()V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->cleanupScreenshot()V
+
+#160: Linking blocked Landroid/view/IRecentsAnimationController;->detachNavigationBarFromApp(Z)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->detachNavigationBarFromApp(Z)V
+
+#161: Linking unsupported Landroid/view/IRecentsAnimationController;->finish(ZZ)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->finish(ZZ)V
+
+#162: Linking max-target-o Landroid/view/IRecentsAnimationController;->hideCurrentInputMethod()V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->hideCurrentInputMethod()V
+
+#163: Linking blocked Landroid/view/IRecentsAnimationController;->removeTask(I)Z use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->removeTask(I)Z
+
+#164: Linking blocked Landroid/view/IRecentsAnimationController;->screenshotTask(I)Landroid/window/TaskSnapshot; use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->screenshotTask(I)Lcom/android/systemui/shared/recents/model/ThumbnailData;
+
+#165: Linking unsupported Landroid/view/IRecentsAnimationController;->setAnimationTargetsBehindSystemBars(Z)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->setAnimationTargetsBehindSystemBars(Z)V
+
+#166: Linking blocked Landroid/view/IRecentsAnimationController;->setDeferCancelUntilNextTransition(ZZ)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->setDeferCancelUntilNextTransition(ZZ)V
+
+#167: Linking blocked Landroid/view/IRecentsAnimationController;->setFinishTaskTransaction(ILandroid/window/PictureInPictureSurfaceTransaction;Landroid/view/SurfaceControl;)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->setFinishTaskTransaction(ILandroid/window/PictureInPictureSurfaceTransaction;Landroid/view/SurfaceControl;)V
+
+#168: Linking unsupported Landroid/view/IRecentsAnimationController;->setInputConsumerEnabled(Z)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->setInputConsumerEnabled(Z)V
+
+#169: Linking blocked Landroid/view/IRecentsAnimationController;->setWillFinishToHome(Z)V use(s):
+       Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;->setWillFinishToHome(Z)V
+
+#170: Linking unsupported Landroid/view/IRecentsAnimationRunner$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper$2;-><init>(Lcom/android/systemui/shared/system/ActivityManagerWrapper;Lcom/android/systemui/shared/system/RecentsAnimationListener;)V
+
+#171: Linking unsupported Landroid/view/IRemoteAnimationFinishedCallback;->onAnimationFinished()V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$1$1;->run()V
+
+#172: Linking unsupported Landroid/view/IRemoteAnimationRunner$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$1;-><init>(Lcom/android/systemui/shared/system/RemoteAnimationRunnerCompat;)V
+
+#173: Linking unsupported Landroid/view/IRotationWatcher$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController$1;-><init>(Lcom/android/systemui/shared/rotation/RotationButtonController;)V
+       Lcom/android/systemui/shared/system/RotationWatcher$1;-><init>(Lcom/android/systemui/shared/system/RotationWatcher;)V
+       Lcom/android/systemui/unfold/util/NaturalRotationUnfoldProgressProvider$RotationWatcher;-><init>(Lcom/android/systemui/unfold/util/NaturalRotationUnfoldProgressProvider;)V
+
+#174: Linking blocked Landroid/view/ISystemGestureExclusionListener$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat$1;-><init>(Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat;)V
+
+#175: Linking blocked Landroid/view/IWindowManager;->clearTaskTransitionSpec()V use(s):
+       Lcom/android/launcher3/taskbar/LauncherTaskbarUIController;->updateTaskTransitionSpec(Z)V
+
+#176: Linking unsupported Landroid/view/IWindowManager;->createInputConsumer(Landroid/os/IBinder;Ljava/lang/String;ILandroid/view/InputChannel;)V use(s):
+       Lcom/android/systemui/shared/system/InputConsumerController;->registerInputConsumer(Z)V
+
+#177: Linking unsupported Landroid/view/IWindowManager;->destroyInputConsumer(Ljava/lang/String;I)Z use(s):
+       Lcom/android/systemui/shared/system/InputConsumerController;->registerInputConsumer(Z)V
+       Lcom/android/systemui/shared/system/InputConsumerController;->unregisterInputConsumer()V
+
+#178: Linking blocked Landroid/view/IWindowManager;->getNavBarPosition(I)I use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->getNavBarPosition(I)I
+
+#179: Linking unsupported Landroid/view/IWindowManager;->getStableInsets(ILandroid/graphics/Rect;)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->getStableInsets(Landroid/graphics/Rect;)V
+
+#180: Linking unsupported Landroid/view/IWindowManager;->hasNavigationBar(I)Z use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->hasSoftNavigationBar(Landroid/content/Context;I)Z
+
+#181: Linking blocked Landroid/view/IWindowManager;->mirrorDisplay(ILandroid/view/SurfaceControl;)Z use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->mirrorDisplay(I)Landroid/view/SurfaceControl;
+
+#182: Linking unsupported Landroid/view/IWindowManager;->overridePendingAppTransitionMultiThumbFuture(Landroid/view/IAppTransitionAnimationSpecsFuture;Landroid/os/IRemoteCallback;ZI)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->overridePendingAppTransitionMultiThumbFuture(Lcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecsFuture;Ljava/lang/Runnable;Landroid/os/Handler;ZI)V
+
+#183: Linking unsupported Landroid/view/IWindowManager;->overridePendingAppTransitionRemote(Landroid/view/RemoteAnimationAdapter;I)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->overridePendingAppTransitionRemote(Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;I)V
+
+#184: Linking blocked Landroid/view/IWindowManager;->registerSystemGestureExclusionListener(Landroid/view/ISystemGestureExclusionListener;I)V use(s):
+       Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat;->register()V
+
+#185: Linking unsupported Landroid/view/IWindowManager;->removeRotationWatcher(Landroid/view/IRotationWatcher;)V use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->unregisterListeners()V
+       Lcom/android/systemui/shared/system/RotationWatcher;->disable()V
+       Lcom/android/systemui/unfold/util/NaturalRotationUnfoldProgressProvider;->destroy()V
+
+#186: Linking blocked Landroid/view/IWindowManager;->setIgnoreOrientationRequest(IZ)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setIgnoreOrientationRequest(IZ)V
+
+#187: Linking unsupported Landroid/view/IWindowManager;->setNavBarVirtualKeyHapticFeedbackEnabled(Z)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setNavBarVirtualKeyHapticFeedbackEnabled(Z)V
+
+#188: Linking max-target-o Landroid/view/IWindowManager;->setRecentsVisibility(Z)V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setRecentsVisibility(Z)V
+
+#189: Linking blocked Landroid/view/IWindowManager;->setTaskTransitionSpec(Landroid/view/TaskTransitionSpec;)V use(s):
+       Lcom/android/launcher3/taskbar/LauncherTaskbarUIController;->updateTaskTransitionSpec(Z)V
+
+#190: Linking blocked Landroid/view/IWindowManager;->unregisterSystemGestureExclusionListener(Landroid/view/ISystemGestureExclusionListener;I)V use(s):
+       Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat;->unregister()V
+
+#191: Linking max-target-o Landroid/view/IWindowManager;->watchRotation(Landroid/view/IRotationWatcher;I)I use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->registerListeners()V
+       Lcom/android/systemui/shared/system/RotationWatcher;->enable()V
+       Lcom/android/systemui/unfold/util/NaturalRotationUnfoldProgressProvider;->init()V
+
+#192: Linking unsupported Landroid/view/InputChannel;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/InputConsumerController;->registerInputConsumer(Z)V
+
+#193: Linking blocked Landroid/view/InputMonitor;->dispose()V use(s):
+       Lcom/android/systemui/shared/system/InputMonitorCompat;->dispose()V
+
+#194: Linking blocked Landroid/view/InputMonitor;->getInputChannel()Landroid/view/InputChannel; use(s):
+       Lcom/android/systemui/shared/system/InputMonitorCompat;->getInputReceiver(Landroid/os/Looper;Landroid/view/Choreographer;Lcom/android/systemui/shared/system/InputChannelCompat$InputEventListener;)Lcom/android/systemui/shared/system/InputChannelCompat$InputEventReceiver;
+
+#195: Linking blocked Landroid/view/InputMonitor;->pilferPointers()V use(s):
+       Lcom/android/systemui/shared/system/InputMonitorCompat;->pilferPointers()V
+
+#196: Linking unsupported Landroid/view/MotionEvent;->addBatch(Landroid/view/MotionEvent;)Z use(s):
+       Lcom/android/systemui/shared/system/InputChannelCompat;->mergeMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
+
+#197: Linking blocked Landroid/view/MotionEvent;->applyTransform(Landroid/graphics/Matrix;)V use(s):
+       Lcom/android/quickstep/OrientationRectF;->applyTransform(Landroid/view/MotionEvent;IZ)Z (2 occurrences)
+
+#198: Linking blocked Landroid/view/MotionEvent;->createRotateMatrix(III)Landroid/graphics/Matrix; use(s):
+       Lcom/android/systemui/shared/system/InputChannelCompat;->createRotationMatrix(III)Landroid/graphics/Matrix;
+
+#199: Linking unsupported Landroid/view/RemoteAnimationAdapter;-><init>(Landroid/view/IRemoteAnimationRunner;JJ)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;-><init>(Lcom/android/systemui/shared/system/RemoteAnimationRunnerCompat;JJLandroid/app/IApplicationThread;)V
+
+#200: Linking unsupported Landroid/view/RemoteAnimationAdapter;-><init>(Landroid/view/IRemoteAnimationRunner;JJLandroid/app/IApplicationThread;)V use(s):
+       Lcom/android/quickstep/util/SplitSelectStateController;->launchTasks(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;ILjava/util/function/Consumer;ZF)V
+
+#201: Linking unsupported Landroid/view/RemoteAnimationDefinition;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationDefinitionCompat;-><init>()V
+
+#202: Linking unsupported Landroid/view/RemoteAnimationDefinition;->addRemoteAnimation(IILandroid/view/RemoteAnimationAdapter;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationDefinitionCompat;->addRemoteAnimation(IILcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;)V
+
+#203: Linking unsupported Landroid/view/RemoteAnimationDefinition;->addRemoteAnimation(ILandroid/view/RemoteAnimationAdapter;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationDefinitionCompat;->addRemoteAnimation(ILcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;)V
+
+#204: Linking blocked Landroid/view/RemoteAnimationTarget;-><init>(IILandroid/view/SurfaceControl;ZLandroid/graphics/Rect;Landroid/graphics/Rect;ILandroid/graphics/Point;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/app/WindowConfiguration;ZLandroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/app/ActivityManager$RunningTaskInfo;ZI)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->unwrap()Landroid/view/RemoteAnimationTarget;
+
+#205: Linking blocked Landroid/view/RenderNodeAnimator;-><init>(Landroid/graphics/CanvasProperty;F)V use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->enterHardware()V (2 occurrences)
+
+#206: Linking blocked Landroid/view/RenderNodeAnimator;-><init>(Landroid/graphics/CanvasProperty;IF)V use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->exitHardware()V
+
+#207: Linking blocked Landroid/view/RenderNodeAnimator;->setTarget(Landroid/view/View;)V use(s):
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->enterHardware()V (2 occurrences)
+       Lcom/android/systemui/navigationbar/buttons/KeyButtonRipple;->exitHardware()V
+
+#208: Linking max-target-o Landroid/view/SurfaceControl$Builder;-><init>(Landroid/view/SurfaceSession;)V use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+
+#209: Linking blocked Landroid/view/SurfaceControl$Builder;->setCallsite(Ljava/lang/String;)Landroid/view/SurfaceControl$Builder; use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+
+#210: Linking blocked Landroid/view/SurfaceControl$Builder;->setColorLayer()Landroid/view/SurfaceControl$Builder; use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+
+#211: Linking blocked Landroid/view/SurfaceControl$Builder;->setContainerLayer()Landroid/view/SurfaceControl$Builder; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/wm/shell/util/CounterRotator;->setup(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;IFF)V
+
+#212: Linking blocked Landroid/view/SurfaceControl$Builder;->setEffectLayer()Landroid/view/SurfaceControl$Builder; use(s):
+       Lcom/android/launcher3/QuickstepTransitionManager;->getBackgroundAnimator()Landroid/animation/ObjectAnimator;
+
+#213: Linking blocked Landroid/view/SurfaceControl$Builder;->setHidden(Z)Landroid/view/SurfaceControl$Builder; use(s):
+       Lcom/android/launcher3/QuickstepTransitionManager;->getBackgroundAnimator()Landroid/animation/ObjectAnimator;
+
+#214: Linking unsupported Landroid/view/SurfaceControl$Transaction;->hide(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/quickstep/TaskViewUtils$5;->onAnimationEnd(Landroid/animation/Animator;)V
+       Lcom/android/quickstep/TaskViewUtils$9;->onAnimationEnd(Landroid/animation/Animator;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->hide(Lcom/android/systemui/shared/system/SurfaceControlCompat;)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#215: Linking blocked Landroid/view/SurfaceControl$Transaction;->remove(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/launcher3/QuickstepTransitionManager$13;->onAnimationEnd(Landroid/animation/Animator;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2$1;->run()V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V
+       Lcom/android/wm/shell/util/CounterRotator;->cleanUp(Landroid/view/SurfaceControl;)V
+
+#216: Linking blocked Landroid/view/SurfaceControl$Transaction;->setBackgroundBlurRadius(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController;->dispatchTransactionSurface(F)Z
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setBackgroundBlurRadius(Lcom/android/systemui/shared/system/SurfaceControlCompat;I)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#217: Linking unsupported Landroid/view/SurfaceControl$Transaction;->setColor(Landroid/view/SurfaceControl;[F)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setColor(Lcom/android/systemui/shared/system/SurfaceControlCompat;[F)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#218: Linking max-target-r Landroid/view/SurfaceControl$Transaction;->setCornerRadius(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndCrop(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndRotate(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setCornerRadius(Lcom/android/systemui/shared/system/SurfaceControlCompat;F)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#219: Linking blocked Landroid/view/SurfaceControl$Transaction;->setEarlyWakeupEnd()Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController;->dispatchTransactionSurface(F)Z
+
+#220: Linking blocked Landroid/view/SurfaceControl$Transaction;->setEarlyWakeupStart()Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController;->dispatchTransactionSurface(F)Z
+
+#221: Linking blocked Landroid/view/SurfaceControl$Transaction;->setFrameTimelineVsync(J)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newSurfaceControlTransaction()Landroid/view/SurfaceControl$Transaction;
+
+#222: Linking unsupported Landroid/view/SurfaceControl$Transaction;->setMatrix(Landroid/view/SurfaceControl;FFFF)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/system/TransactionCompat;->setMatrix(Lcom/android/systemui/shared/system/SurfaceControlCompat;FFFF)Lcom/android/systemui/shared/system/TransactionCompat;
+       Lcom/android/wm/shell/util/CounterRotator;->setup(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;IFF)V (3 occurrences)
+
+#223: Linking unsupported Landroid/view/SurfaceControl$Transaction;->setMatrix(Landroid/view/SurfaceControl;Landroid/graphics/Matrix;[F)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndCrop(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndRotate(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setMatrix(Lcom/android/systemui/shared/system/SurfaceControlCompat;Landroid/graphics/Matrix;)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#224: Linking max-target-o Landroid/view/SurfaceControl$Transaction;->setOpaque(Landroid/view/SurfaceControl;Z)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController;->dispatchTransactionSurface(F)Z
+       Lcom/android/systemui/shared/system/TransactionCompat;->setOpaque(Lcom/android/systemui/shared/system/SurfaceControlCompat;Z)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#225: Linking unsupported Landroid/view/SurfaceControl$Transaction;->setPosition(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scale(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndCrop(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndRotate(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/TransactionCompat;->setPosition(Lcom/android/systemui/shared/system/SurfaceControlCompat;FF)Lcom/android/systemui/shared/system/TransactionCompat;
+       Lcom/android/wm/shell/util/CounterRotator;->setup(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;IFF)V (3 occurrences)
+
+#226: Linking max-target-o Landroid/view/SurfaceControl$Transaction;->setRelativeLayer(Landroid/view/SurfaceControl;Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setRelativeLayer(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/view/SurfaceControl;I)V
+
+#227: Linking blocked Landroid/view/SurfaceControl$Transaction;->setShadowRadius(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+
+#228: Linking unsupported Landroid/view/SurfaceControl$Transaction;->setWindowCrop(Landroid/view/SurfaceControl;Landroid/graphics/Rect;)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndCrop(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->scaleAndRotate(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;FFF)Landroid/window/PictureInPictureSurfaceTransaction;
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->setWindowCrop(Lcom/android/systemui/shared/system/SurfaceControlCompat;Landroid/graphics/Rect;)Lcom/android/systemui/shared/system/TransactionCompat;
+
+#229: Linking unsupported Landroid/view/SurfaceControl$Transaction;->show(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction; use(s):
+       Lcom/android/quickstep/TaskViewUtils$5;->onAnimationStart(Landroid/animation/Animator;)V
+       Lcom/android/quickstep/TaskViewUtils$9;->onAnimationStart(Landroid/animation/Animator;)V
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V (3 occurrences)
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;->applyTo(Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/TransactionCompat;->show(Lcom/android/systemui/shared/system/SurfaceControlCompat;)Lcom/android/systemui/shared/system/TransactionCompat;
+       Lcom/android/wm/shell/util/CounterRotator;->setup(Landroid/view/SurfaceControl$Transaction;Landroid/view/SurfaceControl;IFF)V
+
+#230: Linking blocked Landroid/view/SurfaceControl;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->mirrorDisplay(I)Landroid/view/SurfaceControl;
+
+#231: Linking blocked,test-api Landroid/view/SurfaceControl;-><init>(Landroid/view/SurfaceControl;Ljava/lang/String;)V use(s):
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->updateSamplingListener()V
+
+#232: Linking max-target-o Landroid/view/SurfaceControl;->getHeight()I use(s):
+       Lcom/android/systemui/shared/system/SurfaceViewRequestReceiver;->onReceive(Landroid/content/Context;Landroid/os/Bundle;Landroid/view/View;Landroid/util/Size;)V (3 occurrences)
+
+#233: Linking max-target-o Landroid/view/SurfaceControl;->getWidth()I use(s):
+       Lcom/android/systemui/shared/system/SurfaceViewRequestReceiver;->onReceive(Landroid/content/Context;Landroid/os/Bundle;Landroid/view/View;Landroid/util/Size;)V (3 occurrences)
+
+#234: Linking blocked Landroid/view/SurfaceControlViewHost;-><init>(Landroid/content/Context;Landroid/view/Display;Landroid/view/WindowlessWindowManager;)V use(s):
+       Lcom/android/systemui/shared/system/SurfaceViewRequestReceiver;->onReceive(Landroid/content/Context;Landroid/os/Bundle;Landroid/view/View;Landroid/util/Size;)V
+
+#235: Linking blocked,test-api Landroid/view/SurfaceControlViewHost;->setView(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;)V use(s):
+       Lcom/android/systemui/shared/system/SurfaceViewRequestReceiver;->onReceive(Landroid/content/Context;Landroid/os/Bundle;Landroid/view/View;Landroid/util/Size;)V
+
+#236: Linking unsupported Landroid/view/SurfaceSession;-><init>()V use(s):
+       Lcom/android/quickstep/util/SwipePipToHomeAnimator;-><init>(Landroid/content/Context;ILandroid/content/ComponentName;Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/graphics/Rect;ILandroid/graphics/Rect;ILandroid/view/View;)V
+
+#237: Linking blocked Landroid/view/TaskTransitionSpec;-><init>(ILjava/util/Set;)V use(s):
+       Lcom/android/launcher3/taskbar/LauncherTaskbarUIController;->updateTaskTransitionSpec(Z)V
+
+#238: Linking max-target-r Landroid/view/View$AccessibilityDelegate;->createAccessibilityNodeInfo(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeInfo; use(s):
+       Lcom/android/quickstep/interaction/AllSetActivity$SkipButtonAccessibilityDelegate;->createAccessibilityNodeInfo(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeInfo;
+
+#239: Linking max-target-o Landroid/view/View;->encode(Landroid/view/ViewHierarchyEncoder;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z
+
+#240: Linking unsupported Landroid/view/View;->getBoundsOnScreen(Landroid/graphics/Rect;)V use(s):
+       Lcom/android/launcher3/taskbar/NavbarButtonsViewController$RotationButtonListener;->onVisibilityChanged(Z)V
+
+#241: Linking unsupported Landroid/view/View;->getLocationOnScreen()[I use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z
+
+#242: Linking unsupported Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; use(s):
+       Lcom/android/launcher3/statehandlers/DepthController$2;->onDraw()V
+       Lcom/android/quickstep/ViewUtils$FrameHandler;-><init>(Landroid/view/View;Ljava/lang/Runnable;Ljava/util/function/BooleanSupplier;)V
+       Lcom/android/quickstep/util/SurfaceTransactionApplier;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->dump(Ljava/io/PrintWriter;)V
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->updateSamplingListener()V
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z (2 occurrences)
+       Lcom/android/systemui/shared/system/SurfaceControlCompat;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat;->create(Landroid/view/View;Ljava/util/function/Consumer;)V
+       Lcom/android/systemui/shared/system/ViewRootImplCompat;-><init>(Landroid/view/View;)V
+
+#243: Linking max-target-o Landroid/view/ViewHierarchyEncoder;-><init>(Ljava/io/ByteArrayOutputStream;)V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z
+
+#244: Linking unsupported Landroid/view/ViewHierarchyEncoder;->addProperty(Ljava/lang/String;I)V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z (2 occurrences)
+
+#245: Linking max-target-o Landroid/view/ViewHierarchyEncoder;->endStream()V use(s):
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z
+
+#246: Linking blocked Landroid/view/ViewRootImpl;->getSurfaceControl()Landroid/view/SurfaceControl; use(s):
+       Lcom/android/launcher3/QuickstepTransitionManager;->getBackgroundAnimator()Landroid/animation/ObjectAnimator;
+       Lcom/android/launcher3/statehandlers/DepthController$2;->onDraw()V
+       Lcom/android/launcher3/statehandlers/DepthController;->setSurface(Landroid/view/SurfaceControl;)Z
+       Lcom/android/quickstep/util/SurfaceTransactionApplier;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->dump(Ljava/io/PrintWriter;)V
+       Lcom/android/systemui/shared/navigationbar/RegionSamplingHelper;->updateSamplingListener()V
+       Lcom/android/systemui/shared/system/SurfaceControlCompat;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat;-><init>(Landroid/view/View;)V
+       Lcom/android/systemui/shared/system/ViewRootImplCompat;->getRenderSurfaceControl()Landroid/view/SurfaceControl;
+
+#247: Linking unsupported Landroid/view/ViewRootImpl;->getView()Landroid/view/View; use(s):
+       Lcom/android/quickstep/ViewUtils$FrameHandler;->schedule()Z (2 occurrences)
+       Lcom/android/quickstep/util/SurfaceTransactionApplier;->scheduleApply([Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;)V
+       Lcom/android/systemui/shared/system/ActivityCompat;->encodeViewHierarchy(Ljava/io/ByteArrayOutputStream;)Z
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat;->scheduleApply([Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/ViewRootImplCompat;->getView()Landroid/view/View;
+
+#248: Linking blocked Landroid/view/ViewRootImpl;->mergeWithNextTransaction(Landroid/view/SurfaceControl$Transaction;J)V use(s):
+       Lcom/android/quickstep/util/SurfaceTransactionApplier;->lambda$scheduleApply$0$SurfaceTransactionApplier(I[Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;J)V
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$2;->onFrameDraw(J)V
+       Lcom/android/systemui/shared/system/ViewRootImplCompat;->mergeWithNextTransaction(Landroid/view/SurfaceControl$Transaction;J)V
+
+#249: Linking blocked Landroid/view/ViewRootImpl;->registerRtFrameCallback(Landroid/graphics/HardwareRenderer$FrameDrawingCallback;)V use(s):
+       Lcom/android/quickstep/ViewUtils$FrameHandler;->schedule()Z
+       Lcom/android/quickstep/util/SurfaceTransactionApplier;->scheduleApply([Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;)V
+       Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat;->scheduleApply([Lcom/android/systemui/shared/system/SyncRtSurfaceTransactionApplierCompat$SurfaceParams;)V
+       Lcom/android/systemui/shared/system/ViewRootImplCompat;->registerRtFrameCallback(Ljava/util/function/LongConsumer;)V
+
+#250: Linking unsupported Landroid/view/ViewTreeObserver$InternalInsetsInfo;->setTouchableInsets(I)V use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->lambda$addOnComputeInsetsListener$0(Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V
+
+#251: Linking unsupported Landroid/view/ViewTreeObserver;->addOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->addOnComputeInsetsListener(Landroid/view/ViewTreeObserver;Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;)V
+
+#252: Linking unsupported Landroid/view/ViewTreeObserver;->removeOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->removeOnComputeInsetsListener(Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;)V
+
+#253: Linking unsupported Landroid/view/WindowManagerGlobal;->getWindowManagerService()Landroid/view/IWindowManager; use(s):
+       Lcom/android/launcher3/taskbar/LauncherTaskbarUIController;->updateTaskTransitionSpec(Z)V (2 occurrences)
+       Lcom/android/quickstep/util/LauncherUnfoldAnimationController;-><init>(Lcom/android/launcher3/Launcher;Landroid/view/WindowManager;Lcom/android/systemui/unfold/UnfoldTransitionProgressProvider;)V
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->registerListeners()V
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->unregisterListeners()V
+       Lcom/android/systemui/shared/system/InputConsumerController;->getRecentsAnimationInputConsumer()Lcom/android/systemui/shared/system/InputConsumerController;
+       Lcom/android/systemui/shared/system/RotationWatcher;->disable()V
+       Lcom/android/systemui/shared/system/RotationWatcher;->enable()V
+       Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat;->register()V
+       Lcom/android/systemui/shared/system/SystemGestureExclusionListenerCompat;->unregister()V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->getNavBarPosition(I)I
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->getStableInsets(Landroid/graphics/Rect;)V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->hasSoftNavigationBar(Landroid/content/Context;I)Z
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->mirrorDisplay(I)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->overridePendingAppTransitionMultiThumbFuture(Lcom/android/systemui/shared/recents/view/AppTransitionAnimationSpecsFuture;Ljava/lang/Runnable;Landroid/os/Handler;ZI)V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->overridePendingAppTransitionRemote(Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;I)V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setIgnoreOrientationRequest(IZ)V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setNavBarVirtualKeyHapticFeedbackEnabled(Z)V
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setRecentsVisibility(Z)V
+
+#254: Linking blocked Landroid/view/WindowlessWindowManager;-><init>(Landroid/content/res/Configuration;Landroid/view/SurfaceControl;Landroid/os/IBinder;)V use(s):
+       Lcom/android/systemui/shared/system/SurfaceViewRequestReceiver;->onReceive(Landroid/content/Context;Landroid/os/Bundle;Landroid/view/View;Landroid/util/Size;)V
+
+#255: Linking unsupported Landroid/view/accessibility/AccessibilityManager;->getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager; use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;-><init>(Landroid/content/Context;IIIIIILjava/util/function/Supplier;)V
+
+#256: Linking unsupported Landroid/widget/OverScroller;->extendDuration(I)V use(s):
+       Lcom/android/quickstep/views/RecentsView;->onNotSnappingToPageInFreeScroll()V
+
+#257: Linking max-target-o Landroid/widget/OverScroller;->getDuration()I use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->handleNormalGestureEnd(FZLandroid/graphics/PointF;Z)V (2 occurrences)
+       Lcom/android/quickstep/views/RecentsView;->onNotSnappingToPageInFreeScroll()V
+
+#258: Linking max-target-o Landroid/widget/OverScroller;->setFinalX(I)V use(s):
+       Lcom/android/quickstep/views/RecentsView;->onNotSnappingToPageInFreeScroll()V
+
+#259: Linking blocked Landroid/widget/RemoteViews$RemoteResponse;->getLaunchOptions(Landroid/view/View;)Landroid/util/Pair; use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z (2 occurrences)
+
+#260: Linking blocked Landroid/widget/RemoteViews;->startPendingIntent(Landroid/view/View;Landroid/app/PendingIntent;Landroid/util/Pair;)Z use(s):
+       Lcom/android/launcher3/uioverrides/QuickstepInteractionHandler;->onInteraction(Landroid/view/View;Landroid/app/PendingIntent;Landroid/widget/RemoteViews$RemoteResponse;)Z (2 occurrences)
+
+#261: Linking blocked Landroid/window/IRemoteTransition$Stub;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;-><init>(Lcom/android/systemui/shared/system/RemoteAnimationRunnerCompat;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$1;-><init>(Lcom/android/systemui/shared/system/RemoteTransitionCompat;Ljava/util/concurrent/Executor;Lcom/android/systemui/shared/system/RemoteTransitionRunner;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;-><init>(Lcom/android/systemui/shared/system/RemoteTransitionCompat;Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;Lcom/android/systemui/shared/system/RecentsAnimationListener;)V
+
+#262: Linking blocked Landroid/window/IRemoteTransitionFinishedCallback;->onTransitionFinished(Landroid/window/WindowContainerTransaction;Landroid/view/SurfaceControl$Transaction;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2$1;->run()V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$1;->lambda$mergeAnimation$2(Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$1;->lambda$startAnimation$0(Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->mergeAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/os/IBinder;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V (3 occurrences)
+
+#263: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;-><init>()V use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->maybeFinishSwipeToHome()V
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#264: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->build()Landroid/window/PictureInPictureSurfaceTransaction; use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->maybeFinishSwipeToHome()V
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#265: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->setAlpha(F)Landroid/window/PictureInPictureSurfaceTransaction$Builder; use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler;->maybeFinishSwipeToHome()V
+
+#266: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->setCornerRadius(F)Landroid/window/PictureInPictureSurfaceTransaction$Builder; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#267: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->setPosition(FF)Landroid/window/PictureInPictureSurfaceTransaction$Builder; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#268: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->setTransform([FF)Landroid/window/PictureInPictureSurfaceTransaction$Builder; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#269: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction$Builder;->setWindowCrop(Landroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction$Builder; use(s):
+       Lcom/android/systemui/shared/pip/PipSurfaceTransactionHelper;->newPipSurfaceTransaction(FF[FFFLandroid/graphics/Rect;)Landroid/window/PictureInPictureSurfaceTransaction;
+
+#270: Linking blocked Landroid/window/PictureInPictureSurfaceTransaction;->apply(Landroid/window/PictureInPictureSurfaceTransaction;Landroid/view/SurfaceControl;Landroid/view/SurfaceControl$Transaction;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V
+
+#271: Linking blocked Landroid/window/RemoteTransition;-><init>(Landroid/window/IRemoteTransition;Landroid/app/IApplicationThread;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat;->buildRemoteTransition(Lcom/android/systemui/shared/system/RemoteAnimationRunnerCompat;Landroid/app/IApplicationThread;)Lcom/android/systemui/shared/system/RemoteTransitionCompat;
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Lcom/android/systemui/shared/system/RecentsAnimationListener;Lcom/android/systemui/shared/system/RecentsAnimationControllerCompat;Landroid/app/IApplicationThread;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Lcom/android/systemui/shared/system/RemoteTransitionRunner;Ljava/util/concurrent/Executor;Landroid/app/IApplicationThread;)V
+
+#272: Linking blocked Landroid/window/TaskSnapshot;->getAppearance()I use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#273: Linking blocked Landroid/window/TaskSnapshot;->getColorSpace()Landroid/graphics/ColorSpace; use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;->makeThumbnail(Landroid/window/TaskSnapshot;)Landroid/graphics/Bitmap;
+
+#274: Linking unsupported Landroid/window/TaskSnapshot;->getContentInsets()Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#275: Linking blocked Landroid/window/TaskSnapshot;->getHardwareBuffer()Landroid/hardware/HardwareBuffer; use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;->makeThumbnail(Landroid/window/TaskSnapshot;)Landroid/graphics/Bitmap; (2 occurrences)
+
+#276: Linking blocked Landroid/window/TaskSnapshot;->getId()J use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#277: Linking blocked Landroid/window/TaskSnapshot;->getLetterboxInsets()Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#278: Linking unsupported Landroid/window/TaskSnapshot;->getOrientation()I use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#279: Linking blocked Landroid/window/TaskSnapshot;->getRotation()I use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#280: Linking max-target-r Landroid/window/TaskSnapshot;->getTaskSize()Landroid/graphics/Point; use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;->makeThumbnail(Landroid/window/TaskSnapshot;)Landroid/graphics/Bitmap;
+
+#281: Linking blocked Landroid/window/TaskSnapshot;->getWindowingMode()I use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#282: Linking unsupported Landroid/window/TaskSnapshot;->isLowResolution()Z use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#283: Linking unsupported Landroid/window/TaskSnapshot;->isRealSnapshot()Z use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#284: Linking blocked Landroid/window/TaskSnapshot;->isTranslucent()Z use(s):
+       Lcom/android/systemui/shared/recents/model/ThumbnailData;-><init>(Landroid/window/TaskSnapshot;)V
+
+#285: Linking blocked Landroid/window/TransitionFilter$Requirement;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V (2 occurrences)
+
+#286: Linking blocked Landroid/window/TransitionFilter;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V
+
+#287: Linking blocked Landroid/window/TransitionInfo$Change;->getAllowEnterPip()Z use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#288: Linking blocked Landroid/window/TransitionInfo$Change;->getContainer()Landroid/window/WindowContainerToken; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z (2 occurrences)
+
+#289: Linking blocked Landroid/window/TransitionInfo$Change;->getEndAbsBounds()Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+
+#290: Linking blocked Landroid/window/TransitionInfo$Change;->getEndRelOffset()Landroid/graphics/Point; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+
+#291: Linking blocked Landroid/window/TransitionInfo$Change;->getEndRotation()I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (3 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#292: Linking blocked Landroid/window/TransitionInfo$Change;->getFlags()I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->wrap(Landroid/window/TransitionInfo;ZLandroid/view/SurfaceControl$Transaction;Landroid/util/ArrayMap;)[Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;
+
+#293: Linking blocked Landroid/window/TransitionInfo$Change;->getLeash()Landroid/view/SurfaceControl; use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2$1;->run()V
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (5 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl; (8 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->wrap(Landroid/window/TransitionInfo;ZLandroid/view/SurfaceControl$Transaction;Landroid/util/ArrayMap;)[Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V (4 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+
+#294: Linking blocked Landroid/window/TransitionInfo$Change;->getMode()I use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (3 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z (2 occurrences)
+
+#295: Linking blocked Landroid/window/TransitionInfo$Change;->getParent()Landroid/window/WindowContainerToken; use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (5 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl; (3 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#296: Linking blocked Landroid/window/TransitionInfo$Change;->getStartAbsBounds()Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+
+#297: Linking blocked Landroid/window/TransitionInfo$Change;->getStartRotation()I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#298: Linking blocked Landroid/window/TransitionInfo$Change;->getTaskInfo()Landroid/app/ActivityManager$RunningTaskInfo; use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (8 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+
+#299: Linking blocked Landroid/window/TransitionInfo;->getChange(Landroid/window/WindowContainerToken;)Landroid/window/TransitionInfo$Change; use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V (3 occurrences)
+
+#300: Linking blocked Landroid/window/TransitionInfo;->getChanges()Ljava/util/List; use(s):
+       Lcom/android/quickstep/TaskViewUtils;->composeRecentsSplitLaunchAnimator(Lcom/android/systemui/shared/recents/model/Task;Lcom/android/systemui/shared/recents/model/Task;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Ljava/lang/Runnable;)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2$1;->run()V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (8 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (4 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->wrap(Landroid/window/TransitionInfo;ZLandroid/view/SurfaceControl$Transaction;Landroid/util/ArrayMap;)[Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat; (5 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V (3 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z (3 occurrences)
+
+#301: Linking blocked Landroid/window/TransitionInfo;->getRootLeash()Landroid/view/SurfaceControl; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2$1;->run()V (2 occurrences)
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->createLeash(Landroid/window/TransitionInfo;Landroid/window/TransitionInfo$Change;ILandroid/view/SurfaceControl$Transaction;)Landroid/view/SurfaceControl;
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->merge(Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Lcom/android/systemui/shared/system/RecentsAnimationListener;)Z
+
+#302: Linking blocked Landroid/window/TransitionInfo;->getRootOffset()Landroid/graphics/Point; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+
+#303: Linking blocked Landroid/window/TransitionInfo;->getType()I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V (2 occurrences)
+
+#304: Linking blocked Landroid/window/TransitionInfo;->isIndependent(Landroid/window/TransitionInfo$Change;Landroid/window/TransitionInfo;)Z use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationAdapterCompat$2;->startAnimation(Landroid/os/IBinder;Landroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;Landroid/window/IRemoteTransitionFinishedCallback;)V
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;->setupLeash(Landroid/view/SurfaceControl;Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#305: Linking blocked,test-api Landroid/window/WindowContainerTransaction;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V
+
+#306: Linking blocked,test-api Landroid/window/WindowContainerTransaction;->reorder(Landroid/window/WindowContainerToken;Z)Landroid/window/WindowContainerTransaction; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$RecentsControllerWrap;->finish(ZZ)V
+
+#307: Linking unsupported Lcom/android/internal/app/IVoiceInteractionManagerService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/app/IVoiceInteractionManagerService; use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->showVoiceSession(Landroid/os/IBinder;Landroid/os/Bundle;I)Z
+
+#308: Linking max-target-o Lcom/android/internal/app/IVoiceInteractionManagerService;->showSessionFromSession(Landroid/os/IBinder;Landroid/os/Bundle;I)Z use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->showVoiceSession(Landroid/os/IBinder;Landroid/os/Bundle;I)Z
+
+#309: Linking blocked Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;->extractDarkColors(Landroid/app/WallpaperColors;)Lcom/android/systemui/shared/system/TonalCompat$ExtractionInfo; (3 occurrences)
+
+#310: Linking blocked Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;->getMainColor()I use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;->extractDarkColors(Landroid/app/WallpaperColors;)Lcom/android/systemui/shared/system/TonalCompat$ExtractionInfo;
+
+#311: Linking blocked Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;->getSecondaryColor()I use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;->extractDarkColors(Landroid/app/WallpaperColors;)Lcom/android/systemui/shared/system/TonalCompat$ExtractionInfo;
+
+#312: Linking blocked Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;->supportsDarkText()Z use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;->extractDarkColors(Landroid/app/WallpaperColors;)Lcom/android/systemui/shared/system/TonalCompat$ExtractionInfo;
+
+#313: Linking blocked Lcom/android/internal/colorextraction/types/Tonal;-><init>(Landroid/content/Context;)V use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;-><init>(Landroid/content/Context;)V
+
+#314: Linking blocked Lcom/android/internal/colorextraction/types/Tonal;->extractInto(Landroid/app/WallpaperColors;Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;Lcom/android/internal/colorextraction/ColorExtractor$GradientColors;)V use(s):
+       Lcom/android/systemui/shared/system/TonalCompat;->extractDarkColors(Landroid/app/WallpaperColors;)Lcom/android/systemui/shared/system/TonalCompat$ExtractionInfo;
+
+#315: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor$Configuration$Builder;->setTimeout(J)Lcom/android/internal/jank/InteractionJankMonitor$Configuration$Builder; use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;IJ)V
+
+#316: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor$Configuration$Builder;->withView(ILandroid/view/View;)Lcom/android/internal/jank/InteractionJankMonitor$Configuration$Builder; use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;IJ)V
+
+#317: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor;->begin(Landroid/view/View;I)Z use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;I)V
+
+#318: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor;->begin(Lcom/android/internal/jank/InteractionJankMonitor$Configuration$Builder;)Z use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;IJ)V
+
+#319: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor;->cancel(I)Z use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->cancel(I)V
+
+#320: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor;->end(I)Z use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->end(I)V
+
+#321: Linking blocked Lcom/android/internal/jank/InteractionJankMonitor;->getInstance()Lcom/android/internal/jank/InteractionJankMonitor; use(s):
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;I)V
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->begin(Landroid/view/View;IJ)V
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->cancel(I)V
+       Lcom/android/systemui/shared/system/InteractionJankMonitorWrapper;->end(I)V
+
+#322: Linking blocked Lcom/android/internal/logging/InstanceId;->getId()I use(s):
+       Lcom/android/launcher3/taskbar/TaskbarDragController;->startSystemDrag(Lcom/android/launcher3/BubbleTextView;)V
+
+#323: Linking blocked Lcom/android/internal/logging/InstanceIdSequence;-><init>(I)V use(s):
+       Lcom/android/launcher3/taskbar/TaskbarDragController;->startSystemDrag(Lcom/android/launcher3/BubbleTextView;)V
+
+#324: Linking blocked Lcom/android/internal/logging/InstanceIdSequence;->newInstanceId()Lcom/android/internal/logging/InstanceId; use(s):
+       Lcom/android/launcher3/taskbar/TaskbarDragController;->startSystemDrag(Lcom/android/launcher3/BubbleTextView;)V
+
+#325: Linking unsupported Lcom/android/internal/logging/MetricsLogger;-><init>()V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;-><init>()V
+       Lorg/lineageos/internal/logging/LineageMetricsLogger;-><init>()V
+
+#326: Linking max-target-o Lcom/android/internal/logging/MetricsLogger;->action(I)V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;->action(I)V
+
+#327: Linking max-target-o Lcom/android/internal/logging/MetricsLogger;->action(II)V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;->action(II)V
+
+#328: Linking max-target-o Lcom/android/internal/logging/MetricsLogger;->hidden(I)V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;->hidden(I)V
+
+#329: Linking max-target-o Lcom/android/internal/logging/MetricsLogger;->visibility(IZ)V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;->visibility(IZ)V
+
+#330: Linking max-target-o Lcom/android/internal/logging/MetricsLogger;->visible(I)V use(s):
+       Lcom/android/systemui/shared/system/MetricsLoggerCompat;->visible(I)V
+
+#331: Linking blocked Lcom/android/internal/logging/UiEventLogger;->log(Lcom/android/internal/logging/UiEventLogger$UiEventEnum;)V use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->onRotateSuggestionClick(Landroid/view/View;)V
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->showAndLogRotationSuggestion()V
+
+#332: Linking blocked Lcom/android/internal/logging/UiEventLoggerImpl;-><init>()V use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;-><init>(Landroid/content/Context;IIIIIILjava/util/function/Supplier;)V
+
+#333: Linking max-target-r Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs; use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+
+#334: Linking max-target-r Lcom/android/internal/os/SomeArgs;->recycle()V use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->handleMessage(Landroid/os/Message;)Z
+
+#335: Linking unsupported Lcom/android/internal/policy/IKeyguardService;->setKeyguardEnabled(Z)V use(s):
+       Llineageos/profiles/LockSettings;->processOverride(Landroid/content/Context;Lcom/android/internal/policy/IKeyguardService;)V
+
+#336: Linking blocked Lcom/android/internal/policy/ScreenDecorationsUtils;->getWindowCornerRadius(Landroid/content/Context;)F use(s):
+       Lcom/android/systemui/shared/system/QuickStepContract;->getWindowCornerRadius(Landroid/content/Context;)F
+
+#337: Linking blocked Lcom/android/internal/policy/ScreenDecorationsUtils;->supportsRoundedCornersOnWindows(Landroid/content/res/Resources;)Z use(s):
+       Lcom/android/systemui/shared/system/QuickStepContract;->supportsRoundedCornersOnWindows(Landroid/content/res/Resources;)Z
+
+#338: Linking blocked Lcom/android/internal/util/AnnotationValidations;->validate(Ljava/lang/Class;Landroid/annotation/NonNull;Ljava/lang/Object;)V use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat$Builder;-><init>(Landroid/window/RemoteTransition;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Landroid/os/Parcel;)V
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Landroid/window/RemoteTransition;Landroid/window/TransitionFilter;)V
+
+#339: Linking unsupported Lcom/android/internal/util/ArrayUtils;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z use(s):
+       Llineageos/providers/LineageSettings$DiscreteValueValidator;->validate(Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$Global;->isLegacySetting(Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$Secure;->isLegacySetting(Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$System$2;->validate(Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$System;->isLegacySetting(Ljava/lang/String;)Z
+
+#340: Linking blocked Lcom/android/internal/util/ArrayUtils;->convertToIntArray(Ljava/util/List;)[I use(s):
+       Llineageos/hardware/LineageHardwareManager;->getDisplayColorCalibrationArray()[I
+
+#341: Linking blocked Lcom/android/internal/util/LatencyTracker;->getInstance(Landroid/content/Context;)Lcom/android/internal/util/LatencyTracker; use(s):
+       Lcom/android/systemui/shared/system/LatencyTrackerCompat;->logToggleRecents(Landroid/content/Context;I)V
+
+#342: Linking blocked Lcom/android/internal/util/LatencyTracker;->logAction(II)V use(s):
+       Lcom/android/systemui/shared/system/LatencyTrackerCompat;->logToggleRecents(Landroid/content/Context;I)V
+
+#343: Linking blocked Lcom/android/internal/util/LatencyTracker;->logActionDeprecated(IIZ)V use(s):
+       Lcom/android/systemui/shared/system/LatencyTrackerCompat;->logToggleRecents(I)V
+
+#344: Linking blocked Lcom/android/internal/util/TraceBuffer;-><init>(ILcom/android/internal/util/TraceBuffer$ProtoProvider;Ljava/util/function/Consumer;)V use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;-><init>(Lcom/android/systemui/shared/tracing/FrameProtoTracer$ProtoTraceParams;)V
+
+#345: Linking blocked Lcom/android/internal/util/TraceBuffer;->add(Ljava/lang/Object;)V use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;->logState()V
+
+#346: Linking blocked Lcom/android/internal/util/TraceBuffer;->getBufferSize()I use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;->getBufferUsagePct()F
+
+#347: Linking blocked Lcom/android/internal/util/TraceBuffer;->resetBuffer()V use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;->start()V
+
+#348: Linking blocked Lcom/android/internal/util/TraceBuffer;->writeTraceToFile(Ljava/io/File;Ljava/lang/Object;)V use(s):
+       Lcom/android/systemui/shared/tracing/FrameProtoTracer;->writeToFile()V
+
+#349: Linking unsupported Lcom/android/internal/util/XmlUtils;->skipCurrentTag(Lorg/xmlpull/v1/XmlPullParser;)V use(s):
+       Lorg/lineageos/internal/lineageparts/PartsList;->loadPartsFromResourceLocked(Landroid/content/res/Resources;ILjava/util/Map;)V
+
+#350: Linking blocked Lcom/android/internal/view/RotationPolicy;->getNaturalRotation()I use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->shouldOverrideUserLockPrefs(I)Z
+
+#351: Linking blocked Lcom/android/internal/view/RotationPolicy;->isRotationLocked(Landroid/content/Context;)Z use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->isRotationLocked()Z
+
+#352: Linking blocked Lcom/android/internal/view/RotationPolicy;->setRotationLockAtAngle(Landroid/content/Context;ZI)V use(s):
+       Lcom/android/systemui/shared/rotation/RotationButtonController;->setRotationLockedAtAngle(I)V
+
+#353: Linking unsupported Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V use(s):
+       Lorg/lineageos/internal/util/LineageLockPatternUtils;-><init>(Landroid/content/Context;)V
+
+#354: Linking max-target-o,core-platform-api Ljava/lang/Thread;->setUncaughtExceptionPreHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V use(s):
+       Lcom/android/systemui/shared/plugins/PluginManagerImpl;-><init>(Landroid/content/Context;Lcom/android/systemui/shared/plugins/PluginActionManager$Factory;ZLjava/util/Optional;Lcom/android/systemui/shared/plugins/PluginEnabler;Lcom/android/systemui/shared/plugins/PluginPrefs;Ljava/util/List;)V
+
+#355: Linking unsupported Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; use(s):
+       Lcom/google/protobuf/UnsafeUtil;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object;
+
+#356: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->arrayBaseOffset(Ljava/lang/Class;)I
+
+#357: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->arrayIndexScale(Ljava/lang/Class;)I
+
+#358: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getBoolean(Ljava/lang/Object;J)Z use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getBoolean(Ljava/lang/Object;J)Z
+
+#359: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(J)B use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(J)B
+
+#360: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(Ljava/lang/Object;J)B
+
+#361: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getDouble(Ljava/lang/Object;J)D use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getDouble(Ljava/lang/Object;J)D
+
+#362: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getFloat(Ljava/lang/Object;J)F use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getFloat(Ljava/lang/Object;J)F
+
+#363: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(J)I use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getInt(J)I
+
+#364: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->isInitialized(Ljava/lang/Object;)Z
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (7 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getInt(Ljava/lang/Object;J)I
+
+#365: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(J)J use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getLong(J)J
+
+#366: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (5 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getLong(Ljava/lang/Object;J)J
+
+#367: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (41 occurrences)
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (41 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+#368: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       Lcom/google/protobuf/MessageSchema;->newSchemaForRawMessageInfo(Lcom/google/protobuf/RawMessageInfo;Lcom/google/protobuf/NewInstanceSchema;Lcom/google/protobuf/ListFieldSchema;Lcom/google/protobuf/UnknownFieldSchema;Lcom/google/protobuf/ExtensionSchema;Lcom/google/protobuf/MapFieldSchema;)Lcom/google/protobuf/MessageSchema; (4 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+#369: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putBoolean(Ljava/lang/Object;JZ)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putBoolean(Ljava/lang/Object;JZ)V
+
+#370: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(JB)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(JB)V
+
+#371: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(Ljava/lang/Object;JB)V
+
+#372: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putDouble(Ljava/lang/Object;JD)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putDouble(Ljava/lang/Object;JD)V
+
+#373: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putFloat(Ljava/lang/Object;JF)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putFloat(Ljava/lang/Object;JF)V
+
+#374: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(JI)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putInt(JI)V
+
+#375: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (6 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (4 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putInt(Ljava/lang/Object;JI)V
+
+#376: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(JJ)V use(s):
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putLong(JJ)V
+
+#377: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V use(s):
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putLong(Ljava/lang/Object;JJ)V
+
+#378: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (17 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (7 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+#379: Linking blocked Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData;->contentInsets:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/recents/model/Task;->getVisibleThumbnailRatio(Z)F (5 occurrences)
+
+#380: Linking blocked Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData;->taskSize:Landroid/graphics/Point; use(s):
+       Lcom/android/systemui/shared/recents/model/Task;->getVisibleThumbnailRatio(Z)F (3 occurrences)
+
+#381: Linking blocked Landroid/app/ActivityManager$RecentTaskInfo;->lastSnapshotData:Landroid/app/ActivityManager$RecentTaskInfo$PersistedTaskSnapshotData; use(s):
+       Lcom/android/systemui/shared/recents/model/Task;->setLastSnapshotData(Landroid/app/ActivityManager$RecentTaskInfo;)V
+
+#382: Linking blocked Landroid/app/NotificationGroup;->CREATOR:Landroid/os/Parcelable$Creator; use(s):
+       Llineageos/app/IProfileManager$Stub$Proxy;->getNotificationGroup(Landroid/os/ParcelUuid;)Landroid/app/NotificationGroup;
+       Llineageos/app/IProfileManager$Stub$Proxy;->getNotificationGroupForPackage(Ljava/lang/String;)Landroid/app/NotificationGroup;
+       Llineageos/app/IProfileManager$Stub$Proxy;->getNotificationGroups()[Landroid/app/NotificationGroup;
+       Llineageos/app/IProfileManager$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z (3 occurrences)
+
+#383: Linking unsupported Landroid/app/TaskInfo;->configuration:Landroid/content/res/Configuration; use(s):
+       Lcom/android/quickstep/util/AssistantUtilities;->isExcludedAssistant(Landroid/app/TaskInfo;)Z
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#384: Linking blocked Landroid/app/TaskInfo;->displayId:I use(s):
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#385: Linking unsupported Landroid/app/TaskInfo;->lastActiveTime:J use(s):
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#386: Linking blocked Landroid/app/TaskInfo;->realActivity:Landroid/content/ComponentName; use(s):
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#387: Linking unsupported Landroid/app/TaskInfo;->supportsSplitScreenMultiWindow:Z use(s):
+       Lcom/android/systemui/shared/recents/model/Task;->from(Lcom/android/systemui/shared/recents/model/Task$TaskKey;Landroid/app/TaskInfo;Z)Lcom/android/systemui/shared/recents/model/Task;
+
+#388: Linking max-target-r Landroid/app/TaskInfo;->userId:I use(s):
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+
+#389: Linking unsupported,test-api Landroid/content/pm/UserInfo;->id:I use(s):
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->getCurrentUserId()I
+
+#390: Linking blocked,test-api Landroid/content/res/Configuration;->windowConfiguration:Landroid/app/WindowConfiguration; use(s):
+       Lcom/android/quickstep/AbsSwipeUpHandler$5;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+       Lcom/android/quickstep/AbsSwipeUpHandler;->createWindowAnimationToPip(Lcom/android/quickstep/SwipeUpAnimationLogic$HomeAnimationFactory;Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;F)Lcom/android/quickstep/util/SwipePipToHomeAnimator;
+       Lcom/android/quickstep/util/AssistantUtilities;->isExcludedAssistant(Landroid/app/TaskInfo;)Z
+       Lcom/android/systemui/shared/recents/model/Task$TaskKey;-><init>(Landroid/app/TaskInfo;)V
+       Lcom/android/systemui/shared/system/ActivityManagerWrapper;->isHomeTask(Landroid/app/ActivityManager$RunningTaskInfo;)Z
+       Lcom/android/systemui/shared/system/ConfigurationCompat;->getWindowConfigurationRotation(Landroid/content/res/Configuration;)I
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/window/TransitionInfo$Change;ILandroid/window/TransitionInfo;Landroid/view/SurfaceControl$Transaction;)V
+
+#391: Linking unsupported Landroid/net/NetworkStats$Entry;->rxBytes:J use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#392: Linking unsupported Landroid/net/NetworkStats$Entry;->txBytes:J use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#393: Linking unsupported Landroid/net/NetworkStats$Entry;->uid:I use(s):
+       Lorg/lineageos/internal/statusbar/NetworkTraffic;->getOffloadTetheringStats()Lorg/lineageos/internal/statusbar/NetworkTraffic$TetheringStats;
+
+#394: Linking max-target-o Landroid/os/Build;->IS_ENG:Z use(s):
+       Lcom/android/systemui/shared/plugins/PluginManagerImpl;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+
+#395: Linking blocked Landroid/view/CrossWindowBlurListeners;->CROSS_WINDOW_BLUR_SUPPORTED:Z use(s):
+       Lcom/android/systemui/shared/system/BlurUtils;->supportsBlursOnWindows()Z
+
+#396: Linking max-target-o Landroid/view/DisplayInfo;->logicalDensityDpi:I use(s):
+       Lorg/lineageos/internal/util/ScreenType;->getScreenType(Landroid/content/Context;)I
+
+#397: Linking unsupported Landroid/view/DisplayInfo;->logicalHeight:I use(s):
+       Lorg/lineageos/internal/util/ScreenType;->getScreenType(Landroid/content/Context;)I
+
+#398: Linking unsupported Landroid/view/DisplayInfo;->logicalWidth:I use(s):
+       Lorg/lineageos/internal/util/ScreenType;->getScreenType(Landroid/content/Context;)I
+
+#399: Linking blocked Landroid/view/InsetsController;->RESIZE_INTERPOLATOR:Landroid/view/animation/Interpolator; use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;-><clinit>()V
+
+#400: Linking max-target-o Landroid/view/RemoteAnimationAdapter;->CREATOR:Landroid/os/Parcelable$Creator; use(s):
+       Lcom/android/wm/shell/splitscreen/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+       Lcom/android/wm/shell/stagesplit/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+#401: Linking max-target-o Landroid/view/RemoteAnimationTarget;->CREATOR:Landroid/os/Parcelable$Creator; use(s):
+       Lcom/android/wm/shell/splitscreen/ISplitScreen$Stub$Proxy;->onGoingToRecentsLegacy(Z[Landroid/view/RemoteAnimationTarget;)[Landroid/view/RemoteAnimationTarget;
+       Lcom/android/wm/shell/splitscreen/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+       Lcom/android/wm/shell/stagesplit/ISplitScreen$Stub$Proxy;->onGoingToRecentsLegacy(Z[Landroid/view/RemoteAnimationTarget;)[Landroid/view/RemoteAnimationTarget;
+       Lcom/android/wm/shell/stagesplit/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+#402: Linking unsupported Landroid/view/RemoteAnimationTarget;->allowEnterPip:Z use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#403: Linking unsupported Landroid/view/RemoteAnimationTarget;->clipRect:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#404: Linking unsupported Landroid/view/RemoteAnimationTarget;->contentInsets:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#405: Linking unsupported Landroid/view/RemoteAnimationTarget;->isNotInRecents:Z use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#406: Linking unsupported Landroid/view/RemoteAnimationTarget;->isTranslucent:Z use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#407: Linking unsupported Landroid/view/RemoteAnimationTarget;->leash:Landroid/view/SurfaceControl; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#408: Linking blocked Landroid/view/RemoteAnimationTarget;->localBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#409: Linking unsupported Landroid/view/RemoteAnimationTarget;->mode:I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#410: Linking unsupported Landroid/view/RemoteAnimationTarget;->position:Landroid/graphics/Point; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#411: Linking unsupported Landroid/view/RemoteAnimationTarget;->prefixOrderIndex:I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#412: Linking blocked Landroid/view/RemoteAnimationTarget;->screenSpaceBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#413: Linking unsupported Landroid/view/RemoteAnimationTarget;->sourceContainerBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#414: Linking max-target-r Landroid/view/RemoteAnimationTarget;->startBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#415: Linking max-target-r Landroid/view/RemoteAnimationTarget;->startLeash:Landroid/view/SurfaceControl; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#416: Linking unsupported Landroid/view/RemoteAnimationTarget;->taskId:I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#417: Linking blocked Landroid/view/RemoteAnimationTarget;->taskInfo:Landroid/app/ActivityManager$RunningTaskInfo; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#418: Linking unsupported Landroid/view/RemoteAnimationTarget;->windowConfiguration:Landroid/app/WindowConfiguration; use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V (2 occurrences)
+
+#419: Linking blocked Landroid/view/RemoteAnimationTarget;->windowType:I use(s):
+       Lcom/android/systemui/shared/system/RemoteAnimationTargetCompat;-><init>(Landroid/view/RemoteAnimationTarget;)V
+
+#420: Linking unsupported Landroid/view/ViewTreeObserver$InternalInsetsInfo;->contentInsets:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->lambda$addOnComputeInsetsListener$0(Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V (2 occurrences)
+
+#421: Linking max-target-r Landroid/view/ViewTreeObserver$InternalInsetsInfo;->touchableRegion:Landroid/graphics/Region; use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->lambda$addOnComputeInsetsListener$0(Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V (2 occurrences)
+
+#422: Linking unsupported Landroid/view/ViewTreeObserver$InternalInsetsInfo;->visibleInsets:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/shared/system/ViewTreeObserverWrapper;->lambda$addOnComputeInsetsListener$0(Lcom/android/systemui/shared/system/ViewTreeObserverWrapper$OnComputeInsetsListener;Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V (2 occurrences)
+
+#423: Linking unsupported,test-api Landroid/view/WindowManager$LayoutParams;->privateFlags:I use(s):
+       Lcom/android/launcher3/taskbar/TaskbarActivityContext;->excludeFromMagnificationRegion(Z)V (4 occurrences)
+       Lcom/android/launcher3/taskbar/TaskbarActivityContext;->init(Lcom/android/launcher3/taskbar/TaskbarSharedState;)V
+       Lcom/android/systemui/shared/rotation/FloatingRotationButton;->adjustViewPositionAndCreateLayoutParams()Landroid/view/WindowManager$LayoutParams; (2 occurrences)
+
+#424: Linking blocked Landroid/view/WindowManager$LayoutParams;->providedInternalImeInsets:Landroid/graphics/Insets; use(s):
+       Lcom/android/launcher3/taskbar/TaskbarActivityContext;->init(Lcom/android/launcher3/taskbar/TaskbarSharedState;)V
+       Lcom/android/launcher3/taskbar/TaskbarActivityContext;->setTaskbarWindowHeight(I)V
+
+#425: Linking blocked Landroid/view/WindowManager$LayoutParams;->providesInsetsTypes:[I use(s):
+       Lcom/android/systemui/shared/system/WindowManagerWrapper;->setProvidesInsetsTypes(Landroid/view/WindowManager$LayoutParams;[I)V
+
+#426: Linking blocked Landroid/window/RemoteTransition;->CREATOR:Landroid/os/Parcelable$Creator; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Landroid/os/Parcel;)V
+       Lcom/android/wm/shell/splitscreen/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+       Lcom/android/wm/shell/stagesplit/ISplitScreen$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+       Lcom/android/wm/shell/transition/IShellTransitions$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z (2 occurrences)
+
+#427: Linking blocked Landroid/window/TransitionFilter$Requirement;->mActivityType:I use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V (2 occurrences)
+
+#428: Linking blocked Landroid/window/TransitionFilter$Requirement;->mModes:[I use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V (2 occurrences)
+
+#429: Linking blocked Landroid/window/TransitionFilter$Requirement;->mOrder:I use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V
+
+#430: Linking blocked Landroid/window/TransitionFilter$Requirement;->mTopActivity:Landroid/content/ComponentName; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V
+
+#431: Linking blocked Landroid/window/TransitionFilter;->CREATOR:Landroid/os/Parcelable$Creator; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;-><init>(Landroid/os/Parcel;)V
+       Lcom/android/wm/shell/transition/IShellTransitions$Stub;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+#432: Linking blocked Landroid/window/TransitionFilter;->mNotFlags:I use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V
+
+#433: Linking blocked Landroid/window/TransitionFilter;->mRequirements:[Landroid/window/TransitionFilter$Requirement; use(s):
+       Lcom/android/systemui/shared/system/RemoteTransitionCompat;->addHomeOpenCheck(Landroid/content/ComponentName;)V (7 occurrences)
+
+#434: Linking max-target-q Lcom/android/internal/R$styleable;->Preference:[I use(s):
+       Lorg/lineageos/internal/lineageparts/PartsList;->loadPartsFromResourceLocked(Landroid/content/res/Resources;ILjava/util/Map;)V
+
+#435: Linking max-target-r Lcom/android/internal/os/SomeArgs;->arg1:Ljava/lang/Object; use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->handleMessage(Landroid/os/Message;)Z
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+
+#436: Linking max-target-o Lcom/android/internal/os/SomeArgs;->argi1:I use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->handleMessage(Landroid/os/Message;)Z
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+
+#437: Linking max-target-r Lcom/android/internal/os/SomeArgs;->argi2:I use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->handleMessage(Landroid/os/Message;)Z
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+
+#438: Linking max-target-r Lcom/android/internal/os/SomeArgs;->argi3:I use(s):
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->handleMessage(Landroid/os/Message;)Z
+       Lcom/android/systemui/shared/system/TaskStackChangeListeners$Impl;->onActivityRestartAttempt(Landroid/app/ActivityManager$RunningTaskInfo;ZZZ)V
+
+#439: Reflection max-target-p Landroid/animation/LayoutTransition;->cancel use(s):
+       Landroidx/transition/ViewGroupUtilsApi14;->cancelLayoutTransition(Landroid/animation/LayoutTransition;)V
+
+#440: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#441: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#442: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#443: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#444: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#445: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#446: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#447: Reflection max-target-o Landroid/graphics/drawable/AnimatedVectorDrawable$VectorDrawableAnimatorUI;->mSet use(s):
+       Lorg/lineageos/internal/graphics/drawable/StopMotionVectorDrawable;->getAnimatorSetViaReflection()V
+
+#448: Reflection unsupported Landroid/graphics/drawable/AnimatedVectorDrawable;->mAnimatorSet use(s):
+       Lorg/lineageos/internal/graphics/drawable/StopMotionVectorDrawable;->getAnimatorSetViaReflection()V
+
+#449: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#450: Reflection unsupported Landroid/os/Bundle;->putIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
+
+#451: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#452: Reflection unsupported Landroid/os/Trace;->asyncTraceBegin use(s):
+       Landroidx/tracing/Trace;->beginAsyncSectionFallback(Ljava/lang/String;I)V
+
+#453: Reflection unsupported Landroid/os/Trace;->asyncTraceEnd use(s):
+       Landroidx/tracing/Trace;->endAsyncSectionFallback(Ljava/lang/String;I)V
+
+#454: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#455: Reflection unsupported Landroid/os/Trace;->traceCounter use(s):
+       Landroidx/tracing/Trace;->setCounterFallback(Ljava/lang/String;I)V
+
+#456: Reflection unsupported,test-api Landroid/os/UserHandle;->getUserId use(s):
+       Landroidx/core/os/UserHandleCompat;->getGetUserIdMethod()Ljava/lang/reflect/Method;
+
+#457: Reflection unsupported,test-api Landroid/os/UserHandle;->isApp use(s):
+       Landroidx/core/os/ProcessCompat$Api17Impl;->isApplicationUid(I)Z
+
+#458: Reflection blocked Landroid/service/wallpaper/IWallpaperEngine;->scalePreview use(s):
+       Lcom/android/systemui/shared/system/WallpaperEngineCompat;->supportsScalePreview()Z
+
+#459: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#460: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#461: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#462: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#463: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#464: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#465: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#466: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#467: Reflection max-target-p Landroid/view/View;->mViewFlags use(s):
+       Landroidx/transition/ViewUtilsBase;->setTransitionVisibility(Landroid/view/View;I)V
+
+#468: Reflection max-target-p Landroid/view/View;->setFrame use(s):
+       Landroidx/transition/ViewUtilsBase;->fetchSetFrame()V
+
+#469: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#470: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#471: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doAfterTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#472: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doBeforeTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#473: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->ensureImeVisible use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#474: Reflection unsupported Landroid/widget/CheckedTextView;->mCheckMarkDrawable use(s):
+       Landroidx/core/widget/CheckedTextViewCompat$Api14Impl;->getCheckMarkDrawable(Landroid/widget/CheckedTextView;)Landroid/graphics/drawable/Drawable;
+
+#475: Reflection max-target-p Landroid/widget/ImageView;->mDrawMatrix use(s):
+       Landroidx/transition/ImageViewUtils;->fetchDrawMatrixField()V
+
+#476: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#477: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#478: Reflection max-target-p Landroid/widget/TextView;->mCursorDrawableRes use(s):
+       Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->setCursorDrawableColor(Landroid/widget/EditText;I)V
+
+#479: Reflection unsupported Landroid/widget/TextView;->mEditor use(s):
+       Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->setCursorDrawableColor(Landroid/widget/EditText;I)V
+
+#480: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#481: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#482: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#483: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#484: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+#485: Reflection unsupported Ljava/nio/Buffer;->address use(s):
+       Lcom/google/protobuf/UnsafeUtil;->bufferAddressField()Ljava/lang/reflect/Field;
+
+485 hidden API(s) used: 438 linked against, 47 through reflection
+	189 in unsupported
+	217 in blocked
+	43 in max-target-o
+	17 in max-target-p
+	4 in max-target-q
+	15 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
