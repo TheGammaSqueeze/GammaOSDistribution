@@ -1,0 +1,2212 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 10,
+     "name" : "EVENT_TYPE_LIST_STOP"
+    },
+    {
+     "enum_field_value" : 63,
+     "name" : "EVENT_TYPE_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "EVENT_TYPE_INT"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EVENT_TYPE_LONG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVENT_TYPE_STRING"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EVENT_TYPE_LIST"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVENT_TYPE_FLOAT"
+    }
+   ],
+   "linker_set_key" : "_ZTI19AndroidEventLogType",
+   "name" : "AndroidEventLogType",
+   "referenced_type" : "_ZTI19AndroidEventLogType",
+   "self_type" : "_ZTI19AndroidEventLogType",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANDROID_LOG_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANDROID_LOG_DEFAULT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANDROID_LOG_VERBOSE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANDROID_LOG_DEBUG"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANDROID_LOG_INFO"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANDROID_LOG_WARN"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANDROID_LOG_ERROR"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANDROID_LOG_FATAL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANDROID_LOG_SILENT"
+    }
+   ],
+   "linker_set_key" : "_ZTI19android_LogPriority",
+   "name" : "android_LogPriority",
+   "referenced_type" : "_ZTI19android_LogPriority",
+   "self_type" : "_ZTI19android_LogPriority",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/android/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MIN"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MAIN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "LOG_ID_RADIO"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "LOG_ID_EVENTS"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "LOG_ID_SYSTEM"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "LOG_ID_CRASH"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "LOG_ID_STATS"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "LOG_ID_SECURITY"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "LOG_ID_KERNEL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "LOG_ID_MAX"
+    },
+    {
+     "enum_field_value" : 2147483647,
+     "name" : "LOG_ID_DEFAULT"
+    }
+   ],
+   "linker_set_key" : "_ZTI6log_id",
+   "name" : "log_id",
+   "referenced_type" : "_ZTI6log_id",
+   "self_type" : "_ZTI6log_id",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/android/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "android::VectorImpl::HAS_TRIVIAL_CTOR"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::VectorImpl::HAS_TRIVIAL_DTOR"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::VectorImpl::HAS_TRIVIAL_COPY"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android10VectorImpl17$HAS_TRIVIAL_COPYE",
+   "name" : "android::VectorImpl::(anonymous enum at system/core/libutils/include/utils/VectorImpl.h:43:5)",
+   "referenced_type" : "_ZTIN7android10VectorImpl17$HAS_TRIVIAL_COPYE",
+   "self_type" : "_ZTIN7android10VectorImpl17$HAS_TRIVIAL_COPYE",
+   "size" : 4,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::OK"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "android::NO_ERROR"
+    },
+    {
+     "enum_field_value" : -2147483648,
+     "name" : "android::UNKNOWN_ERROR"
+    },
+    {
+     "enum_field_value" : -12,
+     "name" : "android::NO_MEMORY"
+    },
+    {
+     "enum_field_value" : -38,
+     "name" : "android::INVALID_OPERATION"
+    },
+    {
+     "enum_field_value" : -22,
+     "name" : "android::BAD_VALUE"
+    },
+    {
+     "enum_field_value" : -2147483647,
+     "name" : "android::BAD_TYPE"
+    },
+    {
+     "enum_field_value" : -2,
+     "name" : "android::NAME_NOT_FOUND"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "android::PERMISSION_DENIED"
+    },
+    {
+     "enum_field_value" : -19,
+     "name" : "android::NO_INIT"
+    },
+    {
+     "enum_field_value" : -17,
+     "name" : "android::ALREADY_EXISTS"
+    },
+    {
+     "enum_field_value" : -32,
+     "name" : "android::DEAD_OBJECT"
+    },
+    {
+     "enum_field_value" : -2147483646,
+     "name" : "android::FAILED_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -75,
+     "name" : "android::BAD_INDEX"
+    },
+    {
+     "enum_field_value" : -61,
+     "name" : "android::NOT_ENOUGH_DATA"
+    },
+    {
+     "enum_field_value" : -11,
+     "name" : "android::WOULD_BLOCK"
+    },
+    {
+     "enum_field_value" : -110,
+     "name" : "android::TIMED_OUT"
+    },
+    {
+     "enum_field_value" : -74,
+     "name" : "android::UNKNOWN_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -2147483641,
+     "name" : "android::FDS_NOT_ALLOWED"
+    },
+    {
+     "enum_field_value" : -2147483640,
+     "name" : "android::UNEXPECTED_NULL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "name" : "android::(anonymous enum at system/core/libutils/include/utils/Errors.h:43:1)",
+   "referenced_type" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "self_type" : "_ZTIN7android15$ALREADY_EXISTSE",
+   "size" : 4,
+   "source_file" : "system/core/libutils/include/utils/Errors.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPKvS0_E",
+   "name" : "int (const void *, const void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPKvS0_E",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPKvS0_E",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPKvS0_PvE",
+   "name" : "int (const void *, const void *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPKvS0_PvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPKvS0_PvE",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "android::VectorImpl::appendArray",
+   "linker_set_key" : "_ZN7android10VectorImpl11appendArrayEPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::setCapacity",
+   "linker_set_key" : "_ZN7android10VectorImpl11setCapacityEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::appendVector",
+   "linker_set_key" : "_ZN7android10VectorImpl12appendVectorERKS0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::editArrayImpl",
+   "linker_set_key" : "_ZN7android10VectorImpl13editArrayImplEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::finish_vector",
+   "linker_set_key" : "_ZN7android10VectorImpl13finish_vectorEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::insertArrayAt",
+   "linker_set_key" : "_ZN7android10VectorImpl13insertArrayAtEPKvmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::removeItemsAt",
+   "linker_set_key" : "_ZN7android10VectorImpl13removeItemsAtEmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::insertVectorAt",
+   "linker_set_key" : "_ZN7android10VectorImpl14insertVectorAtERKS0_m",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "android::VectorImpl::release_storage",
+   "linker_set_key" : "_ZN7android10VectorImpl15release_storageEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::editItemLocation",
+   "linker_set_key" : "_ZN7android10VectorImpl16editItemLocationEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::add",
+   "linker_set_key" : "_ZN7android10VectorImpl3addEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::add",
+   "linker_set_key" : "_ZN7android10VectorImpl3addEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::pop",
+   "linker_set_key" : "_ZN7android10VectorImpl3popEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::push",
+   "linker_set_key" : "_ZN7android10VectorImpl4pushEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::push",
+   "linker_set_key" : "_ZN7android10VectorImpl4pushEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::sort",
+   "linker_set_key" : "_ZN7android10VectorImpl4sortEPFiPKvS2_E",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPFiPKvS0_E"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::sort",
+   "linker_set_key" : "_ZN7android10VectorImpl4sortEPFiPKvS2_PvES3_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPFiPKvS0_PvE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_grow",
+   "linker_set_key" : "_ZN7android10VectorImpl5_growEmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::clear",
+   "linker_set_key" : "_ZN7android10VectorImpl5clearEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::resize",
+   "linker_set_key" : "_ZN7android10VectorImpl6resizeEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_shrink",
+   "linker_set_key" : "_ZN7android10VectorImpl7_shrinkEmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::insertAt",
+   "linker_set_key" : "_ZN7android10VectorImpl8insertAtEPKvmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::insertAt",
+   "linker_set_key" : "_ZN7android10VectorImpl8insertAtEmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::replaceAt",
+   "linker_set_key" : "_ZN7android10VectorImpl9replaceAtEPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::replaceAt",
+   "linker_set_key" : "_ZN7android10VectorImpl9replaceAtEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::VectorImpl",
+   "linker_set_key" : "_ZN7android10VectorImplC2ERKS0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::VectorImpl",
+   "linker_set_key" : "_ZN7android10VectorImplC2Emj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::~VectorImpl",
+   "linker_set_key" : "_ZN7android10VectorImplD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::~VectorImpl",
+   "linker_set_key" : "_ZN7android10VectorImplD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::~VectorImpl",
+   "linker_set_key" : "_ZN7android10VectorImplD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::operator=",
+   "linker_set_key" : "_ZN7android10VectorImplaSERKS0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIRN7android10VectorImplE",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::add",
+   "linker_set_key" : "_ZN7android16SortedVectorImpl3addEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::merge",
+   "linker_set_key" : "_ZN7android16SortedVectorImpl5mergeERKNS_10VectorImplE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::merge",
+   "linker_set_key" : "_ZN7android16SortedVectorImpl5mergeERKS0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android16SortedVectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::remove",
+   "linker_set_key" : "_ZN7android16SortedVectorImpl6removeEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::SortedVectorImpl",
+   "linker_set_key" : "_ZN7android16SortedVectorImplC2ERKNS_10VectorImplE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::SortedVectorImpl",
+   "linker_set_key" : "_ZN7android16SortedVectorImplC2Emj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::~SortedVectorImpl",
+   "linker_set_key" : "_ZN7android16SortedVectorImplD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::~SortedVectorImpl",
+   "linker_set_key" : "_ZN7android16SortedVectorImplD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::~SortedVectorImpl",
+   "linker_set_key" : "_ZN7android16SortedVectorImplD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::operator=",
+   "linker_set_key" : "_ZN7android16SortedVectorImplaSERKS0_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android16SortedVectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIRN7android16SortedVectorImplE",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1ERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ejj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2ERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ejj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator-=",
+   "linker_set_key" : "_ZN8log_timemIERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator+=",
+   "linker_set_key" : "_ZN8log_timepLERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_destroy",
+   "linker_set_key" : "_ZNK7android10VectorImpl11_do_destroyEPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::itemLocation",
+   "linker_set_key" : "_ZNK7android10VectorImpl12itemLocationEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPKv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_construct",
+   "linker_set_key" : "_ZNK7android10VectorImpl13_do_constructEPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_move_forward",
+   "linker_set_key" : "_ZNK7android10VectorImpl16_do_move_forwardEPvPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_move_backward",
+   "linker_set_key" : "_ZNK7android10VectorImpl17_do_move_backwardEPvPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::size",
+   "linker_set_key" : "_ZNK7android10VectorImpl4sizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::isEmpty",
+   "linker_set_key" : "_ZNK7android10VectorImpl7isEmptyEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_copy",
+   "linker_set_key" : "_ZNK7android10VectorImpl8_do_copyEPvPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::capacity",
+   "linker_set_key" : "_ZNK7android10VectorImpl8capacityEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "android::VectorImpl::itemSize",
+   "linker_set_key" : "_ZNK7android10VectorImpl8itemSizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::VectorImpl::_do_splat",
+   "linker_set_key" : "_ZNK7android10VectorImpl9_do_splatEPvPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::VectorImpl::arrayImpl",
+   "linker_set_key" : "_ZNK7android10VectorImpl9arrayImplEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android10VectorImplE"
+    }
+   ],
+   "return_type" : "_ZTIPKv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::SortedVectorImpl::_indexOrderOf",
+   "linker_set_key" : "_ZNK7android16SortedVectorImpl13_indexOrderOfEPKvPm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::indexOf",
+   "linker_set_key" : "_ZNK7android16SortedVectorImpl7indexOfEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "android::SortedVectorImpl::orderOf",
+   "linker_set_key" : "_ZNK7android16SortedVectorImpl7orderOfEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android16SortedVectorImplE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "function_name" : "log_time::msec",
+   "linker_set_key" : "_ZNK8log_time4msecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::nsec",
+   "linker_set_key" : "_ZNK8log_time4nsecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::usec",
+   "linker_set_key" : "_ZNK8log_time4usecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator==",
+   "linker_set_key" : "_ZNK8log_timeeqERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator==",
+   "linker_set_key" : "_ZNK8log_timeeqERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>=",
+   "linker_set_key" : "_ZNK8log_timegeERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>=",
+   "linker_set_key" : "_ZNK8log_timegeERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>",
+   "linker_set_key" : "_ZNK8log_timegtERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>",
+   "linker_set_key" : "_ZNK8log_timegtERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<=",
+   "linker_set_key" : "_ZNK8log_timeleERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<=",
+   "linker_set_key" : "_ZNK8log_timeleERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<",
+   "linker_set_key" : "_ZNK8log_timeltERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<",
+   "linker_set_key" : "_ZNK8log_timeltERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator-",
+   "linker_set_key" : "_ZNK8log_timemiERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator!=",
+   "linker_set_key" : "_ZNK8log_timeneERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator!=",
+   "linker_set_key" : "_ZNK8log_timeneERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator+",
+   "linker_set_key" : "_ZNK8log_timeplERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN8log_time5EPOCHE",
+   "name" : "log_time::EPOCH",
+   "referenced_type" : "_ZTIK8timespec",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRK8log_time",
+   "name" : "const log_time &",
+   "referenced_type" : "_ZTIK8log_time",
+   "self_type" : "_ZTIRK8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRK8timespec",
+   "name" : "const timespec &",
+   "referenced_type" : "_ZTIK8timespec",
+   "self_type" : "_ZTIRK8timespec",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android10VectorImplE",
+   "name" : "const android::VectorImpl &",
+   "referenced_type" : "_ZTIKN7android10VectorImplE",
+   "self_type" : "_ZTIRKN7android10VectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android16SortedVectorImplE",
+   "name" : "const android::SortedVectorImpl &",
+   "referenced_type" : "_ZTIKN7android16SortedVectorImplE",
+   "self_type" : "_ZTIRKN7android16SortedVectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRN7android10VectorImplE",
+   "name" : "android::VectorImpl &",
+   "referenced_type" : "_ZTIN7android10VectorImplE",
+   "self_type" : "_ZTIRN7android10VectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRN7android16SortedVectorImplE",
+   "name" : "android::SortedVectorImpl &",
+   "referenced_type" : "_ZTIN7android16SortedVectorImplE",
+   "self_type" : "_ZTIRN7android16SortedVectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8log_time",
+   "name" : "log_time *",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTIP8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPKvS0_E",
+   "name" : "int (*)(const void *, const void *)",
+   "referenced_type" : "_ZTIFiPKvS0_E",
+   "self_type" : "_ZTIPFiPKvS0_E",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPKvS0_PvE",
+   "name" : "int (*)(const void *, const void *, void *)",
+   "referenced_type" : "_ZTIFiPKvS0_PvE",
+   "self_type" : "_ZTIPFiPKvS0_PvE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPK8log_time",
+   "name" : "const log_time *",
+   "referenced_type" : "_ZTIK8log_time",
+   "self_type" : "_ZTIPK8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android10VectorImplE",
+   "name" : "const android::VectorImpl *",
+   "referenced_type" : "_ZTIKN7android10VectorImplE",
+   "self_type" : "_ZTIPKN7android10VectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android16SortedVectorImplE",
+   "name" : "const android::SortedVectorImpl *",
+   "referenced_type" : "_ZTIKN7android16SortedVectorImplE",
+   "self_type" : "_ZTIPKN7android16SortedVectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android10VectorImplE",
+   "name" : "android::VectorImpl *",
+   "referenced_type" : "_ZTIN7android10VectorImplE",
+   "self_type" : "_ZTIPN7android10VectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android16SortedVectorImplE",
+   "name" : "android::SortedVectorImpl *",
+   "referenced_type" : "_ZTIN7android16SortedVectorImplE",
+   "self_type" : "_ZTIPN7android16SortedVectorImplE",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8log_time",
+   "name" : "const log_time",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTIK8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8timespec",
+   "name" : "const timespec",
+   "referenced_type" : "_ZTI8timespec",
+   "self_type" : "_ZTIK8timespec",
+   "size" : 16,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android10VectorImplE",
+   "name" : "const android::VectorImpl",
+   "referenced_type" : "_ZTIN7android10VectorImplE",
+   "self_type" : "_ZTIKN7android10VectorImplE",
+   "size" : 40,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android16SortedVectorImplE",
+   "name" : "const android::SortedVectorImpl",
+   "referenced_type" : "_ZTIN7android16SortedVectorImplE",
+   "self_type" : "_ZTIKN7android16SortedVectorImplE",
+   "size" : 40,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "struct_size",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "buffer_id",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "priority",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "tag",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "file",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "line",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "message",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "linker_set_key" : "_ZTI21__android_log_message",
+   "name" : "__android_log_message",
+   "referenced_type" : "_ZTI21__android_log_message",
+   "self_type" : "_ZTI21__android_log_message",
+   "size" : 48,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "tv_sec",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "tv_nsec",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI8log_time",
+   "name" : "log_time",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTI8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mStorage",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mCount",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mFlags",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mItemSize",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIKm"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android10VectorImplE",
+   "name" : "android::VectorImpl",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android10VectorImplE",
+   "self_type" : "_ZTIN7android10VectorImplE",
+   "size" : 40,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android10VectorImplE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android10VectorImplD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android10VectorImplD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl12do_constructEPvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl10do_destroyEPvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl7do_copyEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl8do_splatEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl15do_move_forwardEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl16do_move_backwardEPvPKvm"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android10VectorImplE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android16SortedVectorImplE",
+   "name" : "android::SortedVectorImpl",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android16SortedVectorImplE",
+   "self_type" : "_ZTIN7android16SortedVectorImplE",
+   "size" : 40,
+   "source_file" : "system/core/libutils/include/utils/VectorImpl.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android16SortedVectorImplE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android16SortedVectorImplD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android16SortedVectorImplD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl12do_constructEPvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl10do_destroyEPvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl7do_copyEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl8do_splatEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl15do_move_forwardEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android10VectorImpl16do_move_backwardEPvPKvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZNK7android16SortedVectorImpl10do_compareEPKvS2_"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
