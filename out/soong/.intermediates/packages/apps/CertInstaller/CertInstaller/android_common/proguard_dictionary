@@ -1,0 +1,828 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: b5f843f
+# common_typos_disable
+com.android.certinstaller.CertInstaller -> com.android.certinstaller.CertInstaller:
+    54:73:void <init>() -> <init>
+    54:54:com.android.certinstaller.CredentialHelper access$100(com.android.certinstaller.CertInstaller) -> access$100
+    54:54:int access$300(com.android.certinstaller.CertInstaller) -> access$300
+    54:54:com.android.certinstaller.CertInstaller$MyAction access$402(com.android.certinstaller.CertInstaller,com.android.certinstaller.CertInstaller$MyAction) -> access$402
+    54:54:void access$500(com.android.certinstaller.CertInstaller,java.lang.String) -> access$500
+    54:54:void access$600(com.android.certinstaller.CertInstaller) -> access$600
+    54:54:void access$700(com.android.certinstaller.CertInstaller,boolean) -> access$700
+    81:110:com.android.certinstaller.CredentialHelper createCredentialHelper(android.content.Intent) -> createCredentialHelper
+    445:452:android.app.Dialog createInvalidCertificateDialog() -> createInvalidCertificateDialog
+    497:526:android.app.Dialog createNameCertificateDialog() -> createNameCertificateDialog
+    470:492:android.app.Dialog createPkcs12PasswordDialog() -> createPkcs12PasswordDialog
+    400:408:android.app.Dialog createRedirectCaCertificateDialog() -> createRedirectCaCertificateDialog
+    373:376:void createRedirectOrSelectUsageDialog() -> createRedirectOrSelectUsageDialog
+    413:440:android.app.Dialog createSelectCertificateUsageDialog() -> createSelectCertificateUsageDialog
+    333:348:void extractPkcs12InBackground(java.lang.String) -> extractPkcs12InBackground
+    237:248:void extractPkcs12OrInstall() -> extractPkcs12OrInstall
+    381:396:java.lang.CharSequence getCallingAppLabel() -> getCallingAppLabel
+    457:465:java.lang.String getCertificateUsageName() -> getCertificateUsageName
+    600:600:com.android.certinstaller.CredentialHelper getCredentials() -> getCredentials
+    542:548:java.lang.String getDefaultName() -> getDefaultName
+    317:327:void installCertificateOrShowNameDialog() -> installCertificateOrShowNameDialog
+    532:537:void installCertificateToKeystore(android.content.Context) -> installCertificateToKeystore
+    283:298:void installOthers() -> installOthers
+    148:149:boolean installingCaCertificate() -> installingCaCertificate
+    450:450:void lambda$createInvalidCertificateDialog$6(android.content.DialogInterface,int) -> lambda$createInvalidCertificateDialog$6
+    452:452:void lambda$createInvalidCertificateDialog$7(android.content.DialogInterface) -> lambda$createInvalidCertificateDialog$7
+    512:520:void lambda$createNameCertificateDialog$11(android.content.Context,android.content.DialogInterface,int) -> lambda$createNameCertificateDialog$11
+    524:524:void lambda$createNameCertificateDialog$12(android.content.DialogInterface,int) -> lambda$createNameCertificateDialog$12
+    526:526:void lambda$createNameCertificateDialog$13(android.content.DialogInterface) -> lambda$createNameCertificateDialog$13
+    492:492:void lambda$createPkcs12PasswordDialog$10(android.content.DialogInterface) -> lambda$createPkcs12PasswordDialog$10
+    485:487:void lambda$createPkcs12PasswordDialog$8(android.content.DialogInterface,int) -> lambda$createPkcs12PasswordDialog$8
+    490:490:void lambda$createPkcs12PasswordDialog$9(android.content.DialogInterface,int) -> lambda$createPkcs12PasswordDialog$9
+    406:406:void lambda$createRedirectCaCertificateDialog$0(android.content.DialogInterface,int) -> lambda$createRedirectCaCertificateDialog$0
+    408:408:void lambda$createRedirectCaCertificateDialog$1(android.content.DialogInterface) -> lambda$createRedirectCaCertificateDialog$1
+    421:426:void lambda$createSelectCertificateUsageDialog$2(android.widget.RadioGroup,int) -> lambda$createSelectCertificateUsageDialog$2
+    435:435:void lambda$createSelectCertificateUsageDialog$3(android.content.DialogInterface,int) -> lambda$createSelectCertificateUsageDialog$3
+    438:438:void lambda$createSelectCertificateUsageDialog$4(android.content.DialogInterface,int) -> lambda$createSelectCertificateUsageDialog$4
+    440:440:void lambda$createSelectCertificateUsageDialog$5(android.content.DialogInterface) -> lambda$createSelectCertificateUsageDialog$5
+    215:231:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    116:143:void onCreate(android.os.Bundle) -> onCreate
+    184:203:android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    352:368:void onExtractionDone(boolean) -> onExtractionDone
+    167:168:void onPause() -> onPause
+    154:160:void onResume() -> onResume
+    173:176:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    554:555:void toastErrorAndFinish(int) -> toastErrorAndFinish
+    303:308:boolean validCertificateSelected() -> validCertificateSelected
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda0 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda0:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$1.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$1.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$1.onCancel(android.content.DialogInterface) -> onCancel
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda1 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda1:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$2.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$2.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$2.onCancel(android.content.DialogInterface) -> onCancel
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda10 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda10:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$0.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$0.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$5c09f04d6ba79992b6a6a0f1f6ca0bdad708e9f89059d1673832a63ceeb8f22a$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda11 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda11:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$0.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$0.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda12 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda12:
+    android.content.Context com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$0.f$1 -> f$1
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$0.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$0.<init>(com.android.certinstaller.CertInstaller,android.content.Context) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda13 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda13:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$0.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$0.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$0.onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda2 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda2:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$3.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$3.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$3.onCancel(android.content.DialogInterface) -> onCancel
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda3 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda3:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$1.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$1.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$1.onCancel(android.content.DialogInterface) -> onCancel
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda4 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda4:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$2.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$2.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$2.onCancel(android.content.DialogInterface) -> onCancel
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda5 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda5:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$0.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$0.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$a18b4fcd5d7441efca0e434d34824cba91c79df76484a1fac763fe6578104662$0.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda6 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda6:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$1.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$1.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$ce7de518d8e048bb6f68fe360f6bf4efe3d6f8c61fe6cd6d85491f4cea24546a$1.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda7 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda7:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$2.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$2.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$2.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda8 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda8:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$1.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$1.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$7bfecc4e0cfb4d49ea4a315623b34729c42940260d825871a3554ed48f40c9f1$1.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda9 -> com.android.certinstaller.CertInstaller$$ExternalSyntheticLambda9:
+    com.android.certinstaller.CertInstaller com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$1.f$0 -> f$0
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$1.<init>(com.android.certinstaller.CertInstaller) -> <init>
+    void com.android.certinstaller.CertInstaller$$InternalSyntheticLambda$0$01cfc46ac9dd59e5b4f6f699aa7a7c3b26e74401f08d892e342ee1f0a41542cb$1.onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.CertInstaller$1 -> com.android.certinstaller.CertInstaller$1:
+    335:335:void <init>(com.android.certinstaller.CertInstaller,java.lang.String) -> <init>
+    335:335:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    337:337:java.lang.Boolean doInBackground(java.lang.Void[]) -> doInBackground
+    335:335:void onPostExecute(java.lang.Object) -> onPostExecute
+    340:345:void onPostExecute(java.lang.Boolean) -> onPostExecute
+com.android.certinstaller.CertInstaller$InstallOthersAction -> com.android.certinstaller.CertInstaller$InstallOthersAction:
+    579:579:void <init>() -> <init>
+    579:579:void <init>(com.android.certinstaller.CertInstaller$1) -> <init>
+    581:582:void run(com.android.certinstaller.CertInstaller) -> run
+com.android.certinstaller.CertInstaller$InstallVpnAndAppsTrustAnchorsTask -> com.android.certinstaller.CertInstaller$InstallVpnAndAppsTrustAnchorsTask:
+    253:253:void <init>(com.android.certinstaller.CertInstaller) -> <init>
+    253:253:void <init>(com.android.certinstaller.CertInstaller,com.android.certinstaller.CertInstaller$1) -> <init>
+    253:253:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    258:264:java.lang.Boolean doInBackground(java.lang.Void[]) -> doInBackground
+    253:253:void onPostExecute(java.lang.Object) -> onPostExecute
+    270:275:void onPostExecute(java.lang.Boolean) -> onPostExecute
+com.android.certinstaller.CertInstaller$OnExtractionDoneAction -> com.android.certinstaller.CertInstaller$OnExtractionDoneAction:
+    589:590:void <init>(boolean) -> <init>
+    594:594:void run(com.android.certinstaller.CertInstaller) -> run
+com.android.certinstaller.CertInstaller$Pkcs12ExtractAction -> com.android.certinstaller.CertInstaller$Pkcs12ExtractAction:
+    566:567:void <init>(java.lang.String) -> <init>
+    571:575:void run(com.android.certinstaller.CertInstaller) -> run
+com.android.certinstaller.CertInstallerMain -> com.android.certinstaller.CertInstallerMain:
+    58:67:void <clinit>() -> <clinit>
+    45:45:void <init>() -> <init>
+    136:136:boolean bundleContainsExtraCertificateUsageOnly(android.os.Bundle) -> bundleContainsExtraCertificateUsageOnly
+    132:132:boolean bundleContainsInstallAsUidOnly(android.os.Bundle) -> bundleContainsInstallAsUidOnly
+    128:128:boolean bundleContainsNameOnly(android.os.Bundle) -> bundleContainsNameOnly
+    145:151:void confirmDeviceCredential() -> confirmDeviceCredential
+    140:141:boolean installingCaCertificate(android.os.Bundle) -> installingCaCertificate
+    124:124:boolean nullOrEmptyBundle(android.os.Bundle) -> nullOrEmptyBundle
+    260:279:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    72:119:void onCreate(android.os.Bundle) -> onCreate
+    167:178:byte[] readWithLimit(java.io.InputStream) -> readWithLimit
+    182:197:void startInstallActivity(android.content.Intent) -> startInstallActivity
+    202:228:void startInstallActivity(java.lang.String,android.net.Uri) -> startInstallActivity
+    248:253:void startOpenDocumentActivity() -> startOpenDocumentActivity
+    233:243:void startWifiInstallActivity(java.lang.String,android.net.Uri) -> startWifiInstallActivity
+com.android.certinstaller.CredentialHelper -> com.android.certinstaller.CredentialHelper:
+    79:89:void <init>() -> <init>
+    79:120:void <init>(java.util.Map,java.lang.String,java.lang.String,java.lang.String,int) -> <init>
+    300:300:boolean calledBySettings() -> calledBySettings
+    248:248:boolean containsAnyRawData() -> containsAnyRawData
+    304:330:android.content.Intent createSystemInstallIntent(android.content.Context) -> createSystemInstallIntent
+    385:387:boolean extractPkcs12(java.lang.String) -> extractPkcs12
+    395:419:boolean extractPkcs12Internal(java.security.KeyStore$PasswordProtection) -> extractPkcs12Internal
+    296:296:java.lang.String getCertUsageSelected() -> getCertUsageSelected
+    252:252:byte[] getData(java.lang.String) -> getData
+    287:287:java.lang.String getName() -> getName
+    474:474:java.lang.String getReferrer() -> getReferrer
+    479:479:int getUid() -> getUid
+    217:217:int getUidFromCertificateUsage(java.lang.String) -> getUidFromCertificateUsage
+    233:233:boolean hasAnyForSystemInstall() -> hasAnyForSystemInstall
+    229:229:boolean hasCaCerts() -> hasCaCerts
+    456:464:boolean hasOnlyVpnAndAppsTrustAnchors() -> hasOnlyVpnAndAppsTrustAnchors
+    373:377:boolean hasPassword() -> hasPassword
+    209:209:boolean hasPkcs12KeyStore() -> hasPkcs12KeyStore
+    213:213:boolean hasPrivateKey() -> hasPrivateKey
+    225:225:boolean hasUserCertificate() -> hasUserCertificate
+    434:448:boolean installFrom(java.security.KeyStore$PrivateKeyEntry) -> installFrom
+    335:357:boolean installVpnAndAppsTrustAnchors(android.content.Context,android.security.IKeyChainService) -> installVpnAndAppsTrustAnchors
+    193:202:boolean isCa(java.security.cert.X509Certificate) -> isCa
+    427:429:java.security.KeyStore loadPkcs12Internal(java.security.KeyStore$PasswordProtection) -> loadPkcs12Internal
+    364:368:void maybeApproveCaCert(android.content.Context,java.lang.String) -> maybeApproveCaCert
+    148:160:void onRestoreStates(android.os.Bundle) -> onRestoreStates
+    125:145:void onSaveStates(android.os.Bundle) -> onSaveStates
+    174:186:void parseCert(byte[]) -> parseCert
+    291:292:void setCertUsageSelectedAndUid(java.lang.String) -> setCertUsageSelectedAndUid
+    283:283:void setName(java.lang.String) -> setName
+    238:243:void setPrivateKey(java.lang.String,byte[]) -> setPrivateKey
+com.android.certinstaller.CredentialsInstallDialog -> com.android.certinstaller.CredentialsInstallDialog:
+    29:29:void <init>() -> <init>
+    45:69:void displayDialog() -> displayDialog
+    35:35:void onCreate(android.os.Bundle) -> onCreate
+    40:41:void onResume() -> onResume
+com.android.certinstaller.CredentialsInstallDialog$1 -> com.android.certinstaller.CredentialsInstallDialog$1:
+    62:62:void <init>(com.android.certinstaller.CredentialsInstallDialog) -> <init>
+    65:66:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.Util -> com.android.certinstaller.Util:
+    48:52:java.lang.Object fromBytes(byte[]) -> fromBytes
+    34:42:byte[] toBytes(java.lang.Object) -> toBytes
+com.android.certinstaller.ViewHelper -> com.android.certinstaller.ViewHelper:
+    25:25:void <init>() -> <init>
+    59:59:boolean getHasEmptyError() -> getHasEmptyError
+    40:40:java.lang.String getText(int) -> getText
+    55:55:void setHasEmptyError(boolean) -> setHasEmptyError
+    45:46:void setText(int,java.lang.String) -> setText
+    30:30:void setView(android.view.View) -> setView
+    34:36:void showError(int) -> showError
+com.android.certinstaller.WiFiInstaller -> com.android.certinstaller.WiFiInstaller:
+    28:28:void <init>() -> <init>
+    28:28:android.net.wifi.hotspot2.PasspointConfiguration access$000(com.android.certinstaller.WiFiInstaller) -> access$000
+    99:177:void createMainDialog() -> createMainDialog
+    188:194:void dropFile(android.net.Uri,android.content.Context) -> dropFile
+    42:85:void onCreate(android.os.Bundle) -> onCreate
+    90:91:void onResume() -> onResume
+com.android.certinstaller.WiFiInstaller$1 -> com.android.certinstaller.WiFiInstaller$1:
+    114:114:void <init>(com.android.certinstaller.WiFiInstaller,android.net.wifi.WifiManager) -> <init>
+    117:153:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.WiFiInstaller$1$1 -> com.android.certinstaller.WiFiInstaller$1$1:
+    119:119:void <init>(com.android.certinstaller.WiFiInstaller$1) -> <init>
+    122:150:void run() -> run
+com.android.certinstaller.WiFiInstaller$2 -> com.android.certinstaller.WiFiInstaller$2:
+    158:158:void <init>(com.android.certinstaller.WiFiInstaller) -> <init>
+    161:162:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.certinstaller.WiFiInstaller$3 -> com.android.certinstaller.WiFiInstaller$3:
+    167:167:void <init>(com.android.certinstaller.WiFiInstaller) -> <init>
+    170:171:void onClick(android.content.DialogInterface,int) -> onClick
+org.bouncycastle.asn1.ASN1ApplicationSpecific -> org.bouncycastle.asn1.ASN1ApplicationSpecific:
+    22:25:void <init>(boolean,int,byte[]) -> <init>
+    171:180:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    160:165:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    151:151:int encodedLength() -> encodedLength
+    107:107:int getApplicationTag() -> getApplicationTag
+    185:185:int hashCode() -> hashCode
+    87:87:boolean isConstructed() -> isConstructed
+    224:244:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1BitString -> org.bouncycastle.asn1.ASN1BitString:
+    17:17:void <clinit>() -> <clinit>
+    122:137:void <init>(byte[],int) -> <init>
+    246:275:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    285:307:org.bouncycastle.asn1.ASN1BitString fromInputStream(int,java.io.InputStream) -> fromInputStream
+    147:165:java.lang.String getString() -> getString
+    229:240:int hashCode() -> hashCode
+    317:317:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    322:322:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+    224:224:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1Boolean -> org.bouncycastle.asn1.ASN1Boolean:
+    22:23:void <clinit>() -> <clinit>
+    114:115:void <init>(byte) -> <init>
+    140:147:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    135:135:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    167:177:org.bouncycastle.asn1.ASN1Boolean fromOctetString(byte[]) -> fromOctetString
+    37:55:org.bouncycastle.asn1.ASN1Boolean getInstance(java.lang.Object) -> getInstance
+    65:65:org.bouncycastle.asn1.ASN1Boolean getInstance(boolean) -> getInstance
+    152:152:int hashCode() -> hashCode
+    120:120:boolean isTrue() -> isTrue
+    157:157:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    162:162:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1EncodableVector -> org.bouncycastle.asn1.ASN1EncodableVector:
+    8:8:void <clinit>() -> <clinit>
+    18:18:void <init>() -> <init>
+    22:30:void <init>(int) -> <init>
+    37:48:void add(org.bouncycastle.asn1.ASN1Encodable) -> add
+    157:157:org.bouncycastle.asn1.ASN1Encodable[] cloneElements(org.bouncycastle.asn1.ASN1Encodable[]) -> cloneElements
+    115:121:org.bouncycastle.asn1.ASN1Encodable[] copyElements() -> copyElements
+    95:100:org.bouncycastle.asn1.ASN1Encodable get(int) -> get
+    145:152:void reallocate(int) -> reallocate
+    110:110:int size() -> size
+    127:139:org.bouncycastle.asn1.ASN1Encodable[] takeElements() -> takeElements
+org.bouncycastle.asn1.ASN1Enumerated -> org.bouncycastle.asn1.ASN1Enumerated:
+    182:182:void <clinit>() -> <clinit>
+    111:122:void <init>(byte[]) -> <init>
+    167:174:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    161:161:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    156:156:int encodedLength() -> encodedLength
+    186:206:org.bouncycastle.asn1.ASN1Enumerated fromOctetString(byte[]) -> fromOctetString
+    179:179:int hashCode() -> hashCode
+org.bouncycastle.asn1.ASN1Exception -> org.bouncycastle.asn1.ASN1Exception:
+    20:20:void <init>(java.lang.String) -> <init>
+    31:32:void <init>(java.lang.String,java.lang.Throwable) -> <init>
+    42:42:java.lang.Throwable getCause() -> getCause
+org.bouncycastle.asn1.ASN1External -> org.bouncycastle.asn1.ASN1External:
+    30:64:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    100:105:void <init>(org.bouncycastle.asn1.ASN1ObjectIdentifier,org.bouncycastle.asn1.ASN1Integer,org.bouncycastle.asn1.ASN1Primitive,int,org.bouncycastle.asn1.ASN1Primitive) -> <init>
+    156:186:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    148:148:int encodedLength() -> encodedLength
+    69:74:org.bouncycastle.asn1.ASN1Primitive getObjFromVector(org.bouncycastle.asn1.ASN1EncodableVector,int) -> getObjFromVector
+    124:136:int hashCode() -> hashCode
+    245:245:void setDataValueDescriptor(org.bouncycastle.asn1.ASN1Primitive) -> setDataValueDescriptor
+    254:254:void setDirectReference(org.bouncycastle.asn1.ASN1ObjectIdentifier) -> setDirectReference
+    270:272:void setEncoding(int) -> setEncoding
+    281:281:void setExternalContent(org.bouncycastle.asn1.ASN1Primitive) -> setExternalContent
+    290:290:void setIndirectReference(org.bouncycastle.asn1.ASN1Integer) -> setIndirectReference
+    110:110:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    115:115:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+org.bouncycastle.asn1.ASN1GeneralizedTime -> org.bouncycastle.asn1.ASN1GeneralizedTime:
+    171:180:void <init>(byte[]) -> <init>
+    496:501:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    480:480:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    473:475:int encodedLength() -> encodedLength
+    438:440:boolean hasFractionalSeconds() -> hasFractionalSeconds
+    458:458:boolean hasMinutes() -> hasMinutes
+    453:453:boolean hasSeconds() -> hasSeconds
+    506:506:int hashCode() -> hashCode
+    463:463:boolean isDigit(int) -> isDigit
+    485:485:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    490:490:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+org.bouncycastle.asn1.ASN1InputStream -> org.bouncycastle.asn1.ASN1InputStream:
+    29:29:void <init>(java.io.InputStream) -> <init>
+    41:41:void <init>(byte[]) -> <init>
+    55:55:void <init>(byte[],boolean) -> <init>
+    68:68:void <init>(java.io.InputStream,int) -> <init>
+    98:101:void <init>(java.io.InputStream,int,boolean) -> <init>
+    142:198:org.bouncycastle.asn1.ASN1Primitive buildObject(int,int,int) -> buildObject
+    463:503:org.bouncycastle.asn1.ASN1Primitive createPrimitiveDERObject(int,org.bouncycastle.asn1.DefiniteLengthInputStream,byte[][]) -> createPrimitiveDERObject
+    405:448:char[] getBMPCharBuffer(org.bouncycastle.asn1.DefiniteLengthInputStream) -> getBMPCharBuffer
+    385:397:byte[] getBuffer(org.bouncycastle.asn1.DefiniteLengthInputStream,byte[][]) -> getBuffer
+    106:106:int getLimit() -> getLimit
+    112:112:int readLength() -> readLength
+    334:375:int readLength(java.io.InputStream,int,boolean) -> readLength
+    221:287:org.bouncycastle.asn1.ASN1Primitive readObject() -> readObject
+    304:322:int readTagNumber(java.io.InputStream,int) -> readTagNumber
+    203:213:org.bouncycastle.asn1.ASN1EncodableVector readVector(org.bouncycastle.asn1.DefiniteLengthInputStream) -> readVector
+org.bouncycastle.asn1.ASN1Integer -> org.bouncycastle.asn1.ASN1Integer:
+    127:134:void <init>(byte[],boolean) -> <init>
+    216:223:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    206:206:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    201:201:int encodedLength() -> encodedLength
+    31:48:org.bouncycastle.asn1.ASN1Integer getInstance(java.lang.Object) -> getInstance
+    150:150:java.math.BigInteger getValue() -> getValue
+    211:211:int hashCode() -> hashCode
+    265:274:boolean isMalformed(byte[]) -> isMalformed
+    280:281:int signBytesToSkip(byte[]) -> signBytesToSkip
+    228:228:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1Null -> org.bouncycastle.asn1.ASN1Null:
+    15:15:void <init>() -> <init>
+    68:68:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+org.bouncycastle.asn1.ASN1Object -> org.bouncycastle.asn1.ASN1Object:
+    12:12:void <init>() -> <init>
+    17:17:void encodeTo(java.io.OutputStream) -> encodeTo
+    22:22:void encodeTo(java.io.OutputStream,java.lang.String) -> encodeTo
+    65:72:boolean equals(java.lang.Object) -> equals
+    33:35:byte[] getEncoded() -> getEncoded
+    47:49:byte[] getEncoded(java.lang.String) -> getEncoded
+    54:54:int hashCode() -> hashCode
+org.bouncycastle.asn1.ASN1ObjectIdentifier -> org.bouncycastle.asn1.ASN1ObjectIdentifier:
+    444:444:void <clinit>() -> <clinit>
+    92:165:void <init>(byte[]) -> <init>
+    175:186:void <init>(java.lang.String) -> <init>
+    350:355:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    278:300:void doOutput(java.io.ByteArrayOutputStream) -> doOutput
+    334:334:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    327:329:int encodedLength() -> encodedLength
+    475:479:org.bouncycastle.asn1.ASN1ObjectIdentifier fromOctetString(byte[]) -> fromOctetString
+    307:316:byte[] getBody() -> getBody
+    212:212:java.lang.String getId() -> getId
+    339:339:int hashCode() -> hashCode
+    368:394:boolean isValidBranchID(java.lang.String,int) -> isValidBranchID
+    405:416:boolean isValidIdentifier(java.lang.String) -> isValidIdentifier
+    360:360:java.lang.String toString() -> toString
+    248:250:void writeField(java.io.ByteArrayOutputStream,long) -> writeField
+    257:272:void writeField(java.io.ByteArrayOutputStream,java.math.BigInteger) -> writeField
+org.bouncycastle.asn1.ASN1ObjectIdentifier$OidHandle -> org.bouncycastle.asn1.ASN1ObjectIdentifier$OidHandle:
+    452:454:void <init>(byte[]) -> <init>
+    464:466:boolean equals(java.lang.Object) -> equals
+    459:459:int hashCode() -> hashCode
+org.bouncycastle.asn1.ASN1OctetString -> org.bouncycastle.asn1.ASN1OctetString:
+    224:229:void <init>(byte[]) -> <init>
+    270:277:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    282:282:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    239:239:java.io.InputStream getOctetStream() -> getOctetStream
+    259:259:byte[] getOctets() -> getOctets
+    264:264:int hashCode() -> hashCode
+    287:287:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    292:292:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+    299:299:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1OutputStream -> org.bouncycastle.asn1.ASN1OutputStream:
+    39:40:void <init>(java.io.OutputStream) -> <init>
+    14:14:org.bouncycastle.asn1.ASN1OutputStream create(java.io.OutputStream) -> create
+    19:29:org.bouncycastle.asn1.ASN1OutputStream create(java.io.OutputStream,java.lang.String) -> create
+    314:314:org.bouncycastle.asn1.DEROutputStream getDERSubStream() -> getDERSubStream
+    319:319:org.bouncycastle.asn1.ASN1OutputStream getDLSubStream() -> getDLSubStream
+    73:73:void write(int) -> write
+    79:79:void write(byte[],int,int) -> write
+    85:90:void writeElements(org.bouncycastle.asn1.ASN1Encodable[]) -> writeElements
+    97:101:void writeElements(java.util.Enumeration) -> writeElements
+    113:116:void writeEncoded(boolean,int,byte) -> writeEncoded
+    127:130:void writeEncoded(boolean,int,byte[]) -> writeEncoded
+    158:162:void writeEncoded(boolean,int,byte,byte[]) -> writeEncoded
+    177:182:void writeEncoded(boolean,int,byte,byte[],int,int,byte) -> writeEncoded
+    188:190:void writeEncoded(boolean,int,int,byte[]) -> writeEncoded
+    196:200:void writeEncodedIndef(boolean,int,int,byte[]) -> writeEncodedIndef
+    208:213:void writeEncodedIndef(boolean,int,org.bouncycastle.asn1.ASN1Encodable[]) -> writeEncodedIndef
+    221:226:void writeEncodedIndef(boolean,int,java.util.Enumeration) -> writeEncodedIndef
+    57:66:void writeLength(int) -> writeLength
+    271:275:void writeObject(org.bouncycastle.asn1.ASN1Encodable) -> writeObject
+    282:286:void writeObject(org.bouncycastle.asn1.ASN1Primitive) -> writeObject
+    291:291:void writePrimitive(org.bouncycastle.asn1.ASN1Primitive,boolean) -> writePrimitive
+    239:262:void writeTag(boolean,int,int) -> writeTag
+org.bouncycastle.asn1.ASN1ParsingException -> org.bouncycastle.asn1.ASN1ParsingException:
+    18:18:void <init>(java.lang.String) -> <init>
+    29:30:void <init>(java.lang.String,java.lang.Throwable) -> <init>
+    40:40:java.lang.Throwable getCause() -> getCause
+org.bouncycastle.asn1.ASN1Primitive -> org.bouncycastle.asn1.ASN1Primitive:
+    13:13:void <init>() -> <init>
+    18:18:void encodeTo(java.io.OutputStream) -> encodeTo
+    23:23:void encodeTo(java.io.OutputStream,java.lang.String) -> encodeTo
+    62:62:boolean equals(java.lang.Object) -> equals
+    72:72:boolean equals(org.bouncycastle.asn1.ASN1Primitive) -> equals
+    36:51:org.bouncycastle.asn1.ASN1Primitive fromByteArray(byte[]) -> fromByteArray
+org.bouncycastle.asn1.ASN1Sequence -> org.bouncycastle.asn1.ASN1Sequence:
+    174:175:void <init>() -> <init>
+    197:203:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    221:222:void <init>(org.bouncycastle.asn1.ASN1Encodable[],boolean) -> <init>
+    336:354:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    76:105:org.bouncycastle.asn1.ASN1Sequence getInstance(java.lang.Object) -> getInstance
+    306:306:org.bouncycastle.asn1.ASN1Encodable getObjectAt(int) -> getObjectAt
+    237:237:java.util.Enumeration getObjects() -> getObjects
+    322:328:int hashCode() -> hashCode
+    414:414:java.util.Iterator iterator() -> iterator
+    316:316:int size() -> size
+    369:369:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    378:378:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+    391:409:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1Sequence$1 -> org.bouncycastle.asn1.ASN1Sequence$1:
+    238:239:void <init>(org.bouncycastle.asn1.ASN1Sequence) -> <init>
+    243:243:boolean hasMoreElements() -> hasMoreElements
+    248:252:java.lang.Object nextElement() -> nextElement
+org.bouncycastle.asn1.ASN1Set -> org.bouncycastle.asn1.ASN1Set:
+    227:229:void <init>() -> <init>
+    253:271:void <init>(org.bouncycastle.asn1.ASN1EncodableVector,boolean) -> <init>
+    297:299:void <init>(boolean,org.bouncycastle.asn1.ASN1Encodable[]) -> <init>
+    436:457:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    505:509:byte[] getDEREncoded(org.bouncycastle.asn1.ASN1Encodable) -> getDEREncoded
+    304:304:java.util.Enumeration getObjects() -> getObjects
+    393:399:int hashCode() -> hashCode
+    498:498:java.util.Iterator iterator() -> iterator
+    532:547:boolean lessThanOrEqual(byte[],byte[]) -> lessThanOrEqual
+    342:342:int size() -> size
+    552:605:void sort(org.bouncycastle.asn1.ASN1Encodable[]) -> sort
+    347:347:org.bouncycastle.asn1.ASN1Encodable[] toArray() -> toArray
+    412:422:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    431:431:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+    475:493:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1Set$1 -> org.bouncycastle.asn1.ASN1Set$1:
+    305:306:void <init>(org.bouncycastle.asn1.ASN1Set) -> <init>
+    310:310:boolean hasMoreElements() -> hasMoreElements
+    315:319:java.lang.Object nextElement() -> nextElement
+org.bouncycastle.asn1.ASN1StreamParser -> org.bouncycastle.asn1.ASN1StreamParser:
+    19:19:void <init>(java.io.InputStream) -> <init>
+    25:29:void <init>(java.io.InputStream,int) -> <init>
+    46:54:org.bouncycastle.asn1.ASN1Encodable readIndef(int) -> readIndef
+    124:218:org.bouncycastle.asn1.ASN1Encodable readObject() -> readObject
+    103:118:org.bouncycastle.asn1.ASN1Primitive readTaggedObject(boolean,int) -> readTaggedObject
+    233:251:org.bouncycastle.asn1.ASN1EncodableVector readVector() -> readVector
+    225:227:void set00Check(boolean) -> set00Check
+org.bouncycastle.asn1.ASN1TaggedObject -> org.bouncycastle.asn1.ASN1TaggedObject:
+    66:74:void <init>(boolean,int,org.bouncycastle.asn1.ASN1Encodable) -> <init>
+    79:94:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    168:168:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    135:135:org.bouncycastle.asn1.ASN1Primitive getObject() -> getObject
+    109:109:int getTagNo() -> getTagNo
+    99:99:int hashCode() -> hashCode
+    173:173:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    178:178:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+    185:185:java.lang.String toString() -> toString
+org.bouncycastle.asn1.ASN1UTCTime -> org.bouncycastle.asn1.ASN1UTCTime:
+    161:169:void <init>(byte[]) -> <init>
+    311:316:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    305:305:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    298:300:int encodedLength() -> encodedLength
+    321:321:int hashCode() -> hashCode
+    288:288:boolean isDigit(int) -> isDigit
+    326:326:java.lang.String toString() -> toString
+org.bouncycastle.asn1.BERApplicationSpecific -> org.bouncycastle.asn1.BERApplicationSpecific:
+    76:76:void <init>(int,org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    103:108:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    81:94:byte[] getEncodedVector(org.bouncycastle.asn1.ASN1EncodableVector) -> getEncodedVector
+org.bouncycastle.asn1.BERApplicationSpecificParser -> org.bouncycastle.asn1.BERApplicationSpecificParser:
+    15:17:void <init>(int,org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    40:40:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    52:56:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.BERFactory -> org.bouncycastle.asn1.BERFactory:
+    5:6:void <clinit>() -> <clinit>
+    10:15:org.bouncycastle.asn1.BERSequence createSequence(org.bouncycastle.asn1.ASN1EncodableVector) -> createSequence
+org.bouncycastle.asn1.BEROctetString -> org.bouncycastle.asn1.BEROctetString:
+    60:60:void <init>(byte[]) -> <init>
+    72:72:void <init>(org.bouncycastle.asn1.ASN1OctetString[]) -> <init>
+    84:84:void <init>(byte[],int) -> <init>
+    98:98:void <init>(org.bouncycastle.asn1.ASN1OctetString[],int) -> <init>
+    103:105:void <init>(byte[],org.bouncycastle.asn1.ASN1OctetString[],int) -> <init>
+    22:22:int access$000(org.bouncycastle.asn1.BEROctetString) -> access$000
+    22:22:org.bouncycastle.asn1.ASN1OctetString[] access$100(org.bouncycastle.asn1.BEROctetString) -> access$100
+    180:180:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    170:172:int encodedLength() -> encodedLength
+    115:141:java.util.Enumeration getObjects() -> getObjects
+    36:50:byte[] toBytes(org.bouncycastle.asn1.ASN1OctetString[]) -> toBytes
+org.bouncycastle.asn1.BEROctetString$1 -> org.bouncycastle.asn1.BEROctetString$1:
+    118:119:void <init>(org.bouncycastle.asn1.BEROctetString) -> <init>
+    123:123:boolean hasMoreElements() -> hasMoreElements
+    128:136:java.lang.Object nextElement() -> nextElement
+org.bouncycastle.asn1.BEROctetString$2 -> org.bouncycastle.asn1.BEROctetString$2:
+    142:143:void <init>(org.bouncycastle.asn1.BEROctetString) -> <init>
+    147:147:boolean hasMoreElements() -> hasMoreElements
+    152:156:java.lang.Object nextElement() -> nextElement
+org.bouncycastle.asn1.BEROctetStringParser -> org.bouncycastle.asn1.BEROctetStringParser:
+    18:19:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    41:41:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    29:29:java.io.InputStream getOctetStream() -> getOctetStream
+    53:57:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.BERSequence -> org.bouncycastle.asn1.BERSequence:
+    20:20:void <init>() -> <init>
+    36:36:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    63:63:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    49:55:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.BERSequenceParser -> org.bouncycastle.asn1.BERSequenceParser:
+    14:15:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    39:39:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    51:55:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.BERSet -> org.bouncycastle.asn1.BERSet:
+    26:26:void <init>() -> <init>
+    45:45:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    78:78:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    64:70:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.BERSetParser -> org.bouncycastle.asn1.BERSetParser:
+    14:15:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    39:39:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    51:55:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.BERTaggedObject -> org.bouncycastle.asn1.BERTaggedObject:
+    35:35:void <init>(boolean,int,org.bouncycastle.asn1.ASN1Encodable) -> <init>
+    74:114:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    56:68:int encodedLength() -> encodedLength
+    50:50:boolean isConstructed() -> isConstructed
+org.bouncycastle.asn1.BERTaggedObjectParser -> org.bouncycastle.asn1.BERTaggedObjectParser:
+    19:22:void <init>(boolean,int,org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    79:79:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    91:95:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.ConstructedOctetStream -> org.bouncycastle.asn1.ConstructedOctetStream:
+    11:17:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    110:121:org.bouncycastle.asn1.ASN1OctetStringParser getNextParser() -> getNextParser
+    22:63:int read(byte[],int,int) -> read
+    71:104:int read() -> read
+org.bouncycastle.asn1.DERBMPString -> org.bouncycastle.asn1.DERBMPString:
+    107:113:void <init>(char[]) -> <init>
+    149:156:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    173:212:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    166:166:int encodedLength() -> encodedLength
+    133:133:java.lang.String getString() -> getString
+    143:143:int hashCode() -> hashCode
+    138:138:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERBitString -> org.bouncycastle.asn1.DERBitString:
+    83:83:void <init>(byte[],int) -> <init>
+    117:127:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    112:112:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.DERExternal -> org.bouncycastle.asn1.DERExternal:
+    53:53:void <init>(org.bouncycastle.asn1.ASN1ObjectIdentifier,org.bouncycastle.asn1.ASN1Integer,org.bouncycastle.asn1.ASN1Primitive,int,org.bouncycastle.asn1.ASN1Primitive) -> <init>
+    77:93:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    69:69:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.DERExternalParser -> org.bouncycastle.asn1.DERExternalParser:
+    19:20:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    40:44:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    57:65:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.DERGeneralString -> org.bouncycastle.asn1.DERGeneralString:
+    79:80:void <init>(byte[]) -> <init>
+    140:146:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    130:130:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    125:125:int encodedLength() -> encodedLength
+    100:100:java.lang.String getString() -> getString
+    135:135:int hashCode() -> hashCode
+    105:105:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERGeneralizedTime -> org.bouncycastle.asn1.DERGeneralizedTime:
+    30:30:void <init>(byte[]) -> <init>
+    112:112:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    105:107:int encodedLength() -> encodedLength
+    45:94:byte[] getDERTime() -> getDERTime
+org.bouncycastle.asn1.DERGraphicString -> org.bouncycastle.asn1.DERGraphicString:
+    76:77:void <init>(byte[]) -> <init>
+    108:115:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    97:97:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    92:92:int encodedLength() -> encodedLength
+    102:102:int hashCode() -> hashCode
+org.bouncycastle.asn1.DERIA5String -> org.bouncycastle.asn1.DERIA5String:
+    82:83:void <init>(byte[]) -> <init>
+    158:165:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    147:147:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    142:142:int encodedLength() -> encodedLength
+    122:122:java.lang.String getString() -> getString
+    152:152:int hashCode() -> hashCode
+    127:127:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERNull -> org.bouncycastle.asn1.DERNull:
+    13:15:void <clinit>() -> <clinit>
+    18:18:void <init>() -> <init>
+    33:33:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+org.bouncycastle.asn1.DERNumericString -> org.bouncycastle.asn1.DERNumericString:
+    85:86:void <init>(byte[]) -> <init>
+    156:163:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    145:145:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    140:140:int encodedLength() -> encodedLength
+    120:120:java.lang.String getString() -> getString
+    150:150:int hashCode() -> hashCode
+    125:125:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DEROctetString -> org.bouncycastle.asn1.DEROctetString:
+    19:19:void <init>(byte[]) -> <init>
+    46:46:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    41:41:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.DEROctetStringParser -> org.bouncycastle.asn1.DEROctetStringParser:
+    16:17:void <init>(org.bouncycastle.asn1.DefiniteLengthInputStream) -> <init>
+    39:39:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    27:27:java.io.InputStream getOctetStream() -> getOctetStream
+    51:55:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.DEROutputStream -> org.bouncycastle.asn1.DEROutputStream:
+    16:16:void <init>(java.io.OutputStream) -> <init>
+    21:21:void writePrimitive(org.bouncycastle.asn1.ASN1Primitive,boolean) -> writePrimitive
+org.bouncycastle.asn1.DERPrintableString -> org.bouncycastle.asn1.DERPrintableString:
+    101:102:void <init>(byte[]) -> <init>
+    167:174:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    156:156:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    151:151:int encodedLength() -> encodedLength
+    136:136:java.lang.String getString() -> getString
+    161:161:int hashCode() -> hashCode
+    179:179:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERSequence -> org.bouncycastle.asn1.DERSequence:
+    19:43:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    19:57:void <init>(org.bouncycastle.asn1.ASN1Encodable[],boolean) -> <init>
+    98:131:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    81:83:int encodedLength() -> encodedLength
+    62:76:int getBodyLength() -> getBodyLength
+org.bouncycastle.asn1.DERSet -> org.bouncycastle.asn1.DERSet:
+    23:29:void <init>() -> <init>
+    23:61:void <init>(boolean,org.bouncycastle.asn1.ASN1Encodable[]) -> <init>
+    154:154:boolean checkSorted(boolean) -> checkSorted
+    102:135:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    85:87:int encodedLength() -> encodedLength
+    66:80:int getBodyLength() -> getBodyLength
+    142:142:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+org.bouncycastle.asn1.DERT61String -> org.bouncycastle.asn1.DERT61String:
+    81:82:void <init>(byte[]) -> <init>
+    137:142:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    122:122:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    117:117:int encodedLength() -> encodedLength
+    102:102:java.lang.String getString() -> getString
+    147:147:int hashCode() -> hashCode
+    107:107:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERTaggedObject -> org.bouncycastle.asn1.DERTaggedObject:
+    23:23:void <init>(boolean,int,org.bouncycastle.asn1.ASN1Encodable) -> <init>
+    57:72:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    39:51:int encodedLength() -> encodedLength
+    33:33:boolean isConstructed() -> isConstructed
+org.bouncycastle.asn1.DERUTF8String -> org.bouncycastle.asn1.DERUTF8String:
+    80:81:void <init>(byte[]) -> <init>
+    111:118:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    134:134:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    129:129:int encodedLength() -> encodedLength
+    96:96:java.lang.String getString() -> getString
+    106:106:int hashCode() -> hashCode
+    101:101:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERUniversalString -> org.bouncycastle.asn1.DERUniversalString:
+    15:15:void <clinit>() -> <clinit>
+    81:82:void <init>(byte[]) -> <init>
+    136:141:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    130:130:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    125:125:int encodedLength() -> encodedLength
+    87:105:java.lang.String getString() -> getString
+    146:146:int hashCode() -> hashCode
+    110:110:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DERVideotexString -> org.bouncycastle.asn1.DERVideotexString:
+    76:77:void <init>(byte[]) -> <init>
+    108:115:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    97:97:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    92:92:int encodedLength() -> encodedLength
+    102:102:int hashCode() -> hashCode
+org.bouncycastle.asn1.DERVisibleString -> org.bouncycastle.asn1.DERVisibleString:
+    81:82:void <init>(byte[]) -> <init>
+    129:134:boolean asn1Equals(org.bouncycastle.asn1.ASN1Primitive) -> asn1Equals
+    123:123:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    118:118:int encodedLength() -> encodedLength
+    98:98:java.lang.String getString() -> getString
+    139:139:int hashCode() -> hashCode
+    103:103:java.lang.String toString() -> toString
+org.bouncycastle.asn1.DLApplicationSpecific -> org.bouncycastle.asn1.DLApplicationSpecific:
+    17:17:void <init>(boolean,int,byte[]) -> <init>
+    117:122:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+org.bouncycastle.asn1.DLBitString -> org.bouncycastle.asn1.DLBitString:
+    83:83:void <init>(byte[],int) -> <init>
+    117:117:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    112:112:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.DLExternal -> org.bouncycastle.asn1.DLExternal:
+    26:26:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    53:53:void <init>(org.bouncycastle.asn1.ASN1ObjectIdentifier,org.bouncycastle.asn1.ASN1Integer,org.bouncycastle.asn1.ASN1Primitive,int,org.bouncycastle.asn1.ASN1Primitive) -> <init>
+    72:88:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    64:64:int encodedLength() -> encodedLength
+org.bouncycastle.asn1.DLFactory -> org.bouncycastle.asn1.DLFactory:
+    5:6:void <clinit>() -> <clinit>
+    10:15:org.bouncycastle.asn1.ASN1Sequence createSequence(org.bouncycastle.asn1.ASN1EncodableVector) -> createSequence
+    20:25:org.bouncycastle.asn1.ASN1Set createSet(org.bouncycastle.asn1.ASN1EncodableVector) -> createSet
+org.bouncycastle.asn1.DLOutputStream -> org.bouncycastle.asn1.DLOutputStream:
+    14:14:void <init>(java.io.OutputStream) -> <init>
+    19:19:void writePrimitive(org.bouncycastle.asn1.ASN1Primitive,boolean) -> writePrimitive
+org.bouncycastle.asn1.DLSequence -> org.bouncycastle.asn1.DLSequence:
+    11:17:void <init>() -> <init>
+    11:35:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    11:49:void <init>(org.bouncycastle.asn1.ASN1Encodable[],boolean) -> <init>
+    90:122:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    73:75:int encodedLength() -> encodedLength
+    54:68:int getBodyLength() -> getBodyLength
+org.bouncycastle.asn1.DLSequenceParser -> org.bouncycastle.asn1.DLSequenceParser:
+    16:17:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    41:41:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    53:57:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.DLSet -> org.bouncycastle.asn1.DLSet:
+    56:62:void <init>() -> <init>
+    56:78:void <init>(org.bouncycastle.asn1.ASN1EncodableVector) -> <init>
+    56:91:void <init>(boolean,org.bouncycastle.asn1.ASN1Encodable[]) -> <init>
+    132:164:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    115:117:int encodedLength() -> encodedLength
+    96:110:int getBodyLength() -> getBodyLength
+org.bouncycastle.asn1.DLSetParser -> org.bouncycastle.asn1.DLSetParser:
+    16:17:void <init>(org.bouncycastle.asn1.ASN1StreamParser) -> <init>
+    41:41:org.bouncycastle.asn1.ASN1Primitive getLoadedObject() -> getLoadedObject
+    53:57:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+org.bouncycastle.asn1.DLTaggedObject -> org.bouncycastle.asn1.DLTaggedObject:
+    23:23:void <init>(boolean,int,org.bouncycastle.asn1.ASN1Encodable) -> <init>
+    51:66:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    34:45:int encodedLength() -> encodedLength
+    28:28:boolean isConstructed() -> isConstructed
+org.bouncycastle.asn1.DefiniteLengthInputStream -> org.bouncycastle.asn1.DefiniteLengthInputStream:
+    15:15:void <clinit>() -> <clinit>
+    26:38:void <init>(java.io.InputStream,int,int) -> <init>
+    44:44:int getRemaining() -> getRemaining
+    50:64:int read() -> read
+    73:88:int read(byte[],int,int) -> read
+    97:118:void readAllIntoByteArray(byte[]) -> readAllIntoByteArray
+    124:141:byte[] toByteArray() -> toByteArray
+org.bouncycastle.asn1.IndefiniteLengthInputStream -> org.bouncycastle.asn1.IndefiniteLengthInputStream:
+    12:31:void <init>(java.io.InputStream,int) -> <init>
+    43:48:boolean checkForEof() -> checkForEof
+    55:82:int read(byte[],int,int) -> read
+    91:107:int read() -> read
+    37:38:void setEofOn00(boolean) -> setEofOn00
+org.bouncycastle.asn1.LazyConstructionEnumeration -> org.bouncycastle.asn1.LazyConstructionEnumeration:
+    14:16:void <init>(byte[]) -> <init>
+    21:21:boolean hasMoreElements() -> hasMoreElements
+    26:32:java.lang.Object nextElement() -> nextElement
+    39:43:java.lang.Object readObject() -> readObject
+org.bouncycastle.asn1.LazyEncodedSequence -> org.bouncycastle.asn1.LazyEncodedSequence:
+    18:20:void <init>(byte[]) -> <init>
+    88:96:void encode(org.bouncycastle.asn1.ASN1OutputStream,boolean) -> encode
+    78:83:int encodedLength() -> encodedLength
+    114:125:void force() -> force
+    25:27:org.bouncycastle.asn1.ASN1Encodable getObjectAt(int) -> getObjectAt
+    32:37:java.util.Enumeration getObjects() -> getObjects
+    42:44:int hashCode() -> hashCode
+    49:51:java.util.Iterator iterator() -> iterator
+    56:58:int size() -> size
+    100:102:org.bouncycastle.asn1.ASN1Primitive toDERObject() -> toDERObject
+    107:109:org.bouncycastle.asn1.ASN1Primitive toDLObject() -> toDLObject
+org.bouncycastle.asn1.LimitedInputStream -> org.bouncycastle.asn1.LimitedInputStream:
+    17:19:void <init>(java.io.InputStream,int) -> <init>
+    24:24:int getLimit() -> getLimit
+    29:31:void setParentEofDetect(boolean) -> setParentEofDetect
+org.bouncycastle.asn1.OIDTokenizer -> org.bouncycastle.asn1.OIDTokenizer:
+    21:23:void <init>(java.lang.String) -> <init>
+    33:33:boolean hasMoreTokens() -> hasMoreTokens
+    43:60:java.lang.String nextToken() -> nextToken
+org.bouncycastle.asn1.StreamUtil -> org.bouncycastle.asn1.StreamUtil:
+    108:108:int calculateTagLength(int) -> calculateTagLength
+    22:53:int findLimit(java.io.InputStream) -> findLimit
+org.bouncycastle.asn1.x509.BasicConstraints -> org.bouncycastle.asn1.x509.BasicConstraints:
+    17:78:void <init>(org.bouncycastle.asn1.ASN1Sequence) -> <init>
+    30:40:org.bouncycastle.asn1.x509.BasicConstraints getInstance(java.lang.Object) -> getInstance
+    112:112:boolean isCA() -> isCA
+    136:148:org.bouncycastle.asn1.ASN1Primitive toASN1Primitive() -> toASN1Primitive
+    153:157:java.lang.String toString() -> toString
+org.bouncycastle.asn1.x509.X509Extension -> org.bouncycastle.asn1.x509.X509Extension:
+    20:170:void <clinit>() -> <clinit>
+    242:246:org.bouncycastle.asn1.ASN1Primitive convertValueToObject(org.bouncycastle.asn1.x509.X509Extension) -> convertValueToObject
+    219:227:boolean equals(java.lang.Object) -> equals
+    198:198:org.bouncycastle.asn1.ASN1OctetString getValue() -> getValue
+    208:213:int hashCode() -> hashCode
+    193:193:boolean isCritical() -> isCritical
+org.bouncycastle.util.Arrays -> org.bouncycastle.util.Arrays:
+    33:33:boolean areEqual(byte[],byte[]) -> areEqual
+    59:59:boolean areEqual(char[],char[]) -> areEqual
+    584:584:byte[] clone(byte[]) -> clone
+    371:377:int hashCode(byte[]) -> hashCode
+    396:396:int hashCode(byte[],int,int) -> hashCode
+    409:415:int hashCode(char[]) -> hashCode
+org.bouncycastle.util.Arrays$Iterator -> org.bouncycastle.util.Arrays$Iterator:
+    1074:1086:void <init>(java.lang.Object[]) -> <init>
+    1091:1091:boolean hasNext() -> hasNext
+    1096:1101:java.lang.Object next() -> next
+    1106:1106:void remove() -> remove
+org.bouncycastle.util.Properties -> org.bouncycastle.util.Properties:
+    24:24:void <clinit>() -> <clinit>
+    150:172:java.lang.String getPropertyValue(java.lang.String) -> getPropertyValue
+    36:36:boolean isOverrideSet(java.lang.String) -> isOverrideSet
+    197:205:boolean isSetTrue(java.lang.String) -> isSetTrue
+org.bouncycastle.util.Properties$1 -> org.bouncycastle.util.Properties$1:
+    151:151:void <init>(java.lang.String) -> <init>
+    154:154:java.lang.Object run() -> run
+org.bouncycastle.util.Properties$2 -> org.bouncycastle.util.Properties$2:
+    173:173:void <init>(java.lang.String) -> <init>
+    176:176:java.lang.Object run() -> run
+org.bouncycastle.util.Strings -> org.bouncycastle.util.Strings:
+    24:43:void <clinit>() -> <clinit>
+    249:253:char[] asCharArray(byte[]) -> asCharArray
+    238:238:java.lang.String fromByteArray(byte[]) -> fromByteArray
+    50:56:java.lang.String fromUTF8ByteArray(byte[]) -> fromUTF8ByteArray
+    207:213:byte[] toByteArray(java.lang.String) -> toByteArray
+org.bouncycastle.util.Strings$1 -> org.bouncycastle.util.Strings$1:
+    25:25:void <init>() -> <init>
+    25:25:java.lang.Object run() -> run
+    29:29:java.lang.String run() -> run
+org.bouncycastle.util.encoders.EncoderException -> org.bouncycastle.util.encoders.EncoderException:
+    13:15:void <init>(java.lang.String,java.lang.Throwable) -> <init>
+    20:20:java.lang.Throwable getCause() -> getCause
+org.bouncycastle.util.encoders.Hex -> org.bouncycastle.util.encoders.Hex:
+    14:14:void <clinit>() -> <clinit>
+    39:39:byte[] encode(byte[]) -> encode
+    52:63:byte[] encode(byte[],int,int) -> encode
+    19:19:java.lang.String toHexString(byte[]) -> toHexString
+    27:28:java.lang.String toHexString(byte[],int,int) -> toHexString
+org.bouncycastle.util.encoders.HexEncoder -> org.bouncycastle.util.encoders.HexEncoder:
+    12:45:void <init>() -> <init>
+    56:59:int encode(byte[],int,int,byte[],int) -> encode
+    76:78:int encode(byte[],int,int,java.io.OutputStream) -> encode
+    25:40:void initialiseDecodingTable() -> initialiseDecodingTable
+org.bouncycastle.util.encoders.UTF8 -> org.bouncycastle.util.encoders.UTF8:
+    37:84:void <clinit>() -> <clinit>
+    44:44:void fill(byte[],int,int,byte) -> fill
+    111:150:int transcodeToUTF16(byte[],char[]) -> transcodeToUTF16
+org.bouncycastle.util.io.Streams -> org.bouncycastle.util.io.Streams:
+    112:116:void pipeAll(java.io.InputStream,java.io.OutputStream) -> pipeAll
+    40:42:byte[] readAll(java.io.InputStream) -> readAll
+    73:73:int readFully(java.io.InputStream,byte[]) -> readFully
+    92:92:int readFully(java.io.InputStream,byte[],int,int) -> readFully
