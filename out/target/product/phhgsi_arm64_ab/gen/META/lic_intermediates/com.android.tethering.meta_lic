@@ -1,0 +1,697 @@
+license_package_name: "Android"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/apex/com.android.tethering/android_common_com.android.tethering_image/NOTICE_FILES/src/system/apex/com.android.tethering.apex.txt"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.android.tethering_intermediates/com.android.tethering.capex"
+target: "out/target/product/phhgsi_arm64_ab/system/apex/com.android.tethering.capex"
+install_map: "ServiceConnectivityResources.com.android.tethering:priv-app/ServiceConnectivityResources/ServiceConnectivityResources.apk"
+install_map: "Tethering.com.android.tethering:priv-app/Tethering/Tethering.apk"
+install_map: "apex_manifest.pb.com.android.tethering:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.tethering:./apex_pubkey"
+install_map: "bootclasspath.pb.com.android.tethering:etc/classpaths/bootclasspath.pb"
+install_map: "current_sdkinfo.com.android.tethering:etc/sdkinfo.pb"
+install_map: "framework-connectivity.com.android.tethering:javalib/framework-connectivity.jar"
+install_map: "framework-tethering.com.android.tethering:javalib/framework-tethering.jar"
+install_map: "libframework-connectivity-jni.com.android.tethering:lib/libframework-connectivity-jni.so"
+install_map: "libframework-connectivity-jni.com.android.tethering:lib64/libframework-connectivity-jni.so"
+install_map: "libservice-connectivity.com.android.tethering:lib64/libservice-connectivity.so"
+install_map: "offload.o.com.android.tethering:etc/bpf/offload.o"
+install_map: "service-connectivity.com.android.tethering:javalib/service-connectivity.jar"
+install_map: "test.o.com.android.tethering:etc/bpf/test.o"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/NetworkPermissionConfig.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/APPS/NetworkPermissionConfig_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/NetworkPermissionConfig.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/oat/arm64/NetworkPermissionConfig.odex"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/oat/arm64/NetworkPermissionConfig.vdex"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceConnectivityResources.com.android.tethering.meta_lic
+  dep_package_name:  "ServiceConnectivityResources.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/priv-app/ServiceConnectivityResources/ServiceConnectivityResources.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ServiceConnectivityResources.com.android.tethering_intermediates/package.apk"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/Tethering.com.android.tethering.meta_lic
+  dep_package_name:  "Tethering.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/priv-app/Tethering/Tethering.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/Tethering.com.android.tethering_intermediates/package.apk"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.tethering.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.tethering_intermediates/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.tethering.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.tethering_intermediates/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.tethering.meta_lic
+  dep_package_name:  "bootclasspath.pb.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/etc/classpaths/bootclasspath.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/bootclasspath.pb.com.android.tethering_intermediates/bootclasspath.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.android.tethering.flattened.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.tethering.flattened-timestamp"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.tethering.flattened_intermediates/com.android.tethering.flattened-timestamp"
+  dep_install_map: "ServiceConnectivityResources.com.android.tethering.flattened:priv-app/ServiceConnectivityResources/ServiceConnectivityResources.apk"
+  dep_install_map: "Tethering.com.android.tethering.flattened:priv-app/Tethering/Tethering.apk"
+  dep_install_map: "apex_manifest.pb.com.android.tethering.flattened:./apex_manifest.pb"
+  dep_install_map: "apex_pubkey.com.android.tethering.flattened:./apex_pubkey"
+  dep_install_map: "bootclasspath.pb.com.android.tethering.flattened:etc/classpaths/bootclasspath.pb"
+  dep_install_map: "current_sdkinfo.com.android.tethering.flattened:etc/sdkinfo.pb"
+  dep_install_map: "framework-connectivity.com.android.tethering.flattened:javalib/framework-connectivity.jar"
+  dep_install_map: "framework-tethering.com.android.tethering.flattened:javalib/framework-tethering.jar"
+  dep_install_map: "libframework-connectivity-jni.com.android.tethering.flattened:lib/libframework-connectivity-jni.so"
+  dep_install_map: "libframework-connectivity-jni.com.android.tethering.flattened:lib64/libframework-connectivity-jni.so"
+  dep_install_map: "libservice-connectivity.com.android.tethering.flattened:lib64/libservice-connectivity.so"
+  dep_install_map: "offload.o.com.android.tethering.flattened:etc/bpf/offload.o"
+  dep_install_map: "service-connectivity.com.android.tethering.flattened:javalib/service-connectivity.jar"
+  dep_install_map: "test.o.com.android.tethering.flattened:etc/bpf/test.o"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/NetworkPermissionConfig.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceConnectivityResources.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/Tethering.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-connectivity.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-tethering.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/offload.o.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.networkstack.tethering.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-connectivity.com.android.tethering.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/test.o.com.android.tethering.flattened.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-connectivity.com.android.tethering.meta_lic
+  dep_package_name:  "framework-connectivity.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/javalib/framework-connectivity.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-connectivity.com.android.tethering_intermediates/javalib.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-tethering.com.android.tethering.meta_lic
+  dep_package_name:  "framework-tethering.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/javalib/framework-tethering.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-tethering.com.android.tethering_intermediates/javalib.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libandroid.meta_lic
+  dep_package_name:  "frameworks_base_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-CC-BY"
+  dep_license_kind: "SPDX-license-identifier-CPL-1.0"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-GPL-2.0"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "SPDX-license-identifier-W3C"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "reciprocal"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "frameworks/base/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libandroid_intermediates/libandroid.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libandroid.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libandroid_headers_private.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libarect.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhwui_internal_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libstorage.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/android_graphics_jni_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libgrallocusage.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhardware_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativebase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "reciprocal"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog.meta_lic
+  dep_package_name:  "system_logging_liblog_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/logging/liblog/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/lib64/liblog.so"
+  dep_target: "out/host/linux-x86/obj/SHARED_LIBRARIES/liblog_intermediates/liblog.so"
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/liblog_intermediates/liblog.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/liblog_intermediates/liblog.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/liblog_intermediates/liblog.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/liblog.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/offload.o.com.android.tethering.meta_lic
+  dep_package_name:  "offload.o.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/etc/bpf/offload.o"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/offload.o.com.android.tethering_intermediates/offload.o"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.networkstack.tethering.meta_lic
+  dep_package_name:  "frameworks_base_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-CC-BY"
+  dep_license_kind: "SPDX-license-identifier-CPL-1.0"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-GPL-2.0"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "SPDX-license-identifier-W3C"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "reciprocal"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "frameworks/base/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.android.networkstack.tethering_intermediates/privapp_whitelist_com.android.networkstack.tethering"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/etc/permissions/com.android.networkstack.tethering.xml"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "reciprocal"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-connectivity.com.android.tethering.meta_lic
+  dep_package_name:  "service-connectivity.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/javalib/service-connectivity.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/service-connectivity.com.android.tethering_intermediates/javalib.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/test.o.com.android.tethering.meta_lic
+  dep_package_name:  "test.o.com.android.tethering"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.tethering/etc/bpf/test.o"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/test.o.com.android.tethering_intermediates/test.o"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceConnectivityResources.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "ServiceConnectivityResources.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ServiceConnectivityResources.com.android.tethering.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/priv-app/ServiceConnectivityResources/ServiceConnectivityResources.apk"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/Tethering.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "Tethering.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/Tethering.com.android.tethering.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/priv-app/Tethering/Tethering.apk"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/android_graphics_jni_headers.meta_lic
+  dep_package_name:  "frameworks_base_libs_hwui_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/base/libs/hwui/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/android_graphics_jni_headers_intermediates/android_graphics_jni_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/android_graphics_jni_headers_intermediates/android_graphics_jni_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.tethering.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.tethering.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "bootclasspath.pb.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/bootclasspath.pb.com.android.tethering.flattened_intermediates/bootclasspath.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/etc/classpaths/bootclasspath.pb"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-connectivity.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "framework-connectivity.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-connectivity.com.android.tethering.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/javalib/framework-connectivity.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-tethering.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "framework-tethering.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-tethering.com.android.tethering.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/javalib/framework-tethering.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libandroid_headers_private.meta_lic
+  dep_package_name:  "frameworks_native_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "legacy_notice"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libandroid_headers_private_intermediates/libandroid_headers_private.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libarect.meta_lic
+  dep_package_name:  "frameworks_native_libs_arect_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/arect/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libarect_intermediates/libarect.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libarect_intermediates/libarect.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_package_name:  "system_media_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/media/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libaudio_system_headers_intermediates/libaudio_system_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libaudio_system_headers_intermediates/libaudio_system_headers.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbase_headers.meta_lic
+  dep_package_name:  "system_libbase_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/libbase/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libbase_headers_intermediates/libbase_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libbase_headers_intermediates/libbase_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_package_name:  "system_bt_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "system/bt/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libbluetooth-types-header_intermediates/libbluetooth-types-header.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libbluetooth-types-header_intermediates/libbluetooth-types-header.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "unencumbered"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_package_name:  "external_libcxx_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxx/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libc++_static_intermediates/libc++_static.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++_static_intermediates/libc++_static.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_package_name:  "external_libcxxabi_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxxabi/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/STATIC_LIBRARIES/libc++abi_intermediates/libc++abi.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++abi_intermediates/libc++abi.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_package_name:  "external_libcxxabi_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxxabi/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++demangle_intermediates/libc++demangle.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_package_name:  "prebuilts_clang_host_linux-x86_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-LGPL"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_kind: "SPDX-license-identifier-PSF-2.0"
+  dep_license_kind: "SPDX-license-identifier-Zlib"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libclang_rt.builtins-aarch64-android_intermediates/libclang_rt.builtins-aarch64-android.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_package_name:  "system_core_libcutils_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libcutils/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libgrallocusage.meta_lic
+  dep_package_name:  "system_core_libgrallocusage_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libgrallocusage/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libgrallocusage_intermediates/libgrallocusage.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libgrallocusage_intermediates/libgrallocusage.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libgrallocusage.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhardware_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhardware_headers.meta_lic
+  dep_package_name:  "hardware_libhardware_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "hardware/libhardware/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libhardware_headers_intermediates/libhardware_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libhardware_headers_intermediates/libhardware_headers.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhwui_internal_headers.meta_lic
+  dep_package_name:  "frameworks_base_libs_hwui_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/base/libs/hwui/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libhwui_internal_headers_intermediates/libhwui_internal_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libhwui_internal_headers_intermediates/libhwui_internal_headers.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/android_graphics_jni_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/liblog_headers.meta_lic
+  dep_package_name:  "system_logging_liblog_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/logging/liblog/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/liblog_headers_intermediates/liblog_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/liblog_headers_intermediates/liblog_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativebase_headers.meta_lic
+  dep_package_name:  "frameworks_native_libs_nativebase_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/nativebase/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libnativebase_headers_intermediates/libnativebase_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libnativebase_headers_intermediates/libnativebase_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow.meta_lic
+  dep_package_name:  "frameworks_native_libs_nativewindow_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/nativewindow/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libnativewindow_intermediates/libnativewindow.so"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libnativewindow_intermediates/libnativewindow.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/lib64/libnativewindow.so"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libarect.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libgrallocusage.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativebase_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhardware_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow_headers.meta_lic
+  dep_package_name:  "frameworks_native_libs_nativewindow_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/nativewindow/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libnativewindow_headers_intermediates/libnativewindow_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libnativewindow_headers_intermediates/libnativewindow_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libstorage.meta_lic
+  dep_package_name:  "frameworks_base_libs_storage_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/base/libs/storage/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libstorage_intermediates/libstorage.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++_static.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++abi.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libsystem_headers_intermediates/libsystem_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libsystem_headers_intermediates/libsystem_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/offload.o.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "offload.o.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/offload.o.com.android.tethering.flattened_intermediates/offload.o"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/etc/bpf/offload.o"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-connectivity.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "service-connectivity.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/service-connectivity.com.android.tethering.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/javalib/service-connectivity.jar"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/test.o.com.android.tethering.flattened.meta_lic
+  dep_package_name:  "test.o.com.android.tethering.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/test.o.com.android.tethering.flattened_intermediates/test.o"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/etc/bpf/test.o"
+  dep_effective_condition: "by_exception_only"
+  dep_effective_condition: "restricted"
+}
