@@ -1,0 +1,1228 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::create",
+   "linker_set_key" : "_ZN7android8hardware14neuralnetworks5utils15ResilientDevice6createENSt3__18functionIFNS_4base8expectedINS4_10shared_ptrIKNS_2nn7IDeviceEEENS9_12GeneralErrorEEEbEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_8hardware14neuralnetworks5utils15ResilientDeviceEEENS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::ResilientDevice",
+   "linker_set_key" : "_ZN7android8hardware14neuralnetworks5utils15ResilientDeviceC1ENS3_21PrivateConstructorTagENSt3__18functionIFNS_4base8expectedINS5_10shared_ptrIKNS_2nn7IDeviceEEENSA_12GeneralErrorEEEbEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEESN_NS5_6vectorINSA_9ExtensionENSL_ISP_EEEENSA_12CapabilitiesESD_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDevice21PrivateConstructorTagE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn12CapabilitiesE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IDeviceEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::ResilientDevice",
+   "linker_set_key" : "_ZN7android8hardware14neuralnetworks5utils15ResilientDeviceC2ENS3_21PrivateConstructorTagENSt3__18functionIFNS_4base8expectedINS5_10shared_ptrIKNS_2nn7IDeviceEEENSA_12GeneralErrorEEEbEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEESN_NS5_6vectorINSA_9ExtensionENSL_ISP_EEEENSA_12CapabilitiesESD_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDevice21PrivateConstructorTagE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn12CapabilitiesE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IDeviceEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::prepareModel",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice12prepareModelERKNS_2nn5ModelENS4_19ExecutionPreferenceENS4_8PriorityENSt3__18optionalINSA_6chrono10time_pointINS_4base10boot_clockENSC_8durationIxNSA_5ratioILl1ELl1000000000EEEEEEEEERKNSA_6vectorINSA_10shared_ptrIKNS4_6HandleEEENSA_9allocatorISQ_EEEESV_RKNSA_5arrayIhLm32EEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn5ModelE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn19ExecutionPreferenceE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn8PriorityE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILl1ELl1000000000EEEEEEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIhLm32EEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn14IPreparedModelEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getCapabilities",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice15getCapabilitiesEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIRKN7android2nn12CapabilitiesE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getFeatureLevel",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice15getFeatureLevelEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIN7android2nn7VersionE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::isValidInternal",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice15isValidInternalEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::allocateInternal",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice16allocateInternalERKNS_2nn10BufferDescERKNSt3__16vectorINS8_10shared_ptrIKNS4_14IPreparedModelEEENS8_9allocatorISD_EEEERKNS9_INS4_10BufferRoleENSE_ISJ_EEEESN_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn10BufferDescE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn7IBufferEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getVersionString",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice16getVersionStringEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::prepareModelInternal",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice20prepareModelInternalERKNS_2nn5ModelENS4_19ExecutionPreferenceENS4_8PriorityENSt3__18optionalINSA_6chrono10time_pointINS_4base10boot_clockENSC_8durationIxNSA_5ratioILl1ELl1000000000EEEEEEEEERKNSA_6vectorINSA_10shared_ptrIKNS4_6HandleEEENSA_9allocatorISQ_EEEESV_RKNSA_5arrayIhLm32EEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn5ModelE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn19ExecutionPreferenceE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn8PriorityE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILl1ELl1000000000EEEEEEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIhLm32EEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn14IPreparedModelEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::prepareModelFromCache",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice21prepareModelFromCacheENSt3__18optionalINS4_6chrono10time_pointINS_4base10boot_clockENS6_8durationIxNS4_5ratioILl1ELl1000000000EEEEEEEEERKNS4_6vectorINS4_10shared_ptrIKNS_2nn6HandleEEENS4_9allocatorISL_EEEESQ_RKNS4_5arrayIhLm32EEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILl1ELl1000000000EEEEEEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIhLm32EEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn14IPreparedModelEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getSupportedExtensions",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice22getSupportedExtensionsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIRKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getSupportedOperations",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice22getSupportedOperationsERKNS_2nn5ModelE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn5ModelE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__16vectorIbNS2_9allocatorIbEEEENS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getNumberOfCacheFilesNeeded",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice27getNumberOfCacheFilesNeededEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__14pairIjjEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::prepareModelFromCacheInternal",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice29prepareModelFromCacheInternalENSt3__18optionalINS4_6chrono10time_pointINS_4base10boot_clockENS6_8durationIxNS4_5ratioILl1ELl1000000000EEEEEEEEERKNS4_6vectorINS4_10shared_ptrIKNS_2nn6HandleEEENS4_9allocatorISL_EEEESQ_RKNS4_5arrayIhLm32EEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILl1ELl1000000000EEEEEEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__15arrayIhLm32EEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn14IPreparedModelEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::wait",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice4waitEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedIvNS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getName",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice7getNameEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getType",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice7getTypeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTIN7android2nn10DeviceTypeE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::recover",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice7recoverEPKNS_2nn7IDeviceEb",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIPKN7android2nn7IDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn7IDeviceEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::allocate",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice8allocateERKNS_2nn10BufferDescERKNSt3__16vectorINS8_10shared_ptrIKNS4_14IPreparedModelEEENS8_9allocatorISD_EEEERKNS9_INS4_10BufferRoleENSE_ISJ_EEEESN_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn10BufferDescE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn7IBufferEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::ResilientDevice::getDevice",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice9getDeviceEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IDeviceEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android2nn10BufferDescE",
+   "name" : "const android::nn::BufferDesc &",
+   "referenced_type" : "_ZTIKN7android2nn10BufferDescE",
+   "self_type" : "_ZTIRKN7android2nn10BufferDescE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android2nn12CapabilitiesE",
+   "name" : "const android::nn::Capabilities &",
+   "referenced_type" : "_ZTIKN7android2nn12CapabilitiesE",
+   "self_type" : "_ZTIRKN7android2nn12CapabilitiesE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android2nn5ModelE",
+   "name" : "const android::nn::Model &",
+   "referenced_type" : "_ZTIKN7android2nn5ModelE",
+   "self_type" : "_ZTIRKN7android2nn5ModelE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__15arrayIhLm32EEE",
+   "name" : "const std::array<unsigned char, 32> &",
+   "referenced_type" : "_ZTIKNSt3__15arrayIhLm32EEE",
+   "self_type" : "_ZTIRKNSt3__15arrayIhLm32EEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "name" : "const std::vector<android::nn::BufferRole, std::allocator<android::nn::BufferRole>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "name" : "const std::vector<android::nn::Extension, std::allocator<android::nn::Extension>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "name" : "const std::vector<std::shared_ptr<const android::nn::IPreparedModel>, std::allocator<std::shared_ptr<const android::nn::IPreparedModel>>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "name" : "const std::vector<std::shared_ptr<const android::nn::Handle>, std::allocator<std::shared_ptr<const android::nn::Handle>>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android2nn7IDeviceE",
+   "name" : "const android::nn::IDevice *",
+   "referenced_type" : "_ZTIKN7android2nn7IDeviceE",
+   "self_type" : "_ZTIPKN7android2nn7IDeviceE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "name" : "const android::hardware::neuralnetworks::utils::ResilientDevice *",
+   "referenced_type" : "_ZTIKN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "self_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientDevice *",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "self_type" : "_ZTIPN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn10BufferDescE",
+   "name" : "const android::nn::BufferDesc",
+   "referenced_type" : "_ZTIN7android2nn10BufferDescE",
+   "self_type" : "_ZTIKN7android2nn10BufferDescE",
+   "size" : 24,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn10DeviceTypeE",
+   "name" : "const android::nn::DeviceType",
+   "referenced_type" : "_ZTIN7android2nn10DeviceTypeE",
+   "self_type" : "_ZTIKN7android2nn10DeviceTypeE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn12CapabilitiesE",
+   "name" : "const android::nn::Capabilities",
+   "referenced_type" : "_ZTIN7android2nn12CapabilitiesE",
+   "self_type" : "_ZTIKN7android2nn12CapabilitiesE",
+   "size" : 56,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn5ModelE",
+   "name" : "const android::nn::Model",
+   "referenced_type" : "_ZTIN7android2nn5ModelE",
+   "self_type" : "_ZTIKN7android2nn5ModelE",
+   "size" : 200,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn7IDeviceE",
+   "name" : "const android::nn::IDevice",
+   "referenced_type" : "_ZTIN7android2nn7IDeviceE",
+   "self_type" : "_ZTIKN7android2nn7IDeviceE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn7VersionE",
+   "name" : "const android::nn::Version",
+   "referenced_type" : "_ZTIN7android2nn7VersionE",
+   "self_type" : "_ZTIKN7android2nn7VersionE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidDevice.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "name" : "const android::hardware::neuralnetworks::utils::ResilientDevice",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "self_type" : "_ZTIKN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "size" : 272,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__14pairIjjEE",
+   "name" : "const std::pair<unsigned int, unsigned int>",
+   "referenced_type" : "_ZTINSt3__14pairIjjEE",
+   "self_type" : "_ZTIKNSt3__14pairIjjEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidDevice.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__15arrayIhLm32EEE",
+   "name" : "const std::array<unsigned char, 32>",
+   "referenced_type" : "_ZTINSt3__15arrayIhLm32EEE",
+   "self_type" : "_ZTIKNSt3__15arrayIhLm32EEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "name" : "const std::vector<android::nn::BufferRole, std::allocator<android::nn::BufferRole>>",
+   "referenced_type" : "_ZTINSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "self_type" : "_ZTIKNSt3__16vectorIN7android2nn10BufferRoleENS_9allocatorIS3_EEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "name" : "const std::vector<android::nn::Extension, std::allocator<android::nn::Extension>>",
+   "referenced_type" : "_ZTINSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "self_type" : "_ZTIKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE",
+   "size" : 24,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "name" : "const std::vector<std::shared_ptr<const android::nn::IPreparedModel>, std::allocator<std::shared_ptr<const android::nn::IPreparedModel>>>",
+   "referenced_type" : "_ZTINSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "self_type" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn14IPreparedModelEEENS_9allocatorIS6_EEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "name" : "const std::vector<std::shared_ptr<const android::nn::Handle>, std::allocator<std::shared_ptr<const android::nn::Handle>>>",
+   "referenced_type" : "_ZTINSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "self_type" : "_ZTIKNSt3__16vectorINS_10shared_ptrIKN7android2nn6HandleEEENS_9allocatorIS6_EEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn14IPreparedModelEEENS5_12GeneralErrorEEEvEEE",
+   "name" : "const std::function<expected<shared_ptr<const IPreparedModel>, GeneralError> ()>",
+   "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn14IPreparedModelEEENS5_12GeneralErrorEEEvEEE",
+   "self_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn14IPreparedModelEEENS5_12GeneralErrorEEEvEEE",
+   "size" : 48,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientPreparedModel.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IBufferEEENS5_12GeneralErrorEEEvEEE",
+   "name" : "const std::function<expected<shared_ptr<const IBuffer>, GeneralError> ()>",
+   "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IBufferEEENS5_12GeneralErrorEEEvEEE",
+   "self_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IBufferEEENS5_12GeneralErrorEEEvEEE",
+   "size" : 48,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientBuffer.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE",
+   "name" : "const std::function<expected<shared_ptr<const IDevice>, GeneralError> (bool)>",
+   "referenced_type" : "_ZTINSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE",
+   "self_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE",
+   "size" : 48,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn7IBufferE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "name" : "android::hardware::neuralnetworks::utils::InvalidBuffer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8getTokenEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer6copyToERKNSt3__110shared_ptrIKNS_2nn6MemoryEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8copyFromERKNSt3__110shared_ptrIKNS_2nn6MemoryEEERKNS4_6vectorIjNS4_9allocatorIjEEEE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidBufferD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidBufferD0Ev"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn7IDeviceE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "kName",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kVersionString",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kFeatureLevel",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIKN7android2nn7VersionE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kType",
+     "field_offset" : 480,
+     "referenced_type" : "_ZTIKN7android2nn10DeviceTypeE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kExtensions",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kCapabilities",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIKN7android2nn12CapabilitiesE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kNumberOfCacheFilesNeeded",
+     "field_offset" : 1152,
+     "referenced_type" : "_ZTIKNSt3__14pairIjjEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidDeviceE",
+   "name" : "android::hardware::neuralnetworks::utils::InvalidDevice",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidDeviceE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidDeviceE",
+   "size" : 152,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidDevice.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidDeviceE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice7getNameEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice16getVersionStringEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice15getFeatureLevelEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice7getTypeEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice22getSupportedExtensionsEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice15getCapabilitiesEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice27getNumberOfCacheFilesNeededEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice4waitEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice22getSupportedOperationsERKNS_2nn5ModelE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice12prepareModelERKNS_2nn5ModelENS4_19ExecutionPreferenceENS4_8PriorityENSt3__18optionalINSA_6chrono10time_pointINS_4base10boot_clockENSC_8durationIxNSA_5ratioILl1ELl1000000000EEEEEEEEERKNSA_6vectorINSA_10shared_ptrIKNS4_6HandleEEENSA_9allocatorISQ_EEEESV_RKNSA_5arrayIhLm32EEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice21prepareModelFromCacheENSt3__18optionalINS4_6chrono10time_pointINS_4base10boot_clockENS6_8durationIxNS4_5ratioILl1ELl1000000000EEEEEEEEERKNS4_6vectorINS4_10shared_ptrIKNS_2nn6HandleEEENS4_9allocatorISL_EEEESQ_RKNS4_5arrayIhLm32EEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidDevice8allocateERKNS_2nn10BufferDescERKNSt3__16vectorINS8_10shared_ptrIKNS4_14IPreparedModelEEENS8_9allocatorISD_EEEERKNS9_INS4_10BufferRoleENSE_ISJ_EEEESN_"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidDeviceD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidDeviceD0Ev"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBuffer21PrivateConstructorTagE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientBuffer::PrivateConstructorTag",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBuffer21PrivateConstructorTagE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBuffer21PrivateConstructorTagE",
+   "size" : 1,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientBuffer.h"
+  },
+  {
+   "alignment" : 16,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn7IBufferE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "kMakeBuffer",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IBufferEEENS5_12GeneralErrorEEEvEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mMutex",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTINSt3__15mutexE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mBuffer",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IBufferEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBufferE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientBuffer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBufferE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBufferE",
+   "size" : 128,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientBuffer.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientBufferE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientBuffer8getTokenEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientBuffer6copyToERKNSt3__110shared_ptrIKNS_2nn6MemoryEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientBuffer8copyFromERKNSt3__110shared_ptrIKNS_2nn6MemoryEEERKNS4_6vectorIjNS4_9allocatorIjEEEE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils15ResilientBufferD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils15ResilientBufferD0Ev"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDevice21PrivateConstructorTagE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientDevice::PrivateConstructorTag",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDevice21PrivateConstructorTagE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDevice21PrivateConstructorTagE",
+   "size" : 1,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h"
+  },
+  {
+   "alignment" : 16,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn7IDeviceE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__123enable_shared_from_thisIN7android8hardware14neuralnetworks5utils15ResilientDeviceEEE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "kMakeDevice",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn7IDeviceEEENS5_12GeneralErrorEEEbEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kName",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kVersionString",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kExtensions",
+     "field_offset" : 1024,
+     "referenced_type" : "_ZTIKNSt3__16vectorIN7android2nn9ExtensionENS_9allocatorIS3_EEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kCapabilities",
+     "field_offset" : 1216,
+     "referenced_type" : "_ZTIKN7android2nn12CapabilitiesE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mMutex",
+     "field_offset" : 1664,
+     "referenced_type" : "_ZTINSt3__15mutexE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mDevice",
+     "field_offset" : 1984,
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IDeviceEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mIsValid",
+     "field_offset" : 2112,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientDevice",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE",
+   "size" : 272,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientDevice.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils15ResilientDeviceE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice7getNameEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice16getVersionStringEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice15getFeatureLevelEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice7getTypeEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice22getSupportedExtensionsEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice15getCapabilitiesEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice27getNumberOfCacheFilesNeededEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice4waitEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice22getSupportedOperationsERKNS_2nn5ModelE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice12prepareModelERKNS_2nn5ModelENS4_19ExecutionPreferenceENS4_8PriorityENSt3__18optionalINSA_6chrono10time_pointINS_4base10boot_clockENSC_8durationIxNSA_5ratioILl1ELl1000000000EEEEEEEEERKNSA_6vectorINSA_10shared_ptrIKNS4_6HandleEEENSA_9allocatorISQ_EEEESV_RKNSA_5arrayIhLm32EEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice21prepareModelFromCacheENSt3__18optionalINS4_6chrono10time_pointINS_4base10boot_clockENS6_8durationIxNS4_5ratioILl1ELl1000000000EEEEEEEEERKNS4_6vectorINS4_10shared_ptrIKNS_2nn6HandleEEENS4_9allocatorISL_EEEESQ_RKNS4_5arrayIhLm32EEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils15ResilientDevice8allocateERKNS_2nn10BufferDescERKNSt3__16vectorINS8_10shared_ptrIKNS4_14IPreparedModelEEENS8_9allocatorISD_EEEERKNS9_INS4_10BufferRoleENSE_ISJ_EEEESN_"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils15ResilientDeviceD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils15ResilientDeviceD0Ev"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn14IPreparedModelE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils20InvalidPreparedModelE",
+   "name" : "android::hardware::neuralnetworks::utils::InvalidPreparedModel",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils20InvalidPreparedModelE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils20InvalidPreparedModelE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidPreparedModel.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils20InvalidPreparedModelE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils20InvalidPreparedModel7executeERKNS_2nn7RequestENS4_13MeasureTimingERKNSt3__18optionalINS9_6chrono10time_pointINS_4base10boot_clockENSB_8durationIxNS9_5ratioILl1ELl1000000000EEEEEEEEERKNSA_ISI_EE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils20InvalidPreparedModel13executeFencedERKNS_2nn7RequestERKNSt3__16vectorINS4_9SyncFenceENS8_9allocatorISA_EEEENS4_13MeasureTimingERKNS8_8optionalINS8_6chrono10time_pointINS_4base10boot_clockENSI_8durationIxNS8_5ratioILl1ELl1000000000EEEEEEEEERKNSH_ISP_EESW_"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils20InvalidPreparedModel23createReusableExecutionERKNS_2nn7RequestENS4_13MeasureTimingERKNSt3__18optionalINS9_6chrono8durationIxNS9_5ratioILl1ELl1000000000EEEEEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils20InvalidPreparedModel23configureExecutionBurstEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils20InvalidPreparedModel21getUnderlyingResourceEv"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils20InvalidPreparedModelD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils20InvalidPreparedModelD0Ev"
+    }
+   ]
+  },
+  {
+   "access" : "private",
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModel21PrivateConstructorTagE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientPreparedModel::PrivateConstructorTag",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModel21PrivateConstructorTagE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModel21PrivateConstructorTagE",
+   "size" : 1,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientPreparedModel.h"
+  },
+  {
+   "alignment" : 16,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn14IPreparedModelE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__123enable_shared_from_thisIN7android8hardware14neuralnetworks5utils22ResilientPreparedModelEEE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "kMakePreparedModel",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIKNSt3__18functionIFN7android4base8expectedINS_10shared_ptrIKNS1_2nn14IPreparedModelEEENS5_12GeneralErrorEEEvEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mMutex",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTINSt3__15mutexE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mPreparedModel",
+     "field_offset" : 960,
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn14IPreparedModelEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModelE",
+   "name" : "android::hardware::neuralnetworks::utils::ResilientPreparedModel",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModelE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModelE",
+   "size" : 144,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/ResilientPreparedModel.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils22ResilientPreparedModelE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils22ResilientPreparedModel7executeERKNS_2nn7RequestENS4_13MeasureTimingERKNSt3__18optionalINS9_6chrono10time_pointINS_4base10boot_clockENSB_8durationIxNS9_5ratioILl1ELl1000000000EEEEEEEEERKNSA_ISI_EE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils22ResilientPreparedModel13executeFencedERKNS_2nn7RequestERKNSt3__16vectorINS4_9SyncFenceENS8_9allocatorISA_EEEENS4_13MeasureTimingERKNS8_8optionalINS8_6chrono10time_pointINS_4base10boot_clockENSI_8durationIxNS8_5ratioILl1ELl1000000000EEEEEEEEERKNSH_ISP_EESW_"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils22ResilientPreparedModel23createReusableExecutionERKNS_2nn7RequestENS4_13MeasureTimingERKNSt3__18optionalINS9_6chrono8durationIxNS9_5ratioILl1ELl1000000000EEEEEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils22ResilientPreparedModel23configureExecutionBurstEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils22ResilientPreparedModel21getUnderlyingResourceEv"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils22ResilientPreparedModelD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils22ResilientPreparedModelD0Ev"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
