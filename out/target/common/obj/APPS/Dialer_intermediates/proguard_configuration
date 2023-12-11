@@ -1,0 +1,1520 @@
+-injars out/target/common/obj/APPS/Dialer_intermediates/classes.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/legacy.core.platform.api.stubs_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/core-lambda-stubs_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/ext_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/android_system_stubs_current_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/auto_value_annotations_intermediates/classes-header.jar
+-libraryjars out/target/common/obj/JAVA_LIBRARIES/org.apache.http.legacy.stubs.system_intermediates/classes-header.jar
+-printmapping out/target/common/obj/APPS/Dialer_intermediates/proguard_dictionary
+-printconfiguration out/target/common/obj/APPS/Dialer_intermediates/proguard_configuration
+
+# We have moved -dontobfuscate and -dontoptimize to the makefiles.
+# dex does not like code run through proguard optimize and preverify steps.
+# -dontoptimize
+-dontpreverify
+
+# Don't obfuscate. We only need dead code striping.
+# -dontobfuscate
+
+# Add this flag in your package's own configuration if it's needed.
+#-flattenpackagehierarchy
+
+# Keep classes and methods that have the guava @VisibleForTesting annotation
+-keep @**.VisibleForTesting class *
+-keepclassmembers class * {
+@**.VisibleForTesting *;
+}
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+-keep class androidx.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+
+# The proguard configuration file for the following section is ./build/make/core/proguard_basic_keeps.flags
+# Some classes in the libraries extend package private classes to chare common functionality
+# that isn't explicitly part of the API
+-dontskipnonpubliclibraryclasses -dontskipnonpubliclibraryclassmembers
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# class$ methods are inserted by some compilers to implement .class construct,
+# see http://proguard.sourceforge.net/manual/examples.html#library
+-keepclassmembernames class * {
+    java.lang.Class class$(java.lang.String);
+    java.lang.Class class$(java.lang.String, boolean);
+}
+
+# Keep serializable classes and necessary members for serializable classes
+# Copied from the ProGuard manual at http://proguard.sourceforge.net.
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    !static !transient <fields>;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+# Keep Throwable's constructor that takes a String argument.
+-keepclassmembers class * extends java.lang.Throwable {
+  <init>(java.lang.String);
+}
+
+# Please specify classes to be kept explicitly in your package's configuration.
+# -keep class * extends android.app.Activity
+# -keep class * extends android.view.View
+# -keep class * extends android.app.Service
+# -keep class * extends android.content.BroadcastReceiver
+# -keep class * extends android.content.ContentProvider
+# -keep class * extends android.preference.Preference
+# -keep class * extends android.app.BackupAgent
+
+# Parcelable CREATORs must be kept for Parcelable functionality
+-keep class * implements android.os.Parcelable {
+  public static final ** CREATOR;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+# See proguard-android.txt in the SDK package.
+#
+# DO NOT USE THIS: We figured it's dangerous to blindly ignore all support library warnings.
+# ProGuard may strip members of subclass of unknown super classes, in case an app is linking against
+# LOCAL_SDK_VERSION lower than the support library's LOCAL_SDK_VERSION.
+# See bug/20658265.
+# -dontwarn android.support.**
+
+# From https://github.com/google/guava/wiki/UsingProGuardWithGuava
+# Striped64, LittleEndianByteArray, UnsignedBytes, AbstractFuture
+-dontwarn sun.misc.Unsafe
+# Futures.getChecked (which often won't work with Proguard anyway) uses this. It
+# has a fallback, but again, don't use Futures.getChecked on Android regardless.
+-dontwarn java.lang.ClassValue
+
+# Less spammy.
+-dontnote
+
+# The lite proto runtime uses reflection to access fields based on the names in
+# the schema, keep all the fields.
+-keepclassmembers class * extends com.google.protobuf.MessageLite { <fields>; }
+
+# End of content from ./build/make/core/proguard_basic_keeps.flags
+# The proguard configuration file for the following section is ./build/make/core/proguard.flags
+
+
+# End of content from ./build/make/core/proguard.flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-dynamic-animation_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-dynamic-animation-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-dynamic-animation_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-core-ui_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-core-ui_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-design_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-fragment-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-transition-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep a field in transition that is used to keep a reference to weakly-referenced object
+-keepclassmembers class android.support.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
+  android.support.transition.ChangeBounds$ViewBounds mViewBounds;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ensure that reflectively-loaded inflater is not obfuscated. This can be
+# removed when we stop supporting AAPT1 builds.
+-keepnames class android.support.v7.app.AppCompatViewInflater
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-vectordrawable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-animatedvectordrawable-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class android.support.graphics.drawable.VectorDrawableCompat$* {
+   void set*(***);
+   *** get*();
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-cardview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-recyclerview-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends android.support.v7.widget.RecyclerView$LayoutManager {
+    public <init>(...);
+}
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-design_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-transition_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-transition-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep a field in transition that is used to keep a reference to weakly-referenced object
+-keepclassmembers class android.support.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
+  android.support.transition.ChangeBounds$ViewBounds mViewBounds;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-transition_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-v13_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v13-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v4-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-media-compat-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-fragment-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-v13_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-v4_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v4-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-media-compat-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-fragment-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-v4_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-appcompat_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Ensure that reflectively-loaded inflater is not obfuscated. This can be
+# removed when we stop supporting AAPT1 builds.
+-keepnames class android.support.v7.app.AppCompatViewInflater
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-fragment-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-vectordrawable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-animatedvectordrawable-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class android.support.graphics.drawable.VectorDrawableCompat$* {
+   void set*(***);
+   *** get*();
+}
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-appcompat_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-cardview_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-cardview-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-cardview_intermediates/export_proguard_flags
+
+
+# The proguard configuration file for the following section is ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-recyclerview_intermediates/export_proguard_flags
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-recyclerview-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends android.support.v7.widget.RecyclerView$LayoutManager {
+    public <init>(...);
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-compat-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-runtime-nodeps/android_common/aar/proguard.txt
+-keepattributes *Annotation*
+
+-keepclassmembers enum android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements android.arch.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent *;
+}
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-versionedparcelable-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-ui-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-core-utils-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-documentfile-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-loader-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-livedata-core-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-core-runtime-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/extras/app-toolkit/android-arch-lifecycle-viewmodel-nodeps/android_common/aar/proguard.txt
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-localbroadcastmanager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-print-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-customview-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-viewpager-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-coordinatorlayout-nodeps/android_common/aar/proguard.txt
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+
+# Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
+-keepattributes *Annotation*
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-drawerlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-slidingpanelayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-interpolator-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-swiperefreshlayout-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-asynclayoutinflater-nodeps/android_common/aar/proguard.txt
+
+# including out/soong/.intermediates/prebuilts/sdk/current/support/android-support-cursoradapter-nodeps/android_common/aar/proguard.txt
+
+# End of content from ./out/target/common/obj/JAVA_LIBRARIES/android-support-v7-recyclerview_intermediates/export_proguard_flags
+
+-dontobfuscate
+
+# The proguard configuration file for the following section is ./out/target/common/obj/APPS/Dialer_intermediates/proguard_options
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:144
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:259
+-keep class android.support.v4.content.FileProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:159
+-keep class com.android.contacts.common.dialog.CallSubjectDialog { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:174
+-keep class com.android.dialer.about.LicenseActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:168
+-keep class com.android.dialer.about.LicenseMenuActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:197
+-keep class com.android.dialer.app.AccountSelectionActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:192
+-keep class com.android.dialer.app.calllog.CallLogActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:222
+-keep class com.android.dialer.app.calllog.CallLogNotificationsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:227
+-keep class com.android.dialer.app.calllog.CallLogNotificationsService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:202
+-keep class com.android.dialer.app.calllog.CallLogReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:235
+-keep class com.android.dialer.app.calllog.MissedCallNotificationReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:231
+-keep class com.android.dialer.app.calllog.VoicemailNotificationJobService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:180
+-keep class com.android.dialer.app.filterednumber.BlockedNumbersSettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:273
+-keep class com.android.dialer.app.settings.DialerSettingsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:243
+-keep class com.android.dialer.app.voicemail.LegacyVoicemailNotificationReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:287
+-keep class com.android.dialer.assisteddialing.ui.AssistedDialingSettingActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:144
+-keep class com.android.dialer.binary.aosp.AospDialerApplication { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:300
+-keep class com.android.dialer.blocking.FilteredNumberProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:306
+-keep class com.android.dialer.callcomposer.CallComposerActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:316
+-keep class com.android.dialer.calldetails.CallDetailsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:311
+-keep class com.android.dialer.calldetails.OldCallDetailsActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:322
+-keep class com.android.dialer.calllog.CallLogConfig$PollingJob { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:326
+-keep class com.android.dialer.calllog.config.CallLogConfigImpl$PollingJob { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:331
+-keep class com.android.dialer.calllog.database.AnnotatedCallLogContentProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:337
+-keep class com.android.dialer.callrecord.impl.CallRecorderService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:341
+-keep class com.android.dialer.callstats.CallStatsDetailActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:254
+-keep class com.android.dialer.commandline.CommandLineReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:354
+-keep class com.android.dialer.configprovider.SharedPrefConfigProvider$Service { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:356
+-keep class com.android.dialer.enrichedcall.simulator.EnrichedCallSimulatorActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:360
+-keep class com.android.dialer.helplines.HelplineActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:374
+-keep class com.android.dialer.interactions.ContactUpdateService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:378
+-keep class com.android.dialer.interactions.UndemoteOutgoingCallReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:385
+-keep class com.android.dialer.location.CountryDetector$LocationChangedReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:387
+-keep class com.android.dialer.lookup.LookupProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:396
+-keep class com.android.dialer.main.impl.MainActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:495
+-keep class com.android.dialer.phonelookup.database.PhoneLookupHistoryContentProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:501
+-keep class com.android.dialer.postcall.PostCallActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:506
+-keep class com.android.dialer.precall.externalreceiver.LaunchPreCallActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:528
+-keep class com.android.dialer.precall.impl.PreCallActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:536
+-keep class com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:551
+-keep class com.android.dialer.rtt.RttTranscriptActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:566
+-keep class com.android.dialer.shortcuts.CallContactActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:553
+-keep class com.android.dialer.shortcuts.PeriodicJobService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:575
+-keep class com.android.dialer.simulator.impl.SimulatorConnectionService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:583
+-keep class com.android.dialer.simulator.service.SimulatorService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:611
+-keep class com.android.dialer.voicemail.settings.CurrentVoicemailGreetingActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:604
+-keep class com.android.dialer.voicemail.settings.RecordVoicemailGreetingActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:596
+-keep class com.android.dialer.voicemail.settings.VoicemailChangePinActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:669
+-keep class com.android.incallui.AudioRouteSelectorActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:623
+-keep class com.android.incallui.InCallActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:649
+-keep class com.android.incallui.InCallServiceImpl { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:637
+-keep class com.android.incallui.ManageConferenceActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:681
+-keep class com.android.incallui.NotificationBroadcastReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:675
+-keep class com.android.incallui.PostCharDialogActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:685
+-keep class com.android.incallui.ReturnToCallActionReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:688
+-keep class com.android.incallui.answer.impl.hint.PawSecretCodeListener { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:697
+-keep class com.android.incallui.callpending.CallPendingActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:713
+-keep class com.android.incallui.spam.SpamNotificationActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:722
+-keep class com.android.incallui.spam.SpamNotificationService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:726
+-keep class com.android.incallui.telecomeventui.InternationalCallOnWifiDialogActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:742
+-keep class com.android.voicemail.VoicemailPowerCycleReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:733
+-keep class com.android.voicemail.VoicemailSecretCodeReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:849
+-keep class com.android.voicemail.impl.CarrierVvmPackageInstalledReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:810
+-keep class com.android.voicemail.impl.DeviceProvisionedJobService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:826
+-keep class com.android.voicemail.impl.OmtpService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:842
+-keep class com.android.voicemail.impl.PackageReplacedReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:806
+-keep class com.android.voicemail.impl.StatusCheckJobService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:758
+-keep class com.android.voicemail.impl.VoicemailClientReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:867
+-keep class com.android.voicemail.impl.configui.VoicemailSecretCodeActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:765
+-keep class com.android.voicemail.impl.fetch.FetchVoicemailReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:798
+-keep class com.android.voicemail.impl.scheduling.TaskReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:802
+-keep class com.android.voicemail.impl.scheduling.TaskSchedulerJobService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:836
+-keep class com.android.voicemail.impl.settings.VoicemailChangePinActivity { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:750
+-keep class com.android.voicemail.impl.sms.OmtpMessageReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:778
+-keep class com.android.voicemail.impl.sync.OmtpVvmSyncReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:786
+-keep class com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:859
+-keep class com.android.voicemail.impl.transcribe.GetTranscriptReceiver { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:818
+-keep class com.android.voicemail.impl.transcribe.TranscriptionBackfillService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:822
+-keep class com.android.voicemail.impl.transcribe.TranscriptionRatingService { <init>(); }
+# Referenced at out/target/common/obj/APPS/Dialer_intermediates/manifest/AndroidManifest.xml:814
+-keep class com.android.voicemail.impl.transcribe.TranscriptionService { <init>(); }
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_bottom_navigation_item.xml:27
+-keep class android.support.design.internal.BaselineLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_navigation_item.xml:17
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_navigation_menu.xml:17
+-keep class android.support.design.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_fragment.xml:26
+-keep class android.support.design.widget.AppBarLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_text_input_password_icon.xml:18
+-keep class android.support.design.widget.CheckableImageButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_fragment.xml:19
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_bottom_sheet_dialog.xml:26
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/dialtacts_activity.xml:16
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/res/layout/main_activity.xml:29
+-keep class android.support.design.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_fragment.xml:61
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/dialtacts_activity.xml:42
+-keep class android.support.design.widget.FloatingActionButton { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_layout_snackbar.xml:18
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/mtrl_layout_snackbar.xml:18
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/design_layout_snackbar_include.xml:18
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/extras/material-design/android-support-design-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/mtrl_layout_snackbar_include.xml:18
+-keep class android.support.design.widget.SnackbarContentLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_activity.xml:32
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:41
+# Referenced at packages/apps/Dialer/java/com/android/dialer/historyitemactions/res/layout/sheet_layout.xml:26
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/error/res/layout/voicemail_tos_fragment.xml:85
+-keep class android.support.v4.widget.Space { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_select_dialog_material.xml:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_expanded_menu_layout.xml:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_cascading_menu_item_layout.xml:20
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_list_menu_item_layout.xml:17
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_popup_menu_item_layout.xml:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_mode_bar.xml:19
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:44
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_action_menu_layout.xml:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_activity_chooser_view.xml:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/sessiondata/res/layout/fragment_composer_text.xml:26
+-keep class android.support.v7.widget.AppCompatTextView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_button_bar_material.xml:26
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/blocked_number_header.xml:52
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_list_item.xml:36
+# Referenced at packages/apps/Dialer/java/com/android/dialer/searchfragment/nearbyplaces/res/layout/location_permission_row.xml:17
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/error/res/layout/voicemail_error_message_fragment.xml:16
+-keep class android.support.v7.widget.CardView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_content_include.xml:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_title_material.xml:45
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple_overlay_action_mode.xml:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_dialog_title_material.xml:22
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple.xml:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/helplines/res/layout/activity_helplines.xml:23
+# Referenced at packages/apps/Dialer/java/com/android/dialer/rtt/res/layout/activity_rtt_transcript.xml:28
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calldetails/res/layout/call_details_activity.xml:28
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_fragment.xml:60
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_fragment.xml:63
+# Referenced at packages/apps/Dialer/java/com/android/dialer/enrichedcall/simulator/res/layout/enriched_call_simulator_activity.xml:27
+# Referenced at packages/apps/Dialer/java/com/android/incallui/rtt/impl/res/layout/frag_rtt_chat.xml:22
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contactsfragment/res/layout/fragment_contacts.xml:22
+# Referenced at packages/apps/Dialer/java/com/android/dialer/searchfragment/list/res/layout/fragment_search.xml:22
+# Referenced at packages/apps/Dialer/java/com/android/dialer/speeddial/res/layout/fragment_speed_dial.xml:22
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calllog/ui/res/layout/new_call_log_fragment.xml:23
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/res/layout/new_voicemail_call_log_fragment.xml:25
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_search_view.xml:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout-v26/abc_screen_toolbar.xml:37
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple.xml:25
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_screen_simple_overlay_action_mode.xml:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_button_bar_material.xml:43
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_material.xml:52
+# Referenced at out/soong/.intermediates/prebuilts/sdk/current/support/android-support-v7-appcompat-nodeps/android_common/aapt2/reszip/gen_res.flata/layout/abc_alert_dialog_title_material.xml:56
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contacts/resources/res/layout/contact_list_content.xml:39
+-keep class com.android.contacts.common.list.PinnedHeaderListView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_activity.xml:23
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/lists_fragment.xml:38
+-keep class com.android.contacts.common.list.ViewPagerTabs { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/interactions/res/layout/phone_disambig_item.xml:17
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contacts/resources/res/layout/select_account_list_item.xml:18
+-keep class com.android.contacts.common.widget.ActivityTouchLinearLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/phone_favorite_tile_view.xml:30
+-keep class com.android.contacts.common.widget.LayoutSuppressingImageView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_list_item.xml:67
+-keep class com.android.dialer.app.calllog.DialerQuickContactBadge { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/lists_fragment.xml:48
+-keep class com.android.dialer.app.list.DialerViewPager { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/speed_dial_fragment.xml:31
+-keep class com.android.dialer.app.list.PhoneFavoriteListView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/phone_favorite_tile_view.xml:16
+-keep class com.android.dialer.app.list.PhoneFavoriteSquareTileView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/lists_fragment.xml:60
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/toolbar/res/layout/toolbar_layout.xml:95
+-keep class com.android.dialer.app.list.RemoveView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/xml/sound_settings.xml:21
+-keep class com.android.dialer.app.settings.DefaultRingtonePreference { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_list_item_actions.xml:26
+-keep class com.android.dialer.app.voicemail.VoicemailPlaybackLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/search_edittext.xml:16
+-keep class com.android.dialer.app.widget.SearchEditTextLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/res/layout/gallery_grid_item_view.xml:17
+-keep class com.android.dialer.callcomposer.GalleryGridItemView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/cameraui/res/layout/camera_view.xml:31
+-keep class com.android.dialer.callcomposer.camera.HardwareCameraPreview { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/cameraui/res/layout/camera_view.xml:37
+-keep class com.android.dialer.callcomposer.camera.camerafocus.RenderOverlay { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/cameraui/res/layout/camera_view.xml:17
+-keep class com.android.dialer.callcomposer.cameraui.CameraMediaChooserView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calldetails/res/layout/call_details_entry.xml:25
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_list_item.xml:108
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_detail_line.xml:22
+-keep class com.android.dialer.calllogutils.CallTypeIconsView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/settings/res/xml/voicemail_settings.xml:38
+-keep class com.android.dialer.common.preference.SwitchPreferenceWithClickableSummary { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contactsfragment/res/layout/fragment_contacts.xml:32
+-keep class com.android.dialer.contactsfragment.FastScroller { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_fragment.xml:16
+-keep class com.android.dialer.dialpadview.DialpadFragment$DialpadSlidingRelativeLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key.xml:18
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_one.xml:18
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_pound.xml:18
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_star.xml:18
+-keep class com.android.dialer.dialpadview.DialpadKeyButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key.xml:26
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_one.xml:27
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_pound.xml:27
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_key_star.xml:27
+-keep class com.android.dialer.dialpadview.DialpadTextView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_view_unthemed.xml:16
+-keep class com.android.dialer.dialpadview.DialpadView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/dialpadview/res/layout/dialpad_view_unthemed.xml:114
+-keep class com.android.dialer.dialpadview.DigitsEditText { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/bottomnav/res/layout/bottom_nav_bar_layout.xml:17
+-keep class com.android.dialer.main.impl.bottomnav.BottomNavBar { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/bottomnav/res/layout/bottom_nav_item.xml:17
+-keep class com.android.dialer.main.impl.bottomnav.BottomNavItem { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/toolbar/res/layout/toolbar_layout.xml:16
+-keep class com.android.dialer.main.impl.toolbar.MainToolbar { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/toolbar/res/layout/toolbar_layout.xml:26
+-keep class com.android.dialer.main.impl.toolbar.SearchBarView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/res/layout/new_voicemail_entry.xml:93
+-keep class com.android.dialer.voicemail.listui.NewVoicemailMediaPlayerView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/settings/res/layout/activity_record_voicemail_greeting.xml:35
+-keep class com.android.dialer.voicemail.settings.RecordButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/res/layout/call_composer_activity.xml:60
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_list_item.xml:94
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calldetails/res/layout/contact_container.xml:47
+# Referenced at packages/apps/Dialer/java/com/android/dialer/historyitemactions/res/layout/contact_layout.xml:42
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contactsfragment/res/layout/contact_row.xml:44
+# Referenced at packages/apps/Dialer/java/com/android/dialer/widget/res/layout/dialer_toolbar.xml:34
+# Referenced at packages/apps/Dialer/java/com/android/incallui/contactgrid/res/layout/incall_contactgrid_bottom_row.xml:56
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calllog/ui/res/layout/new_call_log_entry.xml:69
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/phone_favorite_tile_view.xml:66
+# Referenced at packages/apps/Dialer/java/com/android/dialer/searchfragment/common/res/layout/search_contact_row.xml:42
+-keep class com.android.dialer.widget.BidiTextView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/historyitemactions/res/layout/contact_layout.xml:30
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calllog/ui/res/layout/new_call_log_entry.xml:27
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/res/layout/new_voicemail_entry.xml:25
+# Referenced at packages/apps/Dialer/java/com/android/dialer/speeddial/res/layout/suggestion_row_layout.xml:24
+-keep class com.android.dialer.widget.ContactPhotoView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/main/impl/res/layout/main_activity.xml:57
+-keep class com.android.dialer.widget.DialerFloatingActionButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/settings/res/layout/activity_current_voicemail_greeting.xml:30
+# Referenced at packages/apps/Dialer/java/com/android/dialer/rtt/res/layout/activity_rtt_transcript.xml:23
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/res/layout/call_composer_activity.xml:157
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calldetails/res/layout/call_details_activity.xml:23
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_detail.xml:25
+# Referenced at packages/apps/Dialer/java/com/android/dialer/enrichedcall/simulator/res/layout/enriched_call_simulator_activity.xml:22
+# Referenced at packages/apps/Dialer/java/com/android/dialer/postcall/res/layout/post_call_activity.xml:24
+-keep class com.android.dialer.widget.DialerToolbar { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/call_log_fragment.xml:69
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_fragment.xml:72
+# Referenced at packages/apps/Dialer/java/com/android/dialer/contactsfragment/res/layout/fragment_contacts.xml:65
+# Referenced at packages/apps/Dialer/java/com/android/dialer/searchfragment/list/res/layout/fragment_search.xml:28
+# Referenced at packages/apps/Dialer/java/com/android/dialer/speeddial/res/layout/fragment_speed_dial.xml:31
+# Referenced at packages/apps/Dialer/java/com/android/dialer/calllog/ui/res/layout/new_call_log_fragment.xml:31
+# Referenced at packages/apps/Dialer/java/com/android/dialer/voicemail/listui/res/layout/new_voicemail_call_log_fragment.xml:38
+# Referenced at packages/apps/Dialer/java/com/android/dialer/app/res/layout/speed_dial_fragment.xml:44
+-keep class com.android.dialer.widget.EmptyContentView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_detail_info.xml:67
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callstats/res/layout/call_stats_list_item.xml:56
+-keep class com.android.dialer.widget.LinearColorBar { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/callcomposer/res/layout/call_composer_activity.xml:81
+# Referenced at packages/apps/Dialer/java/com/android/incallui/incall/impl/res/layout/frag_incall_voice.xml:87
+-keep class com.android.dialer.widget.LockableViewPager { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/dialer/speeddial/res/layout/disambig_dialog_layout.xml:37
+-keep class com.android.dialer.widget.MaxHeightScrollView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/res/layout/incall_dialpad_fragment.xml:17
+-keep class com.android.incallui.DialpadFragment$DialpadSlidingLinearLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/answer/impl/res/layout/fragment_incoming_call.xml:17
+-keep class com.android.incallui.answer.impl.AffordanceHolderLayout { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/answer/impl/res/layout/fragment_incoming_call.xml:35
+-keep class com.android.incallui.answer.impl.FixedAspectSurfaceView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/answer/impl/res/layout/fragment_incoming_call.xml:174
+-keep class com.android.incallui.answer.impl.affordance.SwipeButtonView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/incall/impl/res/layout/frag_incall_voice.xml:56
+# Referenced at packages/apps/Dialer/java/com/android/incallui/answer/impl/res/layout/fragment_incoming_call.xml:99
+# Referenced at packages/apps/Dialer/java/com/android/incallui/video/impl/res/layout/video_contact_grid.xml:33
+-keep class com.android.incallui.autoresizetext.AutoResizeTextView { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/incall/impl/res/layout/incall_button_grid.xml:16
+-keep class com.android.incallui.incall.impl.CheckableLabeledButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/incall/impl/res/layout/frag_incall_voice.xml:95
+-keep class com.android.incallui.incall.impl.InCallPaginator { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/rtt/impl/res/layout/audio_route.xml:24
+# Referenced at packages/apps/Dialer/java/com/android/incallui/rtt/impl/res/layout/overflow_menu.xml:24
+-keep class com.android.incallui.rtt.impl.RttCheckableButton { <init>(...); }
+
+# Referenced at packages/apps/Dialer/java/com/android/incallui/video/impl/res/layout/videocall_controls.xml:60
+# Referenced at packages/apps/Dialer/java/com/android/incallui/video/impl/res/layout/videocall_controls_land.xml:59
+# Referenced at packages/apps/Dialer/java/com/android/incallui/video/impl/res/layout/videocall_controls_surfaceview.xml:61
+-keep class com.android.incallui.video.impl.CheckableImageButton { <init>(...); }
+
+
+# End of content from ./out/target/common/obj/APPS/Dialer_intermediates/proguard_options
+
+
+# The proguard configuration file for the following section is ./packages/apps/Dialer/proguard.flags
+# These are referenced by com.google.common.util.concurrent and
+# com.google.errorprone.annotations but don't exist on Android.
+-dontwarn java.lang.ClassValue
+-dontwarn javax.lang.model.element.Modifier
+# End of content from ./packages/apps/Dialer/proguard.flags
+
+
+# The proguard configuration file for the following section is ./packages/apps/Dialer/java/com/android/dialer/common/proguard.flags
+-assumenosideeffects class com.android.dialer.common.LogUtil {
+    public static void v(...);
+    public static void d(...);
+}
+
+# End of content from ./packages/apps/Dialer/java/com/android/dialer/common/proguard.flags
+
+
+# The proguard configuration file for the following section is ./packages/apps/Dialer/java/com/android/dialer/proguard/proguard.flags
+# Keep the annotation, classes, methods, and fields marked as UsedByReflection
+-keep class com.android.dialer.proguard.UsedByReflection
+-keep @com.android.dialer.proguard.UsedByReflection class *
+-keepclassmembers class * {
+    @com.android.dialer.proguard.UsedByReflection *;
+}
+-keep class android.support.design.widget.FloatingActionButton$* { *; }
+# End of content from ./packages/apps/Dialer/java/com/android/dialer/proguard/proguard.flags
+
+
+# The proguard configuration file for the following section is ./packages/apps/Dialer/java/com/android/incallui/answer/impl/proguard.flags
+# Used in com.android.dialer.answer.impl.SmsBottomSheetFragment
+-keep class android.support.design.widget.BottomSheetBehavior {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>();
+}
+# End of content from ./packages/apps/Dialer/java/com/android/incallui/answer/impl/proguard.flags
+
+
+# The proguard configuration file for the following section is ./packages/apps/Dialer/java/com/android/voicemail/impl/proguard.flags
+-assumenosideeffects class com.android.voicemail.impl.VvmLog {
+    public static void v(...);
+    public static void d(...);
+}
+
+# End of content from ./packages/apps/Dialer/java/com/android/voicemail/impl/proguard.flags
+# The proguard configuration file for the following section is Command line
+
+-ignorewarnings
+# End of content from Command line
