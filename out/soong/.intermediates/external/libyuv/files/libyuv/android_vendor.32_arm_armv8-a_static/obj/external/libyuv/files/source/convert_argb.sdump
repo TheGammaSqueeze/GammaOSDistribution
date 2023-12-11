@@ -1,0 +1,2974 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA256_j",
+   "name" : "unsigned int [256]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA256_j",
+   "size" : 1024,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotate0"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotate90"
+    },
+    {
+     "enum_field_value" : 180,
+     "name" : "libyuv::kRotate180"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotate270"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotateNone"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotateClockwise"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotateCounterClockwise"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12RotationModeE",
+   "name" : "libyuv::RotationMode",
+   "referenced_type" : "_ZTIN6libyuv12RotationModeE",
+   "self_type" : "_ZTIN6libyuv12RotationModeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/rotate.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kJpegYuv420"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::kJpegYuv422"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "libyuv::kJpegYuv444"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "libyuv::kJpegYuv400"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "libyuv::kJpegUnknown"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "name" : "libyuv::JpegSubsamplingType",
+   "referenced_type" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "self_type" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 808596553,
+     "name" : "libyuv::FOURCC_I420"
+    },
+    {
+     "enum_field_value" : 842150985,
+     "name" : "libyuv::FOURCC_I422"
+    },
+    {
+     "enum_field_value" : 875836489,
+     "name" : "libyuv::FOURCC_I444"
+    },
+    {
+     "enum_field_value" : 808465481,
+     "name" : "libyuv::FOURCC_I400"
+    },
+    {
+     "enum_field_value" : 825382478,
+     "name" : "libyuv::FOURCC_NV21"
+    },
+    {
+     "enum_field_value" : 842094158,
+     "name" : "libyuv::FOURCC_NV12"
+    },
+    {
+     "enum_field_value" : 844715353,
+     "name" : "libyuv::FOURCC_YUY2"
+    },
+    {
+     "enum_field_value" : 1498831189,
+     "name" : "libyuv::FOURCC_UYVY"
+    },
+    {
+     "enum_field_value" : 808529992,
+     "name" : "libyuv::FOURCC_H010"
+    },
+    {
+     "enum_field_value" : 808596557,
+     "name" : "libyuv::FOURCC_M420"
+    },
+    {
+     "enum_field_value" : 1111970369,
+     "name" : "libyuv::FOURCC_ARGB"
+    },
+    {
+     "enum_field_value" : 1095911234,
+     "name" : "libyuv::FOURCC_BGRA"
+    },
+    {
+     "enum_field_value" : 1380401729,
+     "name" : "libyuv::FOURCC_ABGR"
+    },
+    {
+     "enum_field_value" : 808669761,
+     "name" : "libyuv::FOURCC_AR30"
+    },
+    {
+     "enum_field_value" : 808665665,
+     "name" : "libyuv::FOURCC_AB30"
+    },
+    {
+     "enum_field_value" : 1195521074,
+     "name" : "libyuv::FOURCC_24BG"
+    },
+    {
+     "enum_field_value" : 544694642,
+     "name" : "libyuv::FOURCC_RAW"
+    },
+    {
+     "enum_field_value" : 1094862674,
+     "name" : "libyuv::FOURCC_RGBA"
+    },
+    {
+     "enum_field_value" : 1346520914,
+     "name" : "libyuv::FOURCC_RGBP"
+    },
+    {
+     "enum_field_value" : 1329743698,
+     "name" : "libyuv::FOURCC_RGBO"
+    },
+    {
+     "enum_field_value" : 875836498,
+     "name" : "libyuv::FOURCC_R444"
+    },
+    {
+     "enum_field_value" : 1196444237,
+     "name" : "libyuv::FOURCC_MJPG"
+    },
+    {
+     "enum_field_value" : 842094169,
+     "name" : "libyuv::FOURCC_YV12"
+    },
+    {
+     "enum_field_value" : 909203033,
+     "name" : "libyuv::FOURCC_YV16"
+    },
+    {
+     "enum_field_value" : 875714137,
+     "name" : "libyuv::FOURCC_YV24"
+    },
+    {
+     "enum_field_value" : 842093913,
+     "name" : "libyuv::FOURCC_YU12"
+    },
+    {
+     "enum_field_value" : 808596554,
+     "name" : "libyuv::FOURCC_J420"
+    },
+    {
+     "enum_field_value" : 808465482,
+     "name" : "libyuv::FOURCC_J400"
+    },
+    {
+     "enum_field_value" : 808596552,
+     "name" : "libyuv::FOURCC_H420"
+    },
+    {
+     "enum_field_value" : 842150984,
+     "name" : "libyuv::FOURCC_H422"
+    },
+    {
+     "enum_field_value" : 1448433993,
+     "name" : "libyuv::FOURCC_IYUV"
+    },
+    {
+     "enum_field_value" : 909202777,
+     "name" : "libyuv::FOURCC_YU16"
+    },
+    {
+     "enum_field_value" : 875713881,
+     "name" : "libyuv::FOURCC_YU24"
+    },
+    {
+     "enum_field_value" : 1448695129,
+     "name" : "libyuv::FOURCC_YUYV"
+    },
+    {
+     "enum_field_value" : 1937143161,
+     "name" : "libyuv::FOURCC_YUVS"
+    },
+    {
+     "enum_field_value" : 1129923656,
+     "name" : "libyuv::FOURCC_HDYC"
+    },
+    {
+     "enum_field_value" : 2037741106,
+     "name" : "libyuv::FOURCC_2VUY"
+    },
+    {
+     "enum_field_value" : 1195724874,
+     "name" : "libyuv::FOURCC_JPEG"
+    },
+    {
+     "enum_field_value" : 828534116,
+     "name" : "libyuv::FOURCC_DMB1"
+    },
+    {
+     "enum_field_value" : 825770306,
+     "name" : "libyuv::FOURCC_BA81"
+    },
+    {
+     "enum_field_value" : 859981650,
+     "name" : "libyuv::FOURCC_RGB3"
+    },
+    {
+     "enum_field_value" : 861030210,
+     "name" : "libyuv::FOURCC_BGR3"
+    },
+    {
+     "enum_field_value" : 536870912,
+     "name" : "libyuv::FOURCC_CM32"
+    },
+    {
+     "enum_field_value" : 402653184,
+     "name" : "libyuv::FOURCC_CM24"
+    },
+    {
+     "enum_field_value" : 892679500,
+     "name" : "libyuv::FOURCC_L555"
+    },
+    {
+     "enum_field_value" : 892745036,
+     "name" : "libyuv::FOURCC_L565"
+    },
+    {
+     "enum_field_value" : 825570613,
+     "name" : "libyuv::FOURCC_5551"
+    },
+    {
+     "enum_field_value" : 825308233,
+     "name" : "libyuv::FOURCC_I411"
+    },
+    {
+     "enum_field_value" : 808596561,
+     "name" : "libyuv::FOURCC_Q420"
+    },
+    {
+     "enum_field_value" : 1111967570,
+     "name" : "libyuv::FOURCC_RGGB"
+    },
+    {
+     "enum_field_value" : 1380403010,
+     "name" : "libyuv::FOURCC_BGGR"
+    },
+    {
+     "enum_field_value" : 1195528775,
+     "name" : "libyuv::FOURCC_GRBG"
+    },
+    {
+     "enum_field_value" : 1196573255,
+     "name" : "libyuv::FOURCC_GBRG"
+    },
+    {
+     "enum_field_value" : 875967048,
+     "name" : "libyuv::FOURCC_H264"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "libyuv::FOURCC_ANY"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv6FourCCE",
+   "name" : "libyuv::FourCC",
+   "referenced_type" : "_ZTIN6libyuv6FourCCE",
+   "self_type" : "_ZTIN6libyuv6FourCCE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/video_common.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_I420"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_I422"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_I444"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_I411"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_I400"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_NV21"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_NV12"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUY2"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_UYVY"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_M420"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_Q420"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_ARGB"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_BGRA"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_ABGR"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_RGBA"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_AR30"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_AB30"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_24BG"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_RAW"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_RGBP"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_RGBO"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_R444"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_RGGB"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_BGGR"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_GRBG"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_GBRG"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_YV12"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YV16"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_YV24"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_YU12"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_J420"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_J400"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_H420"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_H422"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_H010"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_MJPG"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_H264"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_IYUV"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YU16"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_YU24"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUYV"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUVS"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_HDYC"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_2VUY"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::FOURCC_BPP_JPEG"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::FOURCC_BPP_DMB1"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_BA81"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_RGB3"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_BGR3"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_CM32"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_CM24"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_ANY"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv9FourCCBppE",
+   "name" : "libyuv::FourCCBpp",
+   "referenced_type" : "_ZTIN6libyuv9FourCCBppE",
+   "self_type" : "_ZTIN6libyuv9FourCCBppE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/video_common.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "libyuv::ABGRToARGB",
+   "linker_set_key" : "ABGRToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::AR30ToAB30",
+   "linker_set_key" : "AR30ToAB30",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::AR30ToABGR",
+   "linker_set_key" : "AR30ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::AR30ToARGB",
+   "linker_set_key" : "AR30ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::ARGB1555ToARGB",
+   "linker_set_key" : "ARGB1555ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::ARGB4444ToARGB",
+   "linker_set_key" : "ARGB4444ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::ARGBCopy",
+   "linker_set_key" : "ARGBCopy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::Android420ToABGR",
+   "linker_set_key" : "Android420ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::Android420ToARGB",
+   "linker_set_key" : "Android420ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::BGRAToARGB",
+   "linker_set_key" : "BGRAToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H010ToAB30",
+   "linker_set_key" : "H010ToAB30",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H010ToABGR",
+   "linker_set_key" : "H010ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H010ToAR30",
+   "linker_set_key" : "H010ToAR30",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H010ToARGB",
+   "linker_set_key" : "H010ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H420ToABGR",
+   "linker_set_key" : "H420ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H420ToARGB",
+   "linker_set_key" : "H420ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H422ToABGR",
+   "linker_set_key" : "H422ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::H422ToARGB",
+   "linker_set_key" : "H422ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I010ToAB30",
+   "linker_set_key" : "I010ToAB30",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I010ToABGR",
+   "linker_set_key" : "I010ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I010ToAR30",
+   "linker_set_key" : "I010ToAR30",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I010ToARGB",
+   "linker_set_key" : "I010ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I400ToARGB",
+   "linker_set_key" : "I400ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I420AlphaToABGR",
+   "linker_set_key" : "I420AlphaToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I420AlphaToARGB",
+   "linker_set_key" : "I420AlphaToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I420ToABGR",
+   "linker_set_key" : "I420ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I420ToARGB",
+   "linker_set_key" : "I420ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I422ToABGR",
+   "linker_set_key" : "I422ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/planar_functions.h"
+  },
+  {
+   "function_name" : "libyuv::I422ToARGB",
+   "linker_set_key" : "I422ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I444ToABGR",
+   "linker_set_key" : "I444ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::I444ToARGB",
+   "linker_set_key" : "I444ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J400ToARGB",
+   "linker_set_key" : "J400ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J420ToABGR",
+   "linker_set_key" : "J420ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J420ToARGB",
+   "linker_set_key" : "J420ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J422ToABGR",
+   "linker_set_key" : "J422ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J422ToARGB",
+   "linker_set_key" : "J422ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::J444ToARGB",
+   "linker_set_key" : "J444ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::M420ToARGB",
+   "linker_set_key" : "M420ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV12ToABGR",
+   "linker_set_key" : "NV12ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV12ToARGB",
+   "linker_set_key" : "NV12ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV12ToRAW",
+   "linker_set_key" : "NV12ToRAW",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV12ToRGB24",
+   "linker_set_key" : "NV12ToRGB24",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV21ToABGR",
+   "linker_set_key" : "NV21ToABGR",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV21ToARGB",
+   "linker_set_key" : "NV21ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV21ToRAW",
+   "linker_set_key" : "NV21ToRAW",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV21ToRGB24",
+   "linker_set_key" : "NV21ToRGB24",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::NV21ToYUV24",
+   "linker_set_key" : "NV21ToYUV24",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::RAWToARGB",
+   "linker_set_key" : "RAWToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::RGB24ToARGB",
+   "linker_set_key" : "RGB24ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::RGB565ToARGB",
+   "linker_set_key" : "RGB565ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::RGBAToARGB",
+   "linker_set_key" : "RGBAToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::UYVYToARGB",
+   "linker_set_key" : "UYVYToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "function_name" : "libyuv::YUY2ToARGB",
+   "linker_set_key" : "YUY2ToARGB",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder14kColorSpaceRgbE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceRgb",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder15kColorSpaceCMYKE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceCMYK",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder15kColorSpaceYCCKE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceYCCK",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder16kColorSpaceYCbCrE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceYCbCr",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18kColorSpaceUnknownE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceUnknown",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder20kColorSpaceGrayscaleE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceGrayscale",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasARME",
+   "name" : "libyuv::kCpuHasARM",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasAVXE",
+   "name" : "libyuv::kCpuHasAVX",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasMMIE",
+   "name" : "libyuv::kCpuHasMMI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasMSAE",
+   "name" : "libyuv::kCpuHasMSA",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasX86E",
+   "name" : "libyuv::kCpuHasX86",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasAVX2E",
+   "name" : "libyuv::kCpuHasAVX2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasERMSE",
+   "name" : "libyuv::kCpuHasERMS",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasF16CE",
+   "name" : "libyuv::kCpuHasF16C",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasFMA3E",
+   "name" : "libyuv::kCpuHasFMA3",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasGFNIE",
+   "name" : "libyuv::kCpuHasGFNI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasMIPSE",
+   "name" : "libyuv::kCpuHasMIPS",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasNEONE",
+   "name" : "libyuv::kCpuHasNEON",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasSSE2E",
+   "name" : "libyuv::kCpuHasSSE2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSE41E",
+   "name" : "libyuv::kCpuHasSSE41",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSE42E",
+   "name" : "libyuv::kCpuHasSSE42",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSSE3E",
+   "name" : "libyuv::kCpuHasSSSE3",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuHasAVX512BWE",
+   "name" : "libyuv::kCpuHasAVX512BW",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuHasAVX512VLE",
+   "name" : "libyuv::kCpuHasAVX512VL",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuInitializedE",
+   "name" : "libyuv::kCpuInitialized",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL16kUnknownDataSizeE",
+   "name" : "libyuv::kUnknownDataSize",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL17kCpuHasAVX512VBMIE",
+   "name" : "libyuv::kCpuHasAVX512VBMI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL18kCpuHasAVX512VBMI2E",
+   "name" : "libyuv::kCpuHasAVX512VBMI2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL20kCpuHasAVX512VBITALGE",
+   "name" : "libyuv::kCpuHasAVX512VBITALG",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL22kCpuHasAVX512VPOPCNTDQE",
+   "name" : "libyuv::kCpuHasAVX512VPOPCNTDQ",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "cpu_info_",
+   "name" : "libyuv::cpu_info_",
+   "referenced_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "fixed_invtbl8",
+   "name" : "libyuv::fixed_invtbl8",
+   "referenced_type" : "_ZTIA256_Kj",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvH709Constants",
+   "name" : "libyuv::kYuvH709Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvI601Constants",
+   "name" : "libyuv::kYuvI601Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvJPEGConstants",
+   "name" : "libyuv::kYuvJPEGConstants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuH709Constants",
+   "name" : "libyuv::kYvuH709Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuI601Constants",
+   "name" : "libyuv::kYvuI601Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuJPEGConstants",
+   "name" : "libyuv::kYvuJPEGConstants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP15jpeg_source_mgr",
+   "name" : "jpeg_source_mgr *",
+   "referenced_type" : "_ZTI15jpeg_source_mgr",
+   "self_type" : "_ZTIP15jpeg_source_mgr",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP22jpeg_decompress_struct",
+   "name" : "jpeg_decompress_struct *",
+   "referenced_type" : "_ZTI22jpeg_decompress_struct",
+   "self_type" : "_ZTIP22jpeg_decompress_struct",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKt",
+   "name" : "const unsigned short *",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIPKt",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6libyuv14SetJmpErrorMgrE",
+   "name" : "libyuv::SetJmpErrorMgr *",
+   "referenced_type" : "_ZTIN6libyuv14SetJmpErrorMgrE",
+   "self_type" : "_ZTIPN6libyuv14SetJmpErrorMgrE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN6libyuv6BufferE",
+   "name" : "libyuv::Buffer *",
+   "referenced_type" : "_ZTIN6libyuv6BufferE",
+   "self_type" : "_ZTIPN6libyuv6BufferE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPPh",
+   "name" : "unsigned char ***",
+   "referenced_type" : "_ZTIPPh",
+   "self_type" : "_ZTIPPPh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPh",
+   "name" : "unsigned char **",
+   "referenced_type" : "_ZTIPh",
+   "self_type" : "_ZTIPPh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA256_Kj",
+   "name" : "unsigned int const[256]",
+   "referenced_type" : "_ZTIA256_j",
+   "self_type" : "_ZTIA256_Kj",
+   "size" : 1024,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6libyuv12YuvConstantsE",
+   "name" : "const libyuv::YuvConstants",
+   "referenced_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "self_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "size" : 64,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKt",
+   "name" : "const unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIKt",
+   "size" : 2,
+   "source_file" : "external/libyuv/files/include/libyuv/convert_argb.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "buffers",
+     "referenced_type" : "_ZTIPN6libyuv6BufferE"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "pos",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12BufferVectorE",
+   "name" : "libyuv::BufferVector",
+   "referenced_type" : "_ZTIN6libyuv12BufferVectorE",
+   "self_type" : "_ZTIN6libyuv12BufferVectorE",
+   "size" : 12,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "buf_",
+     "referenced_type" : "_ZTIN6libyuv6BufferE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buf_vec_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIN6libyuv12BufferVectorE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "decompress_struct_",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIP22jpeg_decompress_struct"
+    },
+    {
+     "access" : "private",
+     "field_name" : "source_mgr_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIP15jpeg_source_mgr"
+    },
+    {
+     "access" : "private",
+     "field_name" : "error_mgr_",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIPN6libyuv14SetJmpErrorMgrE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "has_scanline_padding_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "num_outbufs_",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "scanlines_",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPPPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "scanlines_sizes_",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "databuf_",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "databuf_strides_",
+     "field_offset" : 416,
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12MJpegDecoderE",
+   "name" : "libyuv::MJpegDecoder",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6libyuv12MJpegDecoderE",
+   "self_type" : "_ZTIN6libyuv12MJpegDecoderE",
+   "size" : 56,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "kUVToRB",
+     "referenced_type" : "_ZTIDv16_h"
+    },
+    {
+     "field_name" : "kUVToG",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIDv16_h"
+    },
+    {
+     "field_name" : "kUVBiasBGR",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIDv8_s"
+    },
+    {
+     "field_name" : "kYToRgb",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIDv4_i"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12YuvConstantsE",
+   "name" : "libyuv::YuvConstants",
+   "referenced_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "self_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "size" : 64,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv6BufferE",
+   "name" : "libyuv::Buffer",
+   "referenced_type" : "_ZTIN6libyuv6BufferE",
+   "self_type" : "_ZTIN6libyuv6BufferE",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
