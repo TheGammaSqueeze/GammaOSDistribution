@@ -1,0 +1,382 @@
+Package name: com.stevesoltys.seedvault
+Module name in Android tree: Seedvault
+Local path in Android tree: packages/apps/Seedvault
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Seedvault/Seedvault.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/app/backup/IBackupManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/app/backup/IBackupManager; use(s):
+       Lcom/stevesoltys/seedvault/App$appModule$1$4;->invoke(Lorg/koin/core/scope/Scope;Lorg/koin/core/parameter/ParametersHolder;)Landroid/app/backup/IBackupManager;
+
+#2: Linking blocked Landroid/app/backup/IBackupManager;->beginRestoreSessionForUser(ILjava/lang/String;Ljava/lang/String;)Landroid/app/backup/IRestoreSession; use(s):
+       Lcom/stevesoltys/seedvault/restore/RestoreViewModel;->getOrStartSession()Landroid/app/backup/IRestoreSession;
+
+#3: Linking blocked Landroid/app/backup/IBackupManager;->filterAppsEligibleForBackupForUser(I[Ljava/lang/String;)[Ljava/lang/String; use(s):
+       Lcom/stevesoltys/seedvault/transport/backup/PackageService;->getEligiblePackages()[Ljava/lang/String;
+
+#4: Linking unsupported Landroid/app/backup/IBackupManager;->getCurrentTransport()Ljava/lang/String; use(s):
+       Lcom/stevesoltys/seedvault/transport/ConfigurableBackupTransportService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+
+#5: Linking blocked Landroid/app/backup/IBackupManager;->initializeTransportsForUser(I[Ljava/lang/String;Landroid/app/backup/IBackupObserver;)V use(s):
+       Lcom/stevesoltys/seedvault/ui/recoverycode/RecoveryCodeViewModel$reinitializeBackupLocation$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+       Lcom/stevesoltys/seedvault/ui/storage/BackupStorageViewModel$onLocationSet$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+#6: Linking max-target-r Landroid/app/backup/IBackupManager;->isBackupEnabled()Z use(s):
+       Lcom/stevesoltys/seedvault/settings/SettingsFragment;->setBackupEnabledState()V
+       Lcom/stevesoltys/seedvault/settings/SettingsViewModel;->backupNow$packages__apps__Seedvault__android_common__Seedvault()V
+       Lcom/stevesoltys/seedvault/transport/ConfigurableBackupTransportServiceKt;->requestBackup(Landroid/content/Context;)V
+       Lcom/stevesoltys/seedvault/ui/recoverycode/RecoveryCodeViewModel$reinitializeBackupLocation$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+       Lcom/stevesoltys/seedvault/ui/storage/BackupStorageViewModel$onLocationSet$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+#7: Linking max-target-o Landroid/app/backup/IBackupManager;->requestBackup([Ljava/lang/String;Landroid/app/backup/IBackupObserver;Landroid/app/backup/IBackupManagerMonitor;I)I use(s):
+       Lcom/stevesoltys/seedvault/transport/ConfigurableBackupTransportServiceKt;->requestBackup(Landroid/content/Context;)V
+
+#8: Linking max-target-r Landroid/app/backup/IBackupManager;->setAutoRestore(Z)V use(s):
+       Lcom/stevesoltys/seedvault/settings/SettingsFragment$onCreatePreferences$4;->onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z
+
+#9: Linking max-target-r Landroid/app/backup/IBackupManager;->setBackupEnabled(Z)V use(s):
+       Lcom/stevesoltys/seedvault/settings/SettingsFragment$onCreatePreferences$2;->onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z
+       Lcom/stevesoltys/seedvault/transport/ConfigurableBackupTransportService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+
+#10: Linking max-target-o Landroid/app/backup/IBackupManagerMonitor$Stub;-><init>()V use(s):
+       Lcom/stevesoltys/seedvault/BackupMonitor;-><init>()V
+
+#11: Linking max-target-o Landroid/app/backup/IBackupObserver$Stub;-><init>()V use(s):
+       Lcom/stevesoltys/seedvault/ui/notification/NotificationBackupObserver;-><init>(Landroid/content/Context;ILcom/stevesoltys/seedvault/transport/backup/ExpectedAppTotals;)V
+       Lcom/stevesoltys/seedvault/ui/storage/BackupStorageViewModel$InitializationObserver;-><init>(Lcom/stevesoltys/seedvault/ui/storage/BackupStorageViewModel;Z)V
+
+#12: Linking unsupported Landroid/app/backup/IRestoreObserver$Stub;-><init>()V use(s):
+       Lcom/stevesoltys/seedvault/restore/RestoreViewModel$RestoreObserver;-><init>(Lcom/stevesoltys/seedvault/restore/RestoreViewModel;Lkotlin/jvm/functions/Function1;)V
+
+#13: Linking max-target-o Landroid/app/backup/IRestoreSession;->endRestoreSession()V use(s):
+       Lcom/stevesoltys/seedvault/restore/RestoreViewModel;->closeSession()V
+
+#14: Linking max-target-o Landroid/app/backup/IRestoreSession;->getAvailableRestoreSets(Landroid/app/backup/IRestoreObserver;Landroid/app/backup/IBackupManagerMonitor;)I use(s):
+       Lcom/stevesoltys/seedvault/restore/RestoreViewModel;->startRestore(J)V
+
+#15: Linking max-target-o Landroid/app/backup/IRestoreSession;->restoreAll(JLandroid/app/backup/IRestoreObserver;Landroid/app/backup/IBackupManagerMonitor;)I use(s):
+       Lcom/stevesoltys/seedvault/restore/RestoreViewModel$startRestore$observer$1;->invoke(Lcom/stevesoltys/seedvault/restore/RestoreViewModel$RestoreObserver;)V
+
+#16: Linking max-target-o,test-api Landroid/content/pm/PackageInstaller$SessionParams;->setInstallerPackageName(Ljava/lang/String;)V use(s):
+       Lcom/stevesoltys/seedvault/restore/install/ApkInstaller;->install(Ljava/util/List;Ljava/lang/String;)V
+
+#17: Linking unsupported Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder; use(s):
+       Lcom/stevesoltys/seedvault/App$appModule$1$4;->invoke(Lorg/koin/core/scope/Scope;Lorg/koin/core/parameter/ParametersHolder;)Landroid/app/backup/IBackupManager;
+
+#18: Linking max-target-o Landroid/util/PackageUtils;->computeSha256DigestBytes([B)[B use(s):
+       Lcom/stevesoltys/seedvault/transport/backup/ApkBackupKt;->hashSignature(Landroid/content/pm/Signature;)[B
+
+#19: Linking blocked Lcom/android/internal/app/LocalePicker;->getSupportedLocales(Landroid/content/Context;)[Ljava/lang/String; use(s):
+       Lcom/stevesoltys/seedvault/restore/install/DeviceInfo;-><init>(Landroid/content/Context;)V
+
+#20: Linking unsupported,core-platform-api Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V use(s):
+       Lcom/stevesoltys/seedvault/transport/backup/FullBackup;->clearState()I (3 occurrences)
+       Lcom/stevesoltys/seedvault/transport/restore/FullRestore;->copyInputStream(Ljava/io/OutputStream;)I (2 occurrences)
+       Lcom/stevesoltys/seedvault/transport/restore/FullRestore;->resetState()V
+       Lcom/stevesoltys/seedvault/transport/restore/KVRestore;->getRestoreData(Landroid/os/ParcelFileDescriptor;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; (3 occurrences)
+       Lcom/stevesoltys/seedvault/transport/restore/KVRestore;->getRestoreDataV0(Lcom/stevesoltys/seedvault/transport/restore/KVRestoreState;Landroid/os/ParcelFileDescriptor;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; (2 occurrences)
+
+#21: Linking unsupported Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object;
+       Lcom/google/protobuf/UnsafeUtil;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object;
+
+#22: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->arrayBaseOffset(Ljava/lang/Class;)I
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->arrayBaseOffset(Ljava/lang/Class;)I
+
+#23: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->arrayIndexScale(Ljava/lang/Class;)I
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->arrayIndexScale(Ljava/lang/Class;)I
+
+#24: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getBoolean(Ljava/lang/Object;J)Z use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getBoolean(Ljava/lang/Object;J)Z
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getBoolean(Ljava/lang/Object;J)Z
+
+#25: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(J)B use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(J)B
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(J)B
+
+#26: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(Ljava/lang/Object;J)B
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getByte(Ljava/lang/Object;J)B
+
+#27: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getDouble(Ljava/lang/Object;J)D use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getDouble(Ljava/lang/Object;J)D
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getDouble(Ljava/lang/Object;J)D
+
+#28: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getFloat(Ljava/lang/Object;J)F use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getFloat(Ljava/lang/Object;J)F
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getFloat(Ljava/lang/Object;J)F
+
+#29: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(J)I use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getInt(J)I
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getInt(J)I
+
+#30: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (5 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->isInitialized(Ljava/lang/Object;)Z
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/Writer;)V (7 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->getInt(Ljava/lang/Object;J)I
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->isInitialized(Ljava/lang/Object;)Z
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (7 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getInt(Ljava/lang/Object;J)I
+
+#31: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(J)J use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->getLong(J)J
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->getLong(J)J
+
+#32: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (3 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/Writer;)V (5 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->getLong(Ljava/lang/Object;J)J
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (5 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getLong(Ljava/lang/Object;J)J
+
+#33: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (41 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/Writer;)V (41 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (41 occurrences)
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeFieldsInAscendingOrderProto2(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (41 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+#34: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->newSchemaForRawMessageInfo(Lcom/google/crypto/tink/shaded/protobuf/RawMessageInfo;Lcom/google/crypto/tink/shaded/protobuf/NewInstanceSchema;Lcom/google/crypto/tink/shaded/protobuf/ListFieldSchema;Lcom/google/crypto/tink/shaded/protobuf/UnknownFieldSchema;Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;Lcom/google/crypto/tink/shaded/protobuf/MapFieldSchema;)Lcom/google/crypto/tink/shaded/protobuf/MessageSchema; (4 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+       Lcom/google/protobuf/MessageSchema;->newSchemaForRawMessageInfo(Lcom/google/protobuf/RawMessageInfo;Lcom/google/protobuf/NewInstanceSchema;Lcom/google/protobuf/ListFieldSchema;Lcom/google/protobuf/UnknownFieldSchema;Lcom/google/protobuf/ExtensionSchema;Lcom/google/protobuf/MapFieldSchema;)Lcom/google/protobuf/MessageSchema; (4 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+#35: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putBoolean(Ljava/lang/Object;JZ)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putBoolean(Ljava/lang/Object;JZ)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putBoolean(Ljava/lang/Object;JZ)V
+
+#36: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(JB)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(JB)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(JB)V
+
+#37: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(Ljava/lang/Object;JB)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putByte(Ljava/lang/Object;JB)V
+
+#38: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putDouble(Ljava/lang/Object;JD)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putDouble(Ljava/lang/Object;JD)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putDouble(Ljava/lang/Object;JD)V
+
+#39: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putFloat(Ljava/lang/Object;JF)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putFloat(Ljava/lang/Object;JF)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putFloat(Ljava/lang/Object;JF)V
+
+#40: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(JI)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putInt(JI)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putInt(JI)V
+
+#41: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (14 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (6 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (6 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->putInt(Ljava/lang/Object;JI)V
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto2(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->getSerializedSizeProto3(Ljava/lang/Object;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (6 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (4 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putInt(Ljava/lang/Object;JI)V
+
+#42: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(JJ)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$JvmMemoryAccessor;->putLong(JJ)V
+       Lcom/google/protobuf/UnsafeUtil$JvmMemoryAccessor;->putLong(JJ)V
+
+#43: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->putLong(Ljava/lang/Object;JJ)V
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putLong(Ljava/lang/Object;JJ)V
+
+#44: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (17 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (7 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I (5 occurrences)
+       Lcom/google/crypto/tink/shaded/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/crypto/tink/shaded/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (17 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (7 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto3Message(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)I (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/UnsafeUtil$MemoryAccessor;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+#45: Reflection max-target-p Landroid/animation/LayoutTransition;->cancel use(s):
+       Landroidx/transition/ViewGroupUtilsApi14;->cancelLayoutTransition(Landroid/animation/LayoutTransition;)V
+
+#46: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#47: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#48: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#49: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#50: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#51: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#52: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#53: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#54: Reflection unsupported Landroid/os/Bundle;->putIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
+
+#55: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#56: Reflection unsupported Landroid/os/Trace;->asyncTraceBegin use(s):
+       Landroidx/tracing/Trace;->beginAsyncSectionFallback(Ljava/lang/String;I)V
+
+#57: Reflection unsupported Landroid/os/Trace;->asyncTraceEnd use(s):
+       Landroidx/tracing/Trace;->endAsyncSectionFallback(Ljava/lang/String;I)V
+
+#58: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#59: Reflection unsupported Landroid/os/Trace;->traceCounter use(s):
+       Landroidx/tracing/Trace;->setCounterFallback(Ljava/lang/String;I)V
+
+#60: Reflection unsupported,test-api Landroid/os/UserHandle;->getUserId use(s):
+       Landroidx/core/os/UserHandleCompat;->getGetUserIdMethod()Ljava/lang/reflect/Method;
+
+#61: Reflection unsupported,test-api Landroid/os/UserHandle;->isApp use(s):
+       Landroidx/core/os/ProcessCompat$Api17Impl;->isApplicationUid(I)Z
+
+#62: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#63: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#64: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#65: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#66: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#67: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#68: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#69: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#70: Reflection max-target-p Landroid/view/View;->mViewFlags use(s):
+       Landroidx/transition/ViewUtilsBase;->setTransitionVisibility(Landroid/view/View;I)V
+
+#71: Reflection max-target-p Landroid/view/View;->setFrame use(s):
+       Landroidx/transition/ViewUtilsBase;->fetchSetFrame()V
+
+#72: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#73: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#74: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doAfterTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#75: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doBeforeTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#76: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->ensureImeVisible use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#77: Reflection unsupported Landroid/widget/CheckedTextView;->mCheckMarkDrawable use(s):
+       Landroidx/core/widget/CheckedTextViewCompat$Api14Impl;->getCheckMarkDrawable(Landroid/widget/CheckedTextView;)Landroid/graphics/drawable/Drawable;
+
+#78: Reflection max-target-p Landroid/widget/ImageView;->mDrawMatrix use(s):
+       Landroidx/transition/ImageViewUtils;->fetchDrawMatrixField()V
+
+#79: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#80: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#81: Reflection max-target-p Landroid/widget/TextView;->mCursorDrawableRes use(s):
+       Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->setCursorDrawableColor(Landroid/widget/EditText;I)V
+
+#82: Reflection unsupported Landroid/widget/TextView;->mEditor use(s):
+       Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->setCursorDrawableColor(Landroid/widget/EditText;I)V
+
+#83: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#84: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#85: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#86: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#87: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+#88: Reflection unsupported,core-platform-api Ljava/lang/Thread;->getUncaughtExceptionPreHandler use(s):
+       Lkotlinx/coroutines/android/AndroidExceptionPreHandler;->invoke()Ljava/lang/reflect/Method;
+
+#89: Reflection unsupported Ljava/nio/Buffer;->address use(s):
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->bufferAddressField()Ljava/lang/reflect/Field;
+       Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->bufferAddressField()Ljava/lang/reflect/Field;
+       Lcom/google/protobuf/UnsafeUtil;->bufferAddressField()Ljava/lang/reflect/Field;
+
+89 hidden API(s) used: 44 linked against, 45 through reflection
+	58 in unsupported
+	5 in blocked
+	9 in max-target-o
+	11 in max-target-p
+	3 in max-target-q
+	3 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
