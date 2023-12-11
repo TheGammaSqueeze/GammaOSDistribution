@@ -1,0 +1,1009 @@
+package android.hardware.vibrator.V1_3;
+
+public interface IVibrator extends android.hardware.vibrator.V1_2.IVibrator {
+    /**
+     * Fully-qualified interface name for this interface.
+     */
+    public static final String kInterfaceName = "android.hardware.vibrator@1.3::IVibrator";
+
+    /**
+     * Does a checked conversion from a binder to this class.
+     */
+    /* package private */ static IVibrator asInterface(android.os.IHwBinder binder) {
+        if (binder == null) {
+            return null;
+        }
+
+        android.os.IHwInterface iface =
+                binder.queryLocalInterface(kInterfaceName);
+
+        if ((iface != null) && (iface instanceof IVibrator)) {
+            return (IVibrator)iface;
+        }
+
+        IVibrator proxy = new IVibrator.Proxy(binder);
+
+        try {
+            for (String descriptor : proxy.interfaceChain()) {
+                if (descriptor.equals(kInterfaceName)) {
+                    return proxy;
+                }
+            }
+        } catch (android.os.RemoteException e) {
+        }
+
+        return null;
+    }
+
+    /**
+     * Does a checked conversion from any interface to this class.
+     */
+    public static IVibrator castFrom(android.os.IHwInterface iface) {
+        return (iface == null) ? null : IVibrator.asInterface(iface.asBinder());
+    }
+
+    @Override
+    public android.os.IHwBinder asBinder();
+
+    /**
+     * This will invoke the equivalent of the C++ getService(std::string) if retry is
+     * true or tryGetService(std::string) if retry is false. If the service is
+     * available on the device and retry is true, this will wait for the service to
+     * start.
+     *
+     * @throws NoSuchElementException if this service is not available
+     */
+    public static IVibrator getService(String serviceName, boolean retry) throws android.os.RemoteException {
+        return IVibrator.asInterface(android.os.HwBinder.getService("android.hardware.vibrator@1.3::IVibrator", serviceName, retry));
+    }
+
+    /**
+     * Calls getService("default",retry).
+     */
+    public static IVibrator getService(boolean retry) throws android.os.RemoteException {
+        return getService("default", retry);
+    }
+
+    /**
+     * @throws NoSuchElementException if this service is not available
+     * @deprecated this will not wait for the interface to come up if it hasn't yet
+     * started. See getService(String,boolean) instead.
+     */
+    @Deprecated
+    public static IVibrator getService(String serviceName) throws android.os.RemoteException {
+        return IVibrator.asInterface(android.os.HwBinder.getService("android.hardware.vibrator@1.3::IVibrator", serviceName));
+    }
+
+    /**
+     * @throws NoSuchElementException if this service is not available
+     * @deprecated this will not wait for the interface to come up if it hasn't yet
+     * started. See getService(boolean) instead.
+     */
+    @Deprecated
+    public static IVibrator getService() throws android.os.RemoteException {
+        return getService("default");
+    }
+
+    /**
+     * Returns whether the vibrator supports control through an alternate interface.
+     */
+    boolean supportsExternalControl()
+        throws android.os.RemoteException;
+    /**
+     * Enables/disables control override of vibrator to audio.
+     *
+     * When this API is set, the vibrator control should be ceded to audio system
+     * for haptic audio. While this is enabled, issuing of other commands to control
+     * the vibrator is unsupported and the resulting behavior is undefined. Amplitude
+     * control may or may not be supported and is reflected in the return value of
+     * supportsAmplitudeControl() while this is enabled. When this is disabled, the
+     * vibrator should resume to an off state.
+     *
+     * @param enabled Whether external control should be enabled or disabled.
+     * @return status Whether the command was successful or not. Must return
+     *                Status::UNSUPPORTED_OPERATION if external control is
+     *                not supported by the device.
+     */
+    int setExternalControl(boolean enabled)
+        throws android.os.RemoteException;
+
+    @java.lang.FunctionalInterface
+    public interface perform_1_3Callback {
+        public void onValues(int status, int lengthMs);
+    }
+
+    /**
+     * Fire off a predefined haptic event.
+     *
+     * @param event The type of haptic event to trigger.
+     * @return status Whether the effect was successfully performed or not. Must
+     *     return Status::UNSUPPORTED_OPERATION if the effect is not supported.
+     * @return lengthMs The length of time the event is expected to take in
+     *     milliseconds. This doesn't need to be perfectly accurate, but should be a reasonable
+     *     approximation. Should be a positive, non-zero value if the returned status is Status::OK,
+     *     and set to 0 otherwise.
+     */
+    void perform_1_3(int effect, byte strength, perform_1_3Callback _hidl_cb)
+        throws android.os.RemoteException;
+    /*
+     * Provides run-time type information for this object.
+     * For example, for the following interface definition:
+     *     package android.hardware.foo@1.0;
+     *     interface IParent {};
+     *     interface IChild extends IParent {};
+     * Calling interfaceChain on an IChild object must yield the following:
+     *     ["android.hardware.foo@1.0::IChild",
+     *      "android.hardware.foo@1.0::IParent"
+     *      "android.hidl.base@1.0::IBase"]
+     *
+     * @return descriptors a vector of descriptors of the run-time type of the
+     *         object.
+     */
+    java.util.ArrayList<String> interfaceChain()
+        throws android.os.RemoteException;
+    /*
+     * Emit diagnostic information to the given file.
+     *
+     * Optionally overriden.
+     *
+     * @param fd      File descriptor to dump data to.
+     *                Must only be used for the duration of this call.
+     * @param options Arguments for debugging.
+     *                Must support empty for default debug information.
+     */
+    void debug(android.os.NativeHandle fd, java.util.ArrayList<String> options)
+        throws android.os.RemoteException;
+    /*
+     * Provides run-time type information for this object.
+     * For example, for the following interface definition:
+     *     package android.hardware.foo@1.0;
+     *     interface IParent {};
+     *     interface IChild extends IParent {};
+     * Calling interfaceDescriptor on an IChild object must yield
+     *     "android.hardware.foo@1.0::IChild"
+     *
+     * @return descriptor a descriptor of the run-time type of the
+     *         object (the first element of the vector returned by
+     *         interfaceChain())
+     */
+    String interfaceDescriptor()
+        throws android.os.RemoteException;
+    /*
+     * Returns hashes of the source HAL files that define the interfaces of the
+     * runtime type information on the object.
+     * For example, for the following interface definition:
+     *     package android.hardware.foo@1.0;
+     *     interface IParent {};
+     *     interface IChild extends IParent {};
+     * Calling interfaceChain on an IChild object must yield the following:
+     *     [(hash of IChild.hal),
+     *      (hash of IParent.hal)
+     *      (hash of IBase.hal)].
+     *
+     * SHA-256 is used as the hashing algorithm. Each hash has 32 bytes
+     * according to SHA-256 standard.
+     *
+     * @return hashchain a vector of SHA-1 digests
+     */
+    java.util.ArrayList<byte[/* 32 */]> getHashChain()
+        throws android.os.RemoteException;
+    /*
+     * This method trigger the interface to enable/disable instrumentation based
+     * on system property hal.instrumentation.enable.
+     */
+    void setHALInstrumentation()
+        throws android.os.RemoteException;
+    /*
+     * Registers a death recipient, to be called when the process hosting this
+     * interface dies.
+     *
+     * @param recipient a hidl_death_recipient callback object
+     * @param cookie a cookie that must be returned with the callback
+     * @return success whether the death recipient was registered successfully.
+     */
+    boolean linkToDeath(android.os.IHwBinder.DeathRecipient recipient, long cookie)
+        throws android.os.RemoteException;
+    /*
+     * Provides way to determine if interface is running without requesting
+     * any functionality.
+     */
+    void ping()
+        throws android.os.RemoteException;
+    /*
+     * Get debug information on references on this interface.
+     * @return info debugging information. See comments of DebugInfo.
+     */
+    android.hidl.base.V1_0.DebugInfo getDebugInfo()
+        throws android.os.RemoteException;
+    /*
+     * This method notifies the interface that one or more system properties
+     * have changed. The default implementation calls
+     * (C++)  report_sysprop_change() in libcutils or
+     * (Java) android.os.SystemProperties.reportSyspropChanged,
+     * which in turn calls a set of registered callbacks (eg to update trace
+     * tags).
+     */
+    void notifySyspropsChanged()
+        throws android.os.RemoteException;
+    /*
+     * Unregisters the registered death recipient. If this service was registered
+     * multiple times with the same exact death recipient, this unlinks the most
+     * recently registered one.
+     *
+     * @param recipient a previously registered hidl_death_recipient callback
+     * @return success whether the death recipient was unregistered successfully.
+     */
+    boolean unlinkToDeath(android.os.IHwBinder.DeathRecipient recipient)
+        throws android.os.RemoteException;
+
+    public static final class Proxy implements IVibrator {
+        private android.os.IHwBinder mRemote;
+
+        public Proxy(android.os.IHwBinder remote) {
+            mRemote = java.util.Objects.requireNonNull(remote);
+        }
+
+        @Override
+        public android.os.IHwBinder asBinder() {
+            return mRemote;
+        }
+
+        @Override
+        public String toString() {
+            try {
+                return this.interfaceDescriptor() + "@Proxy";
+            } catch (android.os.RemoteException ex) {
+                /* ignored; handled below. */
+            }
+            return "[class or subclass of " + IVibrator.kInterfaceName + "]@Proxy";
+        }
+
+        @Override
+        public final boolean equals(java.lang.Object other) {
+            return android.os.HidlSupport.interfacesEqual(this, other);
+        }
+
+        @Override
+        public final int hashCode() {
+            return this.asBinder().hashCode();
+        }
+
+        // Methods from ::android::hardware::vibrator::V1_0::IVibrator follow.
+        @Override
+        public int on(int timeoutMs)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+            _hidl_request.writeInt32(timeoutMs);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(1 /* on */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_vibratorOnRet = _hidl_reply.readInt32();
+                return _hidl_out_vibratorOnRet;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public int off()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(2 /* off */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_vibratorOffRet = _hidl_reply.readInt32();
+                return _hidl_out_vibratorOffRet;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public boolean supportsAmplitudeControl()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(3 /* supportsAmplitudeControl */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                boolean _hidl_out_supports = _hidl_reply.readBool();
+                return _hidl_out_supports;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public int setAmplitude(byte amplitude)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+            _hidl_request.writeInt8(amplitude);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(4 /* setAmplitude */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                return _hidl_out_status;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public void perform(int effect, byte strength, performCallback _hidl_cb)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+            _hidl_request.writeInt32(effect);
+            _hidl_request.writeInt8(strength);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(5 /* perform */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                int _hidl_out_lengthMs = _hidl_reply.readInt32();
+                _hidl_cb.onValues(_hidl_out_status, _hidl_out_lengthMs);
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        // Methods from ::android::hardware::vibrator::V1_1::IVibrator follow.
+        @Override
+        public void perform_1_1(int effect, byte strength, perform_1_1Callback _hidl_cb)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_1.IVibrator.kInterfaceName);
+            _hidl_request.writeInt32(effect);
+            _hidl_request.writeInt8(strength);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(6 /* perform_1_1 */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                int _hidl_out_lengthMs = _hidl_reply.readInt32();
+                _hidl_cb.onValues(_hidl_out_status, _hidl_out_lengthMs);
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        // Methods from ::android::hardware::vibrator::V1_2::IVibrator follow.
+        @Override
+        public void perform_1_2(int effect, byte strength, perform_1_2Callback _hidl_cb)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_2.IVibrator.kInterfaceName);
+            _hidl_request.writeInt32(effect);
+            _hidl_request.writeInt8(strength);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(7 /* perform_1_2 */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                int _hidl_out_lengthMs = _hidl_reply.readInt32();
+                _hidl_cb.onValues(_hidl_out_status, _hidl_out_lengthMs);
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        // Methods from ::android::hardware::vibrator::V1_3::IVibrator follow.
+        @Override
+        public boolean supportsExternalControl()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(8 /* supportsExternalControl */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                boolean _hidl_out_supports = _hidl_reply.readBool();
+                return _hidl_out_supports;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public int setExternalControl(boolean enabled)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+            _hidl_request.writeBool(enabled);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(9 /* setExternalControl */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                return _hidl_out_status;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public void perform_1_3(int effect, byte strength, perform_1_3Callback _hidl_cb)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+            _hidl_request.writeInt32(effect);
+            _hidl_request.writeInt8(strength);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(10 /* perform_1_3 */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                int _hidl_out_status = _hidl_reply.readInt32();
+                int _hidl_out_lengthMs = _hidl_reply.readInt32();
+                _hidl_cb.onValues(_hidl_out_status, _hidl_out_lengthMs);
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        // Methods from ::android::hidl::base::V1_0::IBase follow.
+        @Override
+        public java.util.ArrayList<String> interfaceChain()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256067662 /* interfaceChain */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                java.util.ArrayList<String> _hidl_out_descriptors = _hidl_reply.readStringVector();
+                return _hidl_out_descriptors;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public void debug(android.os.NativeHandle fd, java.util.ArrayList<String> options)
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+            _hidl_request.writeNativeHandle(fd);
+            _hidl_request.writeStringVector(options);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256131655 /* debug */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public String interfaceDescriptor()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256136003 /* interfaceDescriptor */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                String _hidl_out_descriptor = _hidl_reply.readString();
+                return _hidl_out_descriptor;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public java.util.ArrayList<byte[/* 32 */]> getHashChain()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256398152 /* getHashChain */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                java.util.ArrayList<byte[/* 32 */]> _hidl_out_hashchain =  new java.util.ArrayList<byte[/* 32 */]>();
+                {
+                    android.os.HwBlob _hidl_blob = _hidl_reply.readBuffer(16 /* size */);
+                    {
+                        int _hidl_vec_size = _hidl_blob.getInt32(0 /* offset */ + 8 /* offsetof(hidl_vec<T>, mSize) */);
+                        android.os.HwBlob childBlob = _hidl_reply.readEmbeddedBuffer(
+                                _hidl_vec_size * 32,_hidl_blob.handle(),
+                                0 /* offset */ + 0 /* offsetof(hidl_vec<T>, mBuffer) */,true /* nullable */);
+
+                        ((java.util.ArrayList<byte[/* 32 */]>) _hidl_out_hashchain).clear();
+                        for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; ++_hidl_index_0) {
+                            byte[/* 32 */] _hidl_vec_element = new byte[32];
+                            {
+                                long _hidl_array_offset_1 = _hidl_index_0 * 32;
+                                childBlob.copyToInt8Array(_hidl_array_offset_1, (byte[/* 32 */]) _hidl_vec_element, 32 /* size */);
+                                _hidl_array_offset_1 += 32 * 1;
+                            }
+                            ((java.util.ArrayList<byte[/* 32 */]>) _hidl_out_hashchain).add(_hidl_vec_element);
+                        }
+                    }
+                }
+                return _hidl_out_hashchain;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public void setHALInstrumentation()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256462420 /* setHALInstrumentation */, _hidl_request, _hidl_reply, 1 /* oneway */);
+                _hidl_request.releaseTemporaryStorage();
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public boolean linkToDeath(android.os.IHwBinder.DeathRecipient recipient, long cookie)
+                throws android.os.RemoteException {
+            return mRemote.linkToDeath(recipient, cookie);
+        }
+        @Override
+        public void ping()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(256921159 /* ping */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public android.hidl.base.V1_0.DebugInfo getDebugInfo()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(257049926 /* getDebugInfo */, _hidl_request, _hidl_reply, 0 /* flags */);
+                _hidl_reply.verifySuccess();
+                _hidl_request.releaseTemporaryStorage();
+
+                android.hidl.base.V1_0.DebugInfo _hidl_out_info = new android.hidl.base.V1_0.DebugInfo();
+                ((android.hidl.base.V1_0.DebugInfo) _hidl_out_info).readFromParcel(_hidl_reply);
+                return _hidl_out_info;
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public void notifySyspropsChanged()
+                throws android.os.RemoteException {
+            android.os.HwParcel _hidl_request = new android.os.HwParcel();
+            _hidl_request.writeInterfaceToken(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+            android.os.HwParcel _hidl_reply = new android.os.HwParcel();
+            try {
+                mRemote.transact(257120595 /* notifySyspropsChanged */, _hidl_request, _hidl_reply, 1 /* oneway */);
+                _hidl_request.releaseTemporaryStorage();
+            } finally {
+                _hidl_reply.release();
+            }
+        }
+
+        @Override
+        public boolean unlinkToDeath(android.os.IHwBinder.DeathRecipient recipient)
+                throws android.os.RemoteException {
+            return mRemote.unlinkToDeath(recipient);
+        }
+    }
+
+    public static abstract class Stub extends android.os.HwBinder implements IVibrator {
+        @Override
+        public android.os.IHwBinder asBinder() {
+            return this;
+        }
+
+        @Override
+        public final java.util.ArrayList<String> interfaceChain() {
+            return new java.util.ArrayList<String>(java.util.Arrays.asList(
+                    android.hardware.vibrator.V1_3.IVibrator.kInterfaceName,
+                    android.hardware.vibrator.V1_2.IVibrator.kInterfaceName,
+                    android.hardware.vibrator.V1_1.IVibrator.kInterfaceName,
+                    android.hardware.vibrator.V1_0.IVibrator.kInterfaceName,
+                    android.hidl.base.V1_0.IBase.kInterfaceName));
+
+        }
+
+        @Override
+        public void debug(android.os.NativeHandle fd, java.util.ArrayList<String> options) {
+            return;
+
+        }
+
+        @Override
+        public final String interfaceDescriptor() {
+            return android.hardware.vibrator.V1_3.IVibrator.kInterfaceName;
+
+        }
+
+        @Override
+        public final java.util.ArrayList<byte[/* 32 */]> getHashChain() {
+            return new java.util.ArrayList<byte[/* 32 */]>(java.util.Arrays.asList(
+                    new byte[/* 32 */]{15,127,-9,55,-109,84,-115,81,84,1,64,89,-73,-32,-2,-98,-10,53,93,50,33,-118,-50,21,121,84,-48,32,85,-11,36,-117} /* 0f7ff73793548d5154014059b7e0fe9ef6355d32218ace157954d02055f5248b */,
+                    new byte[/* 32 */]{27,-4,-97,-39,83,110,-48,-97,4,-68,-81,34,42,51,43,-55,25,-15,86,93,77,8,-67,-36,-51,-21,-31,-65,-54,-113,1,-75} /* 1bfc9fd9536ed09f04bcaf222a332bc919f1565d4d08bddccdebe1bfca8f01b5 */,
+                    new byte[/* 32 */]{-7,90,30,-123,97,47,45,13,97,110,-84,-46,-21,99,-59,45,16,-33,-88,-119,-15,101,-33,87,105,124,48,-31,-12,123,71,-123} /* f95a1e85612f2d0d616eacd2eb63c52d10dfa889f165df57697c30e1f47b4785 */,
+                    new byte[/* 32 */]{6,-22,100,-52,53,101,119,127,59,37,-98,64,15,-6,113,0,-48,127,56,39,-83,-109,87,-80,-59,-45,-58,81,56,78,85,83} /* 06ea64cc3565777f3b259e400ffa7100d07f3827ad9357b0c5d3c651384e5553 */,
+                    new byte[/* 32 */]{-20,127,-41,-98,-48,45,-6,-123,-68,73,-108,38,-83,-82,62,-66,35,-17,5,36,-13,-51,105,87,19,-109,36,-72,59,24,-54,76} /* ec7fd79ed02dfa85bc499426adae3ebe23ef0524f3cd6957139324b83b18ca4c */));
+
+        }
+
+        @Override
+        public final void setHALInstrumentation() {
+
+        }
+
+        @Override
+        public final boolean linkToDeath(android.os.IHwBinder.DeathRecipient recipient, long cookie) {
+            return true;
+
+        }
+
+        @Override
+        public final void ping() {
+            return;
+
+        }
+
+        @Override
+        public final android.hidl.base.V1_0.DebugInfo getDebugInfo() {
+            android.hidl.base.V1_0.DebugInfo info = new android.hidl.base.V1_0.DebugInfo();
+            info.pid = android.os.HidlSupport.getPidIfSharable();
+            info.ptr = 0;
+            info.arch = android.hidl.base.V1_0.DebugInfo.Architecture.UNKNOWN;
+            return info;
+
+        }
+
+        @Override
+        public final void notifySyspropsChanged() {
+            android.os.HwBinder.enableInstrumentation();
+
+        }
+
+        @Override
+        public final boolean unlinkToDeath(android.os.IHwBinder.DeathRecipient recipient) {
+            return true;
+
+        }
+
+        @Override
+        public android.os.IHwInterface queryLocalInterface(String descriptor) {
+            if (kInterfaceName.equals(descriptor)) {
+                return this;
+            }
+            return null;
+        }
+
+        public void registerAsService(String serviceName) throws android.os.RemoteException {
+            registerService(serviceName);
+        }
+
+        @Override
+        public String toString() {
+            return this.interfaceDescriptor() + "@Stub";
+        }
+
+        @Override
+        public void onTransact(int _hidl_code, android.os.HwParcel _hidl_request, final android.os.HwParcel _hidl_reply, int _hidl_flags)
+                throws android.os.RemoteException {
+            switch (_hidl_code) {
+                case 1 /* on */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+                    int timeoutMs = _hidl_request.readInt32();
+                    int _hidl_out_vibratorOnRet = on(timeoutMs);
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeInt32(_hidl_out_vibratorOnRet);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 2 /* off */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+                    int _hidl_out_vibratorOffRet = off();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeInt32(_hidl_out_vibratorOffRet);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 3 /* supportsAmplitudeControl */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+                    boolean _hidl_out_supports = supportsAmplitudeControl();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeBool(_hidl_out_supports);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 4 /* setAmplitude */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+                    byte amplitude = _hidl_request.readInt8();
+                    int _hidl_out_status = setAmplitude(amplitude);
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeInt32(_hidl_out_status);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 5 /* perform */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_0.IVibrator.kInterfaceName);
+
+                    int effect = _hidl_request.readInt32();
+                    byte strength = _hidl_request.readInt8();
+                    perform(effect, strength, new performCallback() {
+                        @Override
+                        public void onValues(int status, int lengthMs) {
+                            _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                            _hidl_reply.writeInt32(status);
+                            _hidl_reply.writeInt32(lengthMs);
+                            _hidl_reply.send();
+                            }});
+                    break;
+                }
+
+                case 6 /* perform_1_1 */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_1.IVibrator.kInterfaceName);
+
+                    int effect = _hidl_request.readInt32();
+                    byte strength = _hidl_request.readInt8();
+                    perform_1_1(effect, strength, new perform_1_1Callback() {
+                        @Override
+                        public void onValues(int status, int lengthMs) {
+                            _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                            _hidl_reply.writeInt32(status);
+                            _hidl_reply.writeInt32(lengthMs);
+                            _hidl_reply.send();
+                            }});
+                    break;
+                }
+
+                case 7 /* perform_1_2 */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_2.IVibrator.kInterfaceName);
+
+                    int effect = _hidl_request.readInt32();
+                    byte strength = _hidl_request.readInt8();
+                    perform_1_2(effect, strength, new perform_1_2Callback() {
+                        @Override
+                        public void onValues(int status, int lengthMs) {
+                            _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                            _hidl_reply.writeInt32(status);
+                            _hidl_reply.writeInt32(lengthMs);
+                            _hidl_reply.send();
+                            }});
+                    break;
+                }
+
+                case 8 /* supportsExternalControl */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+
+                    boolean _hidl_out_supports = supportsExternalControl();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeBool(_hidl_out_supports);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 9 /* setExternalControl */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+
+                    boolean enabled = _hidl_request.readBool();
+                    int _hidl_out_status = setExternalControl(enabled);
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeInt32(_hidl_out_status);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 10 /* perform_1_3 */:
+                {
+                    _hidl_request.enforceInterface(android.hardware.vibrator.V1_3.IVibrator.kInterfaceName);
+
+                    int effect = _hidl_request.readInt32();
+                    byte strength = _hidl_request.readInt8();
+                    perform_1_3(effect, strength, new perform_1_3Callback() {
+                        @Override
+                        public void onValues(int status, int lengthMs) {
+                            _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                            _hidl_reply.writeInt32(status);
+                            _hidl_reply.writeInt32(lengthMs);
+                            _hidl_reply.send();
+                            }});
+                    break;
+                }
+
+                case 256067662 /* interfaceChain */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    java.util.ArrayList<String> _hidl_out_descriptors = interfaceChain();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeStringVector(_hidl_out_descriptors);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 256131655 /* debug */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    android.os.NativeHandle fd = _hidl_request.readNativeHandle();
+                    java.util.ArrayList<String> options = _hidl_request.readStringVector();
+                    debug(fd, options);
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 256136003 /* interfaceDescriptor */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    String _hidl_out_descriptor = interfaceDescriptor();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.writeString(_hidl_out_descriptor);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 256398152 /* getHashChain */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    java.util.ArrayList<byte[/* 32 */]> _hidl_out_hashchain = getHashChain();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    {
+                        android.os.HwBlob _hidl_blob = new android.os.HwBlob(16 /* size */);
+                        {
+                            int _hidl_vec_size = _hidl_out_hashchain.size();
+                            _hidl_blob.putInt32(0 /* offset */ + 8 /* offsetof(hidl_vec<T>, mSize) */, _hidl_vec_size);
+                            _hidl_blob.putBool(0 /* offset */ + 12 /* offsetof(hidl_vec<T>, mOwnsBuffer) */, false);
+                            android.os.HwBlob childBlob = new android.os.HwBlob((int)(_hidl_vec_size * 32));
+                            for (int _hidl_index_0 = 0; _hidl_index_0 < _hidl_vec_size; ++_hidl_index_0) {
+                                {
+                                    long _hidl_array_offset_1 = _hidl_index_0 * 32;
+                                    byte[] _hidl_array_item_1 = (byte[/* 32 */]) _hidl_out_hashchain.get(_hidl_index_0);
+
+                                    if (_hidl_array_item_1 == null || _hidl_array_item_1.length != 32) {
+                                        throw new IllegalArgumentException("Array element is not of the expected length");
+                                    }
+
+                                    childBlob.putInt8Array(_hidl_array_offset_1, _hidl_array_item_1);
+                                    _hidl_array_offset_1 += 32 * 1;
+                                }
+                            }
+                            _hidl_blob.putBlob(0 /* offset */ + 0 /* offsetof(hidl_vec<T>, mBuffer) */, childBlob);
+                        }
+                        _hidl_reply.writeBuffer(_hidl_blob);
+                    }
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 256462420 /* setHALInstrumentation */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    setHALInstrumentation();
+                    break;
+                }
+
+                case 256660548 /* linkToDeath */:
+                {
+                break;
+                }
+
+                case 256921159 /* ping */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    ping();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 257049926 /* getDebugInfo */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    android.hidl.base.V1_0.DebugInfo _hidl_out_info = getDebugInfo();
+                    _hidl_reply.writeStatus(android.os.HwParcel.STATUS_SUCCESS);
+                    ((android.hidl.base.V1_0.DebugInfo) _hidl_out_info).writeToParcel(_hidl_reply);
+                    _hidl_reply.send();
+                    break;
+                }
+
+                case 257120595 /* notifySyspropsChanged */:
+                {
+                    _hidl_request.enforceInterface(android.hidl.base.V1_0.IBase.kInterfaceName);
+
+                    notifySyspropsChanged();
+                    break;
+                }
+
+                case 257250372 /* unlinkToDeath */:
+                {
+                break;
+                }
+
+            }
+        }
+    }
+}
