@@ -1,0 +1,5393 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA10_i",
+   "name" : "int [10]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA10_i",
+   "size" : 40,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA12_i",
+   "name" : "int [12]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA12_i",
+   "size" : 48,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA14_i",
+   "name" : "int [14]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA14_i",
+   "size" : 56,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA16_c",
+   "name" : "char [16]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA16_c",
+   "size" : 16,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA16_m",
+   "name" : "unsigned long [16]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA16_m",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA2_c",
+   "name" : "char [2]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA2_c",
+   "size" : 2,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_i",
+   "name" : "int [2]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA2_i",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA4_d",
+   "name" : "double [4]",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTIA4_d",
+   "size" : 32,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA4_l",
+   "name" : "long [4]",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIA4_l",
+   "size" : 32,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIDi",
+   "name" : "char32_t",
+   "referenced_type" : "_ZTIDi",
+   "self_type" : "_ZTIDi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIDn",
+   "name" : "nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIDn",
+   "size" : 8
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIDs",
+   "name" : "char16_t",
+   "referenced_type" : "_ZTIDs",
+   "self_type" : "_ZTIDs",
+   "size" : 2
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIa",
+   "name" : "signed char",
+   "referenced_type" : "_ZTIa",
+   "self_type" : "_ZTIa",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 16,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 16
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIf",
+   "name" : "float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIf",
+   "size" : 4
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "alignment" : 16,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIn",
+   "name" : "__int128",
+   "referenced_type" : "_ZTIn",
+   "self_type" : "_ZTIn",
+   "size" : 16
+  },
+  {
+   "alignment" : 16,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIo",
+   "name" : "unsigned __int128",
+   "referenced_type" : "_ZTIo",
+   "self_type" : "_ZTIo",
+   "size" : 16
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIs",
+   "name" : "short",
+   "referenced_type" : "_ZTIs",
+   "self_type" : "_ZTIs",
+   "size" : 2
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIw",
+   "name" : "wchar_t",
+   "referenced_type" : "_ZTIw",
+   "self_type" : "_ZTIw",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : -1,
+     "name" : "std::__1::round_indeterminate"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "std::__1::round_toward_zero"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "std::__1::round_to_nearest"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "std::__1::round_toward_infinity"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "std::__1::round_toward_neg_infinity"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__117float_round_styleE",
+   "name" : "std::float_round_style",
+   "referenced_type" : "_ZTINSt3__117float_round_styleE",
+   "self_type" : "_ZTINSt3__117float_round_styleE",
+   "size" : 4,
+   "source_file" : "external/libcxx/include/limits",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : -1,
+     "name" : "std::__1::denorm_indeterminate"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "std::__1::denorm_absent"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "std::__1::denorm_present"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__118float_denorm_styleE",
+   "name" : "std::float_denorm_style",
+   "referenced_type" : "_ZTINSt3__118float_denorm_styleE",
+   "self_type" : "_ZTINSt3__118float_denorm_styleE",
+   "size" : 4,
+   "source_file" : "external/libcxx/include/limits",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "nexttoward",
+   "linker_set_key" : "_Z10nexttowardee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "nexttoward",
+   "linker_set_key" : "_Z10nexttowardfe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "__libcpp_isinf",
+   "linker_set_key" : "_Z14__libcpp_isinfIdEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "function_name" : "__libcpp_isinf",
+   "linker_set_key" : "_Z14__libcpp_isinfIeEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTIe" ]
+  },
+  {
+   "function_name" : "__libcpp_isinf",
+   "linker_set_key" : "_Z14__libcpp_isinfIfEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTIf" ]
+  },
+  {
+   "function_name" : "__libcpp_isnan",
+   "linker_set_key" : "_Z14__libcpp_isnanIdEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "function_name" : "__libcpp_isnan",
+   "linker_set_key" : "_Z14__libcpp_isnanIeEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTIe" ]
+  },
+  {
+   "function_name" : "__libcpp_isnan",
+   "linker_set_key" : "_Z14__libcpp_isnanIfEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h",
+   "template_args" : [ "_ZTIf" ]
+  },
+  {
+   "function_name" : "abs",
+   "linker_set_key" : "_Z3absd",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "abs",
+   "linker_set_key" : "_Z3abse",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "abs",
+   "linker_set_key" : "_Z3absf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cos",
+   "linker_set_key" : "_Z3cose",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cos",
+   "linker_set_key" : "_Z3cosf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "erf",
+   "linker_set_key" : "_Z3erfe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "erf",
+   "linker_set_key" : "_Z3erff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "exp",
+   "linker_set_key" : "_Z3expe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "exp",
+   "linker_set_key" : "_Z3expf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fma",
+   "linker_set_key" : "_Z3fmaeee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fma",
+   "linker_set_key" : "_Z3fmafff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log",
+   "linker_set_key" : "_Z3loge",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log",
+   "linker_set_key" : "_Z3logf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "pow",
+   "linker_set_key" : "_Z3powee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "pow",
+   "linker_set_key" : "_Z3powff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sin",
+   "linker_set_key" : "_Z3sine",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sin",
+   "linker_set_key" : "_Z3sinf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tan",
+   "linker_set_key" : "_Z3tane",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tan",
+   "linker_set_key" : "_Z3tanf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "acos",
+   "linker_set_key" : "_Z4acose",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "acos",
+   "linker_set_key" : "_Z4acosf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "asin",
+   "linker_set_key" : "_Z4asine",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "asin",
+   "linker_set_key" : "_Z4asinf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atan",
+   "linker_set_key" : "_Z4atane",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atan",
+   "linker_set_key" : "_Z4atanf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cbrt",
+   "linker_set_key" : "_Z4cbrte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cbrt",
+   "linker_set_key" : "_Z4cbrtf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ceil",
+   "linker_set_key" : "_Z4ceile",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ceil",
+   "linker_set_key" : "_Z4ceilf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cosh",
+   "linker_set_key" : "_Z4coshe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "cosh",
+   "linker_set_key" : "_Z4coshf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "erfc",
+   "linker_set_key" : "_Z4erfce",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "erfc",
+   "linker_set_key" : "_Z4erfcf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "exp2",
+   "linker_set_key" : "_Z4exp2e",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "exp2",
+   "linker_set_key" : "_Z4exp2f",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fabs",
+   "linker_set_key" : "_Z4fabse",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fabs",
+   "linker_set_key" : "_Z4fabsf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fdim",
+   "linker_set_key" : "_Z4fdimee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fdim",
+   "linker_set_key" : "_Z4fdimff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmax",
+   "linker_set_key" : "_Z4fmaxee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmax",
+   "linker_set_key" : "_Z4fmaxff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmin",
+   "linker_set_key" : "_Z4fminee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmin",
+   "linker_set_key" : "_Z4fminff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmod",
+   "linker_set_key" : "_Z4fmodee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "fmod",
+   "linker_set_key" : "_Z4fmodff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log2",
+   "linker_set_key" : "_Z4log2e",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log2",
+   "linker_set_key" : "_Z4log2f",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "logb",
+   "linker_set_key" : "_Z4logbe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "logb",
+   "linker_set_key" : "_Z4logbf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "modf",
+   "linker_set_key" : "_Z4modfePe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIPe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "modf",
+   "linker_set_key" : "_Z4modffPf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIPf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "rint",
+   "linker_set_key" : "_Z4rinte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "rint",
+   "linker_set_key" : "_Z4rintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sinh",
+   "linker_set_key" : "_Z4sinhe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sinh",
+   "linker_set_key" : "_Z4sinhf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sqrt",
+   "linker_set_key" : "_Z4sqrte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "sqrt",
+   "linker_set_key" : "_Z4sqrtf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tanh",
+   "linker_set_key" : "_Z4tanhe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tanh",
+   "linker_set_key" : "_Z4tanhf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "acosh",
+   "linker_set_key" : "_Z5acoshe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "acosh",
+   "linker_set_key" : "_Z5acoshf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "asinh",
+   "linker_set_key" : "_Z5asinhe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "asinh",
+   "linker_set_key" : "_Z5asinhf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atan2",
+   "linker_set_key" : "_Z5atan2ee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atan2",
+   "linker_set_key" : "_Z5atan2ff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atanh",
+   "linker_set_key" : "_Z5atanhe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "atanh",
+   "linker_set_key" : "_Z5atanhf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "expm1",
+   "linker_set_key" : "_Z5expm1e",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "expm1",
+   "linker_set_key" : "_Z5expm1f",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "floor",
+   "linker_set_key" : "_Z5floore",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "floor",
+   "linker_set_key" : "_Z5floorf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "frexp",
+   "linker_set_key" : "_Z5frexpePi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "frexp",
+   "linker_set_key" : "_Z5frexpfPi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "hypot",
+   "linker_set_key" : "_Z5hypotee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "hypot",
+   "linker_set_key" : "_Z5hypotff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ilogb",
+   "linker_set_key" : "_Z5ilogbe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ilogb",
+   "linker_set_key" : "_Z5ilogbf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isinf",
+   "linker_set_key" : "_Z5isinfUa9enable_ifIXLb1EEEd",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isinf",
+   "linker_set_key" : "_Z5isinfe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isinf",
+   "linker_set_key" : "_Z5isinff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isnan",
+   "linker_set_key" : "_Z5isnanUa9enable_ifIXLb1EEEd",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isnan",
+   "linker_set_key" : "_Z5isnane",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "isnan",
+   "linker_set_key" : "_Z5isnanf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ldexp",
+   "linker_set_key" : "_Z5ldexpei",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "ldexp",
+   "linker_set_key" : "_Z5ldexpfi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log10",
+   "linker_set_key" : "_Z5log10e",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log10",
+   "linker_set_key" : "_Z5log10f",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log1p",
+   "linker_set_key" : "_Z5log1pe",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "log1p",
+   "linker_set_key" : "_Z5log1pf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lrint",
+   "linker_set_key" : "_Z5lrinte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lrint",
+   "linker_set_key" : "_Z5lrintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "round",
+   "linker_set_key" : "_Z5rounde",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "round",
+   "linker_set_key" : "_Z5roundf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "trunc",
+   "linker_set_key" : "_Z5trunce",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "trunc",
+   "linker_set_key" : "_Z5truncf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lgamma",
+   "linker_set_key" : "_Z6lgammae",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lgamma",
+   "linker_set_key" : "_Z6lgammaf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "llrint",
+   "linker_set_key" : "_Z6llrinte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "llrint",
+   "linker_set_key" : "_Z6llrintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lround",
+   "linker_set_key" : "_Z6lrounde",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "lround",
+   "linker_set_key" : "_Z6lroundf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "remquo",
+   "linker_set_key" : "_Z6remquoeePi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "remquo",
+   "linker_set_key" : "_Z6remquoffPi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "scalbn",
+   "linker_set_key" : "_Z6scalbnei",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "scalbn",
+   "linker_set_key" : "_Z6scalbnfi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tgamma",
+   "linker_set_key" : "_Z6tgammae",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "tgamma",
+   "linker_set_key" : "_Z6tgammaf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "llround",
+   "linker_set_key" : "_Z7llrounde",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "llround",
+   "linker_set_key" : "_Z7llroundf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "scalbln",
+   "linker_set_key" : "_Z7scalblnel",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "scalbln",
+   "linker_set_key" : "_Z7scalblnfl",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "copysign",
+   "linker_set_key" : "_Z8copysignee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "copysign",
+   "linker_set_key" : "_Z8copysignff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "nearbyint",
+   "linker_set_key" : "_Z9nearbyinte",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "nearbyint",
+   "linker_set_key" : "_Z9nearbyintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "nextafter",
+   "linker_set_key" : "_Z9nextafteree",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "nextafter",
+   "linker_set_key" : "_Z9nextafterff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "remainder",
+   "linker_set_key" : "_Z9remainderee",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "remainder",
+   "linker_set_key" : "_Z9remainderff",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "function_name" : "llvm::sys::MemoryFence",
+   "linker_set_key" : "_ZN4llvm3sys11MemoryFenceEv",
+   "return_type" : "_ZTIv",
+   "source_file" : "external/llvm/include/llvm/Support/Atomic.h"
+  },
+  {
+   "function_name" : "llvm::sys::CompareAndSwap",
+   "linker_set_key" : "_ZN4llvm3sys14CompareAndSwapEPVjjj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPVj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/llvm/include/llvm/Support/Atomic.h"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEl",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEn",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIn"
+    }
+   ],
+   "return_type" : "_ZTIn",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEo",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIo"
+    }
+   ],
+   "return_type" : "_ZTIo",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEx",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIx"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "function_name" : "std::__1::__convert_to_integral",
+   "linker_set_key" : "_ZNSt3__121__convert_to_integralEy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::denorm_min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE10denorm_minEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::round_error",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE11round_errorEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::signaling_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE13signaling_NaNEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::max",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE3maxEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE3minEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::lowest",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE6lowestEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::epsilon",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE7epsilonEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::infinity",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE8infinityEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<bool, true>::quiet_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE9quiet_NaNEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::denorm_min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE10denorm_minEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::round_error",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE11round_errorEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::signaling_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE13signaling_NaNEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::max",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE3maxEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE3minEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::lowest",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE6lowestEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::epsilon",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE7epsilonEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::infinity",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE8infinityEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<double, true>::quiet_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE9quiet_NaNEv",
+   "return_type" : "_ZTId",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::denorm_min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE10denorm_minEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::round_error",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE11round_errorEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::signaling_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE13signaling_NaNEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::max",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE3maxEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE3minEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::lowest",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE6lowestEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::epsilon",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE7epsilonEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::infinity",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE8infinityEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<long double, true>::quiet_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE9quiet_NaNEv",
+   "return_type" : "_ZTIe",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::denorm_min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE10denorm_minEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::round_error",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE11round_errorEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::signaling_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE13signaling_NaNEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::max",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE3maxEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::min",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE3minEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::lowest",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE6lowestEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::epsilon",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE7epsilonEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::infinity",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE8infinityEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "std::__1::__libcpp_numeric_limits<float, true>::quiet_NaN",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE9quiet_NaNEv",
+   "return_type" : "_ZTIf",
+   "source_file" : "external/libcxx/include/limits"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZNSt3__112__align_type5valueE",
+   "name" : "std::__1::__align_type::value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__112__static_maxIXT_EJEE5valueE",
+   "name" : "std::__1::__static_max<_I0>::value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__112__static_maxIXT_EJXT0_EXspT1_EEE5valueE",
+   "name" : "std::__1::__static_max<_I0, _I1, _In...>::value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113__invokable_r5valueE",
+   "name" : "std::__1::__invokable_r::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113__promote_imp5valueE",
+   "name" : "std::__1::__promote_imp::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113__promote_impIT_T0_T1_Lb1EE5valueE",
+   "name" : "std::__1::__promote_imp<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, true>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113__promote_impIT_T0_vLb1EE5valueE",
+   "name" : "std::__1::__promote_imp<type-parameter-0-0, type-parameter-0-1, void, true>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113__promote_impIT_vvLb1EE5valueE",
+   "name" : "std::__1::__promote_imp<type-parameter-0-0, void, void, true>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113aligned_union15alignment_valueE",
+   "name" : "std::__1::aligned_union::alignment_value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__113aligned_union5__lenE",
+   "name" : "std::__1::aligned_union::__len",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114__numeric_type5valueE",
+   "name" : "std::__1::__numeric_type::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114__numeric_typeIvE5valueE",
+   "name" : "std::__1::__numeric_type<void>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "access" : "private",
+   "linker_set_key" : "_ZNSt3__114__select_align5__maxE",
+   "name" : "std::__1::__select_align::__max",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "access" : "private",
+   "linker_set_key" : "_ZNSt3__114__select_align5__minE",
+   "name" : "std::__1::__select_align::__min",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114__select_align5valueE",
+   "name" : "std::__1::__select_align::value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits10has_denormE",
+   "name" : "std::__1::numeric_limits::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits10is_boundedE",
+   "name" : "std::__1::numeric_limits::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits10is_integerE",
+   "name" : "std::__1::numeric_limits::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits11round_styleE",
+   "name" : "std::__1::numeric_limits::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits12has_infinityE",
+   "name" : "std::__1::numeric_limits::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits12max_digits10E",
+   "name" : "std::__1::numeric_limits::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits12max_exponentE",
+   "name" : "std::__1::numeric_limits::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits12min_exponentE",
+   "name" : "std::__1::numeric_limits::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits13has_quiet_NaNE",
+   "name" : "std::__1::numeric_limits::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits14is_specializedE",
+   "name" : "std::__1::numeric_limits::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits14max_exponent10E",
+   "name" : "std::__1::numeric_limits::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits14min_exponent10E",
+   "name" : "std::__1::numeric_limits::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits15has_denorm_lossE",
+   "name" : "std::__1::numeric_limits::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits15tinyness_beforeE",
+   "name" : "std::__1::numeric_limits::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits17has_signaling_NaNE",
+   "name" : "std::__1::numeric_limits::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits5radixE",
+   "name" : "std::__1::numeric_limits::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits5trapsE",
+   "name" : "std::__1::numeric_limits::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits6digitsE",
+   "name" : "std::__1::numeric_limits::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits8digits10E",
+   "name" : "std::__1::numeric_limits::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits8is_exactE",
+   "name" : "std::__1::numeric_limits::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits9is_iec559E",
+   "name" : "std::__1::numeric_limits::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits9is_moduloE",
+   "name" : "std::__1::numeric_limits::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limits9is_signedE",
+   "name" : "std::__1::numeric_limits::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E10has_denormE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E10is_boundedE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E10is_integerE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E11round_styleE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E12has_infinityE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E12max_digits10E",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E12max_exponentE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E12min_exponentE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E13has_quiet_NaNE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E14is_specializedE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E14max_exponent10E",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E14min_exponent10E",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E15has_denorm_lossE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E15tinyness_beforeE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E17has_signaling_NaNE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E5radixE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E5trapsE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E6digitsE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E8digits10E",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E8is_exactE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E9is_iec559E",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E9is_moduloE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIKT_E9is_signedE",
+   "name" : "std::__1::numeric_limits<const type-parameter-0-0>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E10has_denormE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E10is_boundedE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E10is_integerE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E11round_styleE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E12has_infinityE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E12max_digits10E",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E12max_exponentE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E12min_exponentE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E13has_quiet_NaNE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E14is_specializedE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E14max_exponent10E",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E14min_exponent10E",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E15has_denorm_lossE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E15tinyness_beforeE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E17has_signaling_NaNE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E5radixE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E5trapsE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E6digitsE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E8digits10E",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E8is_exactE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E9is_iec559E",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E9is_moduloE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVKT_E9is_signedE",
+   "name" : "std::__1::numeric_limits<const volatile type-parameter-0-0>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E10has_denormE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E10is_boundedE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E10is_integerE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E11round_styleE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E12has_infinityE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E12max_digits10E",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E12max_exponentE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E12min_exponentE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E13has_quiet_NaNE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E14is_specializedE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E14max_exponent10E",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E14min_exponent10E",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E15has_denorm_lossE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E15tinyness_beforeE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E17has_signaling_NaNE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E5radixE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E5trapsE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E6digitsE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E8digits10E",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E8is_exactE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E9is_iec559E",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E9is_moduloE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__114numeric_limitsIVT_E9is_signedE",
+   "name" : "std::__1::numeric_limits<volatile type-parameter-0-0>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__117integral_constantIbLb0EE5valueE",
+   "name" : "std::__1::integral_constant<bool, false>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__117integral_constantIbLb1EE5valueE",
+   "name" : "std::__1::integral_constant<bool, true>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__117integral_constantImLm0EE5valueE",
+   "name" : "std::__1::integral_constant<unsigned long, 0>::value",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limits9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIT_Lb1EE9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits<type-parameter-0-0, true>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE5__maxE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::__max",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE5__minE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::__min",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIbLb1EE9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits<bool, true>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIdLb1EE9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits<double, true>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIeLb1EE9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits<long double, true>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE10has_denormE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::has_denorm",
+   "referenced_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE10is_boundedE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_bounded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE10is_integerE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_integer",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE11round_styleE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::round_style",
+   "referenced_type" : "_ZTIKNSt3__117float_round_styleE",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE12has_infinityE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::has_infinity",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE12max_digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::max_digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE12max_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::max_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE12min_exponentE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::min_exponent",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE13has_quiet_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::has_quiet_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE14is_specializedE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_specialized",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE14max_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::max_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE14min_exponent10E",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::min_exponent10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE15has_denorm_lossE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::has_denorm_loss",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE15tinyness_beforeE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::tinyness_before",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE17has_signaling_NaNE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::has_signaling_NaN",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE5radixE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::radix",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE5trapsE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::traps",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE6digitsE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::digits",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE8digits10E",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::digits10",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE8is_exactE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_exact",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE9is_iec559E",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_iec559",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE9is_moduloE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_modulo",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZNSt3__123__libcpp_numeric_limitsIfLb1EE9is_signedE",
+   "name" : "std::__1::__libcpp_numeric_limits<float, true>::is_signed",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__125__nothrow_invokable_r_imp5valueE",
+   "name" : "std::__1::__nothrow_invokable_r_imp::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__125__nothrow_invokable_r_impILb1ELb0ET_T0_JDpT1_EE5valueE",
+   "name" : "std::__1::__nothrow_invokable_r_imp<true, false, type-parameter-0-0, type-parameter-0-1, type-parameter-0-2...>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__125__nothrow_invokable_r_impILb1ELb1ET_T0_JDpT1_EE5valueE",
+   "name" : "std::__1::__nothrow_invokable_r_imp<true, true, type-parameter-0-0, type-parameter-0-1, type-parameter-0-2...>::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__126__is_destructor_wellformed5valueE",
+   "name" : "std::__1::__is_destructor_wellformed::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__133__has_operator_addressof_free_imp5valueE",
+   "name" : "std::__1::__has_operator_addressof_free_imp::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__135__has_operator_addressof_member_imp5valueE",
+   "name" : "std::__1::__has_operator_addressof_member_imp::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__18__detail16__swappable_with5valueE",
+   "name" : "std::__1::__detail::__swappable_with::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "_ZNSt3__18__detail24__nothrow_swappable_with5valueE",
+   "name" : "std::__1::__detail::__nothrow_swappable_with::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "linker_set_key" : "signgam",
+   "name" : "signgam",
+   "referenced_type" : "_ZTIi",
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/math.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPVj",
+   "name" : "volatile unsigned int *",
+   "referenced_type" : "_ZTIVj",
+   "self_type" : "_ZTIPVj",
+   "size" : 8,
+   "source_file" : "external/llvm/include/llvm/Support/Atomic.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPe",
+   "name" : "long double *",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIPe",
+   "size" : 8,
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPf",
+   "name" : "float *",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIPf",
+   "size" : 8,
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 8,
+   "source_file" : "external/libcxx/include/math.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__117float_round_styleE",
+   "name" : "const std::float_round_style",
+   "referenced_type" : "_ZTINSt3__117float_round_styleE",
+   "self_type" : "_ZTIKNSt3__117float_round_styleE",
+   "size" : 4,
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__118float_denorm_styleE",
+   "name" : "const std::float_denorm_style",
+   "referenced_type" : "_ZTINSt3__118float_denorm_styleE",
+   "self_type" : "_ZTIKNSt3__118float_denorm_styleE",
+   "size" : 4,
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKb",
+   "name" : "const bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIKb",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/libcxx/include/limits"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 4,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVj",
+   "name" : "volatile unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIVj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/Atomic.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "__clang_max_align_nonce1",
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "field_name" : "__clang_max_align_nonce2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTI11max_align_t",
+   "name" : "max_align_t",
+   "referenced_type" : "_ZTI11max_align_t",
+   "self_type" : "_ZTI11max_align_t",
+   "size" : 32,
+   "source_file" : "prebuilts/clang-tools/linux-x86/clang-headers/__stddef_max_align_t.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "flags",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "stack_base",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "stack_size",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "guard_size",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "sched_policy",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "sched_priority",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "__reserved",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIA16_c"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_attr_t",
+   "name" : "pthread_attr_t",
+   "referenced_type" : "_ZTI14pthread_attr_t",
+   "self_type" : "_ZTI14pthread_attr_t",
+   "size" : 56,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA12_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_cond_t",
+   "name" : "pthread_cond_t",
+   "referenced_type" : "_ZTI14pthread_cond_t",
+   "self_type" : "_ZTI14pthread_cond_t",
+   "size" : 48,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "fds_bits",
+     "referenced_type" : "_ZTIA16_m"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fd_set",
+   "name" : "__kernel_fd_set",
+   "referenced_type" : "_ZTI15__kernel_fd_set",
+   "self_type" : "_ZTI15__kernel_fd_set",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "val",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fsid_t",
+   "name" : "__kernel_fsid_t",
+   "referenced_type" : "_ZTI15__kernel_fsid_t",
+   "self_type" : "_ZTI15__kernel_fsid_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA10_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15pthread_mutex_t",
+   "name" : "pthread_mutex_t",
+   "referenced_type" : "_ZTI15pthread_mutex_t",
+   "self_type" : "_ZTI15pthread_mutex_t",
+   "size" : 40,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA14_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI16pthread_rwlock_t",
+   "name" : "pthread_rwlock_t",
+   "referenced_type" : "_ZTI16pthread_rwlock_t",
+   "self_type" : "_ZTI16pthread_rwlock_t",
+   "size" : 56,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA4_l"
+    }
+   ],
+   "linker_set_key" : "_ZTI17pthread_barrier_t",
+   "name" : "pthread_barrier_t",
+   "referenced_type" : "_ZTI17pthread_barrier_t",
+   "self_type" : "_ZTI17pthread_barrier_t",
+   "size" : 32,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "linker_set_key" : "_ZTI18pthread_spinlock_t",
+   "name" : "pthread_spinlock_t",
+   "referenced_type" : "_ZTI18pthread_spinlock_t",
+   "self_type" : "_ZTI18pthread_spinlock_t",
+   "size" : 8,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "quot",
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "field_name" : "rem",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "linker_set_key" : "_ZTI9imaxdiv_t",
+   "name" : "imaxdiv_t",
+   "referenced_type" : "_ZTI9imaxdiv_t",
+   "self_type" : "_ZTI9imaxdiv_t",
+   "size" : 16,
+   "source_file" : "out/soong/.intermediates/bionic/libc/libc/android_vendor.32_arm64_armv8-a_shared/gen/include/inttypes.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__111__type_listIaNS0_IsNS0_IiNS0_IlNS0_IxNS0_InNS_5__natEEEEEEEEEEEEE",
+   "name" : "std::__type_list<signed char, std::__type_list<short, std::__type_list<int, std::__type_list<long, std::__type_list<long long, std::__type_list<__int128, std::__nat>>>>>>",
+   "referenced_type" : "_ZTINSt3__111__type_listIaNS0_IsNS0_IiNS0_IlNS0_IxNS0_InNS_5__natEEEEEEEEEEEEE",
+   "self_type" : "_ZTINSt3__111__type_listIaNS0_IsNS0_IiNS0_IlNS0_IxNS0_InNS_5__natEEEEEEEEEEEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" :
+   [
+    "_ZTIa",
+    "_ZTINSt3__111__type_listIsNS0_IiNS0_IlNS0_IxNS0_InNS_5__natEEEEEEEEEEE"
+   ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__111__type_listIhNS0_ItNS0_IjNS0_ImNS0_IyNS0_IoNS_5__natEEEEEEEEEEEEE",
+   "name" : "std::__type_list<unsigned char, std::__type_list<unsigned short, std::__type_list<unsigned int, std::__type_list<unsigned long, std::__type_list<unsigned long long, std::__type_list<unsigned __int128, std::__nat>>>>>>",
+   "referenced_type" : "_ZTINSt3__111__type_listIhNS0_ItNS0_IjNS0_ImNS0_IyNS0_IoNS_5__natEEEEEEEEEEEEE",
+   "self_type" : "_ZTINSt3__111__type_listIhNS0_ItNS0_IjNS0_ImNS0_IyNS0_IoNS_5__natEEEEEEEEEEEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" :
+   [
+    "_ZTIh",
+    "_ZTINSt3__111__type_listItNS0_IjNS0_ImNS0_IyNS0_IoNS_5__natEEEEEEEEEEE"
+   ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIdEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__111is_integralIdEE",
+   "name" : "std::is_integral<double>",
+   "referenced_type" : "_ZTINSt3__111is_integralIdEE",
+   "self_type" : "_ZTINSt3__111is_integralIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__112remove_constIdEE",
+   "name" : "std::remove_const<double>",
+   "referenced_type" : "_ZTINSt3__112remove_constIdEE",
+   "self_type" : "_ZTINSt3__112remove_constIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIbLb1EEE",
+   "name" : "std::__make_signed<bool, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIbLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIbLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIiLb1EEE",
+   "name" : "std::__make_signed<int, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIiLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIiLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIjLb1EEE",
+   "name" : "std::__make_signed<unsigned int, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIjLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIjLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIlLb1EEE",
+   "name" : "std::__make_signed<long, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIlLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIlLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIl" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedImLb1EEE",
+   "name" : "std::__make_signed<unsigned long, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedImLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedImLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedInLb1EEE",
+   "name" : "std::__make_signed<__int128_t, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedInLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedInLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIoLb1EEE",
+   "name" : "std::__make_signed<__uint128_t, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIoLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIoLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIo" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIsLb1EEE",
+   "name" : "std::__make_signed<short, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIsLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIsLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIs" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedItLb1EEE",
+   "name" : "std::__make_signed<unsigned short, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedItLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedItLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIxLb1EEE",
+   "name" : "std::__make_signed<long long, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIxLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIxLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIx" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__113__make_signedIyLb1EEE",
+   "name" : "std::__make_signed<unsigned long long, true>",
+   "referenced_type" : "_ZTINSt3__113__make_signedIyLb1EEE",
+   "self_type" : "_ZTINSt3__113__make_signedIyLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIy" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__114__is_construct5__natE",
+   "name" : "std::__is_construct::__nat",
+   "referenced_type" : "_ZTINSt3__114__is_construct5__natE",
+   "self_type" : "_ZTINSt3__114__is_construct5__natE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb0EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__114__lazy_or_implILb0EJEEE",
+   "name" : "std::__lazy_or_impl<false>",
+   "referenced_type" : "_ZTINSt3__114__lazy_or_implILb0EJEEE",
+   "self_type" : "_ZTINSt3__114__lazy_or_implILb0EJEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__114__numeric_typeIvEE",
+   "name" : "std::__numeric_type<void>",
+   "referenced_type" : "_ZTINSt3__114__numeric_typeIvEE",
+   "self_type" : "_ZTINSt3__114__numeric_typeIvEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIv" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__115__lazy_and_implILb1EJEEE",
+   "name" : "std::__lazy_and_impl<true>",
+   "referenced_type" : "_ZTINSt3__115__lazy_and_implILb1EJEEE",
+   "self_type" : "_ZTINSt3__115__lazy_and_implILb1EJEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIbLb1EEE",
+   "name" : "std::__make_unsigned<bool, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIbLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIbLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIiLb1EEE",
+   "name" : "std::__make_unsigned<int, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIiLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIiLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIjLb1EEE",
+   "name" : "std::__make_unsigned<unsigned int, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIjLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIjLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIlLb1EEE",
+   "name" : "std::__make_unsigned<long, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIlLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIlLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIl" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedImLb1EEE",
+   "name" : "std::__make_unsigned<unsigned long, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedImLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedImLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedInLb1EEE",
+   "name" : "std::__make_unsigned<__int128_t, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedInLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedInLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIoLb1EEE",
+   "name" : "std::__make_unsigned<__uint128_t, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIoLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIoLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIo" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIsLb1EEE",
+   "name" : "std::__make_unsigned<short, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIsLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIsLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIs" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedItLb1EEE",
+   "name" : "std::__make_unsigned<unsigned short, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedItLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedItLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIxLb1EEE",
+   "name" : "std::__make_unsigned<long long, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIxLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIxLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIx" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115__make_unsignedIyLb1EEE",
+   "name" : "std::__make_unsigned<unsigned long long, true>",
+   "referenced_type" : "_ZTINSt3__115__make_unsignedIyLb1EEE",
+   "self_type" : "_ZTINSt3__115__make_unsignedIyLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIy" ]
+  },
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "__lx",
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__115__struct_doubleE",
+   "name" : "std::__struct_double",
+   "referenced_type" : "_ZTINSt3__115__struct_doubleE",
+   "self_type" : "_ZTINSt3__115__struct_doubleE",
+   "size" : 16,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb0EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__115is_destructibleIvEE",
+   "name" : "std::is_destructible<void>",
+   "referenced_type" : "_ZTINSt3__115is_destructibleIvEE",
+   "self_type" : "_ZTINSt3__115is_destructibleIvEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIv" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__115remove_volatileIdEE",
+   "name" : "std::remove_volatile<double>",
+   "referenced_type" : "_ZTINSt3__115remove_volatileIdEE",
+   "self_type" : "_ZTINSt3__115remove_volatileIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__116__libcpp_is_voidIvEE",
+   "name" : "std::__libcpp_is_void<void>",
+   "referenced_type" : "_ZTINSt3__116__libcpp_is_voidIvEE",
+   "self_type" : "_ZTINSt3__116__libcpp_is_voidIvEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIv" ]
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__lx",
+     "referenced_type" : "_ZTIA4_d"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__116__struct_double4E",
+   "name" : "std::__struct_double4",
+   "referenced_type" : "_ZTINSt3__116__struct_double4E",
+   "self_type" : "_ZTINSt3__116__struct_double4E",
+   "size" : 32,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__117integral_constantIbLb0EEE",
+   "name" : "std::integral_constant<bool, false>",
+   "referenced_type" : "_ZTINSt3__117integral_constantIbLb0EEE",
+   "self_type" : "_ZTINSt3__117integral_constantIbLb0EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__117integral_constantIbLb1EEE",
+   "name" : "std::integral_constant<bool, true>",
+   "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE",
+   "self_type" : "_ZTINSt3__117integral_constantIbLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__117integral_constantImLm0EEE",
+   "name" : "std::integral_constant<unsigned long, 0>",
+   "referenced_type" : "_ZTINSt3__117integral_constantImLm0EEE",
+   "self_type" : "_ZTINSt3__117integral_constantImLm0EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__119__is_nullptr_t_implIDnEE",
+   "name" : "std::__is_nullptr_t_impl<nullptr_t>",
+   "referenced_type" : "_ZTINSt3__119__is_nullptr_t_implIDnEE",
+   "self_type" : "_ZTINSt3__119__is_nullptr_t_implIDnEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIDn" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIDiEE",
+   "name" : "std::__libcpp_is_integral<char32_t>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIDiEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIDiEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIDi" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIDsEE",
+   "name" : "std::__libcpp_is_integral<char16_t>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIDsEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIDsEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIDs" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIaEE",
+   "name" : "std::__libcpp_is_integral<signed char>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIaEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIaEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIa" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIbEE",
+   "name" : "std::__libcpp_is_integral<bool>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIbEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIbEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIcEE",
+   "name" : "std::__libcpp_is_integral<char>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIcEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIcEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIc" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb0EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIdEE",
+   "name" : "std::__libcpp_is_integral<double>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIdEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIhEE",
+   "name" : "std::__libcpp_is_integral<unsigned char>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIhEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIhEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIh" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIiEE",
+   "name" : "std::__libcpp_is_integral<int>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIiEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIiEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIjEE",
+   "name" : "std::__libcpp_is_integral<unsigned int>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIjEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIjEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIj" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIlEE",
+   "name" : "std::__libcpp_is_integral<long>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIlEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIlEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIl" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralImEE",
+   "name" : "std::__libcpp_is_integral<unsigned long>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralImEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralImEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralInEE",
+   "name" : "std::__libcpp_is_integral<__int128_t>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralInEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralInEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIn" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIoEE",
+   "name" : "std::__libcpp_is_integral<__uint128_t>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIoEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIoEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIo" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIsEE",
+   "name" : "std::__libcpp_is_integral<short>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIsEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIsEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIs" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralItEE",
+   "name" : "std::__libcpp_is_integral<unsigned short>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralItEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralItEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIt" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIwEE",
+   "name" : "std::__libcpp_is_integral<wchar_t>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIwEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIwEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIw" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIxEE",
+   "name" : "std::__libcpp_is_integral<long long>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIxEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIxEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIx" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__120__libcpp_is_integralIyEE",
+   "name" : "std::__libcpp_is_integral<unsigned long long>",
+   "referenced_type" : "_ZTINSt3__120__libcpp_is_integralIyEE",
+   "self_type" : "_ZTINSt3__120__libcpp_is_integralIyEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIy" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__122__extract_key_fail_tagE",
+   "name" : "std::__extract_key_fail_tag",
+   "referenced_type" : "_ZTINSt3__122__extract_key_fail_tagE",
+   "self_type" : "_ZTINSt3__122__extract_key_fail_tagE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__122__extract_key_self_tagE",
+   "name" : "std::__extract_key_self_tag",
+   "referenced_type" : "_ZTINSt3__122__extract_key_self_tagE",
+   "self_type" : "_ZTINSt3__122__extract_key_self_tagE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__extract_key_first_tagE",
+   "name" : "std::__extract_key_first_tag",
+   "referenced_type" : "_ZTINSt3__123__extract_key_first_tagE",
+   "self_type" : "_ZTINSt3__123__extract_key_first_tagE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__is_referenceable_implE",
+   "name" : "std::__is_referenceable_impl",
+   "referenced_type" : "_ZTINSt3__123__is_referenceable_implE",
+   "self_type" : "_ZTINSt3__123__is_referenceable_implE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__libcpp_numeric_limitsIbLb1EEE",
+   "name" : "std::__libcpp_numeric_limits<bool, true>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTINSt3__123__libcpp_numeric_limitsIbLb1EEE",
+   "self_type" : "_ZTINSt3__123__libcpp_numeric_limitsIbLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/limits",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__libcpp_numeric_limitsIdLb1EEE",
+   "name" : "std::__libcpp_numeric_limits<double, true>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTINSt3__123__libcpp_numeric_limitsIdLb1EEE",
+   "self_type" : "_ZTINSt3__123__libcpp_numeric_limitsIdLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/limits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__libcpp_numeric_limitsIeLb1EEE",
+   "name" : "std::__libcpp_numeric_limits<long double, true>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTINSt3__123__libcpp_numeric_limitsIeLb1EEE",
+   "self_type" : "_ZTINSt3__123__libcpp_numeric_limitsIeLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/limits",
+   "template_args" : [ "_ZTIe" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__123__libcpp_numeric_limitsIfLb1EEE",
+   "name" : "std::__libcpp_numeric_limits<float, true>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTINSt3__123__libcpp_numeric_limitsIfLb1EEE",
+   "self_type" : "_ZTINSt3__123__libcpp_numeric_limitsIfLb1EEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/limits",
+   "template_args" : [ "_ZTIf" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__124__libcpp_is_function_imp12__dummy_typeE",
+   "name" : "std::__libcpp_is_function_imp::__dummy_type",
+   "referenced_type" : "_ZTINSt3__124__libcpp_is_function_imp12__dummy_typeE",
+   "self_type" : "_ZTINSt3__124__libcpp_is_function_imp12__dummy_typeE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__126__libcpp_is_floating_pointIdEE",
+   "name" : "std::__libcpp_is_floating_point<double>",
+   "referenced_type" : "_ZTINSt3__126__libcpp_is_floating_pointIdEE",
+   "self_type" : "_ZTINSt3__126__libcpp_is_floating_pointIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__126__libcpp_is_floating_pointIeEE",
+   "name" : "std::__libcpp_is_floating_point<long double>",
+   "referenced_type" : "_ZTINSt3__126__libcpp_is_floating_pointIeEE",
+   "self_type" : "_ZTINSt3__126__libcpp_is_floating_pointIeEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIe" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__126__libcpp_is_floating_pointIfEE",
+   "name" : "std::__libcpp_is_floating_point<float>",
+   "referenced_type" : "_ZTINSt3__126__libcpp_is_floating_pointIfEE",
+   "self_type" : "_ZTINSt3__126__libcpp_is_floating_pointIfEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIf" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__15__anyE",
+   "name" : "std::__any",
+   "referenced_type" : "_ZTINSt3__15__anyE",
+   "self_type" : "_ZTINSt3__15__anyE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__15__natE",
+   "name" : "std::__nat",
+   "referenced_type" : "_ZTINSt3__15__natE",
+   "self_type" : "_ZTINSt3__15__natE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb0EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__15__or_IJEEE",
+   "name" : "std::__or_<>",
+   "referenced_type" : "_ZTINSt3__15__or_IJEEE",
+   "self_type" : "_ZTINSt3__15__or_IJEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "__lx",
+     "referenced_type" : "_ZTIA2_c"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__15__twoE",
+   "name" : "std::__two",
+   "referenced_type" : "_ZTINSt3__15__twoE",
+   "self_type" : "_ZTINSt3__15__twoE",
+   "size" : 2,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__16__and_IJEEE",
+   "name" : "std::__and_<>",
+   "referenced_type" : "_ZTINSt3__16__and_IJEEE",
+   "self_type" : "_ZTINSt3__16__and_IJEEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__19enable_ifILb0EdEE",
+   "name" : "std::enable_if<false, double>",
+   "referenced_type" : "_ZTINSt3__19enable_ifILb0EdEE",
+   "self_type" : "_ZTINSt3__19enable_ifILb0EdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__19enable_ifILb0EiEE",
+   "name" : "std::enable_if<false, int>",
+   "referenced_type" : "_ZTINSt3__19enable_ifILb0EiEE",
+   "self_type" : "_ZTINSt3__19enable_ifILb0EiEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__19enable_ifILb0ElEE",
+   "name" : "std::enable_if<false, long>",
+   "referenced_type" : "_ZTINSt3__19enable_ifILb0ElEE",
+   "self_type" : "_ZTINSt3__19enable_ifILb0ElEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIl" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__19enable_ifILb0ExEE",
+   "name" : "std::enable_if<false, long long>",
+   "referenced_type" : "_ZTINSt3__19enable_ifILb0ExEE",
+   "self_type" : "_ZTINSt3__19enable_ifILb0ExEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIx" ]
+  },
+  {
+   "alignment" : 1,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117integral_constantIbLb1EEE"
+    }
+   ],
+   "linker_set_key" : "_ZTINSt3__19is_scalarIDnEE",
+   "name" : "std::is_scalar<nullptr_t>",
+   "referenced_type" : "_ZTINSt3__19is_scalarIDnEE",
+   "self_type" : "_ZTINSt3__19is_scalarIDnEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTIDn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTINSt3__19remove_cvIdEE",
+   "name" : "std::remove_cv<double>",
+   "referenced_type" : "_ZTINSt3__19remove_cvIdEE",
+   "self_type" : "_ZTINSt3__19remove_cvIdEE",
+   "size" : 1,
+   "source_file" : "external/libcxx/include/type_traits",
+   "template_args" : [ "_ZTId" ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
