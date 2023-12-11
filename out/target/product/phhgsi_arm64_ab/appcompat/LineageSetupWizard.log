@@ -1,0 +1,423 @@
+Package name: org.lineageos.setupwizard
+Module name in Android tree: LineageSetupWizard
+Local path in Android tree: packages/apps/SetupWizard
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/LineageSetupWizard/LineageSetupWizard.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/app/Activity;->isResumed()Z use(s):
+       Lorg/lineageos/setupwizard/BaseSetupWizardActivity;->finish()V
+       Lorg/lineageos/setupwizard/BaseSetupWizardActivity;->logActivityState(Ljava/lang/String;)V
+       Lorg/lineageos/setupwizard/BaseSetupWizardActivity;->startActivity(Landroid/content/Intent;)V
+       Lorg/lineageos/setupwizard/BaseSetupWizardActivity;->startActivityForResult(Landroid/content/Intent;I)V
+       Lorg/lineageos/setupwizard/FinishActivity;->finish()V
+
+#2: Linking unsupported,test-api Landroid/app/WallpaperManager;->getBitmap()Landroid/graphics/Bitmap; use(s):
+       Lorg/lineageos/setupwizard/FinishActivity;->setupRevealImage()V
+
+#3: Linking unsupported Landroid/content/ContentResolver;->acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider; use(s):
+       Llineageos/providers/LineageSettings$ContentProviderHolder;->getProvider(Landroid/content/ContentResolver;)Landroid/content/IContentProvider;
+
+#4: Linking max-target-o Landroid/content/ContentResolver;->createSqlQueryBundle(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#5: Linking blocked Landroid/content/ContentResolver;->getAttributionSource()Landroid/content/AttributionSource; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String; (2 occurrences)
+       Llineageos/providers/LineageSettings$NameValueCache;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+#6: Linking unsupported Landroid/content/ContentResolver;->getResourceId(Landroid/net/Uri;)Landroid/content/ContentResolver$OpenResourceIdResult; use(s):
+       Lorg/lineageos/setupwizard/wizardmanager/WizardScript;->loadFromUri(Landroid/content/Context;Ljava/lang/String;)Lorg/lineageos/setupwizard/wizardmanager/WizardScript;
+
+#7: Linking max-target-o Landroid/content/ContentResolver;->getUserId()I use(s):
+       Llineageos/providers/LineageSettings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+       Llineageos/providers/LineageSettings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+       Llineageos/providers/LineageSettings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+       Llineageos/providers/LineageSettings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+#8: Linking blocked Landroid/content/IContentProvider;->call(Landroid/content/AttributionSource;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+       Llineageos/providers/LineageSettings$NameValueCache;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+#9: Linking blocked Landroid/content/IContentProvider;->query(Landroid/content/AttributionSource;Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ICancellationSignal;)Landroid/database/Cursor; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#10: Linking max-target-r Landroid/content/om/IOverlayManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/content/om/IOverlayManager; use(s):
+       Lorg/lineageos/setupwizard/FinishActivity;->handleNavigationOption(Landroid/content/Context;)V
+
+#11: Linking max-target-o Landroid/content/om/IOverlayManager;->setEnabledExclusiveInCategory(Ljava/lang/String;I)Z use(s):
+       Lorg/lineageos/setupwizard/FinishActivity;->handleNavigationOption(Landroid/content/Context;)V
+
+#12: Linking unsupported Landroid/content/pm/IPackageManager;->getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->addPackage(Ljava/lang/String;I)V
+
+#13: Linking max-target-r Landroid/content/pm/IPackageManager;->getInstalledApplications(II)Landroid/content/pm/ParceledListSlice; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+
+#14: Linking unsupported Landroid/content/pm/IPackageStatsObserver$Stub;-><init>()V use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler$1;-><init>(Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler;)V
+
+#15: Linking unsupported Landroid/content/pm/PackageManager;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler;->handleMessage(Landroid/os/Message;)V
+
+#16: Linking unsupported Landroid/content/pm/PackageManager;->queryIntentActivitiesAsUser(Landroid/content/Intent;II)Ljava/util/List; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler;->handleMessage(Landroid/os/Message;)V
+       Llineageos/preference/ConstraintsHelper;->resolveIntent(Landroid/content/Context;Landroid/content/Intent;)Z
+
+#17: Linking max-target-o Landroid/content/pm/PackageStats;-><init>(Ljava/lang/String;I)V use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler;->lambda$handleMessage$0()V
+
+#18: Linking max-target-r Landroid/content/pm/ParceledListSlice;->getList()Ljava/util/List; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+
+#19: Linking unsupported,test-api Landroid/content/pm/UserInfo;->isAdmin()Z use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+
+#20: Linking unsupported Landroid/content/res/Configuration;->generateDelta(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)Landroid/content/res/Configuration; use(s):
+       Lcom/android/settingslib/applications/InterestingConfigChanges;->applyNewConfig(Landroid/content/res/Resources;)Z
+
+#21: Linking unsupported Landroid/content/res/Resources;->getCompatibilityInfo()Landroid/content/res/CompatibilityInfo; use(s):
+       Lorg/lineageos/setupwizard/widget/LocalePicker$AccessibilityNodeProviderImpl;->createAccessibilityNodeInfoForNumberPicker(IIII)Landroid/view/accessibility/AccessibilityNodeInfo;
+
+#22: Linking unsupported Landroid/graphics/Rect;->scale(F)V use(s):
+       Lorg/lineageos/setupwizard/widget/LocalePicker$AccessibilityNodeProviderImpl;->createAccessibilityNodeInfoForNumberPicker(IIII)Landroid/view/accessibility/AccessibilityNodeInfo; (2 occurrences)
+
+#23: Linking blocked Landroid/hardware/face/FaceManager;->isHardwareDetected()Z use(s):
+       Lorg/lineageos/setupwizard/util/SetupWizardUtils;->hasFace(Landroid/content/Context;)Z
+
+#24: Linking max-target-o Landroid/net/ConnectivityManager;->startCaptivePortalApp(Landroid/net/Network;)V use(s):
+       Lcom/android/wifitrackerlib/PasspointWifiEntry;->signIn(Lcom/android/wifitrackerlib/WifiEntry$SignInCallback;)V
+       Lcom/android/wifitrackerlib/StandardWifiEntry;->signIn(Lcom/android/wifitrackerlib/WifiEntry$SignInCallback;)V
+
+#25: Linking max-target-o Landroid/net/NetworkKey;->createFromWifiInfo(Landroid/net/wifi/WifiInfo;)Landroid/net/NetworkKey; use(s):
+       Lcom/android/settingslib/wifi/AccessPoint;->updateMetered(Landroid/net/wifi/WifiNetworkScoreCache;)Z
+       Lcom/android/settingslib/wifi/WifiTracker;->updateAccessPoints(Ljava/util/List;Ljava/util/List;)V
+
+#26: Linking max-target-o Landroid/net/NetworkScoreManager;->getActiveScorer()Landroid/net/NetworkScorerAppData; use(s):
+       Lcom/android/wifitrackerlib/StandardWifiEntry;->updateRecommendationServiceLabel()V
+
+#27: Linking max-target-o Landroid/net/NetworkScoreManager;->registerNetworkScoreCache(ILandroid/net/INetworkScoreCache;I)V use(s):
+       Lcom/android/wifitrackerlib/BaseWifiTracker;->onStart()V
+
+#28: Linking max-target-o Landroid/net/NetworkScoreManager;->requestScores([Landroid/net/NetworkKey;)Z use(s):
+       Lcom/android/settingslib/wifi/WifiTracker;->requestScoresForNetworkKeys(Ljava/util/Collection;)V
+
+#29: Linking max-target-o Landroid/net/NetworkScoreManager;->unregisterNetworkScoreCache(ILandroid/net/INetworkScoreCache;)V use(s):
+       Lcom/android/wifitrackerlib/BaseWifiTracker;->onStop()V
+
+#30: Linking max-target-o Landroid/net/NetworkScorerAppData;->getRecommendationServiceLabel()Ljava/lang/String; use(s):
+       Lcom/android/wifitrackerlib/StandardWifiEntry;->updateRecommendationServiceLabel()V
+
+#31: Linking blocked Landroid/net/vcn/VcnTransportInfo;->getWifiInfo()Landroid/net/wifi/WifiInfo; use(s):
+       Lcom/android/wifitrackerlib/BaseWifiTracker$3;->onCapabilitiesChanged(Landroid/net/Network;Landroid/net/NetworkCapabilities;)V
+
+#32: Linking max-target-o Landroid/net/wifi/WifiNetworkScoreCache$CacheListener;-><init>(Landroid/os/Handler;)V use(s):
+       Lcom/android/settingslib/wifi/WifiTracker$1;-><init>(Lcom/android/settingslib/wifi/WifiTracker;Landroid/os/Handler;)V
+       Lcom/android/wifitrackerlib/BaseWifiTracker$4;-><init>(Lcom/android/wifitrackerlib/BaseWifiTracker;Landroid/os/Handler;)V
+
+#33: Linking max-target-o Landroid/net/wifi/WifiNetworkScoreCache;-><init>(Landroid/content/Context;Landroid/net/wifi/WifiNetworkScoreCache$CacheListener;)V use(s):
+       Lcom/android/settingslib/wifi/WifiTracker;->setWorkThread(Landroid/os/HandlerThread;)V
+       Lcom/android/wifitrackerlib/BaseWifiTracker;-><init>(Lcom/android/wifitrackerlib/WifiTrackerInjector;Landroidx/lifecycle/Lifecycle;Landroid/content/Context;Landroid/net/wifi/WifiManager;Landroid/net/ConnectivityManager;Landroid/net/NetworkScoreManager;Landroid/os/Handler;Landroid/os/Handler;Ljava/time/Clock;JJLcom/android/wifitrackerlib/BaseWifiTracker$BaseWifiTrackerCallback;Ljava/lang/String;)V
+
+#34: Linking max-target-o Landroid/net/wifi/WifiNetworkScoreCache;->getScoredNetwork(Landroid/net/NetworkKey;)Landroid/net/ScoredNetwork; use(s):
+       Lcom/android/settingslib/wifi/AccessPoint;->updateMetered(Landroid/net/wifi/WifiNetworkScoreCache;)Z
+       Lcom/android/wifitrackerlib/Utils;->getSpeedFromWifiInfo(Landroid/net/wifi/WifiNetworkScoreCache;Landroid/net/wifi/WifiInfo;)I
+
+#35: Linking max-target-o Landroid/net/wifi/WifiNetworkScoreCache;->getScoredNetwork(Landroid/net/wifi/ScanResult;)Landroid/net/ScoredNetwork; use(s):
+       Lcom/android/settingslib/wifi/AccessPoint;->updateMetered(Landroid/net/wifi/WifiNetworkScoreCache;)Z
+       Lcom/android/settingslib/wifi/AccessPoint;->updateScores(Landroid/net/wifi/WifiNetworkScoreCache;J)Z
+       Lcom/android/wifitrackerlib/Utils;->getAverageSpeedFromScanResults(Landroid/net/wifi/WifiNetworkScoreCache;Ljava/util/List;)I
+
+#36: Linking max-target-o Landroid/os/HandlerExecutor;-><init>(Landroid/os/Handler;)V use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor$SubscriptionStateTracker;-><init>(Lorg/lineageos/setupwizard/util/PhoneMonitor;I)V
+
+#37: Linking unsupported Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder; use(s):
+       Lcom/android/settingslib/development/SystemPropPoker$PokerTask;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
+
+#38: Linking unsupported Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder; use(s):
+       Llineageos/hardware/LineageHardwareManager;->getService()Llineageos/hardware/ILineageHardwareService;
+       Lorg/lineageos/setupwizard/FinishActivity;->handleNavigationOption(Landroid/content/Context;)V
+
+#39: Linking unsupported Landroid/os/ServiceManager;->listServices()[Ljava/lang/String; use(s):
+       Lcom/android/settingslib/development/SystemPropPoker$PokerTask;->listServices()[Ljava/lang/String;
+
+#40: Linking unsupported Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V use(s):
+       Lcom/android/settingslib/development/AbstractLogpersistPreferenceController;->setLogpersistOff(Z)V (4 occurrences)
+       Lcom/android/settingslib/development/AbstractLogpersistPreferenceController;->updateLogpersistValues()V
+       Lcom/android/settingslib/development/AbstractLogpersistPreferenceController;->writeLogpersistOption(Ljava/lang/Object;Z)V (2 occurrences)
+       Lorg/lineageos/setupwizard/FinishActivity;->handleRecoveryUpdate(Lorg/lineageos/setupwizard/SetupWizardApp;)V
+
+#41: Linking unsupported Landroid/os/UserHandle;-><init>(I)V use(s):
+       Lorg/lineageos/setupwizard/LocationSettingsActivity;->lambda$onCreate$0(Landroid/view/View;)V
+
+#42: Linking unsupported,test-api Landroid/os/UserHandle;->getUserId(I)I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$5;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+       Lcom/android/settingslib/applications/ApplicationsState$7;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+       Lcom/android/settingslib/applications/ApplicationsState$AppEntry;->ensureLabelDescriptionLocked(Landroid/content/Context;)V
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler;->handleMessage(Landroid/os/Message;)V (2 occurrences)
+       Lcom/android/settingslib/applications/ApplicationsState;->anyAppIsRemoved(Ljava/util/List;Ljava/util/List;)Z (2 occurrences)
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+       Lcom/android/settingslib/applications/ApplicationsState;->getEntryLocked(Landroid/content/pm/ApplicationInfo;)Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
+       Lcom/android/settingslib/applications/ApplicationsState;->indexOfApplicationInfoLocked(Ljava/lang/String;I)I
+
+#43: Linking unsupported Landroid/os/UserManager;->get(Landroid/content/Context;)Landroid/os/UserManager; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$AppEntry;->ensureLabelDescriptionLocked(Landroid/content/Context;)V
+
+#44: Linking unsupported Landroid/os/UserManager;->getProfileIdsWithDisabled(I)[I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;-><init>(Landroid/app/Application;Landroid/content/pm/IPackageManager;)V
+       Lcom/android/settingslib/applications/ApplicationsState;->addUser(I)V
+
+#45: Linking unsupported Landroid/os/UserManager;->getProfiles(I)Ljava/util/List; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+
+#46: Linking unsupported Landroid/os/UserManager;->getUsers()Ljava/util/List; use(s):
+       Lorg/lineageos/setupwizard/BaseSetupWizardActivity;->hasMultipleUsers()Z
+
+#47: Linking unsupported,test-api Landroid/os/UserManager;->hasBaseUserRestriction(Ljava/lang/String;Landroid/os/UserHandle;)Z use(s):
+       Lcom/android/settingslib/RestrictedLockUtilsInternal;->hasBaseUserRestriction(Landroid/content/Context;Ljava/lang/String;I)Z
+
+#48: Linking unsupported Landroid/os/UserManager;->isUserAdmin(I)Z use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->addPackage(Ljava/lang/String;I)V
+
+#49: Linking blocked Landroid/sysprop/TelephonyProperties;->lte_on_cdma_device()Ljava/util/Optional; use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor;->getLteOnCdmaMode(I)I
+
+#50: Linking unsupported,test-api Landroid/telephony/ServiceState;->getDataRegState()I use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor;->getDataRegState(I)I
+
+#51: Linking max-target-p Landroid/telephony/ServiceState;->getVoiceRegState()I use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor;->getVoiceRegState(I)I
+
+#52: Linking unsupported Landroid/telephony/SubscriptionManager;->getDefaultDataPhoneId()I use(s):
+       Lorg/lineageos/setupwizard/util/SetupWizardUtils;->setMobileDataEnabled(Landroid/content/Context;Z)V
+
+#53: Linking max-target-o Landroid/telephony/TelephonyManager;->getLocaleFromDefaultSim()Ljava/lang/String; use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity$FetchUpdateSimLocaleTask;->doInBackground([Ljava/lang/Void;)Ljava/util/Locale;
+
+#54: Linking unsupported Landroid/telephony/TelephonyManager;->getLteOnCdmaMode(I)I use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor;->getLteOnCdmaMode(I)I (2 occurrences)
+
+#55: Linking unsupported Landroid/telephony/TelephonyManager;->getNetworkTypeName()Ljava/lang/String; use(s):
+       Lorg/lineageos/setupwizard/util/PhoneMonitor;->getNetworkTypeName()Ljava/lang/String;
+
+#56: Linking unsupported Landroid/telephony/TelephonyManager;->isMultiSimEnabled()Z use(s):
+       Lorg/lineageos/setupwizard/util/SetupWizardUtils;->setMobileDataEnabled(Landroid/content/Context;Z)V
+
+#57: Linking unsupported Landroid/util/IconDrawableFactory;->newInstance(Landroid/content/Context;)Landroid/util/IconDrawableFactory; use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;-><init>(Landroid/app/Application;Landroid/content/pm/IPackageManager;)V
+
+#58: Linking max-target-r Landroid/util/PathParser;->createPathFromPathData(Ljava/lang/String;)Landroid/graphics/Path; use(s):
+       Lcom/android/settingslib/widget/AdaptiveIconShapeDrawable;->init(Landroid/content/res/Resources;)V
+
+#59: Linking unsupported Landroid/view/accessibility/AccessibilityManager;->getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager; use(s):
+       Lorg/lineageos/setupwizard/widget/LocalePicker$AccessibilityNodeProviderImpl;->sendAccessibilityEventForVirtualButton(IILjava/lang/String;)V
+       Lorg/lineageos/setupwizard/widget/LocalePicker$AccessibilityNodeProviderImpl;->sendAccessibilityEventForVirtualText(I)V
+       Lorg/lineageos/setupwizard/widget/LocalePicker;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
+
+#60: Linking max-target-o Landroid/view/inputmethod/InputMethodInfo;->isAuxiliaryIme()Z use(s):
+       Lcom/android/settingslib/inputmethod/InputMethodAndSubtypeUtil;->isValidNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;)Z
+
+#61: Linking blocked Landroid/view/inputmethod/InputMethodInfo;->isSystem()Z use(s):
+       Lcom/android/settingslib/inputmethod/InputMethodPreference;-><init>(Landroid/content/Context;Landroid/view/inputmethod/InputMethodInfo;Ljava/lang/CharSequence;ZLcom/android/settingslib/inputmethod/InputMethodPreference$OnSavePreferenceListener;)V
+       Lcom/android/settingslib/inputmethod/InputMethodPreference;->onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z
+
+#62: Linking unsupported Landroid/view/inputmethod/InputMethodManager;->peekInstance()Landroid/view/inputmethod/InputMethodManager; use(s):
+       Lorg/lineageos/setupwizard/widget/LocalePicker;->hideSoftInput()V
+       Lorg/lineageos/setupwizard/widget/LocalePicker;->showSoftInput()V
+
+#63: Linking blocked,core-platform-api Lcom/android/i18n/timezone/CountryTimeZones$TimeZoneMapping;->getTimeZoneId()Ljava/lang/String; use(s):
+       Lcom/android/settingslib/datetime/ZoneGetter$ZoneGetterData;->extractTimeZoneIds(Ljava/util/List;)Ljava/util/List;
+
+#64: Linking blocked,core-platform-api Lcom/android/i18n/timezone/CountryTimeZones;->getTimeZoneMappings()Ljava/util/List; use(s):
+       Lcom/android/settingslib/datetime/ZoneGetter$ZoneGetterData;->lookupTimeZoneIdsByCountry(Ljava/lang/String;)Ljava/util/List;
+
+#65: Linking blocked,core-platform-api Lcom/android/i18n/timezone/TimeZoneFinder;->getInstance()Lcom/android/i18n/timezone/TimeZoneFinder; use(s):
+       Lcom/android/settingslib/datetime/ZoneGetter$ZoneGetterData;->lookupTimeZoneIdsByCountry(Ljava/lang/String;)Ljava/util/List;
+
+#66: Linking blocked,core-platform-api Lcom/android/i18n/timezone/TimeZoneFinder;->lookupCountryTimeZones(Ljava/lang/String;)Lcom/android/i18n/timezone/CountryTimeZones; use(s):
+       Lcom/android/settingslib/datetime/ZoneGetter$ZoneGetterData;->lookupTimeZoneIdsByCountry(Ljava/lang/String;)Ljava/util/List;
+
+#67: Linking blocked Lcom/android/internal/app/LocalePicker$LocaleInfo;->getLabel()Ljava/lang/String; use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity;->loadLanguages()V
+
+#68: Linking max-target-r Lcom/android/internal/app/LocalePicker$LocaleInfo;->getLocale()Ljava/util/Locale; use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity;->loadLanguages()V
+       Lorg/lineageos/setupwizard/LocaleActivity;->setLocaleFromPicker()V
+
+#69: Linking blocked Lcom/android/internal/app/LocalePicker;->constructAdapter(Landroid/content/Context;II)Landroid/widget/ArrayAdapter; use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity;->loadLanguages()V
+
+#70: Linking unsupported Lcom/android/internal/app/LocalePicker;->updateLocale(Ljava/util/Locale;)V use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity$1;->run()V
+
+#71: Linking blocked Lcom/android/internal/telephony/util/LocaleUtils;->getLocaleFromMcc(Landroid/content/Context;ILjava/lang/String;)Ljava/util/Locale; use(s):
+       Lorg/lineageos/setupwizard/LocaleActivity$FetchUpdateSimLocaleTask;->doInBackground([Ljava/lang/Void;)Ljava/util/Locale;
+
+#72: Linking unsupported Lcom/android/internal/util/ArrayUtils;->contains([II)Z use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->addUser(I)V
+
+#73: Linking unsupported Lcom/android/internal/util/ArrayUtils;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$16;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+
+#74: Linking blocked Lcom/android/internal/util/CollectionUtils;->isEmpty(Ljava/util/Collection;)Z use(s):
+       Lcom/android/settingslib/wifi/AccessPoint;->setScanResults(Ljava/util/Collection;)V
+       Lcom/android/settingslib/wifi/AccessPoint;->setScanResultsPasspoint(Ljava/util/Collection;Ljava/util/Collection;)V (3 occurrences)
+
+#75: Linking unsupported Lcom/android/internal/util/XmlUtils;->skipCurrentTag(Lorg/xmlpull/v1/XmlPullParser;)V use(s):
+       Lorg/lineageos/internal/lineageparts/PartsList;->loadPartsFromResourceLocked(Landroid/content/res/Resources;ILjava/util/Map;)V
+       Lorg/lineageos/setupwizard/wizardmanager/WizardAction;->parseWizardAction(Lorg/xmlpull/v1/XmlPullParser;)Lorg/lineageos/setupwizard/wizardmanager/WizardAction;
+       Lorg/lineageos/setupwizard/wizardmanager/WizardScript;->parseWizardScript(Lorg/xmlpull/v1/XmlPullParser;)Lorg/lineageos/setupwizard/wizardmanager/WizardScript;
+
+#76: Linking blocked Lcom/android/net/module/util/NetUtils;->getNetworkPart(Ljava/net/InetAddress;I)Ljava/net/InetAddress; use(s):
+       Lcom/android/wifitrackerlib/WifiEntry;->updateLinkProperties(Landroid/net/LinkProperties;)V
+
+#77: Linking unsupported Landroid/content/ContentResolver$OpenResourceIdResult;->id:I use(s):
+       Lorg/lineageos/setupwizard/wizardmanager/WizardScript;->loadFromUri(Landroid/content/Context;Ljava/lang/String;)Lorg/lineageos/setupwizard/wizardmanager/WizardScript; (3 occurrences)
+
+#78: Linking unsupported Landroid/content/ContentResolver$OpenResourceIdResult;->r:Landroid/content/res/Resources; use(s):
+       Lorg/lineageos/setupwizard/wizardmanager/WizardScript;->loadFromUri(Landroid/content/Context;Ljava/lang/String;)Lorg/lineageos/setupwizard/wizardmanager/WizardScript; (3 occurrences)
+
+#79: Linking unsupported Landroid/content/pm/ApplicationInfo;->enabledSetting:I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$16;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+       Lcom/android/settingslib/applications/ApplicationsState$6;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+       Lcom/android/settingslib/applications/ApplicationsState;->addPackage(Ljava/lang/String;I)V
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V
+
+#80: Linking unsupported,test-api Landroid/content/pm/ApplicationInfo;->privateFlags:I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$15;->filterApp(Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Z
+
+#81: Linking max-target-p Landroid/content/pm/PackageStats;->userHandle:I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState$BackgroundHandler$1;->onGetStatsCompleted(Landroid/content/pm/PackageStats;Z)V (2 occurrences)
+
+#82: Linking unsupported,test-api Landroid/content/pm/UserInfo;->id:I use(s):
+       Lcom/android/settingslib/applications/ApplicationsState;->doResumeIfNeededLocked()V (3 occurrences)
+
+#83: Linking unsupported Landroid/content/res/CompatibilityInfo;->applicationScale:F use(s):
+       Lorg/lineageos/setupwizard/widget/LocalePicker$AccessibilityNodeProviderImpl;->createAccessibilityNodeInfoForNumberPicker(IIII)Landroid/view/accessibility/AccessibilityNodeInfo;
+
+#84: Linking unsupported,test-api Landroid/view/WindowManager$LayoutParams;->privateFlags:I use(s):
+       Lcom/android/settingslib/core/lifecycle/HideNonSystemOverlayMixin;->onStop()V (2 occurrences)
+
+#85: Linking max-target-q Lcom/android/internal/R$styleable;->Preference:[I use(s):
+       Lorg/lineageos/internal/lineageparts/PartsList;->loadPartsFromResourceLocked(Landroid/content/res/Resources;ILjava/util/Map;)V
+
+#86: Reflection max-target-p Landroid/animation/LayoutTransition;->cancel use(s):
+       Landroidx/transition/ViewGroupUtilsApi14;->cancelLayoutTransition(Landroid/animation/LayoutTransition;)V
+
+#87: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#88: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#89: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#90: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#91: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#92: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#93: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#94: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#95: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#96: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#97: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#98: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#99: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#100: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#101: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#102: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#103: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#104: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#105: Reflection max-target-p Landroid/view/View;->mViewFlags use(s):
+       Landroidx/transition/ViewUtilsBase;->setTransitionVisibility(Landroid/view/View;I)V
+
+#106: Reflection max-target-p Landroid/view/View;->setFrame use(s):
+       Landroidx/transition/ViewUtilsBase;->fetchSetFrame()V
+
+#107: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#108: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#109: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doAfterTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#110: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doBeforeTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#111: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->ensureImeVisible use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#112: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#113: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#114: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#115: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#116: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#117: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#118: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+118 hidden API(s) used: 85 linked against, 33 through reflection
+	62 in unsupported
+	17 in blocked
+	19 in max-target-o
+	11 in max-target-p
+	4 in max-target-q
+	5 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
