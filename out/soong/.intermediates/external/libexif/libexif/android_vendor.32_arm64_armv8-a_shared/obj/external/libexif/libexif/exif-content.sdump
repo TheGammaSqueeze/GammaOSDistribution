@@ -1,0 +1,1250 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA5_P12_ExifContent",
+   "name" : "_ExifContent *[5]",
+   "referenced_type" : "_ZTIP12_ExifContent",
+   "self_type" : "_ZTIA5_P12_ExifContent",
+   "size" : 40,
+   "source_file" : "external/libexif/libexif/exif-data.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_FORMAT_BYTE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_FORMAT_ASCII"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_FORMAT_SHORT"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_FORMAT_LONG"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "EXIF_FORMAT_RATIONAL"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "EXIF_FORMAT_SBYTE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "EXIF_FORMAT_UNDEFINED"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EXIF_FORMAT_SSHORT"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "EXIF_FORMAT_SLONG"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "EXIF_FORMAT_SRATIONAL"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "EXIF_FORMAT_FLOAT"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "EXIF_FORMAT_DOUBLE"
+    }
+   ],
+   "linker_set_key" : "_ZTI10ExifFormat",
+   "name" : "ExifFormat",
+   "referenced_type" : "_ZTI10ExifFormat",
+   "self_type" : "_ZTI10ExifFormat",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-format.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_LOG_CODE_NONE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_LOG_CODE_DEBUG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_LOG_CODE_NO_MEMORY"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_LOG_CODE_CORRUPT_DATA"
+    }
+   ],
+   "linker_set_key" : "_ZTI11ExifLogCode",
+   "name" : "ExifLogCode",
+   "referenced_type" : "_ZTI11ExifLogCode",
+   "self_type" : "_ZTI11ExifLogCode",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_DATA_TYPE_UNCOMPRESSED_CHUNKY"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_DATA_TYPE_UNCOMPRESSED_PLANAR"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_DATA_TYPE_UNCOMPRESSED_YCC"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_DATA_TYPE_COMPRESSED"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_DATA_TYPE_COUNT"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_DATA_TYPE_UNKNOWN"
+    }
+   ],
+   "linker_set_key" : "_ZTI12ExifDataType",
+   "name" : "ExifDataType",
+   "referenced_type" : "_ZTI12ExifDataType",
+   "self_type" : "_ZTI12ExifDataType",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-data-type.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_BYTE_ORDER_MOTOROLA"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_BYTE_ORDER_INTEL"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifByteOrder",
+   "name" : "ExifByteOrder",
+   "referenced_type" : "_ZTI13ExifByteOrder",
+   "self_type" : "_ZTI13ExifByteOrder",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-byte-order.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_DATA_OPTION_IGNORE_UNKNOWN_TAGS"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_DATA_OPTION_FOLLOW_SPECIFICATION"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_DATA_OPTION_DONT_CHANGE_MAKER_NOTE"
+    }
+   ],
+   "linker_set_key" : "_ZTI14ExifDataOption",
+   "name" : "ExifDataOption",
+   "referenced_type" : "_ZTI14ExifDataOption",
+   "self_type" : "_ZTI14ExifDataOption",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-data.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_SUPPORT_LEVEL_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_SUPPORT_LEVEL_NOT_RECORDED"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_SUPPORT_LEVEL_MANDATORY"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_SUPPORT_LEVEL_OPTIONAL"
+    }
+   ],
+   "linker_set_key" : "_ZTI16ExifSupportLevel",
+   "name" : "ExifSupportLevel",
+   "referenced_type" : "_ZTI16ExifSupportLevel",
+   "self_type" : "_ZTI16ExifSupportLevel",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-tag.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_IFD_0"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_IFD_1"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_IFD_EXIF"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_IFD_GPS"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_IFD_INTEROPERABILITY"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "EXIF_IFD_COUNT"
+    }
+   ],
+   "linker_set_key" : "_ZTI7ExifIfd",
+   "name" : "ExifIfd",
+   "referenced_type" : "_ZTI7ExifIfd",
+   "self_type" : "_ZTI7ExifIfd",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-ifd.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_TAG_INTEROPERABILITY_INDEX"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_TAG_INTEROPERABILITY_VERSION"
+    },
+    {
+     "enum_field_value" : 254,
+     "name" : "EXIF_TAG_NEW_SUBFILE_TYPE"
+    },
+    {
+     "enum_field_value" : 256,
+     "name" : "EXIF_TAG_IMAGE_WIDTH"
+    },
+    {
+     "enum_field_value" : 257,
+     "name" : "EXIF_TAG_IMAGE_LENGTH"
+    },
+    {
+     "enum_field_value" : 258,
+     "name" : "EXIF_TAG_BITS_PER_SAMPLE"
+    },
+    {
+     "enum_field_value" : 259,
+     "name" : "EXIF_TAG_COMPRESSION"
+    },
+    {
+     "enum_field_value" : 262,
+     "name" : "EXIF_TAG_PHOTOMETRIC_INTERPRETATION"
+    },
+    {
+     "enum_field_value" : 266,
+     "name" : "EXIF_TAG_FILL_ORDER"
+    },
+    {
+     "enum_field_value" : 269,
+     "name" : "EXIF_TAG_DOCUMENT_NAME"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "EXIF_TAG_IMAGE_DESCRIPTION"
+    },
+    {
+     "enum_field_value" : 271,
+     "name" : "EXIF_TAG_MAKE"
+    },
+    {
+     "enum_field_value" : 272,
+     "name" : "EXIF_TAG_MODEL"
+    },
+    {
+     "enum_field_value" : 273,
+     "name" : "EXIF_TAG_STRIP_OFFSETS"
+    },
+    {
+     "enum_field_value" : 274,
+     "name" : "EXIF_TAG_ORIENTATION"
+    },
+    {
+     "enum_field_value" : 277,
+     "name" : "EXIF_TAG_SAMPLES_PER_PIXEL"
+    },
+    {
+     "enum_field_value" : 278,
+     "name" : "EXIF_TAG_ROWS_PER_STRIP"
+    },
+    {
+     "enum_field_value" : 279,
+     "name" : "EXIF_TAG_STRIP_BYTE_COUNTS"
+    },
+    {
+     "enum_field_value" : 282,
+     "name" : "EXIF_TAG_X_RESOLUTION"
+    },
+    {
+     "enum_field_value" : 283,
+     "name" : "EXIF_TAG_Y_RESOLUTION"
+    },
+    {
+     "enum_field_value" : 284,
+     "name" : "EXIF_TAG_PLANAR_CONFIGURATION"
+    },
+    {
+     "enum_field_value" : 296,
+     "name" : "EXIF_TAG_RESOLUTION_UNIT"
+    },
+    {
+     "enum_field_value" : 301,
+     "name" : "EXIF_TAG_TRANSFER_FUNCTION"
+    },
+    {
+     "enum_field_value" : 305,
+     "name" : "EXIF_TAG_SOFTWARE"
+    },
+    {
+     "enum_field_value" : 306,
+     "name" : "EXIF_TAG_DATE_TIME"
+    },
+    {
+     "enum_field_value" : 315,
+     "name" : "EXIF_TAG_ARTIST"
+    },
+    {
+     "enum_field_value" : 318,
+     "name" : "EXIF_TAG_WHITE_POINT"
+    },
+    {
+     "enum_field_value" : 319,
+     "name" : "EXIF_TAG_PRIMARY_CHROMATICITIES"
+    },
+    {
+     "enum_field_value" : 330,
+     "name" : "EXIF_TAG_SUB_IFDS"
+    },
+    {
+     "enum_field_value" : 342,
+     "name" : "EXIF_TAG_TRANSFER_RANGE"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "EXIF_TAG_JPEG_PROC"
+    },
+    {
+     "enum_field_value" : 513,
+     "name" : "EXIF_TAG_JPEG_INTERCHANGE_FORMAT"
+    },
+    {
+     "enum_field_value" : 514,
+     "name" : "EXIF_TAG_JPEG_INTERCHANGE_FORMAT_LENGTH"
+    },
+    {
+     "enum_field_value" : 529,
+     "name" : "EXIF_TAG_YCBCR_COEFFICIENTS"
+    },
+    {
+     "enum_field_value" : 530,
+     "name" : "EXIF_TAG_YCBCR_SUB_SAMPLING"
+    },
+    {
+     "enum_field_value" : 531,
+     "name" : "EXIF_TAG_YCBCR_POSITIONING"
+    },
+    {
+     "enum_field_value" : 532,
+     "name" : "EXIF_TAG_REFERENCE_BLACK_WHITE"
+    },
+    {
+     "enum_field_value" : 700,
+     "name" : "EXIF_TAG_XML_PACKET"
+    },
+    {
+     "enum_field_value" : 4096,
+     "name" : "EXIF_TAG_RELATED_IMAGE_FILE_FORMAT"
+    },
+    {
+     "enum_field_value" : 4097,
+     "name" : "EXIF_TAG_RELATED_IMAGE_WIDTH"
+    },
+    {
+     "enum_field_value" : 4098,
+     "name" : "EXIF_TAG_RELATED_IMAGE_LENGTH"
+    },
+    {
+     "enum_field_value" : 33421,
+     "name" : "EXIF_TAG_CFA_REPEAT_PATTERN_DIM"
+    },
+    {
+     "enum_field_value" : 33422,
+     "name" : "EXIF_TAG_CFA_PATTERN"
+    },
+    {
+     "enum_field_value" : 33423,
+     "name" : "EXIF_TAG_BATTERY_LEVEL"
+    },
+    {
+     "enum_field_value" : 33432,
+     "name" : "EXIF_TAG_COPYRIGHT"
+    },
+    {
+     "enum_field_value" : 33434,
+     "name" : "EXIF_TAG_EXPOSURE_TIME"
+    },
+    {
+     "enum_field_value" : 33437,
+     "name" : "EXIF_TAG_FNUMBER"
+    },
+    {
+     "enum_field_value" : 33723,
+     "name" : "EXIF_TAG_IPTC_NAA"
+    },
+    {
+     "enum_field_value" : 34377,
+     "name" : "EXIF_TAG_IMAGE_RESOURCES"
+    },
+    {
+     "enum_field_value" : 34665,
+     "name" : "EXIF_TAG_EXIF_IFD_POINTER"
+    },
+    {
+     "enum_field_value" : 34675,
+     "name" : "EXIF_TAG_INTER_COLOR_PROFILE"
+    },
+    {
+     "enum_field_value" : 34850,
+     "name" : "EXIF_TAG_EXPOSURE_PROGRAM"
+    },
+    {
+     "enum_field_value" : 34852,
+     "name" : "EXIF_TAG_SPECTRAL_SENSITIVITY"
+    },
+    {
+     "enum_field_value" : 34853,
+     "name" : "EXIF_TAG_GPS_INFO_IFD_POINTER"
+    },
+    {
+     "enum_field_value" : 34855,
+     "name" : "EXIF_TAG_ISO_SPEED_RATINGS"
+    },
+    {
+     "enum_field_value" : 34856,
+     "name" : "EXIF_TAG_OECF"
+    },
+    {
+     "enum_field_value" : 34858,
+     "name" : "EXIF_TAG_TIME_ZONE_OFFSET"
+    },
+    {
+     "enum_field_value" : 36864,
+     "name" : "EXIF_TAG_EXIF_VERSION"
+    },
+    {
+     "enum_field_value" : 36867,
+     "name" : "EXIF_TAG_DATE_TIME_ORIGINAL"
+    },
+    {
+     "enum_field_value" : 36868,
+     "name" : "EXIF_TAG_DATE_TIME_DIGITIZED"
+    },
+    {
+     "enum_field_value" : 37121,
+     "name" : "EXIF_TAG_COMPONENTS_CONFIGURATION"
+    },
+    {
+     "enum_field_value" : 37122,
+     "name" : "EXIF_TAG_COMPRESSED_BITS_PER_PIXEL"
+    },
+    {
+     "enum_field_value" : 37377,
+     "name" : "EXIF_TAG_SHUTTER_SPEED_VALUE"
+    },
+    {
+     "enum_field_value" : 37378,
+     "name" : "EXIF_TAG_APERTURE_VALUE"
+    },
+    {
+     "enum_field_value" : 37379,
+     "name" : "EXIF_TAG_BRIGHTNESS_VALUE"
+    },
+    {
+     "enum_field_value" : 37380,
+     "name" : "EXIF_TAG_EXPOSURE_BIAS_VALUE"
+    },
+    {
+     "enum_field_value" : 37381,
+     "name" : "EXIF_TAG_MAX_APERTURE_VALUE"
+    },
+    {
+     "enum_field_value" : 37382,
+     "name" : "EXIF_TAG_SUBJECT_DISTANCE"
+    },
+    {
+     "enum_field_value" : 37383,
+     "name" : "EXIF_TAG_METERING_MODE"
+    },
+    {
+     "enum_field_value" : 37384,
+     "name" : "EXIF_TAG_LIGHT_SOURCE"
+    },
+    {
+     "enum_field_value" : 37385,
+     "name" : "EXIF_TAG_FLASH"
+    },
+    {
+     "enum_field_value" : 37386,
+     "name" : "EXIF_TAG_FOCAL_LENGTH"
+    },
+    {
+     "enum_field_value" : 37396,
+     "name" : "EXIF_TAG_SUBJECT_AREA"
+    },
+    {
+     "enum_field_value" : 37398,
+     "name" : "EXIF_TAG_TIFF_EP_STANDARD_ID"
+    },
+    {
+     "enum_field_value" : 37500,
+     "name" : "EXIF_TAG_MAKER_NOTE"
+    },
+    {
+     "enum_field_value" : 37510,
+     "name" : "EXIF_TAG_USER_COMMENT"
+    },
+    {
+     "enum_field_value" : 37520,
+     "name" : "EXIF_TAG_SUB_SEC_TIME"
+    },
+    {
+     "enum_field_value" : 37521,
+     "name" : "EXIF_TAG_SUB_SEC_TIME_ORIGINAL"
+    },
+    {
+     "enum_field_value" : 37522,
+     "name" : "EXIF_TAG_SUB_SEC_TIME_DIGITIZED"
+    },
+    {
+     "enum_field_value" : 40091,
+     "name" : "EXIF_TAG_XP_TITLE"
+    },
+    {
+     "enum_field_value" : 40092,
+     "name" : "EXIF_TAG_XP_COMMENT"
+    },
+    {
+     "enum_field_value" : 40093,
+     "name" : "EXIF_TAG_XP_AUTHOR"
+    },
+    {
+     "enum_field_value" : 40094,
+     "name" : "EXIF_TAG_XP_KEYWORDS"
+    },
+    {
+     "enum_field_value" : 40095,
+     "name" : "EXIF_TAG_XP_SUBJECT"
+    },
+    {
+     "enum_field_value" : 40960,
+     "name" : "EXIF_TAG_FLASH_PIX_VERSION"
+    },
+    {
+     "enum_field_value" : 40961,
+     "name" : "EXIF_TAG_COLOR_SPACE"
+    },
+    {
+     "enum_field_value" : 40962,
+     "name" : "EXIF_TAG_PIXEL_X_DIMENSION"
+    },
+    {
+     "enum_field_value" : 40963,
+     "name" : "EXIF_TAG_PIXEL_Y_DIMENSION"
+    },
+    {
+     "enum_field_value" : 40964,
+     "name" : "EXIF_TAG_RELATED_SOUND_FILE"
+    },
+    {
+     "enum_field_value" : 40965,
+     "name" : "EXIF_TAG_INTEROPERABILITY_IFD_POINTER"
+    },
+    {
+     "enum_field_value" : 41483,
+     "name" : "EXIF_TAG_FLASH_ENERGY"
+    },
+    {
+     "enum_field_value" : 41484,
+     "name" : "EXIF_TAG_SPATIAL_FREQUENCY_RESPONSE"
+    },
+    {
+     "enum_field_value" : 41486,
+     "name" : "EXIF_TAG_FOCAL_PLANE_X_RESOLUTION"
+    },
+    {
+     "enum_field_value" : 41487,
+     "name" : "EXIF_TAG_FOCAL_PLANE_Y_RESOLUTION"
+    },
+    {
+     "enum_field_value" : 41488,
+     "name" : "EXIF_TAG_FOCAL_PLANE_RESOLUTION_UNIT"
+    },
+    {
+     "enum_field_value" : 41492,
+     "name" : "EXIF_TAG_SUBJECT_LOCATION"
+    },
+    {
+     "enum_field_value" : 41493,
+     "name" : "EXIF_TAG_EXPOSURE_INDEX"
+    },
+    {
+     "enum_field_value" : 41495,
+     "name" : "EXIF_TAG_SENSING_METHOD"
+    },
+    {
+     "enum_field_value" : 41728,
+     "name" : "EXIF_TAG_FILE_SOURCE"
+    },
+    {
+     "enum_field_value" : 41729,
+     "name" : "EXIF_TAG_SCENE_TYPE"
+    },
+    {
+     "enum_field_value" : 41730,
+     "name" : "EXIF_TAG_NEW_CFA_PATTERN"
+    },
+    {
+     "enum_field_value" : 41985,
+     "name" : "EXIF_TAG_CUSTOM_RENDERED"
+    },
+    {
+     "enum_field_value" : 41986,
+     "name" : "EXIF_TAG_EXPOSURE_MODE"
+    },
+    {
+     "enum_field_value" : 41987,
+     "name" : "EXIF_TAG_WHITE_BALANCE"
+    },
+    {
+     "enum_field_value" : 41988,
+     "name" : "EXIF_TAG_DIGITAL_ZOOM_RATIO"
+    },
+    {
+     "enum_field_value" : 41989,
+     "name" : "EXIF_TAG_FOCAL_LENGTH_IN_35MM_FILM"
+    },
+    {
+     "enum_field_value" : 41990,
+     "name" : "EXIF_TAG_SCENE_CAPTURE_TYPE"
+    },
+    {
+     "enum_field_value" : 41991,
+     "name" : "EXIF_TAG_GAIN_CONTROL"
+    },
+    {
+     "enum_field_value" : 41992,
+     "name" : "EXIF_TAG_CONTRAST"
+    },
+    {
+     "enum_field_value" : 41993,
+     "name" : "EXIF_TAG_SATURATION"
+    },
+    {
+     "enum_field_value" : 41994,
+     "name" : "EXIF_TAG_SHARPNESS"
+    },
+    {
+     "enum_field_value" : 41995,
+     "name" : "EXIF_TAG_DEVICE_SETTING_DESCRIPTION"
+    },
+    {
+     "enum_field_value" : 41996,
+     "name" : "EXIF_TAG_SUBJECT_DISTANCE_RANGE"
+    },
+    {
+     "enum_field_value" : 42016,
+     "name" : "EXIF_TAG_IMAGE_UNIQUE_ID"
+    },
+    {
+     "enum_field_value" : 42240,
+     "name" : "EXIF_TAG_GAMMA"
+    },
+    {
+     "enum_field_value" : 50341,
+     "name" : "EXIF_TAG_PRINT_IMAGE_MATCHING"
+    },
+    {
+     "enum_field_value" : 59932,
+     "name" : "EXIF_TAG_PADDING"
+    }
+   ],
+   "linker_set_key" : "_ZTI7ExifTag",
+   "name" : "ExifTag",
+   "referenced_type" : "_ZTI7ExifTag",
+   "self_type" : "_ZTI7ExifTag",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-tag.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvP10_ExifEntryPvE",
+   "name" : "void (_ExifEntry *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10_ExifEntry"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvP10_ExifEntryPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvP10_ExifEntryPvE",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "exif_content_add_entry",
+   "linker_set_key" : "exif_content_add_entry",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTIP10_ExifEntry"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_dump",
+   "linker_set_key" : "exif_content_dump",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_fix",
+   "linker_set_key" : "exif_content_fix",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_foreach_entry",
+   "linker_set_key" : "exif_content_foreach_entry",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTIPFvP10_ExifEntryPvE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_free",
+   "linker_set_key" : "exif_content_free",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_get_entry",
+   "linker_set_key" : "exif_content_get_entry",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTI7ExifTag"
+    }
+   ],
+   "return_type" : "_ZTIP10_ExifEntry",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_get_ifd",
+   "linker_set_key" : "exif_content_get_ifd",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    }
+   ],
+   "return_type" : "_ZTI7ExifIfd",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_log",
+   "linker_set_key" : "exif_content_log",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTIP8_ExifLog"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_new",
+   "linker_set_key" : "exif_content_new",
+   "return_type" : "_ZTIP12_ExifContent",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_new_mem",
+   "linker_set_key" : "exif_content_new_mem",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    }
+   ],
+   "return_type" : "_ZTIP12_ExifContent",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_ref",
+   "linker_set_key" : "exif_content_ref",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_remove_entry",
+   "linker_set_key" : "exif_content_remove_entry",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "referenced_type" : "_ZTIP10_ExifEntry"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "function_name" : "exif_content_unref",
+   "linker_set_key" : "exif_content_unref",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12_ExifContent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP10_ExifEntry",
+   "name" : "_ExifEntry *",
+   "referenced_type" : "_ZTI10_ExifEntry",
+   "self_type" : "_ZTIP10_ExifEntry",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP12_ExifContent",
+   "name" : "_ExifContent *",
+   "referenced_type" : "_ZTI12_ExifContent",
+   "self_type" : "_ZTIP12_ExifContent",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-entry.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP16_ExifDataPrivate",
+   "name" : "_ExifDataPrivate *",
+   "referenced_type" : "_ZTI16_ExifDataPrivate",
+   "self_type" : "_ZTIP16_ExifDataPrivate",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-data.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP17_ExifEntryPrivate",
+   "name" : "_ExifEntryPrivate *",
+   "referenced_type" : "_ZTI17_ExifEntryPrivate",
+   "self_type" : "_ZTIP17_ExifEntryPrivate",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-entry.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP19_ExifContentPrivate",
+   "name" : "_ExifContentPrivate *",
+   "referenced_type" : "_ZTI19_ExifContentPrivate",
+   "self_type" : "_ZTIP19_ExifContentPrivate",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8_ExifLog",
+   "name" : "_ExifLog *",
+   "referenced_type" : "_ZTI8_ExifLog",
+   "self_type" : "_ZTIP8_ExifLog",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8_ExifMem",
+   "name" : "_ExifMem *",
+   "referenced_type" : "_ZTI8_ExifMem",
+   "self_type" : "_ZTIP8_ExifMem",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP9_ExifData",
+   "name" : "_ExifData *",
+   "referenced_type" : "_ZTI9_ExifData",
+   "self_type" : "_ZTIP9_ExifData",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvP10_ExifEntryPvE",
+   "name" : "void (*)(_ExifEntry *, void *)",
+   "referenced_type" : "_ZTIFvP10_ExifEntryPvE",
+   "self_type" : "_ZTIPFvP10_ExifEntryPvE",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPP10_ExifEntry",
+   "name" : "_ExifEntry **",
+   "referenced_type" : "_ZTIP10_ExifEntry",
+   "self_type" : "_ZTIPP10_ExifEntry",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-entry.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tag",
+     "referenced_type" : "_ZTI7ExifTag"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTI10ExifFormat"
+    },
+    {
+     "field_name" : "components",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "size",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "parent",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIP12_ExifContent"
+    },
+    {
+     "field_name" : "priv",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIP17_ExifEntryPrivate"
+    }
+   ],
+   "linker_set_key" : "_ZTI10_ExifEntry",
+   "name" : "_ExifEntry",
+   "referenced_type" : "_ZTI10_ExifEntry",
+   "self_type" : "_ZTI10_ExifEntry",
+   "size" : 48,
+   "source_file" : "external/libexif/libexif/exif-entry.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI12ExifRational",
+   "name" : "ExifRational",
+   "referenced_type" : "_ZTI12ExifRational",
+   "self_type" : "_ZTI12ExifRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "entries",
+     "referenced_type" : "_ZTIPP10_ExifEntry"
+    },
+    {
+     "field_name" : "count",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "parent",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIP9_ExifData"
+    },
+    {
+     "field_name" : "priv",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIP19_ExifContentPrivate"
+    }
+   ],
+   "linker_set_key" : "_ZTI12_ExifContent",
+   "name" : "_ExifContent",
+   "referenced_type" : "_ZTI12_ExifContent",
+   "self_type" : "_ZTI12_ExifContent",
+   "size" : 32,
+   "source_file" : "external/libexif/libexif/exif-content.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifSRational",
+   "name" : "ExifSRational",
+   "referenced_type" : "_ZTI13ExifSRational",
+   "self_type" : "_ZTI13ExifSRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ifd",
+     "referenced_type" : "_ZTIA5_P12_ExifContent"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "size",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "priv",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIP16_ExifDataPrivate"
+    }
+   ],
+   "linker_set_key" : "_ZTI9_ExifData",
+   "name" : "_ExifData",
+   "referenced_type" : "_ZTI9_ExifData",
+   "self_type" : "_ZTI9_ExifData",
+   "size" : 64,
+   "source_file" : "external/libexif/libexif/exif-data.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
