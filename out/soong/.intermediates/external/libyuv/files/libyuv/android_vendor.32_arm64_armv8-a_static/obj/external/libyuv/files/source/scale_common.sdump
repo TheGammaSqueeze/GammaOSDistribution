@@ -1,0 +1,1617 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA256_j",
+   "name" : "unsigned int [256]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA256_j",
+   "size" : 1024,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kFilterNone"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::kFilterLinear"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "libyuv::kFilterBilinear"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "libyuv::kFilterBox"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv10FilterModeE",
+   "name" : "libyuv::FilterMode",
+   "referenced_type" : "_ZTIN6libyuv10FilterModeE",
+   "self_type" : "_ZTIN6libyuv10FilterModeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/scale.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotate0"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotate90"
+    },
+    {
+     "enum_field_value" : 180,
+     "name" : "libyuv::kRotate180"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotate270"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotateNone"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotateClockwise"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotateCounterClockwise"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12RotationModeE",
+   "name" : "libyuv::RotationMode",
+   "referenced_type" : "_ZTIN6libyuv12RotationModeE",
+   "self_type" : "_ZTIN6libyuv12RotationModeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/rotate.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "libyuv::FixedDiv1_C",
+   "linker_set_key" : "FixedDiv1_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::FixedDiv_C",
+   "linker_set_key" : "FixedDiv_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBCols64_C",
+   "linker_set_key" : "ScaleARGBCols64_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBColsUp2_C",
+   "linker_set_key" : "ScaleARGBColsUp2_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBCols_C",
+   "linker_set_key" : "ScaleARGBCols_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBFilterCols64_C",
+   "linker_set_key" : "ScaleARGBFilterCols64_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBFilterCols_C",
+   "linker_set_key" : "ScaleARGBFilterCols_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBRowDown2Box_C",
+   "linker_set_key" : "ScaleARGBRowDown2Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBRowDown2Linear_C",
+   "linker_set_key" : "ScaleARGBRowDown2Linear_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBRowDown2_C",
+   "linker_set_key" : "ScaleARGBRowDown2_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBRowDownEvenBox_C",
+   "linker_set_key" : "ScaleARGBRowDownEvenBox_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleARGBRowDownEven_C",
+   "linker_set_key" : "ScaleARGBRowDownEven_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleAddRow_16_C",
+   "linker_set_key" : "ScaleAddRow_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleAddRow_C",
+   "linker_set_key" : "ScaleAddRow_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleColsUp2_16_C",
+   "linker_set_key" : "ScaleColsUp2_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleColsUp2_C",
+   "linker_set_key" : "ScaleColsUp2_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleCols_16_C",
+   "linker_set_key" : "ScaleCols_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleCols_C",
+   "linker_set_key" : "ScaleCols_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleFilterCols64_16_C",
+   "linker_set_key" : "ScaleFilterCols64_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleFilterCols64_C",
+   "linker_set_key" : "ScaleFilterCols64_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleFilterCols_16_C",
+   "linker_set_key" : "ScaleFilterCols_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleFilterCols_C",
+   "linker_set_key" : "ScaleFilterCols_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleFilterReduce",
+   "linker_set_key" : "ScaleFilterReduce",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIN6libyuv10FilterModeE"
+    }
+   ],
+   "return_type" : "_ZTIN6libyuv10FilterModeE",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScalePlaneVertical",
+   "linker_set_key" : "ScalePlaneVertical",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIN6libyuv10FilterModeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScalePlaneVertical_16",
+   "linker_set_key" : "ScalePlaneVertical_16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIN6libyuv10FilterModeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2Box_16_C",
+   "linker_set_key" : "ScaleRowDown2Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2Box_C",
+   "linker_set_key" : "ScaleRowDown2Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2Box_Odd_C",
+   "linker_set_key" : "ScaleRowDown2Box_Odd_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2Linear_16_C",
+   "linker_set_key" : "ScaleRowDown2Linear_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2Linear_C",
+   "linker_set_key" : "ScaleRowDown2Linear_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2_16_C",
+   "linker_set_key" : "ScaleRowDown2_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown2_C",
+   "linker_set_key" : "ScaleRowDown2_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_0_Box_16_C",
+   "linker_set_key" : "ScaleRowDown34_0_Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_0_Box_C",
+   "linker_set_key" : "ScaleRowDown34_0_Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_16_C",
+   "linker_set_key" : "ScaleRowDown34_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_1_Box_16_C",
+   "linker_set_key" : "ScaleRowDown34_1_Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_1_Box_C",
+   "linker_set_key" : "ScaleRowDown34_1_Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown34_C",
+   "linker_set_key" : "ScaleRowDown34_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_16_C",
+   "linker_set_key" : "ScaleRowDown38_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_2_Box_16_C",
+   "linker_set_key" : "ScaleRowDown38_2_Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_2_Box_C",
+   "linker_set_key" : "ScaleRowDown38_2_Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_3_Box_16_C",
+   "linker_set_key" : "ScaleRowDown38_3_Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_3_Box_C",
+   "linker_set_key" : "ScaleRowDown38_3_Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown38_C",
+   "linker_set_key" : "ScaleRowDown38_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown4Box_16_C",
+   "linker_set_key" : "ScaleRowDown4Box_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown4Box_C",
+   "linker_set_key" : "ScaleRowDown4Box_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown4_16_C",
+   "linker_set_key" : "ScaleRowDown4_16_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleRowDown4_C",
+   "linker_set_key" : "ScaleRowDown4_C",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "function_name" : "libyuv::ScaleSlope",
+   "linker_set_key" : "ScaleSlope",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIN6libyuv10FilterModeE"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasARME",
+   "name" : "libyuv::kCpuHasARM",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasAVXE",
+   "name" : "libyuv::kCpuHasAVX",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasMMIE",
+   "name" : "libyuv::kCpuHasMMI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasMSAE",
+   "name" : "libyuv::kCpuHasMSA",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL10kCpuHasX86E",
+   "name" : "libyuv::kCpuHasX86",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasAVX2E",
+   "name" : "libyuv::kCpuHasAVX2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasERMSE",
+   "name" : "libyuv::kCpuHasERMS",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasF16CE",
+   "name" : "libyuv::kCpuHasF16C",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasFMA3E",
+   "name" : "libyuv::kCpuHasFMA3",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasGFNIE",
+   "name" : "libyuv::kCpuHasGFNI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasMIPSE",
+   "name" : "libyuv::kCpuHasMIPS",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasNEONE",
+   "name" : "libyuv::kCpuHasNEON",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL11kCpuHasSSE2E",
+   "name" : "libyuv::kCpuHasSSE2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSE41E",
+   "name" : "libyuv::kCpuHasSSE41",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSE42E",
+   "name" : "libyuv::kCpuHasSSE42",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL12kCpuHasSSSE3E",
+   "name" : "libyuv::kCpuHasSSSE3",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuHasAVX512BWE",
+   "name" : "libyuv::kCpuHasAVX512BW",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuHasAVX512VLE",
+   "name" : "libyuv::kCpuHasAVX512VL",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL15kCpuInitializedE",
+   "name" : "libyuv::kCpuInitialized",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL17kCpuHasAVX512VBMIE",
+   "name" : "libyuv::kCpuHasAVX512VBMI",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL18kCpuHasAVX512VBMI2E",
+   "name" : "libyuv::kCpuHasAVX512VBMI2",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL20kCpuHasAVX512VBITALGE",
+   "name" : "libyuv::kCpuHasAVX512VBITALG",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL22kCpuHasAVX512VPOPCNTDQE",
+   "name" : "libyuv::kCpuHasAVX512VPOPCNTDQ",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "cpu_info_",
+   "name" : "libyuv::cpu_info_",
+   "referenced_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "linker_set_key" : "fixed_invtbl8",
+   "name" : "libyuv::fixed_invtbl8",
+   "referenced_type" : "_ZTIA256_Kj",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvH709Constants",
+   "name" : "libyuv::kYuvH709Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvI601Constants",
+   "name" : "libyuv::kYuvI601Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYuvJPEGConstants",
+   "name" : "libyuv::kYuvJPEGConstants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuH709Constants",
+   "name" : "libyuv::kYvuH709Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuI601Constants",
+   "name" : "libyuv::kYvuI601Constants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "linker_set_key" : "kYvuJPEGConstants",
+   "name" : "libyuv::kYvuJPEGConstants",
+   "referenced_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKt",
+   "name" : "const unsigned short *",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIPKt",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPt",
+   "name" : "unsigned short *",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIPt",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA256_Kj",
+   "name" : "unsigned int const[256]",
+   "referenced_type" : "_ZTIA256_j",
+   "self_type" : "_ZTIA256_Kj",
+   "size" : 1024,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN6libyuv12YuvConstantsE",
+   "name" : "const libyuv::YuvConstants",
+   "referenced_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "self_type" : "_ZTIKN6libyuv12YuvConstantsE",
+   "size" : 96,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/cpu_id.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKt",
+   "name" : "const unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIKt",
+   "size" : 2,
+   "source_file" : "external/libyuv/files/include/libyuv/scale_row.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "kUVToRB",
+     "referenced_type" : "_ZTIDv8_t"
+    },
+    {
+     "field_name" : "kUVToRB2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIDv8_t"
+    },
+    {
+     "field_name" : "kUVToG",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIDv8_t"
+    },
+    {
+     "field_name" : "kUVToG2",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIDv8_t"
+    },
+    {
+     "field_name" : "kUVBiasBGR",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIDv8_s"
+    },
+    {
+     "field_name" : "kYToRgb",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIDv4_i"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12YuvConstantsE",
+   "name" : "libyuv::YuvConstants",
+   "referenced_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "self_type" : "_ZTIN6libyuv12YuvConstantsE",
+   "size" : 96,
+   "source_file" : "external/libyuv/files/include/libyuv/row.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
