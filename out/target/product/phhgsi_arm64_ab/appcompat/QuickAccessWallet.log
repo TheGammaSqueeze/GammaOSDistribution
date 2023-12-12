@@ -1,0 +1,141 @@
+Package name: com.android.systemui.plugin.globalactions.wallet
+Module name in Android tree: QuickAccessWallet
+Local path in Android tree: packages/apps/QuickAccessWallet
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/QuickAccessWallet/QuickAccessWallet.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking max-target-o Landroid/graphics/drawable/GradientDrawable;->setXfermode(Landroid/graphics/Xfermode;)V use(s):
+       Lcom/android/systemui/animation/LaunchAnimator;->applyStateToWindowBackgroundLayer(Landroid/graphics/drawable/GradientDrawable;Lcom/android/systemui/animation/LaunchAnimator$State;FLandroid/view/View;Z)V
+
+#2: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->addWalletServiceEventListener(Landroid/service/quickaccesswallet/QuickAccessWalletClient$WalletServiceEventListener;)V use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->queryWalletCards()V
+
+#3: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->create(Landroid/content/Context;)Landroid/service/quickaccesswallet/QuickAccessWalletClient; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPluginService;->onCreate(Landroid/content/Context;Landroid/content/Context;)V
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPluginService;->onPanelShown(Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$Callbacks;Z)Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$PanelViewController;
+
+#4: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->createWalletIntent()Landroid/content/Intent; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->getOverflowItems()[Lcom/android/systemui/plugin/globalactions/wallet/WalletPopupMenu$OverflowItem;
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->showEmptyStateView()V
+
+#5: Linking blocked Landroid/service/quickaccesswallet/QuickAccessWalletClient;->getLogo()Landroid/graphics/drawable/Drawable; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->showEmptyStateView()V
+
+#6: Linking blocked Landroid/service/quickaccesswallet/QuickAccessWalletClient;->getServiceLabel()Ljava/lang/CharSequence; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->showEmptyStateView()V
+
+#7: Linking blocked Landroid/service/quickaccesswallet/QuickAccessWalletClient;->getShortcutLongLabel()Ljava/lang/CharSequence; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->showEmptyStateView()V
+
+#8: Linking blocked Landroid/service/quickaccesswallet/QuickAccessWalletClient;->getShortcutShortLabel()Ljava/lang/CharSequence; use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->getOverflowItems()[Lcom/android/systemui/plugin/globalactions/wallet/WalletPopupMenu$OverflowItem;
+
+#9: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->getWalletCards(Ljava/util/concurrent/Executor;Landroid/service/quickaccesswallet/GetWalletCardsRequest;Landroid/service/quickaccesswallet/QuickAccessWalletClient$OnWalletCardsRetrievedCallback;)V use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->queryWalletCards()V
+
+#10: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->isWalletFeatureAvailable()Z use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPluginService;->onPanelShown(Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$Callbacks;ZLandroid/service/quickaccesswallet/QuickAccessWalletClient;)Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$PanelViewController;
+
+#11: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->isWalletFeatureAvailableWhenDeviceLocked()Z use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->queryWalletCards()V
+
+#12: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->isWalletServiceAvailable()Z use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPluginService;->onCreate(Landroid/content/Context;Landroid/content/Context;Landroid/service/quickaccesswallet/QuickAccessWalletClient;)V
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPluginService;->onPanelShown(Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$Callbacks;ZLandroid/service/quickaccesswallet/QuickAccessWalletClient;)Lcom/android/systemui/plugins/GlobalActionsPanelPlugin$PanelViewController;
+
+#13: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->notifyWalletDismissed()V use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->onDismissed()V
+
+#14: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->removeWalletServiceEventListener(Landroid/service/quickaccesswallet/QuickAccessWalletClient$WalletServiceEventListener;)V use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->onDismissed()V
+
+#15: Linking blocked,test-api Landroid/service/quickaccesswallet/QuickAccessWalletClient;->selectWalletCard(Landroid/service/quickaccesswallet/SelectWalletCardRequest;)V use(s):
+       Lcom/android/systemui/plugin/globalactions/wallet/WalletPanelViewController;->selectCard()V
+
+#16: Linking unsupported Landroid/util/MathUtils;->constrain(FFF)F use(s):
+       Lcom/android/systemui/animation/LaunchAnimator$Companion;->getProgress(Lcom/android/systemui/animation/LaunchAnimator$Timings;FJJ)F
+
+#17: Linking unsupported Landroid/util/MathUtils;->lerp(FFF)F use(s):
+       Lcom/android/systemui/animation/LaunchAnimator$startAnimation$2;->onAnimationUpdate(Landroid/animation/ValueAnimator;)V (3 occurrences)
+
+#18: Linking blocked Landroid/util/MathUtils;->lerp(IIF)F use(s):
+       Lcom/android/systemui/animation/LaunchAnimator$startAnimation$2;->onAnimationUpdate(Landroid/animation/ValueAnimator;)V (3 occurrences)
+
+#19: Linking unsupported Landroid/view/IRemoteAnimationFinishedCallback;->onAnimationFinished()V use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->invoke(Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#20: Linking unsupported Landroid/view/IRemoteAnimationRunner$Stub;-><init>()V use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;-><init>(Lcom/android/systemui/animation/ActivityLaunchAnimator;Lcom/android/systemui/animation/ActivityLaunchAnimator$Controller;)V
+
+#21: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;-><init>(Landroid/view/SurfaceControl;)V use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#22: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->build()Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#23: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->withAlpha(F)Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V (2 occurrences)
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#24: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->withCornerRadius(F)Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#25: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->withMatrix(Landroid/graphics/Matrix;)Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#26: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->withVisibility(Z)Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#27: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder;->withWindowCrop(Landroid/graphics/Rect;)Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams$Builder; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#28: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier;-><init>(Landroid/view/View;)V use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;-><init>(Lcom/android/systemui/animation/ActivityLaunchAnimator;Lcom/android/systemui/animation/ActivityLaunchAnimator$Controller;)V
+
+#29: Linking blocked Landroid/view/SyncRtSurfaceTransactionApplier;->scheduleApply([Landroid/view/SyncRtSurfaceTransactionApplier$SurfaceParams;)V use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#30: Linking blocked Lcom/android/internal/policy/ScreenDecorationsUtils;->getWindowCornerRadius(Landroid/content/Context;)F use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->startAnimation([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#31: Linking unsupported Landroid/view/RemoteAnimationTarget;->leash:Landroid/view/SurfaceControl; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+
+#32: Linking unsupported Landroid/view/RemoteAnimationTarget;->mode:I use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->startAnimation([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#33: Linking blocked Landroid/view/RemoteAnimationTarget;->screenSpaceBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToWindow(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->startAnimation([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#34: Linking unsupported Landroid/view/RemoteAnimationTarget;->sourceContainerBounds:Landroid/graphics/Rect; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->applyStateToNavigationBar(Landroid/view/RemoteAnimationTarget;Lcom/android/systemui/animation/LaunchAnimator$State;F)V
+
+#35: Linking blocked Landroid/view/RemoteAnimationTarget;->taskInfo:Landroid/app/ActivityManager$RunningTaskInfo; use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->startAnimation([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#36: Linking blocked Landroid/view/RemoteAnimationTarget;->windowType:I use(s):
+       Lcom/android/systemui/animation/ActivityLaunchAnimator$Runner;->startAnimation([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V
+
+#37: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+37 hidden API(s) used: 36 linked against, 1 through reflection
+	8 in unsupported
+	28 in blocked
+	1 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

@@ -1,0 +1,166 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterface.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IApInterface.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterface.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterfaceEventCallback.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IApInterfaceEventCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterfaceEventCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IClientInterface.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IClientInterface.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IClientInterface.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IInterfaceEventCallback.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IInterfaceEventCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IInterfaceEventCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IPnoScanEvent.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IPnoScanEvent.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IPnoScanEvent.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IScanEvent.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IScanEvent.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IScanEvent.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/ISendMgmtFrameEvent.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/ISendMgmtFrameEvent.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/ISendMgmtFrameEvent.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificond.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IWificond.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificond.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificondEventCallback.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IWificondEventCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificondEventCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWifiScannerImpl.cpp.d --ninja -Isystem/connectivity/wificond/aidl -Isystem/connectivity/wificond/aidl/ system/connectivity/wificond/aidl/android/net/wifi/nl80211/IWifiScannerImpl.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWifiScannerImpl.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterface.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IApInterfaceEventCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IClientInterface.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IInterfaceEventCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IPnoScanEvent.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IScanEvent.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/ISendMgmtFrameEvent.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificond.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWificondEventCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/net/wifi/nl80211/IWifiScannerImpl.cpp.d"
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnApInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnApInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnApInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnApInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnClientInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnClientInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnPnoScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnPnoScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnSendMgmtFrameEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnSendMgmtFrameEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnWifiScannerImpl.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnWifiScannerImpl.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnWificond.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnWificond.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BnWificondEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BnWificondEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpApInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpApInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpApInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpApInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpClientInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpClientInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpPnoScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpPnoScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpSendMgmtFrameEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpSendMgmtFrameEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpWifiScannerImpl.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpWifiScannerImpl.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpWificond.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpWificond.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/BpWificondEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/BpWificondEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IApInterface.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IApInterface.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IApInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IApInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IApInterfaceEventCallback.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IApInterfaceEventCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IApInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IApInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IClientInterface.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IClientInterface.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IClientInterface.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IClientInterface.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IInterfaceEventCallback.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IInterfaceEventCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IInterfaceEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IInterfaceEventCallback.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IPnoScanEvent.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IPnoScanEvent.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IPnoScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IPnoScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IScanEvent.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IScanEvent.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IScanEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IScanEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/ISendMgmtFrameEvent.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/ISendMgmtFrameEvent.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/ISendMgmtFrameEvent.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/ISendMgmtFrameEvent.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWifiScannerImpl.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWifiScannerImpl.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWifiScannerImpl.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWifiScannerImpl.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWificond.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWificond.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWificond.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWificond.h"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWificondEventCallback.cpp"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWificondEventCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/net/wifi/nl80211/IWificondEventCallback.h"
+    to: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IWificondEventCallback.h"
+  >
+  input_hash: "262ace34388bdf9fce7031bc56e41df781839b10edac1f4d81d8e8973f874279"
+>
+output_depfile: "out/soong/.intermediates/system/connectivity/wificond/libwificond_ipc/android_arm64_armv8-a_static/gen/aidl/android/net/wifi/nl80211/IApInterface.cpp.d"
+
