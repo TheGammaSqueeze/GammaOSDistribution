@@ -1,0 +1,689 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvS_jjE",
+   "name" : "void *(void *, unsigned int, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvS_jjE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvS_jjE",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvS_E",
+   "name" : "void (void *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvS_E",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvS_E",
+   "source_file" : "external/zlib/zlib.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "gzclose_w",
+   "linker_set_key" : "gzclose_w",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzflush",
+   "linker_set_key" : "gzflush",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzfwrite",
+   "linker_set_key" : "gzfwrite",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzprintf",
+   "linker_set_key" : "gzprintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzputc",
+   "linker_set_key" : "gzputc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzputs",
+   "linker_set_key" : "gzputs",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzsetparams",
+   "linker_set_key" : "gzsetparams",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzvprintf",
+   "linker_set_key" : "gzvprintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTI9__va_list"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "function_name" : "gzwrite",
+   "linker_set_key" : "gzwrite",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8gzFile_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/zlib/zlib.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP14internal_state",
+   "name" : "internal_state *",
+   "referenced_type" : "_ZTI14internal_state",
+   "self_type" : "_ZTIP14internal_state",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8gzFile_s",
+   "name" : "gzFile_s *",
+   "referenced_type" : "_ZTI8gzFile_s",
+   "self_type" : "_ZTIP8gzFile_s",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPvS_jjE",
+   "name" : "void *(*)(void *, unsigned int, unsigned int)",
+   "referenced_type" : "_ZTIFPvS_jjE",
+   "self_type" : "_ZTIPFPvS_jjE",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvPvS_E",
+   "name" : "void (*)(void *, void *)",
+   "referenced_type" : "_ZTIFvPvS_E",
+   "self_type" : "_ZTIPFvPvS_E",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/zlib/gzguts.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/zlib/zlib.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/zlib/zlib.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "next_in",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "avail_in",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "total_in",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "next_out",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "avail_out",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "total_out",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "msg",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "state",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIP14internal_state"
+    },
+    {
+     "field_name" : "zalloc",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIPFPvS_jjE"
+    },
+    {
+     "field_name" : "zfree",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIPFvPvS_E"
+    },
+    {
+     "field_name" : "opaque",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "data_type",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "adler",
+     "field_offset" : 768,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "reserved",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI10z_stream_s",
+   "name" : "z_stream_s",
+   "referenced_type" : "_ZTI10z_stream_s",
+   "self_type" : "_ZTI10z_stream_s",
+   "size" : 112,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "text",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "time",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "xflags",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "os",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "extra",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "extra_len",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "extra_max",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "name",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "name_max",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "comment",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "comm_max",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "hcrc",
+     "field_offset" : 544,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "done",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI11gz_header_s",
+   "name" : "gz_header_s",
+   "referenced_type" : "_ZTI11gz_header_s",
+   "self_type" : "_ZTI11gz_header_s",
+   "size" : 80,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "have",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "next",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "pos",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "linker_set_key" : "_ZTI8gzFile_s",
+   "name" : "gzFile_s",
+   "referenced_type" : "_ZTI8gzFile_s",
+   "self_type" : "_ZTI8gzFile_s",
+   "size" : 24,
+   "source_file" : "external/zlib/zlib.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "x",
+     "referenced_type" : "_ZTI8gzFile_s"
+    },
+    {
+     "field_name" : "mode",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "fd",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "path",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "field_name" : "size",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "want",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "in",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "out",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "direct",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "how",
+     "field_offset" : 544,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "start",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "field_name" : "eof",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "past",
+     "field_offset" : 672,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "level",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "strategy",
+     "field_offset" : 736,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "skip",
+     "field_offset" : 768,
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "field_name" : "seek",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "err",
+     "field_offset" : 864,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "msg",
+     "field_offset" : 896,
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "field_name" : "strm",
+     "field_offset" : 960,
+     "referenced_type" : "_ZTI10z_stream_s"
+    }
+   ],
+   "linker_set_key" : "_ZTI8gz_state",
+   "name" : "gz_state",
+   "referenced_type" : "_ZTI8gz_state",
+   "self_type" : "_ZTI8gz_state",
+   "size" : 232,
+   "source_file" : "external/zlib/gzguts.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
