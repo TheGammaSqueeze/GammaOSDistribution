@@ -1,0 +1,971 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA56_h",
+   "name" : "unsigned char [56]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA56_h",
+   "size" : 56,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPPKvS1_E",
+   "name" : "int (const void **, const void **)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPPKv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPPKvS1_E",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPPKvS1_E",
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "CBB_add_asn1",
+   "linker_set_key" : "CBB_add_asn1",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_asn1_bool",
+   "linker_set_key" : "CBB_add_asn1_bool",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_asn1_int64",
+   "linker_set_key" : "CBB_add_asn1_int64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIx"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_asn1_octet_string",
+   "linker_set_key" : "CBB_add_asn1_octet_string",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_asn1_oid_from_text",
+   "linker_set_key" : "CBB_add_asn1_oid_from_text",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_asn1_uint64",
+   "linker_set_key" : "CBB_add_asn1_uint64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_bytes",
+   "linker_set_key" : "CBB_add_bytes",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_space",
+   "linker_set_key" : "CBB_add_space",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u16",
+   "linker_set_key" : "CBB_add_u16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u16_length_prefixed",
+   "linker_set_key" : "CBB_add_u16_length_prefixed",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u16le",
+   "linker_set_key" : "CBB_add_u16le",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u24",
+   "linker_set_key" : "CBB_add_u24",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u24_length_prefixed",
+   "linker_set_key" : "CBB_add_u24_length_prefixed",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u32",
+   "linker_set_key" : "CBB_add_u32",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u32le",
+   "linker_set_key" : "CBB_add_u32le",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u64",
+   "linker_set_key" : "CBB_add_u64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u64le",
+   "linker_set_key" : "CBB_add_u64le",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u8",
+   "linker_set_key" : "CBB_add_u8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_add_u8_length_prefixed",
+   "linker_set_key" : "CBB_add_u8_length_prefixed",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_cleanup",
+   "linker_set_key" : "CBB_cleanup",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_data",
+   "linker_set_key" : "CBB_data",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIPKh",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_did_write",
+   "linker_set_key" : "CBB_did_write",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_discard_child",
+   "linker_set_key" : "CBB_discard_child",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_finish",
+   "linker_set_key" : "CBB_finish",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_flush",
+   "linker_set_key" : "CBB_flush",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_flush_asn1_set_of",
+   "linker_set_key" : "CBB_flush_asn1_set_of",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_init",
+   "linker_set_key" : "CBB_init",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_init_fixed",
+   "linker_set_key" : "CBB_init_fixed",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_len",
+   "linker_set_key" : "CBB_len",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_reserve",
+   "linker_set_key" : "CBB_reserve",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "function_name" : "CBB_zero",
+   "linker_set_key" : "CBB_zero",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6cbb_st"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP13cbb_buffer_st",
+   "name" : "cbb_buffer_st *",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTIP13cbb_buffer_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP13stack_st_void",
+   "name" : "stack_st_void *",
+   "referenced_type" : "_ZTI13stack_st_void",
+   "self_type" : "_ZTIP13stack_st_void",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/ex_data.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP20CRYPTO_dynlock_value",
+   "name" : "CRYPTO_dynlock_value *",
+   "referenced_type" : "_ZTI20CRYPTO_dynlock_value",
+   "self_type" : "_ZTIP20CRYPTO_dynlock_value",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP6cbb_st",
+   "name" : "cbb_st *",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTIP6cbb_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPPKvS1_E",
+   "name" : "int (*)(const void **, const void **)",
+   "referenced_type" : "_ZTIFiPPKvS1_E",
+   "self_type" : "_ZTIPFiPPKvS1_E",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK6cbb_st",
+   "name" : "const cbb_st *",
+   "referenced_type" : "_ZTIK6cbb_st",
+   "self_type" : "_ZTIPK6cbb_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPKv",
+   "name" : "const void **",
+   "referenced_type" : "_ZTIPKv",
+   "self_type" : "_ZTIPPKv",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPh",
+   "name" : "unsigned char **",
+   "referenced_type" : "_ZTIPh",
+   "self_type" : "_ZTIPPh",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPv",
+   "name" : "void **",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIPPv",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK6cbb_st",
+   "name" : "const cbb_st",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTIK6cbb_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "buf",
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "cap",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "can_resize",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "error",
+     "field_offset" : 104,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI13cbb_buffer_st",
+   "name" : "cbb_buffer_st",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTI13cbb_buffer_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "references",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIP20CRYPTO_dynlock_value"
+    }
+   ],
+   "linker_set_key" : "_ZTI14CRYPTO_dynlock",
+   "name" : "CRYPTO_dynlock",
+   "referenced_type" : "_ZTI14CRYPTO_dynlock",
+   "self_type" : "_ZTI14CRYPTO_dynlock",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "alignment",
+     "referenced_type" : "_ZTId"
+    },
+    {
+     "field_name" : "padding",
+     "referenced_type" : "_ZTIA56_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI15crypto_mutex_st",
+   "name" : "crypto_mutex_st",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI15crypto_mutex_st",
+   "self_type" : "_ZTI15crypto_mutex_st",
+   "size" : 56,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "sk",
+     "referenced_type" : "_ZTIP13stack_st_void"
+    }
+   ],
+   "linker_set_key" : "_ZTI17crypto_ex_data_st",
+   "name" : "crypto_ex_data_st",
+   "referenced_type" : "_ZTI17crypto_ex_data_st",
+   "self_type" : "_ZTI17crypto_ex_data_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/ex_data.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "base",
+     "referenced_type" : "_ZTIP13cbb_buffer_st"
+    },
+    {
+     "field_name" : "child",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "field_name" : "offset",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "pending_len_len",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "pending_is_asn1",
+     "field_offset" : 104,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "is_child",
+     "field_offset" : 112,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbb_st",
+   "name" : "cbb_st",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTI6cbb_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbs_st",
+   "name" : "cbs_st",
+   "referenced_type" : "_ZTI6cbs_st",
+   "self_type" : "_ZTI6cbs_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "num",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "field_name" : "sorted",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "num_alloc",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "comp",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFiPPKvS1_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI8stack_st",
+   "name" : "stack_st",
+   "referenced_type" : "_ZTI8stack_st",
+   "self_type" : "_ZTI8stack_st",
+   "size" : 20,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

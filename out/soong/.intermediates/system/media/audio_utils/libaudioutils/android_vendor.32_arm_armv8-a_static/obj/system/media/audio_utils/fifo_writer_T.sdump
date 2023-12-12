@@ -1,0 +1,812 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "AUDIO_UTILS_FIFO_SYNC_SINGLE_THREADED"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "AUDIO_UTILS_FIFO_SYNC_SLEEP"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "AUDIO_UTILS_FIFO_SYNC_PRIVATE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "AUDIO_UTILS_FIFO_SYNC_SHARED"
+    }
+   ],
+   "linker_set_key" : "_ZTI21audio_utils_fifo_sync",
+   "name" : "audio_utils_fifo_sync",
+   "referenced_type" : "_ZTI21audio_utils_fifo_sync",
+   "self_type" : "_ZTI21audio_utils_fifo_sync",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "audio_utils_fifo_index::audio_utils_fifo_index",
+   "linker_set_key" : "_ZN22audio_utils_fifo_indexC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP22audio_utils_fifo_index"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_index::audio_utils_fifo_index",
+   "linker_set_key" : "_ZN22audio_utils_fifo_indexC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP22audio_utils_fifo_index"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_index::~audio_utils_fifo_index",
+   "linker_set_key" : "_ZN22audio_utils_fifo_indexD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP22audio_utils_fifo_index"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_index::~audio_utils_fifo_index",
+   "linker_set_key" : "_ZN22audio_utils_fifo_indexD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP22audio_utils_fifo_index"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_provider::fifo",
+   "linker_set_key" : "_ZN25audio_utils_fifo_provider4fifoEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP25audio_utils_fifo_provider"
+    }
+   ],
+   "return_type" : "_ZTIR16audio_utils_fifo",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo::buffer",
+   "linker_set_key" : "_ZNK16audio_utils_fifo6bufferEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK16audio_utils_fifo"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo::frameSize",
+   "linker_set_key" : "_ZNK16audio_utils_fifo9frameSizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK16audio_utils_fifo"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_base::capacity",
+   "linker_set_key" : "_ZNK21audio_utils_fifo_base8capacityEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK21audio_utils_fifo_base"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_reader::totalFlushed",
+   "linker_set_key" : "_ZNK23audio_utils_fifo_reader12totalFlushedEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK23audio_utils_fifo_reader"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_reader::totalLost",
+   "linker_set_key" : "_ZNK23audio_utils_fifo_reader9totalLostEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK23audio_utils_fifo_reader"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_provider::totalReleased",
+   "linker_set_key" : "_ZNK25audio_utils_fifo_provider13totalReleasedEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK25audio_utils_fifo_provider"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "function_name" : "audio_utils_fifo_provider::capacity",
+   "linker_set_key" : "_ZNK25audio_utils_fifo_provider8capacityEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK25audio_utils_fifo_provider"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "access" : "protected",
+   "linker_set_key" : "_ZN25audio_utils_fifo_provider8kRetriesE",
+   "name" : "audio_utils_fifo_provider::kRetries",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIR16audio_utils_fifo",
+   "name" : "audio_utils_fifo &",
+   "referenced_type" : "_ZTI16audio_utils_fifo",
+   "self_type" : "_ZTIR16audio_utils_fifo",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIR22audio_utils_fifo_index",
+   "name" : "audio_utils_fifo_index &",
+   "referenced_type" : "_ZTI22audio_utils_fifo_index",
+   "self_type" : "_ZTIR22audio_utils_fifo_index",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP22audio_utils_fifo_index",
+   "name" : "audio_utils_fifo_index *",
+   "referenced_type" : "_ZTI22audio_utils_fifo_index",
+   "self_type" : "_ZTIP22audio_utils_fifo_index",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP25audio_utils_fifo_provider",
+   "name" : "audio_utils_fifo_provider *",
+   "referenced_type" : "_ZTI25audio_utils_fifo_provider",
+   "self_type" : "_ZTIP25audio_utils_fifo_provider",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK16audio_utils_fifo",
+   "name" : "const audio_utils_fifo *",
+   "referenced_type" : "_ZTIK16audio_utils_fifo",
+   "self_type" : "_ZTIPK16audio_utils_fifo",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK21audio_utils_fifo_base",
+   "name" : "const audio_utils_fifo_base *",
+   "referenced_type" : "_ZTIK21audio_utils_fifo_base",
+   "self_type" : "_ZTIPK21audio_utils_fifo_base",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK23audio_utils_fifo_reader",
+   "name" : "const audio_utils_fifo_reader *",
+   "referenced_type" : "_ZTIK23audio_utils_fifo_reader",
+   "self_type" : "_ZTIPK23audio_utils_fifo_reader",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK25audio_utils_fifo_provider",
+   "name" : "const audio_utils_fifo_provider *",
+   "referenced_type" : "_ZTIK25audio_utils_fifo_provider",
+   "self_type" : "_ZTIPK25audio_utils_fifo_provider",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK16audio_utils_fifo",
+   "name" : "const audio_utils_fifo",
+   "referenced_type" : "_ZTI16audio_utils_fifo",
+   "self_type" : "_ZTIK16audio_utils_fifo",
+   "size" : 48,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK21audio_utils_fifo_base",
+   "name" : "const audio_utils_fifo_base",
+   "referenced_type" : "_ZTI21audio_utils_fifo_base",
+   "self_type" : "_ZTIK21audio_utils_fifo_base",
+   "size" : 32,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK21audio_utils_fifo_sync",
+   "name" : "const audio_utils_fifo_sync",
+   "referenced_type" : "_ZTI21audio_utils_fifo_sync",
+   "self_type" : "_ZTIK21audio_utils_fifo_sync",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK23audio_utils_fifo_reader",
+   "name" : "const audio_utils_fifo_reader",
+   "referenced_type" : "_ZTI23audio_utils_fifo_reader",
+   "self_type" : "_ZTIK23audio_utils_fifo_reader",
+   "size" : 64,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK25audio_utils_fifo_provider",
+   "name" : "const audio_utils_fifo_provider",
+   "referenced_type" : "_ZTI25audio_utils_fifo_provider",
+   "self_type" : "_ZTIK25audio_utils_fifo_provider",
+   "size" : 24,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKP22audio_utils_fifo_index",
+   "name" : "audio_utils_fifo_index *const",
+   "referenced_type" : "_ZTIP22audio_utils_fifo_index",
+   "self_type" : "_ZTIKP22audio_utils_fifo_index",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPv",
+   "name" : "void *const",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIKPv",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTI21audio_utils_fifo_base"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mFrameSize",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mBuffer",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIKPv"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mSingleProcessSharedRear",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTI22audio_utils_fifo_index"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mSingleProcessSharedFront",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTI22audio_utils_fifo_index"
+    }
+   ],
+   "linker_set_key" : "_ZTI16audio_utils_fifo",
+   "name" : "audio_utils_fifo",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI16audio_utils_fifo",
+   "self_type" : "_ZTI16audio_utils_fifo",
+   "size" : 48,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "mOffset",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "mLength",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI17audio_utils_iovec",
+   "name" : "audio_utils_iovec",
+   "referenced_type" : "_ZTI17audio_utils_iovec",
+   "self_type" : "_ZTI17audio_utils_iovec",
+   "size" : 8,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "protected",
+     "field_name" : "mFrameCount",
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mFrameCountP2",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mFudgeFactor",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mWriterRear",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIR22audio_utils_fifo_index"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mWriterRearSync",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIK21audio_utils_fifo_sync"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mThrottleFront",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIKP22audio_utils_fifo_index"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mThrottleFrontSync",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIK21audio_utils_fifo_sync"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mIsShutdown",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTI21audio_utils_fifo_base",
+   "name" : "audio_utils_fifo_base",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI21audio_utils_fifo_base",
+   "self_type" : "_ZTI21audio_utils_fifo_base",
+   "size" : 32,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mIndex",
+     "referenced_type" : "_ZTINSt3__16atomicIjEE"
+    }
+   ],
+   "linker_set_key" : "_ZTI22audio_utils_fifo_index",
+   "name" : "audio_utils_fifo_index",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI22audio_utils_fifo_index",
+   "self_type" : "_ZTI22audio_utils_fifo_index",
+   "size" : 4,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo_index.h"
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTI25audio_utils_fifo_provider"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mLocalFront",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mThrottleFront",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIP22audio_utils_fifo_index"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mFlush",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mArmLevel",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mTriggerLevel",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mIsArmed",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mTotalLost",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mTotalFlushed",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "linker_set_key" : "_ZTI23audio_utils_fifo_reader",
+   "name" : "audio_utils_fifo_reader",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI23audio_utils_fifo_reader",
+   "self_type" : "_ZTI23audio_utils_fifo_reader",
+   "size" : 64,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTI23audio_utils_fifo_reader"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN23audio_utils_fifo_readerD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN23audio_utils_fifo_readerD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_reader6obtainEP17audio_utils_iovecjPK8timespec"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_reader7releaseEj"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_reader9availableEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTI25audio_utils_fifo_provider"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mLocalRear",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mArmLevel",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mTriggerLevel",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mIsArmed",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mEffectiveFrames",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI23audio_utils_fifo_writer",
+   "name" : "audio_utils_fifo_writer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI23audio_utils_fifo_writer",
+   "self_type" : "_ZTI23audio_utils_fifo_writer",
+   "size" : 48,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTI23audio_utils_fifo_writer"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN23audio_utils_fifo_writerD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN23audio_utils_fifo_writerD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_writer6obtainEP17audio_utils_iovecjPK8timespec"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_writer7releaseEj"
+    },
+    {
+     "mangled_component_name" : "_ZN23audio_utils_fifo_writer9availableEv"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "protected",
+     "field_name" : "mFifo",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIR16audio_utils_fifo"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mObtained",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mTotalReleased",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "linker_set_key" : "_ZTI25audio_utils_fifo_provider",
+   "name" : "audio_utils_fifo_provider",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI25audio_utils_fifo_provider",
+   "self_type" : "_ZTI25audio_utils_fifo_provider",
+   "size" : 24,
+   "source_file" : "system/media/audio_utils/include/audio_utils/fifo.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTI25audio_utils_fifo_provider"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN25audio_utils_fifo_providerD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN25audio_utils_fifo_providerD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN25audio_utils_fifo_provider6obtainEP17audio_utils_iovecjPK8timespec"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN25audio_utils_fifo_provider7releaseEj"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN25audio_utils_fifo_provider9availableEv"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
