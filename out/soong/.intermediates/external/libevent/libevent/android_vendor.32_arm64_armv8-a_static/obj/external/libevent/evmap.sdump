@@ -1,0 +1,605 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIs",
+   "name" : "short",
+   "referenced_type" : "_ZTIs",
+   "self_type" : "_ZTIs",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EV_FEATURE_ET"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EV_FEATURE_O1"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EV_FEATURE_FDS"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EV_FEATURE_EARLY_CLOSE"
+    }
+   ],
+   "linker_set_key" : "_ZTI20event_method_feature",
+   "name" : "event_method_feature",
+   "referenced_type" : "_ZTI20event_method_feature",
+   "self_type" : "_ZTI20event_method_feature",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EVENT_BASE_FLAG_NOLOCK"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVENT_BASE_FLAG_IGNORE_ENV"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVENT_BASE_FLAG_STARTUP_IOCP"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EVENT_BASE_FLAG_NO_CACHE_TIME"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "EVENT_BASE_FLAG_EPOLL_USE_CHANGELIST"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "EVENT_BASE_FLAG_PRECISE_TIMER"
+    }
+   ],
+   "linker_set_key" : "_ZTI22event_base_config_flag",
+   "name" : "event_base_config_flag",
+   "referenced_type" : "_ZTI22event_base_config_flag",
+   "self_type" : "_ZTI22event_base_config_flag",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvP14event_callbackPvE",
+   "name" : "void (event_callback *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP14event_callback"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvP14event_callbackPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvP14event_callbackPvE",
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvP5eventPvE",
+   "name" : "void (event *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP5event"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvP5eventPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvP5eventPvE",
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvisPvE",
+   "name" : "void (int, short, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIs"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvisPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvisPvE",
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  }
+ ],
+ "functions" : [],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP10event_base",
+   "name" : "event_base *",
+   "referenced_type" : "_ZTI10event_base",
+   "self_type" : "_ZTIP10event_base",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP14event_callback",
+   "name" : "event_callback *",
+   "referenced_type" : "_ZTI14event_callback",
+   "self_type" : "_ZTIP14event_callback",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP5event",
+   "name" : "event *",
+   "referenced_type" : "_ZTI5event",
+   "self_type" : "_ZTIP5event",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8evkeyval",
+   "name" : "evkeyval *",
+   "referenced_type" : "_ZTI8evkeyval",
+   "self_type" : "_ZTIP8evkeyval",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvP14event_callbackPvE",
+   "name" : "void (*)(event_callback *, void *)",
+   "referenced_type" : "_ZTIFvP14event_callbackPvE",
+   "self_type" : "_ZTIPFvP14event_callbackPvE",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvP5eventPvE",
+   "name" : "void (*)(event *, void *)",
+   "referenced_type" : "_ZTIFvP5eventPvE",
+   "self_type" : "_ZTIPFvP5eventPvE",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvisPvE",
+   "name" : "void (*)(int, short, void *)",
+   "referenced_type" : "_ZTIFvisPvE",
+   "self_type" : "_ZTIPFvisPvE",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPP14event_callback",
+   "name" : "event_callback **",
+   "referenced_type" : "_ZTIP14event_callback",
+   "self_type" : "_ZTIPP14event_callback",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPP5event",
+   "name" : "event **",
+   "referenced_type" : "_ZTIP5event",
+   "self_type" : "_ZTIPP5event",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPP8evkeyval",
+   "name" : "evkeyval **",
+   "referenced_type" : "_ZTIP8evkeyval",
+   "self_type" : "_ZTIPP8evkeyval",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPs",
+   "name" : "short *",
+   "referenced_type" : "_ZTIs",
+   "self_type" : "_ZTIPs",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tqh_first",
+     "referenced_type" : "_ZTIP5event"
+    },
+    {
+     "field_name" : "tqh_last",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP5event"
+    }
+   ],
+   "linker_set_key" : "_ZTI10event_list",
+   "name" : "event_list",
+   "referenced_type" : "_ZTI10event_list",
+   "self_type" : "_ZTI10event_list",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "lh_first",
+     "referenced_type" : "_ZTIP5event"
+    }
+   ],
+   "linker_set_key" : "_ZTI11event_dlist",
+   "name" : "event_dlist",
+   "referenced_type" : "_ZTI11event_dlist",
+   "self_type" : "_ZTI11event_dlist",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "evcb_active_next",
+     "referenced_type" : "_ZTIN14event_callbackUt_E"
+    },
+    {
+     "field_name" : "evcb_flags",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIs"
+    },
+    {
+     "field_name" : "evcb_pri",
+     "field_offset" : 144,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "evcb_closure",
+     "field_offset" : 152,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "evcb_cb_union",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIN14event_callbackUt_E"
+    },
+    {
+     "field_name" : "evcb_arg",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "linker_set_key" : "_ZTI14event_callback",
+   "name" : "event_callback",
+   "referenced_type" : "_ZTI14event_callback",
+   "self_type" : "_ZTI14event_callback",
+   "size" : 40,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ev_evcallback",
+     "referenced_type" : "_ZTI14event_callback"
+    },
+    {
+     "field_name" : "ev_timeout_pos",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIN5eventUt_E"
+    },
+    {
+     "field_name" : "ev_fd",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "ev_base",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIP10event_base"
+    },
+    {
+     "field_name" : "ev_",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIN5eventUt_E"
+    },
+    {
+     "field_name" : "ev_events",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIs"
+    },
+    {
+     "field_name" : "ev_res",
+     "field_offset" : 848,
+     "referenced_type" : "_ZTIs"
+    },
+    {
+     "field_name" : "ev_timeout",
+     "field_offset" : 896,
+     "referenced_type" : "_ZTI7timeval"
+    }
+   ],
+   "linker_set_key" : "_ZTI5event",
+   "name" : "event",
+   "referenced_type" : "_ZTI5event",
+   "self_type" : "_ZTI5event",
+   "size" : 128,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "next",
+     "referenced_type" : "_ZTIN8evkeyvalUt_E"
+    },
+    {
+     "field_name" : "key",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "field_name" : "value",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPc"
+    }
+   ],
+   "linker_set_key" : "_ZTI8evkeyval",
+   "name" : "evkeyval",
+   "referenced_type" : "_ZTI8evkeyval",
+   "self_type" : "_ZTI8evkeyval",
+   "size" : 32,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tqh_first",
+     "referenced_type" : "_ZTIP8evkeyval"
+    },
+    {
+     "field_name" : "tqh_last",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP8evkeyval"
+    }
+   ],
+   "linker_set_key" : "_ZTI9evkeyvalq",
+   "name" : "evkeyvalq",
+   "referenced_type" : "_ZTI9evkeyvalq",
+   "self_type" : "_ZTI9evkeyvalq",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tqe_next",
+     "referenced_type" : "_ZTIP14event_callback"
+    },
+    {
+     "field_name" : "tqe_prev",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP14event_callback"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN14event_callbackUt_E",
+   "name" : "event_callback::(anonymous struct at external/libevent/include/event2/event_struct.h:108:2)",
+   "referenced_type" : "_ZTIN14event_callbackUt_E",
+   "self_type" : "_ZTIN14event_callbackUt_E",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ev_next_with_common_timeout",
+     "referenced_type" : "_ZTIN5eventUt_Ut_E"
+    },
+    {
+     "field_name" : "min_heap_idx",
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN5eventUt_E",
+   "name" : "event::(anonymous union at external/libevent/include/event2/event_struct.h:127:2)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN5eventUt_E",
+   "self_type" : "_ZTIN5eventUt_E",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tqe_next",
+     "referenced_type" : "_ZTIP5event"
+    },
+    {
+     "field_name" : "tqe_prev",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP5event"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN5eventUt_Ut_E",
+   "name" : "event::(anonymous union at external/libevent/include/event2/event_struct.h:127:2)::(anonymous struct at external/libevent/include/event2/event_struct.h:128:3)",
+   "referenced_type" : "_ZTIN5eventUt_Ut_E",
+   "self_type" : "_ZTIN5eventUt_Ut_E",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "le_next",
+     "referenced_type" : "_ZTIP5event"
+    },
+    {
+     "field_name" : "le_prev",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP5event"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN5eventUt_Ut_Ut_E",
+   "name" : "event::(anonymous union at external/libevent/include/event2/event_struct.h:135:2)::(anonymous struct at external/libevent/include/event2/event_struct.h:137:3)::(anonymous struct at external/libevent/include/event2/event_struct.h:138:4)",
+   "referenced_type" : "_ZTIN5eventUt_Ut_Ut_E",
+   "self_type" : "_ZTIN5eventUt_Ut_Ut_E",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/event_struct.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "tqe_next",
+     "referenced_type" : "_ZTIP8evkeyval"
+    },
+    {
+     "field_name" : "tqe_prev",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPP8evkeyval"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN8evkeyvalUt_E",
+   "name" : "evkeyval::(anonymous struct at external/libevent/include/event2/keyvalq_struct.h:59:2)",
+   "referenced_type" : "_ZTIN8evkeyvalUt_E",
+   "self_type" : "_ZTIN8evkeyvalUt_E",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/keyvalq_struct.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

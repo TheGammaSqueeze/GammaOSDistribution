@@ -1,0 +1,690 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EVBUFFER_PTR_SET"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EVBUFFER_PTR_ADD"
+    }
+   ],
+   "linker_set_key" : "_ZTI16evbuffer_ptr_how",
+   "name" : "evbuffer_ptr_how",
+   "referenced_type" : "_ZTI16evbuffer_ptr_how",
+   "self_type" : "_ZTI16evbuffer_ptr_how",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/buffer.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EVBUFFER_EOL_ANY"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EVBUFFER_EOL_CRLF"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVBUFFER_EOL_CRLF_STRICT"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EVBUFFER_EOL_LF"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVBUFFER_EOL_NUL"
+    }
+   ],
+   "linker_set_key" : "_ZTI18evbuffer_eol_style",
+   "name" : "evbuffer_eol_style",
+   "referenced_type" : "_ZTI18evbuffer_eol_style",
+   "self_type" : "_ZTI18evbuffer_eol_style",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/buffer.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EV_FEATURE_ET"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EV_FEATURE_O1"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EV_FEATURE_FDS"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EV_FEATURE_EARLY_CLOSE"
+    }
+   ],
+   "linker_set_key" : "_ZTI20event_method_feature",
+   "name" : "event_method_feature",
+   "referenced_type" : "_ZTI20event_method_feature",
+   "self_type" : "_ZTI20event_method_feature",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EVENT_BASE_FLAG_NOLOCK"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVENT_BASE_FLAG_IGNORE_ENV"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVENT_BASE_FLAG_STARTUP_IOCP"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EVENT_BASE_FLAG_NO_CACHE_TIME"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "EVENT_BASE_FLAG_EPOLL_USE_CHANGELIST"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "EVENT_BASE_FLAG_PRECISE_TIMER"
+    }
+   ],
+   "linker_set_key" : "_ZTI22event_base_config_flag",
+   "name" : "event_base_config_flag",
+   "referenced_type" : "_ZTI22event_base_config_flag",
+   "self_type" : "_ZTI22event_base_config_flag",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "evtag_consume",
+   "linker_set_key" : "evtag_consume",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_encode_int",
+   "linker_set_key" : "evtag_encode_int",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_encode_int64",
+   "linker_set_key" : "evtag_encode_int64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_init",
+   "linker_set_key" : "evtag_init",
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal",
+   "linker_set_key" : "evtag_marshal",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal_buffer",
+   "linker_set_key" : "evtag_marshal_buffer",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal_int",
+   "linker_set_key" : "evtag_marshal_int",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal_int64",
+   "linker_set_key" : "evtag_marshal_int64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal_string",
+   "linker_set_key" : "evtag_marshal_string",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_marshal_timeval",
+   "linker_set_key" : "evtag_marshal_timeval",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIP7timeval"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_payload_length",
+   "linker_set_key" : "evtag_payload_length",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_peek",
+   "linker_set_key" : "evtag_peek",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_peek_length",
+   "linker_set_key" : "evtag_peek_length",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal",
+   "linker_set_key" : "evtag_unmarshal",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_fixed",
+   "linker_set_key" : "evtag_unmarshal_fixed",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_header",
+   "linker_set_key" : "evtag_unmarshal_header",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_int",
+   "linker_set_key" : "evtag_unmarshal_int",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_int64",
+   "linker_set_key" : "evtag_unmarshal_int64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_string",
+   "linker_set_key" : "evtag_unmarshal_string",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "function_name" : "evtag_unmarshal_timeval",
+   "linker_set_key" : "evtag_unmarshal_timeval",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8evbuffer"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIP7timeval"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP7timeval",
+   "name" : "timeval *",
+   "referenced_type" : "_ZTI7timeval",
+   "self_type" : "_ZTIP7timeval",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8evbuffer",
+   "name" : "evbuffer *",
+   "referenced_type" : "_ZTI8evbuffer",
+   "self_type" : "_ZTIP8evbuffer",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPc",
+   "name" : "char **",
+   "referenced_type" : "_ZTIPc",
+   "self_type" : "_ZTIPPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPy",
+   "name" : "unsigned long long *",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIPy",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/libevent/include/event2/tag.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/libevent/include/event2/tag.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "pos",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "internal_",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN12evbuffer_ptrUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI12evbuffer_ptr",
+   "name" : "evbuffer_ptr",
+   "referenced_type" : "_ZTI12evbuffer_ptr",
+   "self_type" : "_ZTI12evbuffer_ptr",
+   "size" : 12,
+   "source_file" : "external/libevent/include/event2/buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "orig_size",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "n_added",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "n_deleted",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI16evbuffer_cb_info",
+   "name" : "evbuffer_cb_info",
+   "referenced_type" : "_ZTI16evbuffer_cb_info",
+   "self_type" : "_ZTI16evbuffer_cb_info",
+   "size" : 12,
+   "source_file" : "external/libevent/include/event2/buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "chain",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "pos_in_chain",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN12evbuffer_ptrUt_E",
+   "name" : "evbuffer_ptr::(anonymous struct at external/libevent/include/event2/buffer.h:121:2)",
+   "referenced_type" : "_ZTIN12evbuffer_ptrUt_E",
+   "self_type" : "_ZTIN12evbuffer_ptrUt_E",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/buffer.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

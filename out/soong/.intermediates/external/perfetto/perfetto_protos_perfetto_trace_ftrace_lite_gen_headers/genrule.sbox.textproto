@@ -1,0 +1,186 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/ftrace/binder.proto external/perfetto/protos/perfetto/trace/ftrace/block.proto external/perfetto/protos/perfetto/trace/ftrace/cgroup.proto external/perfetto/protos/perfetto/trace/ftrace/clk.proto external/perfetto/protos/perfetto/trace/ftrace/compaction.proto external/perfetto/protos/perfetto/trace/ftrace/cpuhp.proto external/perfetto/protos/perfetto/trace/ftrace/dmabuf_heap.proto external/perfetto/protos/perfetto/trace/ftrace/dpu.proto external/perfetto/protos/perfetto/trace/ftrace/ext4.proto external/perfetto/protos/perfetto/trace/ftrace/f2fs.proto external/perfetto/protos/perfetto/trace/ftrace/fastrpc.proto external/perfetto/protos/perfetto/trace/ftrace/fence.proto external/perfetto/protos/perfetto/trace/ftrace/filemap.proto external/perfetto/protos/perfetto/trace/ftrace/ftrace.proto external/perfetto/protos/perfetto/trace/ftrace/ftrace_event.proto external/perfetto/protos/perfetto/trace/ftrace/ftrace_event_bundle.proto external/perfetto/protos/perfetto/trace/ftrace/ftrace_stats.proto external/perfetto/protos/perfetto/trace/ftrace/g2d.proto external/perfetto/protos/perfetto/trace/ftrace/generic.proto external/perfetto/protos/perfetto/trace/ftrace/gpu_mem.proto external/perfetto/protos/perfetto/trace/ftrace/i2c.proto external/perfetto/protos/perfetto/trace/ftrace/ion.proto external/perfetto/protos/perfetto/trace/ftrace/ipi.proto external/perfetto/protos/perfetto/trace/ftrace/irq.proto external/perfetto/protos/perfetto/trace/ftrace/kmem.proto external/perfetto/protos/perfetto/trace/ftrace/lowmemorykiller.proto external/perfetto/protos/perfetto/trace/ftrace/mali.proto external/perfetto/protos/perfetto/trace/ftrace/mdss.proto external/perfetto/protos/perfetto/trace/ftrace/mm_event.proto external/perfetto/protos/perfetto/trace/ftrace/oom.proto external/perfetto/protos/perfetto/trace/ftrace/power.proto external/perfetto/protos/perfetto/trace/ftrace/raw_syscalls.proto external/perfetto/protos/perfetto/trace/ftrace/regulator.proto external/perfetto/protos/perfetto/trace/ftrace/sched.proto external/perfetto/protos/perfetto/trace/ftrace/scm.proto external/perfetto/protos/perfetto/trace/ftrace/sde.proto external/perfetto/protos/perfetto/trace/ftrace/signal.proto external/perfetto/protos/perfetto/trace/ftrace/sync.proto external/perfetto/protos/perfetto/trace/ftrace/systrace.proto external/perfetto/protos/perfetto/trace/ftrace/task.proto external/perfetto/protos/perfetto/trace/ftrace/test_bundle_wrapper.proto external/perfetto/protos/perfetto/trace/ftrace/thermal.proto external/perfetto/protos/perfetto/trace/ftrace/vmscan.proto external/perfetto/protos/perfetto/trace/ftrace/workqueue.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/binder.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/binder.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/block.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/block.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/cgroup.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/cgroup.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/clk.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/clk.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/compaction.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/compaction.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/cpuhp.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/cpuhp.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/dmabuf_heap.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/dmabuf_heap.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/dpu.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/dpu.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ext4.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ext4.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/f2fs.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/f2fs.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/fastrpc.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/fastrpc.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/fence.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/fence.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/filemap.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/filemap.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ftrace.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ftrace.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ftrace_event.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ftrace_event.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ftrace_event_bundle.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ftrace_event_bundle.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ftrace_stats.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ftrace_stats.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/g2d.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/g2d.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/generic.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/generic.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/gpu_mem.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/gpu_mem.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/i2c.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/i2c.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ion.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ion.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/ipi.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/ipi.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/irq.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/irq.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/kmem.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/kmem.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/lowmemorykiller.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/lowmemorykiller.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/mali.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/mali.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/mdss.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/mdss.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/mm_event.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/mm_event.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/oom.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/oom.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/power.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/power.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/raw_syscalls.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/raw_syscalls.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/regulator.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/regulator.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/sched.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/sched.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/scm.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/scm.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/sde.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/sde.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/signal.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/signal.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/sync.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/sync.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/systrace.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/systrace.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/task.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/task.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/test_bundle_wrapper.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/test_bundle_wrapper.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/thermal.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/thermal.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/vmscan.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/vmscan.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ftrace/workqueue.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_ftrace_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ftrace/workqueue.pb.h"
+  >
+  input_hash: "8e829ae7c11e103babd3095c02a8c11d9933519d3b7c7f20bc628d2490ea3f01"
+>
+
