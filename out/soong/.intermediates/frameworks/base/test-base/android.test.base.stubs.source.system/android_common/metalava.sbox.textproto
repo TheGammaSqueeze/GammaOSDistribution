@@ -1,0 +1,177 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/AndroidTestCase.java"
+    to: "frameworks/base/test-base/src/android/test/AndroidTestCase.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/FlakyTest.java"
+    to: "frameworks/base/test-base/src/android/test/FlakyTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/InstrumentationTestCase.java"
+    to: "frameworks/base/test-base/src/android/test/InstrumentationTestCase.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/InstrumentationTestSuite.java"
+    to: "frameworks/base/test-base/src/android/test/InstrumentationTestSuite.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/PerformanceTestCase.java"
+    to: "frameworks/base/test-base/src/android/test/PerformanceTestCase.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/RepetitiveTest.java"
+    to: "frameworks/base/test-base/src/android/test/RepetitiveTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/UiThreadTest.java"
+    to: "frameworks/base/test-base/src/android/test/UiThreadTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/LargeTest.java"
+    to: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/LargeTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/MediumTest.java"
+    to: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/MediumTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/SmallTest.java"
+    to: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/SmallTest.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/Smoke.java"
+    to: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/Smoke.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/Suppress.java"
+    to: "frameworks/base/test-base/src/android/test/suitebuilder/annotation/Suppress.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/com/android/internal/util/Predicate.java"
+    to: "frameworks/base/test-base/src/com/android/internal/util/Predicate.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/Assert.java"
+    to: "frameworks/base/test-base/src/junit/framework/Assert.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/AssertionFailedError.java"
+    to: "frameworks/base/test-base/src/junit/framework/AssertionFailedError.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/ComparisonCompactor.java"
+    to: "frameworks/base/test-base/src/junit/framework/ComparisonCompactor.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/ComparisonFailure.java"
+    to: "frameworks/base/test-base/src/junit/framework/ComparisonFailure.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/Protectable.java"
+    to: "frameworks/base/test-base/src/junit/framework/Protectable.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/Test.java"
+    to: "frameworks/base/test-base/src/junit/framework/Test.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/TestCase.java"
+    to: "frameworks/base/test-base/src/junit/framework/TestCase.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/TestFailure.java"
+    to: "frameworks/base/test-base/src/junit/framework/TestFailure.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/TestListener.java"
+    to: "frameworks/base/test-base/src/junit/framework/TestListener.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/TestResult.java"
+    to: "frameworks/base/test-base/src/junit/framework/TestResult.java"
+  >
+  copy_before: <
+    from: "frameworks/base/test-base/src/junit/framework/TestSuite.java"
+    to: "frameworks/base/test-base/src/junit/framework/TestSuite.java"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar"
+    to: "out/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar"
+    to: "out/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+    to: "out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.test.base-incompatibilities.api.system.latest/gen/android.test.base-incompatibilities.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.test.base-incompatibilities.api.system.latest/gen/android.test.base-incompatibilities.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.test.base-removed.api.system.latest/gen/android.test.base-removed.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.test.base-removed.api.system.latest/gen/android.test.base-removed.api.system.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.test.base.api.system.latest/gen/android.test.base.api.system.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.test.base.api.system.latest/gen/android.test.base.api.system.latest"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" && rm -rf out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/home && mkdir -p out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/ext/android_common/turbine-combined/ext.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/framework/android_common/turbine-combined/framework.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/android.test.base.stubs.source.system_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/android.test.base.stubs.source.system_removed.txt --stubs out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/stubsDir --exclude-documentation-from-stubs --stub-packages android.test:android.test.suitebuilder.annotation:com.android.internal.util:junit.framework --hide MissingPermission --hide BroadcastBehavior --hide HiddenSuperclass --hide DeprecationMismatch --hide UnavailableSymbol --hide SdkConstant --hide HiddenTypeParameter --hide Todo --hide Typo --show-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.PRIVILEGED_APPS)' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.test.base.api.system.latest/gen/android.test.base.api.system.latest --check-compatibility:removed:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.test.base-removed.api.system.latest/gen/android.test.base-removed.api.system.latest --baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.test.base-incompatibilities.api.system.latest/gen/android.test.base-incompatibilities.api.system.latest --update-baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/last_released_baseline.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/android.test.base.stubs.source.system-stubs.srcjar -C out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/stubsDir -D out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/android.test.base.stubs.source.system-stubs.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/android.test.base.stubs.source.system-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/android.test.base.stubs.source.system_api.txt"
+    to: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/android.test.base.stubs.source.system_api.txt"
+  >
+  copy_after: <
+    from: "out/android.test.base.stubs.source.system_removed.txt"
+    to: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/android.test.base.stubs.source.system_removed.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/check_last_released_api.timestamp"
+  >
+  copy_after: <
+    from: "out/last_released_baseline.txt"
+    to: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava/last_released_baseline.txt"
+  >
+  input_hash: "f7a0589c7490066dfaf9903cef1960ad7d1e02a493e7e3db18656efa6202a475"
+  rsp_files: <
+    file: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/frameworks/base/test-base/android.test.base.stubs.source.system/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+

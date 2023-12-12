@@ -1,0 +1,85 @@
+2023/12/10 09:36:38.943456 build/soong/cmd/soong_ui/main.go:240: Detected 124 GB total RAM
+2023/12/10 09:36:38.943468 build/soong/cmd/soong_ui/main.go:241: Parallelism (local/remote/highmem): 34/0/15
+2023/12/10 09:36:38.943474 build/soong/cmd/soong_ui/main.go:267: Took 25ms to start up.
+2023/12/10 09:36:39.045599 build/soong/ui/build/sandbox_linux.go:120: [prebuilts/build-tools/linux-x86/bin/nsjail -H android-build -e -u nobody -g nogroup -R / -B /home/ubuntu/GammaOS -B /tmp -B /home/ubuntu/GammaOS/out --disable_clone_newcgroup -- /bin/bash -c if [ $(hostname) == "android-build" ]; then echo "Android" "Success"; else echo Failure; fi]
+2023/12/10 09:36:39.049334 build/soong/ui/build/sandbox_linux.go:127: Build sandboxing disabled due to nsjail error.
+2023/12/10 09:36:39.049467 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mode: STANDALONE_ONCE
+2023/12/10 09:36:39.049473 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Jail parameters: hostname:'android-build', chroot:'', process:'/bin/bash', bind:[::]:0, max_conns_per_ip:0, time_limit:0, personality:0, daemonize:false, clone_newnet:true, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:false, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+2023/12/10 09:36:39.049475 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/' flags:MS_RDONLY type:'tmpfs' options:'' is_dir:true
+2023/12/10 09:36:39.049478 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:36:39.049481 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/home/ubuntu/GammaOS' -> '/home/ubuntu/GammaOS' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:36:39.049484 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/tmp' -> '/tmp' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:36:39.049487 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/home/ubuntu/GammaOS/out' -> '/home/ubuntu/GammaOS/out' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:36:39.049489 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Mount point: '/proc' flags:MS_RDONLY type:'proc' options:'' is_dir:true
+2023/12/10 09:36:39.049492 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+2023/12/10 09:36:39.049495 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:36:39+0000][3376948] void cmdline::logParams(nsjconf_t *)():250 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+2023/12/10 09:36:39.049498 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:36:39+0000] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+2023/12/10 09:36:39.049500 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:36:39+0000][3376948] void cmdline::logParams(nsjconf_t *)():260 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+2023/12/10 09:36:39.049503 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:36:39+0000][1] bool util::createDirRecursively(const char *)():150 openat('5', 'ubuntu', O_DIRECTORY | O_CLOEXEC): Permission denied
+2023/12/10 09:36:39.049505 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:36:39+0000][1] bool mnt::mountPt(mount_t *, const char *, const char *)():140 Couldn't create upper directories for '/run/user//nsjail.0.root//home/ubuntu/GammaOS'
+2023/12/10 09:36:39.049507 build/soong/ui/build/sandbox_linux.go:130: [F][2023-12-10T09:36:39+0000][1] bool subproc::runChild(nsjconf_t *, int, int, int)():433 Launching child process failed
+2023/12/10 09:36:39.049508 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:36:39+0000][3376948] bool subproc::runChild(nsjconf_t *, int, int, int)():461 Received error message from the child process before it has been executed
+2023/12/10 09:36:39.049521 build/soong/ui/build/sandbox_linux.go:130: [E][2023-12-10T09:36:39+0000][3376948] int nsjail::standaloneMode(nsjconf_t *)():146 Couldn't launch the child process
+2023/12/10 09:36:39.049524 build/soong/ui/build/sandbox_linux.go:136: nsjail failed with exit status 255
+2023/12/10 09:36:39.049536 build/soong/ui/build/exec.go:64: "dumpvars" executing "prebuilts/build-tools/linux-x86/bin/ckati" [prebuilts/build-tools/linux-x86/bin/ckati -f build/make/core/config.mk --color_warnings --kati_stats dump-many-vars MAKECMDGOALS=]
+2023/12/10 09:36:39.515458 build/soong/ui/build/exec.go:74: "dumpvars" finished with exit code 0 (466ms real, 387ms user, 93ms system, 183MB maxrss)
+2023/12/10 09:36:39.515500 build/soong/ui/build/dumpvars.go:123: 2ND_TARGET_GCC_VERSION 4.9
+2023/12/10 09:36:39.515505 build/soong/ui/build/dumpvars.go:123: ANDROID_BUILD_PATHS /home/ubuntu/GammaOS/out/soong/host/linux-x86/bin:/home/ubuntu/GammaOS/out/host/linux-x86/bin
+2023/12/10 09:36:39.515510 build/soong/ui/build/dumpvars.go:123: COMMON_LUNCH_CHOICES aosp_arm-eng aosp_arm64-eng aosp_car_arm-userdebug aosp_car_arm64-userdebug aosp_car_x86-userdebug aosp_car_x86_64-userdebug aosp_cf_arm64_auto-userdebug aosp_cf_arm64_phone-userdebug aosp_cf_x86_64_foldable-userdebug aosp_cf_x86_64_pc-userdebug aosp_cf_x86_64_phone-userdebug aosp_cf_x86_64_phone_gms-userdebug aosp_cf_x86_64_tv-userdebug aosp_cf_x86_auto-userdebug aosp_cf_x86_phone-userdebug aosp_cf_x86_phone_gms-userdebug aosp_cf_x86_tv-userdebug aosp_x86-eng aosp_x86_64-eng arm_krait-eng arm_v7_v8-eng armv8-eng armv8_cortex_a55-eng armv8_kryo385-eng car_ui_portrait-userdebug car_x86_64-userdebug gsi_car_arm64-userdebug gsi_car_x86_64-userdebug lineage_gsi_arm-userdebug lineage_gsi_arm64-userdebug lineage_gsi_car_arm64-userdebug lineage_gsi_car_x86_64-userdebug lineage_gsi_tv_arm-userdebug lineage_gsi_tv_arm64-userdebug lineage_gsi_tv_x86-userdebug lineage_gsi_tv_x86_64-userdebug lineage_gsi_x86-userdebug lineage_gsi_x86_64-userdebug lineage_sdk_car_arm64-userdebug lineage_sdk_car_x86_64-userdebug lineage_sdk_phone_x86-userdebug lineage_sdk_phone_x86_64-userdebug lineage_sdk_tv_arm-userdebug lineage_sdk_tv_x86-userdebug qemu_trusty_arm64-userdebug sdk_car_arm-userdebug sdk_car_arm64-userdebug sdk_car_portrait_x86_64-userdebug sdk_car_x86-userdebug sdk_car_x86_64-userdebug silvermont-eng uml-userdebug
+2023/12/10 09:36:39.515521 build/soong/ui/build/dumpvars.go:123: HOST_PREBUILT_TAG linux-x86
+2023/12/10 09:36:39.515524 build/soong/ui/build/dumpvars.go:123: PRODUCT_OUT out/target/product/phhgsi_arm64_ab
+2023/12/10 09:36:39.515526 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH arm
+2023/12/10 09:36:39.515528 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH arm64
+2023/12/10 09:36:39.515531 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2023/12/10 09:36:39.515533 build/soong/ui/build/dumpvars.go:123: TARGET_DEVICE phhgsi_arm64_ab
+2023/12/10 09:36:39.515535 build/soong/ui/build/dumpvars.go:123: TARGET_GCC_VERSION 4.9
+2023/12/10 09:36:39.515536 build/soong/ui/build/dumpvars.go:123: TARGET_PLATFORM_VERSION SP2A
+2023/12/10 09:36:39.515538 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT lineage_arm64_bgN
+2023/12/10 09:36:39.515540 build/soong/ui/build/dumpvars.go:123: print 
+2023/12/10 09:36:39.515543 build/soong/ui/build/dumpvars.go:123: ANDROID_CLANG_PREBUILTS prebuilts/clang/host/linux-x86
+2023/12/10 09:36:39.515544 build/soong/ui/build/dumpvars.go:123: ANDROID_GCC_PREBUILTS prebuilts/gcc/linux-x86
+2023/12/10 09:36:39.515546 build/soong/ui/build/dumpvars.go:123: ANDROID_JAVA_HOME prebuilts/jdk/jdk11/linux-x86
+2023/12/10 09:36:39.515549 build/soong/ui/build/dumpvars.go:123: ANDROID_JAVA_TOOLCHAIN prebuilts/jdk/jdk11/linux-x86/bin
+2023/12/10 09:36:39.515551 build/soong/ui/build/dumpvars.go:123: ANDROID_PREBUILTS prebuilt/linux-x86
+2023/12/10 09:36:39.515553 build/soong/ui/build/dumpvars.go:123: HOST_OUT out/host/linux-x86
+2023/12/10 09:36:39.515563 build/soong/ui/build/dumpvars.go:123: HOST_OUT_TESTCASES out/host/linux-x86/testcases
+2023/12/10 09:36:39.515565 build/soong/ui/build/dumpvars.go:123: PRODUCT_OUT out/target/product/phhgsi_arm64_ab
+2023/12/10 09:36:39.515567 build/soong/ui/build/dumpvars.go:123: SOONG_HOST_OUT out/soong/host/linux-x86
+2023/12/10 09:36:39.515569 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_SHARED_LIBRARIES_UNSTRIPPED out/target/product/phhgsi_arm64_ab/symbols/system/lib
+2023/12/10 09:36:39.515571 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_TESTCASES out/target/product/phhgsi_arm64_ab/testcases
+2023/12/10 09:36:39.515573 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_UNSTRIPPED out/target/product/phhgsi_arm64_ab/symbols
+2023/12/10 09:36:39.515575 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_VENDOR_SHARED_LIBRARIES_UNSTRIPPED out/target/product/phhgsi_arm64_ab/symbols/vendor/lib
+2023/12/10 09:36:39.515577 build/soong/ui/build/dumpvars.go:123: print 
+2023/12/10 09:36:39.515580 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION_CODENAME REL
+2023/12/10 09:36:39.515582 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION 12
+2023/12/10 09:36:39.515584 build/soong/ui/build/dumpvars.go:123: LINEAGE_VERSION 19.1-20231210-UNOFFICIAL-arm64_bgN
+2023/12/10 09:36:39.515586 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT lineage_arm64_bgN
+2023/12/10 09:36:39.515588 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2023/12/10 09:36:39.515590 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_TYPE release
+2023/12/10 09:36:39.515592 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_APPS 
+2023/12/10 09:36:39.515595 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_UNBUNDLED 
+2023/12/10 09:36:39.515597 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH arm64
+2023/12/10 09:36:39.515599 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH_VARIANT armv8-a
+2023/12/10 09:36:39.515600 build/soong/ui/build/dumpvars.go:123: TARGET_CPU_VARIANT generic
+2023/12/10 09:36:39.515602 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH arm
+2023/12/10 09:36:39.515604 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH_VARIANT armv8-a
+2023/12/10 09:36:39.515606 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_CPU_VARIANT generic
+2023/12/10 09:36:39.515608 build/soong/ui/build/dumpvars.go:123: HOST_ARCH x86_64
+2023/12/10 09:36:39.515610 build/soong/ui/build/dumpvars.go:123: HOST_2ND_ARCH x86
+2023/12/10 09:36:39.515612 build/soong/ui/build/dumpvars.go:123: HOST_OS linux
+2023/12/10 09:36:39.515614 build/soong/ui/build/dumpvars.go:123: HOST_OS_EXTRA Linux-6.2.0-1017-aws-x86_64-Ubuntu-22.04.2-LTS
+2023/12/10 09:36:39.515616 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_OS windows
+2023/12/10 09:36:39.515618 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_ARCH x86
+2023/12/10 09:36:39.515620 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_2ND_ARCH x86_64
+2023/12/10 09:36:39.515621 build/soong/ui/build/dumpvars.go:123: HOST_BUILD_TYPE release
+2023/12/10 09:36:39.515623 build/soong/ui/build/dumpvars.go:123: BUILD_ID SQ3A.220705.004
+2023/12/10 09:36:39.515625 build/soong/ui/build/dumpvars.go:123: AUX_OS_VARIANT_LIST 
+2023/12/10 09:36:39.515628 build/soong/ui/build/dumpvars.go:123: PRODUCT_SOONG_NAMESPACES device/generic/goldfish device/generic/goldfish-opengl hardware/google/camera hardware/google/camera/devices/EmulatedCamera packages/apps/Bluetooth
+2023/12/10 09:36:39.515630 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_PREFER 
+2023/12/10 09:36:39.515631 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_VERSION 
+2023/12/10 09:36:39.515633 build/soong/ui/build/dumpvars.go:123: PRODUCT_IS_ATV 
+2023/12/10 09:36:39.515635 build/soong/ui/build/dumpvars.go:123: PRODUCT_IS_AUTO 
+2023/12/10 09:36:39.515637 build/soong/ui/build/dumpvars.go:123: WITH_SU 
+2023/12/10 09:36:39.515639 build/soong/ui/build/dumpvars.go:123: WITH_GMS 
+2023/12/10 09:36:39.515642 build/soong/ui/build/dumpvars.go:123: GMS_MAKEFILE 
+2023/12/10 09:36:39.515643 build/soong/ui/build/dumpvars.go:123: MAINLINE_MODULES_MAKEFILE 
