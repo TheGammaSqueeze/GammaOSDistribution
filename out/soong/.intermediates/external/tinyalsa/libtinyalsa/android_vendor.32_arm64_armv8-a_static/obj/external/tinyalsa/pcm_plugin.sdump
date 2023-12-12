@@ -1,0 +1,1025 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA44_h",
+   "name" : "unsigned char [44]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA44_h",
+   "size" : 44,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA60_h",
+   "name" : "unsigned char [60]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA60_h",
+   "size" : 60,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA8_j",
+   "name" : "unsigned int [8]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA8_j",
+   "size" : 32,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : -1,
+     "name" : "PCM_FORMAT_INVALID"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "PCM_FORMAT_S16_LE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "PCM_FORMAT_S32_LE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "PCM_FORMAT_S8"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "PCM_FORMAT_S24_LE"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "PCM_FORMAT_S24_3LE"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "PCM_FORMAT_MAX"
+    }
+   ],
+   "linker_set_key" : "_ZTI10pcm_format",
+   "name" : "pcm_format",
+   "referenced_type" : "_ZTI10pcm_format",
+   "self_type" : "_ZTI10pcm_format",
+   "size" : 4,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "MIXER_CTL_TYPE_BOOL"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "MIXER_CTL_TYPE_INT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "MIXER_CTL_TYPE_ENUM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "MIXER_CTL_TYPE_BYTE"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "MIXER_CTL_TYPE_IEC958"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "MIXER_CTL_TYPE_INT64"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "MIXER_CTL_TYPE_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "MIXER_CTL_TYPE_MAX"
+    }
+   ],
+   "linker_set_key" : "_ZTI14mixer_ctl_type",
+   "name" : "mixer_ctl_type",
+   "referenced_type" : "_ZTI14mixer_ctl_type",
+   "self_type" : "_ZTI14mixer_ctl_type",
+   "size" : 4,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "PCM_PARAM_ACCESS"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "PCM_PARAM_FORMAT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "PCM_PARAM_SUBFORMAT"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "PCM_PARAM_SAMPLE_BITS"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "PCM_PARAM_FRAME_BITS"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "PCM_PARAM_CHANNELS"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "PCM_PARAM_RATE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "PCM_PARAM_PERIOD_TIME"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "PCM_PARAM_PERIOD_SIZE"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "PCM_PARAM_PERIOD_BYTES"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "PCM_PARAM_PERIODS"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "PCM_PARAM_BUFFER_TIME"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "PCM_PARAM_BUFFER_SIZE"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "PCM_PARAM_BUFFER_BYTES"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "PCM_PARAM_TICK_TIME"
+    }
+   ],
+   "linker_set_key" : "_ZTI9pcm_param",
+   "name" : "pcm_param",
+   "referenced_type" : "_ZTI9pcm_param",
+   "self_type" : "_ZTI9pcm_param",
+   "size" : 4,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvP10pcm_pluginS_miilE",
+   "name" : "void *(pcm_plugin *, void *, unsigned long, int, int, long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvP10pcm_pluginS_miilE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvP10pcm_pluginS_miilE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginE",
+   "name" : "int (pcm_plugin *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "name" : "int (pcm_plugin *, snd_pcm_sync_ptr *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIP16snd_pcm_sync_ptr"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "name" : "int (pcm_plugin *, snd_pcm_hw_params *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIP17snd_pcm_hw_params"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "name" : "int (pcm_plugin *, snd_pcm_sw_params *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIP17snd_pcm_sw_params"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginP6pollfdjiE",
+   "name" : "int (pcm_plugin *, pollfd *, unsigned int, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIP6pollfd"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginP6pollfdjiE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginP6pollfdjiE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginP9snd_xferiE",
+   "name" : "int (pcm_plugin *, snd_xferi *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIP9snd_xferi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginP9snd_xferiE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginP9snd_xferiE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginPiE",
+   "name" : "int (pcm_plugin *, int *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginPiE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginPiE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginPvmE",
+   "name" : "int (pcm_plugin *, void *, unsigned long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginPvmE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginPvmE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP10pcm_pluginiPvE",
+   "name" : "int (pcm_plugin *, int, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10pcm_plugin"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP10pcm_pluginiPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP10pcm_pluginiPvE",
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  }
+ ],
+ "functions" : [],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP10pcm_plugin",
+   "name" : "pcm_plugin *",
+   "referenced_type" : "_ZTI10pcm_plugin",
+   "self_type" : "_ZTIP10pcm_plugin",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP14pcm_plugin_ops",
+   "name" : "pcm_plugin_ops *",
+   "referenced_type" : "_ZTI14pcm_plugin_ops",
+   "self_type" : "_ZTIP14pcm_plugin_ops",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP16snd_pcm_sync_ptr",
+   "name" : "snd_pcm_sync_ptr *",
+   "referenced_type" : "_ZTI16snd_pcm_sync_ptr",
+   "self_type" : "_ZTIP16snd_pcm_sync_ptr",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP17snd_pcm_hw_params",
+   "name" : "snd_pcm_hw_params *",
+   "referenced_type" : "_ZTI17snd_pcm_hw_params",
+   "self_type" : "_ZTIP17snd_pcm_hw_params",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP17snd_pcm_sw_params",
+   "name" : "snd_pcm_sw_params *",
+   "referenced_type" : "_ZTI17snd_pcm_sw_params",
+   "self_type" : "_ZTIP17snd_pcm_sw_params",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP25pcm_plugin_hw_constraints",
+   "name" : "pcm_plugin_hw_constraints *",
+   "referenced_type" : "_ZTI25pcm_plugin_hw_constraints",
+   "self_type" : "_ZTIP25pcm_plugin_hw_constraints",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6pollfd",
+   "name" : "pollfd *",
+   "referenced_type" : "_ZTI6pollfd",
+   "self_type" : "_ZTIP6pollfd",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP9snd_xferi",
+   "name" : "snd_xferi *",
+   "referenced_type" : "_ZTI9snd_xferi",
+   "self_type" : "_ZTIP9snd_xferi",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPvP10pcm_pluginS_miilE",
+   "name" : "void *(*)(pcm_plugin *, void *, unsigned long, int, int, long)",
+   "referenced_type" : "_ZTIFPvP10pcm_pluginS_miilE",
+   "self_type" : "_ZTIPFPvP10pcm_pluginS_miilE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginE",
+   "name" : "int (*)(pcm_plugin *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginE",
+   "self_type" : "_ZTIPFiP10pcm_pluginE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "name" : "int (*)(pcm_plugin *, snd_pcm_sync_ptr *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "self_type" : "_ZTIPFiP10pcm_pluginP16snd_pcm_sync_ptrE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "name" : "int (*)(pcm_plugin *, snd_pcm_hw_params *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "self_type" : "_ZTIPFiP10pcm_pluginP17snd_pcm_hw_paramsE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "name" : "int (*)(pcm_plugin *, snd_pcm_sw_params *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "self_type" : "_ZTIPFiP10pcm_pluginP17snd_pcm_sw_paramsE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginP6pollfdjiE",
+   "name" : "int (*)(pcm_plugin *, pollfd *, unsigned int, int)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginP6pollfdjiE",
+   "self_type" : "_ZTIPFiP10pcm_pluginP6pollfdjiE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginP9snd_xferiE",
+   "name" : "int (*)(pcm_plugin *, snd_xferi *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginP9snd_xferiE",
+   "self_type" : "_ZTIPFiP10pcm_pluginP9snd_xferiE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginPiE",
+   "name" : "int (*)(pcm_plugin *, int *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginPiE",
+   "self_type" : "_ZTIPFiP10pcm_pluginPiE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginPvmE",
+   "name" : "int (*)(pcm_plugin *, void *, unsigned long)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginPvmE",
+   "self_type" : "_ZTIPFiP10pcm_pluginPvmE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP10pcm_pluginiPvE",
+   "name" : "int (*)(pcm_plugin *, int, void *)",
+   "referenced_type" : "_ZTIFiP10pcm_pluginiPvE",
+   "self_type" : "_ZTIPFiP10pcm_pluginiPvE",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "channels",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "rate",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "period_size",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "period_count",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTI10pcm_format"
+    },
+    {
+     "field_name" : "start_threshold",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "stop_threshold",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "silence_threshold",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "silence_size",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "avail_min",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI10pcm_config",
+   "name" : "pcm_config",
+   "referenced_type" : "_ZTI10pcm_config",
+   "self_type" : "_ZTI10pcm_config",
+   "size" : 40,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "card",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "ops",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP14pcm_plugin_ops"
+    },
+    {
+     "field_name" : "constraints",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIP25pcm_plugin_hw_constraints"
+    },
+    {
+     "field_name" : "node",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "mode",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "priv",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "state",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI10pcm_plugin",
+   "name" : "pcm_plugin",
+   "referenced_type" : "_ZTI10pcm_plugin",
+   "self_type" : "_ZTI10pcm_plugin",
+   "size" : 56,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numid",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "iface",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "device",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "subdevice",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "name",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIA44_h"
+    },
+    {
+     "field_name" : "index",
+     "field_offset" : 480,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI11ctl_elem_id",
+   "name" : "ctl_elem_id",
+   "referenced_type" : "_ZTI11ctl_elem_id",
+   "self_type" : "_ZTI11ctl_elem_id",
+   "size" : 64,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "close",
+     "referenced_type" : "_ZTIPFiP10pcm_pluginE"
+    },
+    {
+     "field_name" : "hw_params",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP17snd_pcm_hw_paramsE"
+    },
+    {
+     "field_name" : "sw_params",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP17snd_pcm_sw_paramsE"
+    },
+    {
+     "field_name" : "sync_ptr",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP16snd_pcm_sync_ptrE"
+    },
+    {
+     "field_name" : "writei_frames",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP9snd_xferiE"
+    },
+    {
+     "field_name" : "readi_frames",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP9snd_xferiE"
+    },
+    {
+     "field_name" : "ttstamp",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginPiE"
+    },
+    {
+     "field_name" : "prepare",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginE"
+    },
+    {
+     "field_name" : "start",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginE"
+    },
+    {
+     "field_name" : "drop",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginE"
+    },
+    {
+     "field_name" : "ioctl",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginiPvE"
+    },
+    {
+     "field_name" : "mmap",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIPFPvP10pcm_pluginS_miilE"
+    },
+    {
+     "field_name" : "munmap",
+     "field_offset" : 768,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginPvmE"
+    },
+    {
+     "field_name" : "poll",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIPFiP10pcm_pluginP6pollfdjiE"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pcm_plugin_ops",
+   "name" : "pcm_plugin_ops",
+   "referenced_type" : "_ZTI14pcm_plugin_ops",
+   "self_type" : "_ZTI14pcm_plugin_ops",
+   "size" : 112,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "min",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "max",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI18pcm_plugin_min_max",
+   "name" : "pcm_plugin_min_max",
+   "referenced_type" : "_ZTI18pcm_plugin_min_max",
+   "self_type" : "_ZTI18pcm_plugin_min_max",
+   "size" : 8,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "access",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "bit_width",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTI18pcm_plugin_min_max"
+    },
+    {
+     "field_name" : "channels",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTI18pcm_plugin_min_max"
+    },
+    {
+     "field_name" : "rate",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTI18pcm_plugin_min_max"
+    },
+    {
+     "field_name" : "periods",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTI18pcm_plugin_min_max"
+    },
+    {
+     "field_name" : "period_bytes",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTI18pcm_plugin_min_max"
+    }
+   ],
+   "linker_set_key" : "_ZTI25pcm_plugin_hw_constraints",
+   "name" : "pcm_plugin_hw_constraints",
+   "referenced_type" : "_ZTI25pcm_plugin_hw_constraints",
+   "self_type" : "_ZTI25pcm_plugin_hw_constraints",
+   "size" : 56,
+   "source_file" : "external/tinyalsa/include/tinyalsa/pcm_plugin.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "bits",
+     "referenced_type" : "_ZTIA8_j"
+    }
+   ],
+   "linker_set_key" : "_ZTI8pcm_mask",
+   "name" : "pcm_mask",
+   "referenced_type" : "_ZTI8pcm_mask",
+   "self_type" : "_ZTI8pcm_mask",
+   "size" : 32,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "type",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIN9ctl_eventUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI9ctl_event",
+   "name" : "ctl_event",
+   "referenced_type" : "_ZTI9ctl_event",
+   "self_type" : "_ZTI9ctl_event",
+   "size" : 72,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "elem",
+     "referenced_type" : "_ZTIN9ctl_eventUt_Ut_E"
+    },
+    {
+     "field_name" : "data8",
+     "referenced_type" : "_ZTIA60_h"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN9ctl_eventUt_E",
+   "name" : "ctl_event::(anonymous union at external/tinyalsa/include/tinyalsa/asoundlib.h:172:3)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN9ctl_eventUt_E",
+   "self_type" : "_ZTIN9ctl_eventUt_E",
+   "size" : 68,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "mask",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "id",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTI11ctl_elem_id"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN9ctl_eventUt_Ut_E",
+   "name" : "ctl_event::(anonymous union at external/tinyalsa/include/tinyalsa/asoundlib.h:172:3)::(anonymous struct at external/tinyalsa/include/tinyalsa/asoundlib.h:173:5)",
+   "referenced_type" : "_ZTIN9ctl_eventUt_Ut_E",
+   "self_type" : "_ZTIN9ctl_eventUt_Ut_E",
+   "size" : 68,
+   "source_file" : "external/tinyalsa/include/tinyalsa/asoundlib.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
