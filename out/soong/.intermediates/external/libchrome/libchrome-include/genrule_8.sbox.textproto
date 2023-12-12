@@ -1,0 +1,169 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/value_iterators.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/value_iterators.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/values.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/values.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/version.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/version.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/vlog.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/vlog.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/build/build_config.h __SBOX_SANDBOX_DIR__/out/external/libchrome/build/build_config.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/build/buildflag.h __SBOX_SANDBOX_DIR__/out/external/libchrome/build/buildflag.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/device/bluetooth/bluetooth_advertisement.h __SBOX_SANDBOX_DIR__/out/external/libchrome/device/bluetooth/bluetooth_advertisement.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/device/bluetooth/bluetooth_common.h __SBOX_SANDBOX_DIR__/out/external/libchrome/device/bluetooth/bluetooth_common.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/device/bluetooth/bluetooth_export.h __SBOX_SANDBOX_DIR__/out/external/libchrome/device/bluetooth/bluetooth_export.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/device/bluetooth/bluetooth_uuid.h __SBOX_SANDBOX_DIR__/out/external/libchrome/device/bluetooth/bluetooth_uuid.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/device/bluetooth/bluez/bluetooth_service_attribute_value_bluez.h __SBOX_SANDBOX_DIR__/out/external/libchrome/device/bluetooth/bluez/bluetooth_service_attribute_value_bluez.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/testing/gmock/include/gmock/gmock.h __SBOX_SANDBOX_DIR__/out/external/libchrome/testing/gmock/include/gmock/gmock.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/testing/gtest/include/gtest/gtest.h __SBOX_SANDBOX_DIR__/out/external/libchrome/testing/gtest/include/gtest/gtest.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/testing/gtest/include/gtest/gtest_prod.h __SBOX_SANDBOX_DIR__/out/external/libchrome/testing/gtest/include/gtest/gtest_prod.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/testing/multiprocess_func_list.h __SBOX_SANDBOX_DIR__/out/external/libchrome/testing/multiprocess_func_list.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/testing/platform_test.h __SBOX_SANDBOX_DIR__/out/external/libchrome/testing/platform_test.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/third_party/ashmem/ashmem.h __SBOX_SANDBOX_DIR__/out/external/libchrome/third_party/ashmem/ashmem.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/third_party/modp_b64/modp_b64.h __SBOX_SANDBOX_DIR__/out/external/libchrome/third_party/modp_b64/modp_b64.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/third_party/protobuf/src/google/protobuf/message_lite.h __SBOX_SANDBOX_DIR__/out/external/libchrome/third_party/protobuf/src/google/protobuf/message_lite.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/third_party/re2/src/re2/re2.h __SBOX_SANDBOX_DIR__/out/external/libchrome/third_party/re2/src/re2/re2.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/insets.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/insets.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/insets_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/insets_f.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/mojo/geometry_struct_traits.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/mojo/geometry_struct_traits.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/point.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/point.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/point_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/point_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/point_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/point_f.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/rect.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/rect.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/rect_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/rect_f.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/safe_integer_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/safe_integer_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/scroll_offset.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/scroll_offset.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/size.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/size.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/size_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/size_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/size_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/size_f.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/vector2d.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/vector2d.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/geometry/vector2d_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/geometry/vector2d_f.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/gfx_export.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/gfx_export.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/range/gfx_range_export.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/range/gfx_range_export.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/range/mojo/range_struct_traits.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/range/mojo/range_struct_traits.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/range/range.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/range/range.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/ui/gfx/range/range_f.h __SBOX_SANDBOX_DIR__/out/external/libchrome/ui/gfx/range/range_f.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/value_iterators.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/base/value_iterators.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/values.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/base/values.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/version.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/base/version.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/vlog.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/base/vlog.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/build/build_config.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/build/build_config.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/build/buildflag.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/build/buildflag.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/device/bluetooth/bluetooth_advertisement.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/device/bluetooth/bluetooth_advertisement.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/device/bluetooth/bluetooth_common.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/device/bluetooth/bluetooth_common.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/device/bluetooth/bluetooth_export.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/device/bluetooth/bluetooth_export.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/device/bluetooth/bluetooth_uuid.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/device/bluetooth/bluetooth_uuid.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/device/bluetooth/bluez/bluetooth_service_attribute_value_bluez.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/device/bluetooth/bluez/bluetooth_service_attribute_value_bluez.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/testing/gmock/include/gmock/gmock.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/testing/gmock/include/gmock/gmock.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/testing/gtest/include/gtest/gtest.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/testing/gtest/include/gtest/gtest.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/testing/gtest/include/gtest/gtest_prod.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/testing/gtest/include/gtest/gtest_prod.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/testing/multiprocess_func_list.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/testing/multiprocess_func_list.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/testing/platform_test.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/testing/platform_test.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/third_party/ashmem/ashmem.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/third_party/ashmem/ashmem.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/third_party/modp_b64/modp_b64.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/third_party/modp_b64/modp_b64.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/third_party/protobuf/src/google/protobuf/message_lite.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/third_party/protobuf/src/google/protobuf/message_lite.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/third_party/re2/src/re2/re2.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/third_party/re2/src/re2/re2.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/insets.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/insets.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/insets_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/insets_f.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/mojo/geometry_struct_traits.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/mojo/geometry_struct_traits.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/point.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/point.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/point_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/point_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/point_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/point_f.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/rect.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/rect.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/rect_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/rect_f.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/safe_integer_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/safe_integer_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/scroll_offset.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/scroll_offset.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/size.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/size.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/size_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/size_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/size_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/size_f.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/vector2d.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/vector2d.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/geometry/vector2d_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/geometry/vector2d_f.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/gfx_export.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/gfx_export.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/range/gfx_range_export.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/range/gfx_range_export.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/range/mojo/range_struct_traits.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/range/mojo/range_struct_traits.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/range/range.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/range/range.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/ui/gfx/range/range_f.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/8/external/libchrome/ui/gfx/range/range_f.h"
+  >
+  input_hash: "5997bd8e27a1b7bd21a396a7541d953ee7479262c719e1b6d33c6a24a4d92c66"
+>
+
