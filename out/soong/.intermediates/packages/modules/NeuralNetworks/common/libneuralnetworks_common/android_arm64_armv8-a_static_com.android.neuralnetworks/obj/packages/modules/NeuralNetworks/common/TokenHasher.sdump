@@ -1,0 +1,778 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIDn",
+   "name" : "nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIDn",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::VERBOSE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::DEBUG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::INFO"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::WARNING"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::ERROR"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "android::base::FATAL_WITHOUT_ABORT"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "android::base::FATAL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base11LogSeverityE",
+   "name" : "android::base::LogSeverity",
+   "referenced_type" : "_ZTIN7android4base11LogSeverityE",
+   "self_type" : "_ZTIN7android4base11LogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::base::DEFAULT"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::base::MAIN"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::base::SYSTEM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::base::RADIO"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "android::base::CRASH"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base5LogIdE",
+   "name" : "android::base::LogId",
+   "referenced_type" : "_ZTIN7android4base5LogIdE",
+   "self_type" : "_ZTIN7android4base5LogIdE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::nn::TokenHasher::updateFromString",
+   "linker_set_key" : "_ZN7android2nn11TokenHasher16updateFromStringEPKc",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2nn11TokenHasherE"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::finish",
+   "linker_set_key" : "_ZN7android2nn11TokenHasher6finishEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2nn11TokenHasherE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::update",
+   "linker_set_key" : "_ZN7android2nn11TokenHasher6updateEPKvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2nn11TokenHasherE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::TokenHasher",
+   "linker_set_key" : "_ZN7android2nn11TokenHasherC1EPKh",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2nn11TokenHasherE"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::TokenHasher",
+   "linker_set_key" : "_ZN7android2nn11TokenHasherC2EPKh",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2nn11TokenHasherE"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<nullptr_t>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIDnE5GuardERKDn",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKDn"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<const char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPKcE5GuardES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::LogNullGuard<char *>::Guard",
+   "linker_set_key" : "_ZN7android4base12LogNullGuardIPcE5GuardEPKc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::~ErrnoRestorer",
+   "linker_set_key" : "_ZN7android4base13ErrnoRestorerD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::getCacheToken",
+   "linker_set_key" : "_ZNK7android2nn11TokenHasher13getCacheTokenEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2nn11TokenHasherE"
+    }
+   ],
+   "return_type" : "_ZTIPKh",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::nn::TokenHasher::ok",
+   "linker_set_key" : "_ZNK7android2nn11TokenHasher2okEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2nn11TokenHasherE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "function_name" : "android::base::ErrnoRestorer::operator bool",
+   "linker_set_key" : "_ZNK7android4base13ErrnoRestorercvbEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base13ErrnoRestorerE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "function_name" : "std::operator<<",
+   "linker_set_key" : "_ZStlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEEPKNS_12basic_stringIcS2_NS_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail12StorageTypes7voidptrE",
+   "name" : "android::base::log_detail::StorageTypes::voidptr",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4base10log_detail13IsCharPointer5valueE",
+   "name" : "android::base::log_detail::IsCharPointer::value",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android4baseL14kEnableDChecksE",
+   "name" : "android::base::kEnableDChecks",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKDn",
+   "name" : "const nullptr_t &",
+   "referenced_type" : "_ZTIKDn",
+   "self_type" : "_ZTIRKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> &",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android2nn11TokenHasherE",
+   "name" : "const android::nn::TokenHasher *",
+   "referenced_type" : "_ZTIKN7android2nn11TokenHasherE",
+   "self_type" : "_ZTIPKN7android2nn11TokenHasherE",
+   "size" : 8,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPKN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android2nn11TokenHasherE",
+   "name" : "android::nn::TokenHasher *",
+   "referenced_type" : "_ZTIN7android2nn11TokenHasherE",
+   "self_type" : "_ZTIPN7android2nn11TokenHasherE",
+   "size" : 8,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer *",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIPN7android4base13ErrnoRestorerE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKDn",
+   "name" : "const nullptr_t",
+   "referenced_type" : "_ZTIDn",
+   "self_type" : "_ZTIKDn",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn11TokenHasherE",
+   "name" : "const android::nn::TokenHasher",
+   "referenced_type" : "_ZTIN7android2nn11TokenHasherE",
+   "self_type" : "_ZTIKN7android2nn11TokenHasherE",
+   "size" : 144,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "name" : "const android::base::ErrnoRestorer",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIKN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "name" : "const std::unique_ptr<android::base::LogMessageData, std::default_delete<android::base::LogMessageData>>",
+   "referenced_type" : "_ZTINSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "self_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKb",
+   "name" : "const bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIKb",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "left",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "top",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "right",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "bottom",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI5ARect",
+   "name" : "ARect",
+   "referenced_type" : "_ZTI5ARect",
+   "self_type" : "_ZTI5ARect",
+   "size" : 16,
+   "source_file" : "frameworks/native/libs/arect/include/android/rect.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mToken",
+     "referenced_type" : "_ZTINSt3__16vectorIhNS_9allocatorIhEEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mHasher",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTI15sha256_state_st"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mIsError",
+     "field_offset" : 1088,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android2nn11TokenHasherE",
+   "name" : "android::nn::TokenHasher",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android2nn11TokenHasherE",
+   "self_type" : "_ZTIN7android2nn11TokenHasherE",
+   "size" : 144,
+   "source_file" : "packages/modules/NeuralNetworks/common/include/TokenHasher.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "data_",
+     "referenced_type" : "_ZTIKNSt3__110unique_ptrIN7android4base14LogMessageDataENS_14default_deleteIS3_EEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogMessageE",
+   "name" : "android::base::LogMessage",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogMessageE",
+   "self_type" : "_ZTIN7android4base10LogMessageE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "default_log_id_",
+     "referenced_type" : "_ZTIN7android4base5LogIdE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10LogdLoggerE",
+   "name" : "android::base::LogdLogger",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10LogdLoggerE",
+   "self_type" : "_ZTIN7android4base10LogdLoggerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "name" : "android::base::LogNullGuard<std::nullptr_t>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIDnEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIDn" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "name" : "android::base::LogNullGuard<const char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPKcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPKc" ]
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "name" : "android::base::LogNullGuard<char *>",
+   "referenced_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "self_type" : "_ZTIN7android4base12LogNullGuardIPcEE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/logging.h",
+   "template_args" : [ "_ZTIPc" ]
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "saved_errno_",
+     "referenced_type" : "_ZTIKi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base13ErrnoRestorerE",
+   "name" : "android::base::ErrnoRestorer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "self_type" : "_ZTIN7android4base13ErrnoRestorerE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/errno_restorer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "old_",
+     "referenced_type" : "_ZTIN7android4base11LogSeverityE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "name" : "android::base::ScopedLogSeverity",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "self_type" : "_ZTIN7android4base17ScopedLogSeverityE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/logging.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

@@ -1,0 +1,209 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/observer_list_threadsafe.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/observer_list_threadsafe.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/optional.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/optional.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/os_compat_android.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/os_compat_android.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/path_service.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/path_service.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/pending_task.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/pending_task.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/pickle.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/pickle.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/posix/eintr_wrapper.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/posix/eintr_wrapper.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/posix/file_descriptor_shuffle.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/posix/file_descriptor_shuffle.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/posix/global_descriptors.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/posix/global_descriptors.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/posix/safe_strerror.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/posix/safe_strerror.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/posix/unix_domain_socket.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/posix/unix_domain_socket.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/post_task_and_reply_with_result_internal.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/post_task_and_reply_with_result_internal.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/power_monitor/power_monitor.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/power_monitor/power_monitor.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/power_monitor/power_monitor_device_source.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/power_monitor/power_monitor_device_source.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/power_monitor/power_monitor_source.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/power_monitor/power_monitor_source.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/power_monitor/power_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/power_monitor/power_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/internal_aix.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/internal_aix.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/internal_linux.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/internal_linux.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/kill.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/kill.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/launch.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/launch.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/memory.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/memory.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process_handle.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process_handle.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process_info.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process_info.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process_iterator.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process_iterator.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process_metrics.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process_metrics.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/process/process_metrics_iocounters.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/process/process_metrics_iocounters.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/rand_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/rand_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/run_loop.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/run_loop.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sampling_heap_profiler/lock_free_address_hash_set.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sampling_heap_profiler/lock_free_address_hash_set.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sampling_heap_profiler/sampling_heap_profiler.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sampling_heap_profiler/sampling_heap_profiler.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/scoped_clear_errno.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/scoped_clear_errno.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/scoped_generic.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/scoped_generic.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/scoped_native_library.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/scoped_native_library.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/scoped_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/scoped_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sequence_checker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sequence_checker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sequence_checker_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sequence_checker_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sequence_token.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sequence_token.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sequenced_task_runner.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sequenced_task_runner.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sequenced_task_runner_helpers.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sequenced_task_runner_helpers.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sha1.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sha1.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/single_thread_task_runner.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/single_thread_task_runner.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/stl_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/stl_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/char_traits.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/char_traits.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/nullable_string16.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/nullable_string16.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/old_utf_string_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/old_utf_string_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/pattern.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/pattern.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/safe_sprintf.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/safe_sprintf.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/strcat.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/strcat.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string16.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string16.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/observer_list_threadsafe.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/observer_list_threadsafe.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/optional.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/optional.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/os_compat_android.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/os_compat_android.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/path_service.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/path_service.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/pending_task.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/pending_task.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/pickle.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/pickle.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/posix/eintr_wrapper.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/posix/eintr_wrapper.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/posix/file_descriptor_shuffle.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/posix/file_descriptor_shuffle.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/posix/global_descriptors.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/posix/global_descriptors.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/posix/safe_strerror.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/posix/safe_strerror.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/posix/unix_domain_socket.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/posix/unix_domain_socket.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/post_task_and_reply_with_result_internal.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/post_task_and_reply_with_result_internal.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/power_monitor/power_monitor.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/power_monitor/power_monitor.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/power_monitor/power_monitor_device_source.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/power_monitor/power_monitor_device_source.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/power_monitor/power_monitor_source.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/power_monitor/power_monitor_source.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/power_monitor/power_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/power_monitor/power_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/internal_aix.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/internal_aix.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/internal_linux.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/internal_linux.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/kill.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/kill.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/launch.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/launch.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/memory.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/memory.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process_handle.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process_handle.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process_info.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process_info.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process_iterator.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process_iterator.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process_metrics.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process_metrics.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/process/process_metrics_iocounters.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/process/process_metrics_iocounters.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/rand_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/rand_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/run_loop.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/run_loop.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sampling_heap_profiler/lock_free_address_hash_set.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sampling_heap_profiler/lock_free_address_hash_set.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sampling_heap_profiler/sampling_heap_profiler.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sampling_heap_profiler/sampling_heap_profiler.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/scoped_clear_errno.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/scoped_clear_errno.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/scoped_generic.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/scoped_generic.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/scoped_native_library.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/scoped_native_library.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/scoped_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/scoped_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sequence_checker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sequence_checker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sequence_checker_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sequence_checker_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sequence_token.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sequence_token.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sequenced_task_runner.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sequenced_task_runner.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sequenced_task_runner_helpers.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sequenced_task_runner_helpers.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sha1.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/sha1.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/single_thread_task_runner.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/single_thread_task_runner.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/stl_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/stl_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/char_traits.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/char_traits.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/nullable_string16.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/nullable_string16.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/old_utf_string_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/old_utf_string_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/pattern.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/pattern.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/safe_sprintf.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/safe_sprintf.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/strcat.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/strcat.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string16.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/4/external/libchrome/base/strings/string16.h"
+  >
+  input_hash: "7e094dbbe269c16506a82da867893cc9eae56e36fb7185e91872f298aba0a736"
+>
+
