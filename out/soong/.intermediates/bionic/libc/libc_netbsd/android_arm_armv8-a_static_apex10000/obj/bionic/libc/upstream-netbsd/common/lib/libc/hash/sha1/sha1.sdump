@@ -1,0 +1,468 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA10_i",
+   "name" : "int [10]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA10_i",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA16_j",
+   "name" : "unsigned int [16]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA16_j",
+   "size" : 64,
+   "source_file" : "bionic/libc/upstream-netbsd/common/lib/libc/hash/sha1/sha1.c"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA1_i",
+   "name" : "int [1]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA1_i",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_i",
+   "name" : "int [2]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA2_i",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_j",
+   "name" : "unsigned int [2]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA2_j",
+   "size" : 8,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA32_m",
+   "name" : "unsigned long [32]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA32_m",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA5_j",
+   "name" : "unsigned int [5]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA5_j",
+   "size" : 20,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA64_h",
+   "name" : "unsigned char [64]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA64_h",
+   "size" : 64,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA8_i",
+   "name" : "int [8]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA8_i",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "SHA1Final",
+   "linker_set_key" : "SHA1Final",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIP8SHA1_CTX"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "function_name" : "SHA1Init",
+   "linker_set_key" : "SHA1Init",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8SHA1_CTX"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "function_name" : "SHA1Transform",
+   "linker_set_key" : "SHA1Transform",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "function_name" : "SHA1Update",
+   "linker_set_key" : "SHA1Update",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8SHA1_CTX"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8SHA1_CTX",
+   "name" : "SHA1_CTX *",
+   "referenced_type" : "_ZTI8SHA1_CTX",
+   "self_type" : "_ZTIP8SHA1_CTX",
+   "size" : 4,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "c",
+     "referenced_type" : "_ZTIA64_h"
+    },
+    {
+     "field_name" : "l",
+     "referenced_type" : "_ZTIA16_j"
+    }
+   ],
+   "linker_set_key" : "_ZTI12CHAR64LONG16",
+   "name" : "CHAR64LONG16",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI12CHAR64LONG16",
+   "self_type" : "_ZTI12CHAR64LONG16",
+   "size" : 64,
+   "source_file" : "bionic/libc/upstream-netbsd/common/lib/libc/hash/sha1/sha1.c"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "flags",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "stack_base",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "stack_size",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "guard_size",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sched_policy",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "sched_priority",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_attr_t",
+   "name" : "pthread_attr_t",
+   "referenced_type" : "_ZTI14pthread_attr_t",
+   "self_type" : "_ZTI14pthread_attr_t",
+   "size" : 24,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA1_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_cond_t",
+   "name" : "pthread_cond_t",
+   "referenced_type" : "_ZTI14pthread_cond_t",
+   "self_type" : "_ZTI14pthread_cond_t",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "fds_bits",
+     "referenced_type" : "_ZTIA32_m"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fd_set",
+   "name" : "__kernel_fd_set",
+   "referenced_type" : "_ZTI15__kernel_fd_set",
+   "self_type" : "_ZTI15__kernel_fd_set",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "val",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fsid_t",
+   "name" : "__kernel_fsid_t",
+   "referenced_type" : "_ZTI15__kernel_fsid_t",
+   "self_type" : "_ZTI15__kernel_fsid_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA1_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15pthread_mutex_t",
+   "name" : "pthread_mutex_t",
+   "referenced_type" : "_ZTI15pthread_mutex_t",
+   "self_type" : "_ZTI15pthread_mutex_t",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA10_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI16pthread_rwlock_t",
+   "name" : "pthread_rwlock_t",
+   "referenced_type" : "_ZTI16pthread_rwlock_t",
+   "self_type" : "_ZTI16pthread_rwlock_t",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA8_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI17pthread_barrier_t",
+   "name" : "pthread_barrier_t",
+   "referenced_type" : "_ZTI17pthread_barrier_t",
+   "self_type" : "_ZTI17pthread_barrier_t",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI18pthread_spinlock_t",
+   "name" : "pthread_spinlock_t",
+   "referenced_type" : "_ZTI18pthread_spinlock_t",
+   "self_type" : "_ZTI18pthread_spinlock_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "state",
+     "referenced_type" : "_ZTIA5_j"
+    },
+    {
+     "field_name" : "count",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIA2_j"
+    },
+    {
+     "field_name" : "buffer",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIA64_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI8SHA1_CTX",
+   "name" : "SHA1_CTX",
+   "referenced_type" : "_ZTI8SHA1_CTX",
+   "self_type" : "_ZTI8SHA1_CTX",
+   "size" : 92,
+   "source_file" : "bionic/libc/upstream-netbsd/android/include/sys/sha1.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
