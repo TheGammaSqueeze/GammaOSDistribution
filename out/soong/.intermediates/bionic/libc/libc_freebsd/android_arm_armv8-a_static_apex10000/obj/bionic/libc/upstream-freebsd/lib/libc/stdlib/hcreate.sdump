@@ -1,0 +1,450 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA10_i",
+   "name" : "int [10]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA10_i",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA1_i",
+   "name" : "int [1]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA1_i",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_i",
+   "name" : "int [2]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA2_i",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA32_m",
+   "name" : "unsigned long [32]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA32_m",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA8_i",
+   "name" : "int [8]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA8_i",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "preorder"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "postorder"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "endorder"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "leaf"
+    }
+   ],
+   "linker_set_key" : "_ZTI5VISIT",
+   "name" : "VISIT",
+   "referenced_type" : "_ZTI5VISIT",
+   "self_type" : "_ZTI5VISIT",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "FIND"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ENTER"
+    }
+   ],
+   "linker_set_key" : "_ZTI6ACTION",
+   "name" : "ACTION",
+   "referenced_type" : "_ZTI6ACTION",
+   "self_type" : "_ZTI6ACTION",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "hcreate",
+   "linker_set_key" : "hcreate",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "function_name" : "hdestroy",
+   "linker_set_key" : "hdestroy",
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "function_name" : "hsearch",
+   "linker_set_key" : "hsearch",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI5entry"
+    },
+    {
+     "referenced_type" : "_ZTI6ACTION"
+    }
+   ],
+   "return_type" : "_ZTIP5entry",
+   "source_file" : "bionic/libc/include/search.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "global_hashtable",
+   "name" : "global_hashtable",
+   "referenced_type" : "_ZTI12hsearch_data",
+   "source_file" : "bionic/libc/upstream-freebsd/lib/libc/stdlib/hcreate.c"
+  },
+  {
+   "linker_set_key" : "global_hashtable_initialized",
+   "name" : "global_hashtable_initialized",
+   "referenced_type" : "_ZTIb",
+   "source_file" : "bionic/libc/upstream-freebsd/lib/libc/stdlib/hcreate.c"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP5entry",
+   "name" : "entry *",
+   "referenced_type" : "_ZTI5entry",
+   "self_type" : "_ZTIP5entry",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP9__hsearch",
+   "name" : "__hsearch *",
+   "referenced_type" : "_ZTI9__hsearch",
+   "self_type" : "_ZTIP9__hsearch",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__hsearch",
+     "referenced_type" : "_ZTIP9__hsearch"
+    }
+   ],
+   "linker_set_key" : "_ZTI12hsearch_data",
+   "name" : "hsearch_data",
+   "referenced_type" : "_ZTI12hsearch_data",
+   "self_type" : "_ZTI12hsearch_data",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/search.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "flags",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "stack_base",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "stack_size",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "guard_size",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sched_policy",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "sched_priority",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_attr_t",
+   "name" : "pthread_attr_t",
+   "referenced_type" : "_ZTI14pthread_attr_t",
+   "self_type" : "_ZTI14pthread_attr_t",
+   "size" : 24,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA1_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_cond_t",
+   "name" : "pthread_cond_t",
+   "referenced_type" : "_ZTI14pthread_cond_t",
+   "self_type" : "_ZTI14pthread_cond_t",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "fds_bits",
+     "referenced_type" : "_ZTIA32_m"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fd_set",
+   "name" : "__kernel_fd_set",
+   "referenced_type" : "_ZTI15__kernel_fd_set",
+   "self_type" : "_ZTI15__kernel_fd_set",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "val",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fsid_t",
+   "name" : "__kernel_fsid_t",
+   "referenced_type" : "_ZTI15__kernel_fsid_t",
+   "self_type" : "_ZTI15__kernel_fsid_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA1_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15pthread_mutex_t",
+   "name" : "pthread_mutex_t",
+   "referenced_type" : "_ZTI15pthread_mutex_t",
+   "self_type" : "_ZTI15pthread_mutex_t",
+   "size" : 4,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA10_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI16pthread_rwlock_t",
+   "name" : "pthread_rwlock_t",
+   "referenced_type" : "_ZTI16pthread_rwlock_t",
+   "self_type" : "_ZTI16pthread_rwlock_t",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA8_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI17pthread_barrier_t",
+   "name" : "pthread_barrier_t",
+   "referenced_type" : "_ZTI17pthread_barrier_t",
+   "self_type" : "_ZTI17pthread_barrier_t",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI18pthread_spinlock_t",
+   "name" : "pthread_spinlock_t",
+   "referenced_type" : "_ZTI18pthread_spinlock_t",
+   "self_type" : "_ZTI18pthread_spinlock_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "key",
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "linker_set_key" : "_ZTI5entry",
+   "name" : "entry",
+   "referenced_type" : "_ZTI5entry",
+   "self_type" : "_ZTI5entry",
+   "size" : 8,
+   "source_file" : "bionic/libc/include/search.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

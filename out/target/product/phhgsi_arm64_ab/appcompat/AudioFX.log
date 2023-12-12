@@ -1,0 +1,155 @@
+Package name: org.lineageos.audiofx
+Module name in Android tree: AudioFX
+Local path in Android tree: packages/apps/AudioFX
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/AudioFX/AudioFX.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/content/Context;->getSharedPrefsFile(Ljava/lang/String;)Ljava/io/File; use(s):
+       Lorg/lineageos/audiofx/service/DevicePreferenceManager;->hasPrefs(Ljava/lang/String;)Z
+
+#2: Linking max-target-o Landroid/media/AudioDeviceInfo;->convertDeviceTypeToInternalDevice(I)I use(s):
+       Lorg/lineageos/audiofx/activity/MasterConfigControl;->getSystemDevice()Landroid/media/AudioDeviceInfo;
+       Lorg/lineageos/audiofx/service/AudioOutputChangeListener;->getConnectedOutputs()Ljava/util/List;
+
+#3: Linking unsupported Landroid/media/AudioManager;->getDevicesForStream(I)I use(s):
+       Lorg/lineageos/audiofx/activity/MasterConfigControl;->getSystemDevice()Landroid/media/AudioDeviceInfo;
+       Lorg/lineageos/audiofx/service/AudioOutputChangeListener;->getConnectedOutputs()Ljava/util/List;
+
+#4: Linking unsupported Landroid/media/AudioSystem;->isSourceActive(I)Z use(s):
+       Lorg/lineageos/audiofx/service/SessionManager;->addSession(I)V (2 occurrences)
+
+#5: Linking blocked,test-api Landroid/media/audiofx/AudioEffect;->setParameter(IS)I use(s):
+       Lorg/lineageos/audiofx/backends/AndroidEffects;->setParameterSafe(Landroid/media/audiofx/AudioEffect;IS)V
+
+#6: Linking max-target-o Landroid/os/Handler;-><init>(Landroid/os/Handler$Callback;Z)V use(s):
+       Lorg/lineageos/audiofx/activity/EqualizerManager;-><init>(Landroid/content/Context;Lorg/lineageos/audiofx/activity/MasterConfigControl;)V
+
+#7: Linking unsupported Lcom/android/internal/app/AlertActivity;-><init>()V use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;-><init>()V
+
+#8: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mCheckedItem:I use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker$1;->onClick(Landroid/content/DialogInterface;I)V
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onClick(Landroid/content/DialogInterface;I)V
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#9: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mCursor:Landroid/database/Cursor; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onClick(Landroid/content/DialogInterface;I)V
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#10: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#11: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mLabelColumn:Ljava/lang/String; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#12: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#13: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#14: Linking max-target-o Lcom/android/internal/app/AlertController$AlertParams;->mOnPrepareListViewListener:Lcom/android/internal/app/AlertController$AlertParams$OnPrepareListViewListener; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#15: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#16: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#17: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/audiofx/activity/ControlPanelPicker;->onCreate(Landroid/os/Bundle;)V
+
+#18: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#19: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#20: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#21: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#22: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#23: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#24: Reflection unsupported Landroid/media/session/MediaSession;->getCallingPackage use(s):
+       Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21;->getCallingPackage()Ljava/lang/String;
+
+#25: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#26: Reflection unsupported Landroid/os/Bundle;->putIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->putBinder(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
+
+#27: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#28: Reflection unsupported Landroid/os/Trace;->asyncTraceBegin use(s):
+       Landroidx/tracing/Trace;->beginAsyncSectionFallback(Ljava/lang/String;I)V
+
+#29: Reflection unsupported Landroid/os/Trace;->asyncTraceEnd use(s):
+       Landroidx/tracing/Trace;->endAsyncSectionFallback(Ljava/lang/String;I)V
+
+#30: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#31: Reflection unsupported Landroid/os/Trace;->traceCounter use(s):
+       Landroidx/tracing/Trace;->setCounterFallback(Ljava/lang/String;I)V
+
+#32: Reflection unsupported,test-api Landroid/os/UserHandle;->getUserId use(s):
+       Landroidx/core/os/UserHandleCompat;->getGetUserIdMethod()Ljava/lang/reflect/Method;
+
+#33: Reflection unsupported,test-api Landroid/os/UserHandle;->isApp use(s):
+       Landroidx/core/os/ProcessCompat$Api17Impl;->isApplicationUid(I)Z
+
+#34: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#35: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#36: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#37: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#38: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#39: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#40: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#41: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#42: Reflection unsupported Landroid/widget/CheckedTextView;->mCheckMarkDrawable use(s):
+       Landroidx/core/widget/CheckedTextViewCompat$Api14Impl;->getCheckMarkDrawable(Landroid/widget/CheckedTextView;)Landroid/graphics/drawable/Drawable;
+
+#43: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+43 hidden API(s) used: 17 linked against, 26 through reflection
+	32 in unsupported
+	2 in blocked
+	4 in max-target-o
+	2 in max-target-p
+	3 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

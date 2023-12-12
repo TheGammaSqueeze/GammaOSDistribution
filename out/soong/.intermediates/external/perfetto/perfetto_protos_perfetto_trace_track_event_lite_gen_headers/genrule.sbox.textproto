@@ -1,0 +1,106 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/track_event/chrome_application_state_info.proto external/perfetto/protos/perfetto/trace/track_event/chrome_compositor_scheduler_state.proto external/perfetto/protos/perfetto/trace/track_event/chrome_content_settings_event_info.proto external/perfetto/protos/perfetto/trace/track_event/chrome_frame_reporter.proto external/perfetto/protos/perfetto/trace/track_event/chrome_histogram_sample.proto external/perfetto/protos/perfetto/trace/track_event/chrome_keyed_service.proto external/perfetto/protos/perfetto/trace/track_event/chrome_latency_info.proto external/perfetto/protos/perfetto/trace/track_event/chrome_legacy_ipc.proto external/perfetto/protos/perfetto/trace/track_event/chrome_message_pump.proto external/perfetto/protos/perfetto/trace/track_event/chrome_mojo_event_info.proto external/perfetto/protos/perfetto/trace/track_event/chrome_process_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/chrome_renderer_scheduler_state.proto external/perfetto/protos/perfetto/trace/track_event/chrome_thread_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/chrome_user_event.proto external/perfetto/protos/perfetto/trace/track_event/chrome_window_handle_event_info.proto external/perfetto/protos/perfetto/trace/track_event/counter_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/debug_annotation.proto external/perfetto/protos/perfetto/trace/track_event/log_message.proto external/perfetto/protos/perfetto/trace/track_event/process_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/source_location.proto external/perfetto/protos/perfetto/trace/track_event/task_execution.proto external/perfetto/protos/perfetto/trace/track_event/thread_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/track_descriptor.proto external/perfetto/protos/perfetto/trace/track_event/track_event.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_application_state_info.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_application_state_info.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_compositor_scheduler_state.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_compositor_scheduler_state.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_content_settings_event_info.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_content_settings_event_info.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_frame_reporter.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_frame_reporter.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_histogram_sample.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_histogram_sample.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_keyed_service.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_keyed_service.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_latency_info.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_latency_info.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_legacy_ipc.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_legacy_ipc.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_message_pump.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_message_pump.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_mojo_event_info.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_mojo_event_info.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_process_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_process_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_renderer_scheduler_state.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_renderer_scheduler_state.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_thread_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_thread_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_user_event.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_user_event.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/chrome_window_handle_event_info.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_window_handle_event_info.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/counter_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/counter_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/debug_annotation.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/debug_annotation.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/log_message.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/log_message.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/process_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/process_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/source_location.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/source_location.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/task_execution.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/task_execution.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/thread_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/thread_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/track_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/track_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/track_event/track_event.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/track_event/track_event.pb.h"
+  >
+  input_hash: "0f55494546240d0e027024bccd4a449a677f3ff4885cc9f06da635a748469d67"
+>
+
