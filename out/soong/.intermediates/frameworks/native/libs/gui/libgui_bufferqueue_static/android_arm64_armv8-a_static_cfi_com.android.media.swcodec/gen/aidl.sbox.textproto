@@ -1,0 +1,182 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/BlockUntrustedTouchesMode.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputConstants.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionResult.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionSync.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/DisplayBrightness.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/DisplayBrightness.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/DisplayBrightness.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/IFpsListener.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/IFpsListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/IFpsListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/IHdrLayerInfoListener.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/IHdrLayerInfoListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/IHdrLayerInfoListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/IScreenCaptureListener.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/IScreenCaptureListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/IScreenCaptureListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/ITransactionTraceListener.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/ITransactionTraceListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/ITransactionTraceListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/ITunnelModeEnabledListener.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/ITunnelModeEnabledListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/ITunnelModeEnabledListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/ScreenCaptureResults.cpp.d --ninja  -Iframeworks/native/libs/gui/aidl/ frameworks/native/libs/gui/aidl/android/gui/ScreenCaptureResults.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/ScreenCaptureResults.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/DisplayBrightness.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/IFpsListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/IHdrLayerInfoListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/IScreenCaptureListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/ITransactionTraceListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/ITunnelModeEnabledListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/ScreenCaptureResults.cpp.d"
+  copy_after: <
+    from: "out/android/gui/BnDisplayBrightness.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnDisplayBrightness.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnFpsListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnFpsListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnHdrLayerInfoListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnHdrLayerInfoListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnScreenCaptureListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnScreenCaptureListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnScreenCaptureResults.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnScreenCaptureResults.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnTransactionTraceListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnTransactionTraceListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnTunnelModeEnabledListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BnTunnelModeEnabledListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpDisplayBrightness.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpDisplayBrightness.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpFpsListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpFpsListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpHdrLayerInfoListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpHdrLayerInfoListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpScreenCaptureListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpScreenCaptureListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpScreenCaptureResults.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpScreenCaptureResults.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpTransactionTraceListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpTransactionTraceListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpTunnelModeEnabledListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/BpTunnelModeEnabledListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/DisplayBrightness.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/DisplayBrightness.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/DisplayBrightness.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/DisplayBrightness.h"
+  >
+  copy_after: <
+    from: "out/android/gui/IFpsListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IFpsListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/IFpsListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IFpsListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/IHdrLayerInfoListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IHdrLayerInfoListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/IHdrLayerInfoListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IHdrLayerInfoListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/IScreenCaptureListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IScreenCaptureListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/IScreenCaptureListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/IScreenCaptureListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/ITransactionTraceListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ITransactionTraceListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/ITransactionTraceListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ITransactionTraceListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/ITunnelModeEnabledListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ITunnelModeEnabledListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/ITunnelModeEnabledListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ITunnelModeEnabledListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/ScreenCaptureResults.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ScreenCaptureResults.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/ScreenCaptureResults.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/gui/ScreenCaptureResults.h"
+  >
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BlockUntrustedTouchesMode.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BnBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BnInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BnInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BnInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BpBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BpInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BpInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BpInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/IInputConstants.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/IInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/InputEventInjectionResult.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/InputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/InputEventInjectionSync.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/InputEventInjectionSync.h"
+  >
+  input_hash: "22c3a885601ac6dd485b81f411bcb85bfb5f70ccc403401268938466e9e633ba"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_arm64_armv8-a_static_cfi_com.android.media.swcodec/gen/aidl/android/os/BlockUntrustedTouchesMode.cpp.d"
+
