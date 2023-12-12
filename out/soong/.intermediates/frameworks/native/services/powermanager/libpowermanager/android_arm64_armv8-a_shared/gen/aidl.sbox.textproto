@@ -1,0 +1,134 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/Temperature.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/Temperature.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/Temperature.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/CoolingDevice.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/CoolingDevice.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/CoolingDevice.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IHintManager.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IHintManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IHintManager.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IHintSession.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IHintSession.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IHintSession.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IThermalEventListener.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IThermalEventListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IThermalEventListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IThermalStatusListener.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IThermalStatusListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IThermalStatusListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IThermalService.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IThermalService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IThermalService.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IPowerManager.cpp.d --ninja -Iframeworks/native/services/powermanager/include -Iframeworks/base/core/java/android/os -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IPowerManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IPowerManager.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/Temperature.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/CoolingDevice.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IHintManager.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IHintSession.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IThermalEventListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IThermalStatusListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IThermalService.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IPowerManager.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnCoolingDevice.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnCoolingDevice.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnHintManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnHintManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnHintSession.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnHintSession.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnPowerManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnPowerManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnTemperature.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnTemperature.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnThermalEventListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnThermalEventListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnThermalService.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnThermalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnThermalStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BnThermalStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpCoolingDevice.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpCoolingDevice.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpHintManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpHintManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpHintSession.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpHintSession.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpPowerManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpPowerManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpTemperature.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpTemperature.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpThermalEventListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpThermalEventListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpThermalService.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpThermalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpThermalStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/BpThermalStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/CoolingDevice.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/CoolingDevice.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/CoolingDevice.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/CoolingDevice.h"
+  >
+  copy_after: <
+    from: "out/android/os/IHintManager.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IHintManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IHintManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IHintManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/IHintSession.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IHintSession.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IHintSession.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IHintSession.h"
+  >
+  copy_after: <
+    from: "out/android/os/IPowerManager.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IPowerManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IPowerManager.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IPowerManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalEventListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalEventListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalEventListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalEventListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalService.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalService.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalService.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalStatusListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalStatusListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IThermalStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/IThermalStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/Temperature.cpp"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/Temperature.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/Temperature.h"
+    to: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/Temperature.h"
+  >
+  input_hash: "5d5b3b9899eaa7c940e0c34bcac146699b27ae1ee7cbc9ec73476b000f080d36"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/services/powermanager/libpowermanager/android_arm64_armv8-a_shared/gen/aidl/android/os/Temperature.cpp.d"
+
