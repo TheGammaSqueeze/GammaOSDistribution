@@ -1,0 +1,494 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "FLAG_ONEWAY"
+    }
+   ],
+   "linker_set_key" : "_ZTI12$FLAG_ONEWAY",
+   "name" : "(anonymous enum at frameworks/native/libs/binder/ndk/include_ndk/android/binder_ibinder.h:43:1)",
+   "referenced_type" : "_ZTI12$FLAG_ONEWAY",
+   "self_type" : "_ZTI12$FLAG_ONEWAY",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_ndk/android/binder_ibinder.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EX_NONE"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "EX_SECURITY"
+    },
+    {
+     "enum_field_value" : -2,
+     "name" : "EX_BAD_PARCELABLE"
+    },
+    {
+     "enum_field_value" : -3,
+     "name" : "EX_ILLEGAL_ARGUMENT"
+    },
+    {
+     "enum_field_value" : -4,
+     "name" : "EX_NULL_POINTER"
+    },
+    {
+     "enum_field_value" : -5,
+     "name" : "EX_ILLEGAL_STATE"
+    },
+    {
+     "enum_field_value" : -6,
+     "name" : "EX_NETWORK_MAIN_THREAD"
+    },
+    {
+     "enum_field_value" : -7,
+     "name" : "EX_UNSUPPORTED_OPERATION"
+    },
+    {
+     "enum_field_value" : -8,
+     "name" : "EX_SERVICE_SPECIFIC"
+    },
+    {
+     "enum_field_value" : -9,
+     "name" : "EX_PARCELABLE"
+    },
+    {
+     "enum_field_value" : -129,
+     "name" : "EX_TRANSACTION_FAILED"
+    }
+   ],
+   "linker_set_key" : "_ZTI18$EX_BAD_PARCELABLE",
+   "name" : "(anonymous enum at frameworks/native/libs/binder/ndk/include_ndk/android/binder_status.h:79:1)",
+   "referenced_type" : "_ZTI18$EX_BAD_PARCELABLE",
+   "self_type" : "_ZTI18$EX_BAD_PARCELABLE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_ndk/android/binder_status.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "STATUS_OK"
+    },
+    {
+     "enum_field_value" : -2147483648,
+     "name" : "STATUS_UNKNOWN_ERROR"
+    },
+    {
+     "enum_field_value" : -12,
+     "name" : "STATUS_NO_MEMORY"
+    },
+    {
+     "enum_field_value" : -38,
+     "name" : "STATUS_INVALID_OPERATION"
+    },
+    {
+     "enum_field_value" : -22,
+     "name" : "STATUS_BAD_VALUE"
+    },
+    {
+     "enum_field_value" : -2147483647,
+     "name" : "STATUS_BAD_TYPE"
+    },
+    {
+     "enum_field_value" : -2,
+     "name" : "STATUS_NAME_NOT_FOUND"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "STATUS_PERMISSION_DENIED"
+    },
+    {
+     "enum_field_value" : -19,
+     "name" : "STATUS_NO_INIT"
+    },
+    {
+     "enum_field_value" : -17,
+     "name" : "STATUS_ALREADY_EXISTS"
+    },
+    {
+     "enum_field_value" : -32,
+     "name" : "STATUS_DEAD_OBJECT"
+    },
+    {
+     "enum_field_value" : -2147483646,
+     "name" : "STATUS_FAILED_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -75,
+     "name" : "STATUS_BAD_INDEX"
+    },
+    {
+     "enum_field_value" : -61,
+     "name" : "STATUS_NOT_ENOUGH_DATA"
+    },
+    {
+     "enum_field_value" : -11,
+     "name" : "STATUS_WOULD_BLOCK"
+    },
+    {
+     "enum_field_value" : -110,
+     "name" : "STATUS_TIMED_OUT"
+    },
+    {
+     "enum_field_value" : -74,
+     "name" : "STATUS_UNKNOWN_TRANSACTION"
+    },
+    {
+     "enum_field_value" : -2147483641,
+     "name" : "STATUS_FDS_NOT_ALLOWED"
+    },
+    {
+     "enum_field_value" : -2147483640,
+     "name" : "STATUS_UNEXPECTED_NULL"
+    }
+   ],
+   "linker_set_key" : "_ZTI22$STATUS_ALREADY_EXISTS",
+   "name" : "(anonymous enum at frameworks/native/libs/binder/ndk/include_ndk/android/binder_status.h:45:1)",
+   "referenced_type" : "_ZTI22$STATUS_ALREADY_EXISTS",
+   "self_type" : "_ZTI22$STATUS_ALREADY_EXISTS",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_ndk/android/binder_status.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "FIRST_CALL_TRANSACTION"
+    },
+    {
+     "enum_field_value" : 16777215,
+     "name" : "LAST_CALL_TRANSACTION"
+    }
+   ],
+   "linker_set_key" : "_ZTI23$FIRST_CALL_TRANSACTION",
+   "name" : "(anonymous enum at frameworks/native/libs/binder/ndk/include_ndk/android/binder_ibinder.h:58:1)",
+   "referenced_type" : "_ZTI23$FIRST_CALL_TRANSACTION",
+   "self_type" : "_ZTI23$FIRST_CALL_TRANSACTION",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_ndk/android/binder_ibinder.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFbbPvE",
+   "name" : "bool (bool, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFbbPvE",
+   "return_type" : "_ZTIb",
+   "self_type" : "_ZTIFbbPvE",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPKcPvE",
+   "name" : "void (const char *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPKcPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPKcPvE",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "AServiceManager_addService",
+   "linker_set_key" : "AServiceManager_addService",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8AIBinder"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_checkService",
+   "linker_set_key" : "AServiceManager_checkService",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIP8AIBinder",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_forEachDeclaredInstance",
+   "linker_set_key" : "AServiceManager_forEachDeclaredInstance",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPFvPKcPvE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_forceLazyServicesPersist",
+   "linker_set_key" : "AServiceManager_forceLazyServicesPersist",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_getService",
+   "linker_set_key" : "AServiceManager_getService",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIP8AIBinder",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_isDeclared",
+   "linker_set_key" : "AServiceManager_isDeclared",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_isUpdatableViaApex",
+   "linker_set_key" : "AServiceManager_isUpdatableViaApex",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_reRegister",
+   "linker_set_key" : "AServiceManager_reRegister",
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_registerLazyService",
+   "linker_set_key" : "AServiceManager_registerLazyService",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8AIBinder"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_setActiveServicesCallback",
+   "linker_set_key" : "AServiceManager_setActiveServicesCallback",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFbbPvE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_tryUnregister",
+   "linker_set_key" : "AServiceManager_tryUnregister",
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "function_name" : "AServiceManager_waitForService",
+   "linker_set_key" : "AServiceManager_waitForService",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIP8AIBinder",
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8AIBinder",
+   "name" : "AIBinder *",
+   "referenced_type" : "_ZTI8AIBinder",
+   "self_type" : "_ZTIP8AIBinder",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFbbPvE",
+   "name" : "bool (*)(bool, void *)",
+   "referenced_type" : "_ZTIFbbPvE",
+   "self_type" : "_ZTIPFbbPvE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvPKcPvE",
+   "name" : "void (*)(const char *, void *)",
+   "referenced_type" : "_ZTIFvPKcPvE",
+   "self_type" : "_ZTIPFvPKcPvE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "frameworks/native/libs/binder/ndk/include_platform/android/binder_manager.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

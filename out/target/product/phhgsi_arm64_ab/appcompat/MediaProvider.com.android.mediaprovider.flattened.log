@@ -1,0 +1,169 @@
+Package name: com.android.providers.media.module
+Module name in Android tree: MediaProvider.com.android.mediaprovider.flattened
+Local path in Android tree: packages/providers/MediaProvider
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.mediaprovider/priv-app/MediaProvider/MediaProvider.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking blocked,test-api Landroid/content/Context;->getUser()Landroid/os/UserHandle; use(s):
+       Lcom/android/providers/media/MediaService;->onScanVolume(Landroid/content/Context;Lcom/android/providers/media/MediaVolume;I)V
+       Lcom/android/providers/media/util/FileUtils;->getStorageVolume(Landroid/content/Context;Ljava/io/File;)Landroid/os/storage/StorageVolume;
+       Lcom/android/providers/media/util/UserCache;->update()V
+
+#2: Linking blocked Landroid/os/storage/StorageManager;->notifyAppIoBlocked(Ljava/util/UUID;III)V use(s):
+       Lcom/android/providers/media/TranscodeHelperImpl;->waitTranscodingResult(ILjava/lang/String;Landroid/media/MediaTranscodingManager$TranscodingSession;Ljava/util/concurrent/CountDownLatch;)I
+
+#3: Linking blocked Landroid/os/storage/StorageManager;->notifyAppIoResumed(Ljava/util/UUID;III)V use(s):
+       Lcom/android/providers/media/TranscodeHelperImpl;->waitTranscodingResult(ILjava/lang/String;Landroid/media/MediaTranscodingManager$TranscodingSession;Ljava/util/concurrent/CountDownLatch;)I (6 occurrences)
+
+#4: Linking max-target-p Landroid/os/storage/StorageVolume;->getOwner()Landroid/os/UserHandle; use(s):
+       Lcom/android/providers/media/MediaVolume;->fromStorageVolume(Landroid/os/storage/StorageVolume;)Lcom/android/providers/media/MediaVolume;
+
+#5: Linking blocked Landroid/provider/MediaStore;->checkArgumentVolumeName(Ljava/lang/String;)Ljava/lang/String; use(s):
+       Lcom/android/providers/media/MediaProvider;->attachVolume(Lcom/android/providers/media/MediaVolume;Z)Landroid/net/Uri;
+       Lcom/android/providers/media/MediaProvider;->detachVolume(Lcom/android/providers/media/MediaVolume;)V
+
+#6: Linking blocked Landroid/provider/MediaStore;->finishLegacyMigration(Landroid/content/ContentResolver;Ljava/lang/String;)V use(s):
+       Lcom/android/providers/media/MediaProvider$4;->onFinished(Landroid/content/ContentProviderClient;Ljava/lang/String;)V
+
+#7: Linking blocked Landroid/provider/MediaStore;->getGeneration(Landroid/content/ContentResolver;Ljava/lang/String;)J use(s):
+       Lcom/android/providers/media/scan/ModernMediaScanner$Scan;-><init>(Lcom/android/providers/media/scan/ModernMediaScanner;Ljava/io/File;ILjava/lang/String;)V
+
+#8: Linking blocked Landroid/provider/MediaStore;->getIncludePending(Landroid/net/Uri;)Z use(s):
+       Lcom/android/providers/media/MediaProvider;->getQueryBuilderInternal(IILandroid/net/Uri;Landroid/os/Bundle;Ljava/util/function/Consumer;)Lcom/android/providers/media/util/SQLiteQueryBuilder;
+
+#9: Linking blocked Landroid/provider/MediaStore;->resolvePlaylistMembers(Landroid/content/ContentResolver;Landroid/net/Uri;)V use(s):
+       Lcom/android/providers/media/scan/ModernMediaScanner$Scan;->resolvePlaylists()V
+
+#10: Linking blocked Landroid/provider/MediaStore;->startLegacyMigration(Landroid/content/ContentResolver;Ljava/lang/String;)V use(s):
+       Lcom/android/providers/media/MediaProvider$4;->onStarted(Landroid/content/ContentProviderClient;Ljava/lang/String;)V
+
+#11: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/hash/LittleEndianByteArray$UnsafeByteArray;-><clinit>()V
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#12: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/hash/LittleEndianByteArray$UnsafeByteArray;-><clinit>()V
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#13: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/common/hash/LittleEndianByteArray$UnsafeByteArray$1;->getLongLittleEndian([BI)J
+       Lcom/google/common/hash/LittleEndianByteArray$UnsafeByteArray$2;->getLongLittleEndian([BI)J
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->compare([B[B)I (2 occurrences)
+
+#14: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; use(s):
+       Lcom/google/common/hash/LittleEndianByteArray$UnsafeByteArray;->getUnsafe()Lsun/misc/Unsafe;
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->getUnsafe()Lsun/misc/Unsafe;
+
+#15: Linking blocked,test-api Landroid/os/Build$VERSION;->DEVICE_INITIAL_SDK_INT:I use(s):
+       Lcom/android/providers/media/MediaProvider;->isAppCloneUserPair(II)Z
+
+#16: Linking blocked Landroid/provider/MediaStore$Files;->EXTERNAL_CONTENT_URI:Landroid/net/Uri; use(s):
+       Lcom/android/providers/media/MediaDocumentsProvider;->getUriForDocumentId(Ljava/lang/String;)Landroid/net/Uri;
+       Lcom/android/providers/media/MediaDocumentsProvider;->includeDocumentsRoot(Landroid/database/MatrixCursor;)V
+       Lcom/android/providers/media/MediaDocumentsProvider;->queryChildDocuments(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; (4 occurrences)
+       Lcom/android/providers/media/MediaDocumentsProvider;->queryDocument(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor; (4 occurrences)
+       Lcom/android/providers/media/MediaDocumentsProvider;->queryRecentDocuments(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor; (2 occurrences)
+       Lcom/android/providers/media/MediaDocumentsProvider;->querySearchDocuments(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/database/Cursor; (2 occurrences)
+
+#17: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#18: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#19: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#20: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#21: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#22: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#23: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#24: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#25: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#26: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#27: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#28: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#29: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#30: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#31: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#32: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#33: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#34: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#35: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#36: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doAfterTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#37: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doBeforeTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#38: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->ensureImeVisible use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#39: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#40: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#41: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#42: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#43: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#44: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#45: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+45 hidden API(s) used: 16 linked against, 29 through reflection
+	22 in unsupported
+	12 in blocked
+	1 in max-target-o
+	7 in max-target-p
+	3 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
