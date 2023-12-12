@@ -1,0 +1,185 @@
+license_package_name: "Android"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "out/soong/.intermediates/packages/modules/Wifi/apex/com.android.wifi/android_common_com.android.wifi_image/NOTICE_FILES/src/system/apex/com.android.wifi.apex.txt"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.android.wifi_intermediates/com.android.wifi.capex"
+target: "out/target/product/phhgsi_arm64_ab/system/apex/com.android.wifi.capex"
+install_map: "OsuLogin.com.android.wifi:app/OsuLogin/OsuLogin.apk"
+install_map: "ServiceWifiResources.com.android.wifi:priv-app/ServiceWifiResources/ServiceWifiResources.apk"
+install_map: "apex_manifest.pb.com.android.wifi:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.wifi:./apex_pubkey"
+install_map: "bootclasspath.pb.com.android.wifi:etc/classpaths/bootclasspath.pb"
+install_map: "framework-wifi.com.android.wifi:javalib/framework-wifi.jar"
+install_map: "service-wifi.com.android.wifi:javalib/service-wifi.jar"
+install_map: "target-cacert-wifi-21125ccd.0.com.android.wifi:etc/security/cacerts_wfa/21125ccd.0"
+install_map: "target-cacert-wifi-674b5f5b.0.com.android.wifi:etc/security/cacerts_wfa/674b5f5b.0"
+install_map: "target-cacert-wifi-ea93cb5b.0.com.android.wifi:etc/security/cacerts_wfa/ea93cb5b.0"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/OsuLogin.com.android.wifi.meta_lic
+  dep_package_name:  "OsuLogin.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/app/OsuLogin/OsuLogin.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/OsuLogin.com.android.wifi_intermediates/package.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceWifiResources.com.android.wifi.meta_lic
+  dep_package_name:  "ServiceWifiResources.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/priv-app/ServiceWifiResources/ServiceWifiResources.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ServiceWifiResources.com.android.wifi_intermediates/package.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.wifi.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.wifi_intermediates/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.wifi.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.wifi_intermediates/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.wifi.meta_lic
+  dep_package_name:  "bootclasspath.pb.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/etc/classpaths/bootclasspath.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/bootclasspath.pb.com.android.wifi_intermediates/bootclasspath.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.android.wifi.flattened.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.wifi.flattened-timestamp"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.wifi.flattened_intermediates/com.android.wifi.flattened-timestamp"
+  dep_install_map: "OsuLogin.com.android.wifi.flattened:app/OsuLogin/OsuLogin.apk"
+  dep_install_map: "ServiceWifiResources.com.android.wifi.flattened:priv-app/ServiceWifiResources/ServiceWifiResources.apk"
+  dep_install_map: "apex_manifest.pb.com.android.wifi.flattened:./apex_manifest.pb"
+  dep_install_map: "apex_pubkey.com.android.wifi.flattened:./apex_pubkey"
+  dep_install_map: "bootclasspath.pb.com.android.wifi.flattened:etc/classpaths/bootclasspath.pb"
+  dep_install_map: "framework-wifi.com.android.wifi.flattened:javalib/framework-wifi.jar"
+  dep_install_map: "service-wifi.com.android.wifi.flattened:javalib/service-wifi.jar"
+  dep_install_map: "target-cacert-wifi-21125ccd.0.com.android.wifi.flattened:etc/security/cacerts_wfa/21125ccd.0"
+  dep_install_map: "target-cacert-wifi-674b5f5b.0.com.android.wifi.flattened:etc/security/cacerts_wfa/674b5f5b.0"
+  dep_install_map: "target-cacert-wifi-ea93cb5b.0.com.android.wifi.flattened:etc/security/cacerts_wfa/ea93cb5b.0"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/OsuLogin.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceWifiResources.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-wifi.com.android.wifi.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-wifi.com.android.wifi.flattened.meta_lic
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-wifi.com.android.wifi.meta_lic
+  dep_package_name:  "framework-wifi.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/javalib/framework-wifi.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-wifi.com.android.wifi_intermediates/javalib.jar"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-wifi.com.android.wifi.meta_lic
+  dep_package_name:  "service-wifi.com.android.wifi"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.wifi/javalib/service-wifi.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/service-wifi.com.android.wifi_intermediates/javalib.jar"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/OsuLogin.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "OsuLogin.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/OsuLogin.com.android.wifi.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/app/OsuLogin/OsuLogin.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ServiceWifiResources.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "ServiceWifiResources.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ServiceWifiResources.com.android.wifi.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/priv-app/ServiceWifiResources/ServiceWifiResources.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.wifi.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.wifi.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "bootclasspath.pb.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/bootclasspath.pb.com.android.wifi.flattened_intermediates/bootclasspath.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/etc/classpaths/bootclasspath.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/framework-wifi.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "framework-wifi.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/framework-wifi.com.android.wifi.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/javalib/framework-wifi.jar"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/service-wifi.com.android.wifi.flattened.meta_lic
+  dep_package_name:  "service-wifi.com.android.wifi.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/service-wifi.com.android.wifi.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.wifi/javalib/service-wifi.jar"
+  dep_effective_condition: "by_exception_only"
+}

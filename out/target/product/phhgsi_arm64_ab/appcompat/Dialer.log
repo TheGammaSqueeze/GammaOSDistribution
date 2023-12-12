@@ -1,0 +1,153 @@
+Package name: com.android.dialer
+Module name in Android tree: Dialer
+Local path in Android tree: packages/apps/Dialer
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/product/priv-app/Dialer/Dialer.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; use(s):
+       Lcom/google/protobuf/UnsafeUtil;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object;
+
+#2: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+       Lcom/google/protobuf/UnsafeUtil;->arrayBaseOffset(Ljava/lang/Class;)I
+
+#3: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+       Lcom/google/protobuf/UnsafeUtil;->arrayIndexScale(Ljava/lang/Class;)I
+
+#4: Linking unsupported Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casValue(Lcom/google/common/util/concurrent/AbstractFuture;Ljava/lang/Object;Ljava/lang/Object;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Z
+
+#5: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getBoolean(Ljava/lang/Object;J)Z use(s):
+       Lcom/google/protobuf/UnsafeUtil;->getBoolean(Ljava/lang/Object;J)Z
+
+#6: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B use(s):
+       Lcom/google/protobuf/UnsafeUtil;->getByte([BJ)B
+
+#7: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getDouble(Ljava/lang/Object;J)D use(s):
+       Lcom/google/protobuf/UnsafeUtil;->getDouble(Ljava/lang/Object;J)D
+
+#8: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getFloat(Ljava/lang/Object;J)F use(s):
+       Lcom/google/protobuf/UnsafeUtil;->getFloat(Ljava/lang/Object;J)F
+
+#9: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSize(Ljava/lang/Object;)I (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->isInitialized(Ljava/lang/Object;)Z
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeTo(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (7 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;->getInt(Ljava/lang/Object;J)I
+
+#10: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->getSerializedSize(Ljava/lang/Object;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->writeTo(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (5 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;->getLong(Ljava/lang/Object;J)J
+
+#11: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSize(Ljava/lang/Object;)I (55 occurrences)
+       Lcom/google/protobuf/MessageSchema;->mergeFrom(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)V (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (2 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->writeTo(Ljava/lang/Object;Lcom/google/protobuf/Writer;)V (41 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+
+#12: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V
+
+#13: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->newSchema(Lcom/google/protobuf/MessageInfo;Lcom/google/protobuf/NewInstanceSchema;Lcom/google/protobuf/ListFieldSchema;Lcom/google/protobuf/UnknownFieldSchema;Lcom/google/protobuf/ExtensionSchema;Lcom/google/protobuf/MapFieldSchema;)Lcom/google/protobuf/MessageSchema; (4 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;-><clinit>()V
+
+#14: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putBoolean(Ljava/lang/Object;JZ)V use(s):
+       Lcom/google/protobuf/UnsafeUtil;->putBoolean(Ljava/lang/Object;JZ)V
+
+#15: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V use(s):
+       Lcom/google/protobuf/UnsafeUtil;->putByte([BJB)V
+
+#16: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putDouble(Ljava/lang/Object;JD)V use(s):
+       Lcom/google/protobuf/UnsafeUtil;->putDouble(Ljava/lang/Object;JD)V
+
+#17: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putFloat(Ljava/lang/Object;JF)V use(s):
+       Lcom/google/protobuf/UnsafeUtil;->putFloat(Ljava/lang/Object;JF)V
+
+#18: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V use(s):
+       Lcom/google/protobuf/MessageSchema;->getSerializedSize(Ljava/lang/Object;)I (28 occurrences)
+       Lcom/google/protobuf/MessageSchema;->mergeFrom(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)V (4 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (14 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (6 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;->putInt(Ljava/lang/Object;JI)V
+
+#19: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V use(s):
+       Lcom/google/protobuf/MessageSchema;->mergeFrom(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)V (3 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (3 occurrences)
+       Lcom/google/protobuf/UnsafeUtil;->putLong(Ljava/lang/Object;JJ)V
+
+#20: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putNext(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)V
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putThread(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Ljava/lang/Thread;)V
+       Lcom/google/protobuf/MessageSchema;->mergeFrom(Ljava/lang/Object;[BIILcom/google/protobuf/ArrayDecoders$Registers;)V (5 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseMapField(Ljava/lang/Object;[BIIIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/MessageSchema;->parseOneofField(Ljava/lang/Object;[BIIIIIIIJILcom/google/protobuf/ArrayDecoders$Registers;)I (17 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseProto2Message(Ljava/lang/Object;[BIIILcom/google/protobuf/ArrayDecoders$Registers;)I (7 occurrences)
+       Lcom/google/protobuf/MessageSchema;->parseRepeatedField(Ljava/lang/Object;[BIIIIIIJIJLcom/google/protobuf/ArrayDecoders$Registers;)I
+       Lcom/google/protobuf/UnsafeUtil;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
+
+#21: Reflection max-target-q Landroid/graphics/FontFamily;->abortCreation use(s):
+       Landroid/support/v4/graphics/TypefaceCompatApi26Impl;-><init>()V
+
+#22: Reflection max-target-q Landroid/graphics/FontFamily;->freeze use(s):
+       Landroid/support/v4/graphics/TypefaceCompatApi26Impl;-><init>()V
+
+#23: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroid/support/v4/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#24: Reflection unsupported Landroid/telephony/PhoneNumberUtils;->isLocalEmergencyNumber use(s):
+       Lcom/android/dialer/phonenumberutil/PhoneNumberHelper;->isLocalEmergencyNumber(Landroid/content/Context;Ljava/lang/String;)Z
+
+#25: Reflection unsupported Landroid/telephony/TelephonyManager;->isWifiCallingAvailable use(s):
+       Lcom/android/dialer/oem/MotorolaUtils;->isWifiCallingAvailable(Landroid/content/Context;)Z
+
+#26: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroid/support/v7/widget/ViewUtils;-><clinit>()V
+
+#27: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroid/support/v4/view/ViewCompat;->hasAccessibilityDelegate(Landroid/view/View;)Z
+
+#28: Reflection max-target-p Landroid/view/View;->mViewFlags use(s):
+       Landroid/support/transition/ViewUtils;->setTransitionVisibility(Landroid/view/View;I)V
+
+#29: Reflection unsupported Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows use(s):
+       Landroid/support/v7/app/AppCompatDelegateImpl;->ensureSubDecor()V
+       Landroid/support/v7/app/AppCompatDelegateImpl;->ensureSubDecor()V
+
+#30: Reflection max-target-p Landroid/view/animation/Animation;->mListener use(s):
+       Landroid/support/v4/app/FragmentManagerImpl;->getAnimationListener(Landroid/view/animation/Animation;)Landroid/view/animation/Animation$AnimationListener;
+
+#31: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroid/support/v7/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#32: Reflection unsupported Landroid/widget/PopupWindow;->setClipToScreenEnabled use(s):
+       Landroid/support/v7/widget/ListPopupWindow;-><clinit>()V
+
+#33: Reflection unsupported Ljava/nio/Buffer;->address use(s):
+       Lcom/google/protobuf/UnsafeUtil;->bufferAddressField()Ljava/lang/reflect/Field;
+
+33 hidden API(s) used: 20 linked against, 13 through reflection
+	29 in unsupported
+	0 in blocked
+	0 in max-target-o
+	2 in max-target-p
+	2 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
