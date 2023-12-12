@@ -1,0 +1,624 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "access" : "private",
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache::tryFreeMemory",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCache13tryFreeMemoryERKNSt3__110shared_ptrIKN7android2nn6MemoryEEEx",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    },
+    {
+     "referenced_type" : "_ZTIx"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache::getOrCacheMemory",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCache16getOrCacheMemoryERKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__14pairIxNS_10shared_ptrIKN7android4base10ScopeGuardINS_8functionIFvvEEEEEEEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache::getMemoryIfAvailable",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCache20getMemoryIfAvailableERKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__18optionalINS_4pairIxNS_10shared_ptrIKN7android4base10ScopeGuardINS_8functionIFvvEEEEEEEEEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache::MemoryCache",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheC1ENSt3__110shared_ptrINS2_6IBurstEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache::MemoryCache",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheC2ENSt3__110shared_ptrINS2_6IBurstEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::create",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5Burst6createENSt3__110shared_ptrINS2_6IBurstEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKN4aidl7android8hardware14neuralnetworks5utils5BurstEEENS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::Burst",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5BurstC1ENS4_21PrivateConstructorTagENSt3__110shared_ptrINS2_6IBurstEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst21PrivateConstructorTagE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::Burst",
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utils5BurstC2ENS4_21PrivateConstructorTagENSt3__110shared_ptrINS2_6IBurstEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst21PrivateConstructorTagE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::cacheMemory",
+   "linker_set_key" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst11cacheMemoryERKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110shared_ptrIKN7android4base10ScopeGuardINS_8functionIFvvEEEEEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::executeInternal",
+   "linker_set_key" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst15executeInternalERKNS2_7RequestERKNSt3__16vectorIxNS8_9allocatorIxEEEEbxxRKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN4aidl7android8hardware14neuralnetworks7RequestE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIxNS_9allocatorIxEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android8hardware14neuralnetworks5utils17RequestRelocationE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__14pairINS2_6vectorINS_2nn11OutputShapeENS2_9allocatorIS6_EEEENS5_6TimingEEENS5_14ExecutionErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::createReusableExecution",
+   "linker_set_key" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst23createReusableExecutionERKN7android2nn7RequestENS6_13MeasureTimingERKNSt3__18optionalINSB_6chrono8durationIxNSB_5ratioILx1ELx1000000000EEEEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn7RequestE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn13MeasureTimingE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__110shared_ptrIKNS_2nn10IExecutionEEENS4_12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "function_name" : "aidl::android::hardware::neuralnetworks::utils::Burst::execute",
+   "linker_set_key" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst7executeERKN7android2nn7RequestENS6_13MeasureTimingERKNSt3__18optionalINSB_6chrono10time_pointINS5_4base10boot_clockENSD_8durationIxNSB_5ratioILx1ELx1000000000EEEEEEEEERKNSC_ISK_EE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2nn7RequestE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android2nn13MeasureTimingE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedINSt3__14pairINS2_6vectorINS_2nn11OutputShapeENS2_9allocatorIS6_EEEENS5_6TimingEEENS5_14ExecutionErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utilsL16kDefaultPriorityE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::kDefaultPriority",
+   "referenced_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks8PriorityE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Utils.h"
+  },
+  {
+   "linker_set_key" : "_ZN4aidl7android8hardware14neuralnetworks5utilsL8kVersionE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::kVersion",
+   "referenced_type" : "_ZTIKN7android2nn7VersionE",
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Utils.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKN4aidl7android8hardware14neuralnetworks7RequestE",
+   "name" : "const aidl::android::hardware::neuralnetworks::Request &",
+   "referenced_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks7RequestE",
+   "self_type" : "_ZTIRKN4aidl7android8hardware14neuralnetworks7RequestE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKN7android2nn7RequestE",
+   "name" : "const android::nn::Request &",
+   "referenced_type" : "_ZTIKN7android2nn7RequestE",
+   "self_type" : "_ZTIRKN7android2nn7RequestE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "name" : "const android::hardware::neuralnetworks::utils::RequestRelocation &",
+   "referenced_type" : "_ZTIKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "self_type" : "_ZTIRKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "name" : "const std::shared_ptr<const android::nn::Memory> &",
+   "referenced_type" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "self_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorIxNS_9allocatorIxEEEE",
+   "name" : "const std::vector<long long, std::allocator<long long>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorIxNS_9allocatorIxEEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorIxNS_9allocatorIxEEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "name" : "const std::optional<std::chrono::time_point<android::base::boot_clock, std::chrono::duration<long long, std::ratio<1, 1000000000>>>> &",
+   "referenced_type" : "_ZTIKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "self_type" : "_ZTIRKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "name" : "const std::optional<std::chrono::duration<long long, std::ratio<1, 1000000000>>> &",
+   "referenced_type" : "_ZTIKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "self_type" : "_ZTIRKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "name" : "const aidl::android::hardware::neuralnetworks::utils::Burst *",
+   "referenced_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "self_type" : "_ZTIPKN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache *",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "self_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::Burst *",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "self_type" : "_ZTIPN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "name" : "const aidl::android::hardware::neuralnetworks::utils::Burst",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "self_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "size" : 32,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN4aidl7android8hardware14neuralnetworks7RequestE",
+   "name" : "const aidl::android::hardware::neuralnetworks::Request",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks7RequestE",
+   "self_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks7RequestE",
+   "size" : 36,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN4aidl7android8hardware14neuralnetworks8PriorityE",
+   "name" : "const aidl::android::hardware::neuralnetworks::Priority",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks8PriorityE",
+   "self_type" : "_ZTIKN4aidl7android8hardware14neuralnetworks8PriorityE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Utils.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn7RequestE",
+   "name" : "const android::nn::Request",
+   "referenced_type" : "_ZTIN7android2nn7RequestE",
+   "self_type" : "_ZTIKN7android2nn7RequestE",
+   "size" : 36,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2nn7VersionE",
+   "name" : "const android::nn::Version",
+   "referenced_type" : "_ZTIN7android2nn7VersionE",
+   "self_type" : "_ZTIKN7android2nn7VersionE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Utils.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "name" : "const android::hardware::neuralnetworks::utils::RequestRelocation",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "self_type" : "_ZTIKN7android8hardware14neuralnetworks5utils17RequestRelocationE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "name" : "const std::shared_ptr<const android::nn::Memory>",
+   "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "self_type" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheEEE",
+   "name" : "const std::shared_ptr<aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache>",
+   "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheEEE",
+   "self_type" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE",
+   "name" : "const std::shared_ptr<aidl::android::hardware::neuralnetworks::IBurst>",
+   "referenced_type" : "_ZTINSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE",
+   "self_type" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE",
+   "size" : 8,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorIxNS_9allocatorIxEEEE",
+   "name" : "const std::vector<long long, std::allocator<long long>>",
+   "referenced_type" : "_ZTINSt3__16vectorIxNS_9allocatorIxEEEE",
+   "self_type" : "_ZTIKNSt3__16vectorIxNS_9allocatorIxEEEE",
+   "size" : 12,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "name" : "const std::optional<std::chrono::time_point<android::base::boot_clock, std::chrono::duration<long long, std::ratio<1, 1000000000>>>>",
+   "referenced_type" : "_ZTINSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "self_type" : "_ZTIKNSt3__18optionalINS_6chrono10time_pointIN7android4base10boot_clockENS1_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEEE",
+   "size" : 16,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "name" : "const std::optional<std::chrono::duration<long long, std::ratio<1, 1000000000>>>",
+   "referenced_type" : "_ZTINSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "self_type" : "_ZTIKNSt3__18optionalINS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEEEE",
+   "size" : 16,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__123enable_shared_from_thisIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheEEE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "kBurst",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mMutex",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTINSt3__15mutexE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mUnusedIdentifier",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mCache",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTINSt3__113unordered_mapINS_10shared_ptrIKN7android2nn6MemoryEEENS_4pairIxNS_8weak_ptrIKNS2_4base10ScopeGuardINS_8functionIFvvEEEEEEEEENS_4hashIS6_EENS_8equal_toIS6_EENS_9allocatorINS7_IKS6_SH_EEEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::Burst::MemoryCache",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "self_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheE",
+   "size" : 56,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "access" : "private",
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst21PrivateConstructorTagE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::Burst::PrivateConstructorTag",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst21PrivateConstructorTagE",
+   "self_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5Burst21PrivateConstructorTagE",
+   "size" : 1,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h"
+  },
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn6IBurstE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__123enable_shared_from_thisIN4aidl7android8hardware14neuralnetworks5utils5BurstEEE"
+    }
+   ],
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mExecutionInFlight",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTINSt3__111atomic_flagE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kBurst",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks6IBurstEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "kMemoryCache",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIKNSt3__110shared_ptrIN4aidl7android8hardware14neuralnetworks5utils5Burst11MemoryCacheEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "name" : "aidl::android::hardware::neuralnetworks::utils::Burst",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "self_type" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE",
+   "size" : 32,
+   "source_file" : "hardware/interfaces/neuralnetworks/aidl/utils/include/nnapi/hal/aidl/Burst.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN4aidl7android8hardware14neuralnetworks5utils5BurstE"
+    },
+    {
+     "mangled_component_name" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst11cacheMemoryERKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst7executeERKN7android2nn7RequestENS6_13MeasureTimingERKNSt3__18optionalINSB_6chrono10time_pointINS5_4base10boot_clockENSD_8durationIxNSB_5ratioILx1ELx1000000000EEEEEEEEERKNSC_ISK_EE"
+    },
+    {
+     "mangled_component_name" : "_ZNK4aidl7android8hardware14neuralnetworks5utils5Burst23createReusableExecutionERKN7android2nn7RequestENS6_13MeasureTimingERKNSt3__18optionalINSB_6chrono8durationIxNSB_5ratioILx1ELx1000000000EEEEEEE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN4aidl7android8hardware14neuralnetworks5utils5BurstD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN4aidl7android8hardware14neuralnetworks5utils5BurstD0Ev"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
