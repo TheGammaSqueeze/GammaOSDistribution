@@ -1,0 +1,511 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIs",
+   "name" : "short",
+   "referenced_type" : "_ZTIs",
+   "self_type" : "_ZTIs",
+   "size" : 2
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_FORMAT_BYTE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_FORMAT_ASCII"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_FORMAT_SHORT"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_FORMAT_LONG"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "EXIF_FORMAT_RATIONAL"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "EXIF_FORMAT_SBYTE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "EXIF_FORMAT_UNDEFINED"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EXIF_FORMAT_SSHORT"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "EXIF_FORMAT_SLONG"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "EXIF_FORMAT_SRATIONAL"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "EXIF_FORMAT_FLOAT"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "EXIF_FORMAT_DOUBLE"
+    }
+   ],
+   "linker_set_key" : "_ZTI10ExifFormat",
+   "name" : "ExifFormat",
+   "referenced_type" : "_ZTI10ExifFormat",
+   "self_type" : "_ZTI10ExifFormat",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-format.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_BYTE_ORDER_MOTOROLA"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_BYTE_ORDER_INTEL"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifByteOrder",
+   "name" : "ExifByteOrder",
+   "referenced_type" : "_ZTI13ExifByteOrder",
+   "self_type" : "_ZTI13ExifByteOrder",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-byte-order.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "exif_array_set_byte_order",
+   "linker_set_key" : "exif_array_set_byte_order",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI10ExifFormat"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_convert_utf16_to_utf8",
+   "linker_set_key" : "exif_convert_utf16_to_utf8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_long",
+   "linker_set_key" : "exif_get_long",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_rational",
+   "linker_set_key" : "exif_get_rational",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTI12ExifRational",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_short",
+   "linker_set_key" : "exif_get_short",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_slong",
+   "linker_set_key" : "exif_get_slong",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_srational",
+   "linker_set_key" : "exif_get_srational",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTI13ExifSRational",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_get_sshort",
+   "linker_set_key" : "exif_get_sshort",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    }
+   ],
+   "return_type" : "_ZTIs",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_long",
+   "linker_set_key" : "exif_set_long",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_rational",
+   "linker_set_key" : "exif_set_rational",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTI12ExifRational"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_short",
+   "linker_set_key" : "exif_set_short",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_slong",
+   "linker_set_key" : "exif_set_slong",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_srational",
+   "linker_set_key" : "exif_set_srational",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifSRational"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "function_name" : "exif_set_sshort",
+   "linker_set_key" : "exif_set_sshort",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI13ExifByteOrder"
+    },
+    {
+     "referenced_type" : "_ZTIs"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKt",
+   "name" : "const unsigned short *",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIPKt",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKt",
+   "name" : "const unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIKt",
+   "size" : 2,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI12ExifRational",
+   "name" : "ExifRational",
+   "referenced_type" : "_ZTI12ExifRational",
+   "self_type" : "_ZTI12ExifRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifSRational",
+   "name" : "ExifSRational",
+   "referenced_type" : "_ZTI13ExifSRational",
+   "self_type" : "_ZTI13ExifSRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
