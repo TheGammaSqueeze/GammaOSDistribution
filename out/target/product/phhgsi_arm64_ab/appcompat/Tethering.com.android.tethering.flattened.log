@@ -1,0 +1,205 @@
+Package name: com.android.networkstack.tethering
+Module name in Android tree: Tethering.com.android.tethering.flattened
+Local path in Android tree: packages/modules/Connectivity/Tethering
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.tethering/priv-app/Tethering/Tethering.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/content/ContentResolver;->acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider; use(s):
+       Llineageos/providers/LineageSettings$ContentProviderHolder;->getProvider(Landroid/content/ContentResolver;)Landroid/content/IContentProvider;
+
+#2: Linking max-target-o Landroid/content/ContentResolver;->createSqlQueryBundle(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#3: Linking blocked Landroid/content/ContentResolver;->getAttributionSource()Landroid/content/AttributionSource; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String; (2 occurrences)
+
+#4: Linking max-target-o Landroid/content/ContentResolver;->getUserId()I use(s):
+       Llineageos/providers/LineageSettings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+#5: Linking blocked Landroid/content/IContentProvider;->call(Landroid/content/AttributionSource;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#6: Linking blocked Landroid/content/IContentProvider;->query(Landroid/content/AttributionSource;Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ICancellationSignal;)Landroid/database/Cursor; use(s):
+       Llineageos/providers/LineageSettings$NameValueCache;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+#7: Linking blocked Landroid/net/ConnectivityManager;->registerSystemDefaultNetworkCallback(Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V use(s):
+       Lcom/android/networkstack/apishim/ConnectivityManagerShimImpl;->registerSystemDefaultNetworkCallback(Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V
+
+#8: Linking blocked Landroid/net/IIntResultListener;->onResult(I)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$setUsbTethering$8(Landroid/net/IIntResultListener;Z)V
+       Lcom/android/networkstack/tethering/Tethering;->lambda$tether$6(Landroid/net/IIntResultListener;Ljava/lang/String;I)V
+       Lcom/android/networkstack/tethering/Tethering;->lambda$untether$7(Landroid/net/IIntResultListener;Ljava/lang/String;)V
+       Lcom/android/networkstack/tethering/Tethering;->sendTetherResult(Landroid/net/IIntResultListener;II)V
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->checkAndNotifyCommonError(Ljava/lang/String;Ljava/lang/String;ZLandroid/net/IIntResultListener;)Z (2 occurrences)
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->isTetheringSupported(Ljava/lang/String;Ljava/lang/String;Landroid/net/IIntResultListener;)V
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->stopAllTethering(Ljava/lang/String;Ljava/lang/String;Landroid/net/IIntResultListener;)V
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->stopTethering(ILjava/lang/String;Ljava/lang/String;Landroid/net/IIntResultListener;)V
+
+#9: Linking blocked Landroid/net/ITetheringConnector$Stub;-><init>()V use(s):
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;-><init>(Lcom/android/networkstack/tethering/Tethering;Lcom/android/networkstack/tethering/TetheringService;)V
+
+#10: Linking blocked Landroid/net/ITetheringEventCallback;->onCallbackStarted(Landroid/net/TetheringCallbackStartedParcel;)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#11: Linking blocked Landroid/net/ITetheringEventCallback;->onCallbackStopped(I)V use(s):
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->registerTetheringEventCallback(Landroid/net/ITetheringEventCallback;Ljava/lang/String;)V
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->unregisterTetheringEventCallback(Landroid/net/ITetheringEventCallback;Ljava/lang/String;)V
+
+#12: Linking blocked Landroid/net/ITetheringEventCallback;->onConfigurationChanged(Landroid/net/TetheringConfigurationParcel;)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->reportConfigurationChanged(Landroid/net/TetheringConfigurationParcel;)V
+
+#13: Linking blocked Landroid/net/ITetheringEventCallback;->onOffloadStatusChanged(I)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->reportOffloadStatusChanged(I)V
+
+#14: Linking blocked Landroid/net/ITetheringEventCallback;->onTetherClientsChanged(Ljava/util/List;)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->reportTetherClientsChanged(Ljava/util/List;)V
+
+#15: Linking blocked Landroid/net/ITetheringEventCallback;->onTetherStatesChanged(Landroid/net/TetherStatesParcel;)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->reportTetherStateChanged(Landroid/net/TetherStatesParcel;)V
+
+#16: Linking blocked Landroid/net/ITetheringEventCallback;->onUpstreamChanged(Landroid/net/Network;)V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->reportUpstreamChanged(Lcom/android/networkstack/tethering/UpstreamNetworkState;)V
+
+#17: Linking blocked Landroid/net/TetherStatesParcel;-><init>()V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel;
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#18: Linking blocked Landroid/net/TetheredClient$AddressInfo;-><init>(Landroid/net/LinkAddress;Ljava/lang/String;)V use(s):
+       Landroid/net/ip/IpServer$DhcpEventCallback;->onLeasesChanged(Ljava/util/List;)V
+
+#19: Linking blocked Landroid/net/TetheredClient$AddressInfo;->getExpirationTime()J use(s):
+       Lcom/android/networkstack/tethering/ConnectedClientsTracker;->hasExpiredAddress(Ljava/util/List;J)Z
+       Lcom/android/networkstack/tethering/ConnectedClientsTracker;->pruneExpired(Landroid/net/TetheredClient;J)Landroid/net/TetheredClient;
+
+#20: Linking blocked Landroid/net/TetheredClient;->addAddresses(Landroid/net/TetheredClient;)Landroid/net/TetheredClient; use(s):
+       Lcom/android/networkstack/tethering/ConnectedClientsTracker;->addLease(Ljava/util/Map;Landroid/net/TetheredClient;)V
+
+#21: Linking blocked Landroid/net/TetheringCallbackStartedParcel;-><init>()V use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#22: Linking blocked Landroid/net/TetheringConfigurationParcel;-><init>()V use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#23: Linking blocked Landroid/net/TetheringManager$TetheringRequest;->checkStaticAddressConfiguration(Landroid/net/LinkAddress;Landroid/net/LinkAddress;)Z use(s):
+       Landroid/net/ip/IpServer;->maybeConfigureStaticIp(Landroid/net/TetheringRequestParcel;)V
+
+#24: Linking blocked Landroid/net/TetheringManager$TetheringRequest;->getDefaultConnectivityScope(I)I use(s):
+       Lcom/android/networkstack/tethering/Tethering;->getRequestedState(I)I
+
+#25: Linking blocked Landroid/net/TetheringManager;->toIfaces(Ljava/util/Collection;)Ljava/util/ArrayList; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildStateChangeIntent(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/content/Intent; (4 occurrences)
+
+#26: Linking blocked Landroid/net/TetherStatesParcel;->availableList:[Landroid/net/TetheringInterface; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel;
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#27: Linking blocked Landroid/net/TetherStatesParcel;->erroredIfaceList:[Landroid/net/TetheringInterface; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel;
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#28: Linking blocked Landroid/net/TetherStatesParcel;->lastErrorList:[I use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel; (2 occurrences)
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#29: Linking blocked Landroid/net/TetherStatesParcel;->localOnlyList:[Landroid/net/TetheringInterface; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel;
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#30: Linking blocked Landroid/net/TetherStatesParcel;->tetheredList:[Landroid/net/TetheringInterface; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->buildTetherStatesParcel(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)Landroid/net/TetherStatesParcel;
+       Lcom/android/networkstack/tethering/Tethering;->emptyTetherStatesParcel()Landroid/net/TetherStatesParcel;
+
+#31: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->config:Landroid/net/TetheringConfigurationParcel; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#32: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->offloadStatus:I use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#33: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->states:Landroid/net/TetherStatesParcel; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#34: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->tetheredClients:Ljava/util/List; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#35: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->tetheringSupported:Z use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#36: Linking blocked Landroid/net/TetheringCallbackStartedParcel;->upstreamNetwork:Landroid/net/Network; use(s):
+       Lcom/android/networkstack/tethering/Tethering;->lambda$registerTetheringEventCallback$10(Landroid/net/ITetheringEventCallback;Z)V
+
+#37: Linking blocked Landroid/net/TetheringConfigurationParcel;->chooseUpstreamAutomatically:Z use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#38: Linking blocked Landroid/net/TetheringConfigurationParcel;->defaultIPv4DNS:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#39: Linking blocked Landroid/net/TetheringConfigurationParcel;->enableLegacyDhcpServer:Z use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#40: Linking blocked Landroid/net/TetheringConfigurationParcel;->isDunRequired:Z use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#41: Linking blocked Landroid/net/TetheringConfigurationParcel;->legacyDhcpRanges:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#42: Linking blocked Landroid/net/TetheringConfigurationParcel;->preferredUpstreamIfaceTypes:[I use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#43: Linking blocked Landroid/net/TetheringConfigurationParcel;->provisioningApp:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#44: Linking blocked Landroid/net/TetheringConfigurationParcel;->provisioningAppNoUi:Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#45: Linking blocked Landroid/net/TetheringConfigurationParcel;->provisioningCheckPeriod:I use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#46: Linking blocked Landroid/net/TetheringConfigurationParcel;->subId:I use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#47: Linking blocked Landroid/net/TetheringConfigurationParcel;->tetherableBluetoothRegexs:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#48: Linking blocked Landroid/net/TetheringConfigurationParcel;->tetherableUsbRegexs:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#49: Linking blocked Landroid/net/TetheringConfigurationParcel;->tetherableWifiRegexs:[Ljava/lang/String; use(s):
+       Lcom/android/networkstack/tethering/TetheringConfiguration;->toStableParcelable()Landroid/net/TetheringConfigurationParcel;
+
+#50: Linking blocked Landroid/net/TetheringRequestParcel;->connectivityScope:I use(s):
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+       Lcom/android/networkstack/tethering/Tethering;->getRequestedState(I)I
+
+#51: Linking blocked Landroid/net/TetheringRequestParcel;->exemptFromEntitlementCheck:Z use(s):
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+       Lcom/android/networkstack/tethering/Tethering;->lambda$startTethering$4(Landroid/net/TetheringRequestParcel;Landroid/net/IIntResultListener;)V
+       Lcom/android/networkstack/tethering/TetheringService$TetheringConnector;->startTethering(Landroid/net/TetheringRequestParcel;Ljava/lang/String;Ljava/lang/String;Landroid/net/IIntResultListener;)V
+
+#52: Linking blocked Landroid/net/TetheringRequestParcel;->localIPv4Address:Landroid/net/LinkAddress; use(s):
+       Landroid/net/ip/IpServer;->maybeConfigureStaticIp(Landroid/net/TetheringRequestParcel;)V (2 occurrences)
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+
+#53: Linking blocked Landroid/net/TetheringRequestParcel;->showProvisioningUi:Z use(s):
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+       Lcom/android/networkstack/tethering/Tethering;->lambda$startTethering$4(Landroid/net/TetheringRequestParcel;Landroid/net/IIntResultListener;)V
+
+#54: Linking blocked Landroid/net/TetheringRequestParcel;->staticClientAddress:Landroid/net/LinkAddress; use(s):
+       Landroid/net/ip/IpServer;->maybeConfigureStaticIp(Landroid/net/TetheringRequestParcel;)V (2 occurrences)
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+
+#55: Linking blocked Landroid/net/TetheringRequestParcel;->tetheringType:I use(s):
+       Landroid/net/util/TetheringUtils;->isTetheringRequestEquals(Landroid/net/TetheringRequestParcel;Landroid/net/TetheringRequestParcel;)Z (2 occurrences)
+       Lcom/android/networkstack/tethering/Tethering;->lambda$startTethering$4(Landroid/net/TetheringRequestParcel;Landroid/net/IIntResultListener;)V (7 occurrences)
+
+55 hidden API(s) used: 55 linked against, 0 through reflection
+	1 in unsupported
+	52 in blocked
+	2 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
