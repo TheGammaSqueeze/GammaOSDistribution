@@ -1,0 +1,634 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotate0"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotate90"
+    },
+    {
+     "enum_field_value" : 180,
+     "name" : "libyuv::kRotate180"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotate270"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotateNone"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotateClockwise"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotateCounterClockwise"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12RotationModeE",
+   "name" : "libyuv::RotationMode",
+   "referenced_type" : "_ZTIN6libyuv12RotationModeE",
+   "self_type" : "_ZTIN6libyuv12RotationModeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/rotate.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 808596553,
+     "name" : "libyuv::FOURCC_I420"
+    },
+    {
+     "enum_field_value" : 842150985,
+     "name" : "libyuv::FOURCC_I422"
+    },
+    {
+     "enum_field_value" : 875836489,
+     "name" : "libyuv::FOURCC_I444"
+    },
+    {
+     "enum_field_value" : 808465481,
+     "name" : "libyuv::FOURCC_I400"
+    },
+    {
+     "enum_field_value" : 825382478,
+     "name" : "libyuv::FOURCC_NV21"
+    },
+    {
+     "enum_field_value" : 842094158,
+     "name" : "libyuv::FOURCC_NV12"
+    },
+    {
+     "enum_field_value" : 844715353,
+     "name" : "libyuv::FOURCC_YUY2"
+    },
+    {
+     "enum_field_value" : 1498831189,
+     "name" : "libyuv::FOURCC_UYVY"
+    },
+    {
+     "enum_field_value" : 808529992,
+     "name" : "libyuv::FOURCC_H010"
+    },
+    {
+     "enum_field_value" : 808596557,
+     "name" : "libyuv::FOURCC_M420"
+    },
+    {
+     "enum_field_value" : 1111970369,
+     "name" : "libyuv::FOURCC_ARGB"
+    },
+    {
+     "enum_field_value" : 1095911234,
+     "name" : "libyuv::FOURCC_BGRA"
+    },
+    {
+     "enum_field_value" : 1380401729,
+     "name" : "libyuv::FOURCC_ABGR"
+    },
+    {
+     "enum_field_value" : 808669761,
+     "name" : "libyuv::FOURCC_AR30"
+    },
+    {
+     "enum_field_value" : 808665665,
+     "name" : "libyuv::FOURCC_AB30"
+    },
+    {
+     "enum_field_value" : 1195521074,
+     "name" : "libyuv::FOURCC_24BG"
+    },
+    {
+     "enum_field_value" : 544694642,
+     "name" : "libyuv::FOURCC_RAW"
+    },
+    {
+     "enum_field_value" : 1094862674,
+     "name" : "libyuv::FOURCC_RGBA"
+    },
+    {
+     "enum_field_value" : 1346520914,
+     "name" : "libyuv::FOURCC_RGBP"
+    },
+    {
+     "enum_field_value" : 1329743698,
+     "name" : "libyuv::FOURCC_RGBO"
+    },
+    {
+     "enum_field_value" : 875836498,
+     "name" : "libyuv::FOURCC_R444"
+    },
+    {
+     "enum_field_value" : 1196444237,
+     "name" : "libyuv::FOURCC_MJPG"
+    },
+    {
+     "enum_field_value" : 842094169,
+     "name" : "libyuv::FOURCC_YV12"
+    },
+    {
+     "enum_field_value" : 909203033,
+     "name" : "libyuv::FOURCC_YV16"
+    },
+    {
+     "enum_field_value" : 875714137,
+     "name" : "libyuv::FOURCC_YV24"
+    },
+    {
+     "enum_field_value" : 842093913,
+     "name" : "libyuv::FOURCC_YU12"
+    },
+    {
+     "enum_field_value" : 808596554,
+     "name" : "libyuv::FOURCC_J420"
+    },
+    {
+     "enum_field_value" : 808465482,
+     "name" : "libyuv::FOURCC_J400"
+    },
+    {
+     "enum_field_value" : 808596552,
+     "name" : "libyuv::FOURCC_H420"
+    },
+    {
+     "enum_field_value" : 842150984,
+     "name" : "libyuv::FOURCC_H422"
+    },
+    {
+     "enum_field_value" : 1448433993,
+     "name" : "libyuv::FOURCC_IYUV"
+    },
+    {
+     "enum_field_value" : 909202777,
+     "name" : "libyuv::FOURCC_YU16"
+    },
+    {
+     "enum_field_value" : 875713881,
+     "name" : "libyuv::FOURCC_YU24"
+    },
+    {
+     "enum_field_value" : 1448695129,
+     "name" : "libyuv::FOURCC_YUYV"
+    },
+    {
+     "enum_field_value" : 1937143161,
+     "name" : "libyuv::FOURCC_YUVS"
+    },
+    {
+     "enum_field_value" : 1129923656,
+     "name" : "libyuv::FOURCC_HDYC"
+    },
+    {
+     "enum_field_value" : 2037741106,
+     "name" : "libyuv::FOURCC_2VUY"
+    },
+    {
+     "enum_field_value" : 1195724874,
+     "name" : "libyuv::FOURCC_JPEG"
+    },
+    {
+     "enum_field_value" : 828534116,
+     "name" : "libyuv::FOURCC_DMB1"
+    },
+    {
+     "enum_field_value" : 825770306,
+     "name" : "libyuv::FOURCC_BA81"
+    },
+    {
+     "enum_field_value" : 859981650,
+     "name" : "libyuv::FOURCC_RGB3"
+    },
+    {
+     "enum_field_value" : 861030210,
+     "name" : "libyuv::FOURCC_BGR3"
+    },
+    {
+     "enum_field_value" : 536870912,
+     "name" : "libyuv::FOURCC_CM32"
+    },
+    {
+     "enum_field_value" : 402653184,
+     "name" : "libyuv::FOURCC_CM24"
+    },
+    {
+     "enum_field_value" : 892679500,
+     "name" : "libyuv::FOURCC_L555"
+    },
+    {
+     "enum_field_value" : 892745036,
+     "name" : "libyuv::FOURCC_L565"
+    },
+    {
+     "enum_field_value" : 825570613,
+     "name" : "libyuv::FOURCC_5551"
+    },
+    {
+     "enum_field_value" : 825308233,
+     "name" : "libyuv::FOURCC_I411"
+    },
+    {
+     "enum_field_value" : 808596561,
+     "name" : "libyuv::FOURCC_Q420"
+    },
+    {
+     "enum_field_value" : 1111967570,
+     "name" : "libyuv::FOURCC_RGGB"
+    },
+    {
+     "enum_field_value" : 1380403010,
+     "name" : "libyuv::FOURCC_BGGR"
+    },
+    {
+     "enum_field_value" : 1195528775,
+     "name" : "libyuv::FOURCC_GRBG"
+    },
+    {
+     "enum_field_value" : 1196573255,
+     "name" : "libyuv::FOURCC_GBRG"
+    },
+    {
+     "enum_field_value" : 875967048,
+     "name" : "libyuv::FOURCC_H264"
+    },
+    {
+     "enum_field_value" : -1,
+     "name" : "libyuv::FOURCC_ANY"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv6FourCCE",
+   "name" : "libyuv::FourCC",
+   "referenced_type" : "_ZTIN6libyuv6FourCCE",
+   "self_type" : "_ZTIN6libyuv6FourCCE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/video_common.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_I420"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_I422"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_I444"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_I411"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_I400"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_NV21"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_NV12"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUY2"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_UYVY"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_M420"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_Q420"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_ARGB"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_BGRA"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_ABGR"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_RGBA"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_AR30"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_AB30"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_24BG"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_RAW"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_RGBP"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_RGBO"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_R444"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_RGGB"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_BGGR"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_GRBG"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_GBRG"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_YV12"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YV16"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_YV24"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_YU12"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_J420"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_J400"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_H420"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_H422"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_H010"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_MJPG"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_H264"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "libyuv::FOURCC_BPP_IYUV"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YU16"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_YU24"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUYV"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_YUVS"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_HDYC"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "libyuv::FOURCC_BPP_2VUY"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::FOURCC_BPP_JPEG"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::FOURCC_BPP_DMB1"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "libyuv::FOURCC_BPP_BA81"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_RGB3"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_BGR3"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "libyuv::FOURCC_BPP_CM32"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "libyuv::FOURCC_BPP_CM24"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::FOURCC_BPP_ANY"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv9FourCCBppE",
+   "name" : "libyuv::FourCCBpp",
+   "referenced_type" : "_ZTIN6libyuv9FourCCBppE",
+   "self_type" : "_ZTIN6libyuv9FourCCBppE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/video_common.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "libyuv::ConvertToI420",
+   "linker_set_key" : "ConvertToI420",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIN6libyuv12RotationModeE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/convert.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/convert.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/convert.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/libyuv/files/include/libyuv/convert.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

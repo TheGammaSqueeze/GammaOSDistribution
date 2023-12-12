@@ -1,0 +1,433 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::ui::Size::makeInvalid",
+   "linker_set_key" : "_ZN7android2ui4Size11makeInvalidEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::set",
+   "linker_set_key" : "_ZN7android2ui4Size3setERKS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::clamp",
+   "linker_set_key" : "_ZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h",
+   "template_args" : [ "_ZTIi", "_ZTIi" ]
+  },
+  {
+   "function_name" : "android::ui::Size::clear",
+   "linker_set_key" : "_ZN7android2ui4Size5clearEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::Size",
+   "linker_set_key" : "_ZN7android2ui4SizeC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::Size",
+   "linker_set_key" : "_ZN7android2ui4SizeC1IiEEOT_S4_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIOi"
+    },
+    {
+     "referenced_type" : "_ZTIOi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "function_name" : "android::ui::Size::Size",
+   "linker_set_key" : "_ZN7android2ui4SizeC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::Size",
+   "linker_set_key" : "_ZN7android2ui4SizeC2IiEEOT_S4_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIOi"
+    },
+    {
+     "referenced_type" : "_ZTIOi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h",
+   "template_args" : [ "_ZTIi" ]
+  },
+  {
+   "function_name" : "android::ui::operator==",
+   "linker_set_key" : "_ZN7android2uieqERKNS0_4SizeES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::operator<",
+   "linker_set_key" : "_ZN7android2uiltERKNS0_4SizeES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::operator!=",
+   "linker_set_key" : "_ZN7android2uineERKNS0_4SizeES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::isEmpty",
+   "linker_set_key" : "_ZNK7android2ui4Size7isEmptyEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::isValid",
+   "linker_set_key" : "_ZNK7android2ui4Size7isValidEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::getWidth",
+   "linker_set_key" : "_ZNK7android2ui4Size8getWidthEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "function_name" : "android::ui::Size::getHeight",
+   "linker_set_key" : "_ZNK7android2ui4Size9getHeightEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android2ui4SizeE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN7android2ui4Size5EMPTYE",
+   "name" : "android::ui::Size::EMPTY",
+   "referenced_type" : "_ZTIKN7android2ui4SizeE",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZN7android2ui4Size7INVALIDE",
+   "name" : "android::ui::Size::INVALID",
+   "referenced_type" : "_ZTIKN7android2ui4SizeE",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampENSt3__19enable_ifIXaasr3std14numeric_limitsINS2_9remove_cvINS2_16remove_referenceIT_E4typeEE4typeEEE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESB_E4typeEE13isClampNeeded",
+   "name" : "isClampNeeded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE10fromLowest",
+   "name" : "fromLowest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE11fromHighest",
+   "name" : "fromHighest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE13isClampNeeded",
+   "name" : "isClampNeeded",
+   "referenced_type" : "_ZTIKb",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE15fromClampLowest",
+   "name" : "fromClampLowest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE16fromClampHighest",
+   "name" : "fromClampHighest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE17commonClampLowest",
+   "name" : "commonClampLowest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE18commonClampHighest",
+   "name" : "commonClampHighest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE8toLowest",
+   "name" : "toLowest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "linker_set_key" : "_ZZN7android2ui4Size5clampIiiEENSt3__19remove_cvINS3_16remove_referenceIT_E4typeEE4typeENS3_9enable_ifIXaasr3std14numeric_limitsISA_EE14is_specializedsr3std14numeric_limitsINS4_INS5_IT0_E4typeEE4typeEEE14is_specializedESC_E4typeEE9toHighest",
+   "name" : "toHighest",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android2ui4SizeE",
+   "name" : "const android::ui::Size &",
+   "referenced_type" : "_ZTIKN7android2ui4SizeE",
+   "self_type" : "_ZTIRKN7android2ui4SizeE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android2ui4SizeE",
+   "name" : "const android::ui::Size *",
+   "referenced_type" : "_ZTIKN7android2ui4SizeE",
+   "self_type" : "_ZTIPKN7android2ui4SizeE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android2ui4SizeE",
+   "name" : "android::ui::Size *",
+   "referenced_type" : "_ZTIN7android2ui4SizeE",
+   "self_type" : "_ZTIPN7android2ui4SizeE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android2ui4SizeE",
+   "name" : "const android::ui::Size",
+   "referenced_type" : "_ZTIN7android2ui4SizeE",
+   "self_type" : "_ZTIKN7android2ui4SizeE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKb",
+   "name" : "const bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIKb",
+   "size" : 1,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "width",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "height",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android2ui4SizeE",
+   "name" : "android::ui::Size",
+   "referenced_type" : "_ZTIN7android2ui4SizeE",
+   "self_type" : "_ZTIN7android2ui4SizeE",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ],
+ "rvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIOi",
+   "name" : "int &&",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIOi",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/ui/include/ui/Size.h"
+  }
+ ]
+}

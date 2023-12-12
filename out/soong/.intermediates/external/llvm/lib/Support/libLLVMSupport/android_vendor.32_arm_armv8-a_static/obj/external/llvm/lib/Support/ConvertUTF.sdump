@@ -1,0 +1,579 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA256_c",
+   "name" : "char [256]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA256_c",
+   "size" : 256,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA6_j",
+   "name" : "unsigned int [6]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA6_j",
+   "size" : 24,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA7_h",
+   "name" : "unsigned char [7]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA7_h",
+   "size" : 7,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "strictConversion"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "lenientConversion"
+    }
+   ],
+   "linker_set_key" : "_ZTI15ConversionFlags",
+   "name" : "ConversionFlags",
+   "referenced_type" : "_ZTI15ConversionFlags",
+   "self_type" : "_ZTI15ConversionFlags",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "conversionOK"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "sourceExhausted"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "targetExhausted"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "sourceIllegal"
+    }
+   ],
+   "linker_set_key" : "_ZTI16ConversionResult",
+   "name" : "ConversionResult",
+   "referenced_type" : "_ZTI16ConversionResult",
+   "self_type" : "_ZTI16ConversionResult",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "ConvertUTF16toUTF32",
+   "linker_set_key" : "ConvertUTF16toUTF32",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPPj"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF16toUTF8",
+   "linker_set_key" : "ConvertUTF16toUTF8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPKt"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF32toUTF16",
+   "linker_set_key" : "ConvertUTF32toUTF16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKj"
+    },
+    {
+     "referenced_type" : "_ZTIPKj"
+    },
+    {
+     "referenced_type" : "_ZTIPPt"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF32toUTF8",
+   "linker_set_key" : "ConvertUTF32toUTF8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKj"
+    },
+    {
+     "referenced_type" : "_ZTIPKj"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF8toUTF16",
+   "linker_set_key" : "ConvertUTF8toUTF16",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPPt"
+    },
+    {
+     "referenced_type" : "_ZTIPt"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF8toUTF32",
+   "linker_set_key" : "ConvertUTF8toUTF32",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPPj"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "ConvertUTF8toUTF32Partial",
+   "linker_set_key" : "ConvertUTF8toUTF32Partial",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPPj"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTI15ConversionFlags"
+    }
+   ],
+   "return_type" : "_ZTI16ConversionResult",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "getNumBytesForUTF8",
+   "linker_set_key" : "getNumBytesForUTF8",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "isLegalUTF8Sequence",
+   "linker_set_key" : "isLegalUTF8Sequence",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "function_name" : "isLegalUTF8String",
+   "linker_set_key" : "isLegalUTF8String",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    }
+   ],
+   "return_type" : "_ZTIh",
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "firstByteMark",
+   "name" : "firstByteMark",
+   "referenced_type" : "_ZTIA7_Kh",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "linker_set_key" : "halfBase",
+   "name" : "halfBase",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "linker_set_key" : "halfMask",
+   "name" : "halfMask",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "linker_set_key" : "halfShift",
+   "name" : "halfShift",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "linker_set_key" : "offsetsFromUTF8",
+   "name" : "offsetsFromUTF8",
+   "referenced_type" : "_ZTIA6_Kj",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "linker_set_key" : "trailingBytesForUTF8",
+   "name" : "trailingBytesForUTF8",
+   "referenced_type" : "_ZTIA256_Kc",
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKj",
+   "name" : "const unsigned int *",
+   "referenced_type" : "_ZTIKj",
+   "self_type" : "_ZTIPKj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKt",
+   "name" : "const unsigned short *",
+   "referenced_type" : "_ZTIKt",
+   "self_type" : "_ZTIPKt",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPKh",
+   "name" : "const unsigned char **",
+   "referenced_type" : "_ZTIPKh",
+   "self_type" : "_ZTIPPKh",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPKj",
+   "name" : "const unsigned int **",
+   "referenced_type" : "_ZTIPKj",
+   "self_type" : "_ZTIPPKj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPKt",
+   "name" : "const unsigned short **",
+   "referenced_type" : "_ZTIPKt",
+   "self_type" : "_ZTIPPKt",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPh",
+   "name" : "unsigned char **",
+   "referenced_type" : "_ZTIPh",
+   "self_type" : "_ZTIPPh",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPj",
+   "name" : "unsigned int **",
+   "referenced_type" : "_ZTIPj",
+   "self_type" : "_ZTIPPj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPt",
+   "name" : "unsigned short **",
+   "referenced_type" : "_ZTIPt",
+   "self_type" : "_ZTIPPt",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPt",
+   "name" : "unsigned short *",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIPt",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA256_Kc",
+   "name" : "char const[256]",
+   "referenced_type" : "_ZTIA256_c",
+   "self_type" : "_ZTIA256_Kc",
+   "size" : 256,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA6_Kj",
+   "name" : "unsigned int const[6]",
+   "referenced_type" : "_ZTIA6_j",
+   "self_type" : "_ZTIA6_Kj",
+   "size" : 24,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA7_Kh",
+   "name" : "unsigned char const[7]",
+   "referenced_type" : "_ZTIA7_h",
+   "self_type" : "_ZTIA7_Kh",
+   "size" : 7,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/llvm/lib/Support/ConvertUTF.c"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKt",
+   "name" : "const unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIKt",
+   "size" : 2,
+   "source_file" : "external/llvm/include/llvm/Support/ConvertUTF.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}
