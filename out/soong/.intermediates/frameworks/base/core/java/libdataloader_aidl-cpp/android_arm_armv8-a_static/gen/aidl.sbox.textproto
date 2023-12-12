@@ -1,0 +1,150 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderParamsParcel.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/DataLoaderParamsParcel.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderParamsParcel.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderType.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/DataLoaderType.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderType.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/FileSystemControlParcel.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/FileSystemControlParcel.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/FileSystemControlParcel.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoader.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/IDataLoader.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoader.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderManager.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/IDataLoaderManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderManager.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileParcel.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/InstallationFileParcel.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileParcel.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileLocation.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/InstallationFileLocation.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileLocation.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderStatusListener.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/IDataLoaderStatusListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderStatusListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageInstallerSessionFileSystemConnector.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/content/pm/IPackageInstallerSessionFileSystemConnector.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageInstallerSessionFileSystemConnector.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderParamsParcel.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/DataLoaderType.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/FileSystemControlParcel.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoader.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderManager.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileParcel.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/InstallationFileLocation.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/IDataLoaderStatusListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageInstallerSessionFileSystemConnector.cpp.d"
+  copy_after: <
+    from: "out/android/content/pm/BnDataLoader.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnDataLoader.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnDataLoaderManager.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnDataLoaderManager.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnDataLoaderParamsParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnDataLoaderParamsParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnDataLoaderStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnDataLoaderStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnDataLoaderType.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnDataLoaderType.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnFileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnFileSystemControlParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnInstallationFileLocation.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnInstallationFileLocation.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnInstallationFileParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnInstallationFileParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnPackageInstallerSessionFileSystemConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BnPackageInstallerSessionFileSystemConnector.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpDataLoader.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpDataLoader.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpDataLoaderManager.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpDataLoaderManager.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpDataLoaderParamsParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpDataLoaderParamsParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpDataLoaderStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpDataLoaderStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpDataLoaderType.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpDataLoaderType.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpFileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpFileSystemControlParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpInstallationFileLocation.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpInstallationFileLocation.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpInstallationFileParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpInstallationFileParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpPackageInstallerSessionFileSystemConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/BpPackageInstallerSessionFileSystemConnector.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/DataLoaderParamsParcel.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/DataLoaderParamsParcel.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/DataLoaderParamsParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/DataLoaderParamsParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/DataLoaderType.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/DataLoaderType.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/DataLoaderType.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/DataLoaderType.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/FileSystemControlParcel.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/FileSystemControlParcel.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/FileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/FileSystemControlParcel.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoader.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoader.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoader.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoader.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoaderManager.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoaderManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoaderManager.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoaderManager.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoaderStatusListener.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoaderStatusListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IDataLoaderStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IDataLoaderStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageInstallerSessionFileSystemConnector.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IPackageInstallerSessionFileSystemConnector.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageInstallerSessionFileSystemConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/IPackageInstallerSessionFileSystemConnector.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/InstallationFileLocation.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/InstallationFileLocation.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/InstallationFileLocation.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/InstallationFileLocation.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/InstallationFileParcel.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/InstallationFileParcel.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/InstallationFileParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/InstallationFileParcel.h"
+  >
+  input_hash: "b52a84aa963d1037a5ab3c0b95d6d99e9e21bdf443fe3fcb62935a1d6ada2f8e"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/core/java/libdataloader_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/content/pm/DataLoaderParamsParcel.cpp.d"
+
