@@ -1,0 +1,720 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "ERR_LIB_NONE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ERR_LIB_SYS"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ERR_LIB_BN"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ERR_LIB_RSA"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ERR_LIB_DH"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ERR_LIB_EVP"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ERR_LIB_BUF"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ERR_LIB_OBJ"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "ERR_LIB_PEM"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "ERR_LIB_DSA"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "ERR_LIB_X509"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "ERR_LIB_ASN1"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "ERR_LIB_CONF"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "ERR_LIB_CRYPTO"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "ERR_LIB_EC"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "ERR_LIB_SSL"
+    },
+    {
+     "enum_field_value" : 17,
+     "name" : "ERR_LIB_BIO"
+    },
+    {
+     "enum_field_value" : 18,
+     "name" : "ERR_LIB_PKCS7"
+    },
+    {
+     "enum_field_value" : 19,
+     "name" : "ERR_LIB_PKCS8"
+    },
+    {
+     "enum_field_value" : 20,
+     "name" : "ERR_LIB_X509V3"
+    },
+    {
+     "enum_field_value" : 21,
+     "name" : "ERR_LIB_RAND"
+    },
+    {
+     "enum_field_value" : 22,
+     "name" : "ERR_LIB_ENGINE"
+    },
+    {
+     "enum_field_value" : 23,
+     "name" : "ERR_LIB_OCSP"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "ERR_LIB_UI"
+    },
+    {
+     "enum_field_value" : 25,
+     "name" : "ERR_LIB_COMP"
+    },
+    {
+     "enum_field_value" : 26,
+     "name" : "ERR_LIB_ECDSA"
+    },
+    {
+     "enum_field_value" : 27,
+     "name" : "ERR_LIB_ECDH"
+    },
+    {
+     "enum_field_value" : 28,
+     "name" : "ERR_LIB_HMAC"
+    },
+    {
+     "enum_field_value" : 29,
+     "name" : "ERR_LIB_DIGEST"
+    },
+    {
+     "enum_field_value" : 30,
+     "name" : "ERR_LIB_CIPHER"
+    },
+    {
+     "enum_field_value" : 31,
+     "name" : "ERR_LIB_HKDF"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "ERR_LIB_TRUST_TOKEN"
+    },
+    {
+     "enum_field_value" : 33,
+     "name" : "ERR_LIB_USER"
+    },
+    {
+     "enum_field_value" : 34,
+     "name" : "ERR_NUM_LIBS"
+    }
+   ],
+   "linker_set_key" : "_ZTI13$ERR_LIB_ASN1",
+   "name" : "(anonymous enum at external/boringssl/src/include/openssl/err.h:290:1)",
+   "referenced_type" : "_ZTI13$ERR_LIB_ASN1",
+   "self_type" : "_ZTI13$ERR_LIB_ASN1",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/err.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPPKvS1_E",
+   "name" : "int (const void **, const void **)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPPKv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPPKvS1_E",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPPKvS1_E",
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "PKCS7_get_raw_certificates",
+   "linker_set_key" : "PKCS7_get_raw_certificates",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP22stack_st_CRYPTO_BUFFER"
+    },
+    {
+     "referenced_type" : "_ZTIP6cbs_st"
+    },
+    {
+     "referenced_type" : "_ZTIP21crypto_buffer_pool_st"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP12PKCS7_SIGNED",
+   "name" : "PKCS7_SIGNED *",
+   "referenced_type" : "_ZTI12PKCS7_SIGNED",
+   "self_type" : "_ZTIP12PKCS7_SIGNED",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP12asn1_type_st",
+   "name" : "asn1_type_st *",
+   "referenced_type" : "_ZTI12asn1_type_st",
+   "self_type" : "_ZTIP12asn1_type_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP13cbb_buffer_st",
+   "name" : "cbb_buffer_st *",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTIP13cbb_buffer_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP13stack_st_X509",
+   "name" : "stack_st_X509 *",
+   "referenced_type" : "_ZTI13stack_st_X509",
+   "self_type" : "_ZTIP13stack_st_X509",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP14asn1_object_st",
+   "name" : "asn1_object_st *",
+   "referenced_type" : "_ZTI14asn1_object_st",
+   "self_type" : "_ZTIP14asn1_object_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP14asn1_string_st",
+   "name" : "asn1_string_st *",
+   "referenced_type" : "_ZTI14asn1_string_st",
+   "self_type" : "_ZTIP14asn1_string_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP17stack_st_X509_CRL",
+   "name" : "stack_st_X509_CRL *",
+   "referenced_type" : "_ZTI17stack_st_X509_CRL",
+   "self_type" : "_ZTIP17stack_st_X509_CRL",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP19PKCS7_SIGN_ENVELOPE",
+   "name" : "PKCS7_SIGN_ENVELOPE *",
+   "referenced_type" : "_ZTI19PKCS7_SIGN_ENVELOPE",
+   "self_type" : "_ZTIP19PKCS7_SIGN_ENVELOPE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP21crypto_buffer_pool_st",
+   "name" : "crypto_buffer_pool_st *",
+   "referenced_type" : "_ZTI21crypto_buffer_pool_st",
+   "self_type" : "_ZTIP21crypto_buffer_pool_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP22stack_st_CRYPTO_BUFFER",
+   "name" : "stack_st_CRYPTO_BUFFER *",
+   "referenced_type" : "_ZTI22stack_st_CRYPTO_BUFFER",
+   "self_type" : "_ZTIP22stack_st_CRYPTO_BUFFER",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6cbb_st",
+   "name" : "cbb_st *",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTIP6cbb_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6cbs_st",
+   "name" : "cbs_st *",
+   "referenced_type" : "_ZTI6cbs_st",
+   "self_type" : "_ZTIP6cbs_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPPKvS1_E",
+   "name" : "int (*)(const void **, const void **)",
+   "referenced_type" : "_ZTIFiPPKvS1_E",
+   "self_type" : "_ZTIPFiPPKvS1_E",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPKv",
+   "name" : "const void **",
+   "referenced_type" : "_ZTIPKv",
+   "self_type" : "_ZTIPPKv",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPv",
+   "name" : "void **",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIPPv",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "cert",
+     "referenced_type" : "_ZTIP13stack_st_X509"
+    },
+    {
+     "field_name" : "crl",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP17stack_st_X509_CRL"
+    }
+   ],
+   "linker_set_key" : "_ZTI12PKCS7_SIGNED",
+   "name" : "PKCS7_SIGNED",
+   "referenced_type" : "_ZTI12PKCS7_SIGNED",
+   "self_type" : "_ZTI12PKCS7_SIGNED",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "buf",
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "cap",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "can_resize",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "error",
+     "field_offset" : 200,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI13cbb_buffer_st",
+   "name" : "cbb_buffer_st",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTI13cbb_buffer_st",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "cert",
+     "referenced_type" : "_ZTIP13stack_st_X509"
+    },
+    {
+     "field_name" : "crl",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP17stack_st_X509_CRL"
+    }
+   ],
+   "linker_set_key" : "_ZTI19PKCS7_SIGN_ENVELOPE",
+   "name" : "PKCS7_SIGN_ENVELOPE",
+   "referenced_type" : "_ZTI19PKCS7_SIGN_ENVELOPE",
+   "self_type" : "_ZTI19PKCS7_SIGN_ENVELOPE",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ber_bytes",
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "ber_len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "type",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIP14asn1_object_st"
+    },
+    {
+     "field_name" : "d",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIN5PKCS7Ut_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI5PKCS7",
+   "name" : "PKCS7",
+   "referenced_type" : "_ZTI5PKCS7",
+   "self_type" : "_ZTI5PKCS7",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "base",
+     "referenced_type" : "_ZTIP13cbb_buffer_st"
+    },
+    {
+     "field_name" : "child",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "field_name" : "offset",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "pending_len_len",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "pending_is_asn1",
+     "field_offset" : 200,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "is_child",
+     "field_offset" : 208,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbb_st",
+   "name" : "cbb_st",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTI6cbb_st",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbs_st",
+   "name" : "cbs_st",
+   "referenced_type" : "_ZTI6cbs_st",
+   "self_type" : "_ZTI6cbs_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "num",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPPv"
+    },
+    {
+     "field_name" : "sorted",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "num_alloc",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "comp",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPFiPPKvS1_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI8stack_st",
+   "name" : "stack_st",
+   "referenced_type" : "_ZTI8stack_st",
+   "self_type" : "_ZTI8stack_st",
+   "size" : 40,
+   "source_file" : "external/boringssl/src/include/openssl/stack.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ptr",
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIP14asn1_string_st"
+    },
+    {
+     "field_name" : "sign",
+     "referenced_type" : "_ZTIP12PKCS7_SIGNED"
+    },
+    {
+     "field_name" : "enveloped",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "signed_and_enveloped",
+     "referenced_type" : "_ZTIP19PKCS7_SIGN_ENVELOPE"
+    },
+    {
+     "field_name" : "digest",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "encrypted",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "other",
+     "referenced_type" : "_ZTIP12asn1_type_st"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN5PKCS7Ut_E",
+   "name" : "PKCS7::(anonymous union at external/boringssl/src/include/openssl/pkcs7.h:112:3)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN5PKCS7Ut_E",
+   "self_type" : "_ZTIN5PKCS7Ut_E",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/pkcs7.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
