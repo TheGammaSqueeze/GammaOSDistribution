@@ -1,0 +1,545 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA16_h",
+   "name" : "unsigned char [16]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA16_h",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA32_h",
+   "name" : "unsigned char [32]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA32_h",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP17evp_cipher_ctx_stPKhS2_iE",
+   "name" : "int (evp_cipher_ctx_st *, const unsigned char *, const unsigned char *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17evp_cipher_ctx_st"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stPKhS2_iE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP17evp_cipher_ctx_stPKhS2_iE",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP17evp_cipher_ctx_stPhPKhjE",
+   "name" : "int (evp_cipher_ctx_st *, unsigned char *, const unsigned char *, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17evp_cipher_ctx_st"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stPhPKhjE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP17evp_cipher_ctx_stPhPKhjE",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP17evp_cipher_ctx_stiiPvE",
+   "name" : "int (evp_cipher_ctx_st *, int, int, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17evp_cipher_ctx_st"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stiiPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP17evp_cipher_ctx_stiiPvE",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvP17evp_cipher_ctx_stE",
+   "name" : "void (evp_cipher_ctx_st *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17evp_cipher_ctx_st"
+    }
+   ],
+   "referenced_type" : "_ZTIFvP17evp_cipher_ctx_stE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvP17evp_cipher_ctx_stE",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "EVP_BytesToKey",
+   "linker_set_key" : "EVP_BytesToKey",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13evp_cipher_st"
+    },
+    {
+     "referenced_type" : "_ZTIPK9env_md_st"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIPh"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP15evp_pkey_ctx_st",
+   "name" : "evp_pkey_ctx_st *",
+   "referenced_type" : "_ZTI15evp_pkey_ctx_st",
+   "self_type" : "_ZTIP15evp_pkey_ctx_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/digest.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP17evp_cipher_ctx_st",
+   "name" : "evp_cipher_ctx_st *",
+   "referenced_type" : "_ZTI17evp_cipher_ctx_st",
+   "self_type" : "_ZTIP17evp_cipher_ctx_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiP17evp_cipher_ctx_stPKhS2_iE",
+   "name" : "int (*)(evp_cipher_ctx_st *, const unsigned char *, const unsigned char *, int)",
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stPKhS2_iE",
+   "self_type" : "_ZTIPFiP17evp_cipher_ctx_stPKhS2_iE",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiP17evp_cipher_ctx_stPhPKhjE",
+   "name" : "int (*)(evp_cipher_ctx_st *, unsigned char *, const unsigned char *, unsigned int)",
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stPhPKhjE",
+   "self_type" : "_ZTIPFiP17evp_cipher_ctx_stPhPKhjE",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiP17evp_cipher_ctx_stiiPvE",
+   "name" : "int (*)(evp_cipher_ctx_st *, int, int, void *)",
+   "referenced_type" : "_ZTIFiP17evp_cipher_ctx_stiiPvE",
+   "self_type" : "_ZTIPFiP17evp_cipher_ctx_stiiPvE",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvP17evp_cipher_ctx_stE",
+   "name" : "void (*)(evp_cipher_ctx_st *)",
+   "referenced_type" : "_ZTIFvP17evp_cipher_ctx_stE",
+   "self_type" : "_ZTIPFvP17evp_cipher_ctx_stE",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK13evp_cipher_st",
+   "name" : "const evp_cipher_st *",
+   "referenced_type" : "_ZTIK13evp_cipher_st",
+   "self_type" : "_ZTIPK13evp_cipher_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK15evp_md_pctx_ops",
+   "name" : "const evp_md_pctx_ops *",
+   "referenced_type" : "_ZTIK15evp_md_pctx_ops",
+   "self_type" : "_ZTIPK15evp_md_pctx_ops",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/digest.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK9env_md_st",
+   "name" : "const env_md_st *",
+   "referenced_type" : "_ZTIK9env_md_st",
+   "self_type" : "_ZTIPK9env_md_st",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK13evp_cipher_st",
+   "name" : "const evp_cipher_st",
+   "referenced_type" : "_ZTI13evp_cipher_st",
+   "self_type" : "_ZTIK13evp_cipher_st",
+   "size" : 44,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK15evp_md_pctx_ops",
+   "name" : "const evp_md_pctx_ops",
+   "referenced_type" : "_ZTI15evp_md_pctx_ops",
+   "self_type" : "_ZTIK15evp_md_pctx_ops",
+   "source_file" : "external/boringssl/src/include/openssl/digest.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK9env_md_st",
+   "name" : "const env_md_st",
+   "referenced_type" : "_ZTI9env_md_st",
+   "self_type" : "_ZTIK9env_md_st",
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "digest",
+     "referenced_type" : "_ZTIPK9env_md_st"
+    },
+    {
+     "field_name" : "md_data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "pctx",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP15evp_pkey_ctx_st"
+    },
+    {
+     "field_name" : "pctx_ops",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPK15evp_md_pctx_ops"
+    }
+   ],
+   "linker_set_key" : "_ZTI13env_md_ctx_st",
+   "name" : "env_md_ctx_st",
+   "referenced_type" : "_ZTI13env_md_ctx_st",
+   "self_type" : "_ZTI13env_md_ctx_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/digest.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "nid",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "block_size",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "key_len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "iv_len",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "ctx_size",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "flags",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "app_data",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "init",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIPFiP17evp_cipher_ctx_stPKhS2_iE"
+    },
+    {
+     "field_name" : "cipher",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPFiP17evp_cipher_ctx_stPhPKhjE"
+    },
+    {
+     "field_name" : "cleanup",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIPFvP17evp_cipher_ctx_stE"
+    },
+    {
+     "field_name" : "ctrl",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPFiP17evp_cipher_ctx_stiiPvE"
+    }
+   ],
+   "linker_set_key" : "_ZTI13evp_cipher_st",
+   "name" : "evp_cipher_st",
+   "referenced_type" : "_ZTI13evp_cipher_st",
+   "self_type" : "_ZTI13evp_cipher_st",
+   "size" : 44,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "cipher",
+     "referenced_type" : "_ZTIPK13evp_cipher_st"
+    },
+    {
+     "field_name" : "app_data",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "cipher_data",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "key_len",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "encrypt",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "flags",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "oiv",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIA16_h"
+    },
+    {
+     "field_name" : "iv",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIA16_h"
+    },
+    {
+     "field_name" : "buf",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIA32_h"
+    },
+    {
+     "field_name" : "buf_len",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "num",
+     "field_offset" : 736,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "final_used",
+     "field_offset" : 768,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "block_mask",
+     "field_offset" : 800,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "final",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIA32_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI17evp_cipher_ctx_st",
+   "name" : "evp_cipher_ctx_st",
+   "referenced_type" : "_ZTI17evp_cipher_ctx_st",
+   "self_type" : "_ZTI17evp_cipher_ctx_st",
+   "size" : 136,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "cipher",
+     "referenced_type" : "_ZTIPK13evp_cipher_st"
+    },
+    {
+     "field_name" : "iv",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIA16_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI18evp_cipher_info_st",
+   "name" : "evp_cipher_info_st",
+   "referenced_type" : "_ZTI18evp_cipher_info_st",
+   "self_type" : "_ZTI18evp_cipher_info_st",
+   "size" : 20,
+   "source_file" : "external/boringssl/src/include/openssl/cipher.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

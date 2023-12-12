@@ -1,0 +1,152 @@
+out/soong/.intermediates/system/extras/ext4_utils/libext4_utils/linux_glibc_x86_static/obj/system/extras/ext4_utils/wipe.o: \
+  system/extras/ext4_utils/wipe.cpp \
+  system/extras/ext4_utils/include/ext4_utils/wipe.h \
+  system/extras/ext4_utils/include/ext4_utils/ext4_utils.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/features.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdc-predef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/predefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/cdefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/wordsize.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/gnu/stubs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/gnu/stubs-32.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/typesizes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/time.h \
+  external/libcxx/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/endian.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/endian.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/byteswap.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/byteswap-16.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/select.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/select.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/sigset.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/time.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/select2.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/sysmacros.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/pthreadtypes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/unistd.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/posix_opt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/environments.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/confname.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/getopt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/unistd.h \
+  external/libcxx/include/errno.h external/libcxx/include/__config \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/pthread.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno-base.h \
+  external/libcxx/include/setjmp.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/setjmp.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/setjmp.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/setjmp2.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  external/libcxx/include/stdint.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/wchar.h \
+  external/libcxx/include/stdio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/libio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/_G_config.h \
+  external/libcxx/include/wchar.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/wchar.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stdio_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/sys_errlist.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stdio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stdio2.h \
+  external/libcxx/include/stdlib.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdlib.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/waitflags.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/waitstatus.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/xlocale.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/alloca.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stdlib-float.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stdlib.h \
+  external/libcxx/include/string.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/string.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/string3.h \
+  system/extras/ext4_utils/include/ext4_utils/ext4_sb.h \
+  system/extras/ext4_utils/include/ext4_utils/ext4_kernel_headers.h \
+  system/extras/ext4_utils/include/ext4_utils/ext4.h \
+  system/extras/ext4_utils/include/ext4_utils/ext4_extents.h \
+  system/extras/ext4_utils/include/ext4_utils/jbd2.h \
+  system/extras/ext4_utils/include/ext4_utils/xattr.h \
+  external/libcxx/include/stdbool.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h \
+  system/libbase/include/android-base/file.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/stat.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/stat.h \
+  external/libcxx/include/string external/libcxx/include/string_view \
+  external/libcxx/include/__string external/libcxx/include/algorithm \
+  external/libcxx/include/initializer_list \
+  external/libcxx/include/cstddef external/libcxx/include/version \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr external/libcxx/include/type_traits \
+  external/libcxx/include/cstring external/libcxx/include/utility \
+  external/libcxx/include/__tuple external/libcxx/include/cstdint \
+  external/libcxx/include/__debug external/libcxx/include/memory \
+  external/libcxx/include/typeinfo external/libcxx/include/exception \
+  external/libcxx/include/cstdlib external/libcxx/include/new \
+  external/libcxx/include/limits external/libcxx/include/__undef_macros \
+  external/libcxx/include/iterator external/libcxx/include/iosfwd \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/wchar2.h \
+  external/libcxx/include/__functional_base \
+  external/libcxx/include/tuple external/libcxx/include/stdexcept \
+  external/libcxx/include/cassert \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/assert.h \
+  external/libcxx/include/atomic external/libcxx/include/functional \
+  external/libcxx/include/bit external/libcxx/include/cstdio \
+  external/libcxx/include/cwchar external/libcxx/include/cwctype \
+  external/libcxx/include/cctype external/libcxx/include/ctype.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/ctype.h \
+  external/libcxx/include/wctype.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/wctype.h \
+  system/libbase/include/android-base/macros.h \
+  system/libbase/include/android-base/off64_t.h \
+  system/libbase/include/android-base/unique_fd.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/dirent.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/dirent.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/posix1_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/local_lim.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/limits.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/fcntl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/fcntl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/fcntl-linux.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/uio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/socket.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/uio.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/socket.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/socket_type.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/sockaddr.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/socket.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/socket.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/sockios.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/sockios.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/socket2.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/fs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/ioctl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/ioctl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/ioctl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/int-ll64.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/bitsperlong.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/bitsperlong.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/posix_types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/stddef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/posix_types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/posix_types_32.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/posix_types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/ioctl.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/ioctls.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/asm/ioctls.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/ioctls.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/bits/ioctl-types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/i386-linux-gnu/sys/ttydefaults.h \
+  system/extras/ext4_utils/helpers.h
