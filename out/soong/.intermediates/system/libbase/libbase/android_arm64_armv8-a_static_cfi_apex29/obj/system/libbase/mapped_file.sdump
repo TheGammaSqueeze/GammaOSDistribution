@@ -1,0 +1,709 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::base::MappedFile::FromOsHandle",
+   "linker_set_key" : "_ZN7android4base10MappedFile12FromOsHandleEilmi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110unique_ptrIN7android4base10MappedFileENS_14default_deleteIS3_EEEE",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::base::MappedFile::Close",
+   "linker_set_key" : "_ZN7android4base10MappedFile5CloseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::FromFd",
+   "linker_set_key" : "_ZN7android4base10MappedFile6FromFdENS0_11borrowed_fdElmi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110unique_ptrIN7android4base10MappedFileENS_14default_deleteIS3_EEEE",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileC1EOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    },
+    {
+     "referenced_type" : "_ZTION7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::base::MappedFile::MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileC1EPcmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    },
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileC2EOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    },
+    {
+     "referenced_type" : "_ZTION7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::base::MappedFile::MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileC2EPcmm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    },
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::~MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::~MappedFile",
+   "linker_set_key" : "_ZN7android4base10MappedFileD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::operator=",
+   "linker_set_key" : "_ZN7android4base10MappedFileaSEOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base10MappedFileE"
+    },
+    {
+     "referenced_type" : "_ZTION7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIRN7android4base10MappedFileE",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::borrowed_fd",
+   "linker_set_key" : "_ZN7android4base11borrowed_fdC1Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::borrowed_fd",
+   "linker_set_key" : "_ZN7android4base11borrowed_fdC2Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::DefaultCloser::Tag",
+   "linker_set_key" : "_ZN7android4base13DefaultCloser3TagEiPvS2_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::DefaultCloser::Close",
+   "linker_set_key" : "_ZN7android4base13DefaultCloser5CloseEiPv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::base::unique_fd_impl<android::base::DefaultCloser>::tag",
+   "linker_set_key" : "_ZN7android4base14unique_fd_implINS0_13DefaultCloserEE3tagIS2_EEDTcmclsrT_3Tagfp_fp0_fp1_Ecvv_EEiPvS7_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h",
+   "template_args" : [ "_ZTIN7android4base13DefaultCloserE" ]
+  },
+  {
+   "function_name" : "android::base::unique_fd_impl<android::base::DefaultCloser>::release",
+   "linker_set_key" : "_ZN7android4base14unique_fd_implINS0_13DefaultCloserEE7releaseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android4base14unique_fd_implINS0_13DefaultCloserEEE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::Fdopen",
+   "linker_set_key" : "_ZN7android4base6FdopenEONS0_14unique_fd_implINS0_13DefaultCloserEEEPKc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTION7android4base14unique_fd_implINS0_13DefaultCloserEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIP7__sFILE",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::Fdopendir",
+   "linker_set_key" : "_ZN7android4base9FdopendirEONS0_14unique_fd_implINS0_13DefaultCloserEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTION7android4base14unique_fd_implINS0_13DefaultCloserEEE"
+    }
+   ],
+   "return_type" : "_ZTIP3DIR",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::data",
+   "linker_set_key" : "_ZNK7android4base10MappedFile4dataEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::MappedFile::size",
+   "linker_set_key" : "_ZNK7android4base10MappedFile4sizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base10MappedFileE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::get",
+   "linker_set_key" : "_ZNK7android4base11borrowed_fd3getEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base11borrowed_fdE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::operator==",
+   "linker_set_key" : "_ZNK7android4base11borrowed_fdeqEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::operator>=",
+   "linker_set_key" : "_ZNK7android4base11borrowed_fdgeEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::operator<",
+   "linker_set_key" : "_ZNK7android4base11borrowed_fdltEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "function_name" : "android::base::borrowed_fd::operator!=",
+   "linker_set_key" : "_ZNK7android4base11borrowed_fdneEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android4base11borrowed_fdE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRN7android4base10MappedFileE",
+   "name" : "android::base::MappedFile &",
+   "referenced_type" : "_ZTIN7android4base10MappedFileE",
+   "self_type" : "_ZTIRN7android4base10MappedFileE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP3DIR",
+   "name" : "DIR *",
+   "referenced_type" : "_ZTI3DIR",
+   "self_type" : "_ZTIP3DIR",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP7__sFILE",
+   "name" : "__sFILE *",
+   "referenced_type" : "_ZTI7__sFILE",
+   "self_type" : "_ZTIP7__sFILE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android4base10MappedFileE",
+   "name" : "const android::base::MappedFile *",
+   "referenced_type" : "_ZTIKN7android4base10MappedFileE",
+   "self_type" : "_ZTIPKN7android4base10MappedFileE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android4base11borrowed_fdE",
+   "name" : "const android::base::borrowed_fd *",
+   "referenced_type" : "_ZTIKN7android4base11borrowed_fdE",
+   "self_type" : "_ZTIPKN7android4base11borrowed_fdE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base10MappedFileE",
+   "name" : "android::base::MappedFile *",
+   "referenced_type" : "_ZTIN7android4base10MappedFileE",
+   "self_type" : "_ZTIPN7android4base10MappedFileE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base11borrowed_fdE",
+   "name" : "android::base::borrowed_fd *",
+   "referenced_type" : "_ZTIN7android4base11borrowed_fdE",
+   "self_type" : "_ZTIPN7android4base11borrowed_fdE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "name" : "android::base::unique_fd_impl<android::base::DefaultCloser> *",
+   "referenced_type" : "_ZTIN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "self_type" : "_ZTIPN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base10MappedFileE",
+   "name" : "const android::base::MappedFile",
+   "referenced_type" : "_ZTIN7android4base10MappedFileE",
+   "self_type" : "_ZTIKN7android4base10MappedFileE",
+   "size" : 24,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android4base11borrowed_fdE",
+   "name" : "const android::base::borrowed_fd",
+   "referenced_type" : "_ZTIN7android4base11borrowed_fdE",
+   "self_type" : "_ZTIKN7android4base11borrowed_fdE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "base_",
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "access" : "private",
+     "field_name" : "size_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "access" : "private",
+     "field_name" : "offset_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base10MappedFileE",
+   "name" : "android::base::MappedFile",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base10MappedFileE",
+   "self_type" : "_ZTIN7android4base10MappedFileE",
+   "size" : 24,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "fd_",
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base11borrowed_fdE",
+   "name" : "android::base::borrowed_fd",
+   "referenced_type" : "_ZTIN7android4base11borrowed_fdE",
+   "self_type" : "_ZTIN7android4base11borrowed_fdE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN7android4base13DefaultCloserE",
+   "name" : "android::base::DefaultCloser",
+   "referenced_type" : "_ZTIN7android4base13DefaultCloserE",
+   "self_type" : "_ZTIN7android4base13DefaultCloserE",
+   "size" : 1,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "fd_",
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "name" : "android::base::unique_fd_impl<android::base::DefaultCloser>",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "self_type" : "_ZTIN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h",
+   "template_args" : [ "_ZTIN7android4base13DefaultCloserE" ]
+  }
+ ],
+ "rvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTION7android4base10MappedFileE",
+   "name" : "android::base::MappedFile &&",
+   "referenced_type" : "_ZTIN7android4base10MappedFileE",
+   "self_type" : "_ZTION7android4base10MappedFileE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/mapped_file.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTION7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "name" : "android::base::unique_fd_impl<android::base::DefaultCloser> &&",
+   "referenced_type" : "_ZTIN7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "self_type" : "_ZTION7android4base14unique_fd_implINS0_13DefaultCloserEEE",
+   "size" : 8,
+   "source_file" : "system/libbase/include/android-base/unique_fd.h"
+  }
+ ]
+}
