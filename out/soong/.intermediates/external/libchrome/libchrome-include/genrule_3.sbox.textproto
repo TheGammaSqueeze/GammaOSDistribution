@@ -1,0 +1,209 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump_for_io.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump_for_io.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump_for_ui.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump_for_ui.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump_glib.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump_glib.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump_libevent.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump_libevent.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/timer_slack.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/timer_slack.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/watchable_io_message_pump_posix.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/watchable_io_message_pump_posix.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/bucket_ranges.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/bucket_ranges.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/dummy_histogram.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/dummy_histogram.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/field_trial.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/field_trial.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/field_trial_param_associator.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/field_trial_param_associator.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/field_trial_params.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/field_trial_params.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_base.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_base.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_delta_serialization.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_delta_serialization.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_flattener.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_flattener.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_functions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_functions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_macros.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_macros.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_macros_internal.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_macros_internal.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_macros_local.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_macros_local.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_samples.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_samples.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/histogram_snapshot_manager.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/histogram_snapshot_manager.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/metrics_hashes.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/metrics_hashes.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/persistent_histogram_allocator.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/persistent_histogram_allocator.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/persistent_histogram_storage.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/persistent_histogram_storage.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/persistent_memory_allocator.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/persistent_memory_allocator.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/persistent_sample_map.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/persistent_sample_map.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/record_histogram_checker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/record_histogram_checker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/sample_map.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/sample_map.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/sample_vector.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/sample_vector.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/single_sample_metrics.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/single_sample_metrics.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/sparse_histogram.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/sparse_histogram.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/statistics_recorder.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/statistics_recorder.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/user_metrics.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/user_metrics.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/metrics/user_metrics_action.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/metrics/user_metrics_action.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/native_library.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/native_library.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/no_destructor.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/no_destructor.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/checked_math.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/checked_math.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/checked_math_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/checked_math_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/clamped_math.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/clamped_math.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/clamped_math_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/clamped_math_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/math_constants.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/math_constants.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/ranges.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/ranges.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_conversions_arm_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_conversions_arm_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_conversions_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_conversions_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_math.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_math.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_math_arm_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_math_arm_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_math_clang_gcc_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_math_clang_gcc_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/numerics/safe_math_shared_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/numerics/safe_math_shared_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/observer_list.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/observer_list.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump_for_io.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/message_pump_for_io.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump_for_ui.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/message_pump_for_ui.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump_glib.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/message_pump_glib.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump_libevent.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/message_pump_libevent.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/timer_slack.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/timer_slack.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/watchable_io_message_pump_posix.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/message_loop/watchable_io_message_pump_posix.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/bucket_ranges.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/bucket_ranges.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/dummy_histogram.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/dummy_histogram.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/field_trial.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/field_trial.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/field_trial_param_associator.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/field_trial_param_associator.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/field_trial_params.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/field_trial_params.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_base.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_base.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_delta_serialization.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_delta_serialization.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_flattener.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_flattener.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_functions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_functions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_macros.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_macros.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_macros_internal.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_macros_internal.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_macros_local.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_macros_local.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_samples.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_samples.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/histogram_snapshot_manager.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/histogram_snapshot_manager.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/metrics_hashes.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/metrics_hashes.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/persistent_histogram_allocator.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/persistent_histogram_allocator.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/persistent_histogram_storage.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/persistent_histogram_storage.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/persistent_memory_allocator.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/persistent_memory_allocator.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/persistent_sample_map.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/persistent_sample_map.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/record_histogram_checker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/record_histogram_checker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/sample_map.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/sample_map.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/sample_vector.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/sample_vector.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/single_sample_metrics.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/single_sample_metrics.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/sparse_histogram.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/sparse_histogram.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/statistics_recorder.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/statistics_recorder.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/user_metrics.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/user_metrics.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/metrics/user_metrics_action.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/metrics/user_metrics_action.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/native_library.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/native_library.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/no_destructor.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/no_destructor.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/checked_math.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/checked_math.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/checked_math_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/checked_math_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/clamped_math.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/clamped_math.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/clamped_math_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/clamped_math_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/math_constants.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/math_constants.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/ranges.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/ranges.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_conversions_arm_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_conversions_arm_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_conversions_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_conversions_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_math.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_math.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_math_arm_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_math_arm_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_math_clang_gcc_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_math_clang_gcc_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/numerics/safe_math_shared_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/numerics/safe_math_shared_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/observer_list.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/3/external/libchrome/base/observer_list.h"
+  >
+  input_hash: "dbb2a0f9c9af393e0c3422b3be3794ad0ac16c304f2b013d2e3806633c37d789"
+>
+

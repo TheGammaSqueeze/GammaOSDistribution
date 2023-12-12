@@ -1,0 +1,797 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::netdutils::findFirstMatching",
+   "linker_set_key" : "_ZN7android9netdutils17findFirstMatchingENS0_5SliceEh",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::forEachNetlinkMessage",
+   "linker_set_key" : "_ZN7android9netdutils21forEachNetlinkMessageENS0_5SliceERKNSt3__18functionIFvRK8nlmsghdrS1_EEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "android::netdutils::forEachNetlinkAttribute",
+   "linker_set_key" : "_ZN7android9netdutils23forEachNetlinkAttributeENS0_5SliceERKNSt3__18functionIFvRK6nlattrS1_EEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "android::netdutils::copy",
+   "linker_set_key" : "_ZN7android9netdutils4copyENS0_5SliceES1_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::drop",
+   "linker_set_key" : "_ZN7android9netdutils4dropENS0_5SliceEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::mask",
+   "linker_set_key" : "_ZN7android9netdutils4maskImEEKT_i",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKi"
+    }
+   ],
+   "return_type" : "_ZTIKm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Math.h",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "function_name" : "android::netdutils::take",
+   "linker_set_key" : "_ZN7android9netdutils4takeENS0_5SliceEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "android::netdutils::Slice::toUint8",
+   "linker_set_key" : "_ZN7android9netdutils5Slice7toUint8EPv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC1EPvS2_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC1EPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC2EPvS2_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC2EPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::Slice",
+   "linker_set_key" : "_ZN7android9netdutils5SliceC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::align",
+   "linker_set_key" : "_ZN7android9netdutils5alignImEEKT_RS3_i",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKm"
+    },
+    {
+     "referenced_type" : "_ZTIKi"
+    }
+   ],
+   "return_type" : "_ZTIKm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Math.h",
+   "template_args" : [ "_ZTIm" ]
+  },
+  {
+   "function_name" : "android::netdutils::split",
+   "linker_set_key" : "_ZN7android9netdutils5splitENS0_5SliceEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTINSt3__14pairIKN7android9netdutils5SliceES4_EE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::extract",
+   "linker_set_key" : "_ZN7android9netdutils7extractI6nlattrEEmNS0_5SliceERT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIR6nlattr"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h",
+   "template_args" : [ "_ZTI6nlattr" ]
+  },
+  {
+   "function_name" : "android::netdutils::extract",
+   "linker_set_key" : "_ZN7android9netdutils7extractI8nlmsghdrEEmNS0_5SliceERT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIR8nlmsghdr"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h",
+   "template_args" : [ "_ZTI8nlmsghdr" ]
+  },
+  {
+   "function_name" : "android::netdutils::makeSlice",
+   "linker_set_key" : "_ZN7android9netdutils9makeSliceERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::makeSlice",
+   "linker_set_key" : "_ZN7android9netdutils9makeSliceI6nlattrEEKNS0_5SliceERKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRK6nlattr"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h",
+   "template_args" : [ "_ZTI6nlattr" ]
+  },
+  {
+   "function_name" : "android::netdutils::makeSlice",
+   "linker_set_key" : "_ZN7android9netdutils9makeSliceI8nlmsghdrEEKNS0_5SliceERKT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRK8nlmsghdr"
+    }
+   ],
+   "return_type" : "_ZTIKN7android9netdutils5SliceE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h",
+   "template_args" : [ "_ZTI8nlmsghdr" ]
+  },
+  {
+   "function_name" : "android::netdutils::operator==",
+   "linker_set_key" : "_ZN7android9netdutilseqERKNS0_5SliceES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::operator!=",
+   "linker_set_key" : "_ZN7android9netdutilsneERKNS0_5SliceES3_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN7android9netdutils5SliceE"
+    },
+    {
+     "referenced_type" : "_ZTIRKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::base",
+   "linker_set_key" : "_ZNK7android9netdutils5Slice4baseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::size",
+   "linker_set_key" : "_ZNK7android9netdutils5Slice4sizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::empty",
+   "linker_set_key" : "_ZNK7android9netdutils5Slice5emptyEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "android::netdutils::Slice::limit",
+   "linker_set_key" : "_ZNK7android9netdutils5Slice5limitEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android9netdutils5SliceE"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "function_name" : "operator==",
+   "linker_set_key" : "_ZeqRK11sockaddr_nlS1_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRK11sockaddr_nl"
+    },
+    {
+     "referenced_type" : "_ZTIRK11sockaddr_nl"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "operator<<",
+   "linker_set_key" : "_ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERK11sockaddr_nl",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRK11sockaddr_nl"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "operator<<",
+   "linker_set_key" : "_ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERK6nlattr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRK6nlattr"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "operator<<",
+   "linker_set_key" : "_ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERK8nlmsghdr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRK8nlmsghdr"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "function_name" : "operator!=",
+   "linker_set_key" : "_ZneRK11sockaddr_nlS1_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRK11sockaddr_nl"
+    },
+    {
+     "referenced_type" : "_ZTIRK11sockaddr_nl"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIR6nlattr",
+   "name" : "nlattr &",
+   "referenced_type" : "_ZTI6nlattr",
+   "self_type" : "_ZTIR6nlattr",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIR8nlmsghdr",
+   "name" : "nlmsghdr &",
+   "referenced_type" : "_ZTI8nlmsghdr",
+   "self_type" : "_ZTIR8nlmsghdr",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRK11sockaddr_nl",
+   "name" : "const sockaddr_nl &",
+   "referenced_type" : "_ZTIK11sockaddr_nl",
+   "self_type" : "_ZTIRK11sockaddr_nl",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRK6nlattr",
+   "name" : "const nlattr &",
+   "referenced_type" : "_ZTIK6nlattr",
+   "self_type" : "_ZTIRK6nlattr",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRK8nlmsghdr",
+   "name" : "const nlmsghdr &",
+   "referenced_type" : "_ZTIK8nlmsghdr",
+   "self_type" : "_ZTIRK8nlmsghdr",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKN7android9netdutils5SliceE",
+   "name" : "const android::netdutils::Slice &",
+   "referenced_type" : "_ZTIKN7android9netdutils5SliceE",
+   "self_type" : "_ZTIRKN7android9netdutils5SliceE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "name" : "const std::function<void (const nlattr &, Slice)> &",
+   "referenced_type" : "_ZTIKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "self_type" : "_ZTIRKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "name" : "const std::function<void (const nlmsghdr &, Slice)> &",
+   "referenced_type" : "_ZTIKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "self_type" : "_ZTIRKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKm",
+   "name" : "const unsigned long &",
+   "referenced_type" : "_ZTIKm",
+   "self_type" : "_ZTIRKm",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Math.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> &",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN7android9netdutils5SliceE",
+   "name" : "const android::netdutils::Slice *",
+   "referenced_type" : "_ZTIKN7android9netdutils5SliceE",
+   "self_type" : "_ZTIPKN7android9netdutils5SliceE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN7android9netdutils5SliceE",
+   "name" : "android::netdutils::Slice *",
+   "referenced_type" : "_ZTIN7android9netdutils5SliceE",
+   "self_type" : "_ZTIPN7android9netdutils5SliceE",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK11sockaddr_nl",
+   "name" : "const sockaddr_nl",
+   "referenced_type" : "_ZTI11sockaddr_nl",
+   "self_type" : "_ZTIK11sockaddr_nl",
+   "size" : 12,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK6nlattr",
+   "name" : "const nlattr",
+   "referenced_type" : "_ZTI6nlattr",
+   "self_type" : "_ZTIK6nlattr",
+   "size" : 4,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8nlmsghdr",
+   "name" : "const nlmsghdr",
+   "referenced_type" : "_ZTI8nlmsghdr",
+   "self_type" : "_ZTIK8nlmsghdr",
+   "size" : 16,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android9netdutils5SliceE",
+   "name" : "const android::netdutils::Slice",
+   "referenced_type" : "_ZTIN7android9netdutils5SliceE",
+   "self_type" : "_ZTIKN7android9netdutils5SliceE",
+   "size" : 16,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "name" : "const std::function<void (const nlattr &, Slice)>",
+   "referenced_type" : "_ZTINSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "self_type" : "_ZTIKNSt3__18functionIFvRK6nlattrN7android9netdutils5SliceEEEE",
+   "size" : 48,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 16,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "name" : "const std::function<void (const nlmsghdr &, Slice)>",
+   "referenced_type" : "_ZTINSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "self_type" : "_ZTIKNSt3__18functionIFvRK8nlmsghdrN7android9netdutils5SliceEEEE",
+   "size" : 48,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Netlink.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Math.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Math.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "mBase",
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "mLimit",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPh"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android9netdutils5SliceE",
+   "name" : "android::netdutils::Slice",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android9netdutils5SliceE",
+   "self_type" : "_ZTIN7android9netdutils5SliceE",
+   "size" : 16,
+   "source_file" : "system/netd/libnetdutils/include/netdutils/Slice.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
