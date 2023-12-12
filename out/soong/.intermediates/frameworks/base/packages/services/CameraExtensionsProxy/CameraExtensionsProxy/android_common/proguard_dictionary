@@ -1,0 +1,194 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 7e122dd
+# common_typos_disable
+com.android.cameraextensions.CameraExtensionsProxyService -> com.android.cameraextensions.CameraExtensionsProxyService:
+    128:135:void <clinit>() -> <clinit>
+    120:138:void <init>() -> <init>
+    120:120:boolean access$000() -> access$000
+    120:120:android.hardware.camera2.extension.Request access$1100(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Request,int,java.lang.String) -> access$1100
+    120:120:android.hardware.camera2.impl.CameraMetadataNative access$1200(com.android.cameraextensions.CameraExtensionsProxyService,java.util.Map,java.lang.String) -> access$1200
+    120:120:android.hardware.camera2.CameraManager access$1400(com.android.cameraextensions.CameraExtensionsProxyService) -> access$1400
+    120:120:android.hardware.camera2.extension.CaptureStageImpl access$1500(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.CaptureStageImpl,java.lang.String) -> access$1500
+    120:120:java.util.List access$1600(java.util.List) -> access$1600
+    120:120:java.lang.String access$200() -> access$200
+    120:120:long access$600(android.content.Context) -> access$600
+    120:120:boolean access$700() -> access$700
+    120:120:java.util.HashMap access$800(com.android.cameraextensions.CameraExtensionsProxyService) -> access$800
+    120:120:java.util.List access$900(java.util.Map) -> access$900
+    142:144:boolean checkForAdvancedAPI() -> checkForAdvancedAPI
+    156:163:boolean checkForExtensions() -> checkForExtensions
+    445:455:androidx.camera.extensions.impl.advanced.AdvancedExtenderImpl initializeAdvancedExtensionImpl(int) -> initializeAdvancedExtensionImpl
+    421:435:android.util.Pair initializeExtension(int) -> initializeExtension
+    503:513:java.util.List initializeParcelable(java.util.List) -> initializeParcelable
+    525:537:java.util.List initializeParcelable(java.util.Map) -> initializeParcelable
+    583:586:android.hardware.camera2.extension.CaptureStageImpl initializeParcelable(androidx.camera.extensions.impl.CaptureStageImpl,java.lang.String) -> initializeParcelable
+    593:602:android.hardware.camera2.extension.Request initializeParcelable(androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Request,int,java.lang.String) -> initializeParcelable
+    549:554:android.hardware.camera2.impl.CameraMetadataNative initializeParcelableMetadata(java.util.List,java.lang.String) -> initializeParcelableMetadata
+    566:571:android.hardware.camera2.impl.CameraMetadataNative initializeParcelableMetadata(java.util.Map,java.lang.String) -> initializeParcelableMetadata
+    398:401:boolean initializeSession(android.hardware.camera2.extension.IInitializeSessionCallback) -> initializeSession
+    495:495:android.os.IBinder onBind(android.content.Intent) -> onBind
+    461:483:void onCreate() -> onCreate
+    489:489:void onDestroy() -> onDestroy
+    378:381:long registerClient(android.content.Context) -> registerClient
+    408:411:void releaseSession() -> releaseSession
+    388:391:void unregisterClient(long) -> unregisterClient
+com.android.cameraextensions.CameraExtensionsProxyService$AdvancedExtenderImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$AdvancedExtenderImplStub:
+    695:696:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.advanced.AdvancedExtenderImpl) -> <init>
+    734:740:android.hardware.camera2.extension.LatencyRange getEstimatedCaptureLatencyRange(java.lang.String,android.hardware.camera2.extension.Size,int) -> getEstimatedCaptureLatencyRange
+    749:749:android.hardware.camera2.extension.ISessionProcessorImpl getSessionProcessor() -> getSessionProcessor
+    722:725:java.util.List getSupportedCaptureOutputResolutions(java.lang.String) -> getSupportedCaptureOutputResolutions
+    711:714:java.util.List getSupportedPreviewOutputResolutions(java.lang.String) -> getSupportedPreviewOutputResolutions
+    706:706:void init(java.lang.String) -> init
+    701:701:boolean isExtensionAvailable(java.lang.String) -> isExtensionAvailable
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal:
+    188:188:void <clinit>() -> <clinit>
+    177:339:void <init>() -> <init>
+    175:175:java.lang.Object access$300(com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal) -> access$300
+    175:175:android.hardware.camera2.extension.IInitializeSessionCallback access$402(com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal,android.hardware.camera2.extension.IInitializeSessionCallback) -> access$402
+    282:282:com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal get() -> get
+    349:360:boolean initializeSession(android.hardware.camera2.extension.IInitializeSessionCallback) -> initializeSession
+    286:315:long registerClient(android.content.Context) -> registerClient
+    365:370:void releaseSession() -> releaseSession
+    319:336:void unregisterClient(long) -> unregisterClient
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$1 -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$1:
+    339:339:void <init>(com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal) -> <init>
+    342:344:void binderDied() -> binderDied
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializeHandler -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializeHandler:
+    202:203:void <init>(com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializerFuture) -> <init>
+    213:213:void onFailure(int) -> onFailure
+    208:208:void onSuccess() -> onSuccess
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializerFuture -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializerFuture:
+    235:237:void <init>() -> <init>
+    235:235:void <init>(com.android.cameraextensions.CameraExtensionsProxyService$1) -> <init>
+    235:235:java.lang.Object get() -> get
+    235:235:java.lang.Object get(long,java.util.concurrent.TimeUnit) -> get
+    261:262:java.lang.Boolean get() -> get
+    267:276:java.lang.Boolean get(long,java.util.concurrent.TimeUnit) -> get
+    256:256:boolean isDone() -> isDone
+    240:241:void setStatus(boolean) -> setStatus
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$ReleaseHandler -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$ReleaseHandler:
+    221:222:void <init>(com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionManagerGlobal$InitializerFuture) -> <init>
+    231:231:void onFailure(int) -> onFailure
+    226:226:void onSuccess() -> onSuccess
+com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionsProxyServiceStub -> com.android.cameraextensions.CameraExtensionsProxyService$CameraExtensionsProxyServiceStub:
+    606:606:void <init>(com.android.cameraextensions.CameraExtensionsProxyService) -> <init>
+    606:606:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,com.android.cameraextensions.CameraExtensionsProxyService$1) -> <init>
+    652:652:boolean advancedExtensionsSupported() -> advancedExtensionsSupported
+    618:620:boolean checkCameraPermission() -> checkCameraPermission
+    659:664:android.hardware.camera2.extension.IAdvancedExtenderImpl initializeAdvancedExtension(int) -> initializeAdvancedExtension
+    683:688:android.hardware.camera2.extension.IImageCaptureExtenderImpl initializeImageExtension(int) -> initializeImageExtension
+    671:676:android.hardware.camera2.extension.IPreviewExtenderImpl initializePreviewExtension(int) -> initializePreviewExtension
+    627:639:void initializeSession(android.hardware.camera2.extension.IInitializeSessionCallback) -> initializeSession
+    609:609:long registerClient() -> registerClient
+    645:646:void releaseSession() -> releaseSession
+    614:614:void unregisterClient(long) -> unregisterClient
+com.android.cameraextensions.CameraExtensionsProxyService$CaptureCallbackStub -> com.android.cameraextensions.CameraExtensionsProxyService$CaptureCallbackStub:
+    753:753:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ICaptureCallback,com.android.cameraextensions.CameraExtensionsProxyService$1) -> <init>
+    756:757:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ICaptureCallback) -> <init>
+    786:790:void onCaptureFailed(int) -> onCaptureFailed
+    774:778:void onCaptureProcessStarted(int) -> onCaptureProcessStarted
+    810:814:void onCaptureSequenceAborted(int) -> onCaptureSequenceAborted
+    798:802:void onCaptureSequenceCompleted(int) -> onCaptureSequenceCompleted
+    762:766:void onCaptureStarted(int,long) -> onCaptureStarted
+com.android.cameraextensions.CameraExtensionsProxyService$CaptureProcessorImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$CaptureProcessorImplStub:
+    1399:1400:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.CaptureProcessorImpl) -> <init>
+    1415:1415:void onImageFormatUpdate(int) -> onImageFormatUpdate
+    1405:1405:void onOutputSurface(android.view.Surface,int) -> onOutputSurface
+    1410:1410:void onResolutionUpdate(android.hardware.camera2.extension.Size) -> onResolutionUpdate
+    1420:1430:void process(java.util.List) -> process
+com.android.cameraextensions.CameraExtensionsProxyService$ExtensionImage -> com.android.cameraextensions.CameraExtensionsProxyService$ExtensionImage:
+    1542:1542:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ParcelImage,com.android.cameraextensions.CameraExtensionsProxyService$1) -> <init>
+    1547:1549:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ParcelImage) -> <init>
+    1632:1655:void close() -> close
+    1611:1614:void finalize() -> finalize
+    1626:1627:android.graphics.Rect getCropRect() -> getCropRect
+    1554:1555:int getFormat() -> getFormat
+    1566:1567:android.hardware.HardwareBuffer getHardwareBuffer() -> getHardwareBuffer
+    1572:1573:int getHeight() -> getHeight
+    1596:1605:android.media.Image$Plane[] getPlanes() -> getPlanes
+    1590:1591:int getScalingMode() -> getScalingMode
+    1578:1579:long getTimestamp() -> getTimestamp
+    1584:1585:int getTransform() -> getTransform
+    1560:1561:int getWidth() -> getWidth
+    1619:1619:boolean isAttachable() -> isAttachable
+com.android.cameraextensions.CameraExtensionsProxyService$ImageCaptureExtenderImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$ImageCaptureExtenderImplStub:
+    1284:1287:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.ImageCaptureExtenderImpl) -> <init>
+    1334:1336:android.hardware.camera2.extension.ICaptureProcessorImpl getCaptureProcessor() -> getCaptureProcessor
+    1345:1351:java.util.List getCaptureStages() -> getCaptureStages
+    1381:1387:android.hardware.camera2.extension.LatencyRange getEstimatedCaptureLatencyRange(android.hardware.camera2.extension.Size) -> getEstimatedCaptureLatencyRange
+    1362:1362:int getMaxCaptureStage() -> getMaxCaptureStage
+    1367:1371:java.util.List getSupportedResolutions() -> getSupportedResolutions
+    1320:1322:void init(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> init
+    1327:1329:boolean isExtensionAvailable(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> isExtensionAvailable
+    1300:1300:void onDeInit() -> onDeInit
+    1315:1315:android.hardware.camera2.extension.CaptureStageImpl onDisableSession() -> onDisableSession
+    1310:1310:android.hardware.camera2.extension.CaptureStageImpl onEnableSession() -> onEnableSession
+    1292:1295:void onInit(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> onInit
+    1305:1305:android.hardware.camera2.extension.CaptureStageImpl onPresetSession() -> onPresetSession
+com.android.cameraextensions.CameraExtensionsProxyService$ImageProcessorImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$ImageProcessorImplStub:
+    938:939:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.advanced.ImageProcessorImpl) -> <init>
+    945:946:void onNextImageAvailable(android.hardware.camera2.extension.OutputConfigId,android.hardware.camera2.extension.ParcelImage,java.lang.String) -> onNextImageAvailable
+com.android.cameraextensions.CameraExtensionsProxyService$ImageReferenceImpl -> com.android.cameraextensions.CameraExtensionsProxyService$ImageReferenceImpl:
+    1497:1497:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ParcelImage,com.android.cameraextensions.CameraExtensionsProxyService$1) -> <init>
+    1500:1505:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.ParcelImage) -> <init>
+    1522:1531:boolean decrement() -> decrement
+    1510:1515:boolean increment() -> increment
+com.android.cameraextensions.CameraExtensionsProxyService$OutputSurfaceImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$OutputSurfaceImplStub:
+    1146:1149:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.OutputSurface) -> <init>
+    1164:1164:int getImageFormat() -> getImageFormat
+    1159:1159:android.util.Size getSize() -> getSize
+    1154:1154:android.view.Surface getSurface() -> getSurface
+com.android.cameraextensions.CameraExtensionsProxyService$PreviewExtenderImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$PreviewExtenderImplStub:
+    1170:1173:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.PreviewExtenderImpl) -> <init>
+    1220:1220:android.hardware.camera2.extension.CaptureStageImpl getCaptureStage() -> getCaptureStage
+    1239:1246:android.hardware.camera2.extension.IPreviewImageProcessorImpl getPreviewImageProcessor() -> getPreviewImageProcessor
+    1225:1228:int getProcessorType() -> getProcessorType
+    1256:1263:android.hardware.camera2.extension.IRequestUpdateProcessorImpl getRequestUpdateProcessor() -> getRequestUpdateProcessor
+    1271:1275:java.util.List getSupportedResolutions() -> getSupportedResolutions
+    1206:1208:void init(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> init
+    1213:1215:boolean isExtensionAvailable(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> isExtensionAvailable
+    1186:1186:void onDeInit() -> onDeInit
+    1201:1201:android.hardware.camera2.extension.CaptureStageImpl onDisableSession() -> onDisableSession
+    1196:1196:android.hardware.camera2.extension.CaptureStageImpl onEnableSession() -> onEnableSession
+    1178:1181:void onInit(java.lang.String,android.hardware.camera2.impl.CameraMetadataNative) -> onInit
+    1191:1191:android.hardware.camera2.extension.CaptureStageImpl onPresetSession() -> onPresetSession
+com.android.cameraextensions.CameraExtensionsProxyService$PreviewImageProcessorImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$PreviewImageProcessorImplStub:
+    1438:1439:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.PreviewImageProcessorImpl) -> <init>
+    1454:1454:void onImageFormatUpdate(int) -> onImageFormatUpdate
+    1444:1444:void onOutputSurface(android.view.Surface,int) -> onOutputSurface
+    1449:1449:void onResolutionUpdate(android.hardware.camera2.extension.Size) -> onResolutionUpdate
+    1460:1460:void process(android.hardware.camera2.extension.ParcelImage,android.hardware.camera2.impl.CameraMetadataNative,int) -> process
+com.android.cameraextensions.CameraExtensionsProxyService$RequestCallbackStub -> com.android.cameraextensions.CameraExtensionsProxyService$RequestCallbackStub:
+    826:832:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,java.util.List,androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Callback) -> <init>
+    910:915:void onCaptureBufferLost(int,long,int) -> onCaptureBufferLost
+    863:887:void onCaptureCompleted(int,android.hardware.camera2.extension.ParcelTotalCaptureResult) -> onCaptureCompleted
+    894:903:void onCaptureFailed(int,android.hardware.camera2.extension.CaptureFailure) -> onCaptureFailed
+    849:856:void onCaptureProgressed(int,android.hardware.camera2.extension.ParcelCaptureResult) -> onCaptureProgressed
+    929:930:void onCaptureSequenceAborted(int) -> onCaptureSequenceAborted
+    922:923:void onCaptureSequenceCompleted(int,long) -> onCaptureSequenceCompleted
+    838:842:void onCaptureStarted(int,long,long) -> onCaptureStarted
+com.android.cameraextensions.CameraExtensionsProxyService$RequestProcessorStub -> com.android.cameraextensions.CameraExtensionsProxyService$RequestProcessorStub:
+    956:958:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,android.hardware.camera2.extension.IRequestProcessorImpl,java.lang.String) -> <init>
+    1018:1020:void abortCaptures() -> abortCaptures
+    964:970:void setImageProcessor(int,androidx.camera.extensions.impl.advanced.ImageProcessorImpl) -> setImageProcessor
+    1003:1009:int setRepeating(androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Request,androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Callback) -> setRepeating
+    1027:1029:void stopRepeating() -> stopRepeating
+    976:978:int submit(androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Request,androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Callback) -> submit
+    983:995:int submit(java.util.List,androidx.camera.extensions.impl.advanced.RequestProcessorImpl$Callback) -> submit
+com.android.cameraextensions.CameraExtensionsProxyService$RequestUpdateProcessorImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$RequestUpdateProcessorImplStub:
+    1470:1472:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.RequestUpdateProcessorImpl,java.lang.String) -> <init>
+    1487:1487:void onImageFormatUpdate(int) -> onImageFormatUpdate
+    1477:1477:void onOutputSurface(android.view.Surface,int) -> onOutputSurface
+    1482:1482:void onResolutionUpdate(android.hardware.camera2.extension.Size) -> onResolutionUpdate
+    1492:1493:android.hardware.camera2.extension.CaptureStageImpl process(android.hardware.camera2.impl.CameraMetadataNative,int) -> process
+com.android.cameraextensions.CameraExtensionsProxyService$SessionProcessorImplStub -> com.android.cameraextensions.CameraExtensionsProxyService$SessionProcessorImplStub:
+    1036:1039:void <init>(com.android.cameraextensions.CameraExtensionsProxyService,androidx.camera.extensions.impl.advanced.SessionProcessorImpl) -> <init>
+    1107:1107:void deInitSession() -> deInitSession
+    1045:1100:android.hardware.camera2.extension.CameraSessionConfig initSession(java.lang.String,android.hardware.camera2.extension.OutputSurface,android.hardware.camera2.extension.OutputSurface) -> initSession
+    1118:1118:void onCaptureSessionEnd() -> onCaptureSessionEnd
+    1112:1112:void onCaptureSessionStart(android.hardware.camera2.extension.IRequestProcessorImpl) -> onCaptureSessionStart
+    1133:1137:int startCapture(android.hardware.camera2.extension.ICaptureCallback,int,int) -> startCapture
+    1123:1123:int startRepeating(android.hardware.camera2.extension.ICaptureCallback) -> startRepeating
+    1128:1128:void stopRepeating() -> stopRepeating

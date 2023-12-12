@@ -1,0 +1,742 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIf",
+   "name" : "float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIf",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "google::protobuf::LOGLEVEL_INFO"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "google::protobuf::LOGLEVEL_WARNING"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "google::protobuf::LOGLEVEL_ERROR"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "google::protobuf::LOGLEVEL_FATAL"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "google::protobuf::LOGLEVEL_DFATAL"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf8LogLevelE",
+   "name" : "google::protobuf::LogLevel",
+   "referenced_type" : "_ZTIN6google8protobuf8LogLevelE",
+   "self_type" : "_ZTIN6google8protobuf8LogLevelE",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD16",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD16EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD32",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD32EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_LOAD64",
+   "linker_set_key" : "_ZN6google8protobuf23GOOGLE_UNALIGNED_LOAD64EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE16",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE16EPvt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE32",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE32EPvj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::GOOGLE_UNALIGNED_STORE64",
+   "linker_set_key" : "_ZN6google8protobuf24GOOGLE_UNALIGNED_STORE64EPvm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::NoLocaleStrtod",
+   "linker_set_key" : "_ZN6google8protobuf2io14NoLocaleStrtodEPKcPPc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    }
+   ],
+   "return_type" : "_ZTId",
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "function_name" : "google::protobuf::io::SafeDoubleToFloat",
+   "linker_set_key" : "_ZN6google8protobuf2io17SafeDoubleToFloatEd",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "return_type" : "_ZTIf",
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero",
+   "linker_set_key" : "_ZN6google8protobuf4Bits16Log2FloorNonZeroEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero64",
+   "linker_set_key" : "_ZN6google8protobuf4Bits18Log2FloorNonZero64Em",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero_Portable",
+   "linker_set_key" : "_ZN6google8protobuf4Bits25Log2FloorNonZero_PortableEj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "google::protobuf::Bits::Log2FloorNonZero64_Portable",
+   "linker_set_key" : "_ZN6google8protobuf4Bits27Log2FloorNonZero64_PortableEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::IsStructurallyValidUTF8",
+   "linker_set_key" : "_ZN6google8protobuf8internal23IsStructurallyValidUTF8ERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "function_name" : "google::protobuf::internal::IsOk",
+   "linker_set_key" : "_ZN6google8protobuf8internal4IsOkIbEEbT_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h",
+   "template_args" : [ "_ZTIb" ]
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost16Et",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost32Ej",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::FromHost64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian10FromHost64Em",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::IsLittleEndian",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian14IsLittleEndianEv",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load16EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load32EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Load64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian6Load64EPKv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store16EPvt",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store32EPvj",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::Store64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian7Store64EPvm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost16",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost16Et",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost32",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost32Ej",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "function_name" : "google::protobuf::BigEndian::ToHost64",
+   "linker_set_key" : "_ZN6google8protobuf9BigEndian8ToHost64Em",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN6google8protobuf8internalL26kMinHeaderVersionForProtocE",
+   "name" : "google::protobuf::internal::kMinHeaderVersionForProtoc",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobuf8internalL27kMinHeaderVersionForLibraryE",
+   "name" : "google::protobuf::internal::kMinHeaderVersionForLibrary",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL10kuint32maxE",
+   "name" : "google::protobuf::kuint32max",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL10kuint64maxE",
+   "name" : "google::protobuf::kuint64max",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint32maxE",
+   "name" : "google::protobuf::kint32max",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint32minE",
+   "name" : "google::protobuf::kint32min",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint64maxE",
+   "name" : "google::protobuf::kint64max",
+   "referenced_type" : "_ZTIKl",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "linker_set_key" : "_ZN6google8protobufL9kint64minE",
+   "name" : "google::protobuf::kint64min",
+   "referenced_type" : "_ZTIKl",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPc",
+   "name" : "char **",
+   "referenced_type" : "_ZTIPc",
+   "self_type" : "_ZTIPPc",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/common.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/io/strtod.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKl",
+   "name" : "const long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIKl",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf11LogSilencerE",
+   "name" : "google::protobuf::LogSilencer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf11LogSilencerE",
+   "self_type" : "_ZTIN6google8protobuf11LogSilencerE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf4BitsE",
+   "name" : "google::protobuf::Bits",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf4BitsE",
+   "self_type" : "_ZTIN6google8protobuf4BitsE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "level_",
+     "referenced_type" : "_ZTIN6google8protobuf8LogLevelE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "filename_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "access" : "private",
+     "field_name" : "line_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "message_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "name" : "google::protobuf::internal::LogMessage",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "self_type" : "_ZTIN6google8protobuf8internal10LogMessageE",
+   "size" : 48,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "name" : "google::protobuf::internal::LogFinisher",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "self_type" : "_ZTIN6google8protobuf8internal11LogFinisherE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/logging.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIN6google8protobuf9BigEndianE",
+   "name" : "google::protobuf::BigEndian",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6google8protobuf9BigEndianE",
+   "self_type" : "_ZTIN6google8protobuf9BigEndianE",
+   "size" : 1,
+   "source_file" : "external/protobuf/src/google/protobuf/stubs/port.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
