@@ -1,0 +1,197 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/android_system_server_stubs_current/android_common/combined/android_system_server_stubs_current.jar"
+    to: "out/.intermediates/frameworks/base/android_system_server_stubs_current/android_common/combined/android_system_server_stubs_current.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Permission/framework-s/framework-permission-s-shared/android_common/turbine-combined/framework-permission-s-shared.jar"
+    to: "out/.intermediates/packages/modules/Permission/framework-s/framework-permission-s-shared/android_common/turbine-combined/framework-permission-s-shared.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Permission/framework-s/framework-permission-s.impl/android_common/turbine-jarjar/framework-permission-s.impl.jar"
+    to: "out/.intermediates/packages/modules/Permission/framework-s/framework-permission-s.impl/android_common/turbine-jarjar/framework-permission-s.impl.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Permission/service/service-permission-javastream-protos/gen/gensrcs/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+    to: "out/.intermediates/packages/modules/Permission/service/service-permission-javastream-protos/gen/gensrcs/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Permission/service/service-permission-shared/android_common/turbine-combined/service-permission-shared.jar"
+    to: "out/.intermediates/packages/modules/Permission/service/service-permission-shared/android_common/turbine-combined/service-permission-shared.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/common/java/com/android/modules/annotation/modules-annotation-minsdk/android_common/turbine-combined/modules-annotation-minsdk.jar"
+    to: "out/.intermediates/packages/modules/common/java/com/android/modules/annotation/modules-annotation-minsdk/android_common/turbine-combined/modules-annotation-minsdk.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar"
+    to: "out/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/service-permission-incompatibilities.api.system-server.latest/gen/service-permission-incompatibilities.api.system-server.latest"
+    to: "out/.intermediates/prebuilts/sdk/service-permission-incompatibilities.api.system-server.latest/gen/service-permission-incompatibilities.api.system-server.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/service-permission-removed.api.system-server.latest/gen/service-permission-removed.api.system-server.latest"
+    to: "out/.intermediates/prebuilts/sdk/service-permission-removed.api.system-server.latest/gen/service-permission-removed.api.system-server.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/service-permission.api.system-server.latest/gen/service-permission.api.system-server.latest"
+    to: "out/.intermediates/prebuilts/sdk/service-permission.api.system-server.latest/gen/service-permission.api.system-server.latest"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/compat/UserHandleCompat.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/compat/UserHandleCompat.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/compat/package-info.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/compat/package-info.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/persistence/IoUtils.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/persistence/IoUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsPersistence.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsPersistence.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsPersistenceImpl.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsPersistenceImpl.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsState.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/persistence/RuntimePermissionsState.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/ArrayUtils.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/ArrayUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/BackgroundThread.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/BackgroundThread.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/CollectionUtils.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/CollectionUtils.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/ForegroundThread.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/ForegroundThread.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/ThrottledRunnable.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/ThrottledRunnable.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/permission/util/package-info.java"
+    to: "packages/modules/Permission/service/java/com/android/permission/util/package-info.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/RoleManagerLocal.java"
+    to: "packages/modules/Permission/service/java/com/android/role/RoleManagerLocal.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/RoleService.java"
+    to: "packages/modules/Permission/service/java/com/android/role/RoleService.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/RoleShellCommand.java"
+    to: "packages/modules/Permission/service/java/com/android/role/RoleShellCommand.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/RoleUserState.java"
+    to: "packages/modules/Permission/service/java/com/android/role/RoleUserState.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/package-info.java"
+    to: "packages/modules/Permission/service/java/com/android/role/package-info.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/persistence/RolesPersistence.java"
+    to: "packages/modules/Permission/service/java/com/android/role/persistence/RolesPersistence.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/persistence/RolesPersistenceImpl.java"
+    to: "packages/modules/Permission/service/java/com/android/role/persistence/RolesPersistenceImpl.java"
+  >
+  copy_before: <
+    from: "packages/modules/Permission/service/java/com/android/role/persistence/RolesState.java"
+    to: "packages/modules/Permission/service/java/com/android/role/persistence/RolesState.java"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" __SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Permission/service/service-permission-javastream-protos/gen/gensrcs/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar && rm -rf out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/home && mkdir -p out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/android_system_server_stubs_current/android_common/combined/android_system_server_stubs_current.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Permission/framework-s/framework-permission-s.impl/android_common/turbine-jarjar/framework-permission-s.impl.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/current/androidx/androidx.annotation_annotation/android_common/turbine-combined/androidx.annotation_annotation.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Permission/framework-s/framework-permission-s-shared/android_common/turbine-combined/framework-permission-s-shared.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/common/java/com/android/modules/annotation/modules-annotation-minsdk/android_common/turbine-combined/modules-annotation-minsdk.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/com/android/modules/utils/modules-utils-os/android_common/turbine-combined/modules-utils-os.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Permission/service/service-permission-shared/android_common/turbine-combined/service-permission-shared.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/service-permission.stubs.source.system_server_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/service-permission.stubs.source.system_server_removed.txt --stubs out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/stubsDir --exclude-documentation-from-stubs --include-annotations --exclude-annotation androidx.annotation.RequiresApi --migrate-nullness __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/service-permission.api.system-server.latest/gen/service-permission.api.system-server.latest --extract-annotations __SBOX_SANDBOX_DIR__/out/service-permission.stubs.source.system_server_annotations.zip --hide HiddenTypedefConstant --hide SuperfluousPrefix --hide AnnotationExtraction --error UnhiddenSystemApi --hide BroadcastBehavior --hide CallbackInterface --hide DeprecationMismatch --hide HiddenSuperclass --hide HiddenTypedefConstant --hide HiddenTypeParameter --hide MissingPermission --hide RequiresPermission --hide SdkConstant --hide Todo --hide Typo --hide UnavailableSymbol  --hide MissingPermission --hide BroadcastBehavior --hide HiddenSuperclass --hide DeprecationMismatch --hide UnavailableSymbol --hide SdkConstant --hide HiddenTypeParameter --hide Todo --hide Typo --show-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.SYSTEM_SERVER)' --hide-annotation android.annotation.Hide --hide InternalClasses --api-lint __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/service-permission.api.system-server.latest/gen/service-permission.api.system-server.latest --report-even-if-suppressed __SBOX_SANDBOX_DIR__/out/api_lint_report.txt --lints-as-errors --warnings-as-errors --error-message:api-lint $'************************************************************\\nYour API changes are triggering API Lint warnings or errors.\\nTo make these errors go away, fix the code according to the\\nerror and/or warning messages above.\\n\\nIf it is not possible to do so, there are workarounds:\\n\\n1. You can suppress the errors with @SuppressLint(\"<id>\")\\n2. You can add a baseline file of existing lint failures\\n   to the build rule of service-permission.stubs.source.system_server.\\n************************************************************\\n' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/service-permission.api.system-server.latest/gen/service-permission.api.system-server.latest --check-compatibility:removed:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/service-permission-removed.api.system-server.latest/gen/service-permission-removed.api.system-server.latest --baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/service-permission-incompatibilities.api.system-server.latest/gen/service-permission-incompatibilities.api.system-server.latest --update-baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/last_released_baseline.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/service-permission.stubs.source.system_server-stubs.srcjar -C out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/stubsDir -D out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/api_lint.timestamp && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/api_lint.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/api_lint.timestamp"
+  >
+  copy_after: <
+    from: "out/api_lint_report.txt"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/api_lint_report.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/check_last_released_api.timestamp"
+  >
+  copy_after: <
+    from: "out/last_released_baseline.txt"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/last_released_baseline.txt"
+  >
+  copy_after: <
+    from: "out/service-permission.stubs.source.system_server-stubs.srcjar"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/service-permission.stubs.source.system_server-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/service-permission.stubs.source.system_server_annotations.zip"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/service-permission.stubs.source.system_server_annotations.zip"
+  >
+  copy_after: <
+    from: "out/service-permission.stubs.source.system_server_api.txt"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/service-permission.stubs.source.system_server_api.txt"
+  >
+  copy_after: <
+    from: "out/service-permission.stubs.source.system_server_removed.txt"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava/service-permission.stubs.source.system_server_removed.txt"
+  >
+  input_hash: "7cf5af508428d6903da082c25128d8783a324bce162456432d071cd6a8b9e842"
+  rsp_files: <
+    file: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/packages/modules/Permission/service/service-permission.stubs.source.system_server/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+

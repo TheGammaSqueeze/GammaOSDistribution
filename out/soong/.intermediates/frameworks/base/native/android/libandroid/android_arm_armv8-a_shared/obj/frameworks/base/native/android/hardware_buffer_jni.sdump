@@ -1,0 +1,762 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA1_Pv",
+   "name" : "void *[1]",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIA1_Pv",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA4_21AHardwareBuffer_Plane",
+   "name" : "AHardwareBuffer_Plane [4]",
+   "referenced_type" : "_ZTI21AHardwareBuffer_Plane",
+   "self_type" : "_ZTIA4_21AHardwareBuffer_Plane",
+   "size" : 48,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA4_Pv",
+   "name" : "void *[4]",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIA4_Pv",
+   "size" : 16,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA6_Pv",
+   "name" : "void *[6]",
+   "referenced_type" : "_ZTIPv",
+   "self_type" : "_ZTIA6_Pv",
+   "size" : 24,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "AHARDWAREBUFFER_FORMAT_R8G8B8A8_UNORM"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "AHARDWAREBUFFER_FORMAT_R8G8B8X8_UNORM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "AHARDWAREBUFFER_FORMAT_R8G8B8_UNORM"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "AHARDWAREBUFFER_FORMAT_R5G6B5_UNORM"
+    },
+    {
+     "enum_field_value" : 22,
+     "name" : "AHARDWAREBUFFER_FORMAT_R16G16B16A16_FLOAT"
+    },
+    {
+     "enum_field_value" : 43,
+     "name" : "AHARDWAREBUFFER_FORMAT_R10G10B10A2_UNORM"
+    },
+    {
+     "enum_field_value" : 33,
+     "name" : "AHARDWAREBUFFER_FORMAT_BLOB"
+    },
+    {
+     "enum_field_value" : 48,
+     "name" : "AHARDWAREBUFFER_FORMAT_D16_UNORM"
+    },
+    {
+     "enum_field_value" : 49,
+     "name" : "AHARDWAREBUFFER_FORMAT_D24_UNORM"
+    },
+    {
+     "enum_field_value" : 50,
+     "name" : "AHARDWAREBUFFER_FORMAT_D24_UNORM_S8_UINT"
+    },
+    {
+     "enum_field_value" : 51,
+     "name" : "AHARDWAREBUFFER_FORMAT_D32_FLOAT"
+    },
+    {
+     "enum_field_value" : 52,
+     "name" : "AHARDWAREBUFFER_FORMAT_D32_FLOAT_S8_UINT"
+    },
+    {
+     "enum_field_value" : 53,
+     "name" : "AHARDWAREBUFFER_FORMAT_S8_UINT"
+    },
+    {
+     "enum_field_value" : 35,
+     "name" : "AHARDWAREBUFFER_FORMAT_Y8Cb8Cr8_420"
+    }
+   ],
+   "linker_set_key" : "_ZTI22AHardwareBuffer_Format",
+   "name" : "AHardwareBuffer_Format",
+   "referenced_type" : "_ZTI22AHardwareBuffer_Format",
+   "self_type" : "_ZTI22AHardwareBuffer_Format",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 8,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_READ_NEVER"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_READ_RARELY"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_READ_OFTEN"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_READ_MASK"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_WRITE_NEVER"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_WRITE_RARELY"
+    },
+    {
+     "enum_field_value" : 48,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_WRITE_OFTEN"
+    },
+    {
+     "enum_field_value" : 240,
+     "name" : "AHARDWAREBUFFER_USAGE_CPU_WRITE_MASK"
+    },
+    {
+     "enum_field_value" : 256,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_SAMPLED_IMAGE"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_FRAMEBUFFER"
+    },
+    {
+     "enum_field_value" : 512,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_COLOR_OUTPUT"
+    },
+    {
+     "enum_field_value" : 2048,
+     "name" : "AHARDWAREBUFFER_USAGE_COMPOSER_OVERLAY"
+    },
+    {
+     "enum_field_value" : 16384,
+     "name" : "AHARDWAREBUFFER_USAGE_PROTECTED_CONTENT"
+    },
+    {
+     "enum_field_value" : 65536,
+     "name" : "AHARDWAREBUFFER_USAGE_VIDEO_ENCODE"
+    },
+    {
+     "enum_field_value" : 8388608,
+     "name" : "AHARDWAREBUFFER_USAGE_SENSOR_DIRECT_DATA"
+    },
+    {
+     "enum_field_value" : 16777216,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_DATA_BUFFER"
+    },
+    {
+     "enum_field_value" : 33554432,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_CUBE_MAP"
+    },
+    {
+     "enum_field_value" : 67108864,
+     "name" : "AHARDWAREBUFFER_USAGE_GPU_MIPMAP_COMPLETE"
+    },
+    {
+     "enum_field_value" : 268435456,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_0"
+    },
+    {
+     "enum_field_value" : 536870912,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_1"
+    },
+    {
+     "enum_field_value" : 1073741824,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_2"
+    },
+    {
+     "enum_field_value" : -2147483648,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_3"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_4"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_5"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_6"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_7"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_8"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_9"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_10"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_11"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_12"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_13"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_14"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_15"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_16"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_17"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_18"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "AHARDWAREBUFFER_USAGE_VENDOR_19"
+    }
+   ],
+   "linker_set_key" : "_ZTI26AHardwareBuffer_UsageFlags",
+   "name" : "AHardwareBuffer_UsageFlags",
+   "referenced_type" : "_ZTI26AHardwareBuffer_UsageFlags",
+   "self_type" : "_ZTI26AHardwareBuffer_UsageFlags",
+   "size" : 8,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h",
+   "underlying_type" : "_ZTIy"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvP21android_native_base_tE",
+   "name" : "void (android_native_base_t *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP21android_native_base_t"
+    }
+   ],
+   "referenced_type" : "_ZTIFvP21android_native_base_tE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvP21android_native_base_tE",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "ANativeWindowBuffer::ANativeWindowBuffer",
+   "linker_set_key" : "_ZN19ANativeWindowBufferC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP19ANativeWindowBuffer"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "function_name" : "ANativeWindowBuffer::ANativeWindowBuffer",
+   "linker_set_key" : "_ZN19ANativeWindowBufferC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP19ANativeWindowBuffer"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "function_name" : "ANativeWindowBuffer::decStrong",
+   "linker_set_key" : "_ZNK19ANativeWindowBuffer9decStrongEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK19ANativeWindowBuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "function_name" : "ANativeWindowBuffer::incStrong",
+   "linker_set_key" : "_ZNK19ANativeWindowBuffer9incStrongEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK19ANativeWindowBuffer"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP19ANativeWindowBuffer",
+   "name" : "ANativeWindowBuffer *",
+   "referenced_type" : "_ZTI19ANativeWindowBuffer",
+   "self_type" : "_ZTIP19ANativeWindowBuffer",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP21android_native_base_t",
+   "name" : "android_native_base_t *",
+   "referenced_type" : "_ZTI21android_native_base_t",
+   "self_type" : "_ZTIP21android_native_base_t",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvP21android_native_base_tE",
+   "name" : "void (*)(android_native_base_t *)",
+   "referenced_type" : "_ZTIFvP21android_native_base_tE",
+   "self_type" : "_ZTIPFvP21android_native_base_tE",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK13native_handle",
+   "name" : "const native_handle *",
+   "referenced_type" : "_ZTIK13native_handle",
+   "self_type" : "_ZTIPK13native_handle",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK19ANativeWindowBuffer",
+   "name" : "const ANativeWindowBuffer *",
+   "referenced_type" : "_ZTIK19ANativeWindowBuffer",
+   "self_type" : "_ZTIPK19ANativeWindowBuffer",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK13native_handle",
+   "name" : "const native_handle",
+   "referenced_type" : "_ZTI13native_handle",
+   "self_type" : "_ZTIK13native_handle",
+   "size" : 12,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK19ANativeWindowBuffer",
+   "name" : "const ANativeWindowBuffer",
+   "referenced_type" : "_ZTI19ANativeWindowBuffer",
+   "self_type" : "_ZTIK19ANativeWindowBuffer",
+   "size" : 96,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "common",
+     "referenced_type" : "_ZTI21android_native_base_t"
+    },
+    {
+     "field_name" : "width",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "height",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "stride",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "usage_deprecated",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "layerCount",
+     "field_offset" : 416,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "reserved",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIA1_Pv"
+    },
+    {
+     "field_name" : "handle",
+     "field_offset" : 480,
+     "referenced_type" : "_ZTIPK13native_handle"
+    },
+    {
+     "field_name" : "usage",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "reserved_proc",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIA6_Pv"
+    }
+   ],
+   "linker_set_key" : "_ZTI19ANativeWindowBuffer",
+   "name" : "ANativeWindowBuffer",
+   "referenced_type" : "_ZTI19ANativeWindowBuffer",
+   "self_type" : "_ZTI19ANativeWindowBuffer",
+   "size" : 96,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "width",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "height",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "layers",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "format",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "usage",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "stride",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "rfu0",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "rfu1",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "linker_set_key" : "_ZTI20AHardwareBuffer_Desc",
+   "name" : "AHardwareBuffer_Desc",
+   "referenced_type" : "_ZTI20AHardwareBuffer_Desc",
+   "self_type" : "_ZTI20AHardwareBuffer_Desc",
+   "size" : 40,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "pixelStride",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "rowStride",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI21AHardwareBuffer_Plane",
+   "name" : "AHardwareBuffer_Plane",
+   "referenced_type" : "_ZTI21AHardwareBuffer_Plane",
+   "self_type" : "_ZTI21AHardwareBuffer_Plane",
+   "size" : 12,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "magic",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "version",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "reserved",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIA4_Pv"
+    },
+    {
+     "field_name" : "incRef",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPFvP21android_native_base_tE"
+    },
+    {
+     "field_name" : "decRef",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIPFvP21android_native_base_tE"
+    }
+   ],
+   "linker_set_key" : "_ZTI21android_native_base_t",
+   "name" : "android_native_base_t",
+   "referenced_type" : "_ZTI21android_native_base_t",
+   "self_type" : "_ZTI21android_native_base_t",
+   "size" : 32,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "left",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "top",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "right",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "bottom",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI21android_native_rect_t",
+   "name" : "android_native_rect_t",
+   "referenced_type" : "_ZTI21android_native_rect_t",
+   "self_type" : "_ZTI21android_native_rect_t",
+   "size" : 16,
+   "source_file" : "frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "planeCount",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "planes",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIA4_21AHardwareBuffer_Plane"
+    }
+   ],
+   "linker_set_key" : "_ZTI22AHardwareBuffer_Planes",
+   "name" : "AHardwareBuffer_Planes",
+   "referenced_type" : "_ZTI22AHardwareBuffer_Planes",
+   "self_type" : "_ZTI22AHardwareBuffer_Planes",
+   "size" : 52,
+   "source_file" : "frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "left",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "top",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "right",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "bottom",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI5ARect",
+   "name" : "ARect",
+   "referenced_type" : "_ZTI5ARect",
+   "self_type" : "_ZTI5ARect",
+   "size" : 16,
+   "source_file" : "frameworks/native/libs/arect/include/android/rect.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
