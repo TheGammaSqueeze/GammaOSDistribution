@@ -1,0 +1,955 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotate0"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotate90"
+    },
+    {
+     "enum_field_value" : 180,
+     "name" : "libyuv::kRotate180"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotate270"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kRotateNone"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "libyuv::kRotateClockwise"
+    },
+    {
+     "enum_field_value" : 270,
+     "name" : "libyuv::kRotateCounterClockwise"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12RotationModeE",
+   "name" : "libyuv::RotationMode",
+   "referenced_type" : "_ZTIN6libyuv12RotationModeE",
+   "self_type" : "_ZTIN6libyuv12RotationModeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/rotate.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "libyuv::kJpegYuv420"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "libyuv::kJpegYuv422"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "libyuv::kJpegYuv444"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "libyuv::kJpegYuv400"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "libyuv::kJpegUnknown"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "name" : "libyuv::JpegSubsamplingType",
+   "referenced_type" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "self_type" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvPKPKhPKiiE",
+   "name" : "void (void *, const unsigned char *const *, const int *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPKPKh"
+    },
+    {
+     "referenced_type" : "_ZTIPKi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvPKPKhPKiiE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvPKPKhPKiiE",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::StartDecode",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder11StartDecodeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::UnloadFrame",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder11UnloadFrameEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::FinishDecode",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder12FinishDecodeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::DecodeImcuRow",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder13DecodeImcuRowEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetColorSpace",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder13GetColorSpaceEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::DecodeToBuffers",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder15DecodeToBuffersEPPhii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::DecodeToCallback",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder16DecodeToCallbackEPFvPvPKPKhPKiiES1_ii",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIPFvPvPKPKhPKiiE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetComponentSize",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder16GetComponentSizeEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetNumComponents",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder16GetNumComponentsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetComponentWidth",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder17GetComponentWidthEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetVertSampFactor",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder17GetVertSampFactorEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::AllocOutputBuffers",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18AllocOutputBuffersEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetComponentHeight",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18GetComponentHeightEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetComponentStride",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18GetComponentStrideEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetHorizSampFactor",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18GetHorizSampFactorEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::SetScanlinePointers",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder19SetScanlinePointersEPPh",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIPPh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "access" : "private",
+   "function_name" : "libyuv::MJpegDecoder::DestroyOutputBuffers",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder20DestroyOutputBuffersEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetVertSubSampFactor",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder20GetVertSubSampFactorEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetHorizSubSampFactor",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder21GetHorizSubSampFactorEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::JpegSubsamplingTypeHelper",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder25JpegSubsamplingTypeHelperEPiS1_i",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIN6libyuv19JpegSubsamplingTypeE",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetImageScanlinesPerImcuRow",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder27GetImageScanlinesPerImcuRowEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetComponentScanlinesPerImcuRow",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder31GetComponentScanlinesPerImcuRowEi",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetWidth",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder8GetWidthEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::GetHeight",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder9GetHeightEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::LoadFrame",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder9LoadFrameEPKhm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::MJpegDecoder",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoderC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::MJpegDecoder",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoderC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::~MJpegDecoder",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoderD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "function_name" : "libyuv::MJpegDecoder::~MJpegDecoder",
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoderD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN6libyuv12MJpegDecoderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder14kColorSpaceRgbE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceRgb",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder15kColorSpaceCMYKE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceCMYK",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder15kColorSpaceYCCKE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceYCCK",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder16kColorSpaceYCbCrE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceYCbCr",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder18kColorSpaceUnknownE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceUnknown",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuv12MJpegDecoder20kColorSpaceGrayscaleE",
+   "name" : "libyuv::MJpegDecoder::kColorSpaceGrayscale",
+   "referenced_type" : "_ZTIKi",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "linker_set_key" : "_ZN6libyuvL16kUnknownDataSizeE",
+   "name" : "libyuv::kUnknownDataSize",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP15jpeg_source_mgr",
+   "name" : "jpeg_source_mgr *",
+   "referenced_type" : "_ZTI15jpeg_source_mgr",
+   "self_type" : "_ZTIP15jpeg_source_mgr",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP22jpeg_decompress_struct",
+   "name" : "jpeg_decompress_struct *",
+   "referenced_type" : "_ZTI22jpeg_decompress_struct",
+   "self_type" : "_ZTIP22jpeg_decompress_struct",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvPvPKPKhPKiiE",
+   "name" : "void (*)(void *, const unsigned char *const *, const int *, int)",
+   "referenced_type" : "_ZTIFvPvPKPKhPKiiE",
+   "self_type" : "_ZTIPFvPvPKPKhPKiiE",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKPKh",
+   "name" : "const unsigned char *const *",
+   "referenced_type" : "_ZTIKPKh",
+   "self_type" : "_ZTIPKPKh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKi",
+   "name" : "const int *",
+   "referenced_type" : "_ZTIKi",
+   "self_type" : "_ZTIPKi",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN6libyuv12MJpegDecoderE",
+   "name" : "libyuv::MJpegDecoder *",
+   "referenced_type" : "_ZTIN6libyuv12MJpegDecoderE",
+   "self_type" : "_ZTIPN6libyuv12MJpegDecoderE",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN6libyuv14SetJmpErrorMgrE",
+   "name" : "libyuv::SetJmpErrorMgr *",
+   "referenced_type" : "_ZTIN6libyuv14SetJmpErrorMgrE",
+   "self_type" : "_ZTIPN6libyuv14SetJmpErrorMgrE",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN6libyuv6BufferE",
+   "name" : "libyuv::Buffer *",
+   "referenced_type" : "_ZTIN6libyuv6BufferE",
+   "self_type" : "_ZTIPN6libyuv6BufferE",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPPh",
+   "name" : "unsigned char ***",
+   "referenced_type" : "_ZTIPPh",
+   "self_type" : "_ZTIPPPh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPPh",
+   "name" : "unsigned char **",
+   "referenced_type" : "_ZTIPh",
+   "self_type" : "_ZTIPPh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPKh",
+   "name" : "const unsigned char *const",
+   "referenced_type" : "_ZTIPKh",
+   "self_type" : "_ZTIKPKh",
+   "size" : 8,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKi",
+   "name" : "const int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIKi",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "buffers",
+     "referenced_type" : "_ZTIPN6libyuv6BufferE"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "pos",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12BufferVectorE",
+   "name" : "libyuv::BufferVector",
+   "referenced_type" : "_ZTIN6libyuv12BufferVectorE",
+   "self_type" : "_ZTIN6libyuv12BufferVectorE",
+   "size" : 16,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "buf_",
+     "referenced_type" : "_ZTIN6libyuv6BufferE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "buf_vec_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIN6libyuv12BufferVectorE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "decompress_struct_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIP22jpeg_decompress_struct"
+    },
+    {
+     "access" : "private",
+     "field_name" : "source_mgr_",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIP15jpeg_source_mgr"
+    },
+    {
+     "access" : "private",
+     "field_name" : "error_mgr_",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIPN6libyuv14SetJmpErrorMgrE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "has_scanline_padding_",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "num_outbufs_",
+     "field_offset" : 480,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "scanlines_",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIPPPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "scanlines_sizes_",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "access" : "private",
+     "field_name" : "databuf_",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIPPh"
+    },
+    {
+     "access" : "private",
+     "field_name" : "databuf_strides_",
+     "field_offset" : 704,
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv12MJpegDecoderE",
+   "name" : "libyuv::MJpegDecoder",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN6libyuv12MJpegDecoderE",
+   "self_type" : "_ZTIN6libyuv12MJpegDecoderE",
+   "size" : 96,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN6libyuv6BufferE",
+   "name" : "libyuv::Buffer",
+   "referenced_type" : "_ZTIN6libyuv6BufferE",
+   "self_type" : "_ZTIN6libyuv6BufferE",
+   "size" : 16,
+   "source_file" : "external/libyuv/files/include/libyuv/mjpeg_decoder.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
