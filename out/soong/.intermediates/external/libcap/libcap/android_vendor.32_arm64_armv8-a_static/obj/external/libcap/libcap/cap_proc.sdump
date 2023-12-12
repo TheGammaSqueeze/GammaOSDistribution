@@ -1,0 +1,652 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "CAP_EFFECTIVE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "CAP_PERMITTED"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "CAP_INHERITABLE"
+    }
+   ],
+   "linker_set_key" : "_ZTI10cap_flag_t",
+   "name" : "cap_flag_t",
+   "referenced_type" : "_ZTI10cap_flag_t",
+   "self_type" : "_ZTI10cap_flag_t",
+   "size" : 4,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "CAP_CLEAR"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "CAP_SET"
+    }
+   ],
+   "linker_set_key" : "_ZTI16cap_flag_value_t",
+   "name" : "cap_flag_value_t",
+   "referenced_type" : "_ZTI16cap_flag_value_t",
+   "self_type" : "_ZTI16cap_flag_value_t",
+   "size" : 4,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 2,
+     "name" : "CAP_IAB_INH"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "CAP_IAB_AMB"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "CAP_IAB_BOUND"
+    }
+   ],
+   "linker_set_key" : "_ZTI16cap_iab_vector_t",
+   "name" : "cap_iab_vector_t",
+   "referenced_type" : "_ZTI16cap_iab_vector_t",
+   "self_type" : "_ZTI16cap_iab_vector_t",
+   "size" : 4,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPvE",
+   "name" : "int (void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPvE",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFlllllE",
+   "name" : "long (long, long, long, long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "referenced_type" : "_ZTIFlllllE",
+   "return_type" : "_ZTIl",
+   "self_type" : "_ZTIFlllllE",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFllllllllE",
+   "name" : "long (long, long, long, long, long, long, long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "referenced_type" : "_ZTIFllllllllE",
+   "return_type" : "_ZTIl",
+   "self_type" : "_ZTIFllllllllE",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "cap_drop_bound",
+   "linker_set_key" : "cap_drop_bound",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_ambient",
+   "linker_set_key" : "cap_get_ambient",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_bound",
+   "linker_set_key" : "cap_get_bound",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_mode",
+   "linker_set_key" : "cap_get_mode",
+   "return_type" : "_ZTIj",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_pid",
+   "linker_set_key" : "cap_get_pid",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIP11_cap_struct",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_proc",
+   "linker_set_key" : "cap_get_proc",
+   "return_type" : "_ZTIP11_cap_struct",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_get_secbits",
+   "linker_set_key" : "cap_get_secbits",
+   "return_type" : "_ZTIj",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_iab_get_proc",
+   "linker_set_key" : "cap_iab_get_proc",
+   "return_type" : "_ZTIP9cap_iab_s",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_iab_set_proc",
+   "linker_set_key" : "cap_iab_set_proc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP9cap_iab_s"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launch",
+   "linker_set_key" : "cap_launch",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_callback",
+   "linker_set_key" : "cap_launcher_callback",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIPFiPvE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_set_chroot",
+   "linker_set_key" : "cap_launcher_set_chroot",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_set_iab",
+   "linker_set_key" : "cap_launcher_set_iab",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIP9cap_iab_s"
+    }
+   ],
+   "return_type" : "_ZTIP9cap_iab_s",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_set_mode",
+   "linker_set_key" : "cap_launcher_set_mode",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_setgroups",
+   "linker_set_key" : "cap_launcher_setgroups",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_launcher_setuid",
+   "linker_set_key" : "cap_launcher_setuid",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12cap_launch_s"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_reset_ambient",
+   "linker_set_key" : "cap_reset_ambient",
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_set_ambient",
+   "linker_set_key" : "cap_set_ambient",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTI16cap_flag_value_t"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_set_mode",
+   "linker_set_key" : "cap_set_mode",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_set_proc",
+   "linker_set_key" : "cap_set_proc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11_cap_struct"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_set_secbits",
+   "linker_set_key" : "cap_set_secbits",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_set_syscall",
+   "linker_set_key" : "cap_set_syscall",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFlllllE"
+    },
+    {
+     "referenced_type" : "_ZTIPFllllllllE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_setgroups",
+   "linker_set_key" : "cap_setgroups",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPKj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "cap_setuid",
+   "linker_set_key" : "cap_setuid",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "capgetp",
+   "linker_set_key" : "capgetp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIP11_cap_struct"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "function_name" : "capsetp",
+   "linker_set_key" : "capsetp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIP11_cap_struct"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP11_cap_struct",
+   "name" : "_cap_struct *",
+   "referenced_type" : "_ZTI11_cap_struct",
+   "self_type" : "_ZTIP11_cap_struct",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP12cap_launch_s",
+   "name" : "cap_launch_s *",
+   "referenced_type" : "_ZTI12cap_launch_s",
+   "self_type" : "_ZTIP12cap_launch_s",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP9cap_iab_s",
+   "name" : "cap_iab_s *",
+   "referenced_type" : "_ZTI9cap_iab_s",
+   "self_type" : "_ZTIP9cap_iab_s",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPvE",
+   "name" : "int (*)(void *)",
+   "referenced_type" : "_ZTIFiPvE",
+   "self_type" : "_ZTIPFiPvE",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFlllllE",
+   "name" : "long (*)(long, long, long, long)",
+   "referenced_type" : "_ZTIFlllllE",
+   "self_type" : "_ZTIPFlllllE",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFllllllllE",
+   "name" : "long (*)(long, long, long, long, long, long, long)",
+   "referenced_type" : "_ZTIFllllllllE",
+   "self_type" : "_ZTIPFllllllllE",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKj",
+   "name" : "const unsigned int *",
+   "referenced_type" : "_ZTIKj",
+   "self_type" : "_ZTIPKj",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/libcap/libcap/include/sys/capability.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

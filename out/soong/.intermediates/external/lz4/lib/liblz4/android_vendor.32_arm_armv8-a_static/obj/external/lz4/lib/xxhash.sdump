@@ -1,0 +1,651 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_j",
+   "name" : "unsigned int [2]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA2_j",
+   "size" : 8,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA4_h",
+   "name" : "unsigned char [4]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA4_h",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA4_j",
+   "name" : "unsigned int [4]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA4_j",
+   "size" : 16,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA4_y",
+   "name" : "unsigned long long [4]",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIA4_y",
+   "size" : 32,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA8_h",
+   "name" : "unsigned char [8]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA8_h",
+   "size" : 8,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "XXH_OK"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "XXH_ERROR"
+    }
+   ],
+   "linker_set_key" : "_ZTI13XXH_errorcode",
+   "name" : "XXH_errorcode",
+   "referenced_type" : "_ZTI13XXH_errorcode",
+   "self_type" : "_ZTI13XXH_errorcode",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "XXH32",
+   "linker_set_key" : "XXH32",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_canonicalFromHash",
+   "linker_set_key" : "XXH32_canonicalFromHash",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17XXH32_canonical_t"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_copyState",
+   "linker_set_key" : "XXH32_copyState",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH32_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIPK13XXH32_state_s"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_createState",
+   "linker_set_key" : "XXH32_createState",
+   "return_type" : "_ZTIP13XXH32_state_s",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_digest",
+   "linker_set_key" : "XXH32_digest",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13XXH32_state_s"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_freeState",
+   "linker_set_key" : "XXH32_freeState",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH32_state_s"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_hashFromCanonical",
+   "linker_set_key" : "XXH32_hashFromCanonical",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK17XXH32_canonical_t"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_reset",
+   "linker_set_key" : "XXH32_reset",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH32_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH32_update",
+   "linker_set_key" : "XXH32_update",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH32_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64",
+   "linker_set_key" : "XXH64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_canonicalFromHash",
+   "linker_set_key" : "XXH64_canonicalFromHash",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP17XXH64_canonical_t"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_copyState",
+   "linker_set_key" : "XXH64_copyState",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH64_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIPK13XXH64_state_s"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_createState",
+   "linker_set_key" : "XXH64_createState",
+   "return_type" : "_ZTIP13XXH64_state_s",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_digest",
+   "linker_set_key" : "XXH64_digest",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13XXH64_state_s"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_freeState",
+   "linker_set_key" : "XXH64_freeState",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH64_state_s"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_hashFromCanonical",
+   "linker_set_key" : "XXH64_hashFromCanonical",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK17XXH64_canonical_t"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_reset",
+   "linker_set_key" : "XXH64_reset",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH64_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH64_update",
+   "linker_set_key" : "XXH64_update",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13XXH64_state_s"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTI13XXH_errorcode",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "function_name" : "XXH_versionNumber",
+   "linker_set_key" : "XXH_versionNumber",
+   "return_type" : "_ZTIj",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP13XXH32_state_s",
+   "name" : "XXH32_state_s *",
+   "referenced_type" : "_ZTI13XXH32_state_s",
+   "self_type" : "_ZTIP13XXH32_state_s",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP13XXH64_state_s",
+   "name" : "XXH64_state_s *",
+   "referenced_type" : "_ZTI13XXH64_state_s",
+   "self_type" : "_ZTIP13XXH64_state_s",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP17XXH32_canonical_t",
+   "name" : "XXH32_canonical_t *",
+   "referenced_type" : "_ZTI17XXH32_canonical_t",
+   "self_type" : "_ZTIP17XXH32_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP17XXH64_canonical_t",
+   "name" : "XXH64_canonical_t *",
+   "referenced_type" : "_ZTI17XXH64_canonical_t",
+   "self_type" : "_ZTIP17XXH64_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK13XXH32_state_s",
+   "name" : "const XXH32_state_s *",
+   "referenced_type" : "_ZTIK13XXH32_state_s",
+   "self_type" : "_ZTIPK13XXH32_state_s",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK13XXH64_state_s",
+   "name" : "const XXH64_state_s *",
+   "referenced_type" : "_ZTIK13XXH64_state_s",
+   "self_type" : "_ZTIPK13XXH64_state_s",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK17XXH32_canonical_t",
+   "name" : "const XXH32_canonical_t *",
+   "referenced_type" : "_ZTIK17XXH32_canonical_t",
+   "self_type" : "_ZTIPK17XXH32_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK17XXH64_canonical_t",
+   "name" : "const XXH64_canonical_t *",
+   "referenced_type" : "_ZTIK17XXH64_canonical_t",
+   "self_type" : "_ZTIPK17XXH64_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK13XXH32_state_s",
+   "name" : "const XXH32_state_s",
+   "referenced_type" : "_ZTI13XXH32_state_s",
+   "self_type" : "_ZTIK13XXH32_state_s",
+   "size" : 48,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK13XXH64_state_s",
+   "name" : "const XXH64_state_s",
+   "referenced_type" : "_ZTI13XXH64_state_s",
+   "self_type" : "_ZTIK13XXH64_state_s",
+   "size" : 88,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK17XXH32_canonical_t",
+   "name" : "const XXH32_canonical_t",
+   "referenced_type" : "_ZTI17XXH32_canonical_t",
+   "self_type" : "_ZTIK17XXH32_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK17XXH64_canonical_t",
+   "name" : "const XXH64_canonical_t",
+   "referenced_type" : "_ZTI17XXH64_canonical_t",
+   "self_type" : "_ZTIK17XXH64_canonical_t",
+   "size" : 8,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/lz4/lib/xxhash.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "total_len_32",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "large_len",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "v1",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "v2",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "v3",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "v4",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "mem32",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIA4_j"
+    },
+    {
+     "field_name" : "memsize",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "reserved",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI13XXH32_state_s",
+   "name" : "XXH32_state_s",
+   "referenced_type" : "_ZTI13XXH32_state_s",
+   "self_type" : "_ZTI13XXH32_state_s",
+   "size" : 48,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "total_len",
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "v1",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "v2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "v3",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "v4",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "mem64",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIA4_y"
+    },
+    {
+     "field_name" : "memsize",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "reserved",
+     "field_offset" : 608,
+     "referenced_type" : "_ZTIA2_j"
+    }
+   ],
+   "linker_set_key" : "_ZTI13XXH64_state_s",
+   "name" : "XXH64_state_s",
+   "referenced_type" : "_ZTI13XXH64_state_s",
+   "self_type" : "_ZTI13XXH64_state_s",
+   "size" : 88,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "digest",
+     "referenced_type" : "_ZTIA4_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI17XXH32_canonical_t",
+   "name" : "XXH32_canonical_t",
+   "referenced_type" : "_ZTI17XXH32_canonical_t",
+   "self_type" : "_ZTI17XXH32_canonical_t",
+   "size" : 4,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "digest",
+     "referenced_type" : "_ZTIA8_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI17XXH64_canonical_t",
+   "name" : "XXH64_canonical_t",
+   "referenced_type" : "_ZTI17XXH64_canonical_t",
+   "self_type" : "_ZTI17XXH64_canonical_t",
+   "size" : 8,
+   "source_file" : "external/lz4/lib/xxhash.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
