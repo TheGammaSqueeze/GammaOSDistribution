@@ -1,0 +1,209 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/files/scoped_file.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/files/scoped_file.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/files/scoped_temp_dir.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/files/scoped_temp_dir.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/format_macros.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/format_macros.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/gtest_prod_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/gtest_prod_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/guid.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/guid.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/hash.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/hash.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/i18n/base_i18n_export.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/i18n/base_i18n_export.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/i18n/rtl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/i18n/rtl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_file_value_serializer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_file_value_serializer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_parser.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_parser.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_reader.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_reader.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_string_value_serializer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_string_value_serializer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_value_converter.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_value_converter.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/json_writer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/json_writer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/json/string_escape.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/json/string_escape.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/lazy_instance.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/lazy_instance.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/lazy_instance_helpers.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/lazy_instance_helpers.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/location.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/location.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/logging.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/logging.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/macros.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/macros.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/md5.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/md5.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/aligned_memory.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/aligned_memory.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/free_deleter.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/free_deleter.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/linked_ptr.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/linked_ptr.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/platform_shared_memory_region.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/platform_shared_memory_region.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/protected_memory.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/protected_memory.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/protected_memory_buildflags.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/protected_memory_buildflags.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/protected_memory_cfi.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/protected_memory_cfi.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/ptr_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/ptr_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/raw_scoped_refptr_mismatch_checker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/raw_scoped_refptr_mismatch_checker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/read_only_shared_memory_region.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/read_only_shared_memory_region.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/ref_counted.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/ref_counted.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/ref_counted_delete_on_sequence.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/ref_counted_delete_on_sequence.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/ref_counted_memory.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/ref_counted_memory.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/scoped_policy.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/scoped_policy.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/scoped_refptr.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/scoped_refptr.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/shared_memory.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/shared_memory.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/shared_memory_handle.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/shared_memory_handle.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/shared_memory_helper.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/shared_memory_helper.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/shared_memory_mapping.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/shared_memory_mapping.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/singleton.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/singleton.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/unsafe_shared_memory_region.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/unsafe_shared_memory_region.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/weak_ptr.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/weak_ptr.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/memory/writable_shared_memory_region.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/memory/writable_shared_memory_region.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/incoming_task_queue.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/incoming_task_queue.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_loop.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_loop.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_loop_current.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_loop_current.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_loop_task_runner.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_loop_task_runner.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/message_loop/message_pump_default.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/message_loop/message_pump_default.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/files/scoped_file.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/files/scoped_file.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/files/scoped_temp_dir.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/files/scoped_temp_dir.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/format_macros.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/format_macros.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/gtest_prod_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/gtest_prod_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/guid.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/guid.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/hash.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/hash.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/i18n/base_i18n_export.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/i18n/base_i18n_export.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/i18n/rtl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/i18n/rtl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_file_value_serializer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_file_value_serializer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_parser.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_parser.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_reader.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_reader.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_string_value_serializer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_string_value_serializer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_value_converter.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_value_converter.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/json_writer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/json_writer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/json/string_escape.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/json/string_escape.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/lazy_instance.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/lazy_instance.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/lazy_instance_helpers.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/lazy_instance_helpers.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/location.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/location.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/logging.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/logging.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/macros.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/macros.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/md5.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/md5.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/aligned_memory.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/aligned_memory.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/free_deleter.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/free_deleter.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/linked_ptr.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/linked_ptr.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/platform_shared_memory_region.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/platform_shared_memory_region.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/protected_memory.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/protected_memory.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/protected_memory_buildflags.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/protected_memory_buildflags.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/protected_memory_cfi.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/protected_memory_cfi.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/ptr_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/ptr_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/raw_scoped_refptr_mismatch_checker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/raw_scoped_refptr_mismatch_checker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/read_only_shared_memory_region.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/read_only_shared_memory_region.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/ref_counted.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/ref_counted.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/ref_counted_delete_on_sequence.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/ref_counted_delete_on_sequence.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/ref_counted_memory.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/ref_counted_memory.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/scoped_policy.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/scoped_policy.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/scoped_refptr.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/scoped_refptr.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/shared_memory.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/shared_memory.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/shared_memory_handle.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/shared_memory_handle.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/shared_memory_helper.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/shared_memory_helper.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/shared_memory_mapping.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/shared_memory_mapping.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/singleton.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/singleton.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/unsafe_shared_memory_region.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/unsafe_shared_memory_region.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/weak_ptr.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/weak_ptr.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/memory/writable_shared_memory_region.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/memory/writable_shared_memory_region.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/incoming_task_queue.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/incoming_task_queue.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_loop.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/message_loop.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_loop_current.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/message_loop_current.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_loop_task_runner.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/message_loop_task_runner.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/message_pump.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/message_loop/message_pump_default.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/2/external/libchrome/base/message_loop/message_pump_default.h"
+  >
+  input_hash: "63172343b231805ae0d1bd5c68055e6ea04778456cd6ae547cd39cdd20b263f3"
+>
+
