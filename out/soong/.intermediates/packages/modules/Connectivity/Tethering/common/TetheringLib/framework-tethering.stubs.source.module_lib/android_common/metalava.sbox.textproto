@@ -1,0 +1,149 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+    to: "out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/gen/aidl/aidl0.srcjar"
+    to: "out/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/gen/aidl/aidl0.srcjar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+    to: "out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-tethering-incompatibilities.api.module-lib.latest/gen/framework-tethering-incompatibilities.api.module-lib.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-tethering-incompatibilities.api.module-lib.latest/gen/framework-tethering-incompatibilities.api.module-lib.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-tethering-removed.api.module-lib.latest/gen/framework-tethering-removed.api.module-lib.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-tethering-removed.api.module-lib.latest/gen/framework-tethering-removed.api.module-lib.latest"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/framework-tethering.api.module-lib.latest/gen/framework-tethering.api.module-lib.latest"
+    to: "out/.intermediates/prebuilts/sdk/framework-tethering.api.module-lib.latest/gen/framework-tethering.api.module-lib.latest"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/IIntResultListener.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/IIntResultListener.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/ITetheringConnector.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/ITetheringConnector.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/ITetheringEventCallback.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/ITetheringEventCallback.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetherStatesParcel.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetherStatesParcel.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheredClient.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheredClient.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheredClient.java"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheredClient.java"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringCallbackStartedParcel.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringCallbackStartedParcel.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringConfigurationParcel.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringConfigurationParcel.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringConstants.java"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringConstants.java"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringInterface.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringInterface.aidl"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringInterface.java"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringInterface.java"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringManager.java"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringManager.java"
+  >
+  copy_before: <
+    from: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringRequestParcel.aidl"
+    to: "packages/modules/Connectivity/Tethering/common/TetheringLib/src/android/net/TetheringRequestParcel.aidl"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" __SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/gen/aidl/aidl0.srcjar && rm -rf out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/home && mkdir -p out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/android_module_lib_stubs_current/android_common/combined/android_module_lib_stubs_current.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.module_lib/android_common/turbine-combined/framework-connectivity.stubs.module_lib.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --api __SBOX_SANDBOX_DIR__/out/framework-tethering.stubs.source.module_lib_api.txt --removed-api __SBOX_SANDBOX_DIR__/out/framework-tethering.stubs.source.module_lib_removed.txt --stubs out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/stubsDir --exclude-documentation-from-stubs --include-annotations --exclude-annotation androidx.annotation.RequiresApi --migrate-nullness __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-tethering.api.module-lib.latest/gen/framework-tethering.api.module-lib.latest --extract-annotations __SBOX_SANDBOX_DIR__/out/framework-tethering.stubs.source.module_lib_annotations.zip --hide HiddenTypedefConstant --hide SuperfluousPrefix --hide AnnotationExtraction --error UnhiddenSystemApi --hide BroadcastBehavior --hide CallbackInterface --hide DeprecationMismatch --hide HiddenSuperclass --hide HiddenTypedefConstant --hide HiddenTypeParameter --hide MissingPermission --hide RequiresPermission --hide SdkConstant --hide Todo --hide Typo --hide UnavailableSymbol  --hide MissingPermission --hide BroadcastBehavior --hide HiddenSuperclass --hide DeprecationMismatch --hide UnavailableSymbol --hide SdkConstant --hide HiddenTypeParameter --hide Todo --hide Typo --show-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.MODULE_LIBRARIES)' --show-for-stub-purposes-annotation 'android.annotation.SystemApi(client=android.annotation.SystemApi.Client.PRIVILEGED_APPS)' --api-lint __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-tethering.api.module-lib.latest/gen/framework-tethering.api.module-lib.latest --report-even-if-suppressed __SBOX_SANDBOX_DIR__/out/api_lint_report.txt --lints-as-errors --warnings-as-errors --error-message:api-lint $'************************************************************\\nYour API changes are triggering API Lint warnings or errors.\\nTo make these errors go away, fix the code according to the\\nerror and/or warning messages above.\\n\\nIf it is not possible to do so, there are workarounds:\\n\\n1. You can suppress the errors with @SuppressLint(\"<id>\")\\n2. You can add a baseline file of existing lint failures\\n   to the build rule of framework-tethering.stubs.source.module_lib.\\n************************************************************\\n' --check-compatibility:api:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-tethering.api.module-lib.latest/gen/framework-tethering.api.module-lib.latest --check-compatibility:removed:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-tethering-removed.api.module-lib.latest/gen/framework-tethering-removed.api.module-lib.latest --baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/framework-tethering-incompatibilities.api.module-lib.latest/gen/framework-tethering-incompatibilities.api.module-lib.latest --update-baseline:compatibility:released __SBOX_SANDBOX_DIR__/out/last_released_baseline.txt --error-message:compatibility:released $'\\n******************************\\nYou have tried to change the API from what has been previously released in\\nan SDK.  Please fix the errors listed above.\\n******************************\\n' && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/framework-tethering.stubs.source.module_lib-stubs.srcjar -C out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/stubsDir -D out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/stubsDir && touch __SBOX_SANDBOX_DIR__/out/api_lint.timestamp && touch __SBOX_SANDBOX_DIR__/out/check_last_released_api.timestamp && rm -rf out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/api_lint.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/api_lint.timestamp"
+  >
+  copy_after: <
+    from: "out/api_lint_report.txt"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/api_lint_report.txt"
+  >
+  copy_after: <
+    from: "out/check_last_released_api.timestamp"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/check_last_released_api.timestamp"
+  >
+  copy_after: <
+    from: "out/framework-tethering.stubs.source.module_lib-stubs.srcjar"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/framework-tethering.stubs.source.module_lib-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/framework-tethering.stubs.source.module_lib_annotations.zip"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/framework-tethering.stubs.source.module_lib_annotations.zip"
+  >
+  copy_after: <
+    from: "out/framework-tethering.stubs.source.module_lib_api.txt"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/framework-tethering.stubs.source.module_lib_api.txt"
+  >
+  copy_after: <
+    from: "out/framework-tethering.stubs.source.module_lib_removed.txt"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/framework-tethering.stubs.source.module_lib_removed.txt"
+  >
+  copy_after: <
+    from: "out/last_released_baseline.txt"
+    to: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava/last_released_baseline.txt"
+  >
+  input_hash: "1b24efed5233d2161a14e2f3033562748f24d057163177b5b156ac22bf2e3970"
+  rsp_files: <
+    file: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source.module_lib/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+
