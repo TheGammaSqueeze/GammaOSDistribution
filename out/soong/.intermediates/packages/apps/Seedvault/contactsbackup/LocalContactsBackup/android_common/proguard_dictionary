@@ -1,0 +1,356 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: e1cb8f3
+# common_typos_disable
+com.android.vcard.VCardConfig -> com.android.vcard.VCardConfig:
+    391:405:void <clinit>() -> <clinit>
+    469:469:boolean isJapaneseDevice(int) -> isJapaneseDevice
+com.android.vcard.VCardEntry -> com.android.vcard.VCardEntry:
+    73:1863:void <clinit>() -> <clinit>
+    1767:1767:void <init>() -> <init>
+    1771:1771:void <init>(int) -> <init>
+    90:1776:void <init>(int,android.accounts.Account) -> <init>
+    2475:2478:void addChild(com.android.vcard.VCardEntry) -> addChild
+    1835:1838:void addEmail(int,java.lang.String,java.lang.String,boolean) -> addEmail
+    1978:1981:void addIm(int,java.lang.String,java.lang.String,int,boolean) -> addIm
+    1855:1858:void addNewOrganization(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,boolean) -> addNewOrganization
+    1828:1831:void addNickName(java.lang.String) -> addNickName
+    1985:1988:void addNote(java.lang.String) -> addNote
+    1780:1817:void addPhone(int,java.lang.String,java.lang.String,boolean) -> addPhone
+    1992:1996:void addPhotoBytes(java.lang.String,byte[],boolean) -> addPhotoBytes
+    1842:1845:void addPostal(int,java.util.List,java.lang.String,boolean) -> addPostal
+    2139:2425:void addProperty(com.android.vcard.VCardProperty) -> addProperty
+    1821:1824:void addSip(java.lang.String,int,java.lang.String,boolean) -> addSip
+    1866:1879:java.lang.String buildSinglePhoneticNameFromSortAsParam(java.util.Map) -> buildSinglePhoneticNameFromSortAsParam
+    2522:2522:void consolidateFields() -> consolidateFields
+    2495:2510:java.lang.String constructDisplayName() -> constructDisplayName
+    2557:2585:java.util.ArrayList constructInsertOperations(android.content.ContentResolver,java.util.ArrayList) -> constructInsertOperations
+    96:96:boolean getStarred() -> getStarred
+    2482:2486:void handleAndroidCustomProperty(java.util.List) -> handleAndroidCustomProperty
+    2045:2067:void handleNProperty(java.util.List,java.util.Map) -> handleNProperty
+    1894:1948:void handleOrgValue(int,java.util.List,java.util.Map,boolean) -> handleOrgValue
+    2079:2134:void handlePhoneticNameFromSound(java.util.List) -> handlePhoneticNameFromSound
+    2436:2471:void handleSipCase(java.lang.String,java.util.Collection) -> handleSipCase
+    1959:1973:void handleTitleValue(java.lang.String) -> handleTitleValue
+    2534:2536:boolean isIgnorable() -> isIgnorable
+    1599:1626:void iterateAllData(com.android.vcard.VCardEntry$EntryElementIterator) -> iterateAllData
+    1631:1636:void iterateOneList(java.util.List,com.android.vcard.VCardEntry$EntryElementIterator) -> iterateOneList
+    2599:2611:java.lang.String listToString(java.util.List) -> listToString
+    1761:1763:java.lang.String toString() -> toString
+    2009:2035:void tryHandleSortAsName(java.util.Map) -> tryHandleSortAsName
+com.android.vcard.VCardEntry$AndroidCustomData -> com.android.vcard.VCardEntry$AndroidCustomData:
+    1451:1453:void <init>(java.lang.String,java.util.List) -> <init>
+    1463:1473:com.android.vcard.VCardEntry$AndroidCustomData constructAndroidCustomData(java.util.List) -> constructAndroidCustomData
+    1479:1490:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1503:1518:boolean equals(java.lang.Object) -> equals
+    1547:1547:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1528:1531:int hashCode() -> hashCode
+    1495:1495:boolean isEmpty() -> isEmpty
+    1539:1542:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$AnniversaryData -> com.android.vcard.VCardEntry$AnniversaryData:
+    1304:1305:void <init>(java.lang.String) -> <init>
+    1311:1317:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1330:1334:boolean equals(java.lang.Object) -> equals
+    1349:1349:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1339:1339:int hashCode() -> hashCode
+    1322:1322:boolean isEmpty() -> isEmpty
+    1344:1344:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$BirthdayData -> com.android.vcard.VCardEntry$BirthdayData:
+    1248:1249:void <init>(java.lang.String) -> <init>
+    1255:1261:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1274:1278:boolean equals(java.lang.Object) -> equals
+    1293:1293:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1283:1283:int hashCode() -> hashCode
+    1266:1266:boolean isEmpty() -> isEmpty
+    1288:1288:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$EmailData -> com.android.vcard.VCardEntry$EmailData:
+    415:419:void <init>(java.lang.String,int,java.lang.String,boolean) -> <init>
+    408:408:java.lang.String access$1500(com.android.vcard.VCardEntry$EmailData) -> access$1500
+    425:438:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    451:457:boolean equals(java.lang.Object) -> equals
+    478:478:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    463:466:int hashCode() -> hashCode
+    443:443:boolean isEmpty() -> isEmpty
+    472:473:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$EntryLabel -> com.android.vcard.VCardEntry$EntryLabel:
+    99:113:void <clinit>() -> <clinit>
+    99:99:void <init>(java.lang.String,int) -> <init>
+    99:99:com.android.vcard.VCardEntry$EntryLabel valueOf(java.lang.String) -> valueOf
+    99:99:com.android.vcard.VCardEntry$EntryLabel[] values() -> values
+com.android.vcard.VCardEntry$ImData -> com.android.vcard.VCardEntry$ImData:
+    891:896:void <init>(int,java.lang.String,java.lang.String,int,boolean) -> <init>
+    902:915:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    928:935:boolean equals(java.lang.Object) -> equals
+    958:958:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    941:945:int hashCode() -> hashCode
+    920:920:boolean isEmpty() -> isEmpty
+    951:953:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$InsertOperationConstrutor -> com.android.vcard.VCardEntry$InsertOperationConstrutor:
+    1724:1726:void <init>(com.android.vcard.VCardEntry,java.util.List,int) -> <init>
+    1747:1748:boolean onElement(com.android.vcard.VCardEntry$EntryElement) -> onElement
+com.android.vcard.VCardEntry$IsIgnorableIterator -> com.android.vcard.VCardEntry$IsIgnorableIterator:
+    1640:1641:void <init>(com.android.vcard.VCardEntry) -> <init>
+    1640:1640:void <init>(com.android.vcard.VCardEntry,com.android.vcard.VCardEntry$1) -> <init>
+    1671:1671:boolean getResult() -> getResult
+    1661:1662:boolean onElement(com.android.vcard.VCardEntry$EntryElement) -> onElement
+com.android.vcard.VCardEntry$NameData -> com.android.vcard.VCardEntry$NameData:
+    133:133:void <init>() -> <init>
+    133:133:java.lang.String access$1000(com.android.vcard.VCardEntry$NameData) -> access$1000
+    133:133:java.lang.String access$1002(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$1002
+    133:133:java.lang.String access$1100(com.android.vcard.VCardEntry$NameData) -> access$1100
+    133:133:java.lang.String access$1102(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$1102
+    133:133:java.lang.String access$1200(com.android.vcard.VCardEntry$NameData) -> access$1200
+    133:133:java.lang.String access$1202(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$1202
+    133:133:java.lang.String access$1300(com.android.vcard.VCardEntry$NameData) -> access$1300
+    133:133:java.lang.String access$1302(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$1302
+    133:133:java.lang.String access$1402(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$1402
+    133:133:java.lang.String access$500(com.android.vcard.VCardEntry$NameData) -> access$500
+    133:133:java.lang.String access$502(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$502
+    133:133:java.lang.String access$600(com.android.vcard.VCardEntry$NameData) -> access$600
+    133:133:java.lang.String access$602(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$602
+    133:133:java.lang.String access$700(com.android.vcard.VCardEntry$NameData) -> access$700
+    133:133:java.lang.String access$702(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$702
+    133:133:java.lang.String access$800(com.android.vcard.VCardEntry$NameData) -> access$800
+    133:133:java.lang.String access$802(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$802
+    133:133:java.lang.String access$900(com.android.vcard.VCardEntry$NameData) -> access$900
+    133:133:java.lang.String access$902(com.android.vcard.VCardEntry$NameData,java.lang.String) -> access$902
+    175:218:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    168:169:boolean emptyPhoneticStructuredName() -> emptyPhoneticStructuredName
+    162:164:boolean emptyStructuredName() -> emptyStructuredName
+    235:249:boolean equals(java.lang.Object) -> equals
+    272:272:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    254:259:int hashCode() -> hashCode
+    223:227:boolean isEmpty() -> isEmpty
+    266:266:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$NicknameData -> com.android.vcard.VCardEntry$NicknameData:
+    1082:1083:void <init>(java.lang.String) -> <init>
+    1089:1095:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1105:1109:boolean equals(java.lang.Object) -> equals
+    1124:1124:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1114:1114:int hashCode() -> hashCode
+    1100:1100:boolean isEmpty() -> isEmpty
+    1119:1119:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$NoteData -> com.android.vcard.VCardEntry$NoteData:
+    1135:1136:void <init>(java.lang.String) -> <init>
+    1142:1147:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1160:1164:boolean equals(java.lang.Object) -> equals
+    1179:1179:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1169:1169:int hashCode() -> hashCode
+    1152:1152:boolean isEmpty() -> isEmpty
+    1174:1174:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$OrganizationData -> com.android.vcard.VCardEntry$OrganizationData:
+    756:762:void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,boolean) -> <init>
+    743:743:java.lang.String access$100(com.android.vcard.VCardEntry$OrganizationData) -> access$100
+    743:743:java.lang.String access$102(com.android.vcard.VCardEntry$OrganizationData,java.lang.String) -> access$102
+    743:743:java.lang.String access$200(com.android.vcard.VCardEntry$OrganizationData) -> access$200
+    743:743:java.lang.String access$202(com.android.vcard.VCardEntry$OrganizationData,java.lang.String) -> access$202
+    743:743:boolean access$302(com.android.vcard.VCardEntry$OrganizationData,boolean) -> access$302
+    743:743:java.lang.String access$400(com.android.vcard.VCardEntry$OrganizationData) -> access$400
+    743:743:java.lang.String access$402(com.android.vcard.VCardEntry$OrganizationData,java.lang.String) -> access$402
+    791:811:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    825:832:boolean equals(java.lang.Object) -> equals
+    855:855:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    766:785:java.lang.String getFormattedString() -> getFormattedString
+    838:842:int hashCode() -> hashCode
+    816:817:boolean isEmpty() -> isEmpty
+    848:850:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$PhoneData -> com.android.vcard.VCardEntry$PhoneData:
+    325:329:void <init>(java.lang.String,int,java.lang.String,boolean) -> <init>
+    315:315:java.lang.String access$1600(com.android.vcard.VCardEntry$PhoneData) -> access$1600
+    335:348:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    361:367:boolean equals(java.lang.Object) -> equals
+    388:388:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    373:376:int hashCode() -> hashCode
+    353:353:boolean isEmpty() -> isEmpty
+    382:383:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$PhotoData -> com.android.vcard.VCardEntry$PhotoData:
+    995:1000:void <init>(java.lang.String,byte[],boolean) -> <init>
+    1006:1014:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1027:1032:boolean equals(java.lang.Object) -> equals
+    1063:1063:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1038:1051:int hashCode() -> hashCode
+    1019:1019:boolean isEmpty() -> isEmpty
+    1057:1058:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$PostalData -> com.android.vcard.VCardEntry$PostalData:
+    519:530:void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,boolean,int) -> <init>
+    568:603:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    540:561:com.android.vcard.VCardEntry$PostalData constructPostalData(java.util.List,int,java.lang.String,boolean,int) -> constructPostalData
+    658:672:boolean equals(java.lang.Object) -> equals
+    699:699:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    607:639:java.lang.String getFormattedAddress(int) -> getFormattedAddress
+    677:684:int hashCode() -> hashCode
+    644:650:boolean isEmpty() -> isEmpty
+    691:693:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$SipData -> com.android.vcard.VCardEntry$SipData:
+    1366:1374:void <init>(java.lang.String,int,java.lang.String,boolean) -> <init>
+    1380:1392:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1405:1411:boolean equals(java.lang.Object) -> equals
+    1431:1431:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1417:1420:int hashCode() -> hashCode
+    1397:1397:boolean isEmpty() -> isEmpty
+    1426:1426:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$ToStringIterator -> com.android.vcard.VCardEntry$ToStringIterator:
+    1675:1675:void <init>(com.android.vcard.VCardEntry) -> <init>
+    1675:1675:void <init>(com.android.vcard.VCardEntry,com.android.vcard.VCardEntry$1) -> <init>
+    1694:1698:boolean onElement(com.android.vcard.VCardEntry$EntryElement) -> onElement
+    1704:1704:void onElementGroupEnded() -> onElementGroupEnded
+    1688:1689:void onElementGroupStarted(com.android.vcard.VCardEntry$EntryLabel) -> onElementGroupStarted
+    1709:1709:void onIterationEnded() -> onIterationEnded
+    1682:1683:void onIterationStarted() -> onIterationStarted
+    1714:1714:java.lang.String toString() -> toString
+com.android.vcard.VCardEntry$WebsiteData -> com.android.vcard.VCardEntry$WebsiteData:
+    1190:1191:void <init>(java.lang.String) -> <init>
+    1197:1205:void constructInsertOperation(java.util.List,int) -> constructInsertOperation
+    1218:1222:boolean equals(java.lang.Object) -> equals
+    1237:1237:com.android.vcard.VCardEntry$EntryLabel getEntryLabel() -> getEntryLabel
+    1227:1227:int hashCode() -> hashCode
+    1210:1210:boolean isEmpty() -> isEmpty
+    1232:1232:java.lang.String toString() -> toString
+com.android.vcard.VCardEntryCommitter -> com.android.vcard.VCardEntryCommitter:
+    47:50:void <init>(android.content.ContentResolver) -> <init>
+    59:64:void onEnd() -> onEnd
+    70:78:void onEntryCreated(com.android.vcard.VCardEntry) -> onEntryCreated
+    83:95:android.net.Uri pushIntoContentResolver(java.util.ArrayList) -> pushIntoContentResolver
+com.android.vcard.VCardEntryConstructor -> com.android.vcard.VCardEntryConstructor:
+    67:67:void <init>(int,android.accounts.Account) -> <init>
+    50:78:void <init>(int,android.accounts.Account,java.lang.String) -> <init>
+    82:82:void addEntryHandler(com.android.vcard.VCardEntryHandler) -> addEntryHandler
+    100:101:void clear() -> clear
+    112:125:void onEntryEnded() -> onEntryEnded
+    106:107:void onEntryStarted() -> onEntryStarted
+    130:130:void onPropertyCreated(com.android.vcard.VCardProperty) -> onPropertyCreated
+    94:95:void onVCardEnded() -> onVCardEnded
+    87:88:void onVCardStarted() -> onVCardStarted
+com.android.vcard.VCardParser -> com.android.vcard.VCardParser:
+    23:23:void <init>() -> <init>
+com.android.vcard.VCardParserImpl_V21 -> com.android.vcard.VCardParserImpl_V21:
+    104:161:void <init>(int) -> <init>
+    998:998:void addInterpreter(com.android.vcard.VCardInterpreter) -> addInterpreter
+    365:433:com.android.vcard.VCardProperty constructPropertyData(java.lang.String) -> constructPropertyData
+    982:982:java.util.Set getAvailableEncodingSet() -> getAvailableEncodingSet
+    834:872:java.lang.String getBase64(java.lang.String) -> getBase64
+    970:970:java.util.Set getKnownPropertyNameSet() -> getKnownPropertyNameSet
+    974:974:java.util.Set getKnownTypeSet() -> getKnownTypeSet
+    978:978:java.util.Set getKnownValueSet() -> getKnownValueSet
+    182:182:java.lang.String getLine() -> getLine
+    197:200:java.lang.String getNonEmptyLine() -> getNonEmptyLine
+    808:830:java.lang.String getPotentialMultiline(java.lang.String) -> getPotentialMultiline
+    889:902:java.lang.String getPropertyNameUpperCase(java.lang.String) -> getPropertyNameUpperCase
+    767:793:java.lang.String getQuotedPrintablePart(java.lang.String) -> getQuotedPrintablePart
+    701:735:void handleAdrOrgN(com.android.vcard.VCardProperty,java.lang.String,java.lang.String,java.lang.String) -> handleAdrOrgN
+    916:923:void handleAgent(com.android.vcard.VCardProperty) -> handleAgent
+    568:568:void handleAnyParam(com.android.vcard.VCardProperty,java.lang.String,java.lang.String) -> handleAnyParam
+    526:527:void handleCharset(com.android.vcard.VCardProperty,java.lang.String) -> handleCharset
+    508:514:void handleEncoding(com.android.vcard.VCardProperty,java.lang.String) -> handleEncoding
+    535:553:void handleLanguage(com.android.vcard.VCardProperty,java.lang.String) -> handleLanguage
+    349:354:void handleNest() -> handleNest
+    473:473:void handleParamWithoutName(com.android.vcard.VCardProperty,java.lang.String) -> handleParamWithoutName
+    445:465:void handleParams(com.android.vcard.VCardProperty,java.lang.String) -> handleParams
+    573:694:void handlePropertyValue(com.android.vcard.VCardProperty,java.lang.String) -> handlePropertyValue
+    480:486:void handleType(com.android.vcard.VCardProperty,java.lang.String) -> handleType
+    493:500:void handleValue(com.android.vcard.VCardProperty,java.lang.String) -> handleValue
+    168:172:boolean isValidPropertyName(java.lang.String) -> isValidPropertyName
+    1003:1028:void parse(java.io.InputStream) -> parse
+    305:326:boolean parseItem() -> parseItem
+    333:344:void parseItemInter(com.android.vcard.VCardProperty,java.lang.String) -> parseItemInter
+    283:292:void parseItems() -> parseItems
+    216:229:boolean parseOneVCard() -> parseOneVCard
+    186:186:java.lang.String peekLine() -> peekLine
+    244:267:boolean readBeginVCard(boolean) -> readBeginVCard
+    949:949:java.lang.String unescapeCharacter(char) -> unescapeCharacter
+com.android.vcard.VCardParserImpl_V21$CustomBufferedReader -> com.android.vcard.VCardParserImpl_V21$CustomBufferedReader:
+    58:58:void <init>(java.io.Reader) -> <init>
+    81:91:java.lang.String peekLine() -> peekLine
+    63:73:java.lang.String readLine() -> readLine
+com.android.vcard.VCardParserImpl_V30 -> com.android.vcard.VCardParserImpl_V30:
+    355:355:java.lang.String unescapeCharacter(char) -> unescapeCharacter
+com.android.vcard.VCardParserImpl_V40 -> com.android.vcard.VCardParserImpl_V40:
+    84:84:java.lang.String unescapeCharacter(char) -> unescapeCharacter
+com.android.vcard.VCardParser_V21 -> com.android.vcard.VCardParser_V21:
+    47:85:void <clinit>() -> <clinit>
+    97:98:void <init>(int) -> <init>
+    103:103:void addInterpreter(com.android.vcard.VCardInterpreter) -> addInterpreter
+    108:108:void parse(java.io.InputStream) -> parse
+com.android.vcard.VCardProperty -> com.android.vcard.VCardProperty:
+    60:65:void <init>() -> <init>
+    81:84:void addGroup(java.lang.String) -> addGroup
+    94:104:void addParameter(java.lang.String,java.lang.String) -> addParameter
+    167:167:byte[] getByteValue() -> getByteValue
+    143:143:java.lang.String getName() -> getName
+    151:151:java.util.Map getParameterMap() -> getParameterMap
+    155:155:java.util.Collection getParameters(java.lang.String) -> getParameters
+    159:159:java.lang.String getRawValue() -> getRawValue
+    163:163:java.util.List getValueList() -> getValueList
+    139:139:void setByteValue(byte[]) -> setByteValue
+    73:77:void setName(java.lang.String) -> setName
+    108:108:void setRawValue(java.lang.String) -> setRawValue
+    115:115:void setValues(java.lang.String[]) -> setValues
+    119:119:void setValues(java.util.List) -> setValues
+com.android.vcard.VCardUtils -> com.android.vcard.VCardUtils:
+    129:578:void <clinit>() -> <clinit>
+    709:714:boolean appearsLikeAndroidVCardQuotedPrintable(java.lang.String) -> appearsLikeAndroidVCardQuotedPrintable
+    376:409:java.util.List constructListFromValue(java.lang.String,int) -> constructListFromValue
+    336:336:java.lang.String constructNameFromElements(int,java.lang.String,java.lang.String,java.lang.String) -> constructNameFromElements
+    343:366:java.lang.String constructNameFromElements(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> constructNameFromElements
+    417:417:boolean containsOnlyPrintableAscii(java.lang.String[]) -> containsOnlyPrintableAscii
+    424:428:boolean containsOnlyPrintableAscii(java.util.Collection) -> containsOnlyPrintableAscii
+    834:846:java.lang.String convertStringCharset(java.lang.String,java.lang.String,java.lang.String) -> convertStringCharset
+    327:327:int getPhoneNumberFormat(int) -> getPhoneNumberFormat
+    202:272:java.lang.Object getPhoneTypeFromStrings(java.util.Collection,java.lang.String) -> getPhoneTypeFromStrings
+    733:815:java.lang.String parseQuotedPrintable(java.lang.String,boolean,java.lang.String,java.lang.String) -> parseQuotedPrintable
+    295:299:java.lang.String[] sortNameElements(int,java.lang.String,java.lang.String,java.lang.String) -> sortNameElements
+com.android.vcard.VCardUtils$DecoderException -> com.android.vcard.VCardUtils$DecoderException:
+    51:51:void <init>(java.lang.String) -> <init>
+com.android.vcard.VCardUtils$PhoneNumberUtilsPort -> com.android.vcard.VCardUtils$PhoneNumberUtilsPort:
+    92:94:java.lang.String formatNumber(java.lang.String,int) -> formatNumber
+com.android.vcard.VCardUtils$QuotedPrintableCodecPort -> com.android.vcard.VCardUtils$QuotedPrintableCodecPort:
+    65:83:byte[] decodeQuotedPrintable(byte[]) -> decodeQuotedPrintable
+com.android.vcard.VCardUtils$TextUtilsPort -> com.android.vcard.VCardUtils$TextUtilsPort:
+    109:111:boolean isPrintableAsciiOnly(java.lang.CharSequence) -> isPrintableAsciiOnly
+com.android.vcard.exception.VCardAgentNotSupportedException -> com.android.vcard.exception.VCardAgentNotSupportedException:
+    20:20:void <init>() -> <init>
+    24:24:void <init>(java.lang.String) -> <init>
+com.android.vcard.exception.VCardException -> com.android.vcard.exception.VCardException:
+    23:23:void <init>() -> <init>
+    32:32:void <init>(java.lang.String) -> <init>
+com.android.vcard.exception.VCardInvalidCommentLineException -> com.android.vcard.exception.VCardInvalidCommentLineException:
+    26:26:void <init>() -> <init>
+    30:30:void <init>(java.lang.String) -> <init>
+com.android.vcard.exception.VCardInvalidLineException -> com.android.vcard.exception.VCardInvalidLineException:
+    25:25:void <init>() -> <init>
+    29:29:void <init>(java.lang.String) -> <init>
+com.android.vcard.exception.VCardNotSupportedException -> com.android.vcard.exception.VCardNotSupportedException:
+    28:28:void <init>() -> <init>
+    31:31:void <init>(java.lang.String) -> <init>
+com.android.vcard.exception.VCardVersionException -> com.android.vcard.exception.VCardVersionException:
+    23:23:void <init>() -> <init>
+    26:26:void <init>(java.lang.String) -> <init>
+org.calyxos.backup.contacts.ContactsBackupAgent -> org.calyxos.backup.contacts.ContactsBackupAgent:
+    33:35:void <init>() -> <init>
+    105:106:void copyStreams(java.io.InputStream,java.io.OutputStream) -> copyStreams
+    49:50:android.content.Context getContext() -> getContext
+    148:148:void onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor) -> onBackup
+    55:92:void onFullBackup(android.app.backup.FullBackupDataOutput) -> onFullBackup
+    137:139:void onQuotaExceeded(long,long) -> onQuotaExceeded
+    153:153:void onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor) -> onRestore
+    115:131:void onRestoreFile(android.os.ParcelFileDescriptor,long,java.io.File,int,long,long) -> onRestoreFile
+    97:98:boolean shouldAvoidBackup(android.app.backup.FullBackupDataOutput) -> shouldAvoidBackup
+org.calyxos.backup.contacts.ContactsBackupAgent$$ExternalSyntheticLambda0 -> org.calyxos.backup.contacts.ContactsBackupAgent$$ExternalSyntheticLambda0:
+    org.calyxos.backup.contacts.ContactsBackupAgent$$InternalSyntheticLambda$0$bbfcafa6a2d078b9db0745230b7423bd00beca31cc0aecdec82a3c1c2eefb2de$0 org.calyxos.backup.contacts.ContactsBackupAgent$$InternalSyntheticLambda$0$bbfcafa6a2d078b9db0745230b7423bd00beca31cc0aecdec82a3c1c2eefb2de$0.INSTANCE -> INSTANCE
+    void org.calyxos.backup.contacts.ContactsBackupAgent$$InternalSyntheticLambda$0$bbfcafa6a2d078b9db0745230b7423bd00beca31cc0aecdec82a3c1c2eefb2de$0.<clinit>() -> <clinit>
+    void org.calyxos.backup.contacts.ContactsBackupAgent$$InternalSyntheticLambda$0$bbfcafa6a2d078b9db0745230b7423bd00beca31cc0aecdec82a3c1c2eefb2de$0.<init>() -> <init>
+    java.lang.Object org.calyxos.backup.contacts.ContactsBackupAgent$$InternalSyntheticLambda$0$bbfcafa6a2d078b9db0745230b7423bd00beca31cc0aecdec82a3c1c2eefb2de$0.get() -> get
+org.calyxos.backup.contacts.StartBroadcastReceiver -> org.calyxos.backup.contacts.StartBroadcastReceiver:
+    19:19:void <init>() -> <init>
+    23:27:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.calyxos.backup.contacts.VCardExporter -> org.calyxos.backup.contacts.VCardExporter:
+    28:29:void <init>(android.content.ContentResolver) -> <init>
+    46:61:java.util.Collection getLookupKeys() -> getLookupKeys
+    33:41:java.util.Optional getVCardInputStream() -> getVCardInputStream
+org.calyxos.backup.contacts.VCardImporter -> org.calyxos.backup.contacts.VCardImporter:
+    28:29:void <init>(android.content.ContentResolver) -> <init>
+    33:52:void importFromStream(java.io.InputStream) -> importFromStream
+    68:68:void onEnd() -> onEnd
+    63:63:void onEntryCreated(com.android.vcard.VCardEntry) -> onEntryCreated
+    58:58:void onStart() -> onStart

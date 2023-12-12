@@ -1,0 +1,285 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 349d959
+# common_typos_disable
+com.android.mms.service.ApnSettings -> com.android.mms.service.ApnSettings:
+    46:46:void <clinit>() -> <clinit>
+    183:187:void <init>(java.lang.String,java.lang.String,int,java.lang.String) -> <init>
+    127:155:com.android.mms.service.ApnSettings getApnSettingsFromCursor(android.database.Cursor,java.lang.String) -> getApnSettingsFromCursor
+    162:176:java.lang.String getDebugText(android.database.Cursor) -> getDebugText
+    191:191:java.lang.String getMmscUrl() -> getMmscUrl
+    195:195:java.lang.String getProxyAddress() -> getProxyAddress
+    199:199:int getProxyPort() -> getProxyPort
+    203:203:boolean isProxySet() -> isProxySet
+    208:213:boolean isValidApnType(java.lang.String,java.lang.String) -> isValidApnType
+    92:116:com.android.mms.service.ApnSettings load(android.content.Context,java.lang.String,int,java.lang.String) -> load
+    221:221:java.lang.String toString() -> toString
+    180:180:java.lang.String trimWithNullCheck(java.lang.String) -> trimWithNullCheck
+com.android.mms.service.DownloadRequest -> com.android.mms.service.DownloadRequest:
+    63:66:void <init>(com.android.mms.service.MmsRequest$RequestManager,int,java.lang.String,android.net.Uri,android.app.PendingIntent,java.lang.String,android.os.Bundle,android.content.Context,long) -> <init>
+    52:52:android.net.Uri access$100(com.android.mms.service.DownloadRequest) -> access$100
+    52:52:java.lang.String access$200(com.android.mms.service.DownloadRequest) -> access$200
+    72:86:byte[] doHttp(android.content.Context,com.android.mms.service.MmsNetworkManager,com.android.mms.service.ApnSettings) -> doHttp
+    94:94:android.app.PendingIntent getPendingIntent() -> getPendingIntent
+    207:237:void notifyOfDownload(android.content.Context) -> notifyOfDownload
+    104:202:android.net.Uri persistIfRequired(android.content.Context,int,byte[]) -> persistIfRequired
+    277:277:void revokeUriPermission(android.content.Context) -> revokeUriPermission
+    253:253:boolean transferResponse(android.content.Intent,byte[]) -> transferResponse
+    268:271:void tryDownloadingByCarrierApp(android.content.Context,java.lang.String) -> tryDownloadingByCarrierApp
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback -> com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback:
+    334:336:void <init>(com.android.mms.service.DownloadRequest,android.content.Context,com.android.mms.service.DownloadRequest$CarrierDownloadManager) -> <init>
+    347:352:void onDownloadMmsComplete(int) -> onDownloadMmsComplete
+    341:342:void onSendMmsComplete(int,byte[]) -> onSendMmsComplete
+com.android.mms.service.DownloadRequest$CarrierDownloadManager -> com.android.mms.service.DownloadRequest$CarrierDownloadManager:
+    283:286:void <init>(com.android.mms.service.DownloadRequest) -> <init>
+    283:283:void <init>(com.android.mms.service.DownloadRequest,com.android.mms.service.DownloadRequest$1) -> <init>
+    290:290:void disposeConnection(android.content.Context) -> disposeConnection
+    295:304:void downloadMms(android.content.Context,java.lang.String,com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback) -> downloadMms
+    298:298:void lambda$downloadMms$0() -> lambda$downloadMms$0
+    311:318:void onServiceReady() -> onServiceReady
+com.android.mms.service.DownloadRequest$CarrierDownloadManager$$ExternalSyntheticLambda0 -> com.android.mms.service.DownloadRequest$CarrierDownloadManager$$ExternalSyntheticLambda0:
+    com.android.mms.service.DownloadRequest$CarrierDownloadManager com.android.mms.service.DownloadRequest$CarrierDownloadManager$$InternalSyntheticLambda$0$045a0cc80ba0cca56693fdac475895213da4f226334fe660ad53a12ef5a1b376$1.f$0 -> f$0
+    void com.android.mms.service.DownloadRequest$CarrierDownloadManager$$InternalSyntheticLambda$0$045a0cc80ba0cca56693fdac475895213da4f226334fe660ad53a12ef5a1b376$1.<init>(com.android.mms.service.DownloadRequest$CarrierDownloadManager) -> <init>
+    void com.android.mms.service.DownloadRequest$CarrierDownloadManager$$InternalSyntheticLambda$0$045a0cc80ba0cca56693fdac475895213da4f226334fe660ad53a12ef5a1b376$1.run() -> run
+com.android.mms.service.LogUtil -> com.android.mms.service.LogUtil:
+    36:36:void d(java.lang.String,java.lang.String) -> d
+    40:40:void d(java.lang.String) -> d
+    52:52:void e(java.lang.String,java.lang.String,java.lang.Throwable) -> e
+    56:56:void e(java.lang.String,java.lang.Throwable) -> e
+    60:60:void e(java.lang.String,java.lang.String) -> e
+    64:64:void e(java.lang.String) -> e
+    28:28:void i(java.lang.String,java.lang.String) -> i
+    32:32:void i(java.lang.String) -> i
+    84:84:boolean isLoggable(int) -> isLoggable
+    44:44:void v(java.lang.String,java.lang.String) -> v
+    48:48:void v(java.lang.String) -> v
+    68:68:void w(java.lang.String,java.lang.String,java.lang.Throwable) -> w
+    72:72:void w(java.lang.String,java.lang.Throwable) -> w
+    76:76:void w(java.lang.String,java.lang.String) -> w
+    80:80:void w(java.lang.String) -> w
+com.android.mms.service.MmsConfigManager -> com.android.mms.service.MmsConfigManager:
+    40:40:void <clinit>() -> <clinit>
+    39:52:void <init>() -> <init>
+    39:39:void access$000(com.android.mms.service.MmsConfigManager) -> access$000
+    39:39:android.content.Context access$100(com.android.mms.service.MmsConfigManager) -> access$100
+    39:39:void access$200(com.android.mms.service.MmsConfigManager,android.content.Context) -> access$200
+    43:43:com.android.mms.service.MmsConfigManager getInstance() -> getInstance
+    88:94:android.os.Bundle getMmsConfigBySubId(int) -> getMmsConfigBySubId
+    61:66:void init(android.content.Context) -> init
+    106:126:void load(android.content.Context) -> load
+    71:76:void loadInBackground() -> loadInBackground
+com.android.mms.service.MmsConfigManager$1 -> com.android.mms.service.MmsConfigManager$1:
+    53:53:void <init>(com.android.mms.service.MmsConfigManager) -> <init>
+    55:56:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.mms.service.MmsConfigManager$2 -> com.android.mms.service.MmsConfigManager$2:
+    71:71:void <init>(com.android.mms.service.MmsConfigManager) -> <init>
+    74:74:void run() -> run
+com.android.mms.service.MmsHttpClient -> com.android.mms.service.MmsHttpClient:
+    389:389:void <clinit>() -> <clinit>
+    95:100:void <init>(android.content.Context,android.net.Network,android.net.ConnectivityManager) -> <init>
+    370:382:void addExtraHeaders(java.net.HttpURLConnection,android.os.Bundle,int) -> addExtraHeaders
+    349:355:void addLocaleToHttpAcceptLanguage(java.lang.StringBuilder,java.util.Locale) -> addLocaleToHttpAcceptLanguage
+    299:300:void checkMethod(java.lang.String) -> checkMethod
+    335:341:java.lang.String convertObsoleteLanguageCodeToNew(java.lang.String) -> convertObsoleteLanguageCodeToNew
+    122:245:byte[] execute(java.lang.String,byte[],java.lang.String,boolean,java.lang.String,int,android.os.Bundle,int,java.lang.String) -> execute
+    314:324:java.lang.String getCurrentAcceptLanguage(java.util.Locale) -> getCurrentAcceptLanguage
+    476:486:java.lang.String getMacroValue(android.content.Context,java.lang.String,android.os.Bundle,int) -> getMacroValue
+    495:514:java.lang.String getNai(android.telephony.TelephonyManager,android.os.Bundle) -> getNai
+    283:294:void logHttpHeaders(java.util.Map,java.lang.String) -> logHttpHeaders
+    253:276:void maybeWaitForIpv4(java.lang.String,java.net.URL) -> maybeWaitForIpv4
+    432:452:java.lang.String redactUrlForNonVerbose(java.lang.String) -> redactUrlForNonVerbose
+    400:424:java.lang.String resolveMacro(android.content.Context,java.lang.String,android.os.Bundle,int) -> resolveMacro
+com.android.mms.service.MmsNetworkManager -> com.android.mms.service.MmsNetworkManager:
+    99:191:void <init>(android.content.Context,int) -> <init>
+    42:42:java.lang.String access$000(int) -> access$000
+    42:42:int access$100(com.android.mms.service.MmsNetworkManager) -> access$100
+    42:42:android.net.ConnectivityManager$NetworkCallback access$200(com.android.mms.service.MmsNetworkManager) -> access$200
+    42:42:void access$300(com.android.mms.service.MmsNetworkManager,android.net.ConnectivityManager$NetworkCallback) -> access$300
+    42:42:android.net.Network access$402(com.android.mms.service.MmsNetworkManager,android.net.Network) -> access$402
+    42:42:int access$500(com.android.mms.service.MmsNetworkManager) -> access$500
+    210:269:void acquireNetwork(java.lang.String) -> acquireNetwork
+    385:395:java.lang.String getApnName() -> getApnName
+    354:358:android.net.ConnectivityManager getConnectivityManager() -> getConnectivityManager
+    275:275:int getNetworkRequestTimeoutMillis() -> getNetworkRequestTimeoutMillis
+    367:375:com.android.mms.service.MmsHttpClient getOrCreateHttpClient() -> getOrCreateHttpClient
+    290:306:void releaseNetwork(java.lang.String,boolean) -> releaseNetwork
+    326:340:void releaseRequestLocked(android.net.ConnectivityManager$NetworkCallback) -> releaseRequestLocked
+    347:350:void resetLocked() -> resetLocked
+    313:315:void startNewNetworkRequestLocked(int) -> startNewNetworkRequestLocked
+com.android.mms.service.MmsNetworkManager$1 -> com.android.mms.service.MmsNetworkManager$1:
+    100:100:void <init>(com.android.mms.service.MmsNetworkManager) -> <init>
+    104:118:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.mms.service.MmsNetworkManager$2 -> com.android.mms.service.MmsNetworkManager$2:
+    191:191:void <init>(com.android.mms.service.MmsNetworkManager) -> <init>
+    194:198:void run() -> run
+com.android.mms.service.MmsNetworkManager$NetworkRequestCallback -> com.android.mms.service.MmsNetworkManager$NetworkRequestCallback:
+    143:143:void <init>(com.android.mms.service.MmsNetworkManager) -> <init>
+    143:143:void <init>(com.android.mms.service.MmsNetworkManager,com.android.mms.service.MmsNetworkManager$1) -> <init>
+    146:151:void onAvailable(android.net.Network) -> onAvailable
+    156:161:void onLost(android.net.Network) -> onLost
+    166:171:void onUnavailable() -> onUnavailable
+com.android.mms.service.MmsRequest -> com.android.mms.service.MmsRequest:
+    55:135:void <init>(com.android.mms.service.MmsRequest$RequestManager,int,java.lang.String,android.os.Bundle,android.content.Context,long) -> <init>
+    143:167:boolean ensureMmsConfigLoaded() -> ensureMmsConfigLoaded
+    177:251:void execute(android.content.Context,com.android.mms.service.MmsNetworkManager) -> execute
+    347:348:java.util.UUID generateUUID(int,int) -> generateUUID
+    436:436:java.lang.String getRequestId() -> getRequestId
+    139:139:int getSubId() -> getSubId
+    384:390:boolean isImsOnWifi() -> isImsOnWifi
+    353:373:boolean isPoorSignal() -> isPoorSignal
+    257:257:void lambda$listenToDataConnectionState$0(java.lang.Runnable) -> lambda$listenToDataConnectionState$0
+    255:257:void listenToDataConnectionState(com.android.mms.service.MmsRequest$MonitorTelephonyCallback) -> listenToDataConnectionState
+    406:408:boolean maybeFallbackToRegularDelivery(int) -> maybeFallbackToRegularDelivery
+    279:320:void processResult(android.content.Context,int,byte[],int,boolean) -> processResult
+    326:337:void reportPossibleAnomaly(int,int) -> reportPossibleAnomaly
+    262:264:void stopListeningToDataConnectionState(com.android.mms.service.MmsRequest$MonitorTelephonyCallback) -> stopListeningToDataConnectionState
+    431:432:java.lang.String toString() -> toString
+com.android.mms.service.MmsRequest$$ExternalSyntheticLambda0 -> com.android.mms.service.MmsRequest$$ExternalSyntheticLambda0:
+    com.android.mms.service.MmsRequest$$InternalSyntheticLambda$0$33ae51023bb74f35499e2274179acad1c562202ec8cd10d44787c5a0eae4b9fa$0 com.android.mms.service.MmsRequest$$InternalSyntheticLambda$0$33ae51023bb74f35499e2274179acad1c562202ec8cd10d44787c5a0eae4b9fa$0.INSTANCE -> INSTANCE
+    void com.android.mms.service.MmsRequest$$InternalSyntheticLambda$0$33ae51023bb74f35499e2274179acad1c562202ec8cd10d44787c5a0eae4b9fa$0.<clinit>() -> <clinit>
+    void com.android.mms.service.MmsRequest$$InternalSyntheticLambda$0$33ae51023bb74f35499e2274179acad1c562202ec8cd10d44787c5a0eae4b9fa$0.<init>() -> <init>
+    void com.android.mms.service.MmsRequest$$InternalSyntheticLambda$0$33ae51023bb74f35499e2274179acad1c562202ec8cd10d44787c5a0eae4b9fa$0.execute(java.lang.Runnable) -> execute
+com.android.mms.service.MmsRequest$CarrierMmsActionCallback -> com.android.mms.service.MmsRequest$CarrierMmsActionCallback:
+    497:497:void <init>(com.android.mms.service.MmsRequest) -> <init>
+    514:515:void onReceiveSmsComplete(int) -> onReceiveSmsComplete
+    507:508:void onSendMultipartSmsComplete(int,int[]) -> onSendMultipartSmsComplete
+    500:501:void onSendSmsComplete(int,int) -> onSendSmsComplete
+com.android.mms.service.MmsRequest$MonitorTelephonyCallback -> com.android.mms.service.MmsRequest$MonitorTelephonyCallback:
+    109:109:void <init>(com.android.mms.service.MmsRequest) -> <init>
+    117:121:void onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState) -> onPreciseDataConnectionStateChanged
+com.android.mms.service.MmsService -> com.android.mms.service.MmsService:
+    85:188:void <init>() -> <init>
+    85:85:void access$000(com.android.mms.service.MmsService) -> access$000
+    85:85:java.lang.String access$100(com.android.mms.service.MmsService,int) -> access$100
+    85:85:android.net.Uri access$1000(com.android.mms.service.MmsService,android.net.Uri,java.lang.String) -> access$1000
+    85:85:com.android.mms.service.MmsNetworkManager access$1100(com.android.mms.service.MmsService,int) -> access$1100
+    85:85:int access$1200(com.android.mms.service.MmsService) -> access$1200
+    85:85:int access$1210(com.android.mms.service.MmsService) -> access$1210
+    85:85:void access$1300(com.android.mms.service.MmsService) -> access$1300
+    85:85:android.telephony.TelephonyManager access$200(com.android.mms.service.MmsService,int) -> access$200
+    85:85:void access$300(com.android.mms.service.MmsService,boolean,int) -> access$300
+    85:85:android.net.Uri access$400(com.android.mms.service.MmsService,java.lang.String,int,java.lang.String,long,boolean,boolean,java.lang.String) -> access$400
+    85:85:android.net.Uri access$500(com.android.mms.service.MmsService,android.net.Uri,java.lang.String,long,boolean,boolean,java.lang.String) -> access$500
+    85:85:boolean access$600(android.net.Uri) -> access$600
+    85:85:boolean access$700(com.android.mms.service.MmsService,android.net.Uri,android.content.ContentValues) -> access$700
+    85:85:boolean access$800(com.android.mms.service.MmsService,long,boolean) -> access$800
+    85:85:android.net.Uri access$900(com.android.mms.service.MmsService,java.lang.String,java.lang.String,java.lang.String) -> access$900
+    877:924:android.net.Uri addMmsDraft(android.net.Uri,java.lang.String) -> addMmsDraft
+    522:547:void addSimRequest(com.android.mms.service.MmsRequest) -> addSimRequest
+    854:872:android.net.Uri addSmsDraft(java.lang.String,java.lang.String,java.lang.String) -> addSmsDraft
+    567:577:void addToRunningRequestQueueSynchronized(com.android.mms.service.MmsRequest) -> addToRunningRequestQueueSynchronized
+    829:849:boolean archiveConversation(long,boolean) -> archiveConversation
+    170:171:void enforceSystemUid() -> enforceSystemUid
+    1077:1077:java.lang.String formatCrossStackMessageId(long) -> formatCrossStackMessageId
+    955:957:boolean getAutoPersistingPref() -> getAutoPersistingPref
+    177:184:java.lang.String getCarrierMessagingServicePackageIfExists(int) -> getCarrierMessagingServicePackageIfExists
+    142:149:com.android.mms.service.MmsNetworkManager getNetworkManager(int) -> getNetworkManager
+    153:166:android.telephony.TelephonyManager getTelephonyManager(int) -> getTelephonyManager
+    703:765:android.net.Uri importMms(android.net.Uri,java.lang.String,long,boolean,boolean,java.lang.String) -> importMms
+    667:697:android.net.Uri importSms(java.lang.String,int,java.lang.String,long,boolean,boolean,java.lang.String) -> importSms
+    770:774:boolean isSmsMmsContentUri(android.net.Uri) -> isSmsMmsContentUri
+    597:620:void movePendingSimRequestsToRunningSynchronized() -> movePendingSimRequestsToRunningSynchronized
+    627:627:android.os.IBinder onBind(android.content.Intent) -> onBind
+    636:650:void onCreate() -> onCreate
+    655:658:void onDestroy() -> onDestroy
+    938:946:com.google.android.mms.pdu.GenericPdu parsePduForAnyCarrier(byte[]) -> parsePduForAnyCarrier
+    990:1025:int readPduBytesFromContentUri(android.net.Uri,byte[]) -> readPduBytesFromContentUri
+    969:978:byte[] readPduFromContentUri(android.net.Uri,int) -> readPduFromContentUri
+    551:562:void sendSettingsIntentForFailedMms(boolean,int) -> sendSettingsIntentForFailedMms
+    781:822:boolean updateMessageStatus(android.net.Uri,android.content.ContentValues) -> updateMessageStatus
+    1041:1071:boolean writePduToContentUri(android.net.Uri,byte[]) -> writePduToContentUri
+com.android.mms.service.MmsService$1 -> com.android.mms.service.MmsService$1:
+    188:188:void <init>(com.android.mms.service.MmsService) -> <init>
+    453:455:android.net.Uri addMultimediaMessageDraft(java.lang.String,android.net.Uri) -> addMultimediaMessageDraft
+    445:447:android.net.Uri addTextMessageDraft(java.lang.String,java.lang.String,java.lang.String) -> addTextMessageDraft
+    430:439:boolean archiveStoredConversation(java.lang.String,long,boolean) -> archiveStoredConversation
+    394:415:boolean deleteStoredConversation(java.lang.String,long) -> deleteStoredConversation
+    367:387:boolean deleteStoredMessage(java.lang.String,android.net.Uri) -> deleteStoredMessage
+    249:303:void downloadMessage(int,java.lang.String,java.lang.String,android.net.Uri,android.os.Bundle,android.app.PendingIntent,long) -> downloadMessage
+    307:345:java.util.List getActiveSubscriptionsInGroup(int) -> getActiveSubscriptionsInGroup
+    477:478:boolean getAutoPersisting() -> getAutoPersisting
+    359:361:android.net.Uri importMultimediaMessage(java.lang.String,android.net.Uri,java.lang.String,long,boolean,boolean) -> importMultimediaMessage
+    351:353:android.net.Uri importTextMessage(java.lang.String,java.lang.String,int,java.lang.String,long,boolean,boolean) -> importTextMessage
+    485:486:boolean isActiveSubId(int) -> isActiveSubId
+    507:510:boolean isRawPduSendReq(android.net.Uri) -> isRawPduSendReq
+    343:343:boolean lambda$getActiveSubscriptionsInGroup$0(android.telephony.SubscriptionInfo) -> lambda$getActiveSubscriptionsInGroup$0
+    493:496:void sendErrorInPendingIntent(android.app.PendingIntent) -> sendErrorInPendingIntent
+    193:239:void sendMessage(int,java.lang.String,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent,long) -> sendMessage
+    461:461:void sendStoredMessage(int,java.lang.String,android.net.Uri,android.os.Bundle,android.app.PendingIntent) -> sendStoredMessage
+    466:472:void setAutoPersisting(java.lang.String,boolean) -> setAutoPersisting
+    422:424:boolean updateStoredMessageStatus(java.lang.String,android.net.Uri,android.content.ContentValues) -> updateStoredMessageStatus
+com.android.mms.service.MmsService$1$$ExternalSyntheticLambda0 -> com.android.mms.service.MmsService$1$$ExternalSyntheticLambda0:
+    com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$1 com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$1.INSTANCE -> INSTANCE
+    void com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$1.<clinit>() -> <clinit>
+    void com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$1.<init>() -> <init>
+    java.lang.Object com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$1.apply(java.lang.Object) -> apply
+com.android.mms.service.MmsService$1$$ExternalSyntheticLambda1 -> com.android.mms.service.MmsService$1$$ExternalSyntheticLambda1:
+    com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$0 com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$0.INSTANCE -> INSTANCE
+    void com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$0.<clinit>() -> <clinit>
+    void com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$0.<init>() -> <init>
+    boolean com.android.mms.service.MmsService$1$$InternalSyntheticLambda$0$d1f72288a599dc1a1cb9680f0c3708c15626c3f678d006f4cc0f95c91a46349e$0.test(java.lang.Object) -> test
+com.android.mms.service.MmsService$2 -> com.android.mms.service.MmsService$2:
+    577:577:void <init>(com.android.mms.service.MmsService,com.android.mms.service.MmsRequest) -> <init>
+    581:591:void run() -> run
+com.android.mms.service.MmsService$3 -> com.android.mms.service.MmsService$3:
+    993:993:void <init>(com.android.mms.service.MmsService,android.net.Uri,byte[]) -> <init>
+    993:993:java.lang.Object call() -> call
+    997:1015:java.lang.Integer call() -> call
+com.android.mms.service.MmsService$4 -> com.android.mms.service.MmsService$4:
+    1041:1041:void <init>(com.android.mms.service.MmsService,android.net.Uri,byte[]) -> <init>
+    1041:1041:java.lang.Object call() -> call
+    1045:1060:java.lang.Boolean call() -> call
+com.android.mms.service.PhoneUtils -> com.android.mms.service.PhoneUtils:
+    43:51:java.lang.String getNationalNumber(android.telephony.TelephonyManager,java.lang.String) -> getNationalNumber
+    58:67:com.android.i18n.phonenumbers.Phonenumber$PhoneNumber getParsedNumber(com.android.i18n.phonenumbers.PhoneNumberUtil,java.lang.String,java.lang.String) -> getParsedNumber
+    84:88:java.lang.String getSimCountry(android.telephony.TelephonyManager) -> getSimCountry
+    74:76:java.lang.String getSimOrDefaultLocaleCountry(android.telephony.TelephonyManager) -> getSimOrDefaultLocaleCountry
+com.android.mms.service.SendRequest -> com.android.mms.service.SendRequest:
+    62:66:void <init>(com.android.mms.service.MmsRequest$RequestManager,int,android.net.Uri,java.lang.String,android.app.PendingIntent,java.lang.String,android.os.Bundle,android.content.Context,long) -> <init>
+    53:53:java.lang.String access$100(com.android.mms.service.SendRequest) -> access$100
+    53:53:android.net.Uri access$200(com.android.mms.service.SendRequest) -> access$200
+    72:89:byte[] doHttp(android.content.Context,com.android.mms.service.MmsNetworkManager,com.android.mms.service.ApnSettings) -> doHttp
+    164:164:android.app.PendingIntent getPendingIntent() -> getPendingIntent
+    154:157:boolean isEmergencyNumber(java.lang.String) -> isEmergencyNumber
+    127:146:void notifyIfEmergencyContact(com.google.android.mms.pdu.GenericPdu) -> notifyIfEmergencyContact
+    119:122:void notifyIfEmergencyContactNoThrow(com.google.android.mms.pdu.GenericPdu) -> notifyIfEmergencyContactNoThrow
+    96:108:com.google.android.mms.pdu.GenericPdu parsePdu() -> parsePdu
+    174:261:android.net.Uri persistIfRequired(android.content.Context,int,byte[]) -> persistIfRequired
+    378:378:boolean prepareForHttpRequest() -> prepareForHttpRequest
+    348:352:boolean readPduFromContentUri() -> readPduFromContentUri
+    396:397:void revokeUriPermission(android.content.Context) -> revokeUriPermission
+    367:367:boolean transferResponse(android.content.Intent,byte[]) -> transferResponse
+    388:391:void trySendingByCarrierApp(android.content.Context,java.lang.String) -> trySendingByCarrierApp
+    271:288:void updateDestinationAddress(com.google.android.mms.pdu.GenericPdu) -> updateDestinationAddress
+    298:334:boolean updateDestinationAddressPerType(com.google.android.mms.pdu.SendReq,int) -> updateDestinationAddressPerType
+com.android.mms.service.SendRequest$1 -> com.android.mms.service.SendRequest$1:
+    133:133:void <init>(com.android.mms.service.SendRequest) -> <init>
+    133:133:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    137:142:java.lang.Void doInBackground(java.lang.Void[]) -> doInBackground
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback -> com.android.mms.service.SendRequest$CarrierSendCompleteCallback:
+    459:461:void <init>(com.android.mms.service.SendRequest,android.content.Context,com.android.mms.service.SendRequest$CarrierSendManager) -> <init>
+    479:480:void onDownloadMmsComplete(int) -> onDownloadMmsComplete
+    466:472:void onSendMmsComplete(int,byte[]) -> onSendMmsComplete
+com.android.mms.service.SendRequest$CarrierSendManager -> com.android.mms.service.SendRequest$CarrierSendManager:
+    404:407:void <init>(com.android.mms.service.SendRequest) -> <init>
+    404:404:void <init>(com.android.mms.service.SendRequest,com.android.mms.service.SendRequest$1) -> <init>
+    411:411:void disposeConnection(android.content.Context) -> disposeConnection
+    419:419:void lambda$sendMms$0() -> lambda$sendMms$0
+    434:443:void onServiceReady() -> onServiceReady
+    416:425:void sendMms(android.content.Context,java.lang.String,com.android.mms.service.SendRequest$CarrierSendCompleteCallback) -> sendMms
+com.android.mms.service.SendRequest$CarrierSendManager$$ExternalSyntheticLambda0 -> com.android.mms.service.SendRequest$CarrierSendManager$$ExternalSyntheticLambda0:
+    com.android.mms.service.SendRequest$CarrierSendManager com.android.mms.service.SendRequest$CarrierSendManager$$InternalSyntheticLambda$0$b97ef554d88d83b07bd09042ec0c2d657afeeea6d27387453817758aa9e52cf0$1.f$0 -> f$0
+    void com.android.mms.service.SendRequest$CarrierSendManager$$InternalSyntheticLambda$0$b97ef554d88d83b07bd09042ec0c2d657afeeea6d27387453817758aa9e52cf0$1.<init>(com.android.mms.service.SendRequest$CarrierSendManager) -> <init>
+    void com.android.mms.service.SendRequest$CarrierSendManager$$InternalSyntheticLambda$0$b97ef554d88d83b07bd09042ec0c2d657afeeea6d27387453817758aa9e52cf0$1.run() -> run
+com.android.mms.service.exception.ApnException -> com.android.mms.service.exception.ApnException:
+    25:25:void <init>() -> <init>
+    29:29:void <init>(java.lang.String) -> <init>
+com.android.mms.service.exception.MmsHttpException -> com.android.mms.service.exception.MmsHttpException:
+    33:34:void <init>(int,java.lang.String) -> <init>
+    38:39:void <init>(int,java.lang.Throwable) -> <init>
+    43:44:void <init>(int,java.lang.String,java.lang.Throwable) -> <init>
+    48:48:int getStatusCode() -> getStatusCode
+com.android.mms.service.exception.MmsNetworkException -> com.android.mms.service.exception.MmsNetworkException:
+    25:25:void <init>() -> <init>
+    29:29:void <init>(java.lang.String) -> <init>
