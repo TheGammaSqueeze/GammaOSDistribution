@@ -1,0 +1,985 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIf",
+   "name" : "float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIf",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_NO_ERROR"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_OUT_OF_MEMORY"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_INCOMPLETE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_UNEXPECTED_NULL"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANEURALNETWORKS_BAD_DATA"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANEURALNETWORKS_OP_FAILED"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANEURALNETWORKS_BAD_STATE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANEURALNETWORKS_UNMAPPABLE"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANEURALNETWORKS_OUTPUT_INSUFFICIENT_SIZE"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "ANEURALNETWORKS_UNAVAILABLE_DEVICE"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "ANEURALNETWORKS_MISSED_DEADLINE_TRANSIENT"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "ANEURALNETWORKS_MISSED_DEADLINE_PERSISTENT"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "ANEURALNETWORKS_RESOURCE_EXHAUSTED_TRANSIENT"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "ANEURALNETWORKS_RESOURCE_EXHAUSTED_PERSISTENT"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "ANEURALNETWORKS_DEAD_OBJECT"
+    }
+   ],
+   "linker_set_key" : "_ZTI10ResultCode",
+   "name" : "ResultCode",
+   "referenced_type" : "_ZTI10ResultCode",
+   "self_type" : "_ZTI10ResultCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_FLOAT32"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_INT32"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_UINT32"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_TENSOR_FLOAT32"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANEURALNETWORKS_TENSOR_INT32"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT8_ASYMM"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANEURALNETWORKS_BOOL"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT16_SYMM"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANEURALNETWORKS_TENSOR_FLOAT16"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "ANEURALNETWORKS_TENSOR_BOOL8"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "ANEURALNETWORKS_FLOAT16"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT8_SYMM_PER_CHANNEL"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT16_ASYMM"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT8_SYMM"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "ANEURALNETWORKS_TENSOR_QUANT8_ASYMM_SIGNED"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "ANEURALNETWORKS_MODEL"
+    }
+   ],
+   "linker_set_key" : "_ZTI11OperandCode",
+   "name" : "OperandCode",
+   "referenced_type" : "_ZTI11OperandCode",
+   "self_type" : "_ZTI11OperandCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_PADDING_SAME"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_PADDING_VALID"
+    }
+   ],
+   "linker_set_key" : "_ZTI11PaddingCode",
+   "name" : "PaddingCode",
+   "referenced_type" : "_ZTI11PaddingCode",
+   "self_type" : "_ZTI11PaddingCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_DURATION_ON_HARDWARE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_DURATION_IN_DRIVER"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_FENCED_DURATION_ON_HARDWARE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_FENCED_DURATION_IN_DRIVER"
+    }
+   ],
+   "linker_set_key" : "_ZTI12DurationCode",
+   "name" : "DurationCode",
+   "referenced_type" : "_ZTI12DurationCode",
+   "self_type" : "_ZTI12DurationCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 90,
+     "name" : "ANEURALNETWORKS_PRIORITY_LOW"
+    },
+    {
+     "enum_field_value" : 100,
+     "name" : "ANEURALNETWORKS_PRIORITY_MEDIUM"
+    },
+    {
+     "enum_field_value" : 110,
+     "name" : "ANEURALNETWORKS_PRIORITY_HIGH"
+    },
+    {
+     "enum_field_value" : 100,
+     "name" : "ANEURALNETWORKS_PRIORITY_DEFAULT"
+    }
+   ],
+   "linker_set_key" : "_ZTI12PriorityCode",
+   "name" : "PriorityCode",
+   "referenced_type" : "_ZTI12PriorityCode",
+   "self_type" : "_ZTI12PriorityCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_ADD"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_AVERAGE_POOL_2D"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_CONCATENATION"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_CONV_2D"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANEURALNETWORKS_DEPTHWISE_CONV_2D"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANEURALNETWORKS_DEPTH_TO_SPACE"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANEURALNETWORKS_DEQUANTIZE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANEURALNETWORKS_EMBEDDING_LOOKUP"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANEURALNETWORKS_FLOOR"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "ANEURALNETWORKS_FULLY_CONNECTED"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "ANEURALNETWORKS_HASHTABLE_LOOKUP"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "ANEURALNETWORKS_L2_NORMALIZATION"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "ANEURALNETWORKS_L2_POOL_2D"
+    },
+    {
+     "enum_field_value" : 13,
+     "name" : "ANEURALNETWORKS_LOCAL_RESPONSE_NORMALIZATION"
+    },
+    {
+     "enum_field_value" : 14,
+     "name" : "ANEURALNETWORKS_LOGISTIC"
+    },
+    {
+     "enum_field_value" : 15,
+     "name" : "ANEURALNETWORKS_LSH_PROJECTION"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "ANEURALNETWORKS_LSTM"
+    },
+    {
+     "enum_field_value" : 17,
+     "name" : "ANEURALNETWORKS_MAX_POOL_2D"
+    },
+    {
+     "enum_field_value" : 18,
+     "name" : "ANEURALNETWORKS_MUL"
+    },
+    {
+     "enum_field_value" : 19,
+     "name" : "ANEURALNETWORKS_RELU"
+    },
+    {
+     "enum_field_value" : 20,
+     "name" : "ANEURALNETWORKS_RELU1"
+    },
+    {
+     "enum_field_value" : 21,
+     "name" : "ANEURALNETWORKS_RELU6"
+    },
+    {
+     "enum_field_value" : 22,
+     "name" : "ANEURALNETWORKS_RESHAPE"
+    },
+    {
+     "enum_field_value" : 23,
+     "name" : "ANEURALNETWORKS_RESIZE_BILINEAR"
+    },
+    {
+     "enum_field_value" : 24,
+     "name" : "ANEURALNETWORKS_RNN"
+    },
+    {
+     "enum_field_value" : 25,
+     "name" : "ANEURALNETWORKS_SOFTMAX"
+    },
+    {
+     "enum_field_value" : 26,
+     "name" : "ANEURALNETWORKS_SPACE_TO_DEPTH"
+    },
+    {
+     "enum_field_value" : 27,
+     "name" : "ANEURALNETWORKS_SVDF"
+    },
+    {
+     "enum_field_value" : 28,
+     "name" : "ANEURALNETWORKS_TANH"
+    },
+    {
+     "enum_field_value" : 29,
+     "name" : "ANEURALNETWORKS_BATCH_TO_SPACE_ND"
+    },
+    {
+     "enum_field_value" : 30,
+     "name" : "ANEURALNETWORKS_DIV"
+    },
+    {
+     "enum_field_value" : 31,
+     "name" : "ANEURALNETWORKS_MEAN"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "ANEURALNETWORKS_PAD"
+    },
+    {
+     "enum_field_value" : 33,
+     "name" : "ANEURALNETWORKS_SPACE_TO_BATCH_ND"
+    },
+    {
+     "enum_field_value" : 34,
+     "name" : "ANEURALNETWORKS_SQUEEZE"
+    },
+    {
+     "enum_field_value" : 35,
+     "name" : "ANEURALNETWORKS_STRIDED_SLICE"
+    },
+    {
+     "enum_field_value" : 36,
+     "name" : "ANEURALNETWORKS_SUB"
+    },
+    {
+     "enum_field_value" : 37,
+     "name" : "ANEURALNETWORKS_TRANSPOSE"
+    },
+    {
+     "enum_field_value" : 38,
+     "name" : "ANEURALNETWORKS_ABS"
+    },
+    {
+     "enum_field_value" : 39,
+     "name" : "ANEURALNETWORKS_ARGMAX"
+    },
+    {
+     "enum_field_value" : 40,
+     "name" : "ANEURALNETWORKS_ARGMIN"
+    },
+    {
+     "enum_field_value" : 41,
+     "name" : "ANEURALNETWORKS_AXIS_ALIGNED_BBOX_TRANSFORM"
+    },
+    {
+     "enum_field_value" : 42,
+     "name" : "ANEURALNETWORKS_BIDIRECTIONAL_SEQUENCE_LSTM"
+    },
+    {
+     "enum_field_value" : 43,
+     "name" : "ANEURALNETWORKS_BIDIRECTIONAL_SEQUENCE_RNN"
+    },
+    {
+     "enum_field_value" : 44,
+     "name" : "ANEURALNETWORKS_BOX_WITH_NMS_LIMIT"
+    },
+    {
+     "enum_field_value" : 45,
+     "name" : "ANEURALNETWORKS_CAST"
+    },
+    {
+     "enum_field_value" : 46,
+     "name" : "ANEURALNETWORKS_CHANNEL_SHUFFLE"
+    },
+    {
+     "enum_field_value" : 47,
+     "name" : "ANEURALNETWORKS_DETECTION_POSTPROCESSING"
+    },
+    {
+     "enum_field_value" : 48,
+     "name" : "ANEURALNETWORKS_EQUAL"
+    },
+    {
+     "enum_field_value" : 49,
+     "name" : "ANEURALNETWORKS_EXP"
+    },
+    {
+     "enum_field_value" : 50,
+     "name" : "ANEURALNETWORKS_EXPAND_DIMS"
+    },
+    {
+     "enum_field_value" : 51,
+     "name" : "ANEURALNETWORKS_GATHER"
+    },
+    {
+     "enum_field_value" : 52,
+     "name" : "ANEURALNETWORKS_GENERATE_PROPOSALS"
+    },
+    {
+     "enum_field_value" : 53,
+     "name" : "ANEURALNETWORKS_GREATER"
+    },
+    {
+     "enum_field_value" : 54,
+     "name" : "ANEURALNETWORKS_GREATER_EQUAL"
+    },
+    {
+     "enum_field_value" : 55,
+     "name" : "ANEURALNETWORKS_GROUPED_CONV_2D"
+    },
+    {
+     "enum_field_value" : 56,
+     "name" : "ANEURALNETWORKS_HEATMAP_MAX_KEYPOINT"
+    },
+    {
+     "enum_field_value" : 57,
+     "name" : "ANEURALNETWORKS_INSTANCE_NORMALIZATION"
+    },
+    {
+     "enum_field_value" : 58,
+     "name" : "ANEURALNETWORKS_LESS"
+    },
+    {
+     "enum_field_value" : 59,
+     "name" : "ANEURALNETWORKS_LESS_EQUAL"
+    },
+    {
+     "enum_field_value" : 60,
+     "name" : "ANEURALNETWORKS_LOG"
+    },
+    {
+     "enum_field_value" : 61,
+     "name" : "ANEURALNETWORKS_LOGICAL_AND"
+    },
+    {
+     "enum_field_value" : 62,
+     "name" : "ANEURALNETWORKS_LOGICAL_NOT"
+    },
+    {
+     "enum_field_value" : 63,
+     "name" : "ANEURALNETWORKS_LOGICAL_OR"
+    },
+    {
+     "enum_field_value" : 64,
+     "name" : "ANEURALNETWORKS_LOG_SOFTMAX"
+    },
+    {
+     "enum_field_value" : 65,
+     "name" : "ANEURALNETWORKS_MAXIMUM"
+    },
+    {
+     "enum_field_value" : 66,
+     "name" : "ANEURALNETWORKS_MINIMUM"
+    },
+    {
+     "enum_field_value" : 67,
+     "name" : "ANEURALNETWORKS_NEG"
+    },
+    {
+     "enum_field_value" : 68,
+     "name" : "ANEURALNETWORKS_NOT_EQUAL"
+    },
+    {
+     "enum_field_value" : 69,
+     "name" : "ANEURALNETWORKS_PAD_V2"
+    },
+    {
+     "enum_field_value" : 70,
+     "name" : "ANEURALNETWORKS_POW"
+    },
+    {
+     "enum_field_value" : 71,
+     "name" : "ANEURALNETWORKS_PRELU"
+    },
+    {
+     "enum_field_value" : 72,
+     "name" : "ANEURALNETWORKS_QUANTIZE"
+    },
+    {
+     "enum_field_value" : 73,
+     "name" : "ANEURALNETWORKS_QUANTIZED_16BIT_LSTM"
+    },
+    {
+     "enum_field_value" : 74,
+     "name" : "ANEURALNETWORKS_RANDOM_MULTINOMIAL"
+    },
+    {
+     "enum_field_value" : 75,
+     "name" : "ANEURALNETWORKS_REDUCE_ALL"
+    },
+    {
+     "enum_field_value" : 76,
+     "name" : "ANEURALNETWORKS_REDUCE_ANY"
+    },
+    {
+     "enum_field_value" : 77,
+     "name" : "ANEURALNETWORKS_REDUCE_MAX"
+    },
+    {
+     "enum_field_value" : 78,
+     "name" : "ANEURALNETWORKS_REDUCE_MIN"
+    },
+    {
+     "enum_field_value" : 79,
+     "name" : "ANEURALNETWORKS_REDUCE_PROD"
+    },
+    {
+     "enum_field_value" : 80,
+     "name" : "ANEURALNETWORKS_REDUCE_SUM"
+    },
+    {
+     "enum_field_value" : 81,
+     "name" : "ANEURALNETWORKS_ROI_ALIGN"
+    },
+    {
+     "enum_field_value" : 82,
+     "name" : "ANEURALNETWORKS_ROI_POOLING"
+    },
+    {
+     "enum_field_value" : 83,
+     "name" : "ANEURALNETWORKS_RSQRT"
+    },
+    {
+     "enum_field_value" : 84,
+     "name" : "ANEURALNETWORKS_SELECT"
+    },
+    {
+     "enum_field_value" : 85,
+     "name" : "ANEURALNETWORKS_SIN"
+    },
+    {
+     "enum_field_value" : 86,
+     "name" : "ANEURALNETWORKS_SLICE"
+    },
+    {
+     "enum_field_value" : 87,
+     "name" : "ANEURALNETWORKS_SPLIT"
+    },
+    {
+     "enum_field_value" : 88,
+     "name" : "ANEURALNETWORKS_SQRT"
+    },
+    {
+     "enum_field_value" : 89,
+     "name" : "ANEURALNETWORKS_TILE"
+    },
+    {
+     "enum_field_value" : 90,
+     "name" : "ANEURALNETWORKS_TOPK_V2"
+    },
+    {
+     "enum_field_value" : 91,
+     "name" : "ANEURALNETWORKS_TRANSPOSE_CONV_2D"
+    },
+    {
+     "enum_field_value" : 92,
+     "name" : "ANEURALNETWORKS_UNIDIRECTIONAL_SEQUENCE_LSTM"
+    },
+    {
+     "enum_field_value" : 93,
+     "name" : "ANEURALNETWORKS_UNIDIRECTIONAL_SEQUENCE_RNN"
+    },
+    {
+     "enum_field_value" : 94,
+     "name" : "ANEURALNETWORKS_RESIZE_NEAREST_NEIGHBOR"
+    },
+    {
+     "enum_field_value" : 95,
+     "name" : "ANEURALNETWORKS_QUANTIZED_LSTM"
+    },
+    {
+     "enum_field_value" : 96,
+     "name" : "ANEURALNETWORKS_IF"
+    },
+    {
+     "enum_field_value" : 97,
+     "name" : "ANEURALNETWORKS_WHILE"
+    },
+    {
+     "enum_field_value" : 98,
+     "name" : "ANEURALNETWORKS_ELU"
+    },
+    {
+     "enum_field_value" : 99,
+     "name" : "ANEURALNETWORKS_HARD_SWISH"
+    },
+    {
+     "enum_field_value" : 100,
+     "name" : "ANEURALNETWORKS_FILL"
+    },
+    {
+     "enum_field_value" : 101,
+     "name" : "ANEURALNETWORKS_RANK"
+    }
+   ],
+   "linker_set_key" : "_ZTI13OperationCode",
+   "name" : "OperationCode",
+   "referenced_type" : "_ZTI13OperationCode",
+   "self_type" : "_ZTI13OperationCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_DEVICE_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_DEVICE_OTHER"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_DEVICE_CPU"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_DEVICE_GPU"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANEURALNETWORKS_DEVICE_ACCELERATOR"
+    }
+   ],
+   "linker_set_key" : "_ZTI14DeviceTypeCode",
+   "name" : "DeviceTypeCode",
+   "referenced_type" : "_ZTI14DeviceTypeCode",
+   "self_type" : "_ZTI14DeviceTypeCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_PREFER_LOW_POWER"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_PREFER_FAST_SINGLE_ANSWER"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_PREFER_SUSTAINED_SPEED"
+    }
+   ],
+   "linker_set_key" : "_ZTI14PreferenceCode",
+   "name" : "PreferenceCode",
+   "referenced_type" : "_ZTI14PreferenceCode",
+   "self_type" : "_ZTI14PreferenceCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 27,
+     "name" : "ANEURALNETWORKS_FEATURE_LEVEL_1"
+    },
+    {
+     "enum_field_value" : 28,
+     "name" : "ANEURALNETWORKS_FEATURE_LEVEL_2"
+    },
+    {
+     "enum_field_value" : 29,
+     "name" : "ANEURALNETWORKS_FEATURE_LEVEL_3"
+    },
+    {
+     "enum_field_value" : 30,
+     "name" : "ANEURALNETWORKS_FEATURE_LEVEL_4"
+    },
+    {
+     "enum_field_value" : 31,
+     "name" : "ANEURALNETWORKS_FEATURE_LEVEL_5"
+    }
+   ],
+   "linker_set_key" : "_ZTI16FeatureLevelCode",
+   "name" : "FeatureLevelCode",
+   "referenced_type" : "_ZTI16FeatureLevelCode",
+   "self_type" : "_ZTI16FeatureLevelCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 32,
+     "name" : "ANEURALNETWORKS_BYTE_SIZE_OF_CACHE_TOKEN"
+    }
+   ],
+   "linker_set_key" : "_ZTI41$ANEURALNETWORKS_BYTE_SIZE_OF_CACHE_TOKEN",
+   "name" : "(anonymous enum at packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h:5908:1)",
+   "referenced_type" : "_ZTI41$ANEURALNETWORKS_BYTE_SIZE_OF_CACHE_TOKEN",
+   "self_type" : "_ZTI41$ANEURALNETWORKS_BYTE_SIZE_OF_CACHE_TOKEN",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 128,
+     "name" : "ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES"
+    }
+   ],
+   "linker_set_key" : "_ZTI54$ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES",
+   "name" : "(anonymous enum at packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h:5900:1)",
+   "referenced_type" : "_ZTI54$ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES",
+   "self_type" : "_ZTI54$ANEURALNETWORKS_MAX_SIZE_OF_IMMEDIATELY_COPIED_VALUES",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANEURALNETWORKS_FUSED_NONE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANEURALNETWORKS_FUSED_RELU"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANEURALNETWORKS_FUSED_RELU1"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANEURALNETWORKS_FUSED_RELU6"
+    }
+   ],
+   "linker_set_key" : "_ZTI8FuseCode",
+   "name" : "FuseCode",
+   "referenced_type" : "_ZTI8FuseCode",
+   "self_type" : "_ZTI8FuseCode",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::procpartition::Partition::UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::procpartition::Partition::SYSTEM"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::procpartition::Partition::VENDOR"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::procpartition::Partition::ODM"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android13procpartition9PartitionE",
+   "name" : "android::procpartition::Partition",
+   "referenced_type" : "_ZTIN7android13procpartition9PartitionE",
+   "self_type" : "_ZTIN7android13procpartition9PartitionE",
+   "size" : 4,
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" : [],
+ "functions" : [],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKf",
+   "name" : "const float *",
+   "referenced_type" : "_ZTIKf",
+   "self_type" : "_ZTIPKf",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKj",
+   "name" : "const unsigned int *",
+   "referenced_type" : "_ZTIKj",
+   "self_type" : "_ZTIPKj",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKf",
+   "name" : "const float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIKf",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "type",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "dimensionCount",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "dimensions",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPKj"
+    },
+    {
+     "field_name" : "scale",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "field_name" : "zeroPoint",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI26ANeuralNetworksOperandType",
+   "name" : "ANeuralNetworksOperandType",
+   "referenced_type" : "_ZTI26ANeuralNetworksOperandType",
+   "self_type" : "_ZTI26ANeuralNetworksOperandType",
+   "size" : 20,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "channelDim",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "scaleCount",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "scales",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPKf"
+    }
+   ],
+   "linker_set_key" : "_ZTI40ANeuralNetworksSymmPerChannelQuantParams",
+   "name" : "ANeuralNetworksSymmPerChannelQuantParams",
+   "referenced_type" : "_ZTI40ANeuralNetworksSymmPerChannelQuantParams",
+   "self_type" : "_ZTI40ANeuralNetworksSymmPerChannelQuantParams",
+   "size" : 12,
+   "source_file" : "packages/modules/NeuralNetworks/runtime/include/NeuralNetworksTypes.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
