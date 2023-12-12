@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="mediaRouteAudioTrackDrawable"/>
+    <attr format="reference" name="mediaRouteBodyTextAppearance"/>
+    <attr format="reference" name="mediaRouteButtonStyle"/>
+    <attr format="reference" name="mediaRouteCloseDrawable"/>
+    <attr format="reference" name="mediaRouteControlPanelThemeOverlay"/>
+    <attr format="reference" name="mediaRouteDefaultIconDrawable"/>
+    <attr format="color" name="mediaRouteDividerColor"/>
+    <attr format="reference" name="mediaRouteHeaderTextAppearance"/>
+    <attr format="reference" name="mediaRoutePauseDrawable"/>
+    <attr format="reference" name="mediaRoutePlayDrawable"/>
+    <attr format="reference" name="mediaRouteSpeakerGroupIconDrawable"/>
+    <attr format="reference" name="mediaRouteSpeakerIconDrawable"/>
+    <attr format="reference" name="mediaRouteStopDrawable"/>
+    <attr format="reference" name="mediaRouteTheme"/>
+    <attr format="reference" name="mediaRouteTvIconDrawable"/>
+    <bool name="is_tablet">false</bool>
+    <color name="mr_cast_meta_black_scrim">#99000000</color>
+    <color name="mr_cast_meta_default_background">#25272B</color>
+    <color name="mr_cast_meta_default_text_color">#FFFFFF</color>
+    <color name="mr_cast_progressbar_background_dark">#5F6368</color>
+    <color name="mr_cast_progressbar_background_light">#CBCCCD</color>
+    <color name="mr_cast_progressbar_progress_and_thumb_dark">#5195EA</color>
+    <color name="mr_cast_progressbar_progress_and_thumb_light">#4285F4</color>
+    <color name="mr_cast_route_divider_dark">#803C4043</color>
+    <color name="mr_cast_route_divider_light">#1425272B</color>
+    <color name="mr_dynamic_dialog_background_dark">#000000</color>
+    <color name="mr_dynamic_dialog_background_light">#FFFFFF</color>
+    <color name="mr_dynamic_dialog_header_text_color_dark">#BDC1C6</color>
+    <color name="mr_dynamic_dialog_header_text_color_light">#80868B</color>
+    <color name="mr_dynamic_dialog_icon_dark">#F8F9FA</color>
+    <color name="mr_dynamic_dialog_icon_light">#202124</color>
+    <color name="mr_dynamic_dialog_route_text_color_dark">#FFFFFF</color>
+    <color name="mr_dynamic_dialog_route_text_color_light">#25272B</color>
+    <dimen name="mr_cast_group_volume_seekbar_height">4dp</dimen>
+    <dimen name="mr_cast_meta_art_size">36dp</dimen>
+    <dimen name="mr_cast_meta_subtitle_text_size">13sp</dimen>
+    <dimen name="mr_cast_route_volume_seekbar_height">2dp</dimen>
+    <dimen name="mr_cast_seekbar_thumb_size">8dp</dimen>
+    <dimen name="mr_controller_volume_group_list_item_height">68dp</dimen>
+    <dimen name="mr_controller_volume_group_list_item_icon_size">24dp</dimen>
+    <dimen name="mr_controller_volume_group_list_max_height">288dp</dimen>
+    <dimen name="mr_controller_volume_group_list_padding_top">16dp</dimen>
+    <dimen name="mr_dialog_fixed_width_major">320dp</dimen>
+    <dimen name="mr_dialog_fixed_width_minor">320dp</dimen>
+    <dimen name="mr_dynamic_dialog_header_text_size">11sp</dimen>
+    <dimen name="mr_dynamic_dialog_route_text_size">12sp</dimen>
+    <dimen name="mr_dynamic_dialog_row_height">48dp</dimen>
+    <dimen name="mr_dynamic_volume_group_list_item_height">80dp</dimen>
+    <integer name="mr_cast_volume_slider_layout_animation_duration_ms">400</integer>
+    <integer name="mr_controller_volume_group_list_animation_duration_ms">400</integer>
+    <integer name="mr_controller_volume_group_list_fade_in_duration_ms">400</integer>
+    <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
+    <integer name="mr_update_routes_delay_ms">300</integer>
+    <string name="mr_button_content_description">Cast</string>
+    <string name="mr_cast_button_connected">Cast. Connected</string>
+    <string name="mr_cast_button_connecting">Cast. Connecting</string>
+    <string name="mr_cast_button_disconnected">Cast. Disconnected</string>
+    <string name="mr_cast_dialog_title_view_placeholder">No info available</string>
+    <string name="mr_chooser_searching">Finding devices</string>
+    <string name="mr_chooser_title">Cast to</string>
+    <string name="mr_controller_album_art">Album art</string>
+    <string name="mr_controller_casting_screen">Casting screen</string>
+    <string name="mr_controller_close_description">Close</string>
+    <string name="mr_controller_collapse_group">Collapse</string>
+    <string name="mr_controller_disconnect">Disconnect</string>
+    <string name="mr_controller_expand_group">Expand</string>
+    <string name="mr_controller_no_info_available">No info available</string>
+    <string name="mr_controller_no_media_selected">No media selected</string>
+    <string name="mr_controller_pause">Pause</string>
+    <string name="mr_controller_play">Play</string>
+    <string name="mr_controller_stop">Stop</string>
+    <string name="mr_controller_stop_casting">Stop casting</string>
+    <string name="mr_controller_volume_slider">Volume slider</string>
+    <string name="mr_dialog_default_group_name">Group</string>
+    <string name="mr_dialog_groupable_header">Add a device</string>
+    <string name="mr_dialog_transferable_header">Play on a group</string>
+    <string name="mr_system_route_name">System</string>
+    <string name="mr_user_route_category_name">Devices</string>
+    <style name="TextAppearance.MediaRouter.Dynamic.Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/mr_dynamic_dialog_route_text_size</item>
+        <item name="android:textColor">@color/mr_dynamic_dialog_route_text_color_dark</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.Dynamic.Body.Light">
+        <item name="android:textColor">@color/mr_dynamic_dialog_route_text_color_light</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.Dynamic.Header" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">@dimen/mr_dynamic_dialog_header_text_size</item>
+        <item name="android:textColor">@color/mr_dynamic_dialog_header_text_color_dark</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.Dynamic.Header.Light">
+        <item name="android:textColor">@color/mr_dynamic_dialog_header_text_color_light</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.Dynamic.Metadata.PrimaryText" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/mr_cast_meta_default_text_color</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.Dynamic.Metadata.SecondaryText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/mr_cast_meta_subtitle_text_size</item>
+    </style>
+    <style name="TextAppearance.MediaRouter.PrimaryText" parent="TextAppearance.AppCompat.Subhead"/>
+    <style name="TextAppearance.MediaRouter.SecondaryText" parent="TextAppearance.AppCompat.Body1"/>
+    <style name="TextAppearance.MediaRouter.Title" parent="TextAppearance.AppCompat.Title"/>
+    <style name="Theme.MediaRouter" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="windowNoTitle">true</item>
+        <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
+        <item name="mediaRouteHeaderTextAppearance">@style/TextAppearance.MediaRouter.Dynamic.Header</item>
+        <item name="mediaRouteBodyTextAppearance">@style/TextAppearance.MediaRouter.Dynamic.Body</item>
+
+        <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_dark</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_dark</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
+        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_disconnected_dark</item>
+        <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_dark</item>
+        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_dark</item>
+        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_dark</item>
+        <item name="mediaRouteDividerColor">@color/mr_cast_route_divider_dark</item>
+
+        <item name="mediaRouteControlPanelThemeOverlay">@null</item>
+    </style>
+    <style name="Theme.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.Light.MediaRouteButton</item>
+        <item name="mediaRouteHeaderTextAppearance">@style/TextAppearance.MediaRouter.Dynamic.Header.Light</item>
+        <item name="mediaRouteBodyTextAppearance">@style/TextAppearance.MediaRouter.Dynamic.Body.Light</item>
+
+        <item name="mediaRouteCloseDrawable">@drawable/mr_dialog_close_light</item>
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_light</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
+        <item name="mediaRouteDefaultIconDrawable">@drawable/ic_mr_button_grey</item>
+        <item name="mediaRouteTvIconDrawable">@drawable/ic_vol_type_tv_light</item>
+        <item name="mediaRouteSpeakerIconDrawable">@drawable/ic_vol_type_speaker_light</item>
+        <item name="mediaRouteSpeakerGroupIconDrawable">@drawable/ic_vol_type_speaker_group_light</item>
+        <item name="mediaRouteDividerColor">@color/mr_cast_route_divider_light</item>
+
+        <item name="mediaRouteControlPanelThemeOverlay">@null</item>
+    </style>
+    <style name="Theme.MediaRouter.Light.DarkControlPanel">
+        <item name="mediaRouteControlPanelThemeOverlay">@style/ThemeOverlay.MediaRouter.Dark</item>
+    </style>
+    <style name="Theme.MediaRouter.LightControlPanel">
+        <item name="mediaRouteControlPanelThemeOverlay">@style/ThemeOverlay.MediaRouter.Light</item>
+    </style>
+    <style name="ThemeOverlay.MediaRouter.Dark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_dark</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_dark</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_dark</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_dark</item>
+        <item name="mediaRouteDividerColor">@color/mr_cast_route_divider_dark</item>
+    </style>
+    <style name="ThemeOverlay.MediaRouter.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="mediaRoutePlayDrawable">@drawable/mr_media_play_light</item>
+        <item name="mediaRoutePauseDrawable">@drawable/mr_media_pause_light</item>
+        <item name="mediaRouteStopDrawable">@drawable/mr_media_stop_light</item>
+        <item name="mediaRouteAudioTrackDrawable">@drawable/mr_vol_type_audiotrack_light</item>
+        <item name="mediaRouteDividerColor">@color/mr_cast_route_divider_light</item>
+    </style>
+    <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
+        <item name="externalRouteEnabledDrawable">@drawable/mr_button_light</item>
+        <item name="externalRouteEnabledDrawableStatic">@drawable/mr_button_light_static</item>
+    </style>
+    <style name="Widget.MediaRouter.MediaRouteButton" parent="Widget.AppCompat.ActionButton">
+        <item name="externalRouteEnabledDrawable">@drawable/mr_button_dark</item>
+        <item name="externalRouteEnabledDrawableStatic">@drawable/mr_button_dark_static</item>
+    </style>
+    <declare-styleable name="MediaRouteButton">
+        <!-- This drawable is a state list where the "checked" state
+             indicates active media routing.  Checkable indicates connecting
+             and non-checked / non-checkable indicates
+             that media is playing to the local device only. -->
+        <attr format="reference" name="externalRouteEnabledDrawable"/>
+        <!-- This drawable is a static version of the above animation drawable.
+             In order to speed up the inflation, the static drawable is loaded first
+             and the animation drawable will be loaded lazily in a worker thread
+             when the user taps the button -->
+        <attr format="reference" name="externalRouteEnabledDrawableStatic"/>
+        <!-- Tint to apply to the media route button -->
+        <attr format="color" name="mediaRouteButtonTint"/>
+
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+    </declare-styleable>
+</resources>
