@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<manifest package="com.android.managedprovisioning" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <permission android:name="android.permission.PROVISION_MANAGED_DEVICE_SILENTLY" android:protectionLevel="signature|preinstalled"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.MANAGE_APP_OPS_MODES"/>
+    <uses-permission android:name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.CRYPT_KEEPER"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.PERFORM_CDMA_PROVISIONING"/>
+    <uses-permission android:name="android.permission.ACCESS_PDB_STATE"/>
+    <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.NETWORK_MANAGED_PROVISIONING"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MARK_DEVICE_ORGANIZATION_OWNED"/>
+
+    <!-- To set the bg color of the deferred setup notification (without a foreground service) -->
+    <uses-permission android:name="android.permission.USE_COLORIZED_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+
+    <!-- Required by setup design library -->
+    <uses-permission android:name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+    <uses-permission android:name="android.permission.CONFIGURE_INTERACT_ACROSS_PROFILES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries> <!-- after SDK 30, package need to declare its visible packages. -->
+    <queries>
+        <intent>
+            <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION"/>
+        </intent>
+    </queries> <!-- after SDK 30, package need to declare its visible packages. -->
+    <queries>
+        <intent>
+            <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION"/>
+        </intent>
+    </queries>
+
+    <application android:allowClearUserData="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:label="@string/app_label" android:name="com.android.managedprovisioning.ManagedProvisioningApplication" android:supportsRtl="true" android:usesCleartextTraffic="true" android:usesNonSdkApi="true">
+
+        <!--
+             Note: Setup activities are android:immersive to prevent full-screen notifications (USB
+            mass storage; incoming calls) from taking over. Note that high-priority notifications
+            (phone calls) will still pop up a small window that can be activated.
+        -->
+        <activity android:excludeFromRecents="true" android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.provisioning.ProvisioningActivity" android:theme="@style/SudThemeGlifV3.DayNight">
+        </activity>
+        <activity android:excludeFromRecents="true" android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.provisioning.AdminIntegratedFlowPrepareActivity" android:theme="@style/SudThemeGlifV3.DayNight">
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity" android:theme="@style/SudThemeGlifV3.DayNight">
+            <intent-filter android:priority="10">
+                <action android:name="android.app.action.PROVISION_MANAGED_PROFILE"/>
+                <action android:name="android.app.action.PROVISION_MANAGED_DEVICE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity> <!-- Entry to resume encryption after reboot. -->
+        <activity-alias android:exported="false" android:name="com.android.managedprovisioning.PreProvisioningActivityAfterEncryption" android:targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.managedprovisioning.action.RESUME_PROVISIONING"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <!--
+            Trusted app entry for device owner provisioning, protected by a permission so only
+            privileged app can trigger this.
+        -->
+        <activity-alias android:exported="true" android:name="com.android.managedprovisioning.PreProvisioningActivityViaTrustedApp" android:permission="android.permission.DISPATCH_PROVISIONING_MESSAGE" android:targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+            <intent-filter android:priority="10">
+                <action android:name="android.app.action.PROVISION_MANAGED_DEVICE_FROM_TRUSTED_SOURCE"/>
+                <action android:name="android.app.action.PROVISION_FINANCED_DEVICE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <!--
+            Nfc bump entry for device owner provisioning, protected by a permission so only the Nfc
+            stack can trigger this.
+        -->
+        <activity-alias android:exported="true" android:name="com.android.managedprovisioning.PreProvisioningActivityViaNfc" android:permission="android.permission.DISPATCH_NFC_MESSAGE" android:targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+            <intent-filter android:priority="10">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="application/com.android.managedprovisioning"/>
+            </intent-filter>
+        </activity-alias>
+
+        <activity android:excludeFromRecents="true" android:immersive="true" android:name="com.android.managedprovisioning.provisioning.ResetAndReturnDeviceActivity" android:theme="@style/SudThemeGlifV3.Light"/>
+        <activity android:excludeFromRecents="true" android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.preprovisioning.terms.TermsActivity" android:theme="@style/SudThemeGlifV3.DayNight"/>
+        <activity android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.preprovisioning.EncryptDeviceActivity">
+        </activity>
+<!--             Entry point for silent device owner provisioning. -->
+        <service android:name="com.android.managedprovisioning.provisioning.SilentDeviceOwnerProvisioningService">
+        </service>
+
+        <receiver android:exported="true" android:name="com.android.managedprovisioning.provisioning.SilentDeviceOwnerProvisioningReceiver" android:permission="android.permission.PROVISION_MANAGED_DEVICE_SILENTLY">
+            <intent-filter android:priority="10">
+                <action android:name="android.app.action.PROVISION_MANAGED_DEVICE_SILENTLY"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.preprovisioning.WebActivity" android:process=":webview" android:theme="@style/SudThemeGlifV3.DayNight">
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.android.managedprovisioning.TrampolineActivity" android:theme="@android:style/Theme.NoDisplay">
+        </activity>
+
+        <!--
+            When PostEncryptionActivity is disabled, its entire task is going to get killed.
+            So, we explicitly specify a taskAffinity for this instead of a package default to make
+            sure it starts in a new task.
+        -->
+        <activity android:enabled="false" android:excludeFromRecents="true" android:exported="true" android:name="com.android.managedprovisioning.preprovisioning.PostEncryptionActivity" android:noHistory="true" android:taskAffinity=":PostEncryptionActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter android:priority="10">
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.android.managedprovisioning.provisioning.ProvisioningService"/>
+        <service android:name="com.android.managedprovisioning.finalization.SendDpcBroadcastService"/>
+        <service android:name="com.android.managedprovisioning.ota.OtaService"/>
+
+        <receiver android:exported="true" android:name="com.android.managedprovisioning.BootReminder">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.managedprovisioning.ota.PreBootListener">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.managedprovisioning.manageduser.ManagedUserCreationListener">
+            <intent-filter>
+                <action android:name="android.app.action.MANAGED_USER_CREATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.managedprovisioning.manageduser.ManagedUserRemovalListener">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_REMOVED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- TODO (b/146135268): Add permission for setup-wizard to guard access? -->
+        <activity android:excludeFromRecents="true" android:exported="true" android:immersive="true" android:launchMode="singleTop" android:name="com.android.managedprovisioning.finalization.FinalizationInsideSuwActivity" android:theme="@style/SudThemeGlifV3.DayNight">
+            <intent-filter>
+
+                <!--
+                TODO (b/177666246): Remove PROVISION_FINALIZATION_INSIDE_SUW
+                after the setup wizard change which calls PROVISION_FINALIZATION is in prebuilt
+                -->
+                <action android:name="android.app.action.PROVISION_FINALIZATION_INSIDE_SUW"/>
+                <action android:name="android.app.action.PROVISION_FINALIZATION"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:immersive="true" android:name="com.android.managedprovisioning.provisioning.LandingActivity" android:theme="@style/SudThemeGlifV3.DayNight"/>
+        <activity android:immersive="true" android:name="com.android.managedprovisioning.provisioning.FinancedDeviceLandingActivity" android:theme="@style/SudThemeGlifV3.DayNight"/>
+
+        <service android:name="com.android.managedprovisioning.analytics.ProcessMetricsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    </application>
+
+</manifest>
