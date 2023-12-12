@@ -1,0 +1,148 @@
+Package name: org.lineageos.profiles
+Module name in Android tree: Profiles
+Local path in Android tree: packages/apps/Profiles
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/app/Profiles/Profiles.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking blocked Landroid/app/admin/DevicePolicyManager;->requireSecureKeyguard()Z use(s):
+       Lorg/lineageos/profiles/ProfilesTrustAgent;->handleApplyCurrentProfileState()V
+
+#2: Linking unsupported Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder; use(s):
+       Llineageos/app/ProfileManager;->getService()Llineageos/app/IProfileManager;
+
+#3: Linking unsupported Lcom/android/internal/app/AlertActivity;-><init>()V use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;-><init>()V
+
+#4: Linking unsupported Lcom/android/internal/app/AlertActivity;->setupAlert()V use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#5: Linking unsupported Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V use(s):
+       Lorg/lineageos/profiles/StartUpReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+
+#6: Linking blocked Lcom/android/internal/widget/LockPatternUtils;->getEnabledTrustAgents(I)Ljava/util/List; use(s):
+       Lorg/lineageos/profiles/StartUpReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+
+#7: Linking blocked Lcom/android/internal/widget/LockPatternUtils;->setEnabledTrustAgents(Ljava/util/Collection;I)V use(s):
+       Lorg/lineageos/profiles/StartUpReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+
+#8: Linking unsupported Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onPrepareListView(Landroid/widget/ListView;)V
+
+#9: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mAdapter:Landroid/widget/ListAdapter; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#10: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mCheckedItem:I use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onPrepareListView(Landroid/widget/ListView;)V
+
+#11: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#12: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#13: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#14: Linking max-target-o Lcom/android/internal/app/AlertController$AlertParams;->mOnPrepareListViewListener:Lcom/android/internal/app/AlertController$AlertParams$OnPrepareListViewListener; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#15: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V (2 occurrences)
+
+#16: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V
+
+#17: Linking unsupported Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence; use(s):
+       Lorg/lineageos/profiles/ProfilePickerActivity;->onCreate(Landroid/os/Bundle;)V (2 occurrences)
+
+#18: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#19: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#20: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#21: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#22: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#23: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#24: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#25: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#26: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#27: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#28: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#29: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#30: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#31: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#32: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#33: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#34: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#35: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#36: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#37: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#38: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#39: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#40: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#41: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#42: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+42 hidden API(s) used: 17 linked against, 25 through reflection
+	30 in unsupported
+	4 in blocked
+	2 in max-target-o
+	3 in max-target-p
+	3 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

@@ -1,0 +1,102 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalService.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IIncrementalService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalService.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageLoadingProgressListener.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IStorageLoadingProgressListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageLoadingProgressListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalNewFileParams.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IncrementalNewFileParams.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalNewFileParams.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageHealthListener.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IStorageHealthListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageHealthListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/PerUidReadTimeouts.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/PerUidReadTimeouts.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/PerUidReadTimeouts.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/StorageHealthCheckParams.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/StorageHealthCheckParams.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/StorageHealthCheckParams.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalService.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageLoadingProgressListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalNewFileParams.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/IStorageHealthListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/PerUidReadTimeouts.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/StorageHealthCheckParams.cpp.d"
+  copy_after: <
+    from: "out/android/os/incremental/BnIncrementalNewFileParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnIncrementalNewFileParams.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnIncrementalService.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnIncrementalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnPerUidReadTimeouts.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnPerUidReadTimeouts.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnStorageHealthCheckParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnStorageHealthCheckParams.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnStorageHealthListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnStorageHealthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnStorageLoadingProgressListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnStorageLoadingProgressListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpIncrementalNewFileParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpIncrementalNewFileParams.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpIncrementalService.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpIncrementalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpPerUidReadTimeouts.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpPerUidReadTimeouts.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpStorageHealthCheckParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpStorageHealthCheckParams.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpStorageHealthListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpStorageHealthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpStorageLoadingProgressListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpStorageLoadingProgressListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IIncrementalService.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalService.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IIncrementalService.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalService.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IStorageHealthListener.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IStorageHealthListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IStorageHealthListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IStorageHealthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IStorageLoadingProgressListener.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IStorageLoadingProgressListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IStorageLoadingProgressListener.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IStorageLoadingProgressListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IncrementalNewFileParams.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IncrementalNewFileParams.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IncrementalNewFileParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IncrementalNewFileParams.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/PerUidReadTimeouts.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/PerUidReadTimeouts.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/PerUidReadTimeouts.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/PerUidReadTimeouts.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/StorageHealthCheckParams.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/StorageHealthCheckParams.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/StorageHealthCheckParams.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/StorageHealthCheckParams.h"
+  >
+  input_hash: "f1c4fbbcb26d6574e8259cfc9d914ad6349bb30ed35040eb0defde4c48c43000"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/core/java/libincremental_manager_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalService.cpp.d"
+
