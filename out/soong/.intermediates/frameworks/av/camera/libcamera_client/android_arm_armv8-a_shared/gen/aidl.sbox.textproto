@@ -1,0 +1,134 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/ICameraService.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/ICameraService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraService.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceListener.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/ICameraServiceListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceProxy.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/ICameraServiceProxy.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceProxy.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceCallbacks.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/camera2/ICameraDeviceCallbacks.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceCallbacks.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceUser.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/camera2/ICameraDeviceUser.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceUser.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraOfflineSession.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/camera2/ICameraOfflineSession.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraOfflineSession.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionCallback.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/camera2/ICameraInjectionCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionSession.cpp.d --ninja -Iframeworks/av/camera/aidl -Iframeworks/native/aidl/gui -Iframeworks/av/camera/aidl/ frameworks/av/camera/aidl/android/hardware/camera2/ICameraInjectionSession.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionSession.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraService.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/ICameraServiceProxy.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceCallbacks.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraDeviceUser.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraOfflineSession.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/camera2/ICameraInjectionSession.cpp.d"
+  copy_after: <
+    from: "out/android/hardware/BnCameraService.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BnCameraService.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BnCameraServiceListener.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BnCameraServiceListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BnCameraServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BnCameraServiceProxy.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BpCameraService.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BpCameraService.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BpCameraServiceListener.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BpCameraServiceListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BpCameraServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/BpCameraServiceProxy.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraService.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraService.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraService.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraService.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraServiceListener.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraServiceListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraServiceListener.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraServiceListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraServiceProxy.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraServiceProxy.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/ICameraServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraServiceProxy.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BnCameraDeviceCallbacks.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BnCameraDeviceCallbacks.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BnCameraDeviceUser.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BnCameraDeviceUser.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BnCameraInjectionCallback.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BnCameraInjectionCallback.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BnCameraInjectionSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BnCameraInjectionSession.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BnCameraOfflineSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BnCameraOfflineSession.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BpCameraDeviceCallbacks.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BpCameraDeviceCallbacks.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BpCameraDeviceUser.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BpCameraDeviceUser.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BpCameraInjectionCallback.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BpCameraInjectionCallback.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BpCameraInjectionSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BpCameraInjectionSession.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/BpCameraOfflineSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/BpCameraOfflineSession.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraDeviceCallbacks.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraDeviceCallbacks.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraDeviceCallbacks.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraDeviceCallbacks.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraDeviceUser.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraDeviceUser.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraDeviceUser.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraDeviceUser.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraInjectionCallback.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraInjectionCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraInjectionCallback.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraInjectionCallback.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraInjectionSession.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraInjectionSession.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraInjectionSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraInjectionSession.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraOfflineSession.cpp"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraOfflineSession.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/camera2/ICameraOfflineSession.h"
+    to: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/camera2/ICameraOfflineSession.h"
+  >
+  input_hash: "adfc3453ea81526109fa126860c375280d1bd4c0a0a7b1890e7a81a243a25d0a"
+>
+output_depfile: "out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm_armv8-a_shared/gen/aidl/android/hardware/ICameraService.cpp.d"
+

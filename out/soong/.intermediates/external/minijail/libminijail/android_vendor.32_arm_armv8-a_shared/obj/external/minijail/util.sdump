@@ -1,0 +1,548 @@
+{
+ "array_types" :
+ [
+  {
+   "linker_set_key" : "_ZTIA_13syscall_entry",
+   "name" : "syscall_entry []",
+   "referenced_type" : "_ZTI13syscall_entry",
+   "self_type" : "_ZTIA_13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_14constant_entry",
+   "name" : "constant_entry []",
+   "referenced_type" : "_ZTI14constant_entry",
+   "self_type" : "_ZTIA_14constant_entry",
+   "source_file" : "external/minijail/libconstants.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_PKc",
+   "name" : "const char *[]",
+   "referenced_type" : "_ZTIPKc",
+   "self_type" : "_ZTIA_PKc",
+   "source_file" : "external/minijail/util.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_TO_SYSLOG"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "LOG_TO_FD"
+    }
+   ],
+   "linker_set_key" : "_ZTI16logging_system_t",
+   "name" : "logging_system_t",
+   "referenced_type" : "_ZTI16logging_system_t",
+   "self_type" : "_ZTI16logging_system_t",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "consumebytes",
+   "linker_set_key" : "consumebytes",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "consumestr",
+   "linker_set_key" : "consumestr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPc"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "do_fatal_log",
+   "linker_set_key" : "do_fatal_log",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "do_log",
+   "linker_set_key" : "do_log",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "init_logging",
+   "linker_set_key" : "init_logging",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI16logging_system_t"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "lookup_syscall",
+   "linker_set_key" : "lookup_syscall",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "lookup_syscall_name",
+   "linker_set_key" : "lookup_syscall_name",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "minijail_copy_env",
+   "linker_set_key" : "minijail_copy_env",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKPc"
+    }
+   ],
+   "return_type" : "_ZTIPPc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "minijail_free_env",
+   "linker_set_key" : "minijail_free_env",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "minijail_setenv",
+   "linker_set_key" : "minijail_setenv",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "parse_constant",
+   "linker_set_key" : "parse_constant",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "parse_single_constant",
+   "linker_set_key" : "parse_single_constant",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "parse_size",
+   "linker_set_key" : "parse_size",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "path_join",
+   "linker_set_key" : "path_join",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "strip",
+   "linker_set_key" : "strip",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "function_name" : "tokenize",
+   "linker_set_key" : "tokenize",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "external/minijail/util.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "constant_table",
+   "name" : "constant_table",
+   "referenced_type" : "_ZTIA_K14constant_entry",
+   "source_file" : "external/minijail/libconstants.h"
+  },
+  {
+   "linker_set_key" : "log_syscalls",
+   "name" : "log_syscalls",
+   "referenced_type" : "_ZTIA_PKc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "linker_set_key" : "log_syscalls_len",
+   "name" : "log_syscalls_len",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "linker_set_key" : "syscall_table",
+   "name" : "syscall_table",
+   "referenced_type" : "_ZTIA_K13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "linker_set_key" : "syscall_table_size",
+   "name" : "syscall_table_size",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/minijail/libsyscalls.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKPc",
+   "name" : "char *const *",
+   "referenced_type" : "_ZTIKPc",
+   "self_type" : "_ZTIPKPc",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPPc",
+   "name" : "char ***",
+   "referenced_type" : "_ZTIPPc",
+   "self_type" : "_ZTIPPPc",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPc",
+   "name" : "char **",
+   "referenced_type" : "_ZTIPc",
+   "self_type" : "_ZTIPPc",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_K13syscall_entry",
+   "name" : "syscall_entry const[]",
+   "referenced_type" : "_ZTIA_13syscall_entry",
+   "self_type" : "_ZTIA_K13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_K14constant_entry",
+   "name" : "constant_entry const[]",
+   "referenced_type" : "_ZTIA_14constant_entry",
+   "self_type" : "_ZTIA_K14constant_entry",
+   "source_file" : "external/minijail/libconstants.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPc",
+   "name" : "char *const",
+   "referenced_type" : "_ZTIPc",
+   "self_type" : "_ZTIKPc",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/minijail/libsyscalls.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "name",
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "nr",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI13syscall_entry",
+   "name" : "syscall_entry",
+   "referenced_type" : "_ZTI13syscall_entry",
+   "self_type" : "_ZTI13syscall_entry",
+   "size" : 8,
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "name",
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "value",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI14constant_entry",
+   "name" : "constant_entry",
+   "referenced_type" : "_ZTI14constant_entry",
+   "self_type" : "_ZTI14constant_entry",
+   "size" : 8,
+   "source_file" : "external/minijail/libconstants.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

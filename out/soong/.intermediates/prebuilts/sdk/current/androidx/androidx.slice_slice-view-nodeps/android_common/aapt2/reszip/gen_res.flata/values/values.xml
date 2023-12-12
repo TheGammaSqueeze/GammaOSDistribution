@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <attr format="reference" name="sliceViewStyle"/>
+    <attr format="color" name="subtitleColor"/>
+    <attr format="color" name="tintColor"/>
+    <attr format="color" name="titleColor"/>
+    <dimen name="abc_slice_action_row_height">48dp</dimen>
+    <dimen name="abc_slice_big_pic_max_height">140dp</dimen>
+    <dimen name="abc_slice_big_pic_min_height">120dp</dimen>
+    <dimen name="abc_slice_grid_gutter">4dp</dimen>
+    <dimen name="abc_slice_grid_image_min_width">60dp</dimen>
+    <dimen name="abc_slice_grid_image_only_height">86dp</dimen>
+    <dimen name="abc_slice_grid_image_text_height">120dp</dimen>
+    <dimen name="abc_slice_grid_max_height">140dp</dimen>
+    <dimen name="abc_slice_grid_min_height">60dp</dimen>
+    <dimen name="abc_slice_grid_raw_image_text_offset">30dp</dimen>
+    <dimen name="abc_slice_grid_small_image_text_height">120dp</dimen>
+    <dimen name="abc_slice_grid_text_inner_padding">2dp</dimen>
+    <dimen name="abc_slice_grid_text_padding">10dp</dimen>
+    <dimen name="abc_slice_icon_size">24dp</dimen>
+    <dimen name="abc_slice_large_height">240dp</dimen>
+    <dimen name="abc_slice_padding">16dp</dimen>
+    <dimen name="abc_slice_row_active_input_height">120dp</dimen>
+    <dimen name="abc_slice_row_max_height">60dp</dimen>
+    <dimen name="abc_slice_row_min_height">48dp</dimen>
+    <dimen name="abc_slice_row_range_height">48dp</dimen>
+    <dimen name="abc_slice_row_range_inline_height">60dp</dimen>
+    <dimen name="abc_slice_row_range_multi_text_height">56dp</dimen>
+    <dimen name="abc_slice_row_range_single_text_height">48dp</dimen>
+    <dimen name="abc_slice_row_selection_height">48dp</dimen>
+    <dimen name="abc_slice_row_selection_multi_text_height">56dp</dimen>
+    <dimen name="abc_slice_row_selection_single_text_height">48dp</dimen>
+    <dimen name="abc_slice_shortcut_size">56dp</dimen>
+    <dimen name="abc_slice_small_height">48dp</dimen>
+    <dimen name="abc_slice_small_image_size">48dp</dimen>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="one"><ns1:g example="1">%d</ns1:g> day ago</item>
+        <item quantity="other"><ns1:g example="2">%d</ns1:g> days ago</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="one"><ns1:g example="1">%d</ns1:g> min ago</item>
+        <item quantity="other"><ns1:g example="2">%d</ns1:g> min ago</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="one"><ns1:g example="1">%d</ns1:g> yr ago</item>
+        <item quantity="other"><ns1:g example="2">%d</ns1:g> yr ago</item>
+    </plurals>
+    <string name="abc_slice_error">Couldn\'t connect</string>
+    <string name="abc_slice_more">More</string>
+    <string name="abc_slice_more_content">+ <ns1:g example="5" id="number">%1$d</ns1:g></string>
+    <string name="abc_slice_show_more">Show more</string>
+    <string name="abc_slice_updated">Updated <ns1:g example="5 min ago" id="time">%1$s</ns1:g></string>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#1E88E5</item>
+    </style>
+    <style name="Widget.AppCompat.ProgressBar.Inline" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="Widget.AppCompat.SeekBar.Inline" parent="Widget.AppCompat.SeekBar">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+    <style name="Widget.SliceView" parent="">
+        <item name="tintColor">@null</item>
+        <!-- Colors -->
+        <item name="titleColor">?android:attr/textColorPrimary</item>
+        <item name="subtitleColor">?android:attr/textColorSecondary</item>
+
+        <!-- Text sizes -->
+        <item name="headerTitleSize">16sp</item>
+        <item name="headerSubtitleSize">14sp</item>
+        <item name="titleSize">14sp</item>
+        <item name="subtitleSize">14sp</item>
+        <item name="gridTitleSize">12sp</item>
+        <item name="gridSubtitleSize">12sp</item>
+    </style>
+    <declare-styleable name="RowStyle">
+        <!-- Padding to the start edge of title items shown in the row. -->
+        <attr format="dimension" name="titleItemStartPadding"/>
+        <!-- Padding to the end edge of title items shown in the row. -->
+        <attr format="dimension" name="titleItemEndPadding"/>
+
+        <!-- Padding to the start edge of the content in the row. -->
+        <attr format="dimension" name="contentStartPadding"/>
+        <!-- Padding to the end edge of the content in the row. -->
+        <attr format="dimension" name="contentEndPadding"/>
+
+        <!-- Padding to the start edge of the title in the row. -->
+        <attr format="dimension" name="titleStartPadding"/>
+        <!-- Padding to the end edge of the title in the row. -->
+        <attr format="dimension" name="titleEndPadding"/>
+
+        <!-- Padding to the start edge of the sub content in the row. -->
+        <attr format="dimension" name="subContentStartPadding"/>
+        <!-- Padding to the end edge of the sub content in the row. -->
+        <attr format="dimension" name="subContentEndPadding"/>
+
+        <!-- Padding to the start edge of the collection of items shown at the end of the row. -->
+        <attr format="dimension" name="endItemStartPadding"/>
+        <!-- Padding to the end edge of the collection of items shown at the end of the row. -->
+        <attr format="dimension" name="endItemEndPadding"/>
+
+        <!-- Padding to the start edge of the bottom divider in the row. -->
+        <attr format="dimension" name="bottomDividerStartPadding"/>
+        <!-- Padding to the end edge of the bottom divider in the row. -->
+        <attr format="dimension" name="bottomDividerEndPadding"/>
+
+        <!-- Height to use for action divider in the row. -->
+        <attr format="dimension" name="actionDividerHeight"/>
+
+        <!-- Width to use for inline SeekBar in the row. -->
+        <attr format="dimension" name="seekBarInlineWidth"/>
+
+        <!-- Width to use for inline progress bar in the row. -->
+        <attr format="dimension" name="progressBarInlineWidth"/>
+        <!-- Padding to the start edge of the progress bar in the row. -->
+        <attr format="dimension" name="progressBarStartPadding"/>
+        <!-- Padding to the end edge of the progress bar in the row. -->
+        <attr format="dimension" name="progressBarEndPadding"/>
+        <!-- Padding to the edge of the button in the row. -->
+        <attr format="dimension" name="textActionPadding"/>
+
+        <!-- Size of icon. -->
+        <attr format="dimension" name="iconSize"/>
+        <!-- Size of small images in a slice. -->
+        <attr format="dimension" name="imageSize"/>
+        <!-- Control whether RecyclerView item animator is disable or not, true for disable
+        otherwise enable. -->
+        <attr format="boolean" name="disableRecyclerViewItemAnimator"/>
+
+        <!-- These override the corresponding styles from SliceView. -->
+        <attr name="titleColor"/>
+        <attr name="subtitleColor"/>
+        <attr name="tintColor"/>
+
+    </declare-styleable>
+    <declare-styleable name="SliceView">
+        <!-- Color to use for any title text within the slice. -->
+        <attr name="titleColor"/>
+        <!-- Color to use for any other text within the slice. -->
+        <attr name="subtitleColor"/>
+        <!-- Color to use for tinting elements within the slice. Normally an app
+         providing a slice is able to specify a color to use for tinting, specifying
+         a tint color here will override the app supplied color. -->
+        <attr name="tintColor"/>
+
+        <!-- The corner radius to be applied to each corner of large images. -->
+        <attr format="dimension" name="imageCornerRadius"/>
+
+        <!-- Text size to use for title text in the header of the slice. -->
+        <attr format="dimension" name="headerTitleSize"/>
+        <!-- Text size to use for subtitle text in the header of the slice. -->
+        <attr format="dimension" name="headerSubtitleSize"/>
+        <!-- Vertical padding to use between header title text and header subtitle text. -->
+        <attr format="dimension" name="headerTextVerticalPadding"/>
+
+        <!-- Text size to use for title text in a non-header row of the slice. -->
+        <attr format="dimension" name="titleSize"/>
+        <!-- Text size to use for subtitle text in a non-header row of the slice. -->
+        <attr format="dimension" name="subtitleSize"/>
+        <!-- Vertical padding to use between title text and subtitle text. -->
+        <attr format="dimension" name="textVerticalPadding"/>
+
+        <!-- Text size to use for title text in a grid row of the slice. -->
+        <attr format="dimension" name="gridTitleSize"/>
+        <!-- Text size to use for the subtitle text in a grid row of the slice. -->
+        <attr format="dimension" name="gridSubtitleSize"/>
+        <!-- Vertical padding to use between title text and subtitle text in a grid cell. -->
+        <attr format="dimension" name="gridTextVerticalPadding"/>
+        <!-- A grid row with all images goes right to the edge of the view if it's the first or
+         last row of a slice. Use this to specify padding to apply to the top of the grid row in
+         this situation. -->
+        <attr format="dimension" name="gridTopPadding"/>
+        <!-- A grid row with all images goes right to the edge of the view if it's the first or
+         last row of a slice. Use this to specify padding to apply to the bottom of the grid row in
+         this situation. -->
+        <attr format="dimension" name="gridBottomPadding"/>
+
+        <!-- To apply a style for all slice rows shown within an activity or app you
+             may set this in your app theme pointing to your custom RowView style.-->
+        <attr format="reference" name="rowStyle"/>
+
+        <!-- Min height of row view; default size if one line of text -->
+        <attr format="dimension" name="rowMinHeight"/>
+        <!-- Size of row view with two lines of text -->
+        <attr format="dimension" name="rowMaxHeight"/>
+        <!-- Size of range area in a row to fit a slider or progress bar -->
+        <attr format="dimension" name="rowRangeHeight"/>
+        <!-- Size of text area row with one line of text and then a range element-->
+        <attr format="dimension" name="rowRangeSingleTextHeight"/>
+        <!-- Size of row view when range is inline -->
+        <attr format="dimension" name="rowInlineRangeHeight"/>
+
+        <!-- Removes the height restriction of slices in MODE_LARGE. If the slice
+         is smaller than the available height, wrap_content decides whether the slice takes
+         up the entire height or only the required height. If the slice is bigger than
+         the available height, the height mode decides whether the slice fills the height
+         (height mode AT_MOST/EXACTLY), or expands to fit all items (height mode UNSPECIFIED).
+         -->
+        <attr format="boolean" name="expandToAvailableHeight"/>
+
+        <!-- Hide the slice's header row unless the slice only has a single row. Note that if
+         the slice doesn't have an explicit header row, the first row is considered the header row.
+         -->
+        <attr format="boolean" name="hideHeaderRow"/>
+    </declare-styleable>
+</resources>
