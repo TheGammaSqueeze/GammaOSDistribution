@@ -1,0 +1,693 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA256_h",
+   "name" : "unsigned char [256]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA256_h",
+   "size" : 256,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "gwp_asan::Error::UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "gwp_asan::Error::USE_AFTER_FREE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "gwp_asan::Error::DOUBLE_FREE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "gwp_asan::Error::INVALID_FREE"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "gwp_asan::Error::BUFFER_OVERFLOW"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "gwp_asan::Error::BUFFER_UNDERFLOW"
+    }
+   ],
+   "linker_set_key" : "_ZTIN8gwp_asan5ErrorE",
+   "name" : "gwp_asan::Error",
+   "referenced_type" : "_ZTIN8gwp_asan5ErrorE",
+   "self_type" : "_ZTIN8gwp_asan5ErrorE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFjPjjE",
+   "name" : "unsigned int (unsigned int *, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFjPjjE",
+   "return_type" : "_ZTIj",
+   "self_type" : "_ZTIFjPjjE",
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "gwp_asan::ErrorToString",
+   "linker_set_key" : "_ZN8gwp_asan13ErrorToStringERKNS_5ErrorE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKN8gwp_asan5ErrorE"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::AllocatorState",
+   "linker_set_key" : "_ZN8gwp_asan14AllocatorStateC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan14AllocatorStateE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::AllocatorState",
+   "linker_set_key" : "_ZN8gwp_asan14AllocatorStateC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan14AllocatorStateE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocationMetadata::CallSiteInfo::RecordBacktrace",
+   "linker_set_key" : "_ZN8gwp_asan18AllocationMetadata12CallSiteInfo15RecordBacktraceEPFjPjjE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan18AllocationMetadata12CallSiteInfoE"
+    },
+    {
+     "referenced_type" : "_ZTIPFjPjjE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocationMetadata::RecordAllocation",
+   "linker_set_key" : "_ZN8gwp_asan18AllocationMetadata16RecordAllocationEjj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan18AllocationMetadataE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocationMetadata::RecordDeallocation",
+   "linker_set_key" : "_ZN8gwp_asan18AllocationMetadata18RecordDeallocationEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan18AllocationMetadataE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::options::Options::setDefaults",
+   "linker_set_key" : "_ZN8gwp_asan7options7Options11setDefaultsEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN8gwp_asan7options7OptionsE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::slotToAddr",
+   "linker_set_key" : "_ZNK8gwp_asan14AllocatorState10slotToAddrEj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN8gwp_asan14AllocatorStateE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::isGuardPage",
+   "linker_set_key" : "_ZNK8gwp_asan14AllocatorState11isGuardPageEj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN8gwp_asan14AllocatorStateE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::pointerIsMine",
+   "linker_set_key" : "_ZNK8gwp_asan14AllocatorState13pointerIsMineEPKv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN8gwp_asan14AllocatorStateE"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::getNearestSlot",
+   "linker_set_key" : "_ZNK8gwp_asan14AllocatorState14getNearestSlotEj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN8gwp_asan14AllocatorStateE"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "function_name" : "gwp_asan::AllocatorState::maximumAllocationSize",
+   "linker_set_key" : "_ZNK8gwp_asan14AllocatorState21maximumAllocationSizeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN8gwp_asan14AllocatorStateE"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN8gwp_asan18AllocationMetadata23kStackFrameStorageBytesE",
+   "name" : "gwp_asan::AllocationMetadata::kStackFrameStorageBytes",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN8gwp_asan18AllocationMetadata24kMaxTraceLengthToCollectE",
+   "name" : "gwp_asan::AllocationMetadata::kMaxTraceLengthToCollect",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "linker_set_key" : "_ZN8gwp_asanL16kInvalidThreadIDE",
+   "name" : "gwp_asan::kInvalidThreadID",
+   "referenced_type" : "_ZTIKy",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKN8gwp_asan5ErrorE",
+   "name" : "const gwp_asan::Error &",
+   "referenced_type" : "_ZTIKN8gwp_asan5ErrorE",
+   "self_type" : "_ZTIRKN8gwp_asan5ErrorE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFjPjjE",
+   "name" : "unsigned int (*)(unsigned int *, unsigned int)",
+   "referenced_type" : "_ZTIFjPjjE",
+   "self_type" : "_ZTIPFjPjjE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN8gwp_asan14AllocatorStateE",
+   "name" : "const gwp_asan::AllocatorState *",
+   "referenced_type" : "_ZTIKN8gwp_asan14AllocatorStateE",
+   "self_type" : "_ZTIPKN8gwp_asan14AllocatorStateE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN8gwp_asan14AllocatorStateE",
+   "name" : "gwp_asan::AllocatorState *",
+   "referenced_type" : "_ZTIN8gwp_asan14AllocatorStateE",
+   "self_type" : "_ZTIPN8gwp_asan14AllocatorStateE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "name" : "gwp_asan::AllocationMetadata::CallSiteInfo *",
+   "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "self_type" : "_ZTIPN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN8gwp_asan18AllocationMetadataE",
+   "name" : "gwp_asan::AllocationMetadata *",
+   "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadataE",
+   "self_type" : "_ZTIPN8gwp_asan18AllocationMetadataE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPN8gwp_asan7options7OptionsE",
+   "name" : "gwp_asan::options::Options *",
+   "referenced_type" : "_ZTIN8gwp_asan7options7OptionsE",
+   "self_type" : "_ZTIPN8gwp_asan7options7OptionsE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN8gwp_asan14AllocatorStateE",
+   "name" : "const gwp_asan::AllocatorState",
+   "referenced_type" : "_ZTIN8gwp_asan14AllocatorStateE",
+   "self_type" : "_ZTIKN8gwp_asan14AllocatorStateE",
+   "size" : 24,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN8gwp_asan5ErrorE",
+   "name" : "const gwp_asan::Error",
+   "referenced_type" : "_ZTIN8gwp_asan5ErrorE",
+   "self_type" : "_ZTIKN8gwp_asan5ErrorE",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKy",
+   "name" : "const unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIKy",
+   "size" : 8,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__clang_max_align_nonce1",
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "field_name" : "__clang_max_align_nonce2",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTI11max_align_t",
+   "name" : "max_align_t",
+   "referenced_type" : "_ZTI11max_align_t",
+   "self_type" : "_ZTI11max_align_t",
+   "size" : 16,
+   "source_file" : "prebuilts/clang-tools/linux-x86/clang-headers/__stddef_max_align_t.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "MaxSimultaneousAllocations",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "GuardedPagePool",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "GuardedPagePoolEnd",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "PageSize",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "FailureType",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIN8gwp_asan5ErrorE"
+    },
+    {
+     "field_name" : "FailureAddress",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN8gwp_asan14AllocatorStateE",
+   "name" : "gwp_asan::AllocatorState",
+   "referenced_type" : "_ZTIN8gwp_asan14AllocatorStateE",
+   "self_type" : "_ZTIN8gwp_asan14AllocatorStateE",
+   "size" : 24,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "CompressedTrace",
+     "referenced_type" : "_ZTIA256_h"
+    },
+    {
+     "field_name" : "ThreadID",
+     "field_offset" : 2048,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "TraceSize",
+     "field_offset" : 2112,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "name" : "gwp_asan::AllocationMetadata::CallSiteInfo",
+   "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "self_type" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE",
+   "size" : 272,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "Addr",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "RequestedSize",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "AllocationTrace",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE"
+    },
+    {
+     "field_name" : "DeallocationTrace",
+     "field_offset" : 2240,
+     "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadata12CallSiteInfoE"
+    },
+    {
+     "field_name" : "IsDeallocated",
+     "field_offset" : 4416,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN8gwp_asan18AllocationMetadataE",
+   "name" : "gwp_asan::AllocationMetadata",
+   "referenced_type" : "_ZTIN8gwp_asan18AllocationMetadataE",
+   "self_type" : "_ZTIN8gwp_asan18AllocationMetadataE",
+   "size" : 560,
+   "source_file" : "external/gwp_asan/gwp_asan/common.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "Backtrace",
+     "referenced_type" : "_ZTIPFjPjjE"
+    },
+    {
+     "field_name" : "Enabled",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "field_name" : "MaxSimultaneousAllocations",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "SampleRate",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "InstallSignalHandlers",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "field_name" : "InstallForkHandlers",
+     "field_offset" : 136,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "field_name" : "help",
+     "field_offset" : 144,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN8gwp_asan7options7OptionsE",
+   "name" : "gwp_asan::options::Options",
+   "referenced_type" : "_ZTIN8gwp_asan7options7OptionsE",
+   "self_type" : "_ZTIN8gwp_asan7options7OptionsE",
+   "size" : 20,
+   "source_file" : "external/gwp_asan/gwp_asan/options.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
