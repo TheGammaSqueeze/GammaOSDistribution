@@ -1,0 +1,174 @@
+out/soong/.intermediates/external/libgav1/libgav1/android_arm64_armv8-a_static_cfi/obj/external/libgav1/libgav1/src/dsp/dsp.o: \
+  external/compiler-rt/lib/cfi/cfi_blocklist.txt \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/share/cfi_blacklist.txt \
+  external/libgav1/libgav1/src/dsp/dsp.cc \
+  external/libgav1/libgav1/src/dsp/dsp.h external/libcxx/include/cstddef \
+  external/libcxx/include/__config bionic/libc/include/features.h \
+  bionic/libc/include/sys/cdefs.h \
+  bionic/libc/include/android/versioning.h \
+  bionic/libc/include/android/api-level.h bionic/libc/include/pthread.h \
+  external/libcxx/include/version \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr external/libcxx/include/type_traits \
+  external/libcxx/include/cstdint external/libcxx/include/stdint.h \
+  bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h \
+  external/libcxx/include/stddef.h external/libcxx/include/cstdlib \
+  external/libcxx/include/stdlib.h bionic/libc/include/stdlib.h \
+  bionic/libc/include/alloca.h bionic/libc/include/bits/wait.h \
+  bionic/libc/kernel/uapi/linux/wait.h bionic/libc/include/malloc.h \
+  external/libcxx/include/stdio.h bionic/libc/include/stdio.h \
+  bionic/libc/include/sys/types.h bionic/libc/kernel/uapi/linux/types.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/types.h \
+  bionic/libc/kernel/uapi/asm-generic/types.h \
+  bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h \
+  bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+  bionic/libc/kernel/uapi/linux/posix_types.h \
+  bionic/libc/kernel/uapi/linux/stddef.h \
+  bionic/libc/kernel/android/uapi/linux/compiler_types.h \
+  bionic/libc/kernel/android/uapi/linux/compiler.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/posix_types.h \
+  bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+  bionic/libc/include/bits/pthread_types.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  bionic/libc/include/bits/seek_constants.h \
+  bionic/libc/include/bits/fortify/stdio.h bionic/libc/include/xlocale.h \
+  bionic/libc/include/bits/fortify/stdlib.h \
+  bionic/libc/include/android/legacy_stdlib_inlines.h \
+  external/libgav1/libgav1/src/dsp/common.h \
+  external/libgav1/libgav1/src/dsp/constants.h \
+  external/libgav1/libgav1/src/utils/constants.h \
+  external/libgav1/libgav1/src/utils/bit_mask_set.h \
+  external/libgav1/libgav1/src/utils/memory.h \
+  external/libcxx/include/cerrno external/libcxx/include/errno.h \
+  bionic/libc/include/errno.h bionic/libc/kernel/uapi/linux/errno.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/errno.h \
+  bionic/libc/kernel/uapi/asm-generic/errno.h \
+  bionic/libc/kernel/uapi/asm-generic/errno-base.h \
+  bionic/libc/include/android/legacy_errno_inlines.h \
+  external/libcxx/include/cstring external/libcxx/include/string.h \
+  bionic/libc/include/string.h bionic/libc/include/bits/strcasecmp.h \
+  bionic/libc/include/strings.h \
+  bionic/libc/include/bits/fortify/strings.h \
+  bionic/libc/include/bits/fortify/string.h \
+  external/libcxx/include/memory external/libcxx/include/typeinfo \
+  external/libcxx/include/exception external/libcxx/include/new \
+  external/libcxx/include/utility external/libcxx/include/__tuple \
+  external/libcxx/include/initializer_list \
+  external/libcxx/include/__debug external/libcxx/include/limits \
+  external/libcxx/include/__undef_macros \
+  external/libcxx/include/iterator external/libcxx/include/iosfwd \
+  external/libcxx/include/wchar.h bionic/libc/include/wchar.h \
+  bionic/libc/include/time.h bionic/libc/include/sys/time.h \
+  bionic/libc/kernel/uapi/linux/time.h \
+  bionic/libc/kernel/uapi/linux/time_types.h \
+  bionic/libc/include/sys/select.h bionic/libc/include/signal.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/sigcontext.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/sve_context.h \
+  bionic/libc/include/bits/signal_types.h \
+  external/libcxx/include/limits.h bionic/libc/include/limits.h \
+  external/libcxx/include/float.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h \
+  bionic/libc/kernel/uapi/linux/limits.h \
+  bionic/libc/include/bits/posix_limits.h \
+  bionic/libc/kernel/uapi/linux/signal.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/signal.h \
+  bionic/libc/kernel/uapi/asm-generic/signal.h \
+  bionic/libc/kernel/uapi/asm-generic/signal-defs.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/siginfo.h \
+  bionic/libc/kernel/uapi/asm-generic/siginfo.h \
+  bionic/libc/include/bits/timespec.h bionic/libc/include/sys/ucontext.h \
+  bionic/libc/include/sys/user.h \
+  bionic/libc/include/android/legacy_signal_inlines.h \
+  bionic/libc/include/bits/mbstate_t.h bionic/libc/include/bits/wctype.h \
+  external/libcxx/include/__functional_base \
+  external/libcxx/include/tuple external/libcxx/include/stdexcept \
+  external/libcxx/include/cassert bionic/libc/include/assert.h \
+  external/libcxx/include/atomic \
+  external/libgav1/libgav1/src/dsp/film_grain_common.h \
+  external/libgav1/libgav1/src/utils/array_2d.h \
+  external/libgav1/libgav1/src/utils/compiler_attributes.h \
+  external/libgav1/libgav1/src/utils/cpu.h \
+  external/libgav1/libgav1/src/utils/reference_info.h \
+  external/libcxx/include/array external/libcxx/include/algorithm \
+  external/libcxx/include/functional external/libcxx/include/bit \
+  external/libgav1/libgav1/src/utils/types.h \
+  external/libcxx/include/mutex external/libcxx/include/__mutex_base \
+  external/libcxx/include/chrono external/libcxx/include/ctime \
+  external/libcxx/include/ratio external/libcxx/include/climits \
+  external/libcxx/include/system_error external/libcxx/include/__errc \
+  external/libcxx/include/string external/libcxx/include/string_view \
+  external/libcxx/include/__string external/libcxx/include/cstdio \
+  external/libcxx/include/cwchar external/libcxx/include/cwctype \
+  external/libcxx/include/cctype external/libcxx/include/ctype.h \
+  bionic/libc/include/ctype.h bionic/libc/include/bits/ctype_inlines.h \
+  external/libcxx/include/wctype.h bionic/libc/include/wctype.h \
+  external/libcxx/include/__threading_support \
+  bionic/libc/include/sched.h bionic/libc/kernel/uapi/linux/sched.h \
+  external/libgav1/libgav1/src/dsp/average_blend.h \
+  external/libgav1/libgav1/src/dsp/arm/average_blend_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/average_blend_sse4.h \
+  external/libgav1/libgav1/src/dsp/cdef.h \
+  external/libgav1/libgav1/src/dsp/arm/cdef_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/cdef_avx2.h \
+  external/libgav1/libgav1/src/dsp/x86/cdef_sse4.h \
+  external/libgav1/libgav1/src/dsp/convolve.h \
+  external/libgav1/libgav1/src/dsp/arm/convolve_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/convolve_avx2.h \
+  external/libgav1/libgav1/src/dsp/x86/convolve_sse4.h \
+  external/libgav1/libgav1/src/dsp/distance_weighted_blend.h \
+  external/libgav1/libgav1/src/dsp/arm/distance_weighted_blend_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/distance_weighted_blend_sse4.h \
+  external/libgav1/libgav1/src/dsp/film_grain.h \
+  external/libgav1/libgav1/src/dsp/arm/film_grain_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/film_grain_sse4.h \
+  external/libgav1/libgav1/src/dsp/intra_edge.h \
+  external/libgav1/libgav1/src/dsp/arm/intra_edge_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intra_edge_sse4.h \
+  external/libgav1/libgav1/src/dsp/intrapred.h \
+  external/libgav1/libgav1/src/dsp/arm/intrapred_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intrapred_sse4.h \
+  external/libgav1/libgav1/src/dsp/intrapred_cfl.h \
+  external/libgav1/libgav1/src/dsp/arm/intrapred_cfl_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intrapred_cfl_sse4.h \
+  external/libgav1/libgav1/src/dsp/intrapred_directional.h \
+  external/libgav1/libgav1/src/dsp/arm/intrapred_directional_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intrapred_directional_sse4.h \
+  external/libgav1/libgav1/src/dsp/intrapred_filter.h \
+  external/libgav1/libgav1/src/dsp/arm/intrapred_filter_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intrapred_filter_sse4.h \
+  external/libgav1/libgav1/src/dsp/intrapred_smooth.h \
+  external/libgav1/libgav1/src/dsp/arm/intrapred_smooth_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/intrapred_smooth_sse4.h \
+  external/libgav1/libgav1/src/dsp/inverse_transform.h \
+  external/libgav1/libgav1/src/dsp/arm/inverse_transform_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/inverse_transform_sse4.h \
+  external/libgav1/libgav1/src/dsp/loop_filter.h \
+  external/libgav1/libgav1/src/dsp/arm/loop_filter_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/loop_filter_sse4.h \
+  external/libgav1/libgav1/src/dsp/loop_restoration.h \
+  external/libgav1/libgav1/src/dsp/arm/loop_restoration_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/loop_restoration_avx2.h \
+  external/libgav1/libgav1/src/dsp/x86/loop_restoration_sse4.h \
+  external/libgav1/libgav1/src/dsp/mask_blend.h \
+  external/libgav1/libgav1/src/dsp/arm/mask_blend_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/mask_blend_sse4.h \
+  external/libgav1/libgav1/src/dsp/motion_field_projection.h \
+  external/libgav1/libgav1/src/dsp/arm/motion_field_projection_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/motion_field_projection_sse4.h \
+  external/libgav1/libgav1/src/dsp/motion_vector_search.h \
+  external/libgav1/libgav1/src/dsp/arm/motion_vector_search_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/motion_vector_search_sse4.h \
+  external/libgav1/libgav1/src/dsp/obmc.h \
+  external/libgav1/libgav1/src/dsp/arm/obmc_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/obmc_sse4.h \
+  external/libgav1/libgav1/src/dsp/super_res.h \
+  external/libgav1/libgav1/src/dsp/arm/super_res_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/super_res_sse4.h \
+  external/libgav1/libgav1/src/dsp/warp.h \
+  external/libgav1/libgav1/src/dsp/arm/warp_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/warp_sse4.h \
+  external/libgav1/libgav1/src/dsp/weight_mask.h \
+  external/libgav1/libgav1/src/dsp/arm/weight_mask_neon.h \
+  external/libgav1/libgav1/src/dsp/x86/weight_mask_sse4.h
