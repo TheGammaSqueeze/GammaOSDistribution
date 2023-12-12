@@ -1,0 +1,209 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/time_domain.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/time_domain.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/work_queue.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/work_queue.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/work_queue_sets.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/work_queue_sets.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_runner.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_runner.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_runner_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_runner_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/can_schedule_sequence_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/can_schedule_sequence_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/delayed_task_manager.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/delayed_task_manager.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/environment_config.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/environment_config.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/lazy_task_runner.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/lazy_task_runner.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/post_task.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/post_task.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/priority_queue.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/priority_queue.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_lock.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_lock.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_lock_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_lock_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_single_thread_task_runner_manager.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_single_thread_task_runner_manager.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_params.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_params.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_pool.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_pool.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_pool_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_pool_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_pool_params.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_pool_params.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scheduler_worker_stack.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scheduler_worker_stack.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/scoped_set_task_priority_for_current_thread.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/scoped_set_task_priority_for_current_thread.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/sequence.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/sequence.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/sequence_sort_key.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/sequence_sort_key.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/service_thread.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/service_thread.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/single_thread_task_runner_thread_mode.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/single_thread_task_runner_thread_mode.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_scheduler.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_scheduler.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_scheduler_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_scheduler_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_tracker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_tracker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_tracker_posix.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_tracker_posix.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_traits.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_traits.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/task_traits_details.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/task_traits_details.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/test_utils.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/test_utils.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task_scheduler/tracked_ref.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task_scheduler/tracked_ref.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/template_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/template_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/bind_test_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/bind_test_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/copy_only_int.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/copy_only_int.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/fontconfig_util_linux.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/fontconfig_util_linux.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/gtest_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/gtest_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/metrics/histogram_enum_reader.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/metrics/histogram_enum_reader.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/metrics/histogram_tester.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/metrics/histogram_tester.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/mock_entropy_provider.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/mock_entropy_provider.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/move_only_int.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/move_only_int.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/multiprocess_test.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/multiprocess_test.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/scoped_environment_variable_override.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/scoped_environment_variable_override.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/scoped_feature_list.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/scoped_feature_list.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/scoped_locale.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/scoped_locale.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/scoped_task_environment.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/scoped_task_environment.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/test/simple_test_clock.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/test/simple_test_clock.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/time_domain.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task/sequence_manager/time_domain.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/work_queue.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task/sequence_manager/work_queue.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/work_queue_sets.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task/sequence_manager/work_queue_sets.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_runner.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_runner.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_runner_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_runner_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/can_schedule_sequence_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/can_schedule_sequence_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/delayed_task_manager.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/delayed_task_manager.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/environment_config.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/environment_config.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/lazy_task_runner.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/lazy_task_runner.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/post_task.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/post_task.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/priority_queue.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/priority_queue.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_lock.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_lock.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_lock_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_lock_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_single_thread_task_runner_manager.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_single_thread_task_runner_manager.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_params.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_params.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_pool.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_pool.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_pool_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_pool_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_pool_params.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_pool_params.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scheduler_worker_stack.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scheduler_worker_stack.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/scoped_set_task_priority_for_current_thread.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/scoped_set_task_priority_for_current_thread.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/sequence.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/sequence.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/sequence_sort_key.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/sequence_sort_key.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/service_thread.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/service_thread.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/single_thread_task_runner_thread_mode.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/single_thread_task_runner_thread_mode.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_scheduler.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_scheduler.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_scheduler_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_scheduler_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_tracker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_tracker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_tracker_posix.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_tracker_posix.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_traits.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_traits.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/task_traits_details.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/task_traits_details.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/test_utils.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/test_utils.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task_scheduler/tracked_ref.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/task_scheduler/tracked_ref.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/template_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/template_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/bind_test_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/bind_test_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/copy_only_int.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/copy_only_int.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/fontconfig_util_linux.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/fontconfig_util_linux.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/gtest_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/gtest_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/metrics/histogram_enum_reader.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/metrics/histogram_enum_reader.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/metrics/histogram_tester.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/metrics/histogram_tester.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/mock_entropy_provider.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/mock_entropy_provider.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/move_only_int.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/move_only_int.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/multiprocess_test.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/multiprocess_test.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/scoped_environment_variable_override.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/scoped_environment_variable_override.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/scoped_feature_list.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/scoped_feature_list.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/scoped_locale.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/scoped_locale.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/scoped_task_environment.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/scoped_task_environment.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/test/simple_test_clock.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/6/external/libchrome/base/test/simple_test_clock.h"
+  >
+  input_hash: "bc8514ef6995d4f288fe668c1a05aed51ab74e48bc943e7f5f3c6681b4f2deee"
+>
+
