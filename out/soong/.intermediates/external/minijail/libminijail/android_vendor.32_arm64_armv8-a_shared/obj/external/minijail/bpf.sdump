@@ -1,0 +1,610 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA512_11__bpf_label",
+   "name" : "__bpf_label [512]",
+   "referenced_type" : "_ZTI11__bpf_label",
+   "self_type" : "_ZTIA512_11__bpf_label",
+   "size" : 8192,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA6_y",
+   "name" : "unsigned long long [6]",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIA6_y",
+   "size" : 48,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_13syscall_entry",
+   "name" : "syscall_entry []",
+   "referenced_type" : "_ZTI13syscall_entry",
+   "self_type" : "_ZTIA_13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "linker_set_key" : "_ZTIA_PKc",
+   "name" : "const char *[]",
+   "referenced_type" : "_ZTIPKc",
+   "self_type" : "_ZTIA_PKc",
+   "source_file" : "external/minijail/util.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_TO_SYSLOG"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "LOG_TO_FD"
+    }
+   ],
+   "linker_set_key" : "_ZTI16logging_system_t",
+   "name" : "logging_system_t",
+   "referenced_type" : "_ZTI16logging_system_t",
+   "self_type" : "_ZTI16logging_system_t",
+   "size" : 4,
+   "source_file" : "external/minijail/util.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 128,
+     "name" : "EQ"
+    },
+    {
+     "enum_field_value" : 129,
+     "name" : "NE"
+    },
+    {
+     "enum_field_value" : 130,
+     "name" : "LT"
+    },
+    {
+     "enum_field_value" : 131,
+     "name" : "LE"
+    },
+    {
+     "enum_field_value" : 132,
+     "name" : "GT"
+    },
+    {
+     "enum_field_value" : 133,
+     "name" : "GE"
+    },
+    {
+     "enum_field_value" : 134,
+     "name" : "SET"
+    },
+    {
+     "enum_field_value" : 135,
+     "name" : "IN"
+    }
+   ],
+   "linker_set_key" : "_ZTI3$EQ",
+   "name" : "(anonymous enum at external/minijail/bpf.h:33:1)",
+   "referenced_type" : "_ZTI3$EQ",
+   "self_type" : "_ZTI3$EQ",
+   "size" : 4,
+   "source_file" : "external/minijail/bpf.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "bpf_allow_syscall",
+   "linker_set_key" : "bpf_allow_syscall",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_allow_syscall_args",
+   "linker_set_key" : "bpf_allow_syscall_args",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_arg_comp",
+   "linker_set_key" : "bpf_arg_comp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_comp_jeq64",
+   "linker_set_key" : "bpf_comp_jeq64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_comp_jge64",
+   "linker_set_key" : "bpf_comp_jge64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_comp_jgt64",
+   "linker_set_key" : "bpf_comp_jgt64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_comp_jin",
+   "linker_set_key" : "bpf_comp_jin",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_comp_jset64",
+   "linker_set_key" : "bpf_comp_jset64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_label_id",
+   "linker_set_key" : "bpf_label_id",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10bpf_labels"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_load_arg",
+   "linker_set_key" : "bpf_load_arg",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_resolve_jumps",
+   "linker_set_key" : "bpf_resolve_jumps",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10bpf_labels"
+    },
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "bpf_validate_arch",
+   "linker_set_key" : "bpf_validate_arch",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11sock_filter"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "function_name" : "free_label_strings",
+   "linker_set_key" : "free_label_strings",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP10bpf_labels"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/minijail/bpf.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "log_syscalls",
+   "name" : "log_syscalls",
+   "referenced_type" : "_ZTIA_PKc",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "linker_set_key" : "log_syscalls_len",
+   "name" : "log_syscalls_len",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/minijail/util.h"
+  },
+  {
+   "linker_set_key" : "syscall_table",
+   "name" : "syscall_table",
+   "referenced_type" : "_ZTIA_K13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "linker_set_key" : "syscall_table_size",
+   "name" : "syscall_table_size",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "external/minijail/libsyscalls.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP10bpf_labels",
+   "name" : "bpf_labels *",
+   "referenced_type" : "_ZTI10bpf_labels",
+   "self_type" : "_ZTIP10bpf_labels",
+   "size" : 8,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP11sock_filter",
+   "name" : "sock_filter *",
+   "referenced_type" : "_ZTI11sock_filter",
+   "self_type" : "_ZTIP11sock_filter",
+   "size" : 8,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPP11sock_filter",
+   "name" : "sock_filter **",
+   "referenced_type" : "_ZTIP11sock_filter",
+   "self_type" : "_ZTIPP11sock_filter",
+   "size" : 8,
+   "source_file" : "external/minijail/bpf.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIA_K13syscall_entry",
+   "name" : "syscall_entry const[]",
+   "referenced_type" : "_ZTIA_13syscall_entry",
+   "self_type" : "_ZTIA_K13syscall_entry",
+   "source_file" : "external/minijail/libsyscalls.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "external/minijail/libsyscalls.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "count",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "labels",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIA512_11__bpf_label"
+    }
+   ],
+   "linker_set_key" : "_ZTI10bpf_labels",
+   "name" : "bpf_labels",
+   "referenced_type" : "_ZTI10bpf_labels",
+   "self_type" : "_ZTI10bpf_labels",
+   "size" : 8200,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "label",
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "location",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI11__bpf_label",
+   "name" : "__bpf_label",
+   "referenced_type" : "_ZTI11__bpf_label",
+   "self_type" : "_ZTI11__bpf_label",
+   "size" : 16,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "nr",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "arch",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "instruction_pointer",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "args",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIA6_y"
+    }
+   ],
+   "linker_set_key" : "_ZTI12seccomp_data",
+   "name" : "seccomp_data",
+   "referenced_type" : "_ZTI12seccomp_data",
+   "self_type" : "_ZTI12seccomp_data",
+   "size" : 64,
+   "source_file" : "external/minijail/bpf.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "name",
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "nr",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI13syscall_entry",
+   "name" : "syscall_entry",
+   "referenced_type" : "_ZTI13syscall_entry",
+   "self_type" : "_ZTI13syscall_entry",
+   "size" : 16,
+   "source_file" : "external/minijail/libsyscalls.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
