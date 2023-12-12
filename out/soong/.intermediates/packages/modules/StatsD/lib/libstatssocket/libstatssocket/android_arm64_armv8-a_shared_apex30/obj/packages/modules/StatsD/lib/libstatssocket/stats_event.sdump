@@ -1,0 +1,469 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIf",
+   "name" : "float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIf",
+   "size" : 4
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "AStatsEvent_addBoolAnnotation",
+   "linker_set_key" : "AStatsEvent_addBoolAnnotation",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_addInt32Annotation",
+   "linker_set_key" : "AStatsEvent_addInt32Annotation",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_build",
+   "linker_set_key" : "AStatsEvent_build",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_getAtomId",
+   "linker_set_key" : "AStatsEvent_getAtomId",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_getBuffer",
+   "linker_set_key" : "AStatsEvent_getBuffer",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_getErrors",
+   "linker_set_key" : "AStatsEvent_getErrors",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_obtain",
+   "linker_set_key" : "AStatsEvent_obtain",
+   "return_type" : "_ZTIP11AStatsEvent",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_overwriteTimestamp",
+   "linker_set_key" : "AStatsEvent_overwriteTimestamp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_release",
+   "linker_set_key" : "AStatsEvent_release",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_setAtomId",
+   "linker_set_key" : "AStatsEvent_setAtomId",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_write",
+   "linker_set_key" : "AStatsEvent_write",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeAttributionChain",
+   "linker_set_key" : "AStatsEvent_writeAttributionChain",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIPKj"
+    },
+    {
+     "referenced_type" : "_ZTIPKPKc"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeBool",
+   "linker_set_key" : "AStatsEvent_writeBool",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeByteArray",
+   "linker_set_key" : "AStatsEvent_writeByteArray",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeFloat",
+   "linker_set_key" : "AStatsEvent_writeFloat",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIf"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeInt32",
+   "linker_set_key" : "AStatsEvent_writeInt32",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeInt64",
+   "linker_set_key" : "AStatsEvent_writeInt64",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "function_name" : "AStatsEvent_writeString",
+   "linker_set_key" : "AStatsEvent_writeString",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11AStatsEvent"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP11AStatsEvent",
+   "name" : "AStatsEvent *",
+   "referenced_type" : "_ZTI11AStatsEvent",
+   "self_type" : "_ZTIP11AStatsEvent",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKPKc",
+   "name" : "const char *const *",
+   "referenced_type" : "_ZTIKPKc",
+   "self_type" : "_ZTIPKPKc",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKj",
+   "name" : "const unsigned int *",
+   "referenced_type" : "_ZTIKj",
+   "self_type" : "_ZTIPKj",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPKc",
+   "name" : "const char *const",
+   "referenced_type" : "_ZTIPKc",
+   "self_type" : "_ZTIKPKc",
+   "size" : 8,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "packages/modules/StatsD/lib/libstatssocket/include/stats_event.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}
