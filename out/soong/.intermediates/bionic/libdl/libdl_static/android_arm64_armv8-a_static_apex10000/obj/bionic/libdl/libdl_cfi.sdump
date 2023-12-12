@@ -1,0 +1,681 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA10_i",
+   "name" : "int [10]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA10_i",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA12_i",
+   "name" : "int [12]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA12_i",
+   "size" : 48,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA14_i",
+   "name" : "int [14]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA14_i",
+   "size" : 56,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA16_c",
+   "name" : "char [16]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA16_c",
+   "size" : 16,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA16_m",
+   "name" : "unsigned long [16]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA16_m",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA2_i",
+   "name" : "int [2]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA2_i",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA31_m",
+   "name" : "unsigned long [31]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA31_m",
+   "size" : 248,
+   "source_file" : "bionic/libc/include/sys/user.h"
+  },
+  {
+   "alignment" : 16,
+   "linker_set_key" : "_ZTIA32_o",
+   "name" : "unsigned __int128 [32]",
+   "referenced_type" : "_ZTIo",
+   "self_type" : "_ZTIA32_o",
+   "size" : 512,
+   "source_file" : "bionic/libc/include/sys/user.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA4088_c",
+   "name" : "char [4088]",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIA4088_c",
+   "size" : 4088,
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA4_l",
+   "name" : "long [4]",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIA4_l",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 16,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 16
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "alignment" : 16,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIo",
+   "name" : "unsigned __int128",
+   "referenced_type" : "_ZTIo",
+   "self_type" : "_ZTIo",
+   "size" : 16
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 2,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "CFIShadow::kInvalidShadow"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "CFIShadow::kUncheckedShadow"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "CFIShadow::kRegularShadowMin"
+    }
+   ],
+   "linker_set_key" : "_ZTIN9CFIShadow12ShadowValuesE",
+   "name" : "CFIShadow::ShadowValues",
+   "referenced_type" : "_ZTIN9CFIShadow12ShadowValuesE",
+   "self_type" : "_ZTIN9CFIShadow12ShadowValuesE",
+   "size" : 2,
+   "source_file" : "bionic/libc/private/CFIShadow.h",
+   "underlying_type" : "_ZTIt"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "CFIShadow::MemToShadowOffset",
+   "linker_set_key" : "_ZN9CFIShadow17MemToShadowOffsetEm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "function_name" : "__cfi_init",
+   "linker_set_key" : "__cfi_init",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPm",
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "function_name" : "__cfi_shadow_size",
+   "linker_set_key" : "__cfi_shadow_size",
+   "return_type" : "_ZTIm",
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "function_name" : "__cfi_slowpath",
+   "linker_set_key" : "__cfi_slowpath",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "function_name" : "__cfi_slowpath_diag",
+   "linker_set_key" : "__cfi_slowpath_diag",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZL17kLibraryAlignment",
+   "name" : "kLibraryAlignment",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZL19shadow_base_storage",
+   "name" : "shadow_base_storage",
+   "referenced_type" : "_ZTI3$_0",
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "linker_set_key" : "_ZL21kLibraryAlignmentBits",
+   "name" : "kLibraryAlignmentBits",
+   "referenced_type" : "_ZTIKj",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow11kShadowSizeE",
+   "name" : "CFIShadow::kShadowSize",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow12kShadowAlignE",
+   "name" : "CFIShadow::kShadowAlign",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow14kCfiCheckAlignE",
+   "name" : "CFIShadow::kCfiCheckAlign",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow14kMaxTargetAddrE",
+   "name" : "CFIShadow::kMaxTargetAddr",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow18kShadowGranularityE",
+   "name" : "CFIShadow::kShadowGranularity",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "linker_set_key" : "_ZN9CFIShadow20kCfiCheckGranularityE",
+   "name" : "CFIShadow::kCfiCheckGranularity",
+   "referenced_type" : "_ZTIKm",
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  },
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKm",
+   "name" : "const unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIKm",
+   "size" : 8,
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "__clang_max_align_nonce1",
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "field_name" : "__clang_max_align_nonce2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTI11max_align_t",
+   "name" : "max_align_t",
+   "referenced_type" : "_ZTI11max_align_t",
+   "self_type" : "_ZTI11max_align_t",
+   "size" : 32,
+   "source_file" : "prebuilts/clang-tools/linux-x86/clang-headers/__stddef_max_align_t.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "flags",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "stack_base",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "stack_size",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "guard_size",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "sched_policy",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "sched_priority",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "__reserved",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIA16_c"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_attr_t",
+   "name" : "pthread_attr_t",
+   "referenced_type" : "_ZTI14pthread_attr_t",
+   "self_type" : "_ZTI14pthread_attr_t",
+   "size" : 56,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA12_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI14pthread_cond_t",
+   "name" : "pthread_cond_t",
+   "referenced_type" : "_ZTI14pthread_cond_t",
+   "self_type" : "_ZTI14pthread_cond_t",
+   "size" : 48,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "fds_bits",
+     "referenced_type" : "_ZTIA16_m"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fd_set",
+   "name" : "__kernel_fd_set",
+   "referenced_type" : "_ZTI15__kernel_fd_set",
+   "self_type" : "_ZTI15__kernel_fd_set",
+   "size" : 128,
+   "source_file" : "bionic/libc/kernel/uapi/linux/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "val",
+     "referenced_type" : "_ZTIA2_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15__kernel_fsid_t",
+   "name" : "__kernel_fsid_t",
+   "referenced_type" : "_ZTI15__kernel_fsid_t",
+   "self_type" : "_ZTI15__kernel_fsid_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/kernel/uapi/asm-generic/posix_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA10_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI15pthread_mutex_t",
+   "name" : "pthread_mutex_t",
+   "referenced_type" : "_ZTI15pthread_mutex_t",
+   "self_type" : "_ZTI15pthread_mutex_t",
+   "size" : 40,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA14_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI16pthread_rwlock_t",
+   "name" : "pthread_rwlock_t",
+   "referenced_type" : "_ZTI16pthread_rwlock_t",
+   "self_type" : "_ZTI16pthread_rwlock_t",
+   "size" : 56,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "regs",
+     "referenced_type" : "_ZTIA31_m"
+    },
+    {
+     "field_name" : "sp",
+     "field_offset" : 1984,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "pc",
+     "field_offset" : 2048,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "pstate",
+     "field_offset" : 2112,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI16user_regs_struct",
+   "name" : "user_regs_struct",
+   "referenced_type" : "_ZTI16user_regs_struct",
+   "self_type" : "_ZTI16user_regs_struct",
+   "size" : 272,
+   "source_file" : "bionic/libc/include/sys/user.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIA4_l"
+    }
+   ],
+   "linker_set_key" : "_ZTI17pthread_barrier_t",
+   "name" : "pthread_barrier_t",
+   "referenced_type" : "_ZTI17pthread_barrier_t",
+   "self_type" : "_ZTI17pthread_barrier_t",
+   "size" : 32,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__private",
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "linker_set_key" : "_ZTI18pthread_spinlock_t",
+   "name" : "pthread_spinlock_t",
+   "referenced_type" : "_ZTI18pthread_spinlock_t",
+   "self_type" : "_ZTI18pthread_spinlock_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/include/bits/pthread_types.h"
+  },
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "vregs",
+     "referenced_type" : "_ZTIA32_o"
+    },
+    {
+     "field_name" : "fpsr",
+     "field_offset" : 4096,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "fpcr",
+     "field_offset" : 4128,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI18user_fpsimd_struct",
+   "name" : "user_fpsimd_struct",
+   "referenced_type" : "_ZTI18user_fpsimd_struct",
+   "self_type" : "_ZTI18user_fpsimd_struct",
+   "size" : 528,
+   "source_file" : "bionic/libc/include/sys/user.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "v",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "padding",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIA4088_c"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTI3$_0",
+   "name" : "(anonymous struct at bionic/libdl/libdl_cfi.cpp:27:8)",
+   "referenced_type" : "_ZTI3$_0",
+   "self_type" : "_ZTI3$_0",
+   "size" : 4096,
+   "source_file" : "bionic/libdl/libdl_cfi.cpp"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "iov_base",
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "field_name" : "iov_len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI5iovec",
+   "name" : "iovec",
+   "referenced_type" : "_ZTI5iovec",
+   "self_type" : "_ZTI5iovec",
+   "size" : 16,
+   "source_file" : "bionic/libc/kernel/uapi/linux/uio.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTI9CFIShadow",
+   "name" : "CFIShadow",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTI9CFIShadow",
+   "self_type" : "_ZTI9CFIShadow",
+   "size" : 1,
+   "source_file" : "bionic/libc/private/CFIShadow.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
