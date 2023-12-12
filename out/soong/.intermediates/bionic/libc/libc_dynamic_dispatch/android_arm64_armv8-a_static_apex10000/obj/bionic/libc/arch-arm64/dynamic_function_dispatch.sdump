@@ -1,0 +1,627 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 16,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 16
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPcPKciE",
+   "name" : "char *(const char *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFPcPKciE",
+   "return_type" : "_ZTIPc",
+   "self_type" : "_ZTIFPcPKciE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvPKvimE",
+   "name" : "void *(const void *, int, unsigned long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvPKvimE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvPKvimE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPKcS0_E",
+   "name" : "int (const char *, const char *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPKcS0_E",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPKcS0_E",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPKcS0_iE",
+   "name" : "int (const char *, const char *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPKcS0_iE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPKcS0_iE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPcPKcE",
+   "name" : "int (char *, const char *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPcPKcE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPcPKcE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFmPKcE",
+   "name" : "unsigned long (const char *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "referenced_type" : "_ZTIFmPKcE",
+   "return_type" : "_ZTIm",
+   "self_type" : "_ZTIFmPKcE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "memchr",
+   "linker_set_key" : "memchr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "memchr_resolver",
+   "linker_set_key" : "memchr_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFPvPKvimE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "stpcpy",
+   "linker_set_key" : "stpcpy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "stpcpy_resolver",
+   "linker_set_key" : "stpcpy_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFiPcPKcE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strchr",
+   "linker_set_key" : "strchr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strchr_resolver",
+   "linker_set_key" : "strchr_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFPcPKciE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strchrnul",
+   "linker_set_key" : "strchrnul",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strchrnul_resolver",
+   "linker_set_key" : "strchrnul_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFPcPKciE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strcmp",
+   "linker_set_key" : "strcmp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strcmp_resolver",
+   "linker_set_key" : "strcmp_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFiPKcS0_E",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strcpy",
+   "linker_set_key" : "strcpy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strcpy_resolver",
+   "linker_set_key" : "strcpy_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFiPcPKcE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strlen",
+   "linker_set_key" : "strlen",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strlen_resolver",
+   "linker_set_key" : "strlen_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFmPKcE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strncmp",
+   "linker_set_key" : "strncmp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strncmp_resolver",
+   "linker_set_key" : "strncmp_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFiPKcS0_iE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strrchr",
+   "linker_set_key" : "strrchr",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPc",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "function_name" : "strrchr_resolver",
+   "linker_set_key" : "strrchr_resolver",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIP13__ifunc_arg_t"
+    }
+   ],
+   "return_type" : "_ZTIPFPcPKciE",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP13__ifunc_arg_t",
+   "name" : "__ifunc_arg_t *",
+   "referenced_type" : "_ZTI13__ifunc_arg_t",
+   "self_type" : "_ZTIP13__ifunc_arg_t",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPcPKciE",
+   "name" : "char *(*)(const char *, int)",
+   "referenced_type" : "_ZTIFPcPKciE",
+   "self_type" : "_ZTIPFPcPKciE",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPvPKvimE",
+   "name" : "void *(*)(const void *, int, unsigned long)",
+   "referenced_type" : "_ZTIFPvPKvimE",
+   "self_type" : "_ZTIPFPvPKvimE",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPKcS0_E",
+   "name" : "int (*)(const char *, const char *)",
+   "referenced_type" : "_ZTIFiPKcS0_E",
+   "self_type" : "_ZTIPFiPKcS0_E",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPKcS0_iE",
+   "name" : "int (*)(const char *, const char *, int)",
+   "referenced_type" : "_ZTIFiPKcS0_iE",
+   "self_type" : "_ZTIPFiPKcS0_iE",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPcPKcE",
+   "name" : "int (*)(char *, const char *)",
+   "referenced_type" : "_ZTIFiPcPKcE",
+   "self_type" : "_ZTIPFiPcPKcE",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFmPKcE",
+   "name" : "unsigned long (*)(const char *)",
+   "referenced_type" : "_ZTIFmPKcE",
+   "self_type" : "_ZTIPFmPKcE",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "bionic/libc/arch-arm64/dynamic_function_dispatch.cpp"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "__clang_max_align_nonce1",
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "field_name" : "__clang_max_align_nonce2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTI11max_align_t",
+   "name" : "max_align_t",
+   "referenced_type" : "_ZTI11max_align_t",
+   "self_type" : "_ZTI11max_align_t",
+   "size" : 32,
+   "source_file" : "prebuilts/clang-tools/linux-x86/clang-headers/__stddef_max_align_t.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "_size",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "_hwcap",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "_hwcap2",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI13__ifunc_arg_t",
+   "name" : "__ifunc_arg_t",
+   "referenced_type" : "_ZTI13__ifunc_arg_t",
+   "self_type" : "_ZTI13__ifunc_arg_t",
+   "size" : 24,
+   "source_file" : "bionic/libc/include/sys/ifunc.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
