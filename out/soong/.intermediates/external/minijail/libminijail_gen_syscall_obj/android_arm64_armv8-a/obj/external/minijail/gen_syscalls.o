@@ -1,0 +1,784 @@
+# 1 "external/minijail/gen_syscalls.c"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+#define __llvm__ 1
+#define __clang__ 1
+#define __clang_major__ 12
+#define __clang_minor__ 0
+#define __clang_patchlevel__ 7
+#define __clang_version__ "12.0.7 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+#define __GNUC__ 4
+#define __GNUC_MINOR__ 2
+#define __GNUC_PATCHLEVEL__ 1
+#define __GXX_ABI_VERSION 1002
+#define __ATOMIC_RELAXED 0
+#define __ATOMIC_CONSUME 1
+#define __ATOMIC_ACQUIRE 2
+#define __ATOMIC_RELEASE 3
+#define __ATOMIC_ACQ_REL 4
+#define __ATOMIC_SEQ_CST 5
+#define __OPENCL_MEMORY_SCOPE_WORK_ITEM 0
+#define __OPENCL_MEMORY_SCOPE_WORK_GROUP 1
+#define __OPENCL_MEMORY_SCOPE_DEVICE 2
+#define __OPENCL_MEMORY_SCOPE_ALL_SVM_DEVICES 3
+#define __OPENCL_MEMORY_SCOPE_SUB_GROUP 4
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define __VERSION__ "Android (7485623, based on r416183b1) Clang 12.0.7 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+#define __OBJC_BOOL_IS_BOOL 0
+#define __CONSTANT_CFSTRINGS__ 1
+#define __OPTIMIZE__ 1
+#define __ORDER_LITTLE_ENDIAN__ 1234
+#define __ORDER_BIG_ENDIAN__ 4321
+#define __ORDER_PDP_ENDIAN__ 3412
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define __LITTLE_ENDIAN__ 1
+#define _LP64 1
+#define __LP64__ 1
+#define __CHAR_BIT__ 8
+#define __SCHAR_MAX__ 127
+#define __SHRT_MAX__ 32767
+#define __INT_MAX__ 2147483647
+#define __LONG_MAX__ 9223372036854775807L
+#define __LONG_LONG_MAX__ 9223372036854775807LL
+#define __WCHAR_MAX__ 4294967295U
+#define __WINT_MAX__ 4294967295U
+#define __INTMAX_MAX__ 9223372036854775807L
+#define __SIZE_MAX__ 18446744073709551615UL
+#define __UINTMAX_MAX__ 18446744073709551615UL
+#define __PTRDIFF_MAX__ 9223372036854775807L
+#define __INTPTR_MAX__ 9223372036854775807L
+#define __UINTPTR_MAX__ 18446744073709551615UL
+#define __SIZEOF_DOUBLE__ 8
+#define __SIZEOF_FLOAT__ 4
+#define __SIZEOF_INT__ 4
+#define __SIZEOF_LONG__ 8
+#define __SIZEOF_LONG_DOUBLE__ 16
+#define __SIZEOF_LONG_LONG__ 8
+#define __SIZEOF_POINTER__ 8
+#define __SIZEOF_SHORT__ 2
+#define __SIZEOF_PTRDIFF_T__ 8
+#define __SIZEOF_SIZE_T__ 8
+#define __SIZEOF_WCHAR_T__ 4
+#define __SIZEOF_WINT_T__ 4
+#define __SIZEOF_INT128__ 16
+#define __INTMAX_TYPE__ long int
+#define __INTMAX_FMTd__ "ld"
+#define __INTMAX_FMTi__ "li"
+#define __INTMAX_C_SUFFIX__ L
+#define __UINTMAX_TYPE__ long unsigned int
+#define __UINTMAX_FMTo__ "lo"
+#define __UINTMAX_FMTu__ "lu"
+#define __UINTMAX_FMTx__ "lx"
+#define __UINTMAX_FMTX__ "lX"
+#define __UINTMAX_C_SUFFIX__ UL
+#define __INTMAX_WIDTH__ 64
+#define __PTRDIFF_TYPE__ long int
+#define __PTRDIFF_FMTd__ "ld"
+#define __PTRDIFF_FMTi__ "li"
+#define __PTRDIFF_WIDTH__ 64
+#define __INTPTR_TYPE__ long int
+#define __INTPTR_FMTd__ "ld"
+#define __INTPTR_FMTi__ "li"
+#define __INTPTR_WIDTH__ 64
+#define __SIZE_TYPE__ long unsigned int
+#define __SIZE_FMTo__ "lo"
+#define __SIZE_FMTu__ "lu"
+#define __SIZE_FMTx__ "lx"
+#define __SIZE_FMTX__ "lX"
+#define __SIZE_WIDTH__ 64
+#define __WCHAR_TYPE__ unsigned int
+#define __WCHAR_WIDTH__ 32
+#define __WINT_TYPE__ unsigned int
+#define __WINT_WIDTH__ 32
+#define __SIG_ATOMIC_WIDTH__ 32
+#define __SIG_ATOMIC_MAX__ 2147483647
+#define __CHAR16_TYPE__ unsigned short
+#define __CHAR32_TYPE__ unsigned int
+#define __UINTMAX_WIDTH__ 64
+#define __UINTPTR_TYPE__ long unsigned int
+#define __UINTPTR_FMTo__ "lo"
+#define __UINTPTR_FMTu__ "lu"
+#define __UINTPTR_FMTx__ "lx"
+#define __UINTPTR_FMTX__ "lX"
+#define __UINTPTR_WIDTH__ 64
+#define __FLT16_DENORM_MIN__ 5.9604644775390625e-8F16
+#define __FLT16_HAS_DENORM__ 1
+#define __FLT16_DIG__ 3
+#define __FLT16_DECIMAL_DIG__ 5
+#define __FLT16_EPSILON__ 9.765625e-4F16
+#define __FLT16_HAS_INFINITY__ 1
+#define __FLT16_HAS_QUIET_NAN__ 1
+#define __FLT16_MANT_DIG__ 11
+#define __FLT16_MAX_10_EXP__ 4
+#define __FLT16_MAX_EXP__ 16
+#define __FLT16_MAX__ 6.5504e+4F16
+#define __FLT16_MIN_10_EXP__ (-4)
+#define __FLT16_MIN_EXP__ (-13)
+#define __FLT16_MIN__ 6.103515625e-5F16
+#define __FLT_DENORM_MIN__ 1.40129846e-45F
+#define __FLT_HAS_DENORM__ 1
+#define __FLT_DIG__ 6
+#define __FLT_DECIMAL_DIG__ 9
+#define __FLT_EPSILON__ 1.19209290e-7F
+#define __FLT_HAS_INFINITY__ 1
+#define __FLT_HAS_QUIET_NAN__ 1
+#define __FLT_MANT_DIG__ 24
+#define __FLT_MAX_10_EXP__ 38
+#define __FLT_MAX_EXP__ 128
+#define __FLT_MAX__ 3.40282347e+38F
+#define __FLT_MIN_10_EXP__ (-37)
+#define __FLT_MIN_EXP__ (-125)
+#define __FLT_MIN__ 1.17549435e-38F
+#define __DBL_DENORM_MIN__ 4.9406564584124654e-324
+#define __DBL_HAS_DENORM__ 1
+#define __DBL_DIG__ 15
+#define __DBL_DECIMAL_DIG__ 17
+#define __DBL_EPSILON__ 2.2204460492503131e-16
+#define __DBL_HAS_INFINITY__ 1
+#define __DBL_HAS_QUIET_NAN__ 1
+#define __DBL_MANT_DIG__ 53
+#define __DBL_MAX_10_EXP__ 308
+#define __DBL_MAX_EXP__ 1024
+#define __DBL_MAX__ 1.7976931348623157e+308
+#define __DBL_MIN_10_EXP__ (-307)
+#define __DBL_MIN_EXP__ (-1021)
+#define __DBL_MIN__ 2.2250738585072014e-308
+#define __LDBL_DENORM_MIN__ 6.47517511943802511092443895822764655e-4966L
+#define __LDBL_HAS_DENORM__ 1
+#define __LDBL_DIG__ 33
+#define __LDBL_DECIMAL_DIG__ 36
+#define __LDBL_EPSILON__ 1.92592994438723585305597794258492732e-34L
+#define __LDBL_HAS_INFINITY__ 1
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define __LDBL_MANT_DIG__ 113
+#define __LDBL_MAX_10_EXP__ 4932
+#define __LDBL_MAX_EXP__ 16384
+#define __LDBL_MAX__ 1.18973149535723176508575932662800702e+4932L
+#define __LDBL_MIN_10_EXP__ (-4931)
+#define __LDBL_MIN_EXP__ (-16381)
+#define __LDBL_MIN__ 3.36210314311209350626267781732175260e-4932L
+#define __POINTER_WIDTH__ 64
+#define __BIGGEST_ALIGNMENT__ 16
+#define __CHAR_UNSIGNED__ 1
+#define __WCHAR_UNSIGNED__ 1
+#define __WINT_UNSIGNED__ 1
+#define __INT8_TYPE__ signed char
+#define __INT8_FMTd__ "hhd"
+#define __INT8_FMTi__ "hhi"
+#define __INT8_C_SUFFIX__ 
+#define __INT16_TYPE__ short
+#define __INT16_FMTd__ "hd"
+#define __INT16_FMTi__ "hi"
+#define __INT16_C_SUFFIX__ 
+#define __INT32_TYPE__ int
+#define __INT32_FMTd__ "d"
+#define __INT32_FMTi__ "i"
+#define __INT32_C_SUFFIX__ 
+#define __INT64_TYPE__ long int
+#define __INT64_FMTd__ "ld"
+#define __INT64_FMTi__ "li"
+#define __INT64_C_SUFFIX__ L
+#define __UINT8_TYPE__ unsigned char
+#define __UINT8_FMTo__ "hho"
+#define __UINT8_FMTu__ "hhu"
+#define __UINT8_FMTx__ "hhx"
+#define __UINT8_FMTX__ "hhX"
+#define __UINT8_C_SUFFIX__ 
+#define __UINT8_MAX__ 255
+#define __INT8_MAX__ 127
+#define __UINT16_TYPE__ unsigned short
+#define __UINT16_FMTo__ "ho"
+#define __UINT16_FMTu__ "hu"
+#define __UINT16_FMTx__ "hx"
+#define __UINT16_FMTX__ "hX"
+#define __UINT16_C_SUFFIX__ 
+#define __UINT16_MAX__ 65535
+#define __INT16_MAX__ 32767
+#define __UINT32_TYPE__ unsigned int
+#define __UINT32_FMTo__ "o"
+#define __UINT32_FMTu__ "u"
+#define __UINT32_FMTx__ "x"
+#define __UINT32_FMTX__ "X"
+#define __UINT32_C_SUFFIX__ U
+#define __UINT32_MAX__ 4294967295U
+#define __INT32_MAX__ 2147483647
+#define __UINT64_TYPE__ long unsigned int
+#define __UINT64_FMTo__ "lo"
+#define __UINT64_FMTu__ "lu"
+#define __UINT64_FMTx__ "lx"
+#define __UINT64_FMTX__ "lX"
+#define __UINT64_C_SUFFIX__ UL
+#define __UINT64_MAX__ 18446744073709551615UL
+#define __INT64_MAX__ 9223372036854775807L
+#define __INT_LEAST8_TYPE__ signed char
+#define __INT_LEAST8_MAX__ 127
+#define __INT_LEAST8_FMTd__ "hhd"
+#define __INT_LEAST8_FMTi__ "hhi"
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __UINT_LEAST8_MAX__ 255
+#define __UINT_LEAST8_FMTo__ "hho"
+#define __UINT_LEAST8_FMTu__ "hhu"
+#define __UINT_LEAST8_FMTx__ "hhx"
+#define __UINT_LEAST8_FMTX__ "hhX"
+#define __INT_LEAST16_TYPE__ short
+#define __INT_LEAST16_MAX__ 32767
+#define __INT_LEAST16_FMTd__ "hd"
+#define __INT_LEAST16_FMTi__ "hi"
+#define __UINT_LEAST16_TYPE__ unsigned short
+#define __UINT_LEAST16_MAX__ 65535
+#define __UINT_LEAST16_FMTo__ "ho"
+#define __UINT_LEAST16_FMTu__ "hu"
+#define __UINT_LEAST16_FMTx__ "hx"
+#define __UINT_LEAST16_FMTX__ "hX"
+#define __INT_LEAST32_TYPE__ int
+#define __INT_LEAST32_MAX__ 2147483647
+#define __INT_LEAST32_FMTd__ "d"
+#define __INT_LEAST32_FMTi__ "i"
+#define __UINT_LEAST32_TYPE__ unsigned int
+#define __UINT_LEAST32_MAX__ 4294967295U
+#define __UINT_LEAST32_FMTo__ "o"
+#define __UINT_LEAST32_FMTu__ "u"
+#define __UINT_LEAST32_FMTx__ "x"
+#define __UINT_LEAST32_FMTX__ "X"
+#define __INT_LEAST64_TYPE__ long int
+#define __INT_LEAST64_MAX__ 9223372036854775807L
+#define __INT_LEAST64_FMTd__ "ld"
+#define __INT_LEAST64_FMTi__ "li"
+#define __UINT_LEAST64_TYPE__ long unsigned int
+#define __UINT_LEAST64_MAX__ 18446744073709551615UL
+#define __UINT_LEAST64_FMTo__ "lo"
+#define __UINT_LEAST64_FMTu__ "lu"
+#define __UINT_LEAST64_FMTx__ "lx"
+#define __UINT_LEAST64_FMTX__ "lX"
+#define __INT_FAST8_TYPE__ signed char
+#define __INT_FAST8_MAX__ 127
+#define __INT_FAST8_FMTd__ "hhd"
+#define __INT_FAST8_FMTi__ "hhi"
+#define __UINT_FAST8_TYPE__ unsigned char
+#define __UINT_FAST8_MAX__ 255
+#define __UINT_FAST8_FMTo__ "hho"
+#define __UINT_FAST8_FMTu__ "hhu"
+#define __UINT_FAST8_FMTx__ "hhx"
+#define __UINT_FAST8_FMTX__ "hhX"
+#define __INT_FAST16_TYPE__ short
+#define __INT_FAST16_MAX__ 32767
+#define __INT_FAST16_FMTd__ "hd"
+#define __INT_FAST16_FMTi__ "hi"
+#define __UINT_FAST16_TYPE__ unsigned short
+#define __UINT_FAST16_MAX__ 65535
+#define __UINT_FAST16_FMTo__ "ho"
+#define __UINT_FAST16_FMTu__ "hu"
+#define __UINT_FAST16_FMTx__ "hx"
+#define __UINT_FAST16_FMTX__ "hX"
+#define __INT_FAST32_TYPE__ int
+#define __INT_FAST32_MAX__ 2147483647
+#define __INT_FAST32_FMTd__ "d"
+#define __INT_FAST32_FMTi__ "i"
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __UINT_FAST32_MAX__ 4294967295U
+#define __UINT_FAST32_FMTo__ "o"
+#define __UINT_FAST32_FMTu__ "u"
+#define __UINT_FAST32_FMTx__ "x"
+#define __UINT_FAST32_FMTX__ "X"
+#define __INT_FAST64_TYPE__ long int
+#define __INT_FAST64_MAX__ 9223372036854775807L
+#define __INT_FAST64_FMTd__ "ld"
+#define __INT_FAST64_FMTi__ "li"
+#define __UINT_FAST64_TYPE__ long unsigned int
+#define __UINT_FAST64_MAX__ 18446744073709551615UL
+#define __UINT_FAST64_FMTo__ "lo"
+#define __UINT_FAST64_FMTu__ "lu"
+#define __UINT_FAST64_FMTx__ "lx"
+#define __UINT_FAST64_FMTX__ "lX"
+#define __USER_LABEL_PREFIX__ 
+#define __FINITE_MATH_ONLY__ 0
+#define __GNUC_STDC_INLINE__ 1
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+#define __CLANG_ATOMIC_BOOL_LOCK_FREE 2
+#define __CLANG_ATOMIC_CHAR_LOCK_FREE 2
+#define __CLANG_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define __CLANG_ATOMIC_CHAR32_T_LOCK_FREE 2
+#define __CLANG_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define __CLANG_ATOMIC_SHORT_LOCK_FREE 2
+#define __CLANG_ATOMIC_INT_LOCK_FREE 2
+#define __CLANG_ATOMIC_LONG_LOCK_FREE 2
+#define __CLANG_ATOMIC_LLONG_LOCK_FREE 2
+#define __CLANG_ATOMIC_POINTER_LOCK_FREE 2
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 2
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 2
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 2
+#define __GCC_ATOMIC_INT_LOCK_FREE 2
+#define __GCC_ATOMIC_LONG_LOCK_FREE 2
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 2
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 2
+#define __PIC__ 2
+#define __pic__ 2
+#define __PIE__ 2
+#define __pie__ 2
+#define __FLT_EVAL_METHOD__ 0
+#define __FLT_RADIX__ 2
+#define __DECIMAL_DIG__ __LDBL_DECIMAL_DIG__
+#define __SSP_STRONG__ 2
+#define __AARCH64EL__ 1
+#define __aarch64__ 1
+#define _LP64 1
+#define __LP64__ 1
+#define __AARCH64_CMODEL_SMALL__ 1
+#define __ARM_ACLE 200
+#define __ARM_ARCH 8
+#define __ARM_ARCH_PROFILE 'A'
+#define __ARM_64BIT_STATE 1
+#define __ARM_PCS_AAPCS64 1
+#define __ARM_ARCH_ISA_A64 1
+#define __ARM_FEATURE_CLZ 1
+#define __ARM_FEATURE_FMA 1
+#define __ARM_FEATURE_LDREX 0xF
+#define __ARM_FEATURE_IDIV 1
+#define __ARM_FEATURE_DIV 1
+#define __ARM_FEATURE_NUMERIC_MAXMIN 1
+#define __ARM_FEATURE_DIRECTED_ROUNDING 1
+#define __ARM_ALIGN_MAX_STACK_PWR 4
+#define __ARM_FP 0xE
+#define __ARM_FP16_FORMAT_IEEE 1
+#define __ARM_FP16_ARGS 1
+#define __ARM_SIZEOF_WCHAR_T 4
+#define __ARM_SIZEOF_MINIMAL_ENUM 4
+#define __ARM_NEON 1
+#define __ARM_NEON_FP 0xE
+#define __ARM_FEATURE_UNALIGNED 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
+#define unix 1
+#define __unix 1
+#define __unix__ 1
+#define linux 1
+#define __linux 1
+#define __linux__ 1
+#define __ELF__ 1
+#define __ANDROID__ 1
+#define __ANDROID_MIN_SDK_VERSION__ 29
+#define __ANDROID_API__ __ANDROID_MIN_SDK_VERSION__
+#define __STDC__ 1
+#define __STDC_HOSTED__ 1
+#define __STDC_VERSION__ 199901L
+#define __STDC_UTF_16__ 1
+#define __STDC_UTF_32__ 1
+
+# 1 "<command line>" 1
+#define ANDROID 1
+#define NDEBUG 1
+#undef DEBUG
+#define __compiler_offsetof __builtin_offsetof
+#define __ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ 1
+#define _FORTIFY_SOURCE 2
+# 1 "<built-in>" 2
+# 1 "external/minijail/gen_syscalls.c" 2
+# 1 "bionic/libc/kernel/uapi/asm-arm64/asm/unistd.h" 1 3
+# 19 "bionic/libc/kernel/uapi/asm-arm64/asm/unistd.h" 3
+#define __ARCH_WANT_RENAMEAT 
+#define __ARCH_WANT_NEW_STAT 
+#define __ARCH_WANT_SET_GET_RLIMIT 
+#define __ARCH_WANT_TIME32_SYSCALLS 
+#define __ARCH_WANT_SYS_CLONE3 
+
+# 1 "bionic/libc/kernel/uapi/asm-generic/unistd.h" 1 3
+# 19 "bionic/libc/kernel/uapi/asm-generic/unistd.h" 3
+# 1 "bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h" 1 3
+# 20 "bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h" 3
+#define __ASM_BITSPERLONG_H 
+#define __BITS_PER_LONG 64
+
+# 1 "bionic/libc/kernel/uapi/asm-generic/bitsperlong.h" 1 3
+# 20 "bionic/libc/kernel/uapi/asm-generic/bitsperlong.h" 3
+#define _UAPI__ASM_GENERIC_BITS_PER_LONG 
+# 23 "bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h" 2 3
+# 20 "bionic/libc/kernel/uapi/asm-generic/unistd.h" 2 3
+
+#define __SYSCALL(x,y) 
+
+
+
+
+#define __SC_3264(_nr,_32,_64) __SYSCALL(_nr, _64)
+
+
+
+
+
+#define __SC_COMP(_nr,_sys,_comp) __SYSCALL(_nr, _sys)
+#define __SC_COMP_3264(_nr,_32,_64,_comp) __SC_3264(_nr, _32, _64)
+
+#define __NR_io_setup 0
+#define __NR_io_destroy 1
+#define __NR_io_submit 2
+#define __NR_io_cancel 3
+
+#define __NR_io_getevents 4
+
+#define __NR_setxattr 5
+#define __NR_lsetxattr 6
+#define __NR_fsetxattr 7
+#define __NR_getxattr 8
+#define __NR_lgetxattr 9
+#define __NR_fgetxattr 10
+#define __NR_listxattr 11
+#define __NR_llistxattr 12
+#define __NR_flistxattr 13
+#define __NR_removexattr 14
+#define __NR_lremovexattr 15
+#define __NR_fremovexattr 16
+#define __NR_getcwd 17
+#define __NR_lookup_dcookie 18
+#define __NR_eventfd2 19
+#define __NR_epoll_create1 20
+#define __NR_epoll_ctl 21
+#define __NR_epoll_pwait 22
+#define __NR_dup 23
+#define __NR_dup3 24
+#define __NR3264_fcntl 25
+#define __NR_inotify_init1 26
+#define __NR_inotify_add_watch 27
+#define __NR_inotify_rm_watch 28
+#define __NR_ioctl 29
+#define __NR_ioprio_set 30
+#define __NR_ioprio_get 31
+#define __NR_flock 32
+#define __NR_mknodat 33
+#define __NR_mkdirat 34
+#define __NR_unlinkat 35
+#define __NR_symlinkat 36
+#define __NR_linkat 37
+
+#define __NR_renameat 38
+
+#define __NR_umount2 39
+#define __NR_mount 40
+#define __NR_pivot_root 41
+#define __NR_nfsservctl 42
+#define __NR3264_statfs 43
+#define __NR3264_fstatfs 44
+#define __NR3264_truncate 45
+#define __NR3264_ftruncate 46
+#define __NR_fallocate 47
+#define __NR_faccessat 48
+#define __NR_chdir 49
+#define __NR_fchdir 50
+#define __NR_chroot 51
+#define __NR_fchmod 52
+#define __NR_fchmodat 53
+#define __NR_fchownat 54
+#define __NR_fchown 55
+#define __NR_openat 56
+#define __NR_close 57
+#define __NR_vhangup 58
+#define __NR_pipe2 59
+#define __NR_quotactl 60
+#define __NR_getdents64 61
+#define __NR3264_lseek 62
+#define __NR_read 63
+#define __NR_write 64
+#define __NR_readv 65
+#define __NR_writev 66
+#define __NR_pread64 67
+#define __NR_pwrite64 68
+#define __NR_preadv 69
+#define __NR_pwritev 70
+#define __NR3264_sendfile 71
+
+#define __NR_pselect6 72
+#define __NR_ppoll 73
+
+#define __NR_signalfd4 74
+#define __NR_vmsplice 75
+#define __NR_splice 76
+#define __NR_tee 77
+#define __NR_readlinkat 78
+
+#define __NR3264_fstatat 79
+#define __NR3264_fstat 80
+
+#define __NR_sync 81
+#define __NR_fsync 82
+#define __NR_fdatasync 83
+
+
+
+#define __NR_sync_file_range 84
+
+#define __NR_timerfd_create 85
+
+#define __NR_timerfd_settime 86
+#define __NR_timerfd_gettime 87
+
+
+#define __NR_utimensat 88
+
+#define __NR_acct 89
+#define __NR_capget 90
+#define __NR_capset 91
+#define __NR_personality 92
+#define __NR_exit 93
+#define __NR_exit_group 94
+#define __NR_waitid 95
+#define __NR_set_tid_address 96
+#define __NR_unshare 97
+
+#define __NR_futex 98
+
+#define __NR_set_robust_list 99
+#define __NR_get_robust_list 100
+
+#define __NR_nanosleep 101
+
+#define __NR_getitimer 102
+#define __NR_setitimer 103
+#define __NR_kexec_load 104
+#define __NR_init_module 105
+#define __NR_delete_module 106
+#define __NR_timer_create 107
+
+#define __NR_timer_gettime 108
+
+#define __NR_timer_getoverrun 109
+
+#define __NR_timer_settime 110
+
+#define __NR_timer_delete 111
+
+#define __NR_clock_settime 112
+#define __NR_clock_gettime 113
+#define __NR_clock_getres 114
+#define __NR_clock_nanosleep 115
+
+#define __NR_syslog 116
+#define __NR_ptrace 117
+#define __NR_sched_setparam 118
+#define __NR_sched_setscheduler 119
+#define __NR_sched_getscheduler 120
+#define __NR_sched_getparam 121
+#define __NR_sched_setaffinity 122
+#define __NR_sched_getaffinity 123
+#define __NR_sched_yield 124
+#define __NR_sched_get_priority_max 125
+#define __NR_sched_get_priority_min 126
+
+#define __NR_sched_rr_get_interval 127
+
+#define __NR_restart_syscall 128
+#define __NR_kill 129
+#define __NR_tkill 130
+#define __NR_tgkill 131
+#define __NR_sigaltstack 132
+#define __NR_rt_sigsuspend 133
+#define __NR_rt_sigaction 134
+#define __NR_rt_sigprocmask 135
+#define __NR_rt_sigpending 136
+
+#define __NR_rt_sigtimedwait 137
+
+#define __NR_rt_sigqueueinfo 138
+#define __NR_rt_sigreturn 139
+#define __NR_setpriority 140
+#define __NR_getpriority 141
+#define __NR_reboot 142
+#define __NR_setregid 143
+#define __NR_setgid 144
+#define __NR_setreuid 145
+#define __NR_setuid 146
+#define __NR_setresuid 147
+#define __NR_getresuid 148
+#define __NR_setresgid 149
+#define __NR_getresgid 150
+#define __NR_setfsuid 151
+#define __NR_setfsgid 152
+#define __NR_times 153
+#define __NR_setpgid 154
+#define __NR_getpgid 155
+#define __NR_getsid 156
+#define __NR_setsid 157
+#define __NR_getgroups 158
+#define __NR_setgroups 159
+#define __NR_uname 160
+#define __NR_sethostname 161
+#define __NR_setdomainname 162
+
+#define __NR_getrlimit 163
+#define __NR_setrlimit 164
+
+#define __NR_getrusage 165
+#define __NR_umask 166
+#define __NR_prctl 167
+#define __NR_getcpu 168
+
+#define __NR_gettimeofday 169
+#define __NR_settimeofday 170
+#define __NR_adjtimex 171
+
+#define __NR_getpid 172
+#define __NR_getppid 173
+#define __NR_getuid 174
+#define __NR_geteuid 175
+#define __NR_getgid 176
+#define __NR_getegid 177
+#define __NR_gettid 178
+#define __NR_sysinfo 179
+#define __NR_mq_open 180
+#define __NR_mq_unlink 181
+
+#define __NR_mq_timedsend 182
+#define __NR_mq_timedreceive 183
+
+#define __NR_mq_notify 184
+#define __NR_mq_getsetattr 185
+#define __NR_msgget 186
+#define __NR_msgctl 187
+#define __NR_msgrcv 188
+#define __NR_msgsnd 189
+#define __NR_semget 190
+#define __NR_semctl 191
+
+#define __NR_semtimedop 192
+
+#define __NR_semop 193
+#define __NR_shmget 194
+#define __NR_shmctl 195
+#define __NR_shmat 196
+#define __NR_shmdt 197
+#define __NR_socket 198
+#define __NR_socketpair 199
+#define __NR_bind 200
+#define __NR_listen 201
+#define __NR_accept 202
+#define __NR_connect 203
+#define __NR_getsockname 204
+#define __NR_getpeername 205
+#define __NR_sendto 206
+#define __NR_recvfrom 207
+#define __NR_setsockopt 208
+#define __NR_getsockopt 209
+#define __NR_shutdown 210
+#define __NR_sendmsg 211
+#define __NR_recvmsg 212
+#define __NR_readahead 213
+#define __NR_brk 214
+#define __NR_munmap 215
+#define __NR_mremap 216
+#define __NR_add_key 217
+#define __NR_request_key 218
+#define __NR_keyctl 219
+#define __NR_clone 220
+#define __NR_execve 221
+#define __NR3264_mmap 222
+#define __NR3264_fadvise64 223
+
+#define __NR_swapon 224
+#define __NR_swapoff 225
+#define __NR_mprotect 226
+#define __NR_msync 227
+#define __NR_mlock 228
+#define __NR_munlock 229
+#define __NR_mlockall 230
+#define __NR_munlockall 231
+#define __NR_mincore 232
+#define __NR_madvise 233
+#define __NR_remap_file_pages 234
+#define __NR_mbind 235
+#define __NR_get_mempolicy 236
+#define __NR_set_mempolicy 237
+#define __NR_migrate_pages 238
+#define __NR_move_pages 239
+
+#define __NR_rt_tgsigqueueinfo 240
+#define __NR_perf_event_open 241
+#define __NR_accept4 242
+
+#define __NR_recvmmsg 243
+
+#define __NR_arch_specific_syscall 244
+
+#define __NR_wait4 260
+
+#define __NR_prlimit64 261
+#define __NR_fanotify_init 262
+#define __NR_fanotify_mark 263
+#define __NR_name_to_handle_at 264
+#define __NR_open_by_handle_at 265
+
+#define __NR_clock_adjtime 266
+
+#define __NR_syncfs 267
+#define __NR_setns 268
+#define __NR_sendmmsg 269
+#define __NR_process_vm_readv 270
+#define __NR_process_vm_writev 271
+#define __NR_kcmp 272
+#define __NR_finit_module 273
+#define __NR_sched_setattr 274
+#define __NR_sched_getattr 275
+#define __NR_renameat2 276
+#define __NR_seccomp 277
+#define __NR_getrandom 278
+#define __NR_memfd_create 279
+#define __NR_bpf 280
+#define __NR_execveat 281
+#define __NR_userfaultfd 282
+#define __NR_membarrier 283
+#define __NR_mlock2 284
+#define __NR_copy_file_range 285
+#define __NR_preadv2 286
+#define __NR_pwritev2 287
+#define __NR_pkey_mprotect 288
+#define __NR_pkey_alloc 289
+#define __NR_pkey_free 290
+#define __NR_statx 291
+
+#define __NR_io_pgetevents 292
+
+#define __NR_rseq 293
+#define __NR_kexec_file_load 294
+# 385 "bionic/libc/kernel/uapi/asm-generic/unistd.h" 3
+#define __NR_pidfd_send_signal 424
+#define __NR_io_uring_setup 425
+#define __NR_io_uring_enter 426
+#define __NR_io_uring_register 427
+#define __NR_open_tree 428
+#define __NR_move_mount 429
+#define __NR_fsopen 430
+#define __NR_fsconfig 431
+#define __NR_fsmount 432
+#define __NR_fspick 433
+#define __NR_pidfd_open 434
+
+#define __NR_clone3 435
+
+#define __NR_close_range 436
+#define __NR_openat2 437
+#define __NR_pidfd_getfd 438
+#define __NR_faccessat2 439
+#define __NR_process_madvise 440
+#define __NR_epoll_pwait2 441
+#define __NR_mount_setattr 442
+#undef __NR_syscalls
+#define __NR_syscalls 443
+
+#define __NR_fcntl __NR3264_fcntl
+#define __NR_statfs __NR3264_statfs
+#define __NR_fstatfs __NR3264_fstatfs
+#define __NR_truncate __NR3264_truncate
+#define __NR_ftruncate __NR3264_ftruncate
+#define __NR_lseek __NR3264_lseek
+#define __NR_sendfile __NR3264_sendfile
+
+#define __NR_newfstatat __NR3264_fstatat
+#define __NR_fstat __NR3264_fstat
+
+#define __NR_mmap __NR3264_mmap
+#define __NR_fadvise64 __NR3264_fadvise64
+# 25 "bionic/libc/kernel/uapi/asm-arm64/asm/unistd.h" 2 3
+# 2 "external/minijail/gen_syscalls.c" 2
+
