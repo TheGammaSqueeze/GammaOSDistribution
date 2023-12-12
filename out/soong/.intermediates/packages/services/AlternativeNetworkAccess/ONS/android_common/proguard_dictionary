@@ -1,0 +1,205 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: efdb377
+# common_typos_disable
+com.android.ons.ONSAutoBoot -> com.android.ons.ONSAutoBoot:
+    25:25:void <init>() -> <init>
+    30:36:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.ons.ONSConfigInput -> com.android.ons.ONSConfigInput:
+    41:45:void <init>(java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> <init>
+    49:49:com.android.internal.telephony.IUpdateAvailableNetworksCallback getAvailableNetworkCallback() -> getAvailableNetworkCallback
+    73:73:java.util.ArrayList getAvailableNetworkInfos() -> getAvailableNetworkInfos
+    61:61:int getPreferredDataSub() -> getPreferredDataSub
+    69:69:int getPrimarySub() -> getPrimarySub
+    53:53:void setAvailableNetworkInfo(java.util.ArrayList) -> setAvailableNetworkInfo
+    57:57:void setPreferredDataSub(int) -> setPreferredDataSub
+    65:65:void setPrimarySub(int) -> setPrimarySub
+    78:78:java.lang.String toString() -> toString
+com.android.ons.ONSNetworkScanCtlr -> com.android.ons.ONSNetworkScanCtlr:
+    55:76:void <clinit>() -> <clinit>
+    59:225:void <init>(android.content.Context,android.telephony.TelephonyManager,com.android.ons.ONSNetworkScanCtlr$NetworkAvailableCallBack) -> <init>
+    52:52:void access$000(java.lang.String) -> access$000
+    52:52:android.os.Handler access$100(com.android.ons.ONSNetworkScanCtlr) -> access$100
+    52:52:int access$200() -> access$200
+    52:52:void access$300(com.android.ons.ONSNetworkScanCtlr) -> access$300
+    52:52:void access$400(com.android.ons.ONSNetworkScanCtlr,int) -> access$400
+    52:52:void access$500(java.lang.String) -> access$500
+    178:207:void analyzeScanResults(java.util.List) -> analyzeScanResults
+    296:361:android.telephony.NetworkScanRequest createNetworkScanRequest(java.util.ArrayList,int) -> createNetworkScanRequest
+    163:168:boolean getBooleanCarrierConfig(java.lang.String) -> getBooleanCarrierConfig
+    145:147:android.os.PersistableBundle getConfigBundle() -> getConfigBundle
+    153:158:int getIntCarrierConfig(java.lang.String) -> getIntCarrierConfig
+    280:283:boolean getIs4gScanEnabled() -> getIs4gScanEnabled
+    270:272:java.lang.String getMccMnc(android.telephony.CellInfo) -> getMccMnc
+    236:264:void init(android.content.Context,android.telephony.TelephonyManager,com.android.ons.ONSNetworkScanCtlr$NetworkAvailableCallBack) -> init
+    212:220:void invalidateScanOnError(int) -> invalidateScanOnError
+    344:344:int lambda$createNetworkScanRequest$0(java.lang.Integer) -> lambda$createNetworkScanRequest$0
+    349:349:int lambda$createNetworkScanRequest$1(java.lang.Integer) -> lambda$createNetworkScanRequest$1
+    441:441:void log(java.lang.String) -> log
+    446:446:void logDebug(java.lang.String) -> logDebug
+    411:418:void restartScan() -> restartScan
+    289:289:void setIs4gScanEnabled(boolean) -> setIs4gScanEnabled
+    371:373:boolean startFastNetworkScan(java.util.ArrayList) -> startFastNetworkScan
+    379:405:boolean startNetworkScan(android.telephony.NetworkScanRequest) -> startNetworkScan
+    425:437:void stopNetworkScan() -> stopNetworkScan
+com.android.ons.ONSNetworkScanCtlr$$ExternalSyntheticLambda0 -> com.android.ons.ONSNetworkScanCtlr$$ExternalSyntheticLambda0:
+    com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$1 com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$1.INSTANCE -> INSTANCE
+    void com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$1.<clinit>() -> <clinit>
+    void com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$1.<init>() -> <init>
+    int com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$1.applyAsInt(java.lang.Object) -> applyAsInt
+com.android.ons.ONSNetworkScanCtlr$$ExternalSyntheticLambda1 -> com.android.ons.ONSNetworkScanCtlr$$ExternalSyntheticLambda1:
+    com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$0 com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$0.INSTANCE -> INSTANCE
+    void com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$0.<clinit>() -> <clinit>
+    void com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$0.<init>() -> <init>
+    int com.android.ons.ONSNetworkScanCtlr$$InternalSyntheticLambda$0$cb269408805ac5747e5f4b137db4b1d5e4f0e9792994b9d3a3d7591851035e5f$0.applyAsInt(java.lang.Object) -> applyAsInt
+com.android.ons.ONSNetworkScanCtlr$1 -> com.android.ons.ONSNetworkScanCtlr$1:
+    99:99:void <init>(com.android.ons.ONSNetworkScanCtlr) -> <init>
+    114:116:void onComplete() -> onComplete
+    121:123:void onError(int) -> onError
+    103:109:void onResults(java.util.List) -> onResults
+com.android.ons.ONSNetworkScanCtlr$2 -> com.android.ons.ONSNetworkScanCtlr$2:
+    239:239:void <init>(com.android.ons.ONSNetworkScanCtlr,android.os.Looper) -> <init>
+    242:257:void handleMessage(android.os.Message) -> handleMessage
+com.android.ons.ONSProfileSelector -> com.android.ons.ONSProfileSelector:
+    62:346:void <init>(android.content.Context,com.android.ons.ONSProfileSelector$ONSProfileSelectionCallback) -> <init>
+    59:59:com.android.internal.telephony.IUpdateAvailableNetworksCallback access$000(com.android.ons.ONSProfileSelector) -> access$000
+    59:59:com.android.internal.telephony.IUpdateAvailableNetworksCallback access$002(com.android.ons.ONSProfileSelector,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> access$002
+    59:59:void access$100(com.android.ons.ONSProfileSelector,com.android.internal.telephony.IUpdateAvailableNetworksCallback,int) -> access$100
+    59:59:int access$1000(com.android.ons.ONSProfileSelector,android.telephony.CellInfo) -> access$1000
+    59:59:void access$1100(com.android.ons.ONSProfileSelector) -> access$1100
+    59:59:void access$1200(com.android.ons.ONSProfileSelector,java.lang.Object[]) -> access$1200
+    59:59:void access$1300(com.android.ons.ONSProfileSelector,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> access$1300
+    59:59:void access$1400(com.android.ons.ONSProfileSelector,int) -> access$1400
+    59:59:java.lang.Object access$200(com.android.ons.ONSProfileSelector) -> access$200
+    59:59:void access$300(com.android.ons.ONSProfileSelector,java.lang.String) -> access$300
+    59:59:boolean access$400(com.android.ons.ONSProfileSelector) -> access$400
+    59:59:java.util.ArrayList access$500(com.android.ons.ONSProfileSelector) -> access$500
+    59:59:java.util.ArrayList access$502(com.android.ons.ONSProfileSelector,java.util.ArrayList) -> access$502
+    59:59:boolean access$600(com.android.ons.ONSProfileSelector,int,boolean) -> access$600
+    59:59:com.android.ons.ONSProfileSelector$ONSProfileSelectionCallback access$700(com.android.ons.ONSProfileSelector) -> access$700
+    59:59:void access$800(com.android.ons.ONSProfileSelector,java.lang.String) -> access$800
+    59:59:void access$900(com.android.ons.ONSProfileSelector,int) -> access$900
+    481:569:void checkProfileUpdate(java.lang.Object[]) -> checkProfileUpdate
+    738:748:boolean containStandaloneOppSubs(java.util.ArrayList) -> containStandaloneOppSubs
+    719:729:boolean containsOpportunisticSubs(java.util.ArrayList) -> containsOpportunisticSubs
+    647:668:void disableOpportunisticModem(com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> disableOpportunisticModem
+    675:695:boolean enableModem(int,boolean) -> enableModem
+    884:897:void enableModemStackForNonOpportunisticSlots() -> enableModemStackForNonOpportunisticSlots
+    632:639:int getActiveOpportunisticSubId() -> getActiveOpportunisticSubId
+    405:425:java.util.ArrayList getFilteredAvailableNetworks(java.util.ArrayList,java.util.List) -> getFilteredAvailableNetworks
+    267:268:java.lang.String getMcc(android.telephony.CellInfo) -> getMcc
+    276:277:java.lang.String getMnc(android.telephony.CellInfo) -> getMnc
+    303:307:android.telephony.SubscriptionInfo getOpprotunisticSubInfo(int) -> getOpprotunisticSubInfo
+    856:856:int getPreferredDataSubscriptionId() -> getPreferredDataSubscriptionId
+    259:259:int getSignalLevel(android.telephony.CellInfo) -> getSignalLevel
+    284:298:int getSubIdUsingAvailableNetworks(java.lang.String,java.lang.String,int) -> getSubIdUsingAvailableNetworks
+    327:335:boolean hasOpprotunisticSub(java.util.List) -> hasOpprotunisticSub
+    903:953:void init(android.content.Context,com.android.ons.ONSProfileSelector$ONSProfileSelectionCallback) -> init
+    574:581:boolean isActiveSub(int) -> isActiveSub
+    343:343:boolean isAvtiveSub(int) -> isAvtiveSub
+    756:764:boolean isOpportunisticSubActive() -> isOpportunisticSubActive
+    614:622:boolean isOpportunisticSubEmbedded(java.util.ArrayList) -> isOpportunisticSubEmbedded
+    315:319:boolean isOpprotunisticSub(int) -> isOpprotunisticSub
+    447:459:boolean isPrimaryActiveOnOpportunisticSlot(java.util.ArrayList) -> isPrimaryActiveOnOpportunisticSlot
+    439:439:boolean isSame(java.util.ArrayList,java.util.ArrayList) -> isSame
+    873:873:boolean lambda$updateOpportunisticSubscriptions$0(android.telephony.SubscriptionInfo) -> lambda$updateOpportunisticSubscriptions$0
+    877:877:boolean lambda$updateOpportunisticSubscriptions$1(android.telephony.SubscriptionInfo) -> lambda$updateOpportunisticSubscriptions$1
+    958:958:void log(java.lang.String) -> log
+    963:963:void logDebug(java.lang.String) -> logDebug
+    361:369:void onSubSwitchComplete(android.content.Intent) -> onSubSwitchComplete
+    374:393:void onSubSwitchComplete(int) -> onSubSwitchComplete
+    592:602:int retrieveBestSubscription(java.util.List) -> retrieveBestSubscription
+    804:849:void selectProfileForData(int,boolean,com.android.internal.telephony.ISetOpportunisticDataCallback) -> selectProfileForData
+    790:792:void sendSetOpptCallbackHelper(com.android.internal.telephony.ISetOpportunisticDataCallback,int) -> sendSetOpptCallbackHelper
+    470:476:void sendUpdateNetworksCallbackHelper(com.android.internal.telephony.IUpdateAvailableNetworksCallback,int) -> sendUpdateNetworksCallbackHelper
+    774:784:void startProfileSelection(java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> startProfileSelection
+    705:715:void stopProfileScanningPrecedure() -> stopProfileScanningPrecedure
+    863:865:void stopProfileSelection(com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> stopProfileSelection
+    699:701:void stopProfileSelectionProcess(com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> stopProfileSelectionProcess
+    349:357:void switchToSubscription(int) -> switchToSubscription
+    870:880:void updateOpportunisticSubscriptions() -> updateOpportunisticSubscriptions
+    397:399:void updateToken() -> updateToken
+com.android.ons.ONSProfileSelector$$ExternalSyntheticLambda0 -> com.android.ons.ONSProfileSelector$$ExternalSyntheticLambda0:
+    com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$1 com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$1.INSTANCE -> INSTANCE
+    void com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$1.<clinit>() -> <clinit>
+    void com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$1.<init>() -> <init>
+    boolean com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$1.test(java.lang.Object) -> test
+com.android.ons.ONSProfileSelector$$ExternalSyntheticLambda1 -> com.android.ons.ONSProfileSelector$$ExternalSyntheticLambda1:
+    com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$0 com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$0.INSTANCE -> INSTANCE
+    void com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$0.<clinit>() -> <clinit>
+    void com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$0.<init>() -> <init>
+    boolean com.android.ons.ONSProfileSelector$$InternalSyntheticLambda$0$f3933e059838ad0f6871f7853e36f8d8b916ed06a09a8972bf0127a8443ee920$0.test(java.lang.Object) -> test
+com.android.ons.ONSProfileSelector$1 -> com.android.ons.ONSProfileSelector$1:
+    118:118:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    170:193:void handleNetworkScanResult(int) -> handleNetworkScanResult
+    138:165:void onError(int) -> onError
+    121:133:void onNetworkAvailability(java.util.List) -> onNetworkAvailability
+com.android.ons.ONSProfileSelector$2 -> com.android.ons.ONSProfileSelector$2:
+    201:201:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    204:205:void onOpportunisticSubscriptionsChanged() -> onOpportunisticSubscriptionsChanged
+com.android.ons.ONSProfileSelector$3 -> com.android.ons.ONSProfileSelector$3:
+    592:592:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    592:592:int compare(java.lang.Object,java.lang.Object) -> compare
+    595:595:int compare(android.telephony.CellInfo,android.telephony.CellInfo) -> compare
+com.android.ons.ONSProfileSelector$4 -> com.android.ons.ONSProfileSelector$4:
+    918:918:void <init>(com.android.ons.ONSProfileSelector,android.os.Looper) -> <init>
+    921:947:void handleMessage(android.os.Message) -> handleMessage
+com.android.ons.ONSProfileSelector$SortAvailableNetworks -> com.android.ons.ONSProfileSelector$SortAvailableNetworks:
+    229:229:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    229:229:int compare(java.lang.Object,java.lang.Object) -> compare
+    234:234:int compare(android.telephony.AvailableNetworkInfo,android.telephony.AvailableNetworkInfo) -> compare
+com.android.ons.ONSProfileSelector$SortAvailableNetworksInPriority -> com.android.ons.ONSProfileSelector$SortAvailableNetworksInPriority:
+    238:238:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    238:238:int compare(java.lang.Object,java.lang.Object) -> compare
+    243:243:int compare(android.telephony.AvailableNetworkInfo,android.telephony.AvailableNetworkInfo) -> compare
+com.android.ons.ONSProfileSelector$SortSubInfo -> com.android.ons.ONSProfileSelector$SortSubInfo:
+    220:220:void <init>(com.android.ons.ONSProfileSelector) -> <init>
+    220:220:int compare(java.lang.Object,java.lang.Object) -> compare
+    225:225:int compare(android.telephony.SubscriptionInfo,android.telephony.SubscriptionInfo) -> compare
+com.android.ons.OpportunisticNetworkService -> com.android.ons.OpportunisticNetworkService:
+    59:172:void <init>() -> <init>
+    59:59:void access$000(com.android.ons.OpportunisticNetworkService,java.lang.String) -> access$000
+    59:59:android.os.Handler access$100(com.android.ons.OpportunisticNetworkService) -> access$100
+    59:59:java.lang.Object access$200(com.android.ons.OpportunisticNetworkService) -> access$200
+    59:59:void access$300(com.android.ons.OpportunisticNetworkService,java.lang.String) -> access$300
+    59:59:void access$400(com.android.ons.OpportunisticNetworkService,boolean) -> access$400
+    59:59:boolean access$500(android.content.Context) -> access$500
+    59:59:void access$600(com.android.ons.OpportunisticNetworkService,com.android.internal.telephony.ISetOpportunisticDataCallback,int) -> access$600
+    59:59:void access$700(com.android.ons.OpportunisticNetworkService,java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> access$700
+    59:59:void access$800(com.android.ons.OpportunisticNetworkService,java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback,java.lang.String) -> access$800
+    612:638:void enableOpportunisticNetwork(boolean) -> enableOpportunisticNetwork
+    125:125:boolean enforceModifyPhoneStatePermission(android.content.Context) -> enforceModifyPhoneStatePermission
+    598:598:boolean getPersistentEnableState() -> getPersistentEnableState
+    401:510:void handleCarrierAppAvailableNetworks(java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback,java.lang.String) -> handleCarrierAppAvailableNetworks
+    135:162:void handleSimStateChange() -> handleSimStateChange
+    535:594:void handleSystemAppAvailableNetworks(java.util.ArrayList,com.android.internal.telephony.IUpdateAvailableNetworksCallback) -> handleSystemAppAvailableNetworks
+    167:169:boolean hasOpportunisticSubPrivilege(java.lang.String,int) -> hasOpportunisticSubPrivilege
+    385:395:void initialize(android.content.Context) -> initialize
+    642:642:void log(java.lang.String) -> log
+    646:646:void logDebug(java.lang.String) -> logDebug
+    331:331:android.os.IBinder onBind(android.content.Intent) -> onBind
+    336:343:void onCreate() -> onCreate
+    372:373:void onDestroy() -> onDestroy
+    353:361:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    526:528:void sendSetOpptCallbackHelper(com.android.internal.telephony.ISetOpportunisticDataCallback,int) -> sendSetOpptCallbackHelper
+    517:519:void sendUpdateNetworksCallbackHelper(com.android.internal.telephony.IUpdateAvailableNetworksCallback,int) -> sendUpdateNetworksCallbackHelper
+    602:603:void updateEnableState(boolean) -> updateEnableState
+com.android.ons.OpportunisticNetworkService$1 -> com.android.ons.OpportunisticNetworkService$1:
+    92:92:void <init>(com.android.ons.OpportunisticNetworkService) -> <init>
+    96:96:void onProfileSelectionDone() -> onProfileSelectionDone
+com.android.ons.OpportunisticNetworkService$2 -> com.android.ons.OpportunisticNetworkService$2:
+    101:101:void <init>(com.android.ons.OpportunisticNetworkService) -> <init>
+    104:104:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.ons.OpportunisticNetworkService$3 -> com.android.ons.OpportunisticNetworkService$3:
+    108:108:void <init>(com.android.ons.OpportunisticNetworkService) -> <init>
+    111:118:void handleMessage(android.os.Message) -> handleMessage
+com.android.ons.OpportunisticNetworkService$4 -> com.android.ons.OpportunisticNetworkService$4:
+    172:172:void <init>(com.android.ons.OpportunisticNetworkService) -> <init>
+    282:291:int getPreferredDataSubscriptionId(java.lang.String,java.lang.String) -> getPreferredDataSubscriptionId
+    219:222:boolean isEnabled(java.lang.String) -> isEnabled
+    190:199:boolean setEnable(boolean,java.lang.String) -> setEnable
+    242:264:void setPreferredDataSubscriptionId(int,boolean,com.android.internal.telephony.ISetOpportunisticDataCallback,java.lang.String) -> setPreferredDataSubscriptionId
+    313:322:void updateAvailableNetworks(java.util.List,com.android.internal.telephony.IUpdateAvailableNetworksCallback,java.lang.String) -> updateAvailableNetworks
+com.android.ons.R -> com.android.ons.R:
+    10:10:void <init>() -> <init>
