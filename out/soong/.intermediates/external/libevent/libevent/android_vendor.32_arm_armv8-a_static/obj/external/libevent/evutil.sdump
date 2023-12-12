@@ -1,0 +1,808 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvjE",
+   "name" : "void *(unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvjE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvjE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPvS_PK7timevalE",
+   "name" : "int (void *, void *, const timeval *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPK7timeval"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPvS_PK7timevalE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPvS_PK7timevalE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPviE",
+   "name" : "int (void *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPviE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPviE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFijPvE",
+   "name" : "int (unsigned int, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFijPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFijPvE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvE",
+   "name" : "void (void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvjE",
+   "name" : "void (void *, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvjE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvjE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "evutil_ascii_strcasecmp",
+   "linker_set_key" : "evutil_ascii_strcasecmp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_ascii_strncasecmp",
+   "linker_set_key" : "evutil_ascii_strncasecmp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_closesocket",
+   "linker_set_key" : "evutil_closesocket",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_freeaddrinfo",
+   "linker_set_key" : "evutil_freeaddrinfo",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8addrinfo"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_gai_strerror",
+   "linker_set_key" : "evutil_gai_strerror",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_getaddrinfo",
+   "linker_set_key" : "evutil_getaddrinfo",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPK8addrinfo"
+    },
+    {
+     "referenced_type" : "_ZTIPP8addrinfo"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_inet_ntop",
+   "linker_set_key" : "evutil_inet_ntop",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_inet_pton",
+   "linker_set_key" : "evutil_inet_pton",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_inet_pton_scope",
+   "linker_set_key" : "evutil_inet_pton_scope",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_listen_socket_ipv6only",
+   "linker_set_key" : "evutil_make_listen_socket_ipv6only",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_listen_socket_reuseable",
+   "linker_set_key" : "evutil_make_listen_socket_reuseable",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_listen_socket_reuseable_port",
+   "linker_set_key" : "evutil_make_listen_socket_reuseable_port",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_socket_closeonexec",
+   "linker_set_key" : "evutil_make_socket_closeonexec",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_socket_nonblocking",
+   "linker_set_key" : "evutil_make_socket_nonblocking",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_make_tcp_listen_socket_deferred",
+   "linker_set_key" : "evutil_make_tcp_listen_socket_deferred",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_parse_sockaddr_port",
+   "linker_set_key" : "evutil_parse_sockaddr_port",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIP8sockaddr"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_snprintf",
+   "linker_set_key" : "evutil_snprintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_sockaddr_cmp",
+   "linker_set_key" : "evutil_sockaddr_cmp",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK8sockaddr"
+    },
+    {
+     "referenced_type" : "_ZTIPK8sockaddr"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_socketpair",
+   "linker_set_key" : "evutil_socketpair",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_strtoll",
+   "linker_set_key" : "evutil_strtoll",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPPc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIx",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_vsnprintf",
+   "linker_set_key" : "evutil_vsnprintf",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTI9__va_list"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8addrinfo",
+   "name" : "addrinfo *",
+   "referenced_type" : "_ZTI8addrinfo",
+   "self_type" : "_ZTIP8addrinfo",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8sockaddr",
+   "name" : "sockaddr *",
+   "referenced_type" : "_ZTI8sockaddr",
+   "self_type" : "_ZTIP8sockaddr",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFPvjE",
+   "name" : "void *(*)(unsigned int)",
+   "referenced_type" : "_ZTIFPvjE",
+   "self_type" : "_ZTIPFPvjE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPvS_PK7timevalE",
+   "name" : "int (*)(void *, void *, const timeval *)",
+   "referenced_type" : "_ZTIFiPvS_PK7timevalE",
+   "self_type" : "_ZTIPFiPvS_PK7timevalE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPviE",
+   "name" : "int (*)(void *, int)",
+   "referenced_type" : "_ZTIFiPviE",
+   "self_type" : "_ZTIPFiPviE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFijPvE",
+   "name" : "int (*)(unsigned int, void *)",
+   "referenced_type" : "_ZTIFijPvE",
+   "self_type" : "_ZTIPFijPvE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvPvE",
+   "name" : "void (*)(void *)",
+   "referenced_type" : "_ZTIFvPvE",
+   "self_type" : "_ZTIPFvPvE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvPvjE",
+   "name" : "void (*)(void *, unsigned int)",
+   "referenced_type" : "_ZTIFvPvjE",
+   "self_type" : "_ZTIPFvPvjE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK7timeval",
+   "name" : "const timeval *",
+   "referenced_type" : "_ZTIK7timeval",
+   "self_type" : "_ZTIPK7timeval",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK8addrinfo",
+   "name" : "const addrinfo *",
+   "referenced_type" : "_ZTIK8addrinfo",
+   "self_type" : "_ZTIPK8addrinfo",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK8sockaddr",
+   "name" : "const sockaddr *",
+   "referenced_type" : "_ZTIK8sockaddr",
+   "self_type" : "_ZTIPK8sockaddr",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPP8addrinfo",
+   "name" : "addrinfo **",
+   "referenced_type" : "_ZTIP8addrinfo",
+   "self_type" : "_ZTIPP8addrinfo",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPPc",
+   "name" : "char **",
+   "referenced_type" : "_ZTIPc",
+   "self_type" : "_ZTIPPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK7timeval",
+   "name" : "const timeval",
+   "referenced_type" : "_ZTI7timeval",
+   "self_type" : "_ZTIK7timeval",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8addrinfo",
+   "name" : "const addrinfo",
+   "referenced_type" : "_ZTI8addrinfo",
+   "self_type" : "_ZTIK8addrinfo",
+   "size" : 32,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 2,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8sockaddr",
+   "name" : "const sockaddr",
+   "referenced_type" : "_ZTI8sockaddr",
+   "self_type" : "_ZTIK8sockaddr",
+   "size" : 16,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "lock_api_version",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "supported_locktypes",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "alloc",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFPvjE"
+    },
+    {
+     "field_name" : "free",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPFvPvjE"
+    },
+    {
+     "field_name" : "lock",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFijPvE"
+    },
+    {
+     "field_name" : "unlock",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIPFijPvE"
+    }
+   ],
+   "linker_set_key" : "_ZTI23evthread_lock_callbacks",
+   "name" : "evthread_lock_callbacks",
+   "referenced_type" : "_ZTI23evthread_lock_callbacks",
+   "self_type" : "_ZTI23evthread_lock_callbacks",
+   "size" : 24,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "condition_api_version",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "alloc_condition",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPFPvjE"
+    },
+    {
+     "field_name" : "free_condition",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFvPvE"
+    },
+    {
+     "field_name" : "signal_condition",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPFiPviE"
+    },
+    {
+     "field_name" : "wait_condition",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFiPvS_PK7timevalE"
+    }
+   ],
+   "linker_set_key" : "_ZTI28evthread_condition_callbacks",
+   "name" : "evthread_condition_callbacks",
+   "referenced_type" : "_ZTI28evthread_condition_callbacks",
+   "self_type" : "_ZTI28evthread_condition_callbacks",
+   "size" : 20,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

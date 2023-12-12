@@ -1,0 +1,830 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 10,
+     "name" : "EVENT_TYPE_LIST_STOP"
+    },
+    {
+     "enum_field_value" : 63,
+     "name" : "EVENT_TYPE_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "EVENT_TYPE_INT"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EVENT_TYPE_LONG"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVENT_TYPE_STRING"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EVENT_TYPE_LIST"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVENT_TYPE_FLOAT"
+    }
+   ],
+   "linker_set_key" : "_ZTI19AndroidEventLogType",
+   "name" : "AndroidEventLogType",
+   "referenced_type" : "_ZTI19AndroidEventLogType",
+   "self_type" : "_ZTI19AndroidEventLogType",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "ANDROID_LOG_UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "ANDROID_LOG_DEFAULT"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "ANDROID_LOG_VERBOSE"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "ANDROID_LOG_DEBUG"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "ANDROID_LOG_INFO"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "ANDROID_LOG_WARN"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "ANDROID_LOG_ERROR"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "ANDROID_LOG_FATAL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "ANDROID_LOG_SILENT"
+    }
+   ],
+   "linker_set_key" : "_ZTI19android_LogPriority",
+   "name" : "android_LogPriority",
+   "referenced_type" : "_ZTI19android_LogPriority",
+   "self_type" : "_ZTI19android_LogPriority",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/android/log.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MIN"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "LOG_ID_MAIN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "LOG_ID_RADIO"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "LOG_ID_EVENTS"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "LOG_ID_SYSTEM"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "LOG_ID_CRASH"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "LOG_ID_STATS"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "LOG_ID_SECURITY"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "LOG_ID_KERNEL"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "LOG_ID_MAX"
+    },
+    {
+     "enum_field_value" : 2147483647,
+     "name" : "LOG_ID_DEFAULT"
+    }
+   ],
+   "linker_set_key" : "_ZTI6log_id",
+   "name" : "log_id",
+   "referenced_type" : "_ZTI6log_id",
+   "self_type" : "_ZTI6log_id",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/android/log.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1ERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ejj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2ERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ei",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ejj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::log_time",
+   "linker_set_key" : "_ZN8log_timeC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator-=",
+   "linker_set_key" : "_ZN8log_timemIERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator+=",
+   "linker_set_key" : "_ZN8log_timepLERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIP8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::msec",
+   "linker_set_key" : "_ZNK8log_time4msecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::nsec",
+   "linker_set_key" : "_ZNK8log_time4nsecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::usec",
+   "linker_set_key" : "_ZNK8log_time4usecEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIy",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator==",
+   "linker_set_key" : "_ZNK8log_timeeqERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator==",
+   "linker_set_key" : "_ZNK8log_timeeqERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>=",
+   "linker_set_key" : "_ZNK8log_timegeERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>=",
+   "linker_set_key" : "_ZNK8log_timegeERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>",
+   "linker_set_key" : "_ZNK8log_timegtERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator>",
+   "linker_set_key" : "_ZNK8log_timegtERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<=",
+   "linker_set_key" : "_ZNK8log_timeleERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<=",
+   "linker_set_key" : "_ZNK8log_timeleERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<",
+   "linker_set_key" : "_ZNK8log_timeltERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator<",
+   "linker_set_key" : "_ZNK8log_timeltERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator-",
+   "linker_set_key" : "_ZNK8log_timemiERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator!=",
+   "linker_set_key" : "_ZNK8log_timeneERK8timespec",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8timespec"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator!=",
+   "linker_set_key" : "_ZNK8log_timeneERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "log_time::operator+",
+   "linker_set_key" : "_ZNK8log_timeplERKS_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPK8log_time"
+    },
+    {
+     "referenced_type" : "_ZTIRK8log_time"
+    }
+   ],
+   "return_type" : "_ZTI8log_time",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "function_name" : "android_log_id_to_name",
+   "linker_set_key" : "android_log_id_to_name",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI6log_id"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/logging/liblog/include/log/log_id.h"
+  },
+  {
+   "function_name" : "android_name_to_log_id",
+   "linker_set_key" : "android_name_to_log_id",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTI6log_id",
+   "source_file" : "system/logging/liblog/include/log/log_id.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN8log_time5EPOCHE",
+   "name" : "log_time::EPOCH",
+   "referenced_type" : "_ZTIK8timespec",
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  }
+ ],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRK8log_time",
+   "name" : "const log_time &",
+   "referenced_type" : "_ZTIK8log_time",
+   "self_type" : "_ZTIRK8log_time",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRK8timespec",
+   "name" : "const timespec &",
+   "referenced_type" : "_ZTIK8timespec",
+   "self_type" : "_ZTIRK8timespec",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP8log_time",
+   "name" : "log_time *",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTIP8log_time",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK8log_time",
+   "name" : "const log_time *",
+   "referenced_type" : "_ZTIK8log_time",
+   "self_type" : "_ZTIPK8log_time",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8log_time",
+   "name" : "const log_time",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTIK8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK8timespec",
+   "name" : "const timespec",
+   "referenced_type" : "_ZTI8timespec",
+   "self_type" : "_ZTIK8timespec",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "struct_size",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "buffer_id",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "priority",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "tag",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "file",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "field_name" : "line",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "message",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "linker_set_key" : "_ZTI21__android_log_message",
+   "name" : "__android_log_message",
+   "referenced_type" : "_ZTI21__android_log_message",
+   "self_type" : "_ZTI21__android_log_message",
+   "size" : 28,
+   "source_file" : "system/logging/liblog/include/android/log.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "tv_sec",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "tv_nsec",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI8log_time",
+   "name" : "log_time",
+   "referenced_type" : "_ZTI8log_time",
+   "self_type" : "_ZTI8log_time",
+   "size" : 8,
+   "source_file" : "system/logging/liblog/include/log/log_time.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
