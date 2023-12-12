@@ -1,0 +1,699 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "unwindstack::DwarfMemory::cur_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory10cur_offsetEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIm",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::ReadSLEB128",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory11ReadSLEB128EPl",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIPl"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::ReadULEB128",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory11ReadULEB128EPm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::set_pc_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory13set_pc_offsetEl",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIl"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::set_cur_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory14set_cur_offsetEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::clear_pc_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory15clear_pc_offsetEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::set_data_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory15set_data_offsetEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::set_func_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory15set_func_offsetEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::set_text_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory15set_text_offsetEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::clear_data_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory17clear_data_offsetEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::clear_func_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory17clear_func_offsetEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::clear_text_offset",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory17clear_text_offsetEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::AdjustEncodedValue",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory18AdjustEncodedValueEhPm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::ReadBytes",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemory9ReadBytesEPvm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::DwarfMemory",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemoryC1EPNS_6MemoryE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::DwarfMemory",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemoryC2EPNS_6MemoryE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::~DwarfMemory",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemoryD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::~DwarfMemory",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemoryD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::DwarfMemory::~DwarfMemory",
+   "linker_set_key" : "_ZN11unwindstack11DwarfMemoryD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack11DwarfMemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::AsMemoryCacheBase",
+   "linker_set_key" : "_ZN11unwindstack6Memory17AsMemoryCacheBaseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Clear",
+   "linker_set_key" : "_ZN11unwindstack6Memory5ClearEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::GetPtr",
+   "linker_set_key" : "_ZN11unwindstack6Memory6GetPtrEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Read32",
+   "linker_set_key" : "_ZN11unwindstack6Memory6Read32EmPj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Read64",
+   "linker_set_key" : "_ZN11unwindstack6Memory6Read64EmPm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::ReadTag",
+   "linker_set_key" : "_ZN11unwindstack6Memory7ReadTagEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN11unwindstack11DwarfMemoryE",
+   "name" : "unwindstack::DwarfMemory *",
+   "referenced_type" : "_ZTIN11unwindstack11DwarfMemoryE",
+   "self_type" : "_ZTIPN11unwindstack11DwarfMemoryE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "name" : "unwindstack::MemoryCacheBase *",
+   "referenced_type" : "_ZTIN11unwindstack15MemoryCacheBaseE",
+   "self_type" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN11unwindstack6MemoryE",
+   "name" : "unwindstack::Memory *",
+   "referenced_type" : "_ZTIN11unwindstack6MemoryE",
+   "self_type" : "_ZTIPN11unwindstack6MemoryE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPl",
+   "name" : "long *",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIPl",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "memory_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "cur_offset_",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "access" : "private",
+     "field_name" : "pc_offset_",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIl"
+    },
+    {
+     "access" : "private",
+     "field_name" : "data_offset_",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "access" : "private",
+     "field_name" : "func_offset_",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "access" : "private",
+     "field_name" : "text_offset_",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTIN11unwindstack11DwarfMemoryE",
+   "name" : "unwindstack::DwarfMemory",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN11unwindstack11DwarfMemoryE",
+   "self_type" : "_ZTIN11unwindstack11DwarfMemoryE",
+   "size" : 56,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/DwarfMemory.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN11unwindstack11DwarfMemoryE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack11DwarfMemoryD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack11DwarfMemoryD0Ev"
+    }
+   ]
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIN11unwindstack6MemoryE",
+   "name" : "unwindstack::Memory",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN11unwindstack6MemoryE",
+   "self_type" : "_ZTIN11unwindstack6MemoryE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN11unwindstack6MemoryE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack6MemoryD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack6MemoryD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory17AsMemoryCacheBaseEv"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory10ReadStringEmPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEm"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory5ClearEv"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory6GetPtrEm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN11unwindstack6Memory4ReadEmPvm"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory7ReadTagEm"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
