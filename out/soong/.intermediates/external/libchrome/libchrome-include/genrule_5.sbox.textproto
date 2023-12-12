@@ -1,0 +1,209 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/include_generator.py"
+    to: "tools/src/external/libchrome/libchrome_tools/include_generator.py"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_number_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_number_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_piece.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_piece.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_piece_forward.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_piece_forward.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_split.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_split.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_tokenizer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_tokenizer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_util.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_util.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/string_util_posix.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/string_util_posix.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/stringize_macros.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/stringize_macros.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/stringprintf.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/stringprintf.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/sys_string_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/sys_string_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/utf_string_conversion_utils.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/utf_string_conversion_utils.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/strings/utf_string_conversions.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/strings/utf_string_conversions.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sync_socket.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sync_socket.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/atomic_flag.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/atomic_flag.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/cancellation_flag.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/cancellation_flag.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/condition_variable.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/condition_variable.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/lock.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/lock.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/lock_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/lock_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/spin_wait.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/spin_wait.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/synchronization_buildflags.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/synchronization_buildflags.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/waitable_event.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/waitable_event.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/synchronization/waitable_event_watcher.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/synchronization/waitable_event_watcher.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sys_byteorder.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sys_byteorder.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sys_info.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sys_info.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/sys_info_internal.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/sys_info_internal.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/cancelable_task_tracker.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/cancelable_task_tracker.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/enqueue_order.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/enqueue_order.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/graceful_queue_shutdown_helper.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/graceful_queue_shutdown_helper.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/intrusive_heap.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/intrusive_heap.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/lazily_deallocated_deque.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/lazily_deallocated_deque.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/lazy_now.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/lazy_now.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/moveable_auto_lock.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/moveable_auto_lock.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/real_time_domain.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/real_time_domain.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/sequence_manager.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/sequence_manager.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/sequence_manager_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/sequence_manager_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/sequenced_task_source.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/sequenced_task_source.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/task_queue.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/task_queue.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/task_queue_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/task_queue_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/task_queue_selector.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/task_queue_selector.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/task_queue_selector_logic.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/task_queue_selector_logic.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/task_time_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/task_time_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/fake_task.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/fake_task.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/lazy_thread_controller_for_test.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/lazy_thread_controller_for_test.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/mock_time_domain.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/mock_time_domain.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/sequence_manager_for_test.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/sequence_manager_for_test.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/test_task_queue.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/test_task_queue.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/test/test_task_time_observer.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/test/test_task_time_observer.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/thread_controller.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/thread_controller.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/thread_controller_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/thread_controller_impl.h' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/include_generator.py external/libchrome/base/task/sequence_manager/thread_controller_with_message_pump_impl.h __SBOX_SANDBOX_DIR__/out/external/libchrome/base/task/sequence_manager/thread_controller_with_message_pump_impl.h'"
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_number_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_number_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_piece.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_piece.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_piece_forward.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_piece_forward.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_split.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_split.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_tokenizer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_tokenizer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_util.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_util.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/string_util_posix.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/string_util_posix.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/stringize_macros.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/stringize_macros.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/stringprintf.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/stringprintf.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/sys_string_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/sys_string_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/utf_string_conversion_utils.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/utf_string_conversion_utils.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/strings/utf_string_conversions.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/strings/utf_string_conversions.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sync_socket.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/sync_socket.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/atomic_flag.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/atomic_flag.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/cancellation_flag.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/cancellation_flag.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/condition_variable.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/condition_variable.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/lock.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/lock.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/lock_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/lock_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/spin_wait.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/spin_wait.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/synchronization_buildflags.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/synchronization_buildflags.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/waitable_event.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/waitable_event.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/synchronization/waitable_event_watcher.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/synchronization/waitable_event_watcher.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sys_byteorder.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/sys_byteorder.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sys_info.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/sys_info.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/sys_info_internal.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/sys_info_internal.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/cancelable_task_tracker.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/cancelable_task_tracker.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/enqueue_order.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/enqueue_order.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/graceful_queue_shutdown_helper.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/graceful_queue_shutdown_helper.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/intrusive_heap.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/intrusive_heap.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/lazily_deallocated_deque.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/lazily_deallocated_deque.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/lazy_now.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/lazy_now.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/moveable_auto_lock.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/moveable_auto_lock.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/real_time_domain.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/real_time_domain.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/sequence_manager.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/sequence_manager.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/sequence_manager_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/sequence_manager_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/sequenced_task_source.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/sequenced_task_source.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/task_queue.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/task_queue.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/task_queue_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/task_queue_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/task_queue_selector.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/task_queue_selector.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/task_queue_selector_logic.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/task_queue_selector_logic.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/task_time_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/task_time_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/fake_task.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/fake_task.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/lazy_thread_controller_for_test.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/lazy_thread_controller_for_test.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/mock_time_domain.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/mock_time_domain.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/sequence_manager_for_test.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/sequence_manager_for_test.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/test_task_queue.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/test_task_queue.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/test/test_task_time_observer.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/test/test_task_time_observer.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/thread_controller.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/thread_controller.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/thread_controller_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/thread_controller_impl.h"
+  >
+  copy_after: <
+    from: "out/external/libchrome/base/task/sequence_manager/thread_controller_with_message_pump_impl.h"
+    to: "out/soong/.intermediates/external/libchrome/libchrome-include/gen/5/external/libchrome/base/task/sequence_manager/thread_controller_with_message_pump_impl.h"
+  >
+  input_hash: "d16e5e31d89723227b6602d5e101c9f55b41519b144670833bf81a2f4534c324"
+>
+
