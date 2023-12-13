@@ -1,0 +1,111 @@
+//
+// Copyright (C) 2018-2019 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+cc_library_shared {
+    name: "nfc_nci.nqx.default.hw",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+        "-DNXP_EXTNS=TRUE",
+        "-DNXP_HW_SELF_TEST=TRUE"
+    ],
+
+    srcs: [
+        "halimpl/dnld/phDnldNfc.cc",
+        "halimpl/dnld/phDnldNfc_Internal.cc",
+        "halimpl/dnld/phDnldNfc_Utils.cc",
+        "halimpl/dnld/phNxpNciHal_Dnld.cc",
+        "halimpl/hal/phNxpNciHal.cc",
+        "halimpl/hal/phNxpNciHal_NfcDepSWPrio.cc",
+        "halimpl/hal/phNxpNciHal_dta.cc",
+        "halimpl/hal/phNxpNciHal_ext.cc",
+        "halimpl/hal/phNxpNciHal_nciParser.cc",
+        "halimpl/log/phNxpLog.cc",
+        "halimpl/self-test/phNxpNciHal_SelfTest.cc",
+        "halimpl/src/adaptation/EseAdaptation.cc",
+        "halimpl/tml/phDal4Nfc_messageQueueLib.cc",
+        "halimpl/tml/phOsalNfc_Timer.cc",
+        "halimpl/tml/phTmlNfc.cc",
+        "halimpl/tml/phTmlNfc_i2c.cc",
+        "halimpl/tml/spi_spm.cc",
+        "halimpl/utils/NxpNfcCapability.cc",
+        "halimpl/utils/phNxpConfig.cc",
+        "halimpl/utils/phNxpNciHal_utils.cc",
+        "halimpl/utils/sparse_crc32.cc",
+        "halimpl/hal/phNxpNciHal_IoctlOperations.cc",
+        "halimpl/hal/phNxpNciHal_extOperations.cc",
+        "halimpl/eseclients_extns/src/eSEClientExtns.cc",
+        "halimpl/mifare/NxpMfcReader.cc",
+    ],
+
+    local_include_dirs: [
+        "halimpl/common",
+        "halimpl/dnld",
+        "halimpl/hal",
+        "halimpl/inc",
+        "halimpl/log",
+        "halimpl/self-test",
+        "halimpl/tml",
+        "halimpl/utils",
+        "halimpl/eseclients_extns/inc",
+        "halimpl/src/include",
+        "halimpl/mifare",
+    ],
+
+    include_dirs: [
+        "vendor/nxp/opensource/sn100x/halimpl/SN100x/extns/impl",
+    ],
+
+    export_include_dirs: [
+        "extns/impl",
+        "halimpl/inc",
+        "halimpl/hal",
+        "halimpl/utils",
+        "halimpl/log",
+        "halimpl/common",
+        "halimpl/mifare",
+        "halimpl/eseclients_extns/inc",
+    ],
+
+    shared_libs: [
+        "android.hardware.nfc@1.0",
+        "android.hardware.nfc@1.1",
+        "android.hardware.nfc@1.2",
+        "vendor.nxp.hardware.nfc@2.0",
+        "android.hardware.secure_element@1.0",
+        "libbase",
+        "libcutils",
+        "libdl",
+        "libhardware",
+        "libhardware_legacy",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+
+    header_libs: [
+        "libese_client_headers",
+    ],
+
+    sanitize: {
+        cfi: true,
+        integer_overflow: true,
+    },
+}

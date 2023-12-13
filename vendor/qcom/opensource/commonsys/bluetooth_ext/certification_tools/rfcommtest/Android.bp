@@ -1,0 +1,32 @@
+cc_binary {
+    name: "rfc",
+    system_ext_specific: true,
+
+    srcs: ["rfcommtest.cpp"],
+
+    include_dirs: [
+        ".",
+        "vendor/qcom/opensource/commonsys/system/bt/stack/include",
+        "system/bt/include",
+        "system/bt/types",
+        "vendor/qcom/opensource/commonsys/system/bt/internal_include",
+        "vendor/qcom/opensource/commonsys/system/bt/stack/l2cap",
+        "vendor/qcom/opensource/commonsys/system/bt/utils/include",
+        "vendor/qcom/opensource/commonsys/system/bt/",
+        "vendor/qcom/opensource/commonsys/system/bt/btif/include",
+        "vendor/qcom/opensource/commonsys/bluetooth_ext/system_bt_ext/include",
+        "vendor/qcom/opensource/commonsys/bluetooth_ext/vhal/include",
+        "external/libchrome",
+    ],
+
+    cflags: ["-DHAS_NO_BDROID_BUILDCFG"],
+
+    shared_libs: [
+        "libcutils",
+        "libchrome",
+        "libutils",
+    ],
+
+    static_libs: ["libbluetooth-types"],
+
+}

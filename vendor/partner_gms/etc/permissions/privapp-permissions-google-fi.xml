@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which signature|privileged permissions should be granted to
+privileged Google Fi applications in GMS devices.
+-->
+<permissions>
+    <!-- NovaBugreportWrapper uses DUMP to access BugreportManager -->
+    <privapp-permissions package="com.google.android.apps.nova.bugreportwrapper">
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+</permissions>

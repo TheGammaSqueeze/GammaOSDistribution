@@ -1,0 +1,88 @@
+soong_namespace {
+}
+
+soong_config_module_type_import {
+    from: "device/qcom/qssi/Android.bp",
+    module_types: [
+         "bredr_vs_btadva_java_defaults",
+    ],
+}
+
+bredr_vs_btadva_java_defaults {
+    name: "btadva_java_defaults",
+
+    soong_config_variables: {
+        bredr_or_btadva: {
+           btadva: {
+              srcs: [ ":bluetooth-apps-adva-srcs" ],
+           }
+       }
+   }
+}
+
+// MAP API module
+
+java_library {
+    name: "bluetooth.mapsapi",
+
+    srcs: ["lib/mapapi/**/*.java"],
+}
+
+// Bluetooth APK
+
+android_app {
+    name: "Bluetooth",
+
+    defaults: [
+        "btadva_java_defaults",
+        "platform_app_defaults",
+    ],
+    srcs: [
+        "src/**/*.java",
+        ":vendor_qcom_opensource_commonsys_bluetooth_ext_packages_apps_bluetooth_ext",
+        ":statslog-bluetooth-java-gen",
+    ],
+    platform_apis: true,
+    certificate: "platform",
+
+    jni_libs: ["libbluetooth_qti_jni"],
+    libs: [
+        "javax.obex",
+        "services.net",
+    ],
+    static_libs: [
+        "com.android.vcard",
+        "bluetooth.mapsapi",
+        "sap-api-java-static",
+        "services.net",
+        "libprotobuf-java-lite",
+        "bluetooth-protos-lite",
+        "androidx.core_core",
+        "androidx.lifecycle_lifecycle-livedata",
+        "androidx.room_room-runtime",
+    ],
+
+    plugins: [
+        "androidx.room_room-compiler-plugin",
+    ],
+
+    // Add in path to Bluetooth directory because local path does not exist
+    javacflags: ["-Aroom.schemaLocation=vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/tests/unit/src/com/android/bluetooth/btservice/storage/schemas"],
+
+    optimize: {
+        enabled: false,
+    },
+    required: ["libbluetooth_qti"],
+
+    proto: {
+        type: "micro",
+    },
+}
+
+genrule {
+    name: "statslog-bluetooth-java-gen",
+    tools: ["stats-log-api-gen"],
+    cmd: "$(location stats-log-api-gen) --java $(out) --module bluetooth"
+        + " --javaPackage com.android.bluetooth --javaClass BluetoothStatsLog --worksource",
+    out: ["com/android/bluetooth/BluetoothStatsLog.java"],
+}

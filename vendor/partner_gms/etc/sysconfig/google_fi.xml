@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are configurations that should exist on Google Fi devices. -->
+<config>
+    <!--
+       This is the canonical feature identifying devices which bundle Google Fi support. The
+       Fi app and associated apps will be bundled (but may be disabled until a matching SIM
+       is inserted).
+    -->
+    <feature name="com.google.android.feature.GOOGLE_FI_BUNDLED" />
+
+    <!-- Pre-installed carrier apps which should be disabled until a matching SIM is inserted. -->
+    <disabled-until-used-preinstalled-carrier-app package="com.google.android.apps.tycho" />
+
+    <app-link package="com.google.android.apps.tycho" />
+
+    <!-- Stub for Fi to request bug reports, disabled until a Fi SIM is added.
+         Included for all in-market devices receiving the R OTA as well as
+         devices launching with R. -->
+    <disabled-until-used-preinstalled-carrier-associated-app
+        package="com.google.android.apps.nova.bugreportwrapper"
+        carrierAppPackage="com.google.android.apps.tycho"
+        addedInSdk="30" />
+    <!-- Allow access to BugreportManager. -->
+    <bugreport-whitelisted package="com.google.android.apps.nova.bugreportwrapper" />
+</config>

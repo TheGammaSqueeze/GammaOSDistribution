@@ -1,0 +1,44 @@
+# Pixel 4
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in coral
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly build_id=SQ3A.220705.003.A1 # Jul 2022
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-12.1.0_r7"
+readonly aosp_tag="android-12.1.0_r11"
+
+readonly prev_build_number="8643238"
+readonly build_number="8672226"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/flame-sq3a.220705.003.a1-factory-fdd77628.zip"
+readonly image_sha256="fdd776283419c4a2fce92c8f542ac03474668d96e11e849538a69499050212e7"
+
+readonly flash_url="https://flash.android.com/build/8672226?target=flame-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-sq3a.220705.003.a1-c3ee51db.zip"
+readonly ota_sha256="c3ee51dbdc2b05b47c1384b347de7e1cbacfc2202a1acfd4a7529409c617e692"
+
+readonly security_patch="2022-07-05"

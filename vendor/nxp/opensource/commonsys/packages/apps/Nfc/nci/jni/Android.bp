@@ -1,0 +1,77 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+cc_library_shared {
+    name: "libnqnfc_nci_jni",
+    system_ext_specific: true,
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-Werror",
+
+        "-DNXP_UICC_ENABLE",
+
+        //NXP PN547 Enable
+        "-DNXP_EXTNS=TRUE",
+        "-DNFC_NXP_NON_STD_CARD=FALSE",
+        "-DNFC_NXP_HFO_SETTINGS=FALSE",
+
+      //#Enable HCE-F specific
+        "-DNXP_NFCC_HCE_F=TRUE",
+        "-DNXP_LDR_SVC_VER_2=TRUE",
+    ],
+
+    srcs: ["**/*.cpp"],
+
+    header_libs: [
+        "libnativehelper_header_only",
+    ],
+
+    include_dirs: [
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/src/nfa/include",
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/src/nfc/include",
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/src/include",
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/src/gki/ulinux",
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/src/gki/common",
+        "vendor/nxp/opensource/commonsys/external/libnfc-nci/utils/include",
+
+    ],
+
+    local_include_dirs: [
+        "extns/pn54x/inc",
+        "extns/pn54x/src/common",
+        "extns/pn54x/src/mifare",
+        "extns/pn54x/src/utils",
+    ],
+
+    shared_libs: [
+        "libandroidicu",
+        "libnativehelper",
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libnqnfc-nci",
+        "libchrome",
+        "libbase",
+        "android.hardware.nfc@1.0",
+        "android.hardware.nfc@1.1",
+        "android.hardware.nfc@1.2",
+        "vendor.nxp.hardware.nfc@2.0",
+        "vendor.nxp.nxpnfclegacy@1.0",
+    ],
+
+    product_variables: {
+        debuggable: {
+            cflags: ["-DDCHECK_ALWAYS_ON"],
+        },
+    },
+    sanitize: {
+        cfi: true,
+        integer_overflow: true,
+        misc_undefined: ["bounds"],
+        scs:true,
+    },
+}

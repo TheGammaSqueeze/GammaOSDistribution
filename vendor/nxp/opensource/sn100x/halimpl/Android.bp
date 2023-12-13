@@ -1,0 +1,135 @@
+//
+// Copyright (C) 2018-2019 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+subdirs = [
+    "SN100x",
+]
+
+cc_library_headers {
+    name: "libese_client_headers",
+    export_include_dirs: [
+        "inc",
+        "jcos_client/inc",
+        "ls_client/inc",
+    ],
+    vendor_available: true,
+}
+
+cc_library_shared {
+
+    name: "se_nq_extn_client",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+
+    srcs: [
+        "utils/phNxpConfig.cc",
+        "utils/sparse_crc32.cc",
+        "src/eSEClientIntf.cc",
+        "src/phNxpLog.cc"
+    ],
+    export_include_dirs: [
+     "inc",
+     "utils",
+     "jcos_client/inc",
+     "ls_client/inc",
+    ],
+    local_include_dirs: [
+        "inc",
+        "utils",
+        "jcos_client/inc",
+        "ls_client/inc",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libchrome",
+        "libdl",
+        "libhidlbase",
+    ],
+    sanitize: {
+        cfi: true,
+        integer_overflow: true,
+    },
+}
+
+cc_library_shared {
+
+    name: "jcos_nq_client",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+
+    srcs: [
+        "jcos_client/src/JcDnld.cpp",
+        "jcos_client/src/JcopOsDownload.cpp",
+    ],
+
+    local_include_dirs: [
+        "inc",
+        "utils",
+        "jcos_client/inc",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libchrome",
+        "libdl",
+        "libhidlbase",
+    ],
+    sanitize: {
+        cfi: true,
+        integer_overflow: true,
+    },
+}
+
+cc_library_shared {
+
+    name: "ls_nq_client",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+
+    srcs: [
+        "ls_client/src/LsClient.cpp",
+        "ls_client/src/LsLib.cpp",
+    ],
+
+    local_include_dirs: [
+        "inc",
+        "utils",
+        "ls_client/inc",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libchrome",
+        "libdl",
+        "libhidlbase",
+        "se_nq_extn_client"
+    ],
+    sanitize: {
+        cfi: true,
+        integer_overflow: true,
+    },
+}

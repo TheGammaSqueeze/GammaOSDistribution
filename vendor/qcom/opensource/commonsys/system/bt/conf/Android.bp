@@ -1,0 +1,44 @@
+soong_namespace {
+}
+
+// Bluetooth bt_stack_qti.conf config file
+// ========================================================
+prebuilt_etc {
+    name: "bt_stack_qti.conf",
+
+    src: "bt_stack_qti.conf",
+    sub_dir: "bluetooth",
+
+}
+
+// Bluetooth bt_did.conf config file
+// ========================================================
+//include $(CLEAR_VARS)
+//LOCAL_MODULE := bt_did.conf
+//LOCAL_MODULE_CLASS := ETC
+//LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/bluetooth
+//LOCAL_MODULE_TAGS := optional
+//LOCAL_SRC_FILES := $(LOCAL_MODULE)
+//include $(BUILD_PREBUILT)
+
+// Bluetooth interop_database.conf config file
+// ========================================================
+prebuilt_etc {
+
+    name: "interop_database.conf",
+    src: ":interop_database_conf_qti",
+    sub_dir: "bluetooth",
+    system_ext_specific: true,
+
+}
+
+// Bluetooth bt_profile.conf config file
+// ========================================================
+prebuilt_etc {
+
+    name: "bt_profile.conf",
+    src: ":bt_profile_conf_qti",
+    sub_dir: "bluetooth",
+    system_ext_specific: true,
+
+}

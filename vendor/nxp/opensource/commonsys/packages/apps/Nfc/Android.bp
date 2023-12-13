@@ -1,0 +1,28 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+// NCI Configuration
+//ALLOW_MISSING_DEPENDENCIES = ["true"]
+android_app {
+    name: "NQNfcNci",
+    overrides: ["NfcNci"],
+    system_ext_specific: true,
+    srcs: [
+        "src/**/*.java",
+        "nci/**/*.java",
+        ":statslog-Nfc-java-gen",
+    ],
+    platform_apis: true,
+    certificate: "platform",
+    jni_libs: ["libsn100nfc_nci_jni"],
+    libs: ["com.nxp.nfc.nq"],
+    uses_libs: ["com.nxp.nfc.nq"],
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "vendor.nxp.hardware.nfc-V2.0-java",
+        ],
+    optimize: {
+        enabled: false,
+    },
+}

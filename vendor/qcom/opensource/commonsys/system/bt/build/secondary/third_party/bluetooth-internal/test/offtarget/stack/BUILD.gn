@@ -1,0 +1,122 @@
+#
+#  Copyright (C) 2015 Google
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at:
+#
+#  http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+
+source_set("service") {
+  sources = [
+    "a2dp_sink.cc",
+    "a2dp_source.cc",
+    "adapter.cc",
+    "common/bluetooth/a2dp_codec_config.cc",
+    "common/bluetooth/adapter_state.cc",
+    "common/bluetooth/advertise_data.cc",
+    "common/bluetooth/advertise_settings.cc",
+    "common/bluetooth/characteristic.cc",
+    "common/bluetooth/descriptor.cc",
+    "common/bluetooth/remote_device_props.cc",
+    "common/bluetooth/scan_filter.cc",
+    "common/bluetooth/scan_result.cc",
+    "common/bluetooth/scan_settings.cc",
+    "common/bluetooth/service.cc",
+    "common/bluetooth/util/atomic_string.cc",
+    "common/bluetooth/periodic_adv_parameters.cc",
+    "gatt_client.cc",
+    "gatt_server.cc",
+    "gatt_server_old.cc",
+    "hal/bluetooth_gatt_interface.cc",
+    "hal/bluetooth_interface.cc",
+    "hal/bluetooth_av_interface.cc",
+    "hal/fake_bluetooth_gatt_interface.cc",
+    "hal/fake_bluetooth_interface.cc",
+    "logging_helpers.cc",
+    "low_energy_advertiser.cc",
+    "low_energy_scanner.cc",
+    "low_energy_client.cc",
+    "avrcp_target.cc",
+    "avrcp_control.cc",
+    "hal/bluetooth_avrcp_interface.cc",
+    "common/bluetooth/avrcp_int_value.cc",
+    "common/bluetooth/avrcp_media_attr.cc",
+    "common/bluetooth/avrcp_register_notification_response.cc",
+    "common/bluetooth/avrcp_utils.cc",
+#    "common/bluetooth/avrcp_string_value.cc",
+  ]
+
+  include_dirs = [
+    "//",
+    "//third_party/bt/include",
+    "//internal_include",
+    "//stack/include",
+    "common",
+    "//third_party/modp_b64/modp64",
+    "//third_party/bluetooth_ext/vhal/include/hardware",
+    "//third_party/bluetooth-internal/test/offtarget/stack",
+  ]
+
+  deps = [
+    "//types",
+    "//osi",
+    "//third_party/libchrome:base",
+  ]
+}
+
+shared_library("btprop") {
+    output_name = "btprop"
+    sources = [
+      "bt_prop.cpp",
+    ]
+}
+
+executable("offtarget_test") {
+  #testonly = true
+  sources = [
+    "test_main.cc",
+    "hfp_ag/src/HfpAgMain.cpp",
+    "hfp_ag/ag/src/HfpAG.cpp",
+    "hfp_ag/hfp_client/src/HfpClient.cpp",
+  ]
+
+  include_dirs = [
+    "//",
+    "//internal_include",
+    "//stack/include",
+    "//audio_a2dp_hw",
+    "//internal_include",
+    "//stack/include",
+    "//third_party/bluetooth-internal/test/offtarget/stack",
+    "hfp_ag/include", #service's offtargettest
+    "hfp_ag/utils/include/",
+    "hfp_ag/ag/include/",
+    "hfp_ag/hfp_client/include/",
+    "//third_party/system/core/include",
+  ]
+
+  deps = [
+    ":service",
+    ":btprop",
+    "//btcore",
+    "//third_party/libchrome:base",
+    "//third_party/modp_b64",
+    "a2dp_hal_sim",
+  ]
+  libs = [
+    "-ldl",
+    "-lpthread",
+    "-lrt",
+  ]
+  lib_dirs = [
+    "//out/Default",
+  ]
+}

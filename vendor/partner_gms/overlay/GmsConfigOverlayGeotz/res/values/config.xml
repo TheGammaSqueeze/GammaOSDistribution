@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- GMS sample configuration that enables and configures location time zone detection. -->
+    <eat-comment />
+
+    <!-- Whether the geolocation time zone detection feature is enabled. Setting this to false means
+         the feature cannot be used. Setting this to true means system server components can be
+         tested and location time zone detection may be used if other configuration allows (see
+         location time zone provider configuration settings below).
+
+         This is turned on in GMS sample config to make the feature state explicit and to allow CTS
+         testing of the system server components. It can be turned off by GMS partners.
+         -->
+    <bool name="config_enableGeolocationTimeZoneDetection" translatable="false">true</bool>
+
+    <!-- Whether the primary location time zone provider is enabled.
+         This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
+
+         This is turned on in GMS sample config as Google hosts a location time zone provider in
+         GmsCore. -->
+    <bool name="config_enablePrimaryLocationTimeZoneProvider" translatable="false">true</bool>
+
+    <!-- The package hosting the primary location time zone provider.
+         Only used when config_enableGeolocationTimeZoneDetection and
+         config_enablePrimaryLocationTimeZoneProvider are true.
+
+         See android.service.timezone.TimeZoneProviderService for how to host location time zone
+         provider services.
+
+         This contains the GmsCore package name in GMS sample config as Google hosts a location
+         time zone provider in GmsCore. The provider implementation is hosted in GmsCore. -->
+    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- Whether the secondary location time zone provider is enabled.
+         This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
+
+         This is turned off in GMS sample config as Google does not currently provide a default
+         secondary. -->
+    <bool name="config_enableSecondaryLocationTimeZoneProvider" translatable="false">false</bool>
+
+    <!-- The package hosting the secondary location time zone provider.
+         Only used when config_enableGeolocationTimeZoneDetection and
+         config_enableSecondaryLocationTimeZoneProvider are true.
+
+         See android.service.timezone.TimeZoneProviderService for how to host location time zone
+         provider services.
+
+         This is left empty in GMS sample config as config_enableSecondaryLocationTimeZoneProvider
+         is false. -->
+    <string name="config_secondaryLocationTimeZoneProviderPackageName" translatable="false"></string>
+</resources>

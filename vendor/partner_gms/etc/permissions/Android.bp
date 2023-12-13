@@ -1,0 +1,46 @@
+prebuilt_etc {
+    name: "privapp_permissions_google_system",
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-system.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_google_product",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-product.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_google_system_ext",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-system-ext.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_google_comms_suite",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-comms-suite.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_google_fi",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-fi.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "split_permissions_google",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "split-permissions-google.xml",
+    filename_from_src: true,
+}

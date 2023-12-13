@@ -1,0 +1,19 @@
+static_library("a2dp_hal_sim") {
+  sources = [
+    "audio_a2dp_hal.cc",
+    "audio_a2dp_hal_utils.cc",
+  ]
+
+  include_dirs = [
+    "//internal_include",
+    "//stack/include",
+    "//",
+    "//utils/include",
+    "//third_party/bt/include/hardware",
+    "//osi/stack/include",
+    "//third_party/system/core/include",
+  ]
+  deps = [
+    "//third_party/libchrome:base",
+  ]
+}

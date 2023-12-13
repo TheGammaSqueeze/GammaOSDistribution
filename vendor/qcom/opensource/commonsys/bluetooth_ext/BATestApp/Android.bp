@@ -1,0 +1,24 @@
+android_app {
+    name: "BATestApp",
+    system_ext_specific: true,
+
+    resource_dirs: ["res"],
+
+    aaptflags: ["--auto-add-overlay"],
+
+    srcs: ["src/**/*.java"],
+
+    aidl: {
+        include_dirs: ["system/bt/binder"],
+    },
+
+    certificate: "platform",
+
+    owner: "qti",
+
+    optimize: {
+        enabled: false,
+    },
+
+    platform_apis: true,
+}

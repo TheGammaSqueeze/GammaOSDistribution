@@ -1,0 +1,93 @@
+cc_library_shared {
+    arch: {
+        arm: {
+            instruction_set: "arm",
+        },
+    },
+    name: "libsn100nfc-nci",
+    system_ext_specific: true,
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libdl",
+        "libhardware",
+        "libz",
+        "libchrome",
+        "libbase",
+	"libstatslog",
+
+        // Treble configuration
+        "libhidlbase",
+        "libutils",
+        "android.hardware.nfc@1.0",
+        "android.hardware.nfc@1.1",
+        "android.hardware.nfc@1.2",
+        "vendor.nxp.hardware.nfc@1.0",
+        "vendor.nxp.hardware.nfc@1.1",
+        "vendor.nxp.hardware.nfc@2.0",
+    ],
+    static_libs: [
+        "libsn100nfcutils",
+    ],
+    cflags: [
+        "-DDYN_ALLOC=1",
+        "-DBUILDCFG=1",
+        "-Wall",
+        "-Werror",
+        "-Wimplicit-fallthrough",
+        "-DNXP_EXTNS=TRUE",
+        "-DNXP_SRD=TRUE"
+    ],
+    local_include_dirs: [
+        "include",
+        "gki/ulinux",
+        "gki/common",
+        "nfa/include",
+        "nfc/include",
+       ],
+    srcs: [
+        "nfa/ce/*.cc",
+        "nfa/dm/*.cc",
+        "nfa/ee/*.cc",
+        "nfa/hci/*.cc",
+        "nfa/p2p/*.cc",
+        "nfa/rw/*.cc",
+        "nfa/scr/*.cc",
+        "nfa/sys/*.cc",
+        "nfa/t4tnfcee/*.cc",
+        "nfa/wlc/*.cc",
+        "nfa/srd/*.cc",
+        "nfc/llcp/*.cc",
+        "nfc/nci/*.cc",
+        "nfc/ndef/*.cc",
+        "nfc/nfc/*.cc",
+        "nfc/tags/*.cc",
+        "adaptation/*.cc",
+        "gki/common/*.cc",
+        "gki/ulinux/*.cc",
+    ],
+    required: [
+        // Provide a default libnfc-nci.conf in /system/etc for devices that
+        // does not ship one in /product
+        "libnfc-nci.conf-default",
+    ],
+    product_variables: {
+        debuggable: {
+            cflags: [
+                "-DDCHECK_ALWAYS_ON",
+            ],
+        },
+    },
+    sanitize: {
+        cfi: true,
+        misc_undefined: ["bounds"],
+        integer_overflow: true,
+        scs: true,
+        diag: {
+            integer_overflow: true,
+            misc_undefined: ["bounds"],
+            no_recover: ["bounds", "integer"],
+        },
+    },
+
+}

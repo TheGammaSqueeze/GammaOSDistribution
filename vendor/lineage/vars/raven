@@ -1,0 +1,46 @@
+# Pixel 6 Pro
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs101
+  device/google/raviole
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly prev_build_id="SQ3A.220705.003.A1"
+readonly build_id="SQ3A.220705.004"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-12.1.0_r11"
+readonly aosp_tag="android-12.1.0_r22"
+
+readonly prev_build_number="8672226"
+readonly build_number="8836240"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-sq3a.220705.004-factory-112d4f32.zip"
+readonly image_sha256="112d4f32aeaac5352596837b2b71cb94ffd57b4c515264d776921c42fd9164be"
+
+readonly flash_url="https://flash.android.com/build/8836240?target=raven-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-sq3a.220705.004-d609581e.zip"
+readonly ota_sha256="d609581eb926f38fe0067af966492f18b8d48c810840a96b3bc14778d7b20856"
+
+readonly security_patch="2022-07-05"

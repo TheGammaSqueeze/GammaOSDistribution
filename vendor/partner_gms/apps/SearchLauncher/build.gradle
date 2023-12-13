@@ -1,0 +1,133 @@
+// The Gradle version is only for development, use 'make' to build to release apks
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath GRADLE_CLASS_PATH
+        classpath PROTOBUF_CLASS_PATH
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
+
+final String ANDROID_TOP = "${rootDir}/../../../../.."
+final String AOSP_DIR = "${ANDROID_TOP}/packages/apps/Launcher3"
+
+android {
+    compileSdkVersion COMPILE_SDK
+    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 10000
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        simple {
+            dimension "default"
+            applicationId 'com.android.launcher3'
+        }
+
+        quickstep {
+            dimension "default"
+            applicationId 'com.android.launcher3'
+        }
+    }
+
+    // Disable release builds for now
+    android.variantFilter { variant ->
+        if (variant.buildType.name.endsWith('release')) {
+            variant.setIgnore(true);
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ["${AOSP_DIR}/src", "${AOSP_DIR}/src_shortcuts_overrides","${AOSP_DIR}/src_plugins", "${AOSP_DIR}/protos/", "src"]
+            res.srcDirs = ["${AOSP_DIR}/res"]
+            manifest.srcFile "${ANDROID_TOP}/common/AndroidManifest.xml"
+            proto {
+                srcDir "${AOSP_DIR}/protos/"
+                srcDir "${AOSP_DIR}/proto_overrides/"
+            }
+        }
+
+        simple {
+            java.srcDirs = ["${AOSP_DIR}/src_flags", "${AOSP_DIR}/src_ui_overrides"]
+            res.srcDirs = ["res"]
+            manifest.srcFile "AndroidManifest.xml"
+        }
+
+        quickstep {
+            java.srcDirs = ["${AOSP_DIR}/quickstep/src", "src", "quickstep/src"]
+            res.srcDirs = ["${AOSP_DIR}/quickstep/res", "res"]
+            manifest.srcFile "${AOSP_DIR}/quickstep/AndroidManifest.xml"
+        }
+
+        quickstepDebug {
+            res.srcDirs = ["quickstep/res"]
+            manifest.srcFile "AndroidManifest.xml"
+        }
+    }
+}
+
+repositories {
+    maven { url "../../../../../prebuilts/fullsdk-darwin/extras/android/m2repository" }
+    maven { url "../../../../../prebuilts/fullsdk-linux/extras/android/m2repository" }
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation "androidx.annotation:annotation:${ANDROID_X_VERSION}"
+    implementation "androidx.dynamicanimation:dynamicanimation:${ANDROID_X_VERSION}"
+    implementation "androidx.recyclerview:recyclerview:${ANDROID_X_VERSION}"
+    implementation "androidx.preference:preference:${ANDROID_X_VERSION}"
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation project(':IconLoader')
+    implementation fileTree(dir: "${AOSP_DIR}/libs", include: 'launcher_protos.jar')
+
+    quickstepImplementation fileTree(dir: "${AOSP_DIR}/quickstep/libs", include: 'sysui_shared.jar')
+    simpleImplementation fileTree(dir: "${AOSP_DIR}/libs", include: 'plugin_core.jar')
+}
+
+protobuf {
+    // Configure the protoc executable
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0-alpha-3'
+
+        generateProtoTasks {
+            all().each { task ->
+                task.builtins {
+                    remove java
+                    javanano {
+                        option "java_package=launcher_log_extension.proto|com.android.launcher3.userevent.nano"
+                        option "java_package=launcher_log.proto|com.android.launcher3.userevent.nano"
+                        option "java_package=launcher_dump.proto|com.android.launcher3.model.nano"
+                        option "enum_style=java"
+                    }
+                }
+            }
+        }
+    }
+}

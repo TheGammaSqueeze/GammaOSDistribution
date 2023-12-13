@@ -1,0 +1,62 @@
+soong_config_module_type_import {
+    from: "device/qcom/qssi/Android.bp",
+    module_types: [
+         "bredr_vs_btadva_cc_defaults",
+    ],
+}
+
+bredr_vs_btadva_cc_defaults {
+    name: "btadva_audio_hal_int_cc-default",
+
+    soong_config_variables: {
+        bredr_or_btadva: {
+           btadva: {
+              include_dirs: [
+                 "vendor/qcom/proprietary/commonsys/bt/bt_adv_audio/system/bt",
+                 "vendor/qcom/proprietary/commonsys/bt/bt_adv_audio/system/bt/bta/include",
+                 "vendor/qcom/proprietary/commonsys/bt/bt_adv_audio/system/bt/btif/include",
+                 "vendor/qcom/proprietary/commonsys/bt/bt_adv_audio/vhal/include",
+              ],
+           }
+       }
+   }
+}
+
+// Bluetooth Audio library for target
+// ========================================================
+cc_library_static {
+    name: "libbt-audio-hal-interface-qti",
+    defaults: ["fluoride_defaults_qti", "btadva_audio_hal_int_cc-default"],
+    include_dirs: [
+        "vendor/qcom/opensource/commonsys/system/bt",
+        "vendor/qcom/opensource/commonsys/system/bt/internal_include",
+        "vendor/qcom/opensource/commonsys/system/bt/bta/include",
+        "vendor/qcom/opensource/commonsys/system/bt/bta/sys",
+        "vendor/qcom/opensource/commonsys/bluetooth_ext/vhal/include/",
+        "vendor/qcom/opensource/commonsys/system/bt/btif/include",
+        "vendor/qcom/opensource/commonsys/system/bt/stack/include",
+        "system/bt/audio_hearing_aid_hw/include",
+        "vendor/qcom/opensource/commonsys/bluetooth_ext/system_bt_ext/btif/include",
+        "vendor/qcom/opensource/commonsys/system/bt/btcore/include",
+        "vendor/qcom/opensource/commonsys/system/bt/hci/include",
+        "vendor/qcom/opensource/commonsys-intf/bluetooth/include",
+        "vendor/qcom/opensource/commonsys/system/bt/device/include",
+    ],
+    srcs: [
+        "a2dp_encoding.cc",
+        "client_interface.cc",
+        "hearing_aid_software_encoding.cc",
+    ],
+    shared_libs: [
+        "vendor.qti.hardware.bluetooth_audio@2.1",
+        "vendor.qti.hardware.bluetooth_audio@2.0",
+        "libfmq",
+        "libhidlbase",
+    ],
+    static_libs: [
+        "libosi_qti",
+    ],
+    cflags: [
+        "-DBUILDCFG",
+    ],
+}
