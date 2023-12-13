@@ -1,0 +1,34 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/incident_section_gen/incident-section-gen/linux_glibc_x86_64/incident-section-gen"
+    to: "tools/out/bin/incident-section-gen"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_shared/libplatformprotos.so"
+    to: "tools/out/lib64/libplatformprotos.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/libprotobuf-cpp-full/linux_glibc_x86_64_shared/libprotobuf-cpp-full.so"
+    to: "tools/out/lib64/libprotobuf-cpp-full.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/zlib/libz/linux_glibc_x86_64_shared/libz-host.so"
+    to: "tools/out/lib64/libz-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/incident-section-gen incident > __SBOX_SANDBOX_DIR__/out/incident_sections.cpp"
+  copy_after: <
+    from: "out/incident_sections.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/incident/incident_sections/gen/incident_sections.cpp"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm64_armv8-a_static/gen/proto/frameworks/base/core/proto/android/graphics/pixelformat.pb.cc: frameworks/base/core/proto/android/graphics/pixelformat.proto

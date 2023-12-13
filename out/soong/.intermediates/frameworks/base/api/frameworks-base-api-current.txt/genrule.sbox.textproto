@@ -1,0 +1,19 @@
+commands: <
+  copy_before: <
+    from: "build/soong/scripts/jar-wrapper.sh"
+    to: "tools/out/bin/metalava"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/metalava/metalava/linux_glibc_common/withres/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J--add-opens=java.base/java.util=ALL-UNNAMED  --no-banner --format=v2 out/soong/.intermediates/packages/modules/IPsec/android.net.ipsec.ike.stubs.source/android_common/metalava/android.net.ipsec.ike.stubs.source_api.txt out/soong/.intermediates/libcore/art.module.public.api.stubs.source/android_common/metalava/art.module.public.api.stubs.source_api.txt out/soong/.intermediates/external/conscrypt/conscrypt.module.public.api.stubs.source/android_common/metalava/conscrypt.module.public.api.stubs.source_api.txt out/soong/.intermediates/frameworks/base/apex/appsearch/framework/framework-appsearch.stubs.source/android_common/metalava/framework-appsearch.stubs.source_api.txt out/soong/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.source/android_common/metalava/framework-connectivity.stubs.source_api.txt out/soong/.intermediates/frameworks/base/libs/hwui/framework-graphics.stubs.source/android_common/metalava/framework-graphics.stubs.source_api.txt out/soong/.intermediates/frameworks/base/apex/media/framework/framework-media.stubs.source/android_common/metalava/framework-media.stubs.source_api.txt out/soong/.intermediates/packages/providers/MediaProvider/apex/framework/framework-mediaprovider.stubs.source/android_common/metalava/framework-mediaprovider.stubs.source_api.txt out/soong/.intermediates/packages/modules/Permission/framework/framework-permission.stubs.source/android_common/metalava/framework-permission.stubs.source_api.txt out/soong/.intermediates/packages/modules/Permission/framework-s/framework-permission-s.stubs.source/android_common/metalava/framework-permission-s.stubs.source_api.txt out/soong/.intermediates/packages/modules/Scheduling/framework/framework-scheduling.stubs.source/android_common/metalava/framework-scheduling.stubs.source_api.txt out/soong/.intermediates/packages/modules/SdkExtensions/framework/framework-sdkextensions.stubs.source/android_common/metalava/framework-sdkextensions.stubs.source_api.txt out/soong/.intermediates/packages/modules/StatsD/framework/framework-statsd.stubs.source/android_common/metalava/framework-statsd.stubs.source_api.txt out/soong/.intermediates/packages/modules/Connectivity/Tethering/common/TetheringLib/framework-tethering.stubs.source/android_common/metalava/framework-tethering.stubs.source_api.txt out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source/android_common/metalava/framework-wifi.stubs.source_api.txt out/soong/.intermediates/external/icu/android_icu4j/i18n.module.public.api.stubs.source/android_common/metalava/i18n.module.public.api.stubs.source_api.txt frameworks/base/core/api/current.txt --api __SBOX_SANDBOX_DIR__/out/current.txt"
+  copy_after: <
+    from: "out/current.txt"
+    to: "out/soong/.intermediates/frameworks/base/api/frameworks-base-api-current.txt/gen/current.txt"
+  >
+  input_hash: "cff79d60f59edaec6c51ba2222354f1bc5f8a8ce83a93eaee957cabec6d7254f"
+>
+

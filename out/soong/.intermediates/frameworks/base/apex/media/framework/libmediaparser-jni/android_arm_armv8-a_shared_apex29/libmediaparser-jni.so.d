@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/base/apex/media/framework/libmediaparser-jni/android_arm_armv8-a_shared_apex29/libmediaparser-jni.so:   out/soong/.intermediates/frameworks/base/apex/media/framework/libmediaparser-jni/android_arm_armv8-a_shared_apex29/unstripped/libmediaparser-jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

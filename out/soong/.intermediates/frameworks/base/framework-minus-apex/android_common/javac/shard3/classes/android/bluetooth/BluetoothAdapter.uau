@@ -1,0 +1,15 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothAdapter;->mService:Landroid/bluetooth/IBluetooth;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,728,5,728,25,
+Landroid/bluetooth/BluetoothAdapter;->getLeState()I,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1152,5,1153,55,publicAlternatives=%22Use+%7B%40link+%23getState%28%29%7D+instead+to+determine+whether+you+can+use+BLE+%26+BT+classic.%22
+Landroid/bluetooth/BluetoothAdapter;->disable(Z)Z,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1254,5,1254,50,trackingBug=171933273L
+Landroid/bluetooth/BluetoothAdapter;->factoryReset()Z,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1325,5,1325,88,maxTargetSdk=30&trackingBug=170729553L
+Landroid/bluetooth/BluetoothAdapter;->getUuids()[Landroid/os/ParcelUuid;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1355,5,1355,25,
+Landroid/bluetooth/BluetoothAdapter;->setScanMode(IJ)Z,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1647,5,1648,85,publicAlternatives=%22Use+%7B%40link+%23ACTION_REQUEST_DISCOVERABLE%7D%2C+which+shows+UI+that+confirms+the+user+wants+to+go+into+discoverable+mode.%22
+Landroid/bluetooth/BluetoothAdapter;->setScanMode(I)Z,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1699,5,1699,25,
+Landroid/bluetooth/BluetoothAdapter;->getDiscoverableTimeout()I,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1721,5,1721,25,
+Landroid/bluetooth/BluetoothAdapter;->setDiscoverableTimeout(I)V,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,1742,5,1742,25,
+Landroid/bluetooth/BluetoothAdapter;->getConnectionState()I,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,2603,5,2603,25,
+Landroid/bluetooth/BluetoothAdapter;->listenUsingRfcommOn(IZZ)Landroid/bluetooth/BluetoothServerSocket;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,2729,5,2729,25,
+Landroid/bluetooth/BluetoothAdapter;->listenUsingEncryptedRfcommWithServiceRecord(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,2848,5,2848,88,maxTargetSdk=30&trackingBug=170729553L
+Landroid/bluetooth/BluetoothAdapter;->getBluetoothManager()Landroid/bluetooth/IBluetoothManager;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,3768,5,3768,25,
+Landroid/bluetooth/BluetoothAdapter;->getBluetoothService(Landroid/bluetooth/IBluetoothManagerCallback;)Landroid/bluetooth/IBluetooth;,frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java,3794,5,3794,25,

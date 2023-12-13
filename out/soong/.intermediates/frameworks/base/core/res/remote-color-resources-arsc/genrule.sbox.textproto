@@ -1,0 +1,9 @@
+commands: <
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/remote-color-resources-arsc && unzip -x out/soong/.intermediates/frameworks/base/core/res/remote-color-resources-apk/gen/remote-color-resources.apk resources.arsc -d __SBOX_SANDBOX_DIR__/out/remote-color-resources-arsc && mkdir -p $(dirname __SBOX_SANDBOX_DIR__/out/res/raw/remote_views_color_resources.arsc) && mv __SBOX_SANDBOX_DIR__/out/remote-color-resources-arsc/resources.arsc __SBOX_SANDBOX_DIR__/out/res/raw/remote_views_color_resources.arsc && echo 'Created __SBOX_SANDBOX_DIR__/out/res/raw/remote_views_color_resources.arsc'"
+  copy_after: <
+    from: "out/res/raw/remote_views_color_resources.arsc"
+    to: "out/soong/.intermediates/frameworks/base/core/res/remote-color-resources-arsc/gen/res/raw/remote_views_color_resources.arsc"
+  >
+  input_hash: "fc3113b94dc7b78710552c82b70eac06fc57dc09c38cb58a2a738e37399ab508"
+>
+

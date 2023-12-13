@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm64_armv8-a_static/gen/proto/frameworks/base/core/proto/android/app/alarmmanager.pb.cc: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/app/pendingintent.proto frameworks/base/core/proto/android/app/alarmmanager.proto

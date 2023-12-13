@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalServiceConnector.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IIncrementalServiceConnector.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalServiceConnector.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalFileSystemControlParcel.cpp.d --ninja -Iframeworks/native/aidl/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/incremental/IncrementalFileSystemControlParcel.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalFileSystemControlParcel.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/incremental/IIncrementalServiceConnector.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/incremental/IncrementalFileSystemControlParcel.cpp.d"
+  copy_after: <
+    from: "out/android/os/incremental/BnIncrementalFileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnIncrementalFileSystemControlParcel.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BnIncrementalServiceConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BnIncrementalServiceConnector.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpIncrementalFileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpIncrementalFileSystemControlParcel.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/BpIncrementalServiceConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/BpIncrementalServiceConnector.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IIncrementalServiceConnector.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalServiceConnector.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IIncrementalServiceConnector.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalServiceConnector.h"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IncrementalFileSystemControlParcel.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IncrementalFileSystemControlParcel.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/incremental/IncrementalFileSystemControlParcel.h"
+    to: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IncrementalFileSystemControlParcel.h"
+  >
+  input_hash: "63d2c01041c4abc629ea9a5bef472fb3c7dfa342907b960bdadc56be0b38900f"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/core/java/libincremental_aidl-cpp/android_arm_armv8-a_static/gen/aidl/android/os/incremental/IIncrementalServiceConnector.cpp.d"
+

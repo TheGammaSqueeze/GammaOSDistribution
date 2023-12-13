@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/graphics/proto/updatable-driver-protos/android_common/gen/proto/proto0.tmp/android/updatabledriver/UpdatableDriverProto.java: frameworks/base/graphics/proto/updatable_driver.proto

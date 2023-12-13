@@ -1,0 +1,40 @@
+out/soong/.intermediates/frameworks/base/framework-minus-apex/android_common/gen/aidl/aidl8.tmp/frameworks/base/core/java/android/hardware/input/IInputManager.java : \
+  frameworks/base/core/java/android/hardware/input/IInputManager.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/core/java/android/hardware/input/InputDeviceIdentifier.aidl \
+  frameworks/base/core/java/android/hardware/input/KeyboardLayout.aidl \
+  frameworks/base/core/java/android/hardware/input/IInputDevicesChangedListener.aidl \
+  frameworks/base/core/java/android/hardware/input/ITabletModeChangedListener.aidl \
+  frameworks/base/core/java/android/hardware/input/TouchCalibration.aidl \
+  frameworks/base/core/java/android/os/CombinedVibration.aidl \
+  frameworks/base/core/java/android/hardware/input/IInputSensorEventListener.aidl \
+  frameworks/base/core/java/android/hardware/input/InputSensorInfo.aidl \
+  frameworks/base/core/java/android/hardware/lights/Light.aidl \
+  frameworks/base/core/java/android/hardware/lights/LightState.aidl \
+  frameworks/base/core/java/android/os/IVibratorStateListener.aidl \
+  frameworks/base/core/java/android/os/VibrationEffect.aidl \
+  frameworks/base/core/java/android/view/InputDevice.aidl \
+  frameworks/base/core/java/android/view/InputEvent.aidl \
+  frameworks/base/core/java/android/view/InputMonitor.aidl \
+  frameworks/base/core/java/android/view/PointerIcon.aidl \
+  frameworks/base/core/java/android/view/VerifiedInputEvent.aidl
+
+frameworks/base/core/java/android/hardware/input/IInputManager.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/core/java/android/hardware/input/InputDeviceIdentifier.aidl :
+frameworks/base/core/java/android/hardware/input/KeyboardLayout.aidl :
+frameworks/base/core/java/android/hardware/input/IInputDevicesChangedListener.aidl :
+frameworks/base/core/java/android/hardware/input/ITabletModeChangedListener.aidl :
+frameworks/base/core/java/android/hardware/input/TouchCalibration.aidl :
+frameworks/base/core/java/android/os/CombinedVibration.aidl :
+frameworks/base/core/java/android/hardware/input/IInputSensorEventListener.aidl :
+frameworks/base/core/java/android/hardware/input/InputSensorInfo.aidl :
+frameworks/base/core/java/android/hardware/lights/Light.aidl :
+frameworks/base/core/java/android/hardware/lights/LightState.aidl :
+frameworks/base/core/java/android/os/IVibratorStateListener.aidl :
+frameworks/base/core/java/android/os/VibrationEffect.aidl :
+frameworks/base/core/java/android/view/InputDevice.aidl :
+frameworks/base/core/java/android/view/InputEvent.aidl :
+frameworks/base/core/java/android/view/InputMonitor.aidl :
+frameworks/base/core/java/android/view/PointerIcon.aidl :
+frameworks/base/core/java/android/view/VerifiedInputEvent.aidl :

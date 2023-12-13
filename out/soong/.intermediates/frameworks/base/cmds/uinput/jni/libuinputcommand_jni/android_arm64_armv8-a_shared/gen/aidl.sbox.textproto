@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/src/com/android/commands/uinput/InputAbsInfo.cpp.d --ninja  -Iframeworks/base/cmds/uinput/ frameworks/base/cmds/uinput/src/com/android/commands/uinput/InputAbsInfo.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/src/com/android/commands/uinput/InputAbsInfo.cpp"
+  copy_after: <
+    from: "out/src/com/android/commands/uinput/BnInputAbsInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/uinput/jni/libuinputcommand_jni/android_arm64_armv8-a_shared/gen/aidl/src/com/android/commands/uinput/BnInputAbsInfo.h"
+  >
+  copy_after: <
+    from: "out/src/com/android/commands/uinput/BpInputAbsInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/uinput/jni/libuinputcommand_jni/android_arm64_armv8-a_shared/gen/aidl/src/com/android/commands/uinput/BpInputAbsInfo.h"
+  >
+  copy_after: <
+    from: "out/src/com/android/commands/uinput/InputAbsInfo.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/uinput/jni/libuinputcommand_jni/android_arm64_armv8-a_shared/gen/aidl/src/com/android/commands/uinput/InputAbsInfo.cpp"
+  >
+  copy_after: <
+    from: "out/src/com/android/commands/uinput/InputAbsInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/uinput/jni/libuinputcommand_jni/android_arm64_armv8-a_shared/gen/aidl/src/com/android/commands/uinput/InputAbsInfo.h"
+  >
+  input_hash: "f202c34a1cde0152acc1633d3fb3a2485ec43928cab4138f1097d487dfb3a62f"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/cmds/uinput/jni/libuinputcommand_jni/android_arm64_armv8-a_shared/gen/aidl/src/com/android/commands/uinput/InputAbsInfo.cpp.d"
+

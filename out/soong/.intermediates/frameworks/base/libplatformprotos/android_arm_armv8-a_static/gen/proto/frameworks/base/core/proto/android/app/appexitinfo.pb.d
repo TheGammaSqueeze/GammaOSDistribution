@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm_armv8-a_static/gen/proto/frameworks/base/core/proto/android/app/appexitinfo.pb.cc: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/proto_logging/stats/enums/app/enums.proto frameworks/base/core/proto/android/app/appexitinfo.proto

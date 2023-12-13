@@ -1,0 +1,40 @@
+out/soong/.intermediates/frameworks/base/api-stubs-docs-non-updatable/android_common/gen/aidl/aidl21.tmp/frameworks/base/core/java/com/android/internal/telephony/ITelephonyRegistry.java : \
+  frameworks/base/core/java/com/android/internal/telephony/ITelephonyRegistry.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/LinkProperties.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkCapabilities.aidl \
+  frameworks/base/telephony/java/android/telephony/BarringInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/CallQuality.aidl \
+  frameworks/base/telephony/java/android/telephony/CellIdentity.aidl \
+  frameworks/base/telephony/java/android/telephony/CellInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/LinkCapacityEstimate.aidl \
+  frameworks/base/telephony/java/android/telephony/TelephonyDisplayInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/ImsReasonInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/PhoneCapability.aidl \
+  frameworks/base/telephony/java/android/telephony/PhysicalChannelConfig.aidl \
+  frameworks/base/telephony/java/android/telephony/PreciseDataConnectionState.aidl \
+  frameworks/base/telephony/java/android/telephony/ServiceState.aidl \
+  frameworks/base/telephony/java/android/telephony/SignalStrength.aidl \
+  frameworks/base/telephony/java/android/telephony/emergency/EmergencyNumber.aidl \
+  frameworks/base/core/java/com/android/internal/telephony/IPhoneStateListener.aidl \
+  frameworks/base/core/java/com/android/internal/telephony/IOnSubscriptionsChangedListener.aidl
+
+frameworks/base/core/java/com/android/internal/telephony/ITelephonyRegistry.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/LinkProperties.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkCapabilities.aidl :
+frameworks/base/telephony/java/android/telephony/BarringInfo.aidl :
+frameworks/base/telephony/java/android/telephony/CallQuality.aidl :
+frameworks/base/telephony/java/android/telephony/CellIdentity.aidl :
+frameworks/base/telephony/java/android/telephony/CellInfo.aidl :
+frameworks/base/telephony/java/android/telephony/LinkCapacityEstimate.aidl :
+frameworks/base/telephony/java/android/telephony/TelephonyDisplayInfo.aidl :
+frameworks/base/telephony/java/android/telephony/ims/ImsReasonInfo.aidl :
+frameworks/base/telephony/java/android/telephony/PhoneCapability.aidl :
+frameworks/base/telephony/java/android/telephony/PhysicalChannelConfig.aidl :
+frameworks/base/telephony/java/android/telephony/PreciseDataConnectionState.aidl :
+frameworks/base/telephony/java/android/telephony/ServiceState.aidl :
+frameworks/base/telephony/java/android/telephony/SignalStrength.aidl :
+frameworks/base/telephony/java/android/telephony/emergency/EmergencyNumber.aidl :
+frameworks/base/core/java/com/android/internal/telephony/IPhoneStateListener.aidl :
+frameworks/base/core/java/com/android/internal/telephony/IOnSubscriptionsChangedListener.aidl :

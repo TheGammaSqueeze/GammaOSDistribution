@@ -1,0 +1,70 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIdmap2.cpp.d --ninja -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core -Iframeworks/base/cmds/idmap2/idmap2d/aidl/services -Iframeworks/base/cmds/idmap2/idmap2d/aidl/services/ frameworks/base/cmds/idmap2/idmap2d/aidl/services/android/os/IIdmap2.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIdmap2.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternal.cpp.d --ninja -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core -Iframeworks/base/cmds/idmap2/idmap2d/aidl/services -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core/ frameworks/base/cmds/idmap2/idmap2d/aidl/core/android/os/FabricatedOverlayInternal.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternal.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternalEntry.cpp.d --ninja -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core -Iframeworks/base/cmds/idmap2/idmap2d/aidl/services -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core/ frameworks/base/cmds/idmap2/idmap2d/aidl/core/android/os/FabricatedOverlayInternalEntry.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternalEntry.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInfo.cpp.d --ninja -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core -Iframeworks/base/cmds/idmap2/idmap2d/aidl/services -Iframeworks/base/cmds/idmap2/idmap2d/aidl/core/ frameworks/base/cmds/idmap2/idmap2d/aidl/core/android/os/FabricatedOverlayInfo.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInfo.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IIdmap2.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternal.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInternalEntry.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/FabricatedOverlayInfo.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnFabricatedOverlayInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BnFabricatedOverlayInfo.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnFabricatedOverlayInternal.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BnFabricatedOverlayInternal.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnFabricatedOverlayInternalEntry.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BnFabricatedOverlayInternalEntry.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnIdmap2.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BnIdmap2.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpFabricatedOverlayInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BpFabricatedOverlayInfo.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpFabricatedOverlayInternal.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BpFabricatedOverlayInternal.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpFabricatedOverlayInternalEntry.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BpFabricatedOverlayInternalEntry.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIdmap2.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/BpIdmap2.h"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInfo.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInfo.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInfo.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInfo.h"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInternal.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInternal.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInternal.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInternal.h"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInternalEntry.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInternalEntry.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/FabricatedOverlayInternalEntry.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/FabricatedOverlayInternalEntry.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIdmap2.cpp"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/IIdmap2.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIdmap2.h"
+    to: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/IIdmap2.h"
+  >
+  input_hash: "67a41eda144385318692d503882655ffd91cc6aa138e3fe09eb1017a3578eb81"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/cmds/idmap2/libidmap2daidl/android_arm64_armv8-a_static/gen/aidl/android/os/IIdmap2.cpp.d"
+

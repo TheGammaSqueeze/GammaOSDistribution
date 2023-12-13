@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm64_armv8-a_static_cfi/gen/proto/frameworks/base/core/proto/android/hardware/location/context_hub_info.pb.cc: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/hardware/location/context_hub_info.proto

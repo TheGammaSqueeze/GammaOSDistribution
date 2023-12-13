@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/core/java/android.os.permissions_aidl-rust/android_arm64_armv8-a_rlib_rlib-std/libandroid_os_permissions_aidl.rlib: out/soong/.intermediates/frameworks/base/core/java/android.os.permissions_aidl-rust/android_arm64_armv8-a_source/android_os_permissions_aidl.rs

@@ -1,0 +1,23 @@
+commands: <
+  copy_before: <
+    from: "frameworks/base/api/gen_combined_removed_dex.sh"
+    to: "tools/src/frameworks/base/api/gen_combined_removed_dex.sh"
+  >
+  copy_before: <
+    from: "build/soong/scripts/jar-wrapper.sh"
+    to: "tools/out/bin/metalava"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/metalava/metalava/linux_glibc_common/withres/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/frameworks/base/api/gen_combined_removed_dex.sh __SBOX_SANDBOX_DIR__/tools/out/bin/metalava __SBOX_SANDBOX_DIR__/out out/soong/.intermediates/frameworks/base/api/frameworks-base-api-removed.txt/gen/removed.txt out/soong/.intermediates/frameworks/base/api/frameworks-base-api-system-removed.txt/gen/system-removed.txt out/soong/.intermediates/packages/services/Car/car-lib/android.car-stubs-docs/android_common/metalava/android.car-stubs-docs_removed.txt out/soong/.intermediates/packages/services/Car/car-lib/android.car-system-stubs-docs/android_common/metalava/android.car-system-stubs-docs_removed.txt > __SBOX_SANDBOX_DIR__/out/combined-removed-dex.txt"
+  copy_after: <
+    from: "out/combined-removed-dex.txt"
+    to: "out/soong/.intermediates/frameworks/base/api/combined-removed-dex/gen/combined-removed-dex.txt"
+  >
+  input_hash: "13e8589919c3b715b0e6ac2161640510f9d34cab9ef132aaca2c79f4eec6d64e"
+>
+

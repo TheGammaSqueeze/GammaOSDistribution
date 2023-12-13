@@ -1,0 +1,45 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-javastream/linux_glibc_x86_64/protoc-gen-javastream"
+    to: "tools/out/bin/protoc-gen-javastream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-javastream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.d   --javastream_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -jar -o __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.srcjar -C __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto -D __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-javastream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.d   --javastream_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -jar -o __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.srcjar -C __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto -D __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-javastream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.d   --javastream_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -jar -o __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.srcjar -C __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto -D __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-javastream   --dependency_out=__SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.d   --javastream_out=__SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto   -Iexternal/protobuf/src   -I .   packages/modules/Permission/service/proto/com/android/role/roleservice.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -jar -o __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar -C __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto -D __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.d __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.d"
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputconnection.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/framework-javastream-protos/gen/4/frameworks/base/core/proto/android/view/inputmethod/inputconnection.srcjar"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/framework-javastream-protos/gen/4/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.srcjar"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/framework-javastream-protos/gen/4/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.srcjar"
+  >
+  copy_after: <
+    from: "out/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/framework-javastream-protos/gen/4/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+  >
+  input_hash: "b9883082b8bb68792a988d48a0a140a40dab828086e7a3e73eb175ce0a240976"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/framework-javastream-protos/gen/4/gensrcs.d"
+

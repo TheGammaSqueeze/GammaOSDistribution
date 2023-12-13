@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/display/IDeviceProductInfoConstants.cpp.d --ninja  -Iframeworks/native/aidl/ frameworks/native/aidl/android/hardware/display/IDeviceProductInfoConstants.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/display/IDeviceProductInfoConstants.cpp"
+  copy_after: <
+    from: "out/android/hardware/display/BnDeviceProductInfoConstants.h"
+    to: "out/soong/.intermediates/frameworks/base/core/jni/libandroid_runtime/android_arm_armv8-a_shared/gen/aidl/android/hardware/display/BnDeviceProductInfoConstants.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/display/BpDeviceProductInfoConstants.h"
+    to: "out/soong/.intermediates/frameworks/base/core/jni/libandroid_runtime/android_arm_armv8-a_shared/gen/aidl/android/hardware/display/BpDeviceProductInfoConstants.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/display/IDeviceProductInfoConstants.cpp"
+    to: "out/soong/.intermediates/frameworks/base/core/jni/libandroid_runtime/android_arm_armv8-a_shared/gen/aidl/android/hardware/display/IDeviceProductInfoConstants.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/display/IDeviceProductInfoConstants.h"
+    to: "out/soong/.intermediates/frameworks/base/core/jni/libandroid_runtime/android_arm_armv8-a_shared/gen/aidl/android/hardware/display/IDeviceProductInfoConstants.h"
+  >
+  input_hash: "8e150f9569f7806af098ab27f1836951b3c5dd8f053899af4f83294692580330"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/core/jni/libandroid_runtime/android_arm_armv8-a_shared/gen/aidl/android/hardware/display/IDeviceProductInfoConstants.cpp.d"
+

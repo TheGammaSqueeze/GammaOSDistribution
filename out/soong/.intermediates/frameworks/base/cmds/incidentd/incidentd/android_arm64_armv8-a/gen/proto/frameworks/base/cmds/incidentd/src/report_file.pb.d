@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/cmds/incidentd/incidentd/android_arm64_armv8-a/gen/proto/frameworks/base/cmds/incidentd/src/report_file.pb.cc: frameworks/base/core/proto/android/os/metadata.proto frameworks/base/cmds/incidentd/src/report_file.proto

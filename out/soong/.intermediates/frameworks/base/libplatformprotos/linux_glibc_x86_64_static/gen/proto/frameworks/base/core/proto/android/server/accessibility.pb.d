@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/linux_glibc_x86_64_static/gen/proto/frameworks/base/core/proto/android/server/accessibility.pb.cc: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/typedef.proto frameworks/base/core/proto/android/server/accessibility.proto

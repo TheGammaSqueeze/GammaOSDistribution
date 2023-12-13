@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm64_armv8-a_static/gen/proto/packages/modules/Permission/service/proto/com/android/role/roleservice.pb.cc: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto packages/modules/Permission/service/proto/com/android/role/roleservice.proto

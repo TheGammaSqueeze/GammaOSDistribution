@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  command: "INPUTS=(out/soong/.intermediates/frameworks/base/core/res/remote-color-resources-arsc/gen/res/raw/remote_views_color_resources.arsc frameworks/base/core/res/remote_color_resources_res/symbols.xml) && RES_DIR=$(dirname $(dirname ${INPUTS[0]})) && mkdir -p $RES_DIR/values && cp ${INPUTS[1]} $RES_DIR/values && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -o __SBOX_SANDBOX_DIR__/out/remote_views_color_resources.zip -C $RES_DIR -D $RES_DIR"
+  copy_after: <
+    from: "out/remote_views_color_resources.zip"
+    to: "out/soong/.intermediates/frameworks/base/core/res/remote-color-resources-arsc-zip/gen/remote_views_color_resources.zip"
+  >
+  input_hash: "f1c64474852a67438bacc0ab51179513e42609f62fd9f6465be308b488cb750d"
+>
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm64_armv8-a_static_cfi/gen/proto/frameworks/proto_logging/stats/enums/net/enums.pb.cc: frameworks/proto_logging/stats/enums/net/enums.proto

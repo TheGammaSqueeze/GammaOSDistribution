@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm_armv8-a_static/gen/proto/frameworks/base/core/proto/android/service/appwidget.pb.cc: frameworks/base/core/proto/android/service/appwidget.proto

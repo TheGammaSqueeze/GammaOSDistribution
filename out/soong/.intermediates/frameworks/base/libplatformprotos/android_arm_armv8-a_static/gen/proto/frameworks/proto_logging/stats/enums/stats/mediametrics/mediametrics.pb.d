@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libplatformprotos/android_arm_armv8-a_static/gen/proto/frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.pb.cc: frameworks/proto_logging/stats/enums/stats/mediametrics/mediametrics.proto

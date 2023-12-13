@@ -1,0 +1,37 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-cppstream/linux_glibc_x86_64/protoc-gen-cppstream"
+    to: "tools/out/bin/protoc-gen-cppstream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto' && bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-cppstream   --dependency_out=__SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto.d   --cppstream_out=__SBOX_SANDBOX_DIR__/out   -Iexternal/protobuf/src   -I .   packages/modules/Permission/service/proto/com/android/role/roleservice.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto.d __SBOX_SANDBOX_DIR__/out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto.d __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto.d"
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/4/frameworks/base/core/proto/android/view/inputmethod/inputmethodeditortrace.proto.h"
+  >
+  copy_after: <
+    from: "out/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/4/frameworks/base/core/proto/android/view/inputmethod/inputmethodmanager.proto.h"
+  >
+  copy_after: <
+    from: "out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto.h"
+    to: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/4/packages/modules/Permission/service/proto/com/android/role/roleservice.proto.h"
+  >
+  input_hash: "3fcb8c98329d47b379e564d9eedca4249613f29ebd28419848576f9339154aaf"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/framework-cppstream-protos/gen/4/gensrcs.d"
+

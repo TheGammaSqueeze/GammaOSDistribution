@@ -1,0 +1,72 @@
+out/soong/.intermediates/frameworks/base/framework-minus-apex/android_common/gen/aidl/aidl24.tmp/frameworks/base/media/java/android/media/IAudioService.java : \
+  frameworks/base/media/java/android/media/IAudioService.aidl \
+  system/bt/binder/android/bluetooth/BluetoothDevice.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/media/java/android/media/AudioAttributes.aidl \
+  frameworks/base/media/java/android/media/AudioDeviceAttributes.aidl \
+  frameworks/base/media/java/android/media/AudioFormat.aidl \
+  frameworks/base/media/java/android/media/AudioFocusInfo.aidl \
+  frameworks/base/media/java/android/media/AudioPlaybackConfiguration.aidl \
+  frameworks/base/media/java/android/media/AudioRecordingConfiguration.aidl \
+  frameworks/base/media/java/android/media/AudioRoutesInfo.aidl \
+  frameworks/base/media/java/android/media/IAudioFocusDispatcher.aidl \
+  frameworks/base/media/java/android/media/IAudioModeDispatcher.aidl \
+  frameworks/base/media/java/android/media/IAudioRoutesObserver.aidl \
+  frameworks/base/media/java/android/media/IAudioServerStateDispatcher.aidl \
+  frameworks/base/media/java/android/media/ICapturePresetDevicesRoleDispatcher.aidl \
+  frameworks/base/media/java/android/media/ICommunicationDeviceDispatcher.aidl \
+  frameworks/base/media/java/android/media/IPlaybackConfigDispatcher.aidl \
+  frameworks/base/media/java/android/media/IRecordingConfigDispatcher.aidl \
+  frameworks/base/media/java/android/media/IRingtonePlayer.aidl \
+  frameworks/base/media/java/android/media/IStrategyPreferredDevicesDispatcher.aidl \
+  frameworks/base/media/java/android/media/ISpatializerCallback.aidl \
+  frameworks/base/media/java/android/media/ISpatializerHeadTrackingModeCallback.aidl \
+  frameworks/base/media/java/android/media/ISpatializerHeadToSoundStagePoseCallback.aidl \
+  frameworks/base/media/java/android/media/ISpatializerOutputCallback.aidl \
+  frameworks/base/media/java/android/media/IVolumeController.aidl \
+  frameworks/base/media/java/android/media/PlayerBase.aidl \
+  frameworks/base/media/java/android/media/VolumePolicy.aidl \
+  frameworks/base/media/java/android/media/audiopolicy/AudioPolicyConfig.aidl \
+  frameworks/base/media/java/android/media/audiopolicy/AudioProductStrategy.aidl \
+  frameworks/base/media/java/android/media/audiopolicy/AudioVolumeGroup.aidl \
+  frameworks/base/media/java/android/media/audiopolicy/IAudioPolicyCallback.aidl \
+  frameworks/base/media/java/android/media/projection/IMediaProjection.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/UserHandle.aidl \
+  frameworks/base/core/java/android/view/KeyEvent.aidl
+
+frameworks/base/media/java/android/media/IAudioService.aidl :
+system/bt/binder/android/bluetooth/BluetoothDevice.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/media/java/android/media/AudioAttributes.aidl :
+frameworks/base/media/java/android/media/AudioDeviceAttributes.aidl :
+frameworks/base/media/java/android/media/AudioFormat.aidl :
+frameworks/base/media/java/android/media/AudioFocusInfo.aidl :
+frameworks/base/media/java/android/media/AudioPlaybackConfiguration.aidl :
+frameworks/base/media/java/android/media/AudioRecordingConfiguration.aidl :
+frameworks/base/media/java/android/media/AudioRoutesInfo.aidl :
+frameworks/base/media/java/android/media/IAudioFocusDispatcher.aidl :
+frameworks/base/media/java/android/media/IAudioModeDispatcher.aidl :
+frameworks/base/media/java/android/media/IAudioRoutesObserver.aidl :
+frameworks/base/media/java/android/media/IAudioServerStateDispatcher.aidl :
+frameworks/base/media/java/android/media/ICapturePresetDevicesRoleDispatcher.aidl :
+frameworks/base/media/java/android/media/ICommunicationDeviceDispatcher.aidl :
+frameworks/base/media/java/android/media/IPlaybackConfigDispatcher.aidl :
+frameworks/base/media/java/android/media/IRecordingConfigDispatcher.aidl :
+frameworks/base/media/java/android/media/IRingtonePlayer.aidl :
+frameworks/base/media/java/android/media/IStrategyPreferredDevicesDispatcher.aidl :
+frameworks/base/media/java/android/media/ISpatializerCallback.aidl :
+frameworks/base/media/java/android/media/ISpatializerHeadTrackingModeCallback.aidl :
+frameworks/base/media/java/android/media/ISpatializerHeadToSoundStagePoseCallback.aidl :
+frameworks/base/media/java/android/media/ISpatializerOutputCallback.aidl :
+frameworks/base/media/java/android/media/IVolumeController.aidl :
+frameworks/base/media/java/android/media/PlayerBase.aidl :
+frameworks/base/media/java/android/media/VolumePolicy.aidl :
+frameworks/base/media/java/android/media/audiopolicy/AudioPolicyConfig.aidl :
+frameworks/base/media/java/android/media/audiopolicy/AudioProductStrategy.aidl :
+frameworks/base/media/java/android/media/audiopolicy/AudioVolumeGroup.aidl :
+frameworks/base/media/java/android/media/audiopolicy/IAudioPolicyCallback.aidl :
+frameworks/base/media/java/android/media/projection/IMediaProjection.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/UserHandle.aidl :
+frameworks/base/core/java/android/view/KeyEvent.aidl :

@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/aapt2/aapt2/linux_glibc_x86_64/aapt2"
+    to: "tools/out/bin/aapt2"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/aapt2 compile frameworks/base/core/res/remote_color_resources_res/values/colors.xml -o __SBOX_SANDBOX_DIR__/out"
+  copy_after: <
+    from: "out/values_colors.arsc.flat"
+    to: "out/soong/.intermediates/frameworks/base/core/res/remote-color-resources-compile-colors/gen/values_colors.arsc.flat"
+  >
+  input_hash: "48c2d366c1008f7847b684f9877bc6480ef3cd0090721a27167836a792c427a5"
+>
+
