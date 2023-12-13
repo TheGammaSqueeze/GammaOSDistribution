@@ -1,0 +1,368 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvjE",
+   "name" : "void *(unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvjE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvjE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPvS_PK7timevalE",
+   "name" : "int (void *, void *, const timeval *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPK7timeval"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPvS_PK7timevalE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPvS_PK7timevalE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPviE",
+   "name" : "int (void *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPviE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPviE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFijPvE",
+   "name" : "int (unsigned int, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFijPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFijPvE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvE",
+   "name" : "void (void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvjE",
+   "name" : "void (void *, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvjE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvjE",
+   "source_file" : "external/libevent/include/event2/thread.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "evutil_secure_rng_get_bytes",
+   "linker_set_key" : "evutil_secure_rng_get_bytes",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_secure_rng_init",
+   "linker_set_key" : "evutil_secure_rng_init",
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_secure_rng_set_urandom_device_file",
+   "linker_set_key" : "evutil_secure_rng_set_urandom_device_file",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFPvjE",
+   "name" : "void *(*)(unsigned int)",
+   "referenced_type" : "_ZTIFPvjE",
+   "self_type" : "_ZTIPFPvjE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPvS_PK7timevalE",
+   "name" : "int (*)(void *, void *, const timeval *)",
+   "referenced_type" : "_ZTIFiPvS_PK7timevalE",
+   "self_type" : "_ZTIPFiPvS_PK7timevalE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPviE",
+   "name" : "int (*)(void *, int)",
+   "referenced_type" : "_ZTIFiPviE",
+   "self_type" : "_ZTIPFiPviE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFijPvE",
+   "name" : "int (*)(unsigned int, void *)",
+   "referenced_type" : "_ZTIFijPvE",
+   "self_type" : "_ZTIPFijPvE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvPvE",
+   "name" : "void (*)(void *)",
+   "referenced_type" : "_ZTIFvPvE",
+   "self_type" : "_ZTIPFvPvE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFvPvjE",
+   "name" : "void (*)(void *, unsigned int)",
+   "referenced_type" : "_ZTIFvPvjE",
+   "self_type" : "_ZTIPFvPvjE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK7timeval",
+   "name" : "const timeval *",
+   "referenced_type" : "_ZTIK7timeval",
+   "self_type" : "_ZTIPK7timeval",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK7timeval",
+   "name" : "const timeval",
+   "referenced_type" : "_ZTI7timeval",
+   "self_type" : "_ZTIK7timeval",
+   "size" : 8,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "lock_api_version",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "supported_locktypes",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "alloc",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFPvjE"
+    },
+    {
+     "field_name" : "free",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPFvPvjE"
+    },
+    {
+     "field_name" : "lock",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFijPvE"
+    },
+    {
+     "field_name" : "unlock",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIPFijPvE"
+    }
+   ],
+   "linker_set_key" : "_ZTI23evthread_lock_callbacks",
+   "name" : "evthread_lock_callbacks",
+   "referenced_type" : "_ZTI23evthread_lock_callbacks",
+   "self_type" : "_ZTI23evthread_lock_callbacks",
+   "size" : 24,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "condition_api_version",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "alloc_condition",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIPFPvjE"
+    },
+    {
+     "field_name" : "free_condition",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFvPvE"
+    },
+    {
+     "field_name" : "signal_condition",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIPFiPviE"
+    },
+    {
+     "field_name" : "wait_condition",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFiPvS_PK7timevalE"
+    }
+   ],
+   "linker_set_key" : "_ZTI28evthread_condition_callbacks",
+   "name" : "evthread_condition_callbacks",
+   "referenced_type" : "_ZTI28evthread_condition_callbacks",
+   "self_type" : "_ZTI28evthread_condition_callbacks",
+   "size" : 20,
+   "source_file" : "external/libevent/include/event2/thread.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

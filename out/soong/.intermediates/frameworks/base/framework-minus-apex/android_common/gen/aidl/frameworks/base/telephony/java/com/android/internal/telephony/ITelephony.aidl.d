@@ -1,0 +1,112 @@
+out/soong/.intermediates/frameworks/base/framework-minus-apex/android_common/gen/aidl/aidl31.tmp/frameworks/base/telephony/java/com/android/internal/telephony/ITelephony.java : \
+  frameworks/base/telephony/java/com/android/internal/telephony/ITelephony.aidl \
+  frameworks/base/core/java/android/app/PendingIntent.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentSender.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/Messenger.aidl \
+  frameworks/base/core/java/android/os/ResultReceiver.aidl \
+  frameworks/base/core/java/android/os/WorkSource.aidl \
+  frameworks/base/core/java/android/net/NetworkStats.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/telephony/java/android/service/carrier/CarrierIdentifier.aidl \
+  frameworks/base/telecomm/java/android/telecom/PhoneAccount.aidl \
+  frameworks/base/telecomm/java/android/telecom/PhoneAccountHandle.aidl \
+  frameworks/base/telephony/java/android/telephony/CallForwardingInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/CarrierRestrictionRules.aidl \
+  frameworks/base/telephony/java/android/telephony/CellIdentity.aidl \
+  frameworks/base/telephony/java/android/telephony/CellInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/ClientRequestStats.aidl \
+  frameworks/base/telephony/java/android/telephony/ThermalMitigationRequest.aidl \
+  frameworks/base/telephony/java/android/telephony/gba/UaSecurityProtocolIdentifier.aidl \
+  frameworks/base/telephony/java/android/telephony/IBootstrapAuthenticationCallback.aidl \
+  frameworks/base/telephony/java/android/telephony/IccOpenLogicalChannelResponse.aidl \
+  frameworks/base/telephony/java/android/telephony/ICellInfoCallback.aidl \
+  frameworks/base/telephony/java/android/telephony/ModemActivityInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/NeighboringCellInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/NetworkScanRequest.aidl \
+  frameworks/base/telephony/java/android/telephony/PhoneCapability.aidl \
+  frameworks/base/telephony/java/android/telephony/PhoneNumberRange.aidl \
+  frameworks/base/telephony/java/android/telephony/RadioAccessFamily.aidl \
+  frameworks/base/telephony/java/android/telephony/RadioAccessSpecifier.aidl \
+  frameworks/base/telephony/java/android/telephony/ServiceState.aidl \
+  frameworks/base/telephony/java/android/telephony/SignalStrength.aidl \
+  frameworks/base/telephony/java/android/telephony/SignalStrengthUpdateRequest.aidl \
+  frameworks/base/telephony/java/android/telephony/TelephonyHistogram.aidl \
+  frameworks/base/telephony/java/android/telephony/VisualVoicemailSmsFilterSettings.aidl \
+  frameworks/base/telephony/java/android/telephony/emergency/EmergencyNumber.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/RcsClientConfiguration.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/RcsContactUceCapability.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsCapabilityCallback.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsConfig.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsConfigCallback.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsMmTelFeature.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRcsFeature.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRegistration.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRegistrationCallback.aidl \
+  frameworks/base/telephony/java/android/telephony/ims/aidl/IRcsConfigCallback.aidl \
+  frameworks/base/telephony/java/com/android/ims/internal/IImsServiceFeatureCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/CellNetworkScanResult.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/IBooleanConsumer.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/ICallForwardingInfoCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/IIntegerConsumer.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/INumberVerificationCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/OperatorInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/UiccCardInfo.aidl \
+  frameworks/base/telephony/java/android/telephony/UiccSlotInfo.aidl
+
+frameworks/base/telephony/java/com/android/internal/telephony/ITelephony.aidl :
+frameworks/base/core/java/android/app/PendingIntent.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/IntentSender.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/Messenger.aidl :
+frameworks/base/core/java/android/os/ResultReceiver.aidl :
+frameworks/base/core/java/android/os/WorkSource.aidl :
+frameworks/base/core/java/android/net/NetworkStats.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/telephony/java/android/service/carrier/CarrierIdentifier.aidl :
+frameworks/base/telecomm/java/android/telecom/PhoneAccount.aidl :
+frameworks/base/telecomm/java/android/telecom/PhoneAccountHandle.aidl :
+frameworks/base/telephony/java/android/telephony/CallForwardingInfo.aidl :
+frameworks/base/telephony/java/android/telephony/CarrierRestrictionRules.aidl :
+frameworks/base/telephony/java/android/telephony/CellIdentity.aidl :
+frameworks/base/telephony/java/android/telephony/CellInfo.aidl :
+frameworks/base/telephony/java/android/telephony/ClientRequestStats.aidl :
+frameworks/base/telephony/java/android/telephony/ThermalMitigationRequest.aidl :
+frameworks/base/telephony/java/android/telephony/gba/UaSecurityProtocolIdentifier.aidl :
+frameworks/base/telephony/java/android/telephony/IBootstrapAuthenticationCallback.aidl :
+frameworks/base/telephony/java/android/telephony/IccOpenLogicalChannelResponse.aidl :
+frameworks/base/telephony/java/android/telephony/ICellInfoCallback.aidl :
+frameworks/base/telephony/java/android/telephony/ModemActivityInfo.aidl :
+frameworks/base/telephony/java/android/telephony/NeighboringCellInfo.aidl :
+frameworks/base/telephony/java/android/telephony/NetworkScanRequest.aidl :
+frameworks/base/telephony/java/android/telephony/PhoneCapability.aidl :
+frameworks/base/telephony/java/android/telephony/PhoneNumberRange.aidl :
+frameworks/base/telephony/java/android/telephony/RadioAccessFamily.aidl :
+frameworks/base/telephony/java/android/telephony/RadioAccessSpecifier.aidl :
+frameworks/base/telephony/java/android/telephony/ServiceState.aidl :
+frameworks/base/telephony/java/android/telephony/SignalStrength.aidl :
+frameworks/base/telephony/java/android/telephony/SignalStrengthUpdateRequest.aidl :
+frameworks/base/telephony/java/android/telephony/TelephonyHistogram.aidl :
+frameworks/base/telephony/java/android/telephony/VisualVoicemailSmsFilterSettings.aidl :
+frameworks/base/telephony/java/android/telephony/emergency/EmergencyNumber.aidl :
+frameworks/base/telephony/java/android/telephony/ims/RcsClientConfiguration.aidl :
+frameworks/base/telephony/java/android/telephony/ims/RcsContactUceCapability.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsCapabilityCallback.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsConfig.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsConfigCallback.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsMmTelFeature.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRcsFeature.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRegistration.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IImsRegistrationCallback.aidl :
+frameworks/base/telephony/java/android/telephony/ims/aidl/IRcsConfigCallback.aidl :
+frameworks/base/telephony/java/com/android/ims/internal/IImsServiceFeatureCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/CellNetworkScanResult.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/IBooleanConsumer.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/ICallForwardingInfoCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/IIntegerConsumer.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/INumberVerificationCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/OperatorInfo.aidl :
+frameworks/base/telephony/java/android/telephony/UiccCardInfo.aidl :
+frameworks/base/telephony/java/android/telephony/UiccSlotInfo.aidl :

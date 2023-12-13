@@ -1,0 +1,170 @@
+Package name: com.android.webview
+Module name in Android tree: webview
+Local path in Android tree: external/chromium-webview
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/product/app/webview/webview.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; use(s):
+       LWV/UH;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+#2: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       LWV/TH;->a(Ljava/lang/Class;)I
+
+#3: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       LWV/TH;->b(Ljava/lang/Class;)I
+
+#4: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getBoolean(Ljava/lang/Object;J)Z use(s):
+       LWV/SH;->d(JLjava/lang/Object;)Z
+
+#5: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(J)B use(s):
+       LWV/SH;->e(J)B
+
+#6: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getByte(Ljava/lang/Object;J)B use(s):
+       LWV/SH;->f(JLjava/lang/Object;)B
+
+#7: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getDouble(Ljava/lang/Object;J)D use(s):
+       LWV/SH;->g(JLjava/lang/Object;)D
+
+#8: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getFloat(Ljava/lang/Object;J)F use(s):
+       LWV/SH;->h(JLjava/lang/Object;)F
+
+#9: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I use(s):
+       LWV/TH;->i(JLjava/lang/Object;)I
+       LWV/ts;->G(Ljava/lang/Object;[BIIIIIIIJILWV/j3;)I (2 occurrences)
+       LWV/ts;->H(Ljava/lang/Object;[BIIILWV/j3;)I
+       LWV/ts;->I(Ljava/lang/Object;[BIILWV/j3;)V
+       LWV/ts;->U(Ljava/lang/Object;LWV/ub;)V (7 occurrences)
+       LWV/ts;->a(Ljava/lang/Object;)Z
+       LWV/ts;->r(Ljava/lang/Object;)I (5 occurrences)
+
+#10: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       LWV/TH;->j(JLjava/lang/Object;)J
+       LWV/ts;->U(Ljava/lang/Object;LWV/ub;)V (5 occurrences)
+       LWV/ts;->r(Ljava/lang/Object;)I (3 occurrences)
+
+#11: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; use(s):
+       LWV/TH;->k(JLjava/lang/Object;)Ljava/lang/Object;
+       LWV/ts;->F(Ljava/lang/Object;[BIIIJLWV/j3;)I
+       LWV/ts;->G(Ljava/lang/Object;[BIIIIIIIJILWV/j3;)I (2 occurrences)
+       LWV/ts;->H(Ljava/lang/Object;[BIIILWV/j3;)I (3 occurrences)
+       LWV/ts;->I(Ljava/lang/Object;[BIILWV/j3;)V (2 occurrences)
+       LWV/ts;->J(Ljava/lang/Object;[BIIIIIIJIJLWV/j3;)I
+       LWV/ts;->U(Ljava/lang/Object;LWV/ub;)V (41 occurrences)
+       LWV/ts;->r(Ljava/lang/Object;)I (41 occurrences)
+       LWV/ts;->s(Ljava/lang/Object;)I (14 occurrences)
+
+#12: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       LWV/TH;->l(Ljava/lang/reflect/Field;)J
+       LWV/ts;->B(LWV/Dx;LWV/Pt;LWV/vp;LWV/JH;LWV/ih;LWV/Lq;)LWV/ts; (4 occurrences)
+
+#13: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putBoolean(Ljava/lang/Object;JZ)V use(s):
+       LWV/SH;->m(JLjava/lang/Object;Z)V
+
+#14: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putByte(Ljava/lang/Object;JB)V use(s):
+       LWV/SH;->n(Ljava/lang/Object;JB)V
+
+#15: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putDouble(Ljava/lang/Object;JD)V use(s):
+       LWV/SH;->o(JLjava/lang/Object;D)V
+
+#16: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putFloat(Ljava/lang/Object;JF)V use(s):
+       LWV/SH;->p(FJLjava/lang/Object;)V
+
+#17: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V use(s):
+       LWV/TH;->q(JLjava/lang/Object;I)V
+       LWV/ts;->G(Ljava/lang/Object;[BIIIIIIIJILWV/j3;)I (14 occurrences)
+       LWV/ts;->H(Ljava/lang/Object;[BIIILWV/j3;)I (6 occurrences)
+       LWV/ts;->I(Ljava/lang/Object;[BIILWV/j3;)V (6 occurrences)
+
+#18: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V use(s):
+       LWV/TH;->r(JJLjava/lang/Object;)V
+       LWV/ts;->H(Ljava/lang/Object;[BIIILWV/j3;)I (3 occurrences)
+       LWV/ts;->I(Ljava/lang/Object;[BIILWV/j3;)V (3 occurrences)
+
+#19: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       LWV/TH;->s(JLjava/lang/Object;Ljava/lang/Object;)V
+       LWV/ts;->F(Ljava/lang/Object;[BIIIJLWV/j3;)I
+       LWV/ts;->G(Ljava/lang/Object;[BIIIIIIIJILWV/j3;)I (17 occurrences)
+       LWV/ts;->H(Ljava/lang/Object;[BIIILWV/j3;)I (7 occurrences)
+       LWV/ts;->I(Ljava/lang/Object;[BIILWV/j3;)V (5 occurrences)
+       LWV/ts;->J(Ljava/lang/Object;[BIIIIIIJIJLWV/j3;)I
+
+#20: Reflection unsupported Landroid/content/Context;->bindServiceAsUser use(s):
+       LWV/A8;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/Handler;)Z
+
+#21: Reflection unsupported Landroid/content/pm/ApplicationInfo;->primaryCpuAbi use(s):
+       Lorg/chromium/android_webview/SystemStateUtil;->getPrimaryCpuAbiBitness()I
+
+#22: Reflection max-target-q Landroid/graphics/FontFamily;->abortCreation use(s):
+       LWV/pH;-><init>()V
+
+#23: Reflection max-target-q Landroid/graphics/FontFamily;->addFontFromBuffer use(s):
+       LWV/pH;-><init>()V
+
+#24: Reflection max-target-q Landroid/graphics/FontFamily;->freeze use(s):
+       LWV/pH;-><init>()V
+
+#25: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       LWV/nH;->h()V
+       LWV/oH;-><clinit>()V
+       LWV/pH;->p(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       LWV/qH;->p(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#26: Reflection unsupported Landroid/media/AudioManager;->getOutputLatency use(s):
+       Lorg/chromium/media/AudioManagerAndroid;->getOutputLatency()I
+
+#27: Reflection unsupported Landroid/media/MediaPlayer;->getMetadata use(s):
+       Lorg/chromium/media/MediaPlayerBridge;->getAllowedOperations()Lorg/chromium/media/MediaPlayerBridge$AllowedOperations;
+
+#28: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       LWV/SJ;-><clinit>()V
+
+#29: Reflection unsupported,test-api Landroid/view/WindowManager$LayoutParams;->privateFlags use(s):
+       Lorg/chromium/content/browser/androidoverlay/DialogOverlayImpl;->onWindowAndroid(Lorg/chromium/ui/base/WindowAndroid;)V
+       Lorg/chromium/content/browser/androidoverlay/DialogOverlayImpl;->onWindowAndroid(Lorg/chromium/ui/base/WindowAndroid;)V
+       Lorg/chromium/content/browser/androidoverlay/DialogOverlayImpl;->onWindowAndroid(Lorg/chromium/ui/base/WindowAndroid;)V
+       Lorg/chromium/content/browser/androidoverlay/DialogOverlayImpl;->onWindowAndroid(Lorg/chromium/ui/base/WindowAndroid;)V
+
+#30: Reflection max-target-r Landroid/webkit/WebView;->sEnforceThreadChecking use(s):
+       Lcom/android/webview/chromium/WebViewChromium;->init(Ljava/util/Map;Z)V
+       Lcom/android/webview/chromium/WebViewChromium;->init(Ljava/util/Map;Z)V
+
+#31: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       LWV/Yf;-><clinit>()V
+
+#32: Reflection max-target-o Landroid/widget/AbsListView;->positionSelector use(s):
+       LWV/Vf;-><clinit>()V
+
+#33: Reflection unsupported Landroid/widget/AdapterView;->setNextSelectedPositionInt use(s):
+       LWV/Vf;-><clinit>()V
+
+#34: Reflection unsupported Landroid/widget/AdapterView;->setSelectedPositionInt use(s):
+       LWV/Vf;-><clinit>()V
+
+#35: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       LWV/X2;->a(Landroid/widget/TextView;)Z
+
+#36: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       LWV/Y2;->c(Landroid/graphics/RectF;)I
+
+#37: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       LWV/Y2;->f(IF)V
+
+#38: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       LWV/wF;->onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+
+#39: Reflection unsupported Ljava/nio/Buffer;->address use(s):
+       LWV/UH;->d()Ljava/lang/reflect/Field;
+       LWV/UH;->d()Ljava/lang/reflect/Field;
+
+39 hidden API(s) used: 19 linked against, 20 through reflection
+	32 in unsupported
+	0 in blocked
+	2 in max-target-o
+	1 in max-target-p
+	3 in max-target-q
+	1 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 
