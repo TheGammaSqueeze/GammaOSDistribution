@@ -122,9 +122,9 @@ build_treble() {
     esac
     lunch lineage_${TARGET}-userdebug
     make installclean
-#    make -j$(nproc --all) systemimage
-#    mv $OUT/system.img ~/build-output/lineage-19.1-$BUILD_DATE-UNOFFICIAL-${TARGET}$(${PERSONAL} && echo "-personal" || echo "").img
-#    make vndk-test-sepolicy
+    make -j$(nproc --all) systemimage
+    mv $OUT/system.img ~/build-output/lineage-19.1-$BUILD_DATE-UNOFFICIAL-${TARGET}$(${PERSONAL} && echo "-personal" || echo "").img
+    make vndk-test-sepolicy
 }
 
 if ${NOSYNC}
