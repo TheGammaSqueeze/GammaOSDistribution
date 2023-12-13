@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/power/stats/aidl/android.hardware.power.stats-V1-ndk_platform/android_vendor.32_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/power/stats/aidl/android.hardware.power.stats-V1-ndk_platform-source/gen/android/hardware/power/stats/EnergyConsumerType.o: \
+  out/soong/.intermediates/hardware/interfaces/power/stats/aidl/android.hardware.power.stats-V1-ndk_platform-source/gen/android/hardware/power/stats/EnergyConsumerType.cpp

@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/security/keymint/aidl/android.hardware.security.keymint-V1-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/security/keymint/aidl/android.hardware.security.keymint-V1-ndk_platform-source/gen/android/hardware/security/keymint/TagType.o: \
+  out/soong/.intermediates/hardware/interfaces/security/keymint/aidl/android.hardware.security.keymint-V1-ndk_platform-source/gen/android/hardware/security/keymint/TagType.cpp

@@ -1,0 +1,24 @@
+android/hardware/wifi/hostapd/V1_2/HostapdStatusCode.java: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/wifi/hostapd/1.0/IHostapd.hal \
+  hardware/interfaces/wifi/hostapd/1.0/types.hal \
+  hardware/interfaces/wifi/hostapd/1.1/IHostapd.hal \
+  hardware/interfaces/wifi/hostapd/1.1/IHostapdCallback.hal \
+  hardware/interfaces/wifi/hostapd/1.2/IHostapd.hal \
+  hardware/interfaces/wifi/hostapd/1.2/types.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicant.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pIfaceCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pNetworkCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaIfaceCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaNetworkCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

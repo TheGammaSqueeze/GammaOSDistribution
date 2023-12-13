@@ -1,0 +1,27 @@
+android/hardware/camera/provider/2.6/types.cpp: \
+  hardware/interfaces/camera/common/1.0/types.hal \
+  hardware/interfaces/camera/device/1.0/ICameraDevice.hal \
+  hardware/interfaces/camera/device/1.0/ICameraDeviceCallback.hal \
+  hardware/interfaces/camera/device/1.0/ICameraDevicePreviewCallback.hal \
+  hardware/interfaces/camera/device/1.0/types.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDevice.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDeviceCallback.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDeviceSession.hal \
+  hardware/interfaces/camera/device/3.2/types.hal \
+  hardware/interfaces/camera/device/3.3/ICameraDeviceSession.hal \
+  hardware/interfaces/camera/device/3.3/types.hal \
+  hardware/interfaces/camera/device/3.4/ICameraDeviceCallback.hal \
+  hardware/interfaces/camera/device/3.4/ICameraDeviceSession.hal \
+  hardware/interfaces/camera/device/3.4/types.hal \
+  hardware/interfaces/camera/provider/2.4/ICameraProvider.hal \
+  hardware/interfaces/camera/provider/2.4/ICameraProviderCallback.hal \
+  hardware/interfaces/camera/provider/2.5/ICameraProvider.hal \
+  hardware/interfaces/camera/provider/2.5/types.hal \
+  hardware/interfaces/camera/provider/2.6/ICameraProvider.hal \
+  hardware/interfaces/camera/provider/2.6/ICameraProviderCallback.hal \
+  hardware/interfaces/camera/provider/2.6/types.hal \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

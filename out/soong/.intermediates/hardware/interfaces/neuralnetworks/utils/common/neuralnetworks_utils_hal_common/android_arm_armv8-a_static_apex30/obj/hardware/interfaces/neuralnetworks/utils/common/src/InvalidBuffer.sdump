@@ -1,0 +1,171 @@
+{
+ "array_types" : [],
+ "builtin_types" : [],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::InvalidBuffer::copyTo",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer6copyToERKNSt3__110shared_ptrIKNS_2nn6MemoryEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils13InvalidBufferE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedIvNS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::InvalidBuffer::copyFrom",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8copyFromERKNSt3__110shared_ptrIKNS_2nn6MemoryEEERKNS4_6vectorIjNS4_9allocatorIjEEEE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils13InvalidBufferE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__16vectorIjNS_9allocatorIjEEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android4base8expectedIvNS_2nn12GeneralErrorEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  },
+  {
+   "function_name" : "android::hardware::neuralnetworks::utils::InvalidBuffer::getToken",
+   "linker_set_key" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8getTokenEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils13InvalidBufferE"
+    }
+   ],
+   "return_type" : "_ZTIN7android2nn7Request17MemoryDomainTokenE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "name" : "const std::shared_ptr<const android::nn::Memory> &",
+   "referenced_type" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "self_type" : "_ZTIRKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__16vectorIjNS_9allocatorIjEEEE",
+   "name" : "const std::vector<unsigned int, std::allocator<unsigned int>> &",
+   "referenced_type" : "_ZTIKNSt3__16vectorIjNS_9allocatorIjEEEE",
+   "self_type" : "_ZTIRKNSt3__16vectorIjNS_9allocatorIjEEEE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "name" : "const android::hardware::neuralnetworks::utils::InvalidBuffer *",
+   "referenced_type" : "_ZTIKN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "self_type" : "_ZTIPKN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "name" : "const android::hardware::neuralnetworks::utils::InvalidBuffer",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "self_type" : "_ZTIKN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "name" : "const std::shared_ptr<const android::nn::Memory>",
+   "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "self_type" : "_ZTIKNSt3__110shared_ptrIKN7android2nn6MemoryEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__16vectorIjNS_9allocatorIjEEEE",
+   "name" : "const std::vector<unsigned int, std::allocator<unsigned int>>",
+   "referenced_type" : "_ZTINSt3__16vectorIjNS_9allocatorIjEEEE",
+   "self_type" : "_ZTIKNSt3__16vectorIjNS_9allocatorIjEEEE",
+   "size" : 12,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "base_specifiers" :
+   [
+    {
+     "referenced_type" : "_ZTIN7android2nn7IBufferE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "name" : "android::hardware::neuralnetworks::utils::InvalidBuffer",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE",
+   "size" : 4,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/common/include/nnapi/hal/InvalidBuffer.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN7android8hardware14neuralnetworks5utils13InvalidBufferE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8getTokenEv"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer6copyToERKNSt3__110shared_ptrIKNS_2nn6MemoryEEE"
+    },
+    {
+     "mangled_component_name" : "_ZNK7android8hardware14neuralnetworks5utils13InvalidBuffer8copyFromERKNSt3__110shared_ptrIKNS_2nn6MemoryEEERKNS4_6vectorIjNS4_9allocatorIjEEEE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidBufferD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN7android8hardware14neuralnetworks5utils13InvalidBufferD0Ev"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}

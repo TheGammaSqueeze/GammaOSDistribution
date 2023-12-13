@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/enums/stats/connectivity/networkstackprotos/android_common/gen/proto/proto0.tmp/android/stats/connectivity/DhcpErrorCode.java: frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto

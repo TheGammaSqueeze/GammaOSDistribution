@@ -1,0 +1,15 @@
+android/hardware/broadcastradio/1.1/types.h: \
+  hardware/interfaces/broadcastradio/1.0/IBroadcastRadio.hal \
+  hardware/interfaces/broadcastradio/1.0/IBroadcastRadioFactory.hal \
+  hardware/interfaces/broadcastradio/1.0/ITuner.hal \
+  hardware/interfaces/broadcastradio/1.0/ITunerCallback.hal \
+  hardware/interfaces/broadcastradio/1.0/types.hal \
+  hardware/interfaces/broadcastradio/1.1/IBroadcastRadio.hal \
+  hardware/interfaces/broadcastradio/1.1/IBroadcastRadioFactory.hal \
+  hardware/interfaces/broadcastradio/1.1/ITuner.hal \
+  hardware/interfaces/broadcastradio/1.1/ITunerCallback.hal \
+  hardware/interfaces/broadcastradio/1.1/types.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

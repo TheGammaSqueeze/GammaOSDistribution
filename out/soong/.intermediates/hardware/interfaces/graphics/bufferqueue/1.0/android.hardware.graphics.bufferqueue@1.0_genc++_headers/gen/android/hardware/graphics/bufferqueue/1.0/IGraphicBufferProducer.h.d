@@ -1,0 +1,9 @@
+android/hardware/graphics/bufferqueue/1.0/IGraphicBufferProducer.h: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/graphics/bufferqueue/1.0/IGraphicBufferProducer.hal \
+  hardware/interfaces/graphics/bufferqueue/1.0/IProducerListener.hal \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  hardware/interfaces/media/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

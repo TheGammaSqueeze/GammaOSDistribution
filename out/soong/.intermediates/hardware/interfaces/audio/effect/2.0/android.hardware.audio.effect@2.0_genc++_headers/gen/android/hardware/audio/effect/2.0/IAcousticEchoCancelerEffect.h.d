@@ -1,0 +1,21 @@
+android/hardware/audio/effect/2.0/types.h: \
+  hardware/interfaces/audio/common/2.0/types.hal \
+  hardware/interfaces/audio/effect/2.0/IAcousticEchoCancelerEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IAutomaticGainControlEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IBassBoostEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IDownmixEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IEffectBufferProviderCallback.hal \
+  hardware/interfaces/audio/effect/2.0/IEffectsFactory.hal \
+  hardware/interfaces/audio/effect/2.0/IEnvironmentalReverbEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IEqualizerEffect.hal \
+  hardware/interfaces/audio/effect/2.0/ILoudnessEnhancerEffect.hal \
+  hardware/interfaces/audio/effect/2.0/INoiseSuppressionEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IPresetReverbEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IVirtualizerEffect.hal \
+  hardware/interfaces/audio/effect/2.0/IVisualizerEffect.hal \
+  hardware/interfaces/audio/effect/2.0/types.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

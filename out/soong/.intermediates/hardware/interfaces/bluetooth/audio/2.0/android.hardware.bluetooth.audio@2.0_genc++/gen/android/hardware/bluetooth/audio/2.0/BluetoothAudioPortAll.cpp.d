@@ -1,0 +1,11 @@
+android/hardware/bluetooth/audio/2.0/types.cpp: \
+  hardware/interfaces/audio/common/5.0/types.hal \
+  hardware/interfaces/bluetooth/audio/2.0/IBluetoothAudioPort.hal \
+  hardware/interfaces/bluetooth/audio/2.0/IBluetoothAudioProvider.hal \
+  hardware/interfaces/bluetooth/audio/2.0/IBluetoothAudioProvidersFactory.hal \
+  hardware/interfaces/bluetooth/audio/2.0/types.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \
+  system/libhidl/transport/safe_union/1.0/types.hal \

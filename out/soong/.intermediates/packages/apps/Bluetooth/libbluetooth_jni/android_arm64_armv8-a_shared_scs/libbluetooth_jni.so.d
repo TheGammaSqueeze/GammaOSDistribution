@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/apps/Bluetooth/libbluetooth_jni/android_arm64_armv8-a_shared_scs/libbluetooth_jni.so:   out/soong/.intermediates/packages/apps/Bluetooth/libbluetooth_jni/android_arm64_armv8-a_shared_scs/unstripped/libbluetooth_jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

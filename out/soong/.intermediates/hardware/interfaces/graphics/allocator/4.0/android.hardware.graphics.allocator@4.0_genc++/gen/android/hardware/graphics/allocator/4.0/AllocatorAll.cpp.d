@@ -1,0 +1,11 @@
+android/hardware/graphics/allocator/4.0/AllocatorAll.cpp: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/graphics/allocator/4.0/IAllocator.hal \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  hardware/interfaces/graphics/common/1.1/types.hal \
+  hardware/interfaces/graphics/common/1.2/types.hal \
+  hardware/interfaces/graphics/mapper/4.0/IMapper.hal \
+  hardware/interfaces/graphics/mapper/4.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

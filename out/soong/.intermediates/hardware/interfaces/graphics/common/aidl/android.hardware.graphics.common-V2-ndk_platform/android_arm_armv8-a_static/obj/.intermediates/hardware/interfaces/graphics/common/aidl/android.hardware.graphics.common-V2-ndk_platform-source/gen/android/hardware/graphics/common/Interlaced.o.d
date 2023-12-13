@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform/android_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform-source/gen/android/hardware/graphics/common/Interlaced.o: \
+  out/soong/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform-source/gen/android/hardware/graphics/common/Interlaced.cpp

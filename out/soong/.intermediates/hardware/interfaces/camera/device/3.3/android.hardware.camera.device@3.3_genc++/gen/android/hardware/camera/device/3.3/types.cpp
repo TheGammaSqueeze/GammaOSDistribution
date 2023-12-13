@@ -1,0 +1,69 @@
+#define LOG_TAG "android.hardware.camera.device@3.3::types"
+
+#include <log/log.h>
+#include <cutils/trace.h>
+#include <hidl/HidlTransportSupport.h>
+
+#include <hidl/Static.h>
+#include <hwbinder/ProcessState.h>
+#include <utils/Trace.h>
+#include <android/hardware/camera/device/3.3/types.h>
+#include <android/hardware/camera/device/3.3/hwtypes.h>
+
+namespace android {
+namespace hardware {
+namespace camera {
+namespace device {
+namespace V3_3 {
+
+::android::status_t readEmbeddedFromParcel(
+        const HalStreamConfiguration &obj,
+        const ::android::hardware::Parcel &parcel,
+        size_t parentHandle,
+        size_t parentOffset) {
+    ::android::status_t _hidl_err = ::android::OK;
+
+    size_t _hidl_streams_child;
+
+    _hidl_err = ::android::hardware::readEmbeddedFromParcel(
+            const_cast<::android::hardware::hidl_vec<::android::hardware::camera::device::V3_3::HalStream> &>(obj.streams),
+            parcel,
+            parentHandle,
+            parentOffset + offsetof(::android::hardware::camera::device::V3_3::HalStreamConfiguration, streams), &_hidl_streams_child);
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    return _hidl_err;
+}
+
+::android::status_t writeEmbeddedToParcel(
+        const HalStreamConfiguration &obj,
+        ::android::hardware::Parcel *parcel,
+        size_t parentHandle,
+        size_t parentOffset) {
+    ::android::status_t _hidl_err = ::android::OK;
+
+    size_t _hidl_streams_child;
+
+    _hidl_err = ::android::hardware::writeEmbeddedToParcel(
+            obj.streams,
+            parcel,
+            parentHandle,
+            parentOffset + offsetof(::android::hardware::camera::device::V3_3::HalStreamConfiguration, streams), &_hidl_streams_child);
+
+    if (_hidl_err != ::android::OK) { return _hidl_err; }
+
+    return _hidl_err;
+}
+
+static_assert(sizeof(::android::hardware::MQDescriptor<char, ::android::hardware::kSynchronizedReadWrite>) == 32, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_handle) == 16, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_memory) == 40, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_string) == 16, "wrong size");
+static_assert(sizeof(::android::hardware::hidl_vec<char>) == 16, "wrong size");
+
+}  // namespace V3_3
+}  // namespace device
+}  // namespace camera
+}  // namespace hardware
+}  // namespace android

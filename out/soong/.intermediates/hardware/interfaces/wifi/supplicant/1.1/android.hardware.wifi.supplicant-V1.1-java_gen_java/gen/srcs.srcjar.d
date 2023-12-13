@@ -1,0 +1,22 @@
+android/hardware/wifi/supplicant/V1_1/ISupplicant.java: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicant.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pIfaceCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantP2pNetworkCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaIface.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaIfaceCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaNetwork.hal \
+  hardware/interfaces/wifi/supplicant/1.0/ISupplicantStaNetworkCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.0/types.hal \
+  hardware/interfaces/wifi/supplicant/1.1/ISupplicant.hal \
+  hardware/interfaces/wifi/supplicant/1.1/ISupplicantStaIface.hal \
+  hardware/interfaces/wifi/supplicant/1.1/ISupplicantStaIfaceCallback.hal \
+  hardware/interfaces/wifi/supplicant/1.1/ISupplicantStaNetwork.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

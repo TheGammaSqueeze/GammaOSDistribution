@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/drm/1.1/android.hardware.drm@1.1/android_arm64_armv8-a_shared/android.hardware.drm@1.1.so:   out/soong/.intermediates/hardware/interfaces/drm/1.1/android.hardware.drm@1.1/android_arm64_armv8-a_shared/unstripped/android.hardware.drm@1.1.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

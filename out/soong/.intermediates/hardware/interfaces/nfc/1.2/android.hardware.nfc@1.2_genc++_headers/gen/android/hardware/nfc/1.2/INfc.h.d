@@ -1,0 +1,13 @@
+android/hardware/nfc/1.2/types.h: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/nfc/1.0/INfc.hal \
+  hardware/interfaces/nfc/1.0/INfcClientCallback.hal \
+  hardware/interfaces/nfc/1.0/types.hal \
+  hardware/interfaces/nfc/1.1/INfc.hal \
+  hardware/interfaces/nfc/1.1/INfcClientCallback.hal \
+  hardware/interfaces/nfc/1.1/types.hal \
+  hardware/interfaces/nfc/1.2/INfc.hal \
+  hardware/interfaces/nfc/1.2/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

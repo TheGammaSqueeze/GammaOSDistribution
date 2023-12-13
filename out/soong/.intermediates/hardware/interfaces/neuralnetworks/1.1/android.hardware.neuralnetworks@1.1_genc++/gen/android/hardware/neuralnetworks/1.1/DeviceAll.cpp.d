@@ -1,0 +1,12 @@
+android/hardware/neuralnetworks/1.1/types.cpp: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/neuralnetworks/1.0/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.0/IExecutionCallback.hal \
+  hardware/interfaces/neuralnetworks/1.0/IPreparedModel.hal \
+  hardware/interfaces/neuralnetworks/1.0/IPreparedModelCallback.hal \
+  hardware/interfaces/neuralnetworks/1.0/types.hal \
+  hardware/interfaces/neuralnetworks/1.1/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.1/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/light/aidl/android.hardware.light-V1-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/light/aidl/android.hardware.light-V1-ndk_platform-source/gen/android/hardware/light/BrightnessMode.o: \
+  out/soong/.intermediates/hardware/interfaces/light/aidl/android.hardware.light-V1-ndk_platform-source/gen/android/hardware/light/BrightnessMode.cpp

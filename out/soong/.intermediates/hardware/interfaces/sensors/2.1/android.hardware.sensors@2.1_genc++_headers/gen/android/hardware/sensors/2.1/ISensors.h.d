@@ -1,0 +1,13 @@
+android/hardware/sensors/2.1/types.h: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/sensors/1.0/ISensors.hal \
+  hardware/interfaces/sensors/1.0/types.hal \
+  hardware/interfaces/sensors/2.0/ISensors.hal \
+  hardware/interfaces/sensors/2.0/ISensorsCallback.hal \
+  hardware/interfaces/sensors/2.0/types.hal \
+  hardware/interfaces/sensors/2.1/ISensors.hal \
+  hardware/interfaces/sensors/2.1/ISensorsCallback.hal \
+  hardware/interfaces/sensors/2.1/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2019 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<manifest package="com.android.car.ui" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!-- This is set to 16, because this is the lowest supported version across all our clients.
+     We're setting this so we don't get lint errors for non-gradle builds. -->
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="16"/>
+    <queries>
+      <provider android:authorities="com.android.car.ui.plugin" android:name="com.android.car.ui.plugin.PluginNameProvider" tools:ignore="ExportedContentProvider,MissingClass"/>
+    </queries>
+    <application>
+        <provider android:authorities="${applicationId}.CarUiInstaller" android:directBootAware="true" android:exported="false" android:name="com.android.car.ui.core.CarUiInstaller" android:process="@string/car_ui_installer_process_name"/>
+        <provider android:authorities="${applicationId}.SearchResultsProvider" android:exported="true" android:name="com.android.car.ui.core.SearchResultsProvider" android:process="@string/car_ui_installer_process_name" android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS"/>
+    </application>
+</manifest>

@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/oemlock/aidl/android.hardware.oemlock-V1-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/oemlock/aidl/android.hardware.oemlock-V1-ndk_platform-source/gen/android/hardware/oemlock/OemLockSecureStatus.o: \
+  out/soong/.intermediates/hardware/interfaces/oemlock/aidl/android.hardware.oemlock-V1-ndk_platform-source/gen/android/hardware/oemlock/OemLockSecureStatus.cpp

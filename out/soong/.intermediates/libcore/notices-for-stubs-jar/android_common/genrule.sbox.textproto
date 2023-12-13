@@ -1,0 +1,21 @@
+commands: <
+  copy_before: <
+    from: "libcore/NOTICE"
+    to: "tools/src/libcore/NOTICE"
+  >
+  copy_before: <
+    from: "libcore/ojluni/NOTICE"
+    to: "tools/src/libcore/ojluni/NOTICE"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  command: "mkdir __SBOX_SANDBOX_DIR__/out/NOTICES && cp -f __SBOX_SANDBOX_DIR__/tools/src/libcore/NOTICE __SBOX_SANDBOX_DIR__/out/NOTICES/libcore-NOTICE && cp -f __SBOX_SANDBOX_DIR__/tools/src/libcore/ojluni/NOTICE __SBOX_SANDBOX_DIR__/out/NOTICES/ojluni-NOTICE && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -o __SBOX_SANDBOX_DIR__/out/notices-for-stubs.jar -C __SBOX_SANDBOX_DIR__/out -D __SBOX_SANDBOX_DIR__/out/NOTICES"
+  copy_after: <
+    from: "out/notices-for-stubs.jar"
+    to: "out/soong/.intermediates/libcore/notices-for-stubs-jar/android_common/gen/notices-for-stubs.jar"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

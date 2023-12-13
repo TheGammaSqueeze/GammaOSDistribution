@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/enums/stats/devicepolicy/devicepolicyprotosnano/android_common/gen/proto/proto0.tmp/android/stats/devicepolicy/nano/DevicePolicyEnums.java: frameworks/proto_logging/stats/enums/stats/devicepolicy/device_policy_enums.proto

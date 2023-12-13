@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2015 The CyanogenMod Project
+ *               2017-2022 The LineageOS Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<manifest android:sharedUserId="android.uid.system" android:sharedUserLabel="@string/lineageos_system_label" coreApp="true" package="lineageos.platform" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <protected-broadcast android:name="lineageos.intent.action.SCREEN_CAMERA_GESTURE"/>
+    <protected-broadcast android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE"/>
+    <protected-broadcast android:name="lineageos.intent.action.INITIALIZE_LIVEDISPLAY"/>
+    <protected-broadcast android:name="lineageos.platform.intent.action.PROFILE_SELECTED"/>
+
+    <protected-broadcast android:name="lineageos.intent.action.UPDATE_PREFERENCE"/>
+    <protected-broadcast android:name="lineageos.intent.action.REFRESH_PREFERENCE"/>
+
+    <protected-broadcast android:name="lineageos.platform.intent.action.PROFILE_UPDATED"/>
+    <protected-broadcast android:name="lineageos.platform.intent.action.INTENT_ACTION_PROFILE_TRIGGER_STATE_CHANGED"/>
+
+    <protected-broadcast android:name="lineageos.platform.intent.action.UPDATE_TWILIGHT_STATE"/>
+
+    <!-- Allows an application access to the Lineage hardware abstraction framework
+        <p>Not for use by third-party applications. -->
+    <permission android:description="@string/permdesc_useHardwareFramework" android:label="@string/permlab_useHardwareFramework" android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" android:protectionLevel="signature|privileged"/>
+
+    <!-- Allows an application to write to Lineage system settings -->
+    <permission android:description="@string/permdesc_writeSettings" android:label="@string/permlab_writeSettings" android:name="lineageos.permission.WRITE_SETTINGS" android:protectionLevel="normal"/>
+
+    <!-- Allows an application to modify system profiles -->
+    <permission android:description="@string/permdesc_modifyProfiles" android:label="@string/permlab_modifyProfiles" android:name="lineageos.permission.MODIFY_PROFILES" android:protectionLevel="normal"/>
+
+    <!-- Allows an application to write to secure Lineage system settings.
+        <p>Not for use by third-party applications. -->
+    <permission android:description="@string/permdesc_writeSecureSettings" android:label="@string/permlab_writeSecureSettings" android:name="lineageos.permission.WRITE_SECURE_SETTINGS" android:protectionLevel="signature|privileged|development"/>
+
+    <!-- Allows an application to manage LiveDisplay -->
+    <permission android:description="@string/permdesc_manageLiveDisplay" android:icon="@drawable/ic_launcher_lineageos" android:label="@string/permlab_manageLiveDisplay" android:name="lineageos.permission.MANAGE_LIVEDISPLAY" android:protectionLevel="normal"/>
+
+    <!-- Allows an application to access the Trust interface -->
+    <permission android:description="@string/permdesc_trustInterface" android:icon="@drawable/ic_trust" android:label="@string/permlab_trustInterface" android:name="lineageos.permission.TRUST_INTERFACE" android:protectionLevel="signature|privileged"/>
+
+    <application android:allowClearUserData="false" android:extractNativeLibs="true" android:hasCode="false" android:icon="@mipmap/ic_launcher" android:killAfterRestore="false" android:label="@string/lineageos_system_label" android:persistent="true" android:process="system" android:supportsRtl="true"/>
+
+    <!-- Permission for managing remote preferences -->
+    <permission android:description="@string/permdesc_manageRemotePrefs" android:label="@string/permlab_manageRemotePrefs" android:name="lineageos.permission.MANAGE_REMOTE_PREFERENCES" android:protectionLevel="signature|privileged"/>
+
+</manifest>

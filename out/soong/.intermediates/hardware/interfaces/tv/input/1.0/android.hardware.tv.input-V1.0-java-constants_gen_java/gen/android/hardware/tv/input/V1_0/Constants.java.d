@@ -1,0 +1,9 @@
+android/hardware/tv/input/V1_0/Constants.java: \
+  hardware/interfaces/audio/common/2.0/types.hal \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/tv/input/1.0/ITvInput.hal \
+  hardware/interfaces/tv/input/1.0/ITvInputCallback.hal \
+  hardware/interfaces/tv/input/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

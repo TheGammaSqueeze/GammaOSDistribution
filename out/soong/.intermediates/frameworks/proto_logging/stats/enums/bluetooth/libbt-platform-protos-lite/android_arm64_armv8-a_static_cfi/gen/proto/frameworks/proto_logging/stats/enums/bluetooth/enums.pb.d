@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/enums/bluetooth/libbt-platform-protos-lite/android_arm64_armv8-a_static_cfi/gen/proto/frameworks/proto_logging/stats/enums/bluetooth/enums.pb.cc: frameworks/proto_logging/stats/enums/bluetooth/enums.proto

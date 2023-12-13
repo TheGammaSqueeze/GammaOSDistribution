@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/opt/telephony/proto/telephony-protos/android_common/gen/proto/proto0.tmp/com/android/internal/telephony/nano/PersistAtomsProto.java: frameworks/opt/telephony/proto/src/persist_atoms.proto

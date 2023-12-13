@@ -1,0 +1,12 @@
+android/hardware/cas/native/1.0/types.cpp: \
+  hardware/interfaces/cas/1.0/ICas.hal \
+  hardware/interfaces/cas/1.0/ICasListener.hal \
+  hardware/interfaces/cas/1.0/IDescramblerBase.hal \
+  hardware/interfaces/cas/1.0/IMediaCasService.hal \
+  hardware/interfaces/cas/1.0/types.hal \
+  hardware/interfaces/cas/native/1.0/IDescrambler.hal \
+  hardware/interfaces/cas/native/1.0/types.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

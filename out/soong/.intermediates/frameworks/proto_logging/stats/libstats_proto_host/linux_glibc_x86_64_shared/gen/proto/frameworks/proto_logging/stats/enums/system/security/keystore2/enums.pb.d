@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/libstats_proto_host/linux_glibc_x86_64_shared/gen/proto/frameworks/proto_logging/stats/enums/system/security/keystore2/enums.pb.cc: frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto

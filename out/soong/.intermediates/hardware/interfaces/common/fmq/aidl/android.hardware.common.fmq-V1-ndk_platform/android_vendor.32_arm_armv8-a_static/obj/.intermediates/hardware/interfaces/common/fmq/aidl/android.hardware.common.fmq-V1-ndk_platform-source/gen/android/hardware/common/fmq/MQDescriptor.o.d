@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/common/fmq/aidl/android.hardware.common.fmq-V1-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/common/fmq/aidl/android.hardware.common.fmq-V1-ndk_platform-source/gen/android/hardware/common/fmq/MQDescriptor.o: \
+  out/soong/.intermediates/hardware/interfaces/common/fmq/aidl/android.hardware.common.fmq-V1-ndk_platform-source/gen/android/hardware/common/fmq/MQDescriptor.cpp

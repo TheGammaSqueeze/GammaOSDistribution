@@ -1,0 +1,64 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::hardware::neuralnetworks::service::getDevices",
+   "linker_set_key" : "_ZN7android8hardware14neuralnetworks7service10getDevicesEb",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "return_type" : "_ZTINSt3__16vectorIN7android8hardware14neuralnetworks7service27SharedDeviceAndUpdatabilityENS_9allocatorIS5_EEEE",
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/service/include/nnapi/hal/Service.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" : [],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "device",
+     "referenced_type" : "_ZTINSt3__110shared_ptrIKN7android2nn7IDeviceEEE"
+    },
+    {
+     "field_name" : "isDeviceUpdatable",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIb"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android8hardware14neuralnetworks7service27SharedDeviceAndUpdatabilityE",
+   "name" : "android::hardware::neuralnetworks::service::SharedDeviceAndUpdatability",
+   "referenced_type" : "_ZTIN7android8hardware14neuralnetworks7service27SharedDeviceAndUpdatabilityE",
+   "self_type" : "_ZTIN7android8hardware14neuralnetworks7service27SharedDeviceAndUpdatabilityE",
+   "size" : 12,
+   "source_file" : "hardware/interfaces/neuralnetworks/utils/service/include/nnapi/hal/Service.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

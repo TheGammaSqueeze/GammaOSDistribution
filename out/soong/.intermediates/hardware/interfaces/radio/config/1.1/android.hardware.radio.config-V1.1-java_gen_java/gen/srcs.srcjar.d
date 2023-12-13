@@ -1,0 +1,19 @@
+android/hardware/radio/config/V1_1/ModemInfo.java: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/radio/1.0/IRadio.hal \
+  hardware/interfaces/radio/1.0/IRadioIndication.hal \
+  hardware/interfaces/radio/1.0/IRadioResponse.hal \
+  hardware/interfaces/radio/1.0/ISap.hal \
+  hardware/interfaces/radio/1.0/ISapCallback.hal \
+  hardware/interfaces/radio/1.0/types.hal \
+  hardware/interfaces/radio/config/1.0/IRadioConfig.hal \
+  hardware/interfaces/radio/config/1.0/IRadioConfigIndication.hal \
+  hardware/interfaces/radio/config/1.0/IRadioConfigResponse.hal \
+  hardware/interfaces/radio/config/1.0/types.hal \
+  hardware/interfaces/radio/config/1.1/IRadioConfig.hal \
+  hardware/interfaces/radio/config/1.1/IRadioConfigIndication.hal \
+  hardware/interfaces/radio/config/1.1/IRadioConfigResponse.hal \
+  hardware/interfaces/radio/config/1.1/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/keymaster/aidl/android.hardware.keymaster-V3-ndk_platform/android_vendor.32_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/keymaster/aidl/android.hardware.keymaster-V3-ndk_platform-source/gen/android/hardware/keymaster/HardwareAuthenticatorType.o: \
+  out/soong/.intermediates/hardware/interfaces/keymaster/aidl/android.hardware.keymaster-V3-ndk_platform-source/gen/android/hardware/keymaster/HardwareAuthenticatorType.cpp

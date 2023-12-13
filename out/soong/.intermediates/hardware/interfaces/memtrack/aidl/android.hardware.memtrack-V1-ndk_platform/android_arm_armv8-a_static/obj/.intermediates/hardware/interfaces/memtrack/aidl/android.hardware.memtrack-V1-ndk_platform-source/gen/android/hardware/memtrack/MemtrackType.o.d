@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/memtrack/aidl/android.hardware.memtrack-V1-ndk_platform/android_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/memtrack/aidl/android.hardware.memtrack-V1-ndk_platform-source/gen/android/hardware/memtrack/MemtrackType.o: \
+  out/soong/.intermediates/hardware/interfaces/memtrack/aidl/android.hardware.memtrack-V1-ndk_platform-source/gen/android/hardware/memtrack/MemtrackType.cpp

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/enums/stats/style/styleprotoslite/android_common/gen/proto/proto0.tmp/android/stats/style/Action.java: frameworks/proto_logging/stats/enums/stats/style/style_enums.proto

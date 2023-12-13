@@ -1,0 +1,151 @@
+<compatibility-matrix version="1.0" type="framework">
+<kernel version="4.19.191" />
+<!-- KEEP ALPHABETICALLY SORTED -->
+<!-- ARM base requirements -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_ARM</key>
+			<value type="tristate">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_AEABI</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_CPU_SW_DOMAIN_PAN</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_DEVKMEM</key>
+		<value type="tristate">n</value>
+	</config>
+	<config>
+		<key>CONFIG_OABI_COMPAT</key>
+		<value type="tristate">n</value>
+	</config>
+</kernel>
+
+<!-- ARM64 base requirements -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_ARM64</key>
+			<value type="tristate">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_ARM64_PAN</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_ARMV8_DEPRECATED</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_COMPAT</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_CP15_BARRIER_EMULATION</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_SETEND_EMULATION</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_SWP_EMULATION</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+
+<!-- x86 base requirements -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_X86</key>
+			<value type="tristate">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_DEVKMEM</key>
+		<value type="tristate">n</value>
+	</config>
+	<config>
+		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_RETPOLINE</key>
+		<value type="tristate">y</value>
+	</config>
+	<config>
+		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+
+<!-- CONFIG_ACPI || CONFIG_OF -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_ACPI</key>
+			<value type="tristate">n</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_OF</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_OF</key>
+			<value type="tristate">n</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_ACPI</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+
+<!-- EXT4 requirements -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_EXT4_FS</key>
+			<value type="tristate">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_EXT4_FS_POSIX_ACL</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+
+<!-- F2FS requirements -->
+<kernel version="4.19.191">
+	<conditions>
+		<config>
+			<key>CONFIG_F2FS_FS</key>
+			<value type="tristate">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_F2FS_FS_POSIX_ACL</key>
+		<value type="tristate">y</value>
+	</config>
+</kernel>
+</compatibility-matrix>

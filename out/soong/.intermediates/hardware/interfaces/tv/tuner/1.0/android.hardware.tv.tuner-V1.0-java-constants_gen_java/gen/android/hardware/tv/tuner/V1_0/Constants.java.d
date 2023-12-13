@@ -1,0 +1,19 @@
+android/hardware/tv/tuner/V1_0/Constants.java: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/tv/tuner/1.0/IDemux.hal \
+  hardware/interfaces/tv/tuner/1.0/IDescrambler.hal \
+  hardware/interfaces/tv/tuner/1.0/IDvr.hal \
+  hardware/interfaces/tv/tuner/1.0/IDvrCallback.hal \
+  hardware/interfaces/tv/tuner/1.0/IFilter.hal \
+  hardware/interfaces/tv/tuner/1.0/IFilterCallback.hal \
+  hardware/interfaces/tv/tuner/1.0/IFrontend.hal \
+  hardware/interfaces/tv/tuner/1.0/IFrontendCallback.hal \
+  hardware/interfaces/tv/tuner/1.0/ILnb.hal \
+  hardware/interfaces/tv/tuner/1.0/ILnbCallback.hal \
+  hardware/interfaces/tv/tuner/1.0/ITimeFilter.hal \
+  hardware/interfaces/tv/tuner/1.0/ITuner.hal \
+  hardware/interfaces/tv/tuner/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \
+  system/libhidl/transport/safe_union/1.0/types.hal \

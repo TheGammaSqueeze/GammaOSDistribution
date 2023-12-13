@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/identity/aidl/android.hardware.identity-V3-ndk_platform/android_vendor.32_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/identity/aidl/android.hardware.identity-V3-ndk_platform-source/gen/android/hardware/identity/CipherSuite.o: \
+  out/soong/.intermediates/hardware/interfaces/identity/aidl/android.hardware.identity-V3-ndk_platform-source/gen/android/hardware/identity/CipherSuite.cpp

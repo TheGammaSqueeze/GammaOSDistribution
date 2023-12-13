@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-cpp/android_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-cpp-source/gen/android/hardware/vibrator/Braking.o: \
+  out/soong/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-cpp-source/gen/android/hardware/vibrator/Braking.cpp

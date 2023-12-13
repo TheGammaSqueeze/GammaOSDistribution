@@ -1,0 +1,14 @@
+android/hardware/radio/deprecated/1.0/OemHookAll.cpp: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/radio/1.0/IRadio.hal \
+  hardware/interfaces/radio/1.0/IRadioIndication.hal \
+  hardware/interfaces/radio/1.0/IRadioResponse.hal \
+  hardware/interfaces/radio/1.0/ISap.hal \
+  hardware/interfaces/radio/1.0/ISapCallback.hal \
+  hardware/interfaces/radio/1.0/types.hal \
+  hardware/interfaces/radio/deprecated/1.0/IOemHook.hal \
+  hardware/interfaces/radio/deprecated/1.0/IOemHookIndication.hal \
+  hardware/interfaces/radio/deprecated/1.0/IOemHookResponse.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

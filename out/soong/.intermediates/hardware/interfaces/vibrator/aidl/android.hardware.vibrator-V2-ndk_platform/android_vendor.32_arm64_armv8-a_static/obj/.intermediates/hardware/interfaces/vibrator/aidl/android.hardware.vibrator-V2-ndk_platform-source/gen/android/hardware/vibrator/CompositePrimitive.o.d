@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-ndk_platform/android_vendor.32_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-ndk_platform-source/gen/android/hardware/vibrator/CompositePrimitive.o: \
+  out/soong/.intermediates/hardware/interfaces/vibrator/aidl/android.hardware.vibrator-V2-ndk_platform-source/gen/android/hardware/vibrator/CompositePrimitive.cpp

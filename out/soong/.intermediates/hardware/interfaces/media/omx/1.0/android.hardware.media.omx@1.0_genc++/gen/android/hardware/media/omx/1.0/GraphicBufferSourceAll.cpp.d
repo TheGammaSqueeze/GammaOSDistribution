@@ -1,0 +1,16 @@
+android/hardware/media/omx/1.0/types.cpp: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/graphics/bufferqueue/1.0/IGraphicBufferProducer.hal \
+  hardware/interfaces/graphics/bufferqueue/1.0/IProducerListener.hal \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  hardware/interfaces/media/1.0/types.hal \
+  hardware/interfaces/media/omx/1.0/IGraphicBufferSource.hal \
+  hardware/interfaces/media/omx/1.0/IOmx.hal \
+  hardware/interfaces/media/omx/1.0/IOmxBufferSource.hal \
+  hardware/interfaces/media/omx/1.0/IOmxNode.hal \
+  hardware/interfaces/media/omx/1.0/IOmxObserver.hal \
+  hardware/interfaces/media/omx/1.0/IOmxStore.hal \
+  hardware/interfaces/media/omx/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

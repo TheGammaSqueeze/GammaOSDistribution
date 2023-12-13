@@ -1,0 +1,11 @@
+android/hardware/power/1.2/types.h: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/power/1.0/IPower.hal \
+  hardware/interfaces/power/1.0/types.hal \
+  hardware/interfaces/power/1.1/IPower.hal \
+  hardware/interfaces/power/1.1/types.hal \
+  hardware/interfaces/power/1.2/IPower.hal \
+  hardware/interfaces/power/1.2/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

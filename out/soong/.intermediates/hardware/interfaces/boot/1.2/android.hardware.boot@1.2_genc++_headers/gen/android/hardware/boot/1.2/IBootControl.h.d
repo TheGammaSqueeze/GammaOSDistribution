@@ -1,0 +1,10 @@
+android/hardware/boot/1.2/IBootControl.h: \
+  hardware/interfaces/boot/1.0/IBootControl.hal \
+  hardware/interfaces/boot/1.0/types.hal \
+  hardware/interfaces/boot/1.1/IBootControl.hal \
+  hardware/interfaces/boot/1.1/types.hal \
+  hardware/interfaces/boot/1.2/IBootControl.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

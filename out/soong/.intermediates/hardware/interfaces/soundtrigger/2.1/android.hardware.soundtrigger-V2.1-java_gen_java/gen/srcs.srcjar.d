@@ -1,0 +1,11 @@
+android/hardware/soundtrigger/V2_1/ISoundTriggerHw.java: \
+  hardware/interfaces/audio/common/2.0/types.hal \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/soundtrigger/2.0/ISoundTriggerHw.hal \
+  hardware/interfaces/soundtrigger/2.0/ISoundTriggerHwCallback.hal \
+  hardware/interfaces/soundtrigger/2.0/types.hal \
+  hardware/interfaces/soundtrigger/2.1/ISoundTriggerHw.hal \
+  hardware/interfaces/soundtrigger/2.1/ISoundTriggerHwCallback.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

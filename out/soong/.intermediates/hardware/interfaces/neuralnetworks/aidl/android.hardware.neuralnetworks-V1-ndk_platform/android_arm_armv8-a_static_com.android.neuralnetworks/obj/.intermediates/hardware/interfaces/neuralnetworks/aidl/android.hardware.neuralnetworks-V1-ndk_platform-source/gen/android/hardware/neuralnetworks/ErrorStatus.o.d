@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/neuralnetworks/aidl/android.hardware.neuralnetworks-V1-ndk_platform/android_arm_armv8-a_static_com.android.neuralnetworks/obj/.intermediates/hardware/interfaces/neuralnetworks/aidl/android.hardware.neuralnetworks-V1-ndk_platform-source/gen/android/hardware/neuralnetworks/ErrorStatus.o: \
+  out/soong/.intermediates/hardware/interfaces/neuralnetworks/aidl/android.hardware.neuralnetworks-V1-ndk_platform-source/gen/android/hardware/neuralnetworks/ErrorStatus.cpp

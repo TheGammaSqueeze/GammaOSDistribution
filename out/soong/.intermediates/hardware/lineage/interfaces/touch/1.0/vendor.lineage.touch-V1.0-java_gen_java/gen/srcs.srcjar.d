@@ -1,0 +1,10 @@
+vendor/lineage/touch/V1_0/Gesture.java: \
+  hardware/lineage/interfaces/touch/1.0/IGloveMode.hal \
+  hardware/lineage/interfaces/touch/1.0/IHighTouchPollingRate.hal \
+  hardware/lineage/interfaces/touch/1.0/IKeyDisabler.hal \
+  hardware/lineage/interfaces/touch/1.0/IKeySwapper.hal \
+  hardware/lineage/interfaces/touch/1.0/IStylusMode.hal \
+  hardware/lineage/interfaces/touch/1.0/ITouchscreenGesture.hal \
+  hardware/lineage/interfaces/touch/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \

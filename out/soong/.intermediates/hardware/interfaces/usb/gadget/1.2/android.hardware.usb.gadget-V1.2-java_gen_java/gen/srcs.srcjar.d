@@ -1,0 +1,12 @@
+android/hardware/usb/gadget/V1_2/GadgetFunction.java: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/usb/gadget/1.0/IUsbGadget.hal \
+  hardware/interfaces/usb/gadget/1.0/IUsbGadgetCallback.hal \
+  hardware/interfaces/usb/gadget/1.0/types.hal \
+  hardware/interfaces/usb/gadget/1.1/IUsbGadget.hal \
+  hardware/interfaces/usb/gadget/1.2/IUsbGadget.hal \
+  hardware/interfaces/usb/gadget/1.2/IUsbGadgetCallback.hal \
+  hardware/interfaces/usb/gadget/1.2/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

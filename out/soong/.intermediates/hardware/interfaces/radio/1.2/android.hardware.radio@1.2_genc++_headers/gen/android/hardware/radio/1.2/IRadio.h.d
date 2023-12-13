@@ -1,0 +1,21 @@
+android/hardware/radio/1.2/types.h: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/radio/1.0/IRadio.hal \
+  hardware/interfaces/radio/1.0/IRadioIndication.hal \
+  hardware/interfaces/radio/1.0/IRadioResponse.hal \
+  hardware/interfaces/radio/1.0/ISap.hal \
+  hardware/interfaces/radio/1.0/ISapCallback.hal \
+  hardware/interfaces/radio/1.0/types.hal \
+  hardware/interfaces/radio/1.1/IRadio.hal \
+  hardware/interfaces/radio/1.1/IRadioIndication.hal \
+  hardware/interfaces/radio/1.1/IRadioResponse.hal \
+  hardware/interfaces/radio/1.1/ISap.hal \
+  hardware/interfaces/radio/1.1/types.hal \
+  hardware/interfaces/radio/1.2/IRadio.hal \
+  hardware/interfaces/radio/1.2/IRadioIndication.hal \
+  hardware/interfaces/radio/1.2/IRadioResponse.hal \
+  hardware/interfaces/radio/1.2/ISap.hal \
+  hardware/interfaces/radio/1.2/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

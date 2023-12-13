@@ -1,0 +1,13 @@
+vendor/lineage/livedisplay/V2_0/Range.java: \
+  hardware/lineage/interfaces/livedisplay/2.0/IAdaptiveBacklight.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IAutoContrast.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IColorBalance.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IColorEnhancement.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IDisplayColorCalibration.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IDisplayModes.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IPictureAdjustment.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/IReadingEnhancement.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/ISunlightEnhancement.hal \
+  hardware/lineage/interfaces/livedisplay/2.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \

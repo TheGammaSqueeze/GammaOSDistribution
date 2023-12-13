@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/health/storage/aidl/android.hardware.health.storage-V1-ndk_platform/android_arm64_armv8-a_static/obj/.intermediates/hardware/interfaces/health/storage/aidl/android.hardware.health.storage-V1-ndk_platform-source/gen/android/hardware/health/storage/Result.o: \
+  out/soong/.intermediates/hardware/interfaces/health/storage/aidl/android.hardware.health.storage-V1-ndk_platform-source/gen/android/hardware/health/storage/Result.cpp

@@ -1,0 +1,26 @@
+commands: <
+  copy_before: <
+    from: "frameworks/rs/rs.spec"
+    to: "tools/src/frameworks/rs/rs.spec"
+  >
+  copy_before: <
+    from: "frameworks/rs/rsg.spec"
+    to: "tools/src/frameworks/rs/rsg.spec"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/rs/rsg-generator/linux_glibc_x86_64/rsg-generator"
+    to: "tools/out/bin/rsg-generator"
+    executable: false
+  >
+  command: "bash -c 'cat __SBOX_SANDBOX_DIR__/tools/src/frameworks/rs/rs.spec __SBOX_SANDBOX_DIR__/tools/src/frameworks/rs/rsg.spec | __SBOX_SANDBOX_DIR__/tools/out/bin/rsg-generator frameworks/rs/rsgApiStructs.h_rsg __SBOX_SANDBOX_DIR__/out/frameworks/rs/rsgApiStructs.h' && bash -c 'cat __SBOX_SANDBOX_DIR__/tools/src/frameworks/rs/rs.spec __SBOX_SANDBOX_DIR__/tools/src/frameworks/rs/rsg.spec | __SBOX_SANDBOX_DIR__/tools/out/bin/rsg-generator frameworks/rs/rsgApiFuncDecl.h_rsg __SBOX_SANDBOX_DIR__/out/frameworks/rs/rsgApiFuncDecl.h'"
+  copy_after: <
+    from: "out/frameworks/rs/rsgApiFuncDecl.h"
+    to: "out/soong/.intermediates/frameworks/rs/rs_generated_headers/gen/gensrcs/frameworks/rs/rsgApiFuncDecl.h"
+  >
+  copy_after: <
+    from: "out/frameworks/rs/rsgApiStructs.h"
+    to: "out/soong/.intermediates/frameworks/rs/rs_generated_headers/gen/gensrcs/frameworks/rs/rsgApiStructs.h"
+  >
+  input_hash: "8aae53545b0c021244915ff999e9da9f8e6e27229ed8e12696f68c2b9b2258ca"
+>
+

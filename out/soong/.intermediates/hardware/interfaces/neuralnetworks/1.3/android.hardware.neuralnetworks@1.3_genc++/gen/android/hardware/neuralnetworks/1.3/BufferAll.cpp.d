@@ -1,0 +1,27 @@
+android/hardware/neuralnetworks/1.3/types.cpp: \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/neuralnetworks/1.0/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.0/IExecutionCallback.hal \
+  hardware/interfaces/neuralnetworks/1.0/IPreparedModel.hal \
+  hardware/interfaces/neuralnetworks/1.0/IPreparedModelCallback.hal \
+  hardware/interfaces/neuralnetworks/1.0/types.hal \
+  hardware/interfaces/neuralnetworks/1.1/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.1/types.hal \
+  hardware/interfaces/neuralnetworks/1.2/IBurstCallback.hal \
+  hardware/interfaces/neuralnetworks/1.2/IBurstContext.hal \
+  hardware/interfaces/neuralnetworks/1.2/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.2/IExecutionCallback.hal \
+  hardware/interfaces/neuralnetworks/1.2/IPreparedModel.hal \
+  hardware/interfaces/neuralnetworks/1.2/IPreparedModelCallback.hal \
+  hardware/interfaces/neuralnetworks/1.2/types.hal \
+  hardware/interfaces/neuralnetworks/1.3/IBuffer.hal \
+  hardware/interfaces/neuralnetworks/1.3/IDevice.hal \
+  hardware/interfaces/neuralnetworks/1.3/IExecutionCallback.hal \
+  hardware/interfaces/neuralnetworks/1.3/IFencedExecutionCallback.hal \
+  hardware/interfaces/neuralnetworks/1.3/IPreparedModel.hal \
+  hardware/interfaces/neuralnetworks/1.3/IPreparedModelCallback.hal \
+  hardware/interfaces/neuralnetworks/1.3/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \
+  system/libhidl/transport/safe_union/1.0/types.hal \

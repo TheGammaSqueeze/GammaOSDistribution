@@ -1,0 +1,17 @@
+android/hardware/cas/V1_2/Status.java: \
+  hardware/interfaces/cas/1.0/ICas.hal \
+  hardware/interfaces/cas/1.0/ICasListener.hal \
+  hardware/interfaces/cas/1.0/IDescramblerBase.hal \
+  hardware/interfaces/cas/1.0/IMediaCasService.hal \
+  hardware/interfaces/cas/1.0/types.hal \
+  hardware/interfaces/cas/1.1/ICas.hal \
+  hardware/interfaces/cas/1.1/ICasListener.hal \
+  hardware/interfaces/cas/1.1/IMediaCasService.hal \
+  hardware/interfaces/cas/1.2/ICas.hal \
+  hardware/interfaces/cas/1.2/ICasListener.hal \
+  hardware/interfaces/cas/1.2/IMediaCasService.hal \
+  hardware/interfaces/cas/1.2/types.hal \
+  hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

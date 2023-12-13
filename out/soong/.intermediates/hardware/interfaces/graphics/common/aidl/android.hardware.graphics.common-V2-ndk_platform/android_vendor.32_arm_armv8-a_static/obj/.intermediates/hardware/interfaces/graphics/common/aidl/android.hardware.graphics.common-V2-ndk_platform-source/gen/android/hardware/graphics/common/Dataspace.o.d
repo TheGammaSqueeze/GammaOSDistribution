@@ -1,0 +1,2 @@
+out/soong/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform-source/gen/android/hardware/graphics/common/Dataspace.o: \
+  out/soong/.intermediates/hardware/interfaces/graphics/common/aidl/android.hardware.graphics.common-V2-ndk_platform-source/gen/android/hardware/graphics/common/Dataspace.cpp

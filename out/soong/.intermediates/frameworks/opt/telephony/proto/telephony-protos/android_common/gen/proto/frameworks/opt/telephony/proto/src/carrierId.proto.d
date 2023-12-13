@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/opt/telephony/proto/telephony-protos/android_common/gen/proto/proto0.tmp/com/android/internal/telephony/nano/CarrierIdProto.java: frameworks/opt/telephony/proto/src/carrierId.proto frameworks/opt/telephony/proto/src/persist_atoms.proto frameworks/opt/telephony/proto/src/pin_storage.proto frameworks/opt/telephony/proto/src/telephony.proto

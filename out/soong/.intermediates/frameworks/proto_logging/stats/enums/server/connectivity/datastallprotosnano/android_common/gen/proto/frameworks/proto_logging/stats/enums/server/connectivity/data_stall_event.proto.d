@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/proto_logging/stats/enums/server/connectivity/datastallprotosnano/android_common/gen/proto/proto0.tmp/com/android/server/connectivity/nano/CellularData.java: frameworks/proto_logging/stats/enums/server/connectivity/data_stall_event.proto
