@@ -1,0 +1,370 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA128_h",
+   "name" : "unsigned char [128]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA128_h",
+   "size" : 128,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA56_h",
+   "name" : "unsigned char [56]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA56_h",
+   "size" : 56,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA5_j",
+   "name" : "unsigned int [5]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA5_j",
+   "size" : 20,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 1,
+   "linker_set_key" : "_ZTIA64_h",
+   "name" : "unsigned char [64]",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIA64_h",
+   "size" : 64,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA8_j",
+   "name" : "unsigned int [8]",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIA8_j",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIA8_m",
+   "name" : "unsigned long [8]",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIA8_m",
+   "size" : 64,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "FIPS_mode",
+   "linker_set_key" : "FIPS_mode",
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/crypto.h"
+  },
+  {
+   "function_name" : "FIPS_mode_set",
+   "linker_set_key" : "FIPS_mode_set",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/boringssl/src/include/openssl/crypto.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP20CRYPTO_dynlock_value",
+   "name" : "CRYPTO_dynlock_value *",
+   "referenced_type" : "_ZTI20CRYPTO_dynlock_value",
+   "self_type" : "_ZTIP20CRYPTO_dynlock_value",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "referenced_type" : "_ZTIN12sha_state_stUt_E"
+    },
+    {
+     "field_name" : "Nl",
+     "field_offset" : 160,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "Nh",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 224,
+     "referenced_type" : "_ZTIA64_h"
+    },
+    {
+     "field_name" : "num",
+     "field_offset" : 736,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI12sha_state_st",
+   "name" : "sha_state_st",
+   "referenced_type" : "_ZTI12sha_state_st",
+   "self_type" : "_ZTI12sha_state_st",
+   "size" : 96,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "references",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP20CRYPTO_dynlock_value"
+    }
+   ],
+   "linker_set_key" : "_ZTI14CRYPTO_dynlock",
+   "name" : "CRYPTO_dynlock",
+   "referenced_type" : "_ZTI14CRYPTO_dynlock",
+   "self_type" : "_ZTI14CRYPTO_dynlock",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "alignment",
+     "referenced_type" : "_ZTId"
+    },
+    {
+     "field_name" : "padding",
+     "referenced_type" : "_ZTIA56_h"
+    }
+   ],
+   "linker_set_key" : "_ZTI15crypto_mutex_st",
+   "name" : "crypto_mutex_st",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI15crypto_mutex_st",
+   "self_type" : "_ZTI15crypto_mutex_st",
+   "size" : 56,
+   "source_file" : "external/boringssl/src/include/openssl/thread.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "h",
+     "referenced_type" : "_ZTIA8_j"
+    },
+    {
+     "field_name" : "Nl",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "Nh",
+     "field_offset" : 288,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIA64_h"
+    },
+    {
+     "field_name" : "num",
+     "field_offset" : 832,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "md_len",
+     "field_offset" : 864,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI15sha256_state_st",
+   "name" : "sha256_state_st",
+   "referenced_type" : "_ZTI15sha256_state_st",
+   "self_type" : "_ZTI15sha256_state_st",
+   "size" : 112,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "h",
+     "referenced_type" : "_ZTIA8_m"
+    },
+    {
+     "field_name" : "Nl",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "Nh",
+     "field_offset" : 576,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "p",
+     "field_offset" : 640,
+     "referenced_type" : "_ZTIA128_h"
+    },
+    {
+     "field_name" : "num",
+     "field_offset" : 1664,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "md_len",
+     "field_offset" : 1696,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI15sha512_state_st",
+   "name" : "sha512_state_st",
+   "referenced_type" : "_ZTI15sha512_state_st",
+   "self_type" : "_ZTI15sha512_state_st",
+   "size" : 216,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "h",
+     "referenced_type" : "_ZTIA5_j"
+    },
+    {
+     "referenced_type" : "_ZTIN12sha_state_stUt_Ut_E"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN12sha_state_stUt_E",
+   "name" : "sha_state_st::(anonymous union at external/boringssl/src/include/openssl/sha.h:105:3)",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTIN12sha_state_stUt_E",
+   "self_type" : "_ZTIN12sha_state_stUt_E",
+   "size" : 20,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "h0",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "h1",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "h2",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "h3",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "h4",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN12sha_state_stUt_Ut_E",
+   "name" : "sha_state_st::(anonymous union at external/boringssl/src/include/openssl/sha.h:105:3)::(anonymous struct at external/boringssl/src/include/openssl/sha.h:107:5)",
+   "referenced_type" : "_ZTIN12sha_state_stUt_Ut_E",
+   "self_type" : "_ZTIN12sha_state_stUt_Ut_E",
+   "size" : 20,
+   "source_file" : "external/boringssl/src/include/openssl/sha.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
