@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="me.phh.treble.overlay.moto.g8power" xmlns:android="http://schemas.android.com/apk/res/android">
+	<application android:extractNativeLibs="false" android:usesNonSdkApi="true"/>
+	<uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+	<!--
+		TESTS: Ignore ro.vendor.product.name
+		There is no vendor fingerprint: https://github.com/TadiT7/motorola_evert_dump/blob/evert_n-user-8.0.0-OPW27.113-45-53-release-keys/vendor/build.prop
+	-->
+        <overlay android:isStatic="true" android:priority="109" android:requiredSystemPropertyName="ro.product.vendor.name" android:requiredSystemPropertyValue="+*sofia*" android:targetPackage="android"/>
+</manifest>

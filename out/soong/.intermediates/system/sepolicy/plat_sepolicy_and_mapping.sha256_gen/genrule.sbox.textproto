@@ -1,0 +1,9 @@
+commands: <
+  command: "cat out/soong/.intermediates/system/sepolicy/plat_sepolicy.cil/android_common/plat_sepolicy.cil out/soong/.intermediates/system/sepolicy/plat_mapping_file/android_common/32.0.cil | sha256sum | cut -d' ' -f1 > __SBOX_SANDBOX_DIR__/out/plat_sepolicy_and_mapping.sha256"
+  copy_after: <
+    from: "out/plat_sepolicy_and_mapping.sha256"
+    to: "out/soong/.intermediates/system/sepolicy/plat_sepolicy_and_mapping.sha256_gen/gen/plat_sepolicy_and_mapping.sha256"
+  >
+  input_hash: "1538fbd789102249384b0c891e83869db6deb8d6baf0d30d5db28c74c9d00a1b"
+>
+

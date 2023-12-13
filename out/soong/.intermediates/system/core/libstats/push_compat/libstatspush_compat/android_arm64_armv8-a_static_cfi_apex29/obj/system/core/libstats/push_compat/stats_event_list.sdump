@@ -1,0 +1,198 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiP5iovecmE",
+   "name" : "int (iovec *, unsigned long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP5iovec"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "referenced_type" : "_ZTIFiP5iovecmE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiP5iovecmE",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "android_log_write_char_array",
+   "linker_set_key" : "android_log_write_char_array",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP28android_log_context_internal"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "function_name" : "note_log_drop",
+   "linker_set_key" : "note_log_drop",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "function_name" : "reset_log_context",
+   "linker_set_key" : "reset_log_context",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP28android_log_context_internal"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "function_name" : "stats_log_close",
+   "linker_set_key" : "stats_log_close",
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "function_name" : "write_to_logger",
+   "linker_set_key" : "write_to_logger",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP28android_log_context_internal"
+    },
+    {
+     "referenced_type" : "_ZTI6log_id"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "write_to_statsd",
+   "name" : "write_to_statsd",
+   "referenced_type" : "_ZTIPFiP5iovecmE",
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP28android_log_context_internal",
+   "name" : "android_log_context_internal *",
+   "referenced_type" : "_ZTI28android_log_context_internal",
+   "self_type" : "_ZTIP28android_log_context_internal",
+   "size" : 8,
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP5iovec",
+   "name" : "iovec *",
+   "referenced_type" : "_ZTI5iovec",
+   "self_type" : "_ZTIP5iovec",
+   "size" : 8,
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiP5iovecmE",
+   "name" : "int (*)(iovec *, unsigned long)",
+   "referenced_type" : "_ZTIFiP5iovecmE",
+   "self_type" : "_ZTIPFiP5iovecmE",
+   "size" : 8,
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/core/libstats/push_compat/include/stats_event_list.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

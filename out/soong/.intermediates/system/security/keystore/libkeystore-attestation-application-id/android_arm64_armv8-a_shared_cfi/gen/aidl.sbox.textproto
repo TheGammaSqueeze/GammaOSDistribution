@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/security/keymaster/IKeyAttestationApplicationIdProvider.cpp.d --ninja  -Iframeworks/base/core/java/ frameworks/base/core/java/android/security/keymaster/IKeyAttestationApplicationIdProvider.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/security/keymaster/IKeyAttestationApplicationIdProvider.cpp"
+  copy_after: <
+    from: "out/android/security/keymaster/BnKeyAttestationApplicationIdProvider.h"
+    to: "out/soong/.intermediates/system/security/keystore/libkeystore-attestation-application-id/android_arm64_armv8-a_shared_cfi/gen/aidl/android/security/keymaster/BnKeyAttestationApplicationIdProvider.h"
+  >
+  copy_after: <
+    from: "out/android/security/keymaster/BpKeyAttestationApplicationIdProvider.h"
+    to: "out/soong/.intermediates/system/security/keystore/libkeystore-attestation-application-id/android_arm64_armv8-a_shared_cfi/gen/aidl/android/security/keymaster/BpKeyAttestationApplicationIdProvider.h"
+  >
+  copy_after: <
+    from: "out/android/security/keymaster/IKeyAttestationApplicationIdProvider.cpp"
+    to: "out/soong/.intermediates/system/security/keystore/libkeystore-attestation-application-id/android_arm64_armv8-a_shared_cfi/gen/aidl/android/security/keymaster/IKeyAttestationApplicationIdProvider.cpp"
+  >
+  copy_after: <
+    from: "out/android/security/keymaster/IKeyAttestationApplicationIdProvider.h"
+    to: "out/soong/.intermediates/system/security/keystore/libkeystore-attestation-application-id/android_arm64_armv8-a_shared_cfi/gen/aidl/android/security/keymaster/IKeyAttestationApplicationIdProvider.h"
+  >
+  input_hash: "cfec499c38bc43b559d02a173dea59ee8f46f5f3d98f87e6cc1e0639f87a1eda"
+>
+output_depfile: "out/soong/.intermediates/system/security/keystore/libkeystore-attestation-application-id/android_arm64_armv8-a_shared_cfi/gen/aidl/android/security/keymaster/IKeyAttestationApplicationIdProvider.cpp.d"
+

@@ -1,0 +1,34 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/avb/avbtool/linux_glibc_x86_64_PY3/avbtool"
+    to: "tools/out/bin/avbtool"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/sqlite/dist/libsqlite/linux_glibc_x86_64_shared/libsqlite.so"
+    to: "tools/out/lib64/libsqlite.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/icu/icu4c/source/i18n/libicui18n/linux_glibc_x86_64_shared/libicui18n-host.so"
+    to: "tools/out/lib64/libicui18n-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/icu/icu4c/source/common/libicuuc/linux_glibc_x86_64_shared/libicuuc-host.so"
+    to: "tools/out/lib64/libicuuc-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/avbtool extract_public_key --key out/soong/.intermediates/system/apex/shim/build/com.android.apex.cts.shim.pem/gen/com.android.apex.cts.shim.pem --output __SBOX_SANDBOX_DIR__/out/com.android.apex.cts.shim.pubkey"
+  copy_after: <
+    from: "out/com.android.apex.cts.shim.pubkey"
+    to: "out/soong/.intermediates/system/apex/shim/build/com.android.apex.cts.shim.pubkey/gen/com.android.apex.cts.shim.pubkey"
+  >
+  input_hash: "554da5e5ed94cbf5fb375560c807b3b50cc55d0d7742c1c99b2e6cf2a55da8f1"
+>
+

@@ -1,0 +1,12 @@
+#line 1 "device/lineage/sepolicy/common/private/property_contexts"
+# Aux camera
+vendor.camera.aux.packageexcludelist   u:object_r:vendor_persist_camera_prop:s0
+vendor.camera.aux.packagelist          u:object_r:vendor_persist_camera_prop:s0
+
+# Radio
+ro.telephony.use_old_mnc_mcc_format    u:object_r:telephony_config_prop:s0
+
+# Recovery update
+persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
+#line 1 "device/phh/treble/sepolicy/property_contexts"
+persist.sys.sf.hs_mode         u:object_r:sf_hs_mode_prop:s0

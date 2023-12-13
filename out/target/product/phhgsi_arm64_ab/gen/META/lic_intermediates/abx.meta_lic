@@ -1,0 +1,36 @@
+license_package_name: "frameworks_base_cmds_abx_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "frameworks/base/cmds/abx/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/abx_intermediates/abx"
+target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/abx_intermediates/javalib.jar"
+target: "out/target/product/phhgsi_arm64_ab/system/bin/abx"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/abx.jar"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm/abx.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm/abx.vdex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm64/abx.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm64/abx.vdex"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/abx2xml.meta_lic
+  dep_package_name:  "frameworks_base_cmds_abx_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/base/cmds/abx/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/abx2xml_intermediates/abx2xml"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/bin/abx2xml"
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/xml2abx.meta_lic
+  dep_package_name:  "frameworks_base_cmds_abx_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/base/cmds/abx/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/xml2abx_intermediates/xml2abx"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/bin/xml2abx"
+  dep_effective_condition: "notice"
+}

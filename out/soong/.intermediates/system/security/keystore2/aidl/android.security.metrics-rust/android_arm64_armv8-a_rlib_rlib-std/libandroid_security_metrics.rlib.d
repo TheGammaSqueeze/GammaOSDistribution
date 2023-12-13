@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/aidl/android.security.metrics-rust/android_arm64_armv8-a_rlib_rlib-std/libandroid_security_metrics.rlib: out/soong/.intermediates/system/security/keystore2/aidl/android.security.metrics-rust/android_arm64_armv8-a_source/android_security_metrics.rs

@@ -1,0 +1,55 @@
+license_package_name: "Seedvault"
+license_kind: "legacy_by_exception_only"
+license_condition: "by_exception_only"
+license_text: "packages/apps/Seedvault/LICENSE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/Seedvault_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Seedvault/Seedvault.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Seedvault/oat/arm64/Seedvault.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Seedvault/oat/arm64/Seedvault.vdex"
+effective_condition: "by_exception_only"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/LocalContactsBackup.meta_lic
+  dep_package_name:  "LocalContactsBackup"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/APPS/LocalContactsBackup_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/LocalContactsBackup.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/oat/arm64/LocalContactsBackup.odex"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/oat/arm64/LocalContactsBackup.vdex"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/default-permissions_org.calyxos.backup.contacts.meta_lic
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.stevesoltys.backup_whitelist.meta_lic
+  dep_package_name:  "com.stevesoltys.backup_whitelist"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/apps/Seedvault/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.stevesoltys.backup_whitelist_intermediates/com.stevesoltys.backup_whitelist"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/sysconfig/whitelist_com.stevesoltys.seedvault.xml"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.stevesoltys.backup.meta_lic
+  dep_package_name:  "privapp_whitelist_com.stevesoltys.backup"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/apps/Seedvault/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.stevesoltys.backup_intermediates/privapp_whitelist_com.stevesoltys.backup"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/permissions/permissions_com.stevesoltys.seedvault.xml"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/default-permissions_org.calyxos.backup.contacts.meta_lic
+  dep_package_name:  "default-permissions_org.calyxos.backup.contacts"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/default-permissions_org.calyxos.backup.contacts_intermediates/default-permissions_org.calyxos.backup.contacts"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/etc/default-permissions/default-permissions_org.calyxos.backup.contacts.xml"
+  dep_effective_condition: "by_exception_only"
+}

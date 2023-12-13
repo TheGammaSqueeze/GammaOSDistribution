@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/tools/hidl/utils/libhidl-gen-utils/android_arm64_armv8-a_shared/libhidl-gen-utils.so:   out/soong/.intermediates/system/tools/hidl/utils/libhidl-gen-utils/android_arm64_armv8-a_shared/unstripped/libhidl-gen-utils.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

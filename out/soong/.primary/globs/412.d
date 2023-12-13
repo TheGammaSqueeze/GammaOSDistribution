@@ -1,0 +1,37 @@
+out/soong/.primary/globs/412: \
+ art/test/1945-proxy-method-arguments \
+ art/test/435-try-finally-without-catch/src \
+ art/test/450-checker-types \
+ art/test/472-type-propagation \
+ art/test/566-checker-codegen-select \
+ art/test/911-get-stack-trace/src \
+ bionic/libc/kernel/uapi/xen \
+ cts/hostsidetests/appsecurity/test-apps/keysets/uAuB \
+ cts/hostsidetests/jvmti/run-tests/test-1976/app \
+ cts/hostsidetests/securitybulletin/test-apps/CVE-2021-0591 \
+ cts/hostsidetests/statsdatom/AndroidTest.xml \
+ cts/tests/signature/api-check/current-api \
+ cts/tests/signature/api-check/hidden-api-blocklist-current-api/AndroidTest.xml \
+ cts/tests/tests/networksecurityconfig/networksecurityconfig-invalid-pin \
+ cts/tests/tests/telephonyprovider \
+ development/samples/XmlAdapters \
+ external/easymock/src \
+ external/easymock/src/org \
+ external/easymock/src/org/easymock \
+ external/easymock/src/org/easymock/internal \
+ external/easymock/src/org/easymock/internal/matchers \
+ external/ims/rcs/rcsservice/res \
+ external/minijail \
+ external/rust/crates/tokio \
+ frameworks/base/media/tests/EffectsTest \
+ frameworks/base/tests/MirrorSurfaceTest \
+ hardware/google/pixel/misc_writer \
+ hardware/ti/am57x/bootctrl \
+ libnativehelper/tests_mts/jni \
+ packages/apps/KeyChain/tests \
+ packages/modules/Virtualization/microdroid/signature \
+ prebuilts/sdk/3 \
+ system/bpfprogs \
+ test/vts-testcase/kernel/api/tun \
+ tools/security/fuzzing/example_rust_fuzzer \
+ vendor/partner_gms/overlay/GmsConfigOverlayGeotz

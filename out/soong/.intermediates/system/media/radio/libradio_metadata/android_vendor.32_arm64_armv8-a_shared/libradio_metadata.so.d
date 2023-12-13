@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/media/radio/libradio_metadata/android_vendor.32_arm64_armv8-a_shared/libradio_metadata.so:   out/soong/.intermediates/system/media/radio/libradio_metadata/android_vendor.32_arm64_armv8-a_shared/unstripped/libradio_metadata.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

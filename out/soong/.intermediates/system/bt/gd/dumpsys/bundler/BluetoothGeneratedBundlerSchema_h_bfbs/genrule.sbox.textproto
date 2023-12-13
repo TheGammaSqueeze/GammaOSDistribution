@@ -1,0 +1,23 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc -I system/bt/gd -b --schema -o __SBOX_SANDBOX_DIR__/out --cpp system/bt/gd/dumpsys/bundler/bundler.fbs "
+  copy_after: <
+    from: "out/bundler.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/dumpsys/bundler/BluetoothGeneratedBundlerSchema_h_bfbs/gen/bundler.bfbs"
+  >
+  copy_after: <
+    from: "out/bundler_generated.h"
+    to: "out/soong/.intermediates/system/bt/gd/dumpsys/bundler/BluetoothGeneratedBundlerSchema_h_bfbs/gen/bundler_generated.h"
+  >
+  input_hash: "efeb54aeebc91991e31dea909533c71b91762f9fd833bf88d7a52b68fd1f9865"
+>
+

@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/core/gatekeeperd/gatekeeperd/android_arm64_armv8-a/gatekeeperd:   out/soong/.intermediates/system/core/gatekeeperd/gatekeeperd/android_arm64_armv8-a/unstripped/gatekeeperd   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

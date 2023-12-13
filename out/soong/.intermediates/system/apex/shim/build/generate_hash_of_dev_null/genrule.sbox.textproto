@@ -1,0 +1,9 @@
+commands: <
+  command: "sha512sum -b /dev/null | cut -d' ' -f1 | tee __SBOX_SANDBOX_DIR__/out/hash.txt"
+  copy_after: <
+    from: "out/hash.txt"
+    to: "out/soong/.intermediates/system/apex/shim/build/generate_hash_of_dev_null/gen/hash.txt"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

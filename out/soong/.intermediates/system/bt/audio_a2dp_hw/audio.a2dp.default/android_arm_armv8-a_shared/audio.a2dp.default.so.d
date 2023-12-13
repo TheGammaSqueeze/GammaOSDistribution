@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/bt/audio_a2dp_hw/audio.a2dp.default/android_arm_armv8-a_shared/audio.a2dp.default.so:   out/soong/.intermediates/system/bt/audio_a2dp_hw/audio.a2dp.default/android_arm_armv8-a_shared/unstripped/audio.a2dp.default.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,21 @@
+license_package_name: "packages_apps_DeskClock_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "packages/apps/DeskClock/NOTICE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/DeskClock_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/DeskClock/DeskClock.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/DeskClock/oat/arm64/DeskClock.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/DeskClock/oat/arm64/DeskClock.vdex"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.android.deskclock_whitelist.meta_lic
+  dep_package_name:  "packages_apps_DeskClock_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "packages/apps/DeskClock/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.android.deskclock_whitelist_intermediates/com.android.deskclock_whitelist"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/etc/sysconfig/com.android.deskclock_whitelist.xml"
+  dep_effective_condition: "notice"
+}

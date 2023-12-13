@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/src/vintf/libkeystore2_vintf_rust/android_arm64_armv8-a_rlib_rlib-std/libkeystore2_vintf_rust.rlib: system/security/keystore2/src/vintf/lib.rs

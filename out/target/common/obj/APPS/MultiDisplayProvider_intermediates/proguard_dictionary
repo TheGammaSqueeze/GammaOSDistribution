@@ -1,0 +1,33 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: d9615e0
+# common_typos_disable
+com.android.emulator.multidisplay.MultiDisplayService -> com.android.emulator.multidisplay.MultiDisplayService:
+    34:34:void <clinit>() -> <clinit>
+    31:55:void <init>() -> <init>
+    31:31:com.android.emulator.multidisplay.MultiDisplayService$MultiDisplay[] access$000(com.android.emulator.multidisplay.MultiDisplayService) -> access$000
+    31:31:boolean access$100(com.android.emulator.multidisplay.MultiDisplayService,int) -> access$100
+    31:31:android.view.Surface access$200(com.android.emulator.multidisplay.MultiDisplayService,int,int,int) -> access$200
+    31:31:java.lang.String[] access$300() -> access$300
+    31:31:android.hardware.display.DisplayManager access$400(com.android.emulator.multidisplay.MultiDisplayService) -> access$400
+    31:31:boolean access$500(com.android.emulator.multidisplay.MultiDisplayService,int,int,int) -> access$500
+    31:31:int access$600(com.android.emulator.multidisplay.MultiDisplayService) -> access$600
+    31:31:boolean access$700(com.android.emulator.multidisplay.MultiDisplayService,int[]) -> access$700
+    112:114:android.os.IBinder onBind(android.content.Intent) -> onBind
+    92:106:void onCreate() -> onCreate
+com.android.emulator.multidisplay.MultiDisplayService$ListenerThread -> com.android.emulator.multidisplay.MultiDisplayService$ListenerThread:
+    124:125:void <init>(com.android.emulator.multidisplay.MultiDisplayService) -> <init>
+    155:172:void addVirtualDisplay(int,int,int,int,int) -> addVirtualDisplay
+    143:151:void createVirtualDisplay(int,int,int,int,int) -> createVirtualDisplay
+    129:139:void deleteVirtualDisplay(int) -> deleteVirtualDisplay
+    177:210:void run() -> run
+com.android.emulator.multidisplay.MultiDisplayService$MultiDisplay -> com.android.emulator.multidisplay.MultiDisplayService$MultiDisplay:
+    65:66:void <init>(com.android.emulator.multidisplay.MultiDisplayService) -> <init>
+    69:75:void clear() -> clear
+    85:85:boolean match(int,int,int,int) -> match
+    78:82:void set(int,int,int,int) -> set
+com.android.emulator.multidisplay.MultiDisplayServiceReceiver -> com.android.emulator.multidisplay.MultiDisplayServiceReceiver:
+    26:26:void <init>() -> <init>
+    38:40:boolean isMyServiceRunning(android.content.Context) -> isMyServiceRunning
+    31:33:void onReceive(android.content.Context,android.content.Intent) -> onReceive

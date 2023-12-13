@@ -1,0 +1,43 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc -I system/bt/gd -b --schema -o __SBOX_SANDBOX_DIR__/out system/bt/gd/btaa/activity_attribution.fbs system/bt/gd/common/init_flags.fbs system/bt/gd/dumpsys_data.fbs system/bt/gd/hci/hci_acl_manager.fbs system/bt/gd/l2cap/classic/l2cap_classic_module.fbs system/bt/gd/shim/dumpsys.fbs system/bt/gd/os/wakelock_manager.fbs "
+  copy_after: <
+    from: "out/activity_attribution.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/activity_attribution.bfbs"
+  >
+  copy_after: <
+    from: "out/dumpsys.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/dumpsys.bfbs"
+  >
+  copy_after: <
+    from: "out/dumpsys_data.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/dumpsys_data.bfbs"
+  >
+  copy_after: <
+    from: "out/hci_acl_manager.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/hci_acl_manager.bfbs"
+  >
+  copy_after: <
+    from: "out/init_flags.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/init_flags.bfbs"
+  >
+  copy_after: <
+    from: "out/l2cap_classic_module.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/l2cap_classic_module.bfbs"
+  >
+  copy_after: <
+    from: "out/wakelock_manager.bfbs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedDumpsysBinarySchema_bfbs/gen/wakelock_manager.bfbs"
+  >
+  input_hash: "ef2757d02e000a9f1610f1adf425df2433f0f66a659fe537f412e5848fd0d7cb"
+>
+

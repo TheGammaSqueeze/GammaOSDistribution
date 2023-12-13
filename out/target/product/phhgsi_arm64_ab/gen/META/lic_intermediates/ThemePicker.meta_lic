@@ -1,0 +1,32 @@
+license_package_name: "Android"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "build/soong/licenses/LICENSE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/ThemePicker_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/ThemePicker/ThemePicker.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/ThemePicker/oat/arm64/ThemePicker.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/ThemePicker/oat/arm64/ThemePicker.vdex"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/default_permissions_com.android.wallpaper.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/default_permissions_com.android.wallpaper_intermediates/default_permissions_com.android.wallpaper"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/default-permissions/default_permissions_com.android.wallpaper.xml"
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.wallpaper.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.android.wallpaper_intermediates/privapp_whitelist_com.android.wallpaper"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/permissions/privapp_whitelist_com.android.wallpaper.xml"
+  dep_effective_condition: "notice"
+}

@@ -1,0 +1,2 @@
+"libandroidicu.so"libdexfile.so"libdexfiled.so"	libicu.so"
+libjdwp.so"libnativebridge.so"libnativehelper.so"libnativeloader.so"libsigchain.so"	libpac.so"libicui18n.so"libicuuc.so"libnetd_resolv.so"libneuralnetworks.so"libstatspull.so"libstatssocket.so"libadb_pairing_auth.so"libadb_pairing_connection.so"libadb_pairing_server.so

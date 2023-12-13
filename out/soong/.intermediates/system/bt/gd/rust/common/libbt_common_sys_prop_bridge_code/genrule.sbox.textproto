@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/rust/cxx/gen/cmd/cxxbridge/linux_glibc_x86_64/cxxbridge"
+    to: "tools/out/bin/cxxbridge"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/cxxbridge system/bt/gd/rust/common/src/sys_prop.rs >> __SBOX_SANDBOX_DIR__/out/sys_prop_generated.cc"
+  copy_after: <
+    from: "out/sys_prop_generated.cc"
+    to: "out/soong/.intermediates/system/bt/gd/rust/common/libbt_common_sys_prop_bridge_code/gen/sys_prop_generated.cc"
+  >
+  input_hash: "aca470c074691d2b86b460e3bd25a87e9e364914840ec4e541062c4809fc721c"
+>
+

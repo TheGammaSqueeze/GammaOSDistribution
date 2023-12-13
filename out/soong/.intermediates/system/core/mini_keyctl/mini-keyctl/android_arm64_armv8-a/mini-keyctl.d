@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/core/mini_keyctl/mini-keyctl/android_arm64_armv8-a/mini-keyctl:   out/soong/.intermediates/system/core/mini_keyctl/mini-keyctl/android_arm64_armv8-a/unstripped/mini-keyctl   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

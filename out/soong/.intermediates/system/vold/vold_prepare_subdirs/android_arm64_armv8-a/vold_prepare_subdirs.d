@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/vold/vold_prepare_subdirs/android_arm64_armv8-a/vold_prepare_subdirs:   out/soong/.intermediates/system/vold/vold_prepare_subdirs/android_arm64_armv8-a/unstripped/vold_prepare_subdirs   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

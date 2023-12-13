@@ -1,0 +1,9 @@
+commands: <
+  command: "cat out/soong/.intermediates/system/sepolicy/system_ext_sepolicy.cil/android_common/system_ext_sepolicy.cil out/soong/.intermediates/system/sepolicy/system_ext_mapping_file/android_common/32.0.cil | sha256sum | cut -d' ' -f1 > __SBOX_SANDBOX_DIR__/out/system_ext_sepolicy_and_mapping.sha256"
+  copy_after: <
+    from: "out/system_ext_sepolicy_and_mapping.sha256"
+    to: "out/soong/.intermediates/system/sepolicy/system_ext_sepolicy_and_mapping.sha256_gen/gen/system_ext_sepolicy_and_mapping.sha256"
+  >
+  input_hash: "4755a0937f1ac807b439f92948c905e48f66a322b9aef050440a60e4f3ac6694"
+>
+

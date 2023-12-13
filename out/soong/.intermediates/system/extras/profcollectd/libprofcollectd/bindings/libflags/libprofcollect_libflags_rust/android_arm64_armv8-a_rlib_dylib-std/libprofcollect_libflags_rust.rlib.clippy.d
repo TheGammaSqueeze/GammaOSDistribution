@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/extras/profcollectd/libprofcollectd/bindings/libflags/libprofcollect_libflags_rust/android_arm64_armv8-a_rlib_dylib-std/libprofcollect_libflags_rust.rlib.clippy: system/extras/profcollectd/libprofcollectd/bindings/libflags/lib.rs

@@ -1,0 +1,39 @@
+Package name: com.android.calculator2
+Module name in Android tree: ExactCalculator
+Local path in Android tree: packages/apps/ExactCalculator
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/product/app/ExactCalculator/ExactCalculator.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#2: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#3: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#4: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#5: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#6: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#7: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+7 hidden API(s) used: 0 linked against, 7 through reflection
+	3 in unsupported
+	0 in blocked
+	0 in max-target-o
+	1 in max-target-p
+	3 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

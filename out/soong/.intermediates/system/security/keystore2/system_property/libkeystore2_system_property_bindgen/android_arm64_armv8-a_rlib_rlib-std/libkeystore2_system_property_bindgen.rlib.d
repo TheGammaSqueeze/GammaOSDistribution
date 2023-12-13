@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/system_property/libkeystore2_system_property_bindgen/android_arm64_armv8-a_rlib_rlib-std/libkeystore2_system_property_bindgen.rlib: out/soong/.intermediates/system/security/keystore2/system_property/libkeystore2_system_property_bindgen/android_arm64_armv8-a_source/bindings.rs

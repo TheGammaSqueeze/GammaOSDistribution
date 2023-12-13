@@ -1,0 +1,19 @@
+#line 1 "device/lineage/sepolicy/common/private/service_contexts"
+lineageglobalactions                      u:object_r:lineage_globalactions_service:s0
+lineagehardware                           u:object_r:lineage_hardware_service:s0
+lineagelivedisplay                        u:object_r:lineage_livedisplay_service:s0
+lineagetrust                              u:object_r:lineage_trust_service:s0
+profile                                   u:object_r:lineage_profile_service:s0
+
+adbroot_service                           u:object_r:adbroot_service:s0
+#line 1 "device/phh/treble/sepolicy/service_contexts"
+qti.ims.ext                                          u:object_r:radio_service:s0
+# SPRD IMS
+ims_ex                                               u:object_r:radio_service:s0
+ims_ut_ex                                            u:object_r:radio_service:s0
+ims_doze_manager                                     u:object_r:radio_service:s0
+irit                                                 u:object_r:radio_service:s0
+
+# MTK IMS
+mwis                                    u:object_r:radio_service:s0
+mtkIms                                    u:object_r:radio_service:s0

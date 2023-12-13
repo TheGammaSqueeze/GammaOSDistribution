@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngine.cpp.d --ninja -Isystem/update_engine/binder_bindings -Isystem/update_engine/binder_bindings/ system/update_engine/binder_bindings/android/os/IUpdateEngine.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngine.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngineCallback.cpp.d --ninja -Isystem/update_engine/binder_bindings -Isystem/update_engine/binder_bindings/ system/update_engine/binder_bindings/android/os/IUpdateEngineCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngineCallback.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngine.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IUpdateEngineCallback.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnUpdateEngine.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/BnUpdateEngine.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnUpdateEngineCallback.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/BnUpdateEngineCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpUpdateEngine.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/BpUpdateEngine.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpUpdateEngineCallback.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/BpUpdateEngineCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/IUpdateEngine.cpp"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/IUpdateEngine.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IUpdateEngine.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/IUpdateEngine.h"
+  >
+  copy_after: <
+    from: "out/android/os/IUpdateEngineCallback.cpp"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/IUpdateEngineCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IUpdateEngineCallback.h"
+    to: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/IUpdateEngineCallback.h"
+  >
+  input_hash: "410bd3db0eacd66f1982f59f8adb3617fe6974e069edd606800e9ef59061ef40"
+>
+output_depfile: "out/soong/.intermediates/system/update_engine/update_engine_client/android_arm64_armv8-a/gen/aidl/android/os/IUpdateEngine.cpp.d"
+

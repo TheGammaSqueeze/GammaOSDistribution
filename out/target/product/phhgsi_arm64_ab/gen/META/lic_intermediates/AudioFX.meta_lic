@@ -1,0 +1,21 @@
+license_package_name: "AudioFX"
+license_kind: "legacy_by_exception_only"
+license_condition: "by_exception_only"
+license_text: "packages/apps/AudioFX/NOTICE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/AudioFX_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/AudioFX/AudioFX.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/AudioFX/oat/arm64/AudioFX.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/AudioFX/oat/arm64/AudioFX.vdex"
+effective_condition: "by_exception_only"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_org.lineageos.audiofx.meta_lic
+  dep_package_name:  "privapp_whitelist_org.lineageos.audiofx"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/apps/AudioFX/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_org.lineageos.audiofx_intermediates/privapp_whitelist_org.lineageos.audiofx"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/permissions/privapp_whitelist_org.lineageos.audiofx.xml"
+  dep_effective_condition: "by_exception_only"
+}

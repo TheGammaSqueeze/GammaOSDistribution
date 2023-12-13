@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/proto/libbt-protos-lite/android_arm64_armv8-a_static_cfi/gen/proto/system/bt/gd/proto/bluetooth/metrics/bluetooth.pb.cc: system/bt/gd/proto/bluetooth/metrics/bluetooth.proto

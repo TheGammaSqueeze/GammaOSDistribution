@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/extras/simpleperf/libsimpleperf/android_arm64_armv8-a_static/gen/proto/system/extras/simpleperf/cmd_report_sample.pb.cc: system/extras/simpleperf/cmd_report_sample.proto

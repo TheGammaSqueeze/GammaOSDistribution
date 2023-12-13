@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/core/fs_mgr/libsnapshot/snapshotctl/android_arm64_armv8-a/snapshotctl:   out/soong/.intermediates/system/core/fs_mgr/libsnapshot/snapshotctl/android_arm64_armv8-a/unstripped/snapshotctl   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

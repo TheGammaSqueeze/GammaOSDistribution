@@ -1,0 +1,55 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: d45bf4a
+# common_typos_disable
+com.android.localtransport.LocalTransport -> com.android.localtransport.LocalTransport:
+    591:591:void <clinit>() -> <clinit>
+    85:118:void <init>(android.content.Context,com.android.localtransport.LocalTransportParameters) -> <init>
+    878:882:int abortFullRestore() -> abortFullRestore
+    582:585:void cancelFullBackup() -> cancelFullBackup
+    419:434:int clearBackupData(android.content.pm.PackageInfo) -> clearBackupData
+    758:768:java.util.ArrayList contentsByKey(java.io.File) -> contentsByKey
+    402:410:void deleteContents(java.io.File) -> deleteContents
+    443:443:int finishBackup() -> finishBackup
+    775:778:void finishRestore() -> finishRestore
+    595:611:android.app.backup.RestoreSet[] getAvailableRestoreSets() -> getAvailableRestoreSets
+    814:858:int getNextFullRestoreDataChunk(android.os.ParcelFileDescriptor) -> getNextFullRestoreDataChunk
+    122:122:com.android.localtransport.LocalTransportParameters getParameters() -> getParameters
+    695:734:int getRestoreData(android.os.ParcelFileDescriptor) -> getRestoreData
+    161:170:int getTransportFlags() -> getTransportFlags
+    682:683:boolean hasRestoreDataForPackage(java.lang.String) -> hasRestoreDataForPackage
+    185:186:int initializeDevice() -> initializeDevice
+    105:112:void makeDataDirs() -> makeDataDirs
+    127:127:java.lang.String name() -> name
+    640:678:android.app.backup.RestoreDescription nextRestorePackage() -> nextRestorePackage
+    350:365:java.util.ArrayList parseBackupStream(android.os.ParcelFileDescriptor) -> parseBackupStream
+    374:387:int parseKeySizes(java.io.File,android.util.ArrayMap) -> parseKeySizes
+    203:203:int performBackup(android.content.pm.PackageInfo,android.os.ParcelFileDescriptor) -> performBackup
+    209:212:int performBackup(android.content.pm.PackageInfo,android.os.ParcelFileDescriptor,int) -> performBackup
+    227:339:int performBackupInternal(android.content.pm.PackageInfo,android.os.ParcelFileDescriptor,int) -> performBackupInternal
+    500:522:int performFullBackup(android.content.pm.PackageInfo,android.os.ParcelFileDescriptor) -> performFullBackup
+    785:787:void resetFullRestoreState() -> resetFullRestoreState
+    529:566:int sendBackupData(int) -> sendBackupData
+    626:630:int startRestore(long,android.content.pm.PackageInfo[]) -> startRestore
+    473:473:java.io.File tarballFile(java.lang.String) -> tarballFile
+    450:467:int tearDownFullBackup() -> tearDownFullBackup
+com.android.localtransport.LocalTransport$DecodedFilename -> com.android.localtransport.LocalTransport$DecodedFilename:
+    743:745:void <init>(java.io.File) -> <init>
+    739:739:int compareTo(java.lang.Object) -> compareTo
+    751:751:int compareTo(com.android.localtransport.LocalTransport$DecodedFilename) -> compareTo
+com.android.localtransport.LocalTransport$KVOperation -> com.android.localtransport.LocalTransport$KVOperation:
+    195:197:void <init>(com.android.localtransport.LocalTransport,java.lang.String,byte[]) -> <init>
+com.android.localtransport.LocalTransportParameters -> com.android.localtransport.LocalTransportParameters:
+    39:39:void <init>(android.os.Handler,android.content.ContentResolver) -> <init>
+    59:59:java.lang.String getSettingValue(android.content.ContentResolver) -> getSettingValue
+    51:51:boolean isDeviceTransfer() -> isDeviceTransfer
+    55:55:boolean isEncrypted() -> isEncrypted
+    43:43:boolean isFakeEncryptionFlag() -> isFakeEncryptionFlag
+    47:47:boolean isNonIncrementalOnly() -> isNonIncrementalOnly
+    63:66:void update(android.util.KeyValueListParser) -> update
+com.android.localtransport.LocalTransportService -> com.android.localtransport.LocalTransportService:
+    23:23:void <init>() -> <init>
+    43:43:android.os.IBinder onBind(android.content.Intent) -> onBind
+    28:33:void onCreate() -> onCreate
+    38:38:void onDestroy() -> onDestroy

@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/aidl/android.security.compat-rust/android_arm64_armv8-a_rlib_rlib-std/libandroid_security_compat.rlib: out/soong/.intermediates/system/security/keystore2/aidl/android.security.compat-rust/android_arm64_armv8-a_source/android_security_compat.rs

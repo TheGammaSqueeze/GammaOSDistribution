@@ -1,0 +1,2 @@
+out/soong/.intermediates/vendor/magisk/resetprop_phh/android_arm64_armv8-a/resetprop_phh:   out/soong/.intermediates/vendor/magisk/resetprop_phh/android_arm64_armv8-a/unstripped/resetprop_phh   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

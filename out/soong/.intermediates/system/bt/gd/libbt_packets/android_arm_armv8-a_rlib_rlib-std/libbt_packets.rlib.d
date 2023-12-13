@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/libbt_packets/android_arm_armv8-a_rlib_rlib-std/libbt_packets.rlib: system/bt/gd/rust/packets/lib.rs /home/ubuntu/GammaOS/out/soong/.intermediates/system/bt/gd/libbt_packets/android_arm_armv8-a_rlib_rlib-std/out/hci_packets.rs

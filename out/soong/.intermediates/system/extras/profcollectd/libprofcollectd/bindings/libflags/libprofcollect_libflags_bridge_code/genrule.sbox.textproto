@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/rust/cxx/gen/cmd/cxxbridge/linux_glibc_x86_64/cxxbridge"
+    to: "tools/out/bin/cxxbridge"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/cxxbridge system/extras/profcollectd/libprofcollectd/bindings/libflags/lib.rs >> __SBOX_SANDBOX_DIR__/out/libprofcollect_libflags_cxx_generated.cc"
+  copy_after: <
+    from: "out/libprofcollect_libflags_cxx_generated.cc"
+    to: "out/soong/.intermediates/system/extras/profcollectd/libprofcollectd/bindings/libflags/libprofcollect_libflags_bridge_code/gen/libprofcollect_libflags_cxx_generated.cc"
+  >
+  input_hash: "68c0325c305795c6e9e723b0eedf53c634cab74ee63707821bbab752ca508a2a"
+>
+

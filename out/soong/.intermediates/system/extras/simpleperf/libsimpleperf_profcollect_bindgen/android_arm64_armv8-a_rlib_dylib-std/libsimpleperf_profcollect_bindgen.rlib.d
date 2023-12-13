@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/extras/simpleperf/libsimpleperf_profcollect_bindgen/android_arm64_armv8-a_rlib_dylib-std/libsimpleperf_profcollect_bindgen.rlib: out/soong/.intermediates/system/extras/simpleperf/libsimpleperf_profcollect_bindgen/android_arm64_armv8-a_source/bindings.rs

@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/proto/libbt-protos-lite/android_arm_armv8-a_static/gen/proto/system/bt/gd/proto/bluetooth/bluetoothKeystore/keystore.pb.cc: system/bt/gd/proto/bluetooth/bluetoothKeystore/keystore.proto

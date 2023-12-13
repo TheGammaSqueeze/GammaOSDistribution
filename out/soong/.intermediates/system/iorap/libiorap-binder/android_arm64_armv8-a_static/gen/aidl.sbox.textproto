@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/IIorap.cpp.d --ninja -Isystem/iorap/binder -Iframeworks/native/aidl/binder -Isystem/iorap/binder/ system/iorap/binder/com/google/android/startop/iorap/IIorap.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/IIorap.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/ITaskListener.cpp.d --ninja -Isystem/iorap/binder -Iframeworks/native/aidl/binder -Isystem/iorap/binder/ system/iorap/binder/com/google/android/startop/iorap/ITaskListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/ITaskListener.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/IIorap.cpp.d __SBOX_SANDBOX_DIR__/out/com/google/android/startop/iorap/ITaskListener.cpp.d"
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/BnIorap.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/BnIorap.h"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/BnTaskListener.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/BnTaskListener.h"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/BpIorap.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/BpIorap.h"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/BpTaskListener.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/BpTaskListener.h"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/IIorap.cpp"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/IIorap.cpp"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/IIorap.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/IIorap.h"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/ITaskListener.cpp"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/ITaskListener.cpp"
+  >
+  copy_after: <
+    from: "out/com/google/android/startop/iorap/ITaskListener.h"
+    to: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/ITaskListener.h"
+  >
+  input_hash: "a0a41f5081984c6f3cfea68f6c38881b5a1860eb92baa1f9fa4b93bd657cf012"
+>
+output_depfile: "out/soong/.intermediates/system/iorap/libiorap-binder/android_arm64_armv8-a_static/gen/aidl/com/google/android/startop/iorap/IIorap.cpp.d"
+

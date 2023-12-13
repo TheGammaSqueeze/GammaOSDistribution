@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "system/core/toolbox/generate-input.h-labels.py"
+    to: "tools/src/system/core/toolbox/generate-input.h-labels.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/system/core/toolbox/generate-input.h-labels.py bionic/libc/kernel/uapi/linux/input.h bionic/libc/kernel/uapi/linux/input-event-codes.h >__SBOX_SANDBOX_DIR__/out/input.h-labels.h"
+  copy_after: <
+    from: "out/input.h-labels.h"
+    to: "out/soong/.intermediates/system/core/toolbox/toolbox_input_labels/gen/input.h-labels.h"
+  >
+  input_hash: "ca30d78be9a72b8e4db75daaada8daeacc65189bbb12e83e39e3b6937a71a885"
+>
+

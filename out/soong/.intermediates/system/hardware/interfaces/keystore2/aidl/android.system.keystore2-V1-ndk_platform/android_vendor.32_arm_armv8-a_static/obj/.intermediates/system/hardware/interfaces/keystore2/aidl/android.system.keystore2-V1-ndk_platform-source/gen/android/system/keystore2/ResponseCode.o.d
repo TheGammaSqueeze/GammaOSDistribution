@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-ndk_platform/android_vendor.32_arm_armv8-a_static/obj/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-ndk_platform-source/gen/android/system/keystore2/ResponseCode.o: \
+  out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-ndk_platform-source/gen/android/system/keystore2/ResponseCode.cpp

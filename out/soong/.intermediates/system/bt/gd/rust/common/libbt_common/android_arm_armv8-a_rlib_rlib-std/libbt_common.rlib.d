@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/rust/common/libbt_common/android_arm_armv8-a_rlib_rlib-std/libbt_common.rlib: system/bt/gd/rust/common/src/lib.rs system/bt/gd/rust/common/src/time.rs system/bt/gd/rust/common/src/ready.rs system/bt/gd/rust/common/src/init_flags.rs system/bt/gd/rust/common/src/sys_prop.rs

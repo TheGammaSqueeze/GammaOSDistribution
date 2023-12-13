@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/service/gatekeeper/IGateKeeperService.cpp.d --ninja -Isystem/core/gatekeeperd/binder -Iframeworks/base/core/java -Isystem/core/gatekeeperd/binder/ system/core/gatekeeperd/binder/android/service/gatekeeper/IGateKeeperService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/service/gatekeeper/IGateKeeperService.cpp"
+  copy_after: <
+    from: "out/android/service/gatekeeper/BnGateKeeperService.h"
+    to: "out/soong/.intermediates/system/core/gatekeeperd/libgatekeeper_aidl/android_arm64_armv8-a_shared/gen/aidl/android/service/gatekeeper/BnGateKeeperService.h"
+  >
+  copy_after: <
+    from: "out/android/service/gatekeeper/BpGateKeeperService.h"
+    to: "out/soong/.intermediates/system/core/gatekeeperd/libgatekeeper_aidl/android_arm64_armv8-a_shared/gen/aidl/android/service/gatekeeper/BpGateKeeperService.h"
+  >
+  copy_after: <
+    from: "out/android/service/gatekeeper/IGateKeeperService.cpp"
+    to: "out/soong/.intermediates/system/core/gatekeeperd/libgatekeeper_aidl/android_arm64_armv8-a_shared/gen/aidl/android/service/gatekeeper/IGateKeeperService.cpp"
+  >
+  copy_after: <
+    from: "out/android/service/gatekeeper/IGateKeeperService.h"
+    to: "out/soong/.intermediates/system/core/gatekeeperd/libgatekeeper_aidl/android_arm64_armv8-a_shared/gen/aidl/android/service/gatekeeper/IGateKeeperService.h"
+  >
+  input_hash: "8ee55e8372ba6207f5cd234570c394998821c5317b8524129bcc944ecfaffca5"
+>
+output_depfile: "out/soong/.intermediates/system/core/gatekeeperd/libgatekeeper_aidl/android_arm64_armv8-a_shared/gen/aidl/android/service/gatekeeper/IGateKeeperService.cpp.d"
+

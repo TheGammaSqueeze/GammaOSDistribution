@@ -1,0 +1,42 @@
+#line 1 "device/lineage/sepolicy/common/private/file_contexts"
+# Filesystem tools
+/system/bin/fsck\.ntfs                  u:object_r:fsck_exec:s0
+/system/bin/mkfs\.exfat                 u:object_r:mkfs_exec:s0
+/system/bin/mkfs\.f2fs                  u:object_r:mkfs_exec:s0
+/system/bin/mkfs\.ntfs                  u:object_r:mkfs_exec:s0
+
+# OTA packages
+/data/lineageos_updates(/.*)?           u:object_r:ota_package_file:s0
+
+# Postinstall
+/system/bin/backuptool_ab\.functions              u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_ab\.sh                     u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_postinstall\.sh            u:object_r:otapreopt_chroot_exec:s0
+
+# ADB Root
+/(system_ext|system/system_ext)/bin/adb_root      u:object_r:adbroot_exec:s0
+/data/adbroot(/.*)?        u:object_r:adbroot_data_file:s0
+
+# Bash
+/(system_ext|system/system_ext)/bin/bash          u:object_r:shell_exec:s0
+#line 1 "device/phh/treble/sepolicy/file_contexts"
+/system/bin/phh-su                   u:object_r:phhsu_exec:s0
+/system/bin/vndk-detect			u:object_r:vndk_detect_exec:s0
+/system/etc/usb_audio_policy_configuration.xml	u:object_r:vendor_configs_file:s0
+/system/bin/rw-system.sh u:object_r:phhsu_exec:s0
+/system/bin/phh-on-boot.sh u:object_r:phhsu_exec:s0
+/system/bin/phh-on-data.sh u:object_r:phhsu_exec:s0
+/system/bin/asus-motor u:object_r:phhsu_exec:s0
+/system/bin/xiaomi-touch u:object_r:phhsu_exec:s0
+
+/bt_firmware(/.*)?      u:object_r:bt_firmware_file:s0
+
+/sec_storage(/.*)?      u:object_r:teecd_data_file:s0
+/dev/dsm                u:object_r:dmd_device:s0
+
+/system/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.oppo.compat u:object_r:hal_fingerprint_oppo_compat_exec:s0
+/system/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.oplus.compat u:object_r:hal_fingerprint_oppo_compat_exec:s0
+
+/efs u:object_r:efs_file:s0
+
+/dev/smcinvoke u:object_r:smcinvoke_device:s0

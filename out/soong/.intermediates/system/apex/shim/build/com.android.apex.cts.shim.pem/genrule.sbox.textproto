@@ -1,0 +1,9 @@
+commands: <
+  command: "openssl genrsa -out __SBOX_SANDBOX_DIR__/out/com.android.apex.cts.shim.pem 4096"
+  copy_after: <
+    from: "out/com.android.apex.cts.shim.pem"
+    to: "out/soong/.intermediates/system/apex/shim/build/com.android.apex.cts.shim.pem/gen/com.android.apex.cts.shim.pem"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

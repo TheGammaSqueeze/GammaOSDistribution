@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/core/libcutils/libcutils_bindgen/android_arm64_armv8-a_rlib_rlib-std/libcutils_bindgen.rlib: out/soong/.intermediates/system/core/libcutils/libcutils_bindgen/android_arm64_armv8-a_source/bindings.rs

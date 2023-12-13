@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/update_engine/update_metadata-protos/android_arm64_armv8-a_static/gen/proto/update_engine/update_metadata.pb.cc: system/update_engine//update_engine/update_metadata.proto

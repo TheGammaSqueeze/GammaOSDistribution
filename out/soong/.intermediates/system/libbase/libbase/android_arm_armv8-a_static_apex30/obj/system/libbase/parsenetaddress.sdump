@@ -1,0 +1,144 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::base::ConsumePrefix",
+   "linker_set_key" : "_ZN7android4base13ConsumePrefixEPNSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/strings.h"
+  },
+  {
+   "function_name" : "android::base::ConsumeSuffix",
+   "linker_set_key" : "_ZN7android4base13ConsumeSuffixEPNSt3__117basic_string_viewIcNS1_11char_traitsIcEEEES5_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/strings.h"
+  },
+  {
+   "function_name" : "android::base::ParseNetAddress",
+   "linker_set_key" : "_ZN7android4base15ParseNetAddressERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPS7_PiSA_SA_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/libbase/include/android-base/parsenetaddress.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/parsenetaddress.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/parsenetaddress.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPNSt3__117basic_string_viewIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_string_view<char, std::char_traits<char>> *",
+   "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIPNSt3__117basic_string_viewIcNS_11char_traitsIcEEEE",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/strings.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPi",
+   "name" : "int *",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIPi",
+   "size" : 4,
+   "source_file" : "system/libbase/include/android-base/parsenetaddress.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 12,
+   "source_file" : "system/libbase/include/android-base/parsenetaddress.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

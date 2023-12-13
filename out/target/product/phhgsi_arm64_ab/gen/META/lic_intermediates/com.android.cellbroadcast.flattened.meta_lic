@@ -1,0 +1,52 @@
+license_package_name: "packages_apps_CellBroadcastReceiver_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.cellbroadcast.flattened-timestamp"
+target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.cellbroadcast.flattened_intermediates/com.android.cellbroadcast.flattened-timestamp"
+install_map: "CellBroadcastApp.com.android.cellbroadcast.flattened:priv-app/CellBroadcastApp/CellBroadcastApp.apk"
+install_map: "CellBroadcastServiceModule.com.android.cellbroadcast.flattened:priv-app/CellBroadcastServiceModule/CellBroadcastServiceModule.apk"
+install_map: "apex_manifest.pb.com.android.cellbroadcast.flattened:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.cellbroadcast.flattened:./apex_pubkey"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/CellBroadcastApp.com.android.cellbroadcast.flattened.meta_lic
+  dep_package_name:  "CellBroadcastApp.com.android.cellbroadcast.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/apps/CellBroadcastReceiver/NOTICE"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/CellBroadcastApp.com.android.cellbroadcast.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.cellbroadcast/priv-app/CellBroadcastApp/CellBroadcastApp.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/CellBroadcastServiceModule.com.android.cellbroadcast.flattened.meta_lic
+  dep_package_name:  "CellBroadcastServiceModule.com.android.cellbroadcast.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/CellBroadcastServiceModule.com.android.cellbroadcast.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.cellbroadcast/priv-app/CellBroadcastServiceModule/CellBroadcastServiceModule.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.cellbroadcast.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.cellbroadcast.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.cellbroadcast.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.cellbroadcast/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.cellbroadcast.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.cellbroadcast.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.cellbroadcast.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.cellbroadcast/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}

@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/src/km_compat/libkeystore2_km_compat/android_arm64_armv8-a_rlib_rlib-std/libkeystore2_km_compat.rlib.clippy: system/security/keystore2/src/km_compat/lib.rs

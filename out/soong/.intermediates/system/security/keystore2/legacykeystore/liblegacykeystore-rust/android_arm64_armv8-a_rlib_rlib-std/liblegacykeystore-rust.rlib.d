@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/legacykeystore/liblegacykeystore-rust/android_arm64_armv8-a_rlib_rlib-std/liblegacykeystore-rust.rlib: system/security/keystore2/legacykeystore/lib.rs

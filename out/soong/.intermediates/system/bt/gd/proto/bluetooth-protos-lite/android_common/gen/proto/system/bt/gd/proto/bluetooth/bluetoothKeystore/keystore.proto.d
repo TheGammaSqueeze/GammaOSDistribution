@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/proto/bluetooth-protos-lite/android_common/gen/proto/proto0.tmp/com/android/bluetooth/BluetoothKeystoreProto.java: system/bt/gd/proto/bluetooth/bluetoothKeystore/keystore.proto

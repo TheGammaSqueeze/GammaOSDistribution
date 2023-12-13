@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/security/keystore2/src/km_compat/libkm_compat/android_arm64_armv8-a_shared_cfi/libkm_compat.so:   out/soong/.intermediates/system/security/keystore2/src/km_compat/libkm_compat/android_arm64_armv8-a_shared_cfi/unstripped/libkm_compat.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,260 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : -1,
+     "name" : "SP_DEFAULT"
+    },
+    {
+     "enum_field_value" : 0,
+     "name" : "SP_BACKGROUND"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "SP_FOREGROUND"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "SP_SYSTEM"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "SP_AUDIO_APP"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "SP_AUDIO_SYS"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "SP_TOP_APP"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "SP_RT_APP"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "SP_RESTRICTED"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "SP_CNT"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "SP_MAX"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "SP_SYSTEM_DEFAULT"
+    }
+   ],
+   "linker_set_key" : "_ZTI11SchedPolicy",
+   "name" : "SchedPolicy",
+   "referenced_type" : "_ZTI11SchedPolicy",
+   "self_type" : "_ZTI11SchedPolicy",
+   "size" : 4,
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "cpusets_enabled",
+   "linker_set_key" : "cpusets_enabled",
+   "return_type" : "_ZTIb",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "get_cpuset_policy_profile_name",
+   "linker_set_key" : "get_cpuset_policy_profile_name",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "get_sched_policy",
+   "linker_set_key" : "get_sched_policy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIP11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "get_sched_policy_name",
+   "linker_set_key" : "get_sched_policy_name",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "get_sched_policy_profile_name",
+   "linker_set_key" : "get_sched_policy_profile_name",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTI11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "schedboost_enabled",
+   "linker_set_key" : "schedboost_enabled",
+   "return_type" : "_ZTIb",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "set_cpuset_policy",
+   "linker_set_key" : "set_cpuset_policy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTI11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "function_name" : "set_sched_policy",
+   "linker_set_key" : "set_sched_policy",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTI11SchedPolicy"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZL15CGROUPS_RC_PATH",
+   "name" : "CGROUPS_RC_PATH",
+   "referenced_type" : "_ZTIKPKc",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/processgroup.h"
+  },
+  {
+   "linker_set_key" : "_ZL24CGROUPV2_CONTROLLER_NAME",
+   "name" : "CGROUPV2_CONTROLLER_NAME",
+   "referenced_type" : "_ZTIKPKc",
+   "source_file" : "system/core/libprocessgroup/include/processgroup/processgroup.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP11SchedPolicy",
+   "name" : "SchedPolicy *",
+   "referenced_type" : "_ZTI11SchedPolicy",
+   "self_type" : "_ZTIP11SchedPolicy",
+   "size" : 4,
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKPKc",
+   "name" : "const char *const",
+   "referenced_type" : "_ZTIPKc",
+   "self_type" : "_ZTIKPKc",
+   "size" : 4,
+   "source_file" : "system/core/libprocessgroup/include/processgroup/processgroup.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/core/libprocessgroup/include/processgroup/sched_policy.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

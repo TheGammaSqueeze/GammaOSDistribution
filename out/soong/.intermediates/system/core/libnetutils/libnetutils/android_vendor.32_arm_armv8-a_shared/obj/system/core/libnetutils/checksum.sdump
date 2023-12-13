@@ -1,0 +1,219 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "ip_checksum",
+   "linker_set_key" : "ip_checksum",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "function_name" : "ip_checksum_add",
+   "linker_set_key" : "ip_checksum_add",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "function_name" : "ip_checksum_adjust",
+   "linker_set_key" : "ip_checksum_adjust",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "function_name" : "ip_checksum_finish",
+   "linker_set_key" : "ip_checksum_finish",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "function_name" : "ipv4_pseudo_header_checksum",
+   "linker_set_key" : "ipv4_pseudo_header_checksum",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK5iphdr"
+    },
+    {
+     "referenced_type" : "_ZTIt"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "function_name" : "ipv6_pseudo_header_checksum",
+   "linker_set_key" : "ipv6_pseudo_header_checksum",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK7ip6_hdr"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIh"
+    }
+   ],
+   "return_type" : "_ZTIj",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK5iphdr",
+   "name" : "const iphdr *",
+   "referenced_type" : "_ZTIK5iphdr",
+   "self_type" : "_ZTIPK5iphdr",
+   "size" : 4,
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK7ip6_hdr",
+   "name" : "const ip6_hdr *",
+   "referenced_type" : "_ZTIK7ip6_hdr",
+   "self_type" : "_ZTIPK7ip6_hdr",
+   "size" : 4,
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 4,
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK5iphdr",
+   "name" : "const iphdr",
+   "referenced_type" : "_ZTI5iphdr",
+   "self_type" : "_ZTIK5iphdr",
+   "size" : 20,
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK7ip6_hdr",
+   "name" : "const ip6_hdr",
+   "referenced_type" : "_ZTI7ip6_hdr",
+   "self_type" : "_ZTIK7ip6_hdr",
+   "size" : 40,
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "system/core/libnetutils/include/netutils/checksum.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

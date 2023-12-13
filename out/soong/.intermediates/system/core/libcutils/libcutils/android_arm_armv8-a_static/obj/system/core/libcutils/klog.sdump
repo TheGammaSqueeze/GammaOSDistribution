@@ -1,0 +1,131 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "klog_set_level",
+   "linker_set_key" : "klog_set_level",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "function_name" : "klog_write",
+   "linker_set_key" : "klog_write",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "function_name" : "klog_writev",
+   "linker_set_key" : "klog_writev",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPK5iovec"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK5iovec",
+   "name" : "const iovec *",
+   "referenced_type" : "_ZTIK5iovec",
+   "self_type" : "_ZTIPK5iovec",
+   "size" : 4,
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK5iovec",
+   "name" : "const iovec",
+   "referenced_type" : "_ZTI5iovec",
+   "self_type" : "_ZTIK5iovec",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  },
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "system/core/libcutils/include/cutils/klog.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

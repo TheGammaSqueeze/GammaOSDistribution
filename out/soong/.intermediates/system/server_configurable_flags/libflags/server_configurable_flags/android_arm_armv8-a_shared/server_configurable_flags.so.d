@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/server_configurable_flags/libflags/server_configurable_flags/android_arm_armv8-a_shared/server_configurable_flags.so:   out/soong/.intermediates/system/server_configurable_flags/libflags/server_configurable_flags/android_arm_armv8-a_shared/unstripped/server_configurable_flags.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

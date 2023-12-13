@@ -1,0 +1,118 @@
+license_package_name: "hardware_interfaces_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_kind: "SPDX-license-identifier-NCSA"
+license_condition: "notice"
+license_text: "hardware/interfaces/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/android.hardware.audio@5.0-util_intermediates/android.hardware.audio@5.0-util.so"
+target: "out/target/product/phhgsi_arm64_ab/system/lib64/android.hardware.audio@5.0-util.so"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_package_name:  "system_media_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/media/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libaudio_system_headers_intermediates/libaudio_system_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libaudio_system_headers_intermediates/libaudio_system_headers.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc++demangle.meta_lic
+  dep_package_name:  "external_libcxxabi_license"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/libcxxabi/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libc++demangle_intermediates/libc++demangle.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libclang_rt.builtins-aarch64-android.meta_lic
+  dep_package_name:  "prebuilts_clang_host_linux-x86_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-LGPL"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-NCSA"
+  dep_license_kind: "SPDX-license-identifier-PSF-2.0"
+  dep_license_kind: "SPDX-license-identifier-Zlib"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/STATIC_LIBRARIES/libclang_rt.builtins-aarch64-android_intermediates/libclang_rt.builtins-aarch64-android.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libhardware_headers.meta_lic
+  dep_package_name:  "hardware_libhardware_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_condition: "notice"
+  dep_license_text:  "hardware/libhardware/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libhardware_headers_intermediates/libhardware_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libhardware_headers_intermediates/libhardware_headers.a"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libaudio_system_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libbluetooth-types-header.meta_lic
+  dep_package_name:  "system_bt_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "system/bt/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libbluetooth-types-header_intermediates/libbluetooth-types-header.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libbluetooth-types-header_intermediates/libbluetooth-types-header.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "unencumbered"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libcutils_headers.meta_lic
+  dep_package_name:  "system_core_libcutils_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/core/libcutils/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libcutils_headers_intermediates/libcutils_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libsystem_headers.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libsystem_headers_intermediates/libsystem_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libsystem_headers_intermediates/libsystem_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}

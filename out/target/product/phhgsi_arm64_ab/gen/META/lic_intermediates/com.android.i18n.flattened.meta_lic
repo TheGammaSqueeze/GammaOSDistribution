@@ -1,0 +1,66 @@
+license_package_name: "Android"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.i18n.flattened-timestamp"
+target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.i18n.flattened_intermediates/com.android.i18n.flattened-timestamp"
+install_map: "apex_icu.dat.com.android.i18n.flattened:etc/icu/icudt68l.dat"
+install_map: "apex_manifest.pb.com.android.i18n.flattened:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.i18n.flattened:./apex_pubkey"
+install_map: "bootclasspath.pb.com.android.i18n.flattened:etc/classpaths/bootclasspath.pb"
+install_map: "core-icu4j.com.android.i18n.flattened:javalib/core-icu4j.jar"
+install_map: "libandroidicu.com.android.i18n.flattened:lib/libandroidicu.so"
+install_map: "libandroidicu.com.android.i18n.flattened:lib64/libandroidicu.so"
+install_map: "libbase:lib/libbase.so"
+install_map: "libbase:lib64/libbase.so"
+install_map: "libc++:lib/libc++.so"
+install_map: "libc++:lib64/libc++.so"
+install_map: "libicu.com.android.i18n.flattened:lib/libicu.so"
+install_map: "libicu.com.android.i18n.flattened:lib64/libicu.so"
+install_map: "libicu_jni.com.android.i18n.flattened:lib/libicu_jni.so"
+install_map: "libicu_jni.com.android.i18n.flattened:lib64/libicu_jni.so"
+install_map: "libicui18n.com.android.i18n.flattened:lib/libicui18n.so"
+install_map: "libicui18n.com.android.i18n.flattened:lib64/libicui18n.so"
+install_map: "libicuuc.com.android.i18n.flattened:lib/libicuuc.so"
+install_map: "libicuuc.com.android.i18n.flattened:lib64/libicuuc.so"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.i18n.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.i18n.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.i18n.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.i18n/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.i18n.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.i18n.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.i18n.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.i18n/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bootclasspath.pb.com.android.i18n.flattened.meta_lic
+  dep_package_name:  "bootclasspath.pb.com.android.i18n.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/bootclasspath.pb.com.android.i18n.flattened_intermediates/bootclasspath.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.i18n/etc/classpaths/bootclasspath.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/core-icu4j.com.android.i18n.flattened.meta_lic
+  dep_package_name:  "core-icu4j.com.android.i18n.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/core-icu4j.com.android.i18n.flattened_intermediates/javalib.jar"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.i18n/javalib/core-icu4j.jar"
+  dep_effective_condition: "by_exception_only"
+}

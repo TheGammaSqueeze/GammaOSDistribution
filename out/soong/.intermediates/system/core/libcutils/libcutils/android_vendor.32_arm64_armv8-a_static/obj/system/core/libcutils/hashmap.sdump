@@ -1,0 +1,282 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFbPvS_E",
+   "name" : "bool (void *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFbPvS_E",
+   "return_type" : "_ZTIb",
+   "self_type" : "_ZTIFbPvS_E",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFbPvS_S_E",
+   "name" : "bool (void *, void *, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFbPvS_S_E",
+   "return_type" : "_ZTIb",
+   "self_type" : "_ZTIFbPvS_S_E",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPvE",
+   "name" : "int (void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPvE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPvE",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "hashmapCreate",
+   "linker_set_key" : "hashmapCreate",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPFiPvE"
+    },
+    {
+     "referenced_type" : "_ZTIPFbPvS_E"
+    }
+   ],
+   "return_type" : "_ZTIP7Hashmap",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapForEach",
+   "linker_set_key" : "hashmapForEach",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    },
+    {
+     "referenced_type" : "_ZTIPFbPvS_S_E"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapFree",
+   "linker_set_key" : "hashmapFree",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapGet",
+   "linker_set_key" : "hashmapGet",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapHash",
+   "linker_set_key" : "hashmapHash",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapLock",
+   "linker_set_key" : "hashmapLock",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapPut",
+   "linker_set_key" : "hashmapPut",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapRemove",
+   "linker_set_key" : "hashmapRemove",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "function_name" : "hashmapUnlock",
+   "linker_set_key" : "hashmapUnlock",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7Hashmap"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP7Hashmap",
+   "name" : "Hashmap *",
+   "referenced_type" : "_ZTI7Hashmap",
+   "self_type" : "_ZTIP7Hashmap",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFbPvS_E",
+   "name" : "bool (*)(void *, void *)",
+   "referenced_type" : "_ZTIFbPvS_E",
+   "self_type" : "_ZTIPFbPvS_E",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFbPvS_S_E",
+   "name" : "bool (*)(void *, void *, void *)",
+   "referenced_type" : "_ZTIFbPvS_S_E",
+   "self_type" : "_ZTIPFbPvS_S_E",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPvE",
+   "name" : "int (*)(void *)",
+   "referenced_type" : "_ZTIFiPvE",
+   "self_type" : "_ZTIPFiPvE",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "system/core/libcutils/include/cutils/hashmap.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

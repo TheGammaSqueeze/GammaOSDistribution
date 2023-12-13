@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/extras/simpleperf/simpleperf_app_runner/simpleperf_app_runner/android_arm64_armv8-a/simpleperf_app_runner:   out/soong/.intermediates/system/extras/simpleperf/simpleperf_app_runner/simpleperf_app_runner/android_arm64_armv8-a/unstripped/simpleperf_app_runner   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

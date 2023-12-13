@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IStoraged.cpp.d --ninja -Isystem/core/storaged/binder -Iframeworks/native/aidl/binder -Isystem/core/storaged/binder/ system/core/storaged/binder/android/os/IStoraged.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IStoraged.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/storaged/IStoragedPrivate.cpp.d --ninja -Isystem/core/storaged/binder -Iframeworks/native/aidl/binder -Isystem/core/storaged/binder/ system/core/storaged/binder/android/os/storaged/IStoragedPrivate.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/storaged/IStoragedPrivate.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IStoraged.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/storaged/IStoragedPrivate.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnStoraged.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/BnStoraged.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpStoraged.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/BpStoraged.h"
+  >
+  copy_after: <
+    from: "out/android/os/IStoraged.cpp"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/IStoraged.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IStoraged.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/IStoraged.h"
+  >
+  copy_after: <
+    from: "out/android/os/storaged/BnStoragedPrivate.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/storaged/BnStoragedPrivate.h"
+  >
+  copy_after: <
+    from: "out/android/os/storaged/BpStoragedPrivate.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/storaged/BpStoragedPrivate.h"
+  >
+  copy_after: <
+    from: "out/android/os/storaged/IStoragedPrivate.cpp"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/storaged/IStoragedPrivate.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/storaged/IStoragedPrivate.h"
+    to: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/storaged/IStoragedPrivate.h"
+  >
+  input_hash: "9b51b8f62012e3b0c4c393c80c7f5724b34ab1560775329707fc80c1b1ca2b55"
+>
+output_depfile: "out/soong/.intermediates/system/core/storaged/libstoraged/android_arm64_armv8-a_static/gen/aidl/android/os/IStoraged.cpp.d"
+

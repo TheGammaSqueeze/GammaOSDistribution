@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/core/libvndksupport/libvndksupport/android_arm_armv8-a_shared/libvndksupport.so:   out/soong/.intermediates/system/core/libvndksupport/libvndksupport/android_arm_armv8-a_shared/unstripped/libvndksupport.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

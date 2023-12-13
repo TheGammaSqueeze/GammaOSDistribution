@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/proto/bluetooth-protos-lite/android_common/gen/proto/proto0.tmp/com/android/bluetooth/BluetoothMetricsProto.java: system/bt/gd/proto/bluetooth/metrics/bluetooth.proto system/bt/gd/proto/bluetooth/bluetoothKeystore/keystore.proto

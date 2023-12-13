@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/rust/hci/libbt_hci/android_arm_armv8-a_rlib_rlib-std/libbt_hci.rlib: system/bt/gd/rust/hci/src/lib.rs system/bt/gd/rust/hci/src/controller.rs system/bt/gd/rust/hci/src/controller_facade.rs system/bt/gd/rust/hci/src/error.rs system/bt/gd/rust/hci/src/facade.rs

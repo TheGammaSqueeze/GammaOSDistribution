@@ -1,0 +1,24 @@
+Package name: com.android.carrierconfig
+Module name in Android tree: CarrierConfig
+Local path in Android tree: packages/apps/CarrierConfig
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/CarrierConfig/CarrierConfig.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking max-target-o Landroid/os/PersistableBundle;->restoreFromXml(Lorg/xmlpull/v1/XmlPullParser;)Landroid/os/PersistableBundle; use(s):
+       Lcom/android/carrierconfig/DefaultCarrierConfigService;->readConfigFromXml(Lorg/xmlpull/v1/XmlPullParser;Landroid/service/carrier/CarrierIdentifier;Ljava/lang/String;)Landroid/os/PersistableBundle;
+
+#2: Linking blocked Landroid/telephony/TelephonyManager;->getCarrierIdFromMccMnc(Ljava/lang/String;)I use(s):
+       Lcom/android/carrierconfig/DefaultCarrierConfigService;->loadConfig(Lorg/xmlpull/v1/XmlPullParser;Landroid/service/carrier/CarrierIdentifier;)Landroid/os/PersistableBundle;
+
+2 hidden API(s) used: 2 linked against, 0 through reflection
+	0 in unsupported
+	1 in blocked
+	1 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

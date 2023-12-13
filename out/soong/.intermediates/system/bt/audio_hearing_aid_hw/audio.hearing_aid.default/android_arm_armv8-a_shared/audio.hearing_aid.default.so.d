@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/bt/audio_hearing_aid_hw/audio.hearing_aid.default/android_arm_armv8-a_shared/audio.hearing_aid.default.so:   out/soong/.intermediates/system/bt/audio_hearing_aid_hw/audio.hearing_aid.default/android_arm_armv8-a_shared/unstripped/audio.hearing_aid.default.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

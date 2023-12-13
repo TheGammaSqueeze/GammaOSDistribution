@@ -1,0 +1,41 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 1941cb2
+# common_typos_disable
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState -> com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState:
+    2008:2009:java.lang.String toString() -> toString
+    2002:2003:void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver -> com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver:
+    1988:1988:void onReceiveResult(int,android.os.Bundle) -> onReceiveResult
+com.android.providers.partnerbookmarks.PartnerBookmarksContract -> com.android.providers.partnerbookmarks.PartnerBookmarksContract:
+    45:45:void <clinit>() -> <clinit>
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks -> com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks:
+    71:77:void <clinit>() -> <clinit>
+    66:66:void <init>() -> <init>
+    84:84:android.net.Uri buildFolderUri(long) -> buildFolderUri
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider -> com.android.providers.partnerbookmarks.PartnerBookmarksProvider:
+    82:122:void <clinit>() -> <clinit>
+    72:72:void <init>() -> <init>
+    72:72:com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper access$000(com.android.providers.partnerbookmarks.PartnerBookmarksProvider) -> access$000
+    443:443:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    431:431:java.lang.String getType(android.net.Uri) -> getType
+    438:438:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    354:354:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    348:348:boolean onCreate() -> onCreate
+    360:426:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    448:448:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper -> com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper:
+    133:135:void <init>(com.android.providers.partnerbookmarks.PartnerBookmarksProvider,android.content.Context) -> <init>
+    254:321:boolean addDefaultBookmarks(android.database.sqlite.SQLiteDatabase,long,long) -> addDefaultBookmarks
+    241:249:boolean addRootFolder(android.database.sqlite.SQLiteDatabase,long,java.lang.String) -> addRootFolder
+    212:234:boolean createDefaultBookmarks(android.database.sqlite.SQLiteDatabase) -> createDefaultBookmarks
+    166:166:void createTable(android.database.sqlite.SQLiteDatabase) -> createTable
+    184:184:void dropTable(android.database.sqlite.SQLiteDatabase) -> dropTable
+    140:142:java.lang.String getConfigSignature(android.content.res.Configuration) -> getConfigSignature
+    189:196:void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    207:208:void onDowngrade(android.database.sqlite.SQLiteDatabase,int,int) -> onDowngrade
+    201:202:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    146:157:void prepareForConfiguration(android.content.res.Configuration) -> prepareForConfiguration
+    327:340:byte[] readRaw(android.content.res.Resources,int) -> readRaw
+    160:162:void setActiveConfiguration(android.content.res.Configuration) -> setActiveConfiguration

@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/core/fs_mgr/libsnapshot/libsnapshot_init/android_arm64_armv8-a_static/gen/proto/android/snapshot/snapshot.pb.cc: system/core/fs_mgr/libsnapshot//android/snapshot/snapshot.proto

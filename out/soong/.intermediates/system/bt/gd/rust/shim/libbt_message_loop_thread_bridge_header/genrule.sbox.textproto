@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/rust/cxx/gen/cmd/cxxbridge/linux_glibc_x86_64/cxxbridge"
+    to: "tools/out/bin/cxxbridge"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/cxxbridge system/bt/gd/rust/shim/src/message_loop_thread.rs --header > __SBOX_SANDBOX_DIR__/out/src/message_loop_thread.rs.h"
+  copy_after: <
+    from: "out/src/message_loop_thread.rs.h"
+    to: "out/soong/.intermediates/system/bt/gd/rust/shim/libbt_message_loop_thread_bridge_header/gen/src/message_loop_thread.rs.h"
+  >
+  input_hash: "487033fc1c25a331d82c7865dd30605c6e986f6967787a816874b8d0468815fb"
+>
+

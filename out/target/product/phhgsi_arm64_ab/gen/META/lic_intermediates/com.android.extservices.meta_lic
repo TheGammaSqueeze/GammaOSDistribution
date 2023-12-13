@@ -1,0 +1,88 @@
+license_package_name: "packages_modules_ExtServices_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "out/soong/.intermediates/packages/modules/ExtServices/apex/com.android.extservices/android_common_com.android.extservices_image/NOTICE_FILES/src/system/apex/com.android.extservices.apex.txt"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/ETC/com.android.extservices_intermediates/com.android.extservices.capex"
+target: "out/target/product/phhgsi_arm64_ab/system/apex/com.android.extservices.capex"
+install_map: "ExtServices.com.android.extservices:priv-app/ExtServices/ExtServices.apk"
+install_map: "apex_manifest.pb.com.android.extservices:./apex_manifest.pb"
+install_map: "apex_pubkey.com.android.extservices:./apex_pubkey"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ExtServices.com.android.extservices.meta_lic
+  dep_package_name:  "ExtServices.com.android.extservices"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ExtServices.com.android.extservices_intermediates/package.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.extservices.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.extservices"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.extservices/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.extservices_intermediates/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.extservices.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.extservices"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/apex/com.android.extservices/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.extservices_intermediates/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/com.android.extservices.flattened.meta_lic
+  dep_package_name:  "packages_modules_ExtServices_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/fake_packages/com.android.extservices.flattened-timestamp"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/FAKE/com.android.extservices.flattened_intermediates/com.android.extservices.flattened-timestamp"
+  dep_install_map: "ExtServices.com.android.extservices.flattened:priv-app/ExtServices/ExtServices.apk"
+  dep_install_map: "apex_manifest.pb.com.android.extservices.flattened:./apex_manifest.pb"
+  dep_install_map: "apex_pubkey.com.android.extservices.flattened:./apex_pubkey"
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ExtServices.com.android.extservices.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.extservices.flattened.meta_lic
+  dep_sub_dep: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.extservices.flattened.meta_lic
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/ExtServices.com.android.extservices.flattened.meta_lic
+  dep_package_name:  "ExtServices.com.android.extservices.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/modules/ExtServices/NOTICE"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/ExtServices.com.android.extservices.flattened_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_manifest.pb.com.android.extservices.flattened.meta_lic
+  dep_package_name:  "apex_manifest.pb.com.android.extservices.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_manifest.pb.com.android.extservices.flattened_intermediates/apex_manifest.pb"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.extservices/apex_manifest.pb"
+  dep_effective_condition: "by_exception_only"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/apex_pubkey.com.android.extservices.flattened.meta_lic
+  dep_package_name:  "apex_pubkey.com.android.extservices.flattened"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/apex_pubkey.com.android.extservices.flattened_intermediates/apex_pubkey"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.extservices/apex_pubkey"
+  dep_effective_condition: "by_exception_only"
+}

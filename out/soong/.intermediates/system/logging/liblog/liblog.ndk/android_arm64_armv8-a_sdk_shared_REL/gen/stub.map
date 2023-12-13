@@ -1,0 +1,30 @@
+LIBLOG {
+    global:
+        __android_log_assert;
+        __android_log_buf_print;
+        __android_log_buf_write;
+        __android_log_print;
+        __android_log_vprint;
+        __android_log_write;
+};
+LIBLOG_M {
+    global:
+        __android_log_is_loggable;
+};
+LIBLOG_O {
+    global:
+        __android_log_is_loggable_len;
+};
+LIBLOG_R {
+    global:
+        __android_log_call_aborter;
+        __android_log_default_aborter;
+        __android_log_get_minimum_priority;
+        __android_log_logd_logger;
+        __android_log_set_aborter;
+        __android_log_set_default_tag;
+        __android_log_set_logger;
+        __android_log_set_minimum_priority;
+        __android_log_stderr_logger;
+        __android_log_write_log_message;
+};

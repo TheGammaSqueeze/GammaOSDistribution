@@ -1,0 +1,21 @@
+license_package_name: "development_apps_SdkSetup_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "development/apps/SdkSetup/NOTICE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/SdkSetup_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/SdkSetup/SdkSetup.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/SdkSetup/oat/arm64/SdkSetup.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/SdkSetup/oat/arm64/SdkSetup.vdex"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.sdksetup.meta_lic
+  dep_package_name:  "development_apps_SdkSetup_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "development/apps/SdkSetup/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.android.sdksetup_intermediates/privapp_whitelist_com.android.sdksetup"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/permissions/com.android.sdksetup.xml"
+  dep_effective_condition: "notice"
+}

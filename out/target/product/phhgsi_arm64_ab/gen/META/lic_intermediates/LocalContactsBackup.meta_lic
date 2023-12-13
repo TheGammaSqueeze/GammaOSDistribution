@@ -1,0 +1,19 @@
+license_package_name: "LocalContactsBackup"
+license_kind: "legacy_by_exception_only"
+license_condition: "by_exception_only"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/LocalContactsBackup_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/LocalContactsBackup.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/oat/arm64/LocalContactsBackup.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/LocalContactsBackup/oat/arm64/LocalContactsBackup.vdex"
+effective_condition: "by_exception_only"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/default-permissions_org.calyxos.backup.contacts.meta_lic
+  dep_package_name:  "default-permissions_org.calyxos.backup.contacts"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/default-permissions_org.calyxos.backup.contacts_intermediates/default-permissions_org.calyxos.backup.contacts"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/etc/default-permissions/default-permissions_org.calyxos.backup.contacts.xml"
+  dep_effective_condition: "by_exception_only"
+}

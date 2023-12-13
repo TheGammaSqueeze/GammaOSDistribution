@@ -1,0 +1,21 @@
+license_package_name: "packages_wallpapers_LivePicker_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "packages/wallpapers/LivePicker/NOTICE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/LiveWallpapersPicker_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/app/LiveWallpapersPicker/oat/arm64/LiveWallpapersPicker.vdex"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/android.software.live_wallpaper.xml.meta_lic
+  dep_package_name:  "packages_wallpapers_LivePicker_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "packages/wallpapers/LivePicker/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/android.software.live_wallpaper.xml_intermediates/android.software.live_wallpaper.xml"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/etc/permissions/android.software.live_wallpaper.xml"
+  dep_effective_condition: "notice"
+}

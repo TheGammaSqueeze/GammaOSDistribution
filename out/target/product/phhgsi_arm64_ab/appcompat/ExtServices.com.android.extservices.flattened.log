@@ -1,0 +1,43 @@
+Package name: android.ext.services
+Module name in Android tree: ExtServices.com.android.extservices.flattened
+Local path in Android tree: packages/modules/ExtServices
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#2: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#3: Linking unsupported Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casValue(Lcom/google/common/util/concurrent/AbstractFuture;Ljava/lang/Object;Ljava/lang/Object;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Z
+
+#4: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I (2 occurrences)
+
+#5: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V
+
+#6: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V (5 occurrences)
+
+#7: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putNext(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)V
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putThread(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Ljava/lang/Thread;)V
+
+7 hidden API(s) used: 7 linked against, 0 through reflection
+	7 in unsupported
+	0 in blocked
+	0 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

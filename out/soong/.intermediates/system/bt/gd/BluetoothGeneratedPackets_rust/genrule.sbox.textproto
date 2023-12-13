@@ -1,0 +1,19 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/bluetooth_packetgen"
+    to: "tools/out/bin/bluetooth_packetgen"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/bluetooth_packetgen --include=system/bt/gd --out=__SBOX_SANDBOX_DIR__/out system/bt/gd/hci/hci_packets.pdl --rust"
+  copy_after: <
+    from: "out/hci/hci_packets.rs"
+    to: "out/soong/.intermediates/system/bt/gd/BluetoothGeneratedPackets_rust/gen/hci/hci_packets.rs"
+  >
+  input_hash: "b2804cf0e81e145052746bed5f646192ffa4b52d36ff0940c23ab5126cbe14d7"
+>
+

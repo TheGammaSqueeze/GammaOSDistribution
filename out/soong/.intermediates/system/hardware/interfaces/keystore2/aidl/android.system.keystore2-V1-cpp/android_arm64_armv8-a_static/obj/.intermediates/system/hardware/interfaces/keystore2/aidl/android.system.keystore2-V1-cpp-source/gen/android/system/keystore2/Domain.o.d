@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-cpp/android_arm64_armv8-a_static/obj/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-cpp-source/gen/android/system/keystore2/Domain.o: \
+  out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-cpp-source/gen/android/system/keystore2/Domain.cpp

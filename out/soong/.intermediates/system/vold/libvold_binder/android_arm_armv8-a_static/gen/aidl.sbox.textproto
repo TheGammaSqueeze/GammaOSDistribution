@@ -1,0 +1,70 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IVold.cpp.d --ninja -Isystem/vold/binder -Iframeworks/native/aidl/binder -Iframeworks/base/core/java -Isystem/vold/binder/ system/vold/binder/android/os/IVold.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IVold.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IVoldListener.cpp.d --ninja -Isystem/vold/binder -Iframeworks/native/aidl/binder -Iframeworks/base/core/java -Isystem/vold/binder/ system/vold/binder/android/os/IVoldListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IVoldListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IVoldMountCallback.cpp.d --ninja -Isystem/vold/binder -Iframeworks/native/aidl/binder -Iframeworks/base/core/java -Isystem/vold/binder/ system/vold/binder/android/os/IVoldMountCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IVoldMountCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IVoldTaskListener.cpp.d --ninja -Isystem/vold/binder -Iframeworks/native/aidl/binder -Iframeworks/base/core/java -Isystem/vold/binder/ system/vold/binder/android/os/IVoldTaskListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IVoldTaskListener.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IVold.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IVoldListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IVoldMountCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IVoldTaskListener.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnVold.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BnVold.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnVoldListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BnVoldListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnVoldMountCallback.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BnVoldMountCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnVoldTaskListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BnVoldTaskListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpVold.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BpVold.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpVoldListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BpVoldListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpVoldMountCallback.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BpVoldMountCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpVoldTaskListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/BpVoldTaskListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IVold.cpp"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVold.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IVold.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVold.h"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldListener.cpp"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldMountCallback.cpp"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldMountCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldMountCallback.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldMountCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldTaskListener.cpp"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldTaskListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IVoldTaskListener.h"
+    to: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVoldTaskListener.h"
+  >
+  input_hash: "fcd527d1d2304fcc705746cdb4400638d9d590a24f441616c13d24a043d027ae"
+>
+output_depfile: "out/soong/.intermediates/system/vold/libvold_binder/android_arm_armv8-a_static/gen/aidl/android/os/IVold.cpp.d"
+

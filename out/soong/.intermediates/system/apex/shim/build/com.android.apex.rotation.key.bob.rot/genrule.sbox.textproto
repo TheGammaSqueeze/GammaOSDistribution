@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "tools/apksig/etc/apksigner"
+    to: "tools/out/bin/apksigner"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/conscrypt/libconscrypt_openjdk_jni/linux_glibc_x86_64_shared/libconscrypt_openjdk_jni.so"
+    to: "tools/out/lib64/libconscrypt_openjdk_jni.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/apksig/apksigner/linux_glibc_common/withres/apksigner.jar"
+    to: "tools/out/framework/apksigner.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/apksigner rotate --out __SBOX_SANDBOX_DIR__/out/bob.rot --old-signer --key system/apex/shim/build/alice.pk8 --cert system/apex/shim/build/alice.x509.pem --new-signer --key out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.pk8/gen/bob.pk8 --cert out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.x509.pem/gen/bob.x509.pem"
+  copy_after: <
+    from: "out/bob.rot"
+    to: "out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.rot/gen/bob.rot"
+  >
+  input_hash: "86364b6d4913a0843183a29260b614fb0aa7f891b15be6e4fe6a65750164cce7"
+>
+

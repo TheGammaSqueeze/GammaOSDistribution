@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/security/fsverity_init/fsverity_init/android_arm64_armv8-a_cfi/fsverity_init:   out/soong/.intermediates/system/security/fsverity_init/fsverity_init/android_arm64_armv8-a_cfi/unstripped/fsverity_init   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

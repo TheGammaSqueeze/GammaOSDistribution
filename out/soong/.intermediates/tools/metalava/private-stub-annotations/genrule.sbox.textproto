@@ -1,0 +1,23 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "build/soong/scripts/jar-wrapper.sh"
+    to: "tools/out/bin/metalava"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/metalava/metalava/linux_glibc_common/withres/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+    executable: false
+  >
+  command: "(__SBOX_SANDBOX_DIR__/tools/out/bin/metalava --no-banner --copy-annotations tools/metalava/stub-annotations __SBOX_SANDBOX_DIR__/out/private-stub-annotations) && (__SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -o __SBOX_SANDBOX_DIR__/out/private-stub-annotations.srcjar -C __SBOX_SANDBOX_DIR__/out -D __SBOX_SANDBOX_DIR__/out)"
+  copy_after: <
+    from: "out/private-stub-annotations.srcjar"
+    to: "out/soong/.intermediates/tools/metalava/private-stub-annotations/gen/private-stub-annotations.srcjar"
+  >
+  input_hash: "19a38ee48352a95cc961a4b97c71c09154bc466b7e3c64b2b70e2a1518b1ab00"
+>
+

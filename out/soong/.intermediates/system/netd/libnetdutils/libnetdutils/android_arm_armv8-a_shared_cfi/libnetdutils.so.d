@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/netd/libnetdutils/libnetdutils/android_arm_armv8-a_shared_cfi/libnetdutils.so:   out/soong/.intermediates/system/netd/libnetdutils/libnetdutils/android_arm_armv8-a_shared_cfi/unstripped/libnetdutils.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

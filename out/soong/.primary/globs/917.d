@@ -1,0 +1,34 @@
+out/soong/.primary/globs/917: \
+ art/test/102-concurrent-gc \
+ art/test/915-obsolete-2/src \
+ bootable/recovery/install \
+ cts/hostsidetests/backup/restoresessionapp2 \
+ cts/hostsidetests/devicepolicy/app/AccountCheck/Auth/src \
+ cts/hostsidetests/shortcuts/deviceside/common \
+ cts/tests/tests/apache-http \
+ cts/tests/tests/packageinstaller/nopermission \
+ cts/tests/tests/toastlegacy \
+ development/samples/ReceiveShareDemo/res \
+ device/generic/vulkan-cereal/third-party/perfetto-tracing-only \
+ device/lineage/sepolicy/common/dynamic \
+ device/lineage/sepolicy/common/private \
+ external/googletest/googlemock/NOTICE \
+ external/libese \
+ external/python/cpython2/Lib \
+ frameworks/base/packages/ExtShared \
+ hardware/interfaces/rebootescrow/aidl \
+ hardware/interfaces/vibrator/aidl/vts \
+ hardware/qcom/sm8150/data/ipacfg-mgr/ipacm \
+ packages/apps/TV/common \
+ packages/modules/Virtualization/apex/com.android.virt.pem \
+ packages/services/Car/tests/EmbeddedKitchenSinkApp \
+ platform_testing/tests/functional/overviewtests \
+ prebuilts/abi-dumps/vndk/32/64/arm64_armv8-a/source-based \
+ system/sepolicy/vendor \
+ test/vts-testcase/hal/usb/gadget/V1_2/host \
+ tools/apksig/src/apksigner/java \
+ tools/apksig/src/apksigner/java/com \
+ tools/apksig/src/apksigner/java/com/android \
+ tools/apksig/src/apksigner/java/com/android/apksigner \
+ vendor/interfaces/vendor/oppo/hardware/biometrics/fingerprint/2.1 \
+ vendor/interfaces/vendor/samsung/hardware/biometrics/fingerprint/3.0

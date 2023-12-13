@@ -1,0 +1,50 @@
+license_package_name: "Android"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "build/soong/licenses/LICENSE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/NetworkStack_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkStack/NetworkStack.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkStack/oat/arm64/NetworkStack.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkStack/oat/arm64/NetworkStack.vdex"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/NetworkPermissionConfig.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: true
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/APPS/NetworkPermissionConfig_intermediates/package.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/NetworkPermissionConfig.apk"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/oat/arm64/NetworkPermissionConfig.odex"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/priv-app/NetworkPermissionConfig/oat/arm64/NetworkPermissionConfig.vdex"
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.networkstack.meta_lic
+  dep_package_name:  "frameworks_base_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-CC-BY"
+  dep_license_kind: "SPDX-license-identifier-CPL-1.0"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-GPL-2.0"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "SPDX-license-identifier-W3C"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "reciprocal"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "frameworks/base/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.android.networkstack_intermediates/privapp_whitelist_com.android.networkstack"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/etc/permissions/com.android.networkstack.xml"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "reciprocal"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}

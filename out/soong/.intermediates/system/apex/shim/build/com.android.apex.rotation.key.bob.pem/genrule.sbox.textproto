@@ -1,0 +1,9 @@
+commands: <
+  command: "openssl req -x509 -newkey rsa:4096 -nodes -days 999999 -subj '/DN=/EMAILADDRESS=android@android.com/CN=Android/OU=Android/O=Android/L=Mountain View/ST=California/C=US' -keyout __SBOX_SANDBOX_DIR__/out/bob.pem"
+  copy_after: <
+    from: "out/bob.pem"
+    to: "out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.pem/gen/bob.pem"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

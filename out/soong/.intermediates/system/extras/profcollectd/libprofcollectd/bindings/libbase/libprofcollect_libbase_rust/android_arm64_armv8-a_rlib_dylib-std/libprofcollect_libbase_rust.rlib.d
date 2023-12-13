@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/extras/profcollectd/libprofcollectd/bindings/libbase/libprofcollect_libbase_rust/android_arm64_armv8-a_rlib_dylib-std/libprofcollect_libbase_rust.rlib: system/extras/profcollectd/libprofcollectd/bindings/libbase/lib.rs

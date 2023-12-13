@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/logging/liblog/liblog_event_list_bindgen/android_arm64_armv8-a_rlib_rlib-std/liblog_event_list_bindgen.rlib: out/soong/.intermediates/system/logging/liblog/liblog_event_list_bindgen/android_arm64_armv8-a_source/bindings.rs

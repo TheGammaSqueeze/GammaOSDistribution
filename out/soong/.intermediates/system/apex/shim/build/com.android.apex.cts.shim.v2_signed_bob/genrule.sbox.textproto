@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "tools/apksig/etc/apksigner"
+    to: "tools/out/bin/apksigner"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/conscrypt/libconscrypt_openjdk_jni/linux_glibc_x86_64_shared/libconscrypt_openjdk_jni.so"
+    to: "tools/out/lib64/libconscrypt_openjdk_jni.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/tools/apksig/apksigner/linux_glibc_common/withres/apksigner.jar"
+    to: "tools/out/framework/apksigner.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/apksigner sign --v1-signing-enabled false --v2-signing-enabled false --key out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.pk8/gen/bob.pk8 --cert out/soong/.intermediates/system/apex/shim/build/com.android.apex.rotation.key.bob.x509.pem/gen/bob.x509.pem --out __SBOX_SANDBOX_DIR__/out/com.android.apex.cts.shim.v2_signed_bob out/soong/.intermediates/system/apex/shim/build/com.android.apex.cts.shim.v2/android_common_com.android.apex.cts.shim.v2_image/com.android.apex.cts.shim.v2.apex"
+  copy_after: <
+    from: "out/com.android.apex.cts.shim.v2_signed_bob"
+    to: "out/soong/.intermediates/system/apex/shim/build/com.android.apex.cts.shim.v2_signed_bob/gen/com.android.apex.cts.shim.v2_signed_bob"
+  >
+  input_hash: "8e46b042ba8d5aaaf96c861307f4e160141fc37cfb4f1ddc3861f4f1206ef32e"
+>
+

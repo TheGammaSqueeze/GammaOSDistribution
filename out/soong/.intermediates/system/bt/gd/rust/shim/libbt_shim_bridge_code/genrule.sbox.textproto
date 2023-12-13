@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/rust/cxx/gen/cmd/cxxbridge/linux_glibc_x86_64/cxxbridge"
+    to: "tools/out/bin/cxxbridge"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/cxxbridge system/bt/gd/rust/shim/src/bridge.rs >> __SBOX_SANDBOX_DIR__/out/bridge.cc"
+  copy_after: <
+    from: "out/bridge.cc"
+    to: "out/soong/.intermediates/system/bt/gd/rust/shim/libbt_shim_bridge_code/gen/bridge.cc"
+  >
+  input_hash: "da249b60e5de05fdb6aa19aacbf63e482512372678fb03c0cb9f7d0289b56671"
+>
+

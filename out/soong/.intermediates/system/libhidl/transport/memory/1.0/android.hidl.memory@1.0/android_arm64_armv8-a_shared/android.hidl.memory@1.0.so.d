@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/libhidl/transport/memory/1.0/android.hidl.memory@1.0/android_arm64_armv8-a_shared/android.hidl.memory@1.0.so:   out/soong/.intermediates/system/libhidl/transport/memory/1.0/android.hidl.memory@1.0/android_arm64_armv8-a_shared/unstripped/android.hidl.memory@1.0.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

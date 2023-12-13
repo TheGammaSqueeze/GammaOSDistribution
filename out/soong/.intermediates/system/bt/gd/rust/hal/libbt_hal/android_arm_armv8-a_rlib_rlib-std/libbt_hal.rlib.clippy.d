@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/rust/hal/libbt_hal/android_arm_armv8-a_rlib_rlib-std/libbt_hal.rlib.clippy: system/bt/gd/rust/hal/src/lib.rs system/bt/gd/rust/hal/src/facade.rs system/bt/gd/rust/hal/src/rootcanal_hal.rs system/bt/gd/rust/hal/src/snoop.rs system/bt/gd/rust/hal/src/hidl_hal.rs

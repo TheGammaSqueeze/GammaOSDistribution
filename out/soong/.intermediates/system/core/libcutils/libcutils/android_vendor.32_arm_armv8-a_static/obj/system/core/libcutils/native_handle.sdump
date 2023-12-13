@@ -1,0 +1,191 @@
+{
+ "array_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIA0_i",
+   "name" : "int [0]",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIA0_i",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  }
+ ],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "native_handle_clone",
+   "linker_set_key" : "native_handle_clone",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13native_handle"
+    }
+   ],
+   "return_type" : "_ZTIP13native_handle",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "function_name" : "native_handle_close",
+   "linker_set_key" : "native_handle_close",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13native_handle"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "function_name" : "native_handle_create",
+   "linker_set_key" : "native_handle_create",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIP13native_handle",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "function_name" : "native_handle_delete",
+   "linker_set_key" : "native_handle_delete",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP13native_handle"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "function_name" : "native_handle_init",
+   "linker_set_key" : "native_handle_init",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIP13native_handle",
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP13native_handle",
+   "name" : "native_handle *",
+   "referenced_type" : "_ZTI13native_handle",
+   "self_type" : "_ZTIP13native_handle",
+   "size" : 4,
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK13native_handle",
+   "name" : "const native_handle *",
+   "referenced_type" : "_ZTIK13native_handle",
+   "self_type" : "_ZTIPK13native_handle",
+   "size" : 4,
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK13native_handle",
+   "name" : "const native_handle",
+   "referenced_type" : "_ZTI13native_handle",
+   "self_type" : "_ZTIK13native_handle",
+   "size" : 12,
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "version",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "numFds",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "numInts",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "data",
+     "field_offset" : 96,
+     "referenced_type" : "_ZTIA0_i"
+    }
+   ],
+   "linker_set_key" : "_ZTI13native_handle",
+   "name" : "native_handle",
+   "referenced_type" : "_ZTI13native_handle",
+   "self_type" : "_ZTI13native_handle",
+   "size" : 12,
+   "source_file" : "system/core/libcutils/include/cutils/native_handle.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

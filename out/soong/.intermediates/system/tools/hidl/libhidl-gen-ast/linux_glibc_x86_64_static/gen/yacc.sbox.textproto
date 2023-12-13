@@ -1,0 +1,21 @@
+commands: <
+  command: "BISON_PKGDATADIR=prebuilts/build-tools/common/bison M4=prebuilts/build-tools/linux-x86/bin/m4 prebuilts/build-tools/linux-x86/bin/bison -d --defines=__SBOX_SANDBOX_DIR__/out/system/tools/hidl/hidl-gen_y.h -o __SBOX_SANDBOX_DIR__/out/system/tools/hidl/hidl-gen_y.cpp system/tools/hidl/hidl-gen_y.yy && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/tools/hidl/hidl-gen_y.cpp && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/tools/hidl/hidl-gen_y.h && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/tools/hidl/location.hh && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/tools/hidl/position.hh"
+  copy_after: <
+    from: "out/system/tools/hidl/hidl-gen_y.cpp"
+    to: "out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc/system/tools/hidl/hidl-gen_y.cpp"
+  >
+  copy_after: <
+    from: "out/system/tools/hidl/hidl-gen_y.h"
+    to: "out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc/system/tools/hidl/hidl-gen_y.h"
+  >
+  copy_after: <
+    from: "out/system/tools/hidl/location.hh"
+    to: "out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc/system/tools/hidl/location.hh"
+  >
+  copy_after: <
+    from: "out/system/tools/hidl/position.hh"
+    to: "out/soong/.intermediates/system/tools/hidl/libhidl-gen-ast/linux_glibc_x86_64_static/gen/yacc/system/tools/hidl/position.hh"
+  >
+  input_hash: "89e7539c774956a14632df34ee80da92f750dc8df3e6c6453c3f050182abe0a2"
+>
+

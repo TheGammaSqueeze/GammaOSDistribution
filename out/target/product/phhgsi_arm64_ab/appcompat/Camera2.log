@@ -1,0 +1,65 @@
+Package name: com.android.camera2
+Module name in Android tree: Camera2
+Local path in Android tree: packages/apps/Camera2
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/product/app/Camera2/Camera2.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#2: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;-><clinit>()V
+
+#3: Linking unsupported Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casValue(Lcom/google/common/util/concurrent/AbstractFuture;Ljava/lang/Object;Ljava/lang/Object;)Z
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Z
+
+#4: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->compare([B[B)I (2 occurrences)
+
+#5: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; use(s):
+       Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->getUnsafe()Lsun/misc/Unsafe;
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V
+
+#6: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><clinit>()V (5 occurrences)
+
+#7: Linking unsupported,core-platform-api Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V use(s):
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putNext(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)V
+       Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->putThread(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Ljava/lang/Thread;)V
+
+#8: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#9: Reflection unsupported Landroid/os/Bundle;->getIBinder use(s):
+       Landroidx/core/app/BundleCompat$BundleCompatBaseImpl;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+
+#10: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#11: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#12: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroid/support/v4/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#13: Reflection max-target-p Landroid/view/animation/Animation;->mListener use(s):
+       Landroid/support/v4/app/FragmentManagerImpl;->getAnimationListener(Landroid/view/animation/Animation;)Landroid/view/animation/Animation$AnimationListener;
+
+#14: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+14 hidden API(s) used: 7 linked against, 7 through reflection
+	12 in unsupported
+	0 in blocked
+	0 in max-target-o
+	2 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

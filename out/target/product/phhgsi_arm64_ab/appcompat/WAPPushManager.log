@@ -1,0 +1,20 @@
+Package name: Module name in Android tree: WAPPushManager
+Local path in Android tree: frameworks/base/packages/WAPPushManager
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/app/WAPPushManager/WAPPushManager.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking max-target-o Lcom/android/internal/telephony/IWapPushManager$Stub;-><init>()V use(s):
+       Lcom/android/smspush/WapPushManager$IWapPushManagerStub;-><init>(Lcom/android/smspush/WapPushManager;)V
+
+1 hidden API(s) used: 1 linked against, 0 through reflection
+	0 in unsupported
+	0 in blocked
+	1 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

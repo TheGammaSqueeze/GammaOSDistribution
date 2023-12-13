@@ -1,0 +1,21 @@
+license_package_name: "Etar"
+license_kind: "legacy_by_exception_only"
+license_condition: "by_exception_only"
+license_text: "packages/apps/Etar/LICENSE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/Etar_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/Etar/Etar.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/Etar/oat/arm64/Etar.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/product/app/Etar/oat/arm64/Etar.vdex"
+effective_condition: "by_exception_only"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/org.lineageos.etar.allowlist.meta_lic
+  dep_package_name:  "org.lineageos.etar.allowlist"
+  dep_license_kind: "legacy_by_exception_only"
+  dep_license_condition: "by_exception_only"
+  dep_license_text:  "packages/apps/Etar/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/org.lineageos.etar.allowlist_intermediates/org.lineageos.etar.allowlist"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/product/etc/sysconfig/org.lineageos.etar.allowlist.xml"
+  dep_effective_condition: "by_exception_only"
+}

@@ -1,0 +1,75 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 9dd0f71
+# common_typos_disable
+com.android.externalstorage.ExternalStorageProvider -> com.android.externalstorage.ExternalStorageProvider:
+    74:84:void <clinit>() -> <clinit>
+    67:113:void <init>() -> <init>
+    603:604:boolean allowsBothReadAndWrite(android.content.UriPermission) -> allowsBothReadAndWrite
+    455:467:java.io.File buildFile(com.android.externalstorage.ExternalStorageProvider$RootInfo,java.lang.String,boolean,boolean) -> buildFile
+    474:474:android.net.Uri buildNotificationUri(java.lang.String) -> buildNotificationUri
+    659:714:android.os.Bundle call(java.lang.String,java.lang.String,android.os.Bundle) -> call
+    638:654:void dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    623:632:void ejectRoot(java.lang.String) -> ejectRoot
+    146:147:int enforceReadPermissionInner(android.net.Uri,android.content.AttributionSource) -> enforceReadPermissionInner
+    136:139:void enforceShellRestrictions() -> enforceShellRestrictions
+    153:154:int enforceWritePermissionInner(android.net.Uri,android.content.AttributionSource) -> enforceWritePermissionInner
+    532:542:android.provider.DocumentsContract$Path findDocumentPath(java.lang.String,java.lang.String) -> findDocumentPath
+    339:339:java.lang.String getDocIdForFile(java.io.File) -> getDocIdForFile
+    344:379:java.lang.String getDocIdForFileMaybeCreate(java.io.File,boolean) -> getDocIdForFileMaybeCreate
+    547:597:android.net.Uri getDocumentUri(java.lang.String,java.util.List) -> getDocumentUri
+    406:406:java.io.File getFileForDocId(java.lang.String,boolean) -> getFileForDocId
+    411:412:java.io.File getFileForDocId(java.lang.String,boolean,boolean) -> getFileForDocId
+    386:399:com.android.externalstorage.ExternalStorageProvider$RootInfo getMostSpecificRootForPath(java.lang.String,boolean) -> getMostSpecificRootForPath
+    423:432:java.lang.String getPathFromDocId(java.lang.String) -> getPathFromDocId
+    439:447:com.android.externalstorage.ExternalStorageProvider$RootInfo getRootFromDocId(java.lang.String) -> getRootFromDocId
+    118:125:boolean onCreate() -> onCreate
+    482:484:void onDocIdChanged(java.lang.String) -> onDocIdChanged
+    492:493:void onDocIdDeleted(java.lang.String) -> onDocIdDeleted
+    283:283:android.database.Cursor queryChildDocumentsForManage(java.lang.String,java.lang.String[],java.lang.String) -> queryChildDocumentsForManage
+    499:525:android.database.Cursor queryRoots(java.lang.String[]) -> queryRoots
+    612:618:android.database.Cursor querySearchDocuments(java.lang.String,java.lang.String[],android.os.Bundle) -> querySearchDocuments
+    417:418:android.util.Pair resolveDocId(java.lang.String,boolean) -> resolveDocId
+    276:276:java.lang.String[] resolveRootProjection(java.lang.String[]) -> resolveRootProjection
+    295:332:boolean shouldBlockFromTree(java.lang.String) -> shouldBlockFromTree
+    158:160:void updateVolumes() -> updateVolumes
+    165:272:void updateVolumesLocked() -> updateVolumesLocked
+com.android.externalstorage.ExternalStorageProvider$1 -> com.android.externalstorage.ExternalStorageProvider$1:
+    125:125:void <init>(com.android.externalstorage.ExternalStorageProvider) -> <init>
+    128:128:void onVolumeStateChanged(android.os.storage.VolumeInfo,int,int) -> onVolumeStateChanged
+com.android.externalstorage.ExternalStorageProvider$RootInfo -> com.android.externalstorage.ExternalStorageProvider$RootInfo:
+    89:99:void <init>() -> <init>
+    89:89:void <init>(com.android.externalstorage.ExternalStorageProvider$1) -> <init>
+com.android.externalstorage.MountReceiver -> com.android.externalstorage.MountReceiver:
+    24:24:void <init>() -> <init>
+    27:33:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.android.externalstorage.TestDocumentsProvider -> com.android.externalstorage.TestDocumentsProvider:
+    82:88:void <clinit>() -> <clinit>
+    55:55:void <init>() -> <init>
+    55:55:void access$000(android.database.MatrixCursor,java.lang.String,int) -> access$000
+    55:55:java.lang.ref.WeakReference access$100(com.android.externalstorage.TestDocumentsProvider) -> access$100
+    107:108:void attachInfo(android.content.Context,android.content.pm.ProviderInfo) -> attachInfo
+    160:160:java.lang.String createDocument(java.lang.String,java.lang.String,java.lang.String) -> createDocument
+    394:406:void includeFile(android.database.MatrixCursor,java.lang.String,int) -> includeFile
+    314:314:android.os.ParcelFileDescriptor openDocument(java.lang.String,java.lang.String,android.os.CancellationSignal) -> openDocument
+    325:353:android.content.res.AssetFileDescriptor openDocumentThumbnail(java.lang.String,android.graphics.Point,android.os.CancellationSignal) -> openDocumentThumbnail
+    232:291:android.database.Cursor queryChildDocuments(java.lang.String,java.lang.String[],java.lang.String) -> queryChildDocuments
+    150:151:android.database.Cursor queryDocument(java.lang.String,java.lang.String[]) -> queryDocument
+    302:305:android.database.Cursor queryRecentDocuments(java.lang.String,java.lang.String[]) -> queryRecentDocuments
+    113:140:android.database.Cursor queryRoots(java.lang.String[]) -> queryRoots
+    100:100:java.lang.String[] resolveDocumentProjection(java.lang.String[]) -> resolveDocumentProjection
+    95:95:java.lang.String[] resolveRootProjection(java.lang.String[]) -> resolveRootProjection
+com.android.externalstorage.TestDocumentsProvider$2 -> com.android.externalstorage.TestDocumentsProvider$2:
+    262:262:void <init>(com.android.externalstorage.TestDocumentsProvider) -> <init>
+    265:270:void run() -> run
+com.android.externalstorage.TestDocumentsProvider$3 -> com.android.externalstorage.TestDocumentsProvider$3:
+    338:338:void <init>(com.android.externalstorage.TestDocumentsProvider,android.os.ParcelFileDescriptor[],java.io.ByteArrayInputStream) -> <init>
+    341:347:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.android.externalstorage.TestDocumentsProvider$CloudCursor -> com.android.externalstorage.TestDocumentsProvider$CloudCursor:
+    211:214:void <init>(java.lang.String[]) -> <init>
+    219:219:android.os.Bundle getExtras() -> getExtras
+com.android.externalstorage.TestDocumentsProvider$CloudTask -> com.android.externalstorage.TestDocumentsProvider$CloudTask:
+    175:177:void <init>(android.content.ContentResolver,android.net.Uri) -> <init>
+    194:201:boolean includeIfFinished(android.database.MatrixCursor) -> includeIfFinished
+    183:190:void run() -> run

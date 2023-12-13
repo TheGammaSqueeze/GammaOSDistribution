@@ -1,0 +1,35 @@
+out/soong/.primary/globs/139: \
+ art/test/301-abstract-protected \
+ art/test/597-deopt-invoke-stub/src \
+ art/test/814-large-field-offsets \
+ cts/common/device-side/util-axt \
+ cts/hostsidetests/backup/SyncAdapterSettingsApp \
+ cts/hostsidetests/jvmti/base/run-test-based-app \
+ cts/hostsidetests/jvmti/run-tests/test-1906 \
+ cts/hostsidetests/jvmti/run-tests/test-922/app \
+ cts/hostsidetests/jvmti/run-tests/test-926/app \
+ cts/hostsidetests/jvmti/run-tests/test-983 \
+ cts/tests/tests/calendarprovider \
+ cts/tests/tests/permission/AppThatAccessesLocationOnCommand \
+ cts/tests/tests/permission3/UsePermissionApp29 \
+ external/connectedappssdk \
+ external/guava \
+ external/llvm/lib/Option \
+ external/llvm/lib/Passes \
+ external/rust/crates/same-file \
+ frameworks/base/tests/FlickerTests/src \
+ frameworks/base/tests/LowStorageTest \
+ frameworks/ex/common/tests \
+ frameworks/native/data/etc \
+ hardware/interfaces/cas/native/1.0 \
+ libcore/metrictests/memory/apps \
+ libnativehelper/tests_mts \
+ packages/inputmethods/LatinIME/java/lint-baseline.xml \
+ packages/modules/Connectivity/Tethering/tests/unit \
+ packages/services/Car/vehicle-hal-support-lib \
+ prebuilts/abi-dumps/vndk/32/64/arm64_armv8-a/source-based \
+ prebuilts/sdk/30/public/android.test.runner.jar \
+ system/extras/tests/pftest \
+ system/sepolicy/tools/sepolicy-analyze \
+ tools/treble/LICENSE \
+ tools/trebuchet/trebuchet/startup-analyzer/src

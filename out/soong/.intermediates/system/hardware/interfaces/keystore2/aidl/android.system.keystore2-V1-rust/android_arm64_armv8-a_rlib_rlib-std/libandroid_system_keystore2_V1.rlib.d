@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-rust/android_arm64_armv8-a_rlib_rlib-std/libandroid_system_keystore2_V1.rlib: out/soong/.intermediates/system/hardware/interfaces/keystore2/aidl/android.system.keystore2-V1-rust/android_arm64_armv8-a_source/android_system_keystore2_V1.rs

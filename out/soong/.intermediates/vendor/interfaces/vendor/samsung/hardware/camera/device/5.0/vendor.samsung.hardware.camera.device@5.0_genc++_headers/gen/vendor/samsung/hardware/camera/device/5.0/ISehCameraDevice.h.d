@@ -1,0 +1,16 @@
+vendor/samsung/hardware/camera/device/5.0/ISehCameraDevice.h: \
+  hardware/interfaces/camera/common/1.0/types.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDevice.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDeviceCallback.hal \
+  hardware/interfaces/camera/device/3.2/ICameraDeviceSession.hal \
+  hardware/interfaces/camera/device/3.2/types.hal \
+  hardware/interfaces/camera/device/3.3/types.hal \
+  hardware/interfaces/camera/device/3.4/types.hal \
+  hardware/interfaces/camera/device/3.5/ICameraDevice.hal \
+  hardware/interfaces/camera/device/3.5/types.hal \
+  hardware/interfaces/camera/device/3.6/ICameraDevice.hal \
+  hardware/interfaces/camera/device/3.6/types.hal \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  vendor/interfaces/vendor/samsung/hardware/camera/device/5.0/ISehCameraDevice.hal \

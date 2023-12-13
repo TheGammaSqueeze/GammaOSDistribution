@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/libbt_facade_proto/android_arm_armv8-a_source/rootservice.rs: external/protobuf/src/google/protobuf/empty.proto system/bt/gd//facade/common.proto system/bt/gd//facade/rootservice.proto

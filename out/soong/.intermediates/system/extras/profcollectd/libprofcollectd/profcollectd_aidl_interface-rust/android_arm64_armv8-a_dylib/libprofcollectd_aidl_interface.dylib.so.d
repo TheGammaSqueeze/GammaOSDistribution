@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/extras/profcollectd/libprofcollectd/profcollectd_aidl_interface-rust/android_arm64_armv8-a_dylib/libprofcollectd_aidl_interface.dylib.so: out/soong/.intermediates/system/extras/profcollectd/libprofcollectd/profcollectd_aidl_interface-rust/android_arm64_armv8-a_source/profcollectd_aidl_interface.rs

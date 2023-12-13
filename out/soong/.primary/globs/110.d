@@ -1,0 +1,36 @@
+out/soong/.primary/globs/110: \
+ art/test/1339-dead-reference-safe \
+ art/test/1928-exception-event-exception \
+ art/test/660-checker-simd-sad \
+ cts/hostsidetests/appsecurity/test-apps/InstantUpgradeApp \
+ cts/hostsidetests/jvmti/run-tests/test-1916/app \
+ cts/hostsidetests/jvmti/run-tests/test-918/app \
+ cts/hostsidetests/jvmti/run-tests/test-926/app \
+ cts/hostsidetests/jvmti/run-tests/test-988/app \
+ cts/hostsidetests/securitybulletin/test-apps/CVE-2021-0478 \
+ cts/tests/camera/utils/src \
+ cts/tests/tests/effect \
+ cts/tests/tests/packagewatchdog/src \
+ cts/tests/tests/telephony/current/preconditions/preparerApp \
+ cts/tools/release-parser/tests \
+ development/samples/DataWiper \
+ development/samples/LunarLander/tests \
+ development/samples/MultiResolution \
+ development/samples/VoiceRecognitionService \
+ device/google/cuttlefish/tests/graphics \
+ device/phh/treble/hal/oppo-fp \
+ external/rust/crates/getrandom \
+ frameworks/base/core/tests/coretests/apks/locales \
+ frameworks/base/media/lib/tvremote/tests \
+ frameworks/base/packages/services/CameraExtensionsProxy \
+ frameworks/base/tests/FlickerTests \
+ frameworks/base/tests/NullHomeTest \
+ frameworks/opt/chips \
+ hardware/interfaces/secure_element/1.2 \
+ hardware/interfaces/tetheroffload/config/1.0 \
+ hardware/lineage/livedisplay/sysfs \
+ packages/services/Mms/tests/robotests \
+ packages/services/Telecomm/testapps/companionapp \
+ prebuilts/misc/common/nimbus-jose-jwt \
+ system/sepolicy/reqd_mask \
+ vendor/interfaces/vendor/samsung/hardware/sysinput/1.2

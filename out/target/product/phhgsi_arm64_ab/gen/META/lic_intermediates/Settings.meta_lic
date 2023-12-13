@@ -1,0 +1,48 @@
+license_package_name: "packages_apps_Settings_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "packages/apps/Settings/NOTICE"
+is_container: true
+target: "out/target/product/phhgsi_arm64_ab/obj/APPS/Settings_intermediates/package.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Settings/Settings.apk"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Settings/oat/arm64/Settings.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/Settings/oat/arm64/Settings.vdex"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/privapp_whitelist_com.android.settings.meta_lic
+  dep_package_name:  "frameworks_base_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-CC-BY"
+  dep_license_kind: "SPDX-license-identifier-CPL-1.0"
+  dep_license_kind: "SPDX-license-identifier-GPL"
+  dep_license_kind: "SPDX-license-identifier-GPL-2.0"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "SPDX-license-identifier-Unicode-DFS"
+  dep_license_kind: "SPDX-license-identifier-W3C"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "reciprocal"
+  dep_license_condition: "restricted"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "frameworks/base/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/privapp_whitelist_com.android.settings_intermediates/privapp_whitelist_com.android.settings"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/permissions/com.android.settings.xml"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "reciprocal"
+  dep_effective_condition: "restricted"
+  dep_effective_condition: "unencumbered"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/settings-platform-compat-config.meta_lic
+  dep_package_name:  "packages_apps_Settings_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "packages/apps/Settings/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/settings-platform-compat-config_intermediates/settings-platform-compat-config"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/system_ext/etc/compatconfig/settings-platform-compat-config.xml"
+  dep_effective_condition: "notice"
+}

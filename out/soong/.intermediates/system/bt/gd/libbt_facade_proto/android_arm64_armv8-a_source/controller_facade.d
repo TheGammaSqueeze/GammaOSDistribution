@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/bt/gd/libbt_facade_proto/android_arm64_armv8-a_source/controller_facade.rs: external/protobuf/src/google/protobuf/empty.proto system/bt/gd//hci/facade/controller_facade.proto

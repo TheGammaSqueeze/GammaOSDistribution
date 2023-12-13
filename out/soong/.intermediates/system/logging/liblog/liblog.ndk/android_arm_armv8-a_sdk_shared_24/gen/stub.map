@@ -1,0 +1,17 @@
+LIBLOG {
+    global:
+        __android_log_assert;
+        __android_log_buf_print;
+        __android_log_buf_write;
+        __android_log_print;
+        __android_log_vprint;
+        __android_log_write;
+};
+LIBLOG_M {
+    global:
+        __android_log_is_loggable;
+};
+LIBLOG_O {
+    global:
+        __android_log_is_loggable_len;
+};

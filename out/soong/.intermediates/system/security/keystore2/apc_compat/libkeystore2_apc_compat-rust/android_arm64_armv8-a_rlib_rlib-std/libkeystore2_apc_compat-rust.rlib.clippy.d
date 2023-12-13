@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/keystore2/apc_compat/libkeystore2_apc_compat-rust/android_arm64_armv8-a_rlib_rlib-std/libkeystore2_apc_compat-rust.rlib.clippy: system/security/keystore2/apc_compat/apc_compat.rs

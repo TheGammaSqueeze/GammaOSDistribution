@@ -1,0 +1,1 @@
+out/soong/.intermediates/system/security/ondevice-signing/proto/lib_odsign_proto/android_arm64_armv8-a_static_cfi/gen/proto/system/security/ondevice-signing/proto/odsign_info.pb.cc: system/security/ondevice-signing/proto/odsign_info.proto

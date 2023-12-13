@@ -1,0 +1,35 @@
+Package name: Module name in Android tree: SdkSetup
+Local path in Android tree: development/apps/SdkSetup
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/system_ext/priv-app/SdkSetup/SdkSetup.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Linking unsupported Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; use(s):
+       Lcom/android/sdksetup/DefaultActivity;->setKeyboardLayout(Landroid/view/InputDevice;Ljava/lang/String;)V
+
+#2: Linking max-target-o Landroid/hardware/input/InputManager;->getKeyboardLayoutsForInputDevice(Landroid/hardware/input/InputDeviceIdentifier;)[Landroid/hardware/input/KeyboardLayout; use(s):
+       Lcom/android/sdksetup/DefaultActivity;->setKeyboardLayout(Landroid/view/InputDevice;Ljava/lang/String;)V
+
+#3: Linking max-target-o Landroid/hardware/input/InputManager;->setCurrentKeyboardLayoutForInputDevice(Landroid/hardware/input/InputDeviceIdentifier;Ljava/lang/String;)V use(s):
+       Lcom/android/sdksetup/DefaultActivity;->setKeyboardLayout(Landroid/view/InputDevice;Ljava/lang/String;)V
+
+#4: Linking max-target-o Landroid/hardware/input/KeyboardLayout;->getDescriptor()Ljava/lang/String; use(s):
+       Lcom/android/sdksetup/DefaultActivity;->setKeyboardLayout(Landroid/view/InputDevice;Ljava/lang/String;)V (2 occurrences)
+
+#5: Linking max-target-o Landroid/view/InputDevice;->getIdentifier()Landroid/hardware/input/InputDeviceIdentifier; use(s):
+       Lcom/android/sdksetup/DefaultActivity;->setKeyboardLayout(Landroid/view/InputDevice;Ljava/lang/String;)V (2 occurrences)
+
+#6: Linking unsupported,test-api Landroid/os/Build;->IS_EMULATOR:Z use(s):
+       Lcom/android/sdksetup/DefaultActivity;->onCreate(Landroid/os/Bundle;)V
+
+6 hidden API(s) used: 6 linked against, 0 through reflection
+	2 in unsupported
+	0 in blocked
+	4 in max-target-o
+	0 in max-target-p
+	0 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

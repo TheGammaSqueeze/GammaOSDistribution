@@ -1,0 +1,19 @@
+vendor/mediatek/hardware/radio/2.4/RadioAll.cpp: \
+  hardware/interfaces/radio/1.0/IRadio.hal \
+  hardware/interfaces/radio/1.0/IRadioIndication.hal \
+  hardware/interfaces/radio/1.0/IRadioResponse.hal \
+  hardware/interfaces/radio/1.0/types.hal \
+  hardware/interfaces/radio/1.1/IRadio.hal \
+  hardware/interfaces/radio/1.1/IRadioIndication.hal \
+  hardware/interfaces/radio/1.1/IRadioResponse.hal \
+  hardware/interfaces/radio/1.1/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.0/IRadio.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.0/IRadioIndication.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.0/IRadioResponse.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.0/types.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.1/IRadio.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.2/IRadio.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.3/IRadio.hal \
+  vendor/interfaces/vendor/mediatek/hardware/radio/2.4/IRadio.hal \

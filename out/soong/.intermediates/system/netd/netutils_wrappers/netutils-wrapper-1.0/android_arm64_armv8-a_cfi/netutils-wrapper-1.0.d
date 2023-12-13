@@ -1,0 +1,2 @@
+out/soong/.intermediates/system/netd/netutils_wrappers/netutils-wrapper-1.0/android_arm64_armv8-a_cfi/netutils-wrapper-1.0:   out/soong/.intermediates/system/netd/netutils_wrappers/netutils-wrapper-1.0/android_arm64_armv8-a_cfi/unstripped/netutils-wrapper-1.0   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

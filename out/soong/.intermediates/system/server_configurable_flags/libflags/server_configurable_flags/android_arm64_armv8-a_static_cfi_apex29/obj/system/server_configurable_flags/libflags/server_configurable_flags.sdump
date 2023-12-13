@@ -1,0 +1,111 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "server_configurable_flags::BOOT_FAILURE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "server_configurable_flags::UPDATABLE_CRASHING"
+    }
+   ],
+   "linker_set_key" : "_ZTIN25server_configurable_flags9ResetModeE",
+   "name" : "server_configurable_flags::ResetMode",
+   "referenced_type" : "_ZTIN25server_configurable_flags9ResetModeE",
+   "self_type" : "_ZTIN25server_configurable_flags9ResetModeE",
+   "size" : 4,
+   "source_file" : "system/server_configurable_flags/libflags/include/server_configurable_flags/disaster_recovery.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "server_configurable_flags::GetServerConfigurableFlag",
+   "linker_set_key" : "_ZN25server_configurable_flags25GetServerConfigurableFlagERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_S8_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "system/server_configurable_flags/libflags/include/server_configurable_flags/get_flags.h"
+  },
+  {
+   "function_name" : "server_configurable_flags::ServerConfigurableFlagsReset",
+   "linker_set_key" : "_ZN25server_configurable_flags28ServerConfigurableFlagsResetENS_9ResetModeE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN25server_configurable_flags9ResetModeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/server_configurable_flags/libflags/include/server_configurable_flags/disaster_recovery.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "system/server_configurable_flags/libflags/include/server_configurable_flags/get_flags.h"
+  }
+ ],
+ "pointer_types" : [],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "system/server_configurable_flags/libflags/include/server_configurable_flags/get_flags.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

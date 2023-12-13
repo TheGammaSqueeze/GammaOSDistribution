@@ -1,0 +1,21 @@
+commands: <
+  command: "BISON_PKGDATADIR=prebuilts/build-tools/common/bison M4=prebuilts/build-tools/linux-x86/bin/m4 prebuilts/build-tools/linux-x86/bin/bison -d --defines=__SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/language_y.h -o __SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/language_y.cpp system/bt/gd/packet/parser/language_y.yy && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/language_y.cpp && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/language_y.h && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/location.hh && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/system/bt/gd/packet/parser/position.hh"
+  copy_after: <
+    from: "out/system/bt/gd/packet/parser/language_y.cpp"
+    to: "out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc/system/bt/gd/packet/parser/language_y.cpp"
+  >
+  copy_after: <
+    from: "out/system/bt/gd/packet/parser/language_y.h"
+    to: "out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc/system/bt/gd/packet/parser/language_y.h"
+  >
+  copy_after: <
+    from: "out/system/bt/gd/packet/parser/location.hh"
+    to: "out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc/system/bt/gd/packet/parser/location.hh"
+  >
+  copy_after: <
+    from: "out/system/bt/gd/packet/parser/position.hh"
+    to: "out/soong/.intermediates/system/bt/gd/packet/parser/bluetooth_packetgen/linux_glibc_x86_64/gen/yacc/system/bt/gd/packet/parser/position.hh"
+  >
+  input_hash: "fc243804219491fbf4a837d8cf2eeb4eb16d42be8293005fb348b01fa12f19a9"
+>
+

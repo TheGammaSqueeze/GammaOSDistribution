@@ -1,0 +1,34 @@
+out/soong/.primary/globs/168: \
+ art/test/1923-frame-pop \
+ art/test/636-arm64-veneer-pool \
+ art/test/689-multi-catch \
+ build/soong/cc/ndk_api_coverage_parser \
+ build/soong/cc/ndkstubgen \
+ cts/common/device-side/bedstead/metricsrecorder \
+ cts/common/device-side/test-app \
+ cts/hostsidetests/appsecurity/test-apps/AppDataIsolationTestApp \
+ cts/hostsidetests/appsecurity/test-apps/StatsdSecurityApp/src \
+ cts/tests/tests/nativehardware/jni \
+ cts/tests/tests/notificationlegacy/notificationlegacy29 \
+ device/generic/goldfish-opengl/system/codecs/c2/service \
+ external/OpenCL-CTS/dependencies \
+ external/llvm/lib/MC/MCDisassembler \
+ external/noto-fonts/other/NOTICE \
+ external/oauth/core/src/main/java \
+ external/oss-fuzz/LICENSE \
+ frameworks/av/media/libeffects/lvm/lib/Bundle/lib \
+ frameworks/base/core/tests/hosttests/test-apps/NoLocVersionedTestApp_v1 \
+ hardware/interfaces/biometrics/face/aidl \
+ hardware/qcom-caf/bootctrl/NOTICE \
+ libcore/luni/src/test/parameter_metadata \
+ packages/apps/ExactCalculator/src \
+ packages/modules/Permission/framework/api/module-lib-removed.txt \
+ packages/services/Car/service/jni \
+ platform_testing/libraries/audio-test-harness/proto \
+ platform_testing/libraries/power-helper/sample \
+ prebuilts/abi-dumps/ndk/32/64/arm_armv8-a/source-based \
+ prebuilts/tools/common/m2/repository/io/netty/netty-codec \
+ system/bt/stack/test/fuzzers/a2dp/codec \
+ system/extras/tests/iptables/qtaguid \
+ system/libhwbinder/vts/performance \
+ test/vts/hals/light/bullhead/NOTICE

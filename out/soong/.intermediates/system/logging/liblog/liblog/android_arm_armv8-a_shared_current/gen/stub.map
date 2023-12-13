@@ -1,0 +1,61 @@
+LIBLOG {
+    global:
+        android_name_to_log_id;
+        __android_log_assert;
+        __android_log_buf_print;
+        __android_log_buf_write;
+        __android_log_print;
+        __android_log_vprint;
+        __android_log_write;
+};
+LIBLOG_L {
+    global:
+        android_logger_list_alloc;
+        android_logger_list_alloc_time;
+        android_logger_list_free;
+        android_logger_list_open;
+        android_logger_list_read;
+        android_logger_open;
+};
+LIBLOG_M {
+    global:
+        __android_log_error_write;
+        __android_log_is_loggable;
+        create_android_logger;
+        android_log_destroy;
+        android_log_write_list_begin;
+        android_log_write_list_end;
+        android_log_write_int32;
+        android_log_write_int64;
+        android_log_write_string8;
+        android_log_write_string8_len;
+        android_log_write_float32;
+        android_log_write_list;
+};
+LIBLOG_O {
+    global:
+        __android_log_is_loggable_len;
+        __android_log_is_debuggable;
+};
+LIBLOG_Q {
+    global:
+        __android_log_bswrite;
+        __android_log_btwrite;
+        __android_log_bwrite;
+        __android_log_close;
+        __android_log_security;
+};
+LIBLOG_R {
+    global:
+        __android_log_call_aborter;
+        __android_log_default_aborter;
+        __android_log_get_minimum_priority;
+        __android_log_logd_logger;
+        __android_log_security_bswrite;
+        __android_log_set_aborter;
+        __android_log_set_default_tag;
+        __android_log_set_logger;
+        __android_log_set_minimum_priority;
+        __android_log_stderr_logger;
+        __android_log_write_log_message;
+};
