@@ -1,0 +1,129 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/metalava"
+    to: "tools/out/bin/metalava"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/zipsync"
+    to: "tools/out/bin/zipsync"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/framework/metalava.jar"
+    to: "tools/out/framework/metalava.jar"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/DeadObjectException.java"
+    to: "frameworks/base/core/java/android/os/DeadObjectException.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/DeadSystemException.java"
+    to: "frameworks/base/core/java/android/os/DeadSystemException.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/HidlMemory.java"
+    to: "frameworks/base/core/java/android/os/HidlMemory.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/HidlSupport.java"
+    to: "frameworks/base/core/java/android/os/HidlSupport.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/HwBinder.java"
+    to: "frameworks/base/core/java/android/os/HwBinder.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/HwBlob.java"
+    to: "frameworks/base/core/java/android/os/HwBlob.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/HwParcel.java"
+    to: "frameworks/base/core/java/android/os/HwParcel.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/IHwBinder.java"
+    to: "frameworks/base/core/java/android/os/IHwBinder.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/IHwInterface.java"
+    to: "frameworks/base/core/java/android/os/IHwInterface.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/NativeHandle.java"
+    to: "frameworks/base/core/java/android/os/NativeHandle.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/os/RemoteException.java"
+    to: "frameworks/base/core/java/android/os/RemoteException.java"
+  >
+  copy_before: <
+    from: "frameworks/base/core/java/android/util/AndroidException.java"
+    to: "frameworks/base/core/java/android/util/AndroidException.java"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+    to: "out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+    to: "out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+    to: "out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/prebuilts/sdk/android.api.public.latest/gen/android.api.public.latest"
+    to: "out/.intermediates/prebuilts/sdk/android.api.public.latest/gen/android.api.public.latest"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/accounts/annotations.xml"
+    to: "tools/metalava/manual/android/accounts/annotations.xml"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/content/annotations.xml"
+    to: "tools/metalava/manual/android/content/annotations.xml"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/location/annotations.xml"
+    to: "tools/metalava/manual/android/location/annotations.xml"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/provider/annotations.xml"
+    to: "tools/metalava/manual/android/provider/annotations.xml"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/text/annotations.xml"
+    to: "tools/metalava/manual/android/text/annotations.xml"
+  >
+  copy_before: <
+    from: "tools/metalava/manual/android/util/annotations.xml"
+    to: "tools/metalava/manual/android/util/annotations.xml"
+  >
+  chdir: true
+  command: "rm -rf out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/stubsDir && mkdir -p out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/stubsDir && rm -rf __SBOX_SANDBOX_DIR__/out/srcjars && mkdir -p __SBOX_SANDBOX_DIR__/out/srcjars && __SBOX_SANDBOX_DIR__/tools/out/bin/zipsync -d __SBOX_SANDBOX_DIR__/out/srcjars -l __SBOX_SANDBOX_DIR__/out/srcjars/list -f \"*.java\" && rm -rf out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/home && mkdir -p out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/home && ANDROID_PREFS_ROOT=out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/home __SBOX_SANDBOX_DIR__/tools/out/bin/metalava -J-XX:OnError=\"cat hs_err_pid%p.log\" -J-XX:CICompilerCount=6 -J-XX:+UseDynamicNumberOfGCThreads -J--add-opens=java.base/java.util=ALL-UNNAMED -encoding UTF-8 -source 1.9 @__SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava.rsp @__SBOX_SANDBOX_DIR__/out/srcjars/list -bootclasspath __SBOX_SANDBOX_DIR__/out/.intermediates/libcore/mmodules/core_platform_api/stable.core.platform.api.stubs/android_common/combined/stable.core.platform.api.stubs.jar:__SBOX_SANDBOX_DIR__/out/.intermediates/libcore/core-lambda-stubs/android_common/javac/core-lambda-stubs.jar -classpath __SBOX_SANDBOX_DIR__/out/.intermediates/frameworks/libs/modules-utils/java/framework-annotations-lib/android_common/turbine-combined/framework-annotations-lib.jar --no-banner --color --quiet --format=v2 --repeat-errors-max 10 --hide UnresolvedImport --stubs out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/stubsDir --exclude-documentation-from-stubs --include-annotations --exclude-annotation androidx.annotation.RequiresApi --migrate-nullness __SBOX_SANDBOX_DIR__/out/.intermediates/prebuilts/sdk/android.api.public.latest/gen/android.api.public.latest --extract-annotations __SBOX_SANDBOX_DIR__/out/hwbinder-stubs-docs_annotations.zip --merge-qualifier-annotations tools/metalava/manual --hide HiddenTypedefConstant --hide SuperfluousPrefix --hide AnnotationExtraction  --show-annotation android.annotation.SystemApi\\(client=android.annotation.SystemApi.Client.PRIVILEGED_APPS\\) && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -write_if_changed -jar -o __SBOX_SANDBOX_DIR__/out/hwbinder-stubs-docs-stubs.srcjar -C out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/stubsDir -D out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/stubsDir && rm -rf out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/srcjars"
+  copy_after: <
+    from: "out/hwbinder-stubs-docs-stubs.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/hwbinder-stubs-docs-stubs.srcjar"
+  >
+  copy_after: <
+    from: "out/hwbinder-stubs-docs_annotations.zip"
+    to: "out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava/hwbinder-stubs-docs_annotations.zip"
+  >
+  input_hash: "d895d28e526b151bc1ac43aad46b335bd0dd08ae57b355e6740a4c7344167947"
+  rsp_files: <
+    file: "out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava.rsp"
+    path_mappings: <
+      from: "out/soong/.intermediates/frameworks/base/hwbinder-stubs-docs/android_common/metalava"
+      to: "out"
+    >
+    path_mappings: <
+      from: "out/soong"
+      to: "out"
+    >
+  >
+>
+
