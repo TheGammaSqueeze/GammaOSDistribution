@@ -1,0 +1,120 @@
+Package name: org.lineageos.etar
+Module name in Android tree: Etar
+Local path in Android tree: packages/apps/Etar
+Install path on lineage_arm64_bvN-userdebug: out/target/product/phhgsi_arm64_ab/system/product/app/Etar/Etar.apk
+
+appcompat.sh output:
+NOTE: appcompat.sh is still under development. It can report
+API uses that do not execute at runtime, and reflection uses
+that do not exist. It can also miss on reflection uses.
+#1: Reflection max-target-p Landroid/animation/LayoutTransition;->cancel use(s):
+       Landroidx/transition/ViewGroupUtilsApi14;->cancelLayoutTransition(Landroid/animation/LayoutTransition;)V
+
+#2: Reflection unsupported Landroid/app/Activity;->mMainThread use(s):
+       Landroidx/core/app/ActivityRecreator;->getMainThreadField()Ljava/lang/reflect/Field;
+
+#3: Reflection unsupported Landroid/app/Activity;->mToken use(s):
+       Landroidx/core/app/ActivityRecreator;->getTokenField()Ljava/lang/reflect/Field;
+
+#4: Reflection unsupported Landroid/app/Dialog;->mOnKeyListener use(s):
+       Landroidx/core/view/KeyEventDispatcher;->getDialogKeyListenerPre28(Landroid/app/Dialog;)Landroid/content/DialogInterface$OnKeyListener;
+
+#5: Reflection blocked Landroid/content/res/Resources$Theme;->rebase use(s):
+       Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi23;->rebase(Landroid/content/res/Resources$Theme;)V
+
+#6: Reflection unsupported Landroid/content/res/Resources;->mResourcesImpl use(s):
+       Landroidx/appcompat/app/ResourcesFlusher;->flushNougats(Landroid/content/res/Resources;)V
+
+#7: Reflection unsupported Landroid/graphics/Typeface;->createFromFamiliesWithDefault use(s):
+       Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
+       Landroidx/core/graphics/TypefaceCompatApi24Impl;-><clinit>()V
+       Landroidx/core/graphics/TypefaceCompatApi26Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+       Landroidx/core/graphics/TypefaceCompatApi28Impl;->obtainCreateFromFamiliesWithDefaultMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+#8: Reflection unsupported Landroid/graphics/Typeface;->native_instance use(s):
+       Landroidx/core/graphics/TypefaceCompatBaseImpl;->getUniqueKey(Landroid/graphics/Typeface;)J
+
+#9: Reflection unsupported Landroid/os/Trace;->TRACE_TAG_APP use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#10: Reflection unsupported Landroid/os/Trace;->isTagEnabled use(s):
+       Landroidx/tracing/Trace;->isEnabledFallback()Z
+
+#11: Reflection unsupported Landroid/view/LayoutInflater;->mFactory2 use(s):
+       Landroidx/core/view/LayoutInflaterCompat;->forceSetFactory2(Landroid/view/LayoutInflater;Landroid/view/LayoutInflater$Factory2;)V
+
+#12: Reflection max-target-q Landroid/view/View$AttachInfo;->mContentInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#13: Reflection max-target-q Landroid/view/View$AttachInfo;->mStableInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#14: Reflection max-target-q Landroid/view/View$AttachInfo;->mVisibleInsets use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#15: Reflection unsupported Landroid/view/View;->computeFitSystemWindows use(s):
+       Landroidx/appcompat/widget/ViewUtils;-><clinit>()V
+
+#16: Reflection unsupported Landroid/view/View;->getViewRootImpl use(s):
+       Landroidx/core/view/WindowInsetsCompat$Impl20;->loadReflectionField()V
+
+#17: Reflection unsupported Landroid/view/View;->mAccessibilityDelegate use(s):
+       Landroidx/core/view/ViewCompat;->getAccessibilityDelegateThroughReflection(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
+
+#18: Reflection max-target-p Landroid/view/View;->mAttachInfo use(s):
+       Landroidx/core/view/WindowInsetsCompat$Api21ReflectionHolder;-><clinit>()V
+
+#19: Reflection max-target-p Landroid/view/View;->mViewFlags use(s):
+       Landroidx/transition/ViewUtilsBase;->setTransitionVisibility(Landroid/view/View;I)V
+
+#20: Reflection max-target-p Landroid/view/View;->setFrame use(s):
+       Landroidx/transition/ViewUtilsBase;->fetchSetFrame()V
+
+#21: Reflection max-target-p Landroid/view/inputmethod/InputMethodManager;->mH use(s):
+       Landroidx/activity/ImmLeaksCleaner;->initializeReflectiveFields()V
+
+#22: Reflection unsupported Landroid/widget/AbsListView;->mIsChildViewEnabled use(s):
+       Landroidx/appcompat/widget/DropDownListView;-><init>(Landroid/content/Context;Z)V
+
+#23: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doAfterTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#24: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->doBeforeTextChanged use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#25: Reflection max-target-p Landroid/widget/AutoCompleteTextView;->ensureImeVisible use(s):
+       Landroidx/appcompat/widget/SearchView$PreQAutoCompleteTextViewReflector;-><init>()V
+
+#26: Reflection max-target-p Landroid/widget/TextView;->getHorizontallyScrolling use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper$Impl;->isHorizontallyScrollable(Landroid/widget/TextView;)Z
+
+#27: Reflection unsupported Landroid/widget/TextView;->getLayoutAlignment use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->suggestedSizeFitsInSpace(ILandroid/graphics/RectF;)Z
+
+#28: Reflection unsupported Landroid/widget/TextView;->mIncludePad use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#29: Reflection unsupported Landroid/widget/TextView;->mSpacingAdd use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#30: Reflection unsupported Landroid/widget/TextView;->mSpacingMult use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->createStaticLayoutForMeasuringPre16(Ljava/lang/CharSequence;Landroid/text/Layout$Alignment;I)Landroid/text/StaticLayout;
+
+#31: Reflection unsupported Landroid/widget/TextView;->nullLayouts use(s):
+       Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->setRawTextSize(F)V
+
+#32: Reflection max-target-o Lcom/android/internal/view/menu/MenuBuilder;->removeItemAt use(s):
+       Landroidx/core/widget/TextViewCompat$OreoCallback;->recomputeProcessTextMenuItems(Landroid/view/Menu;)V
+
+#33: Reflection unsupported,core-platform-api Ljava/lang/Thread;->getUncaughtExceptionPreHandler use(s):
+       Lkotlinx/coroutines/android/AndroidExceptionPreHandler;->invoke()Ljava/lang/reflect/Method;
+
+33 hidden API(s) used: 0 linked against, 33 through reflection
+	19 in unsupported
+	1 in blocked
+	1 in max-target-o
+	9 in max-target-p
+	3 in max-target-q
+	0 in max-target-r
+To run an analysis that can give more reflection accesses, 
+but could include false positives, pass the --imprecise flag. 

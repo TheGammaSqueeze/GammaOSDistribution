@@ -1,0 +1,77 @@
+commands: <
+  copy_before: <
+    from: "external/iptables/extensions/filter_init"
+    to: "tools/src/external/iptables/extensions/filter_init"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_quota.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_quota.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_quota2.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_quota2.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_rateest.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_rateest.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_recent.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_recent.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_rpfilter.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_rpfilter.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_sctp.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_sctp.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_set.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_set.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_socket.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_socket.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_standard.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_standard.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_statistic.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_statistic.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_string.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_string.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_tcp.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_tcp.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_tcpmss.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_tcpmss.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_time.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_time.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_tos.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_tos.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_u32.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_u32.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libxt_udp.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libxt_udp.c'"
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_quota.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_quota.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_quota2.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_quota2.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_rateest.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_rateest.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_recent.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_recent.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_rpfilter.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_rpfilter.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_sctp.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_sctp.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_set.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_set.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_socket.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_socket.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_standard.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_standard.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_statistic.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_statistic.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_string.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_string.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_tcp.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_tcp.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_tcpmss.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_tcpmss.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_time.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_time.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_tos.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_tos.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_u32.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_u32.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libxt_udp.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext_srcs/gen/1/external/iptables/extensions/libxt_udp.c"
+  >
+  input_hash: "6d9ec7b0157d01dd9167f23c22a6de6143c416a6556ff35b6d1f15064ca35834"
+>
+
