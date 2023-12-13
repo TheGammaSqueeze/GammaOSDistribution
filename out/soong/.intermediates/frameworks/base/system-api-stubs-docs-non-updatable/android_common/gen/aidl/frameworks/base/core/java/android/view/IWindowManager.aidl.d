@@ -1,0 +1,100 @@
+out/soong/.intermediates/frameworks/base/system-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl17.tmp/frameworks/base/core/java/android/view/IWindowManager.java : \
+  frameworks/base/core/java/android/view/IWindowManager.aidl \
+  frameworks/base/core/java/com/android/internal/os/IResultReceiver.aidl \
+  frameworks/base/core/java/com/android/internal/policy/IKeyguardDismissCallback.aidl \
+  frameworks/base/core/java/com/android/internal/policy/IShortcutService.aidl \
+  frameworks/base/core/java/android/app/IAssistDataReceiver.aidl \
+  frameworks/base/core/java/android/content/res/CompatibilityInfo.aidl \
+  frameworks/base/core/java/android/content/res/Configuration.aidl \
+  frameworks/base/graphics/java/android/graphics/Bitmap.aidl \
+  frameworks/base/graphics/java/android/graphics/GraphicBuffer.aidl \
+  frameworks/base/graphics/java/android/graphics/Insets.aidl \
+  frameworks/base/graphics/java/android/graphics/Point.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/graphics/java/android/graphics/Region.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/IRemoteCallback.aidl \
+  frameworks/base/core/java/android/view/DisplayCutout.aidl \
+  frameworks/base/core/java/android/view/IApplicationToken.aidl \
+  frameworks/base/core/java/android/view/IAppTransitionAnimationSpecsFuture.aidl \
+  frameworks/base/core/java/android/view/ICrossWindowBlurEnabledListener.aidl \
+  frameworks/base/core/java/android/view/IDisplayWindowInsetsController.aidl \
+  frameworks/base/core/java/android/view/IDisplayWindowListener.aidl \
+  frameworks/base/core/java/android/view/IDisplayFoldListener.aidl \
+  frameworks/base/core/java/android/view/IDisplayWindowRotationController.aidl \
+  frameworks/base/core/java/android/view/IOnKeyguardExitResult.aidl \
+  frameworks/base/core/java/android/view/IPinnedTaskListener.aidl \
+  frameworks/base/core/java/android/view/IScrollCaptureResponseListener.aidl \
+  frameworks/base/core/java/android/view/RemoteAnimationAdapter.aidl \
+  frameworks/base/core/java/android/view/IRotationWatcher.aidl \
+  frameworks/base/core/java/android/view/ISystemGestureExclusionListener.aidl \
+  frameworks/base/core/java/android/view/IWallpaperVisibilityListener.aidl \
+  frameworks/base/core/java/android/view/IWindow.aidl \
+  frameworks/base/core/java/android/view/IWindowSession.aidl \
+  frameworks/base/core/java/android/view/IWindowSessionCallback.aidl \
+  frameworks/base/core/java/android/view/KeyEvent.aidl \
+  frameworks/base/core/java/android/view/InputEvent.aidl \
+  frameworks/base/core/java/android/view/InsetsState.aidl \
+  frameworks/base/core/java/android/view/InsetsVisibilities.aidl \
+  frameworks/base/core/java/android/view/MagnificationSpec.aidl \
+  frameworks/base/core/java/android/view/MotionEvent.aidl \
+  frameworks/base/core/java/android/view/InputChannel.aidl \
+  frameworks/base/core/java/android/view/InputDevice.aidl \
+  frameworks/base/core/java/android/view/IInputFilter.aidl \
+  frameworks/base/core/java/android/view/AppTransitionAnimationSpec.aidl \
+  frameworks/base/core/java/android/view/TaskTransitionSpec.aidl \
+  frameworks/base/core/java/android/view/WindowContentFrameStats.aidl \
+  frameworks/base/core/java/android/view/WindowManager.aidl \
+  frameworks/base/core/java/android/view/SurfaceControl.aidl \
+  frameworks/base/core/java/android/view/displayhash/DisplayHash.aidl \
+  frameworks/base/core/java/android/view/displayhash/VerifiedDisplayHash.aidl
+
+frameworks/base/core/java/android/view/IWindowManager.aidl :
+frameworks/base/core/java/com/android/internal/os/IResultReceiver.aidl :
+frameworks/base/core/java/com/android/internal/policy/IKeyguardDismissCallback.aidl :
+frameworks/base/core/java/com/android/internal/policy/IShortcutService.aidl :
+frameworks/base/core/java/android/app/IAssistDataReceiver.aidl :
+frameworks/base/core/java/android/content/res/CompatibilityInfo.aidl :
+frameworks/base/core/java/android/content/res/Configuration.aidl :
+frameworks/base/graphics/java/android/graphics/Bitmap.aidl :
+frameworks/base/graphics/java/android/graphics/GraphicBuffer.aidl :
+frameworks/base/graphics/java/android/graphics/Insets.aidl :
+frameworks/base/graphics/java/android/graphics/Point.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/graphics/java/android/graphics/Region.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/IRemoteCallback.aidl :
+frameworks/base/core/java/android/view/DisplayCutout.aidl :
+frameworks/base/core/java/android/view/IApplicationToken.aidl :
+frameworks/base/core/java/android/view/IAppTransitionAnimationSpecsFuture.aidl :
+frameworks/base/core/java/android/view/ICrossWindowBlurEnabledListener.aidl :
+frameworks/base/core/java/android/view/IDisplayWindowInsetsController.aidl :
+frameworks/base/core/java/android/view/IDisplayWindowListener.aidl :
+frameworks/base/core/java/android/view/IDisplayFoldListener.aidl :
+frameworks/base/core/java/android/view/IDisplayWindowRotationController.aidl :
+frameworks/base/core/java/android/view/IOnKeyguardExitResult.aidl :
+frameworks/base/core/java/android/view/IPinnedTaskListener.aidl :
+frameworks/base/core/java/android/view/IScrollCaptureResponseListener.aidl :
+frameworks/base/core/java/android/view/RemoteAnimationAdapter.aidl :
+frameworks/base/core/java/android/view/IRotationWatcher.aidl :
+frameworks/base/core/java/android/view/ISystemGestureExclusionListener.aidl :
+frameworks/base/core/java/android/view/IWallpaperVisibilityListener.aidl :
+frameworks/base/core/java/android/view/IWindow.aidl :
+frameworks/base/core/java/android/view/IWindowSession.aidl :
+frameworks/base/core/java/android/view/IWindowSessionCallback.aidl :
+frameworks/base/core/java/android/view/KeyEvent.aidl :
+frameworks/base/core/java/android/view/InputEvent.aidl :
+frameworks/base/core/java/android/view/InsetsState.aidl :
+frameworks/base/core/java/android/view/InsetsVisibilities.aidl :
+frameworks/base/core/java/android/view/MagnificationSpec.aidl :
+frameworks/base/core/java/android/view/MotionEvent.aidl :
+frameworks/base/core/java/android/view/InputChannel.aidl :
+frameworks/base/core/java/android/view/InputDevice.aidl :
+frameworks/base/core/java/android/view/IInputFilter.aidl :
+frameworks/base/core/java/android/view/AppTransitionAnimationSpec.aidl :
+frameworks/base/core/java/android/view/TaskTransitionSpec.aidl :
+frameworks/base/core/java/android/view/WindowContentFrameStats.aidl :
+frameworks/base/core/java/android/view/WindowManager.aidl :
+frameworks/base/core/java/android/view/SurfaceControl.aidl :
+frameworks/base/core/java/android/view/displayhash/DisplayHash.aidl :
+frameworks/base/core/java/android/view/displayhash/VerifiedDisplayHash.aidl :

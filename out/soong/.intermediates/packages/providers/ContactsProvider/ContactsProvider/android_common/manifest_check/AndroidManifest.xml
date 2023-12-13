@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.shared" android:sharedUserLabel="@string/sharedUserLabel" package="com.android.providers.contacts" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.BIND_DIRECTORY_SEARCH"/>
+    <!-- For sending voicemail intents -->
+    <uses-permission android:name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.PROCESS_PHONE_ACCOUNT_REGISTRATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.SEND_CALL_LOG_CHANGE"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_RESERVED_DISK"/>
+    <uses-permission android:name="android.permission.READ_DEVICE_CONFIG"/>
+    <uses-permission android:name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+
+    <permission android:label="Broadcast that a change happened to the call log." android:name="android.permission.SEND_CALL_LOG_CHANGE" android:protectionLevel="signature|system"/>
+
+    <permission android:label="Change known SIM accounts in ContactsProvider." android:name="android.contacts.permission.MANAGE_SIM_ACCOUNTS" android:protectionLevel="signature"/>
+
+    <application android:allowBackup="false" android:extractNativeLibs="true" android:forceQueryable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_label" android:process="android.process.acore" android:usesCleartextTraffic="false" android:usesNonSdkApi="true">
+
+        <provider android:authorities="contacts;com.android.contacts" android:exported="true" android:grantUriPermissions="true" android:label="@string/provider_label" android:multiprocess="false" android:name="ContactsProvider2" android:readPermission="android.permission.READ_CONTACTS" android:visibleToInstantApps="true" android:writePermission="android.permission.WRITE_CONTACTS">
+            <path-permission android:pathPrefix="/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+            <path-permission android:pathPrefix="/search_suggest_shortcut" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+            <path-permission android:pathPattern="/contacts/.*/photo" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+            <grant-uri-permission android:pathPattern=".*"/>
+        </provider>
+
+        <provider android:authorities="call_log" android:exported="true" android:multiprocess="false" android:name="CallLogProvider" android:readPermission="android.permission.READ_CALL_LOG" android:syncable="false" android:writePermission="android.permission.WRITE_CALL_LOG">
+        </provider>
+
+        <!-- Separate provider for the locations stored in call provider.
+             Uses a different db in order to prevent SQL injection attacks from bypassing
+             location permission requirements -->
+        <provider android:authorities="call_composer_locations" android:exported="true" android:multiprocess="false" android:name="CallComposerLocationProvider" android:readPermission="android.permission.READ_CALL_LOG" android:syncable="false" android:writePermission="android.permission.WRITE_CALL_LOG">
+        </provider>
+
+        <provider android:authorities="call_log_shadow" android:directBootAware="true" android:exported="true" android:multiprocess="false" android:name="ShadowCallLogProvider" android:readPermission="android.permission.INTERACT_ACROSS_USERS" android:syncable="false" android:writePermission="android.permission.INTERACT_ACROSS_USERS">
+        </provider>
+
+        <!-- Note: While this provider does not declare a permission explicitly, it enforces that
+             the caller has either ADD_VOICEMAIL or carrier privileges at a minimum to access it.
+             Additional permission checks may be done depending on the operation. -->
+        <provider android:authorities="com.android.voicemail" android:exported="true" android:multiprocess="false" android:name="VoicemailContentProvider" android:syncable="false">
+        </provider>
+
+        <!-- Handles database upgrades after OTAs, then disables itself -->
+        <receiver android:exported="true" android:name="ContactsUpgradeReceiver">
+            <!-- This broadcast is sent after the core system has finished
+                 booting, before the home app is launched or BOOT_COMPLETED
+                 is sent. -->
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="true" android:name="PhoneAccountRegistrationReceiver" android:permission="android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION">
+            <!-- Broadcast sent after a phone account is registered in telecom. -->
+            <intent-filter>
+                <action android:name="android.telecom.action.PHONE_ACCOUNT_REGISTERED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="true" android:name="LocaleChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:exported="true" android:label="@string/debug_dump_title" android:name=".debug.ContactsDumpActivity" android:theme="@android:style/Theme.Holo.Dialog">
+            <intent-filter>
+                <action android:name="com.android.providers.contacts.DUMP_DATABASE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <provider android:authorities="com.android.contacts.dumpfile" android:exported="true" android:name=".debug.DumpFileProvider">
+        </provider>
+
+    </application>
+</manifest>

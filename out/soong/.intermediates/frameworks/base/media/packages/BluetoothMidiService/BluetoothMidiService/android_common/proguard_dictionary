@@ -1,0 +1,77 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 247e1fd
+# common_typos_disable
+com.android.bluetoothmidiservice.BluetoothMidiDevice -> com.android.bluetoothmidiservice.BluetoothMidiDevice:
+    56:62:void <clinit>() -> <clinit>
+    69:267:void <init>(android.content.Context,android.bluetooth.BluetoothDevice,com.android.bluetoothmidiservice.BluetoothMidiService) -> <init>
+    48:48:void access$000(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$000
+    48:48:android.bluetooth.BluetoothGatt access$100(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$100
+    48:48:com.android.internal.midi.MidiEventScheduler access$1000(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$1000
+    48:48:java.util.UUID access$200() -> access$200
+    48:48:java.util.UUID access$300() -> access$300
+    48:48:android.bluetooth.BluetoothGattCharacteristic access$400(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$400
+    48:48:android.bluetooth.BluetoothGattCharacteristic access$402(com.android.bluetoothmidiservice.BluetoothMidiDevice,android.bluetooth.BluetoothGattCharacteristic) -> access$402
+    48:48:java.util.UUID access$500() -> access$500
+    48:48:android.bluetooth.BluetoothDevice access$600(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$600
+    48:48:com.android.bluetoothmidiservice.BluetoothPacketEncoder access$700(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$700
+    48:48:android.media.midi.MidiReceiver access$800(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$800
+    48:48:com.android.bluetoothmidiservice.BluetoothPacketDecoder access$900(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> access$900
+    271:283:void close() -> close
+    287:287:android.os.IBinder getBinder() -> getBinder
+com.android.bluetoothmidiservice.BluetoothMidiDevice$1 -> com.android.bluetoothmidiservice.BluetoothMidiDevice$1:
+    86:86:void <init>(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> <init>
+    93:93:void onClose() -> onClose
+com.android.bluetoothmidiservice.BluetoothMidiDevice$2 -> com.android.bluetoothmidiservice.BluetoothMidiDevice$2:
+    97:97:void <init>(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> <init>
+    183:183:void onCharacteristicChanged(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic) -> onCharacteristicChanged
+    145:165:void onCharacteristicRead(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicRead
+    172:173:void onCharacteristicWrite(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicWrite
+    103:108:void onConnectionStateChange(android.bluetooth.BluetoothGatt,int,int) -> onConnectionStateChange
+    115:137:void onServicesDiscovered(android.bluetooth.BluetoothGatt,int) -> onServicesDiscovered
+com.android.bluetoothmidiservice.BluetoothMidiDevice$3 -> com.android.bluetoothmidiservice.BluetoothMidiDevice$3:
+    243:243:void <init>(com.android.bluetoothmidiservice.BluetoothMidiDevice,java.lang.String) -> <init>
+    249:265:void run() -> run
+com.android.bluetoothmidiservice.BluetoothMidiDevice$PacketReceiver -> com.android.bluetoothmidiservice.BluetoothMidiDevice$PacketReceiver:
+    194:198:void <init>(com.android.bluetoothmidiservice.BluetoothMidiDevice) -> <init>
+    204:215:void writePacket(byte[],int) -> writePacket
+com.android.bluetoothmidiservice.BluetoothMidiService -> com.android.bluetoothmidiservice.BluetoothMidiService:
+    29:43:void <init>() -> <init>
+    29:29:java.util.HashMap access$000(com.android.bluetoothmidiservice.BluetoothMidiService) -> access$000
+    65:67:void deviceClosed(android.bluetooth.BluetoothDevice) -> deviceClosed
+    39:39:android.os.IBinder onBind(android.content.Intent) -> onBind
+com.android.bluetoothmidiservice.BluetoothMidiService$1 -> com.android.bluetoothmidiservice.BluetoothMidiService$1:
+    43:43:void <init>(com.android.bluetoothmidiservice.BluetoothMidiService) -> <init>
+    48:59:android.os.IBinder addBluetoothDevice(android.bluetooth.BluetoothDevice) -> addBluetoothDevice
+com.android.bluetoothmidiservice.BluetoothPacketDecoder -> com.android.bluetoothmidiservice.BluetoothPacketDecoder:
+    43:44:void <init>(int) -> <init>
+    62:123:void decodePacket(byte[],android.media.midi.MidiReceiver) -> decodePacket
+    48:54:void flushOutput(android.media.midi.MidiReceiver) -> flushOutput
+com.android.bluetoothmidiservice.BluetoothPacketEncoder -> com.android.bluetoothmidiservice.BluetoothPacketEncoder:
+    51:184:void <init>(com.android.bluetoothmidiservice.PacketEncoder$PacketReceiver,int) -> <init>
+    29:29:java.lang.Object access$000(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$000
+    29:29:byte access$100(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$100
+    29:29:byte access$102(com.android.bluetoothmidiservice.BluetoothPacketEncoder,byte) -> access$102
+    29:29:int access$200(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$200
+    29:29:int access$202(com.android.bluetoothmidiservice.BluetoothPacketEncoder,int) -> access$202
+    29:29:int access$300(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$300
+    29:29:int access$308(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$308
+    29:29:int access$312(com.android.bluetoothmidiservice.BluetoothPacketEncoder,int) -> access$312
+    29:29:byte[] access$400(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> access$400
+    29:29:void access$500(com.android.bluetoothmidiservice.BluetoothPacketEncoder,boolean) -> access$500
+    29:29:boolean access$600(com.android.bluetoothmidiservice.BluetoothPacketEncoder,int) -> access$600
+    168:172:boolean appendHeader(int) -> appendHeader
+    204:222:void flushLocked(boolean) -> flushLocked
+    191:191:void onSend(byte[],int,int,long) -> onSend
+    196:200:void writeComplete() -> writeComplete
+com.android.bluetoothmidiservice.BluetoothPacketEncoder$1 -> com.android.bluetoothmidiservice.BluetoothPacketEncoder$1:
+    54:54:void <init>(com.android.bluetoothmidiservice.BluetoothPacketEncoder) -> <init>
+    59:162:void onSend(byte[],int,int,long) -> onSend
+com.android.bluetoothmidiservice.MidiBtleTimeTracker -> com.android.bluetoothmidiservice.MidiBtleTimeTracker:
+    29:43:void <init>(long) -> <init>
+    54:97:long convertTimestampToNanotime(int,long) -> convertTimestampToNanotime
+com.android.bluetoothmidiservice.PacketDecoder -> com.android.bluetoothmidiservice.PacketDecoder:
+    25:25:void <init>() -> <init>
+com.android.bluetoothmidiservice.PacketEncoder -> com.android.bluetoothmidiservice.PacketEncoder:
+    27:27:void <init>() -> <init>

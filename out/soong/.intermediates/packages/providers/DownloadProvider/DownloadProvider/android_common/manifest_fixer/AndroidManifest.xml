@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" package="com.android.providers.downloads" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <!-- Allows access to the Download Manager -->
+    <permission android:description="@string/permdesc_downloadManager" android:label="@string/permlab_downloadManager" android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" android:protectionLevel="signatureOrSystem"/>
+
+    <!-- Allows advanced access to the Download Manager -->
+    <permission android:description="@string/permdesc_downloadManagerAdvanced" android:label="@string/permlab_downloadManagerAdvanced" android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" android:protectionLevel="signatureOrSystem"/>
+
+    <!-- Allows to send download completed intents -->
+    <permission android:description="@string/permdesc_downloadCompletedIntent" android:label="@string/permlab_downloadCompletedIntent" android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" android:protectionLevel="signature"/>
+
+    <!-- Allows to download non-purgeable files to the cache partition through the public API -->
+    <permission android:description="@string/permdesc_downloadCacheNonPurgeable" android:label="@string/permlab_downloadCacheNonPurgeable" android:name="android.permission.DOWNLOAD_CACHE_NON_PURGEABLE" android:protectionLevel="signatureOrSystem"/>
+
+    <!-- Allows to queue downloads without a notification shown while the download runs. -->
+    <permission android:description="@string/permdesc_downloadWithoutNotification" android:label="@string/permlab_downloadWithoutNotification" android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" android:permissionGroup="android.permission-group.NETWORK" android:protectionLevel="normal"/>
+
+    <!-- Allows an app to access all downloads in the system via the /all_downloads/ URIs.  The
+         protection level could be relaxed in the future to support third-party download
+         managers. -->
+    <permission android:description="@string/permdesc_accessAllDownloads" android:label="@string/permlab_accessAllDownloads" android:name="android.permission.ACCESS_ALL_DOWNLOADS" android:protectionLevel="signature"/>
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <!-- TODO: replace with READ_NETWORK_POLICY permission when it exists -->
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+
+    <application android:allowBackup="false" android:extractNativeLibs="true" android:forceQueryable="true" android:icon="@mipmap/ic_launcher_download" android:label="@string/app_label" android:process="android.process.media" android:supportsRtl="true" android:usesCleartextTraffic="true" android:usesNonSdkApi="true">
+
+        <provider android:authorities="downloads" android:exported="true" android:name=".DownloadProvider">
+          <!-- Anyone can access /my_downloads, the provider internally restricts access by UID for
+               these URIs -->
+          <path-permission android:pathPrefix="/my_downloads" android:permission="android.permission.INTERNET"/>
+          <!-- to access /all_downloads, ACCESS_ALL_DOWNLOADS permission is required -->
+          <path-permission android:pathPrefix="/all_downloads" android:permission="android.permission.ACCESS_ALL_DOWNLOADS"/>
+          <!-- Temporary, for backwards compatibility -->
+          <path-permission android:pathPrefix="/download" android:permission="android.permission.INTERNET"/>
+          <!-- Apps with access to /all_downloads/... can grant permissions, allowing them to share
+               downloaded files with other viewers -->
+          <grant-uri-permission android:pathPrefix="/all_downloads/"/>
+          <!-- Apps with access to /my_downloads/... can grant permissions, allowing them to share
+               downloaded files with other viewers -->
+          <grant-uri-permission android:pathPrefix="/my_downloads/"/>
+        </provider>
+
+        <provider android:authorities="com.android.providers.downloads.documents" android:exported="true" android:grantUriPermissions="true" android:label="@string/storage_description" android:name=".DownloadStorageProvider" android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+
+        <service android:exported="true" android:name=".DownloadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <service android:exported="true" android:name=".DownloadIdleService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <service android:exported="true" android:name=".MediaScanTriggerJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <receiver android:exported="false" android:name=".DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.UID_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

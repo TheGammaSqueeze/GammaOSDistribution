@@ -1,0 +1,86 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/BlockUntrustedTouchesMode.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputConstants.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputFlinger.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionResult.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionSync.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d"
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BlockUntrustedTouchesMode.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BnBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BnInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BnInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BnInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BnInputFlinger.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BpBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BpInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BpInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BpInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BpInputFlinger.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/IInputConstants.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/IInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputFlinger.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/IInputFlinger.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/IInputFlinger.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/InputEventInjectionResult.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/InputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/InputEventInjectionSync.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/InputEventInjectionSync.h"
+  >
+  input_hash: "0df8f32a11b50f6a3578c9829abd46a9ee5043ba4f3cc2c9c0d6854ec65d02b4"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/input/libinput/android_arm64_armv8-a_static/gen/aidl/android/os/BlockUntrustedTouchesMode.cpp.d"
+
