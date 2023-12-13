@@ -33,8 +33,10 @@ for file in portion_*; do
     cat "$file"
     echo
 
-    # Add the files from the current portion
-    xargs -a "$file" git add
+    # Read each line from the file and add it to the staging area
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        git add "$line"
+    done < "$file"
 
     # Commit these changes with a group number in the commit message
     git commit --allow-empty -m "Adding files from group $counter"
