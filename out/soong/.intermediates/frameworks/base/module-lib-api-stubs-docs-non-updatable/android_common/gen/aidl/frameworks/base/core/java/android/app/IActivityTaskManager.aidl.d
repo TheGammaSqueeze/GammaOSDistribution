@@ -1,0 +1,118 @@
+out/soong/.intermediates/frameworks/base/module-lib-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl0.tmp/frameworks/base/core/java/android/app/IActivityTaskManager.java : \
+  frameworks/base/core/java/android/app/IActivityTaskManager.aidl \
+  frameworks/base/core/java/android/app/ActivityManager.aidl \
+  frameworks/base/core/java/android/app/ActivityTaskManager.aidl \
+  frameworks/base/core/java/android/app/ApplicationErrorReport.aidl \
+  frameworks/base/core/java/android/app/ContentProviderHolder.aidl \
+  frameworks/base/core/java/android/app/GrantedUriPermission.aidl \
+  frameworks/base/core/java/android/app/IApplicationThread.aidl \
+  frameworks/base/core/java/android/app/IActivityClientController.aidl \
+  frameworks/base/core/java/android/app/IActivityController.aidl \
+  frameworks/base/core/java/android/app/IAppTask.aidl \
+  frameworks/base/core/java/android/app/IAssistDataReceiver.aidl \
+  frameworks/base/core/java/android/app/IInstrumentationWatcher.aidl \
+  frameworks/base/core/java/android/app/IProcessObserver.aidl \
+  frameworks/base/core/java/android/app/IServiceConnection.aidl \
+  frameworks/base/core/java/android/app/IStopUserCallback.aidl \
+  frameworks/base/core/java/android/app/ITaskStackListener.aidl \
+  frameworks/base/core/java/android/app/IUiAutomationConnection.aidl \
+  frameworks/base/core/java/android/app/IUidObserver.aidl \
+  frameworks/base/core/java/android/app/IUserSwitchObserver.aidl \
+  frameworks/base/core/java/android/app/Notification.aidl \
+  frameworks/base/core/java/android/app/PendingIntent.aidl \
+  frameworks/base/core/java/android/app/PictureInPictureUiState.aidl \
+  frameworks/base/core/java/android/app/ProfilerInfo.aidl \
+  frameworks/base/core/java/android/app/WaitResult.aidl \
+  frameworks/base/core/java/android/app/assist/AssistContent.aidl \
+  frameworks/base/core/java/android/app/assist/AssistStructure.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/IIntentReceiver.aidl \
+  frameworks/base/core/java/android/content/IIntentSender.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentFilter.aidl \
+  frameworks/base/core/java/android/content/IntentSender.aidl \
+  frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ConfigurationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/content/pm/ProviderInfo.aidl \
+  frameworks/base/core/java/android/content/pm/UserInfo.aidl \
+  frameworks/base/core/java/android/content/res/Configuration.aidl \
+  frameworks/base/graphics/java/android/graphics/Bitmap.aidl \
+  frameworks/base/graphics/java/android/graphics/GraphicBuffer.aidl \
+  frameworks/base/graphics/java/android/graphics/Point.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/Debug.aidl \
+  frameworks/base/core/java/android/os/IProgressListener.aidl \
+  frameworks/base/core/java/android/os/StrictMode.aidl \
+  frameworks/base/core/java/android/os/WorkSource.aidl \
+  frameworks/base/core/java/android/service/voice/IVoiceInteractionSession.aidl \
+  frameworks/base/core/java/android/view/IRecentsAnimationRunner.aidl \
+  frameworks/base/core/java/android/view/RemoteAnimationDefinition.aidl \
+  frameworks/base/core/java/android/view/RemoteAnimationAdapter.aidl \
+  frameworks/base/core/java/android/window/IWindowOrganizerController.aidl \
+  frameworks/base/core/java/android/window/SplashScreenView.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl \
+  frameworks/base/core/java/com/android/internal/os/IResultReceiver.aidl \
+  frameworks/base/core/java/android/window/TaskSnapshot.aidl
+
+frameworks/base/core/java/android/app/IActivityTaskManager.aidl :
+frameworks/base/core/java/android/app/ActivityManager.aidl :
+frameworks/base/core/java/android/app/ActivityTaskManager.aidl :
+frameworks/base/core/java/android/app/ApplicationErrorReport.aidl :
+frameworks/base/core/java/android/app/ContentProviderHolder.aidl :
+frameworks/base/core/java/android/app/GrantedUriPermission.aidl :
+frameworks/base/core/java/android/app/IApplicationThread.aidl :
+frameworks/base/core/java/android/app/IActivityClientController.aidl :
+frameworks/base/core/java/android/app/IActivityController.aidl :
+frameworks/base/core/java/android/app/IAppTask.aidl :
+frameworks/base/core/java/android/app/IAssistDataReceiver.aidl :
+frameworks/base/core/java/android/app/IInstrumentationWatcher.aidl :
+frameworks/base/core/java/android/app/IProcessObserver.aidl :
+frameworks/base/core/java/android/app/IServiceConnection.aidl :
+frameworks/base/core/java/android/app/IStopUserCallback.aidl :
+frameworks/base/core/java/android/app/ITaskStackListener.aidl :
+frameworks/base/core/java/android/app/IUiAutomationConnection.aidl :
+frameworks/base/core/java/android/app/IUidObserver.aidl :
+frameworks/base/core/java/android/app/IUserSwitchObserver.aidl :
+frameworks/base/core/java/android/app/Notification.aidl :
+frameworks/base/core/java/android/app/PendingIntent.aidl :
+frameworks/base/core/java/android/app/PictureInPictureUiState.aidl :
+frameworks/base/core/java/android/app/ProfilerInfo.aidl :
+frameworks/base/core/java/android/app/WaitResult.aidl :
+frameworks/base/core/java/android/app/assist/AssistContent.aidl :
+frameworks/base/core/java/android/app/assist/AssistStructure.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/IIntentReceiver.aidl :
+frameworks/base/core/java/android/content/IIntentSender.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/IntentFilter.aidl :
+frameworks/base/core/java/android/content/IntentSender.aidl :
+frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl :
+frameworks/base/core/java/android/content/pm/ConfigurationInfo.aidl :
+frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/content/pm/ProviderInfo.aidl :
+frameworks/base/core/java/android/content/pm/UserInfo.aidl :
+frameworks/base/core/java/android/content/res/Configuration.aidl :
+frameworks/base/graphics/java/android/graphics/Bitmap.aidl :
+frameworks/base/graphics/java/android/graphics/GraphicBuffer.aidl :
+frameworks/base/graphics/java/android/graphics/Point.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/Debug.aidl :
+frameworks/base/core/java/android/os/IProgressListener.aidl :
+frameworks/base/core/java/android/os/StrictMode.aidl :
+frameworks/base/core/java/android/os/WorkSource.aidl :
+frameworks/base/core/java/android/service/voice/IVoiceInteractionSession.aidl :
+frameworks/base/core/java/android/view/IRecentsAnimationRunner.aidl :
+frameworks/base/core/java/android/view/RemoteAnimationDefinition.aidl :
+frameworks/base/core/java/android/view/RemoteAnimationAdapter.aidl :
+frameworks/base/core/java/android/window/IWindowOrganizerController.aidl :
+frameworks/base/core/java/android/window/SplashScreenView.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl :
+frameworks/base/core/java/com/android/internal/os/IResultReceiver.aidl :
+frameworks/base/core/java/android/window/TaskSnapshot.aidl :

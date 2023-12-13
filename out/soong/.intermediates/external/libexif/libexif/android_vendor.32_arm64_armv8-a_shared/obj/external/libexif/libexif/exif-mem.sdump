@@ -1,0 +1,365 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_FORMAT_BYTE"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EXIF_FORMAT_ASCII"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "EXIF_FORMAT_SHORT"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EXIF_FORMAT_LONG"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "EXIF_FORMAT_RATIONAL"
+    },
+    {
+     "enum_field_value" : 6,
+     "name" : "EXIF_FORMAT_SBYTE"
+    },
+    {
+     "enum_field_value" : 7,
+     "name" : "EXIF_FORMAT_UNDEFINED"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EXIF_FORMAT_SSHORT"
+    },
+    {
+     "enum_field_value" : 9,
+     "name" : "EXIF_FORMAT_SLONG"
+    },
+    {
+     "enum_field_value" : 10,
+     "name" : "EXIF_FORMAT_SRATIONAL"
+    },
+    {
+     "enum_field_value" : 11,
+     "name" : "EXIF_FORMAT_FLOAT"
+    },
+    {
+     "enum_field_value" : 12,
+     "name" : "EXIF_FORMAT_DOUBLE"
+    }
+   ],
+   "linker_set_key" : "_ZTI10ExifFormat",
+   "name" : "ExifFormat",
+   "referenced_type" : "_ZTI10ExifFormat",
+   "self_type" : "_ZTI10ExifFormat",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-format.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "EXIF_BYTE_ORDER_MOTOROLA"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "EXIF_BYTE_ORDER_INTEL"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifByteOrder",
+   "name" : "ExifByteOrder",
+   "referenced_type" : "_ZTI13ExifByteOrder",
+   "self_type" : "_ZTI13ExifByteOrder",
+   "size" : 4,
+   "source_file" : "external/libexif/libexif/exif-byte-order.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvS_jE",
+   "name" : "void *(void *, unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvS_jE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvS_jE",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFPvjE",
+   "name" : "void *(unsigned int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "referenced_type" : "_ZTIFPvjE",
+   "return_type" : "_ZTIPv",
+   "self_type" : "_ZTIFPvjE",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPvE",
+   "name" : "void (void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPvE",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "exif_mem_alloc",
+   "linker_set_key" : "exif_mem_alloc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_free",
+   "linker_set_key" : "exif_mem_free",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_new",
+   "linker_set_key" : "exif_mem_new",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFPvjE"
+    },
+    {
+     "referenced_type" : "_ZTIPFPvS_jE"
+    },
+    {
+     "referenced_type" : "_ZTIPFvPvE"
+    }
+   ],
+   "return_type" : "_ZTIP8_ExifMem",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_new_default",
+   "linker_set_key" : "exif_mem_new_default",
+   "return_type" : "_ZTIP8_ExifMem",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_realloc",
+   "linker_set_key" : "exif_mem_realloc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIPv",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_ref",
+   "linker_set_key" : "exif_mem_ref",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "function_name" : "exif_mem_unref",
+   "linker_set_key" : "exif_mem_unref",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP8_ExifMem"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP8_ExifMem",
+   "name" : "_ExifMem *",
+   "referenced_type" : "_ZTI8_ExifMem",
+   "self_type" : "_ZTIP8_ExifMem",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPvS_jE",
+   "name" : "void *(*)(void *, unsigned int)",
+   "referenced_type" : "_ZTIFPvS_jE",
+   "self_type" : "_ZTIPFPvS_jE",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFPvjE",
+   "name" : "void *(*)(unsigned int)",
+   "referenced_type" : "_ZTIFPvjE",
+   "self_type" : "_ZTIPFPvjE",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvPvE",
+   "name" : "void (*)(void *)",
+   "referenced_type" : "_ZTIFvPvE",
+   "self_type" : "_ZTIPFvPvE",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-mem.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI12ExifRational",
+   "name" : "ExifRational",
+   "referenced_type" : "_ZTI12ExifRational",
+   "self_type" : "_ZTI12ExifRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "numerator",
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "field_name" : "denominator",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "linker_set_key" : "_ZTI13ExifSRational",
+   "name" : "ExifSRational",
+   "referenced_type" : "_ZTI13ExifSRational",
+   "self_type" : "_ZTI13ExifSRational",
+   "size" : 8,
+   "source_file" : "external/libexif/libexif/exif-utils.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
