@@ -1,0 +1,142 @@
+out/soong/.intermediates/external/ruy/libruy_static/android_arm64_armv8-a_sdk_static_apex30/obj/external/ruy/ruy/frontend.o: \
+  external/ruy/ruy/frontend.cc external/ruy/ruy/frontend.h \
+  external/ruy/ruy/create_trmul_params.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstdint \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__config \
+  out/soong/ndk/sysroot/usr/include/features.h \
+  out/soong/ndk/sysroot/usr/include/sys/cdefs.h \
+  out/soong/ndk/sysroot/usr/include/android/versioning.h \
+  out/soong/ndk/sysroot/usr/include/android/api-level.h \
+  out/soong/ndk/sysroot/usr/include/pthread.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/bits/wchar_limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__nullptr \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstring \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/string.h \
+  out/soong/ndk/sysroot/usr/include/string.h \
+  out/soong/ndk/sysroot/usr/include/xlocale.h \
+  out/soong/ndk/sysroot/usr/include/bits/strcasecmp.h \
+  out/soong/ndk/sysroot/usr/include/sys/types.h \
+  out/soong/ndk/sysroot/usr/include/linux/types.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/int-ll64.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/bitsperlong.h \
+  out/soong/ndk/sysroot/usr/include/linux/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/linux/stddef.h \
+  out/soong/ndk/sysroot/usr/include/linux/compiler_types.h \
+  out/soong/ndk/sysroot/usr/include/linux/compiler.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/bits/pthread_types.h \
+  out/soong/ndk/sysroot/usr/include/strings.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/strings.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/string.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/type_traits \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstddef \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/version \
+  external/ruy/ruy/allocator.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/memory \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/typeinfo \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/exception \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstdlib \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdlib.h \
+  out/soong/ndk/sysroot/usr/include/stdlib.h \
+  out/soong/ndk/sysroot/usr/include/alloca.h \
+  out/soong/ndk/sysroot/usr/include/bits/wait.h \
+  out/soong/ndk/sysroot/usr/include/linux/wait.h \
+  out/soong/ndk/sysroot/usr/include/malloc.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  out/soong/ndk/sysroot/usr/include/stdio.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  out/soong/ndk/sysroot/usr/include/bits/seek_constants.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/stdio.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/stdlib.h \
+  out/soong/ndk/sysroot/usr/include/android/legacy_stdlib_inlines.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/math.h \
+  out/soong/ndk/sysroot/usr/include/math.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/limits.h \
+  out/soong/ndk/sysroot/usr/include/limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/float.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h \
+  out/soong/ndk/sysroot/usr/include/linux/limits.h \
+  out/soong/ndk/sysroot/usr/include/bits/posix_limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/limits \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__undef_macros \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/new \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/utility \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__tuple \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/initializer_list \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__debug \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/iosfwd \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/wchar.h \
+  out/soong/ndk/sysroot/usr/include/wchar.h \
+  out/soong/ndk/sysroot/usr/include/time.h \
+  out/soong/ndk/sysroot/usr/include/sys/time.h \
+  out/soong/ndk/sysroot/usr/include/linux/time.h \
+  out/soong/ndk/sysroot/usr/include/linux/time_types.h \
+  out/soong/ndk/sysroot/usr/include/sys/select.h \
+  out/soong/ndk/sysroot/usr/include/signal.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/sigcontext.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/sve_context.h \
+  out/soong/ndk/sysroot/usr/include/bits/signal_types.h \
+  out/soong/ndk/sysroot/usr/include/linux/signal.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/signal.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/signal.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/signal-defs.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/siginfo.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/siginfo.h \
+  out/soong/ndk/sysroot/usr/include/bits/timespec.h \
+  out/soong/ndk/sysroot/usr/include/sys/ucontext.h \
+  out/soong/ndk/sysroot/usr/include/sys/user.h \
+  out/soong/ndk/sysroot/usr/include/android/legacy_signal_inlines.h \
+  out/soong/ndk/sysroot/usr/include/bits/mbstate_t.h \
+  out/soong/ndk/sysroot/usr/include/bits/wctype.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/iterator \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__functional_base \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/tuple \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdexcept \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/atomic \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__threading_support \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/chrono \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/ctime \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/ratio \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/climits \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/errno.h \
+  out/soong/ndk/sysroot/usr/include/errno.h \
+  out/soong/ndk/sysroot/usr/include/linux/errno.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/errno.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/errno.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/errno-base.h \
+  out/soong/ndk/sysroot/usr/include/android/legacy_errno_inlines.h \
+  out/soong/ndk/sysroot/usr/include/sched.h \
+  out/soong/ndk/sysroot/usr/include/linux/sched.h \
+  out/soong/ndk/sysroot/usr/include/semaphore.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/vector \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__bit_reference \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/bit \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/algorithm \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/functional \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__split_buffer \
+  external/ruy/ruy/ctx.h external/ruy/ruy/kernel.h \
+  external/ruy/ruy/kernel_common.h external/ruy/ruy/apply_multiplier.h \
+  external/ruy/ruy/check_macros.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstdio \
+  external/ruy/ruy/mul_params.h external/ruy/ruy/size_util.h \
+  external/ruy/ruy/mat.h external/ruy/ruy/matrix.h \
+  external/ruy/ruy/opt_set.h external/ruy/ruy/path.h \
+  external/ruy/ruy/platform.h \
+  external/ruy/ruy/profiler/instrumentation.h \
+  external/ruy/ruy/side_pair.h external/ruy/ruy/tune.h \
+  external/ruy/ruy/cpuinfo.h external/ruy/ruy/cpu_cache_params.h \
+  external/ruy/ruy/time.h external/ruy/ruy/trace.h \
+  external/ruy/ruy/kernel_arm.h external/ruy/ruy/asm_helpers.h \
+  external/ruy/ruy/pack.h external/ruy/ruy/pack_common.h \
+  external/ruy/ruy/pack_arm.h external/ruy/ruy/performance_advisory.h \
+  external/ruy/ruy/trmul_params.h external/ruy/ruy/validate.h \
+  external/ruy/ruy/prepare_packed_matrices.h external/ruy/ruy/trmul.h

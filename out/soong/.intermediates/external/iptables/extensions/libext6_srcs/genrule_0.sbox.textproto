@@ -1,0 +1,93 @@
+commands: <
+  copy_before: <
+    from: "external/iptables/extensions/filter_init"
+    to: "tools/src/external/iptables/extensions/filter_init"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_DNAT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_DNAT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_DNPT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_DNPT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_HL.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_HL.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_LOG.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_LOG.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_MASQUERADE.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_MASQUERADE.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_NETMAP.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_NETMAP.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_REDIRECT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_REDIRECT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_REJECT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_REJECT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_SNAT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_SNAT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_SNPT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_SNPT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_ah.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_ah.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_dst.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_dst.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_eui64.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_eui64.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_frag.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_frag.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_hbh.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_hbh.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_hl.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_hl.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_icmp6.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_icmp6.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_ipv6header.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_ipv6header.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_mh.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_mh.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_rt.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_rt.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libip6t_srh.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libip6t_srh.c'"
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_DNAT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_DNAT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_DNPT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_DNPT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_HL.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_HL.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_LOG.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_LOG.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_MASQUERADE.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_MASQUERADE.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_NETMAP.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_NETMAP.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_REDIRECT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_REDIRECT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_REJECT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_REJECT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_SNAT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_SNAT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_SNPT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_SNPT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_ah.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_ah.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_dst.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_dst.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_eui64.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_eui64.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_frag.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_frag.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_hbh.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_hbh.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_hl.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_hl.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_icmp6.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_icmp6.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_ipv6header.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_ipv6header.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_mh.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_mh.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_rt.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_rt.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libip6t_srh.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext6_srcs/gen/gensrcs/external/iptables/extensions/libip6t_srh.c"
+  >
+  input_hash: "872e05dd1de60664aa22a7842f385d81e4bd29b34295d353fb75a7ae11a643b4"
+>
+
