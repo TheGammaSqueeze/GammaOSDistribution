@@ -1,0 +1,118 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/PersistableBundle.cpp.d --ninja  -Iframeworks/native/aidl/binder/ frameworks/native/aidl/binder/android/os/PersistableBundle.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/PersistableBundle.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/view/LayerMetadataKey.cpp.d --ninja  -Iframeworks/native/aidl/gui/ frameworks/native/aidl/gui/android/view/LayerMetadataKey.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/view/LayerMetadataKey.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/view/Surface.cpp.d --ninja  -Iframeworks/native/aidl/gui/ frameworks/native/aidl/gui/android/view/Surface.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/view/Surface.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/BlockUntrustedTouchesMode.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputConstants.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionResult.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d --ninja  -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/InputEventInjectionSync.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/PersistableBundle.cpp.d __SBOX_SANDBOX_DIR__/out/android/view/LayerMetadataKey.cpp.d __SBOX_SANDBOX_DIR__/out/android/view/Surface.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/BlockUntrustedTouchesMode.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionResult.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/InputEventInjectionSync.cpp.d"
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BlockUntrustedTouchesMode.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/BlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BnBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BnInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BnInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BnInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnPersistableBundle.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BnPersistableBundle.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpBlockUntrustedTouchesMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BpBlockUntrustedTouchesMode.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BpInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BpInputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BpInputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpPersistableBundle.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/BpPersistableBundle.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/IInputConstants.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/IInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/InputEventInjectionResult.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionResult.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/InputEventInjectionResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/InputEventInjectionSync.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/InputEventInjectionSync.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/InputEventInjectionSync.h"
+  >
+  copy_after: <
+    from: "out/android/os/PersistableBundle.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/PersistableBundle.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/PersistableBundle.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/PersistableBundle.h"
+  >
+  copy_after: <
+    from: "out/android/view/BnLayerMetadataKey.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/BnLayerMetadataKey.h"
+  >
+  copy_after: <
+    from: "out/android/view/BnSurface.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/BnSurface.h"
+  >
+  copy_after: <
+    from: "out/android/view/BpLayerMetadataKey.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/BpLayerMetadataKey.h"
+  >
+  copy_after: <
+    from: "out/android/view/BpSurface.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/BpSurface.h"
+  >
+  copy_after: <
+    from: "out/android/view/LayerMetadataKey.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/LayerMetadataKey.cpp"
+  >
+  copy_after: <
+    from: "out/android/view/LayerMetadataKey.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/LayerMetadataKey.h"
+  >
+  copy_after: <
+    from: "out/android/view/Surface.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/Surface.cpp"
+  >
+  copy_after: <
+    from: "out/android/view/Surface.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/view/Surface.h"
+  >
+  input_hash: "2ee32ed140124407f44199a211a348468d5490138aac69f8cb3d7cca9801eb10"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/gui/libgui/android_vendor.32_arm64_armv8-a_shared/gen/aidl/android/os/PersistableBundle.cpp.d"
+

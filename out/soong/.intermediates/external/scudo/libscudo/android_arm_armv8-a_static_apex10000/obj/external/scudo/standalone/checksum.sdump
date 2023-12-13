@@ -1,0 +1,393 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 4
+  },
+  {
+   "alignment" : 2,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIt",
+   "name" : "unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIt",
+   "size" : 2
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIx",
+   "name" : "long long",
+   "referenced_type" : "_ZTIx",
+   "self_type" : "_ZTIx",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "scudo::memory_order_relaxed"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "scudo::memory_order_consume"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "scudo::memory_order_acquire"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "scudo::memory_order_release"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "scudo::memory_order_acq_rel"
+    },
+    {
+     "enum_field_value" : 5,
+     "name" : "scudo::memory_order_seq_cst"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo12memory_orderE",
+   "name" : "scudo::memory_order",
+   "referenced_type" : "_ZTIN5scudo12memory_orderE",
+   "self_type" : "_ZTIN5scudo12memory_orderE",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "scudo::Checksum::BSD"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "scudo::Checksum::HardwareCRC32"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo8ChecksumE",
+   "name" : "scudo::Checksum",
+   "referenced_type" : "_ZTIN5scudo8ChecksumE",
+   "self_type" : "_ZTIN5scudo8ChecksumE",
+   "size" : 1,
+   "source_file" : "external/scudo/standalone/checksum.h",
+   "underlying_type" : "_ZTIh"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "scudo::hasHardwareCRC32",
+   "linker_set_key" : "_ZN5scudo16hasHardwareCRC32Ev",
+   "return_type" : "_ZTIb",
+   "source_file" : "external/scudo/standalone/checksum.h"
+  },
+  {
+   "function_name" : "scudo::computeBSDChecksum",
+   "linker_set_key" : "_ZN5scudo18computeBSDChecksumEtm",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIt"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIt",
+   "source_file" : "external/scudo/standalone/checksum.h"
+  },
+  {
+   "function_name" : "scudo::atomic_thread_fence",
+   "linker_set_key" : "_ZN5scudo19atomic_thread_fenceENS_12memory_orderE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN5scudo12memory_orderE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "_ZN5scudo13HashAlgorithmE",
+   "name" : "scudo::HashAlgorithm",
+   "referenced_type" : "_ZTIN5scudo8ChecksumE",
+   "source_file" : "external/scudo/standalone/checksum.cpp"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" : [],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVh",
+   "name" : "volatile unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIVh",
+   "size" : 1,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 4,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVi",
+   "name" : "volatile int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIVi",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 4,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVj",
+   "name" : "volatile unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIVj",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 4,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVm",
+   "name" : "volatile unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIVm",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 2,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVt",
+   "name" : "volatile unsigned short",
+   "referenced_type" : "_ZTIt",
+   "self_type" : "_ZTIVt",
+   "size" : 2,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 8,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVy",
+   "name" : "volatile unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIVy",
+   "size" : 8,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "__clang_max_align_nonce1",
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "field_name" : "__clang_max_align_nonce2",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "linker_set_key" : "_ZTI11max_align_t",
+   "name" : "max_align_t",
+   "referenced_type" : "_ZTI11max_align_t",
+   "self_type" : "_ZTI11max_align_t",
+   "size" : 16,
+   "source_file" : "prebuilts/clang-tools/linux-x86/clang-headers/__stddef_max_align_t.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVi"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo10atomic_s32E",
+   "name" : "scudo::atomic_s32",
+   "referenced_type" : "_ZTIN5scudo10atomic_s32E",
+   "self_type" : "_ZTIN5scudo10atomic_s32E",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 2,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVt"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo10atomic_u16E",
+   "name" : "scudo::atomic_u16",
+   "referenced_type" : "_ZTIN5scudo10atomic_u16E",
+   "self_type" : "_ZTIN5scudo10atomic_u16E",
+   "size" : 2,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVj"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo10atomic_u32E",
+   "name" : "scudo::atomic_u32",
+   "referenced_type" : "_ZTIN5scudo10atomic_u32E",
+   "self_type" : "_ZTIN5scudo10atomic_u32E",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVy"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo10atomic_u64E",
+   "name" : "scudo::atomic_u64",
+   "referenced_type" : "_ZTIN5scudo10atomic_u64E",
+   "self_type" : "_ZTIN5scudo10atomic_u64E",
+   "size" : 8,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVm"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo11atomic_uptrE",
+   "name" : "scudo::atomic_uptr",
+   "referenced_type" : "_ZTIN5scudo11atomic_uptrE",
+   "self_type" : "_ZTIN5scudo11atomic_uptrE",
+   "size" : 4,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  },
+  {
+   "alignment" : 1,
+   "fields" :
+   [
+    {
+     "field_name" : "ValDoNotUse",
+     "referenced_type" : "_ZTIVh"
+    }
+   ],
+   "linker_set_key" : "_ZTIN5scudo9atomic_u8E",
+   "name" : "scudo::atomic_u8",
+   "referenced_type" : "_ZTIN5scudo9atomic_u8E",
+   "self_type" : "_ZTIN5scudo9atomic_u8E",
+   "size" : 1,
+   "source_file" : "external/scudo/standalone/atomic_helpers.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}
