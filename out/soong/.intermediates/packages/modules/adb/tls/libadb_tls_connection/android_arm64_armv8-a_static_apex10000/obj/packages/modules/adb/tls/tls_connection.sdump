@@ -1,0 +1,288 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "adb::tls::TlsConnection::Role::Server"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "adb::tls::TlsConnection::Role::Client"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3adb3tls13TlsConnection4RoleE",
+   "name" : "adb::tls::TlsConnection::Role",
+   "referenced_type" : "_ZTIN3adb3tls13TlsConnection4RoleE",
+   "self_type" : "_ZTIN3adb3tls13TlsConnection4RoleE",
+   "size" : 4,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h",
+   "underlying_type" : "_ZTIi"
+  },
+  {
+   "alignment" : 1,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "adb::tls::TlsConnection::TlsError::Success"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "adb::tls::TlsConnection::TlsError::CertificateRejected"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "adb::tls::TlsConnection::TlsError::PeerRejectedCertificate"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "adb::tls::TlsConnection::TlsError::UnknownFailure"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3adb3tls13TlsConnection8TlsErrorE",
+   "name" : "adb::tls::TlsConnection::TlsError",
+   "referenced_type" : "_ZTIN3adb3tls13TlsConnection8TlsErrorE",
+   "self_type" : "_ZTIN3adb3tls13TlsConnection8TlsErrorE",
+   "size" : 1,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h",
+   "underlying_type" : "_ZTIh"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "adb::tls::TlsConnection::SetCertAndKey",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnection13SetCertAndKeyEP6ssl_stNSt3__117basic_string_viewIcNS4_11char_traitsIcEEEES8_",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP6ssl_st"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "function_name" : "adb::tls::TlsConnection::Create",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnection6CreateENS1_4RoleENSt3__117basic_string_viewIcNS3_11char_traitsIcEEEES7_N7android4base11borrowed_fdE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIN3adb3tls13TlsConnection4RoleE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android4base11borrowed_fdE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110unique_ptrIN3adb3tls13TlsConnectionENS_14default_deleteIS3_EEEE",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "access" : "protected",
+   "function_name" : "adb::tls::TlsConnection::TlsConnection",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnectionC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb3tls13TlsConnectionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "function_name" : "adb::tls::TlsConnection::~TlsConnection",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnectionD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb3tls13TlsConnectionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "function_name" : "adb::tls::TlsConnection::~TlsConnection",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnectionD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb3tls13TlsConnectionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "function_name" : "adb::tls::TlsConnection::~TlsConnection",
+   "linker_set_key" : "_ZN3adb3tls13TlsConnectionD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb3tls13TlsConnectionE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6ssl_st",
+   "name" : "ssl_st *",
+   "referenced_type" : "_ZTI6ssl_st",
+   "self_type" : "_ZTIP6ssl_st",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3adb3tls13TlsConnectionE",
+   "name" : "adb::tls::TlsConnection *",
+   "referenced_type" : "_ZTIN3adb3tls13TlsConnectionE",
+   "self_type" : "_ZTIPN3adb3tls13TlsConnectionE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIN3adb3tls13TlsConnectionE",
+   "name" : "adb::tls::TlsConnection",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3adb3tls13TlsConnectionE",
+   "self_type" : "_ZTIN3adb3tls13TlsConnectionE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/tls_connection.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN3adb3tls13TlsConnectionE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnectionD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnectionD0Ev"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection21AddTrustedCertificateENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEE"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection21SetCertVerifyCallbackENSt3__18functionIFiP17x509_store_ctx_stEEE"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection15SetClientCAListEP18stack_st_X509_NAME"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection22SetCertificateCallbackENSt3__18functionIFiP6ssl_stEEE"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection20ExportKeyingMaterialEm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection30EnableClientPostHandshakeCheckEb"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection11DoHandshakeEv"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection9ReadFullyEm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection9ReadFullyEPvm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN3adb3tls13TlsConnection10WriteFullyENSt3__117basic_string_viewIcNS2_11char_traitsIcEEEE"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}

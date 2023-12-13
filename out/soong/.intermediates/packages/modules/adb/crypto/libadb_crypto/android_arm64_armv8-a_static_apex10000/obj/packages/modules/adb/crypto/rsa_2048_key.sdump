@@ -1,0 +1,284 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "adb::crypto::CreateRSA2048Key",
+   "linker_set_key" : "_ZN3adb6crypto16CreateRSA2048KeyEv",
+   "return_type" : "_ZTINSt3__18optionalIN3adb6crypto3KeyEEE",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/rsa_2048_key.h"
+  },
+  {
+   "function_name" : "adb::crypto::CalculatePublicKey",
+   "linker_set_key" : "_ZN3adb6crypto18CalculatePublicKeyEPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEP6rsa_st",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIP6rsa_st"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/rsa_2048_key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::Key",
+   "linker_set_key" : "_ZN3adb6crypto3KeyC1EONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS4_EEEENS_5proto7KeyTypeE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb6crypto3KeyE"
+    },
+    {
+     "referenced_type" : "_ZTIONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN3adb5proto7KeyTypeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::Key",
+   "linker_set_key" : "_ZN3adb6crypto3KeyC1EOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb6crypto3KeyE"
+    },
+    {
+     "referenced_type" : "_ZTION3adb6crypto3KeyE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::Key",
+   "linker_set_key" : "_ZN3adb6crypto3KeyC2EONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS4_EEEENS_5proto7KeyTypeE",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb6crypto3KeyE"
+    },
+    {
+     "referenced_type" : "_ZTIONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN3adb5proto7KeyTypeE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::Key",
+   "linker_set_key" : "_ZN3adb6crypto3KeyC2EOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb6crypto3KeyE"
+    },
+    {
+     "referenced_type" : "_ZTION3adb6crypto3KeyE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::operator=",
+   "linker_set_key" : "_ZN3adb6crypto3KeyaSEOS1_",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN3adb6crypto3KeyE"
+    },
+    {
+     "referenced_type" : "_ZTION3adb6crypto3KeyE"
+    }
+   ],
+   "return_type" : "_ZTIRN3adb6crypto3KeyE",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::GetEvpPkey",
+   "linker_set_key" : "_ZNK3adb6crypto3Key10GetEvpPkeyEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3adb6crypto3KeyE"
+    }
+   ],
+   "return_type" : "_ZTIP11evp_pkey_st",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "function_name" : "adb::crypto::Key::GetKeyType",
+   "linker_set_key" : "_ZNK3adb6crypto3Key10GetKeyTypeEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPKN3adb6crypto3KeyE"
+    }
+   ],
+   "return_type" : "_ZTIN3adb5proto7KeyTypeE",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRN3adb6crypto3KeyE",
+   "name" : "adb::crypto::Key &",
+   "referenced_type" : "_ZTIN3adb6crypto3KeyE",
+   "self_type" : "_ZTIRN3adb6crypto3KeyE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  }
+ ],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP11evp_pkey_st",
+   "name" : "evp_pkey_st *",
+   "referenced_type" : "_ZTI11evp_pkey_st",
+   "self_type" : "_ZTIP11evp_pkey_st",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6rsa_st",
+   "name" : "rsa_st *",
+   "referenced_type" : "_ZTI6rsa_st",
+   "self_type" : "_ZTIP6rsa_st",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/rsa_2048_key.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKN3adb6crypto3KeyE",
+   "name" : "const adb::crypto::Key *",
+   "referenced_type" : "_ZTIKN3adb6crypto3KeyE",
+   "self_type" : "_ZTIPKN3adb6crypto3KeyE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN3adb6crypto3KeyE",
+   "name" : "adb::crypto::Key *",
+   "referenced_type" : "_ZTIN3adb6crypto3KeyE",
+   "self_type" : "_ZTIPN3adb6crypto3KeyE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "std::basic_string<char, std::char_traits<char>, std::allocator<char>> *",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIPNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/rsa_2048_key.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKN3adb6crypto3KeyE",
+   "name" : "const adb::crypto::Key",
+   "referenced_type" : "_ZTIN3adb6crypto3KeyE",
+   "self_type" : "_ZTIKN3adb6crypto3KeyE",
+   "size" : 16,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "access" : "private",
+     "field_name" : "pkey_",
+     "referenced_type" : "_ZTINSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE"
+    },
+    {
+     "access" : "private",
+     "field_name" : "key_type_",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIN3adb5proto7KeyTypeE"
+    }
+   ],
+   "linker_set_key" : "_ZTIN3adb6crypto3KeyE",
+   "name" : "adb::crypto::Key",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN3adb6crypto3KeyE",
+   "self_type" : "_ZTIN3adb6crypto3KeyE",
+   "size" : 16,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  }
+ ],
+ "rvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTION3adb6crypto3KeyE",
+   "name" : "adb::crypto::Key &&",
+   "referenced_type" : "_ZTIN3adb6crypto3KeyE",
+   "self_type" : "_ZTION3adb6crypto3KeyE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE",
+   "name" : "std::unique_ptr<evp_pkey_st, bssl::internal::Deleter<evp_pkey_st>> &&",
+   "referenced_type" : "_ZTINSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE",
+   "self_type" : "_ZTIONSt3__110unique_ptrI11evp_pkey_stN4bssl8internal7DeleterIS1_EEEE",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/key.h"
+  }
+ ]
+}

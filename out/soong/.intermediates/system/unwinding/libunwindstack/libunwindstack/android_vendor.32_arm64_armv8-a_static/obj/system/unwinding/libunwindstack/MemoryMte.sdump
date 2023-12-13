@@ -1,0 +1,319 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIl",
+   "name" : "long",
+   "referenced_type" : "_ZTIl",
+   "self_type" : "_ZTIl",
+   "size" : 8
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "unwindstack::Memory::AsMemoryCacheBase",
+   "linker_set_key" : "_ZN11unwindstack6Memory17AsMemoryCacheBaseEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Clear",
+   "linker_set_key" : "_ZN11unwindstack6Memory5ClearEv",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::GetPtr",
+   "linker_set_key" : "_ZN11unwindstack6Memory6GetPtrEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "default_arg" : true,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPh",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Read32",
+   "linker_set_key" : "_ZN11unwindstack6Memory6Read32EmPj",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPj"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Read64",
+   "linker_set_key" : "_ZN11unwindstack6Memory6Read64EmPm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "referenced_type" : "_ZTIPm"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::ReadTag",
+   "linker_set_key" : "_ZN11unwindstack6Memory7ReadTagEm",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIl",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryC2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD0Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD1Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "function_name" : "unwindstack::Memory::~Memory",
+   "linker_set_key" : "_ZN11unwindstack6MemoryD2Ev",
+   "parameters" :
+   [
+    {
+     "is_this_ptr" : true,
+     "referenced_type" : "_ZTIPN11unwindstack6MemoryE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "name" : "unwindstack::MemoryCacheBase *",
+   "referenced_type" : "_ZTIN11unwindstack15MemoryCacheBaseE",
+   "self_type" : "_ZTIPN11unwindstack15MemoryCacheBaseE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPN11unwindstack6MemoryE",
+   "name" : "unwindstack::Memory *",
+   "referenced_type" : "_ZTIN11unwindstack6MemoryE",
+   "self_type" : "_ZTIPN11unwindstack6MemoryE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPj",
+   "name" : "unsigned int *",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIPj",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPm",
+   "name" : "unsigned long *",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIPm",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIN11unwindstack6MemoryE",
+   "name" : "unwindstack::Memory",
+   "record_kind" : "class",
+   "referenced_type" : "_ZTIN11unwindstack6MemoryE",
+   "self_type" : "_ZTIN11unwindstack6MemoryE",
+   "size" : 8,
+   "source_file" : "system/unwinding/libunwindstack/include/unwindstack/Memory.h",
+   "vtable_components" :
+   [
+    {
+     "kind" : "offset_to_top"
+    },
+    {
+     "kind" : "rtti",
+     "mangled_component_name" : "_ZTIN11unwindstack6MemoryE"
+    },
+    {
+     "kind" : "complete_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack6MemoryD1Ev"
+    },
+    {
+     "kind" : "deleting_dtor_pointer",
+     "mangled_component_name" : "_ZN11unwindstack6MemoryD0Ev"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory17AsMemoryCacheBaseEv"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory10ReadStringEmPNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEm"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory5ClearEv"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory6GetPtrEm"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN11unwindstack6Memory4ReadEmPvm"
+    },
+    {
+     "mangled_component_name" : "_ZN11unwindstack6Memory7ReadTagEm"
+    }
+   ]
+  }
+ ],
+ "rvalue_reference_types" : []
+}
