@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/Connectivity/service/service-connectivity-protos/android_common_apex30/gen/proto/proto0.tmp/com/android/internal/messages/nano/SystemMessageProto.java: frameworks/base/proto/src/system_messages.proto

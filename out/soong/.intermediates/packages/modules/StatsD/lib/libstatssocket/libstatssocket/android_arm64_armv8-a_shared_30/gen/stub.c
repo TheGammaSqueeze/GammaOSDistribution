@@ -1,0 +1,15 @@
+void AStatsEvent_obtain() {}
+void AStatsEvent_build() {}
+void AStatsEvent_write() {}
+void AStatsEvent_release() {}
+void AStatsEvent_setAtomId() {}
+void AStatsEvent_writeInt32() {}
+void AStatsEvent_writeInt64() {}
+void AStatsEvent_writeFloat() {}
+void AStatsEvent_writeBool() {}
+void AStatsEvent_writeByteArray() {}
+void AStatsEvent_writeString() {}
+void AStatsEvent_writeAttributionChain() {}
+void AStatsEvent_addBoolAnnotation() {}
+void AStatsEvent_addInt32Annotation() {}
+void AStatsSocket_close() {}

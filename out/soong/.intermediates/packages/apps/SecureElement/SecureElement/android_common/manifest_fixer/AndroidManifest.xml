@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.se" package="com.android.se" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <application android:directBootAware="true" android:extractNativeLibs="true" android:label="SecureElementApplication" android:memtagMode="async" android:name=".SEApplication" android:persistent="true" android:usesNonSdkApi="true">
+        <service android:exported="true" android:name=".SecureElementService" android:visibleToInstantApps="true">
+            <intent-filter>
+                <action android:name="android.se.omapi.ISecureElementService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

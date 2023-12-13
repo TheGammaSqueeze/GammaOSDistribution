@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest package="com.android.bips" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PRINT_SERVICES"/>
+    <uses-permission android:name="android.permission.READ_PRINT_SERVICE_RECOMMENDATIONS"/>
+    <uses-permission android:name="android.permission.SUBSTITUTE_SHARE_TARGET_APP_NAME_AND_ICON"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application android:allowBackup="true" android:extractNativeLibs="true" android:icon="@drawable/ic_printservice" android:label="@string/app_name" android:supportsRtl="true">
+        <service android:exported="true" android:name="com.android.bips.BuiltInPrintService" android:permission="android.permission.BIND_PRINT_SERVICE">
+            <intent-filter>
+                <action android:name="android.printservice.PrintService"/>
+            </intent-filter>
+            <meta-data android:name="android.printservice" android:resource="@xml/printservice"/>
+        </service>
+
+        <service android:exported="false" android:isolatedProcess="true" android:name="com.android.bips.render.PdfRenderService">
+            <intent-filter>
+                <action android:name="com.android.bips.render.PdfRenderService"/>
+            </intent-filter>
+        </service>
+
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.android.bips.ui.MoreOptionsActivity" android:permission="android.permission.START_PRINT_SERVICE_CONFIG_ACTIVITY" android:theme="@android:style/Theme.DeviceDefault.Settings"/>
+
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/title_activity_add_printer" android:name="com.android.bips.ui.AddPrintersActivity" android:permission="android.permission.START_PRINT_SERVICE_CONFIG_ACTIVITY" android:theme="@android:style/Theme.DeviceDefault.Settings"/>
+
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/print" android:name="com.android.bips.ImagePrintActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/print" android:name="com.android.bips.PdfPrintActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

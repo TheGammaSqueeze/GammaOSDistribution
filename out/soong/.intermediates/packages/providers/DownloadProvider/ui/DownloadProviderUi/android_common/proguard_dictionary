@@ -1,0 +1,51 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: e73b58f
+# common_typos_disable
+com.android.providers.downloads.DownloadDrmHelper -> com.android.providers.downloads.DownloadDrmHelper:
+    66:76:java.lang.String getOriginalMimeType(android.content.Context,java.io.File,java.lang.String) -> getOriginalMimeType
+com.android.providers.downloads.MediaStoreDownloadsHelper -> com.android.providers.downloads.MediaStoreDownloadsHelper:
+    37:37:long getMediaStoreId(java.lang.String) -> getMediaStoreId
+    42:43:java.lang.String getMediaStoreIdString(java.lang.String) -> getMediaStoreIdString
+    32:33:boolean isMediaStoreDownload(java.lang.String) -> isMediaStoreDownload
+com.android.providers.downloads.OpenHelper -> com.android.providers.downloads.OpenHelper:
+    110:144:android.content.Intent buildViewIntent(android.content.Context,long) -> buildViewIntent
+    71:101:android.content.Intent buildViewIntentForMediaStoreDownload(android.content.Context,android.net.Uri) -> buildViewIntentForMediaStoreDownload
+    207:207:java.io.File getCursorFile(android.database.Cursor,java.lang.String) -> getCursorFile
+    198:198:java.lang.String getCursorString(android.database.Cursor,java.lang.String) -> getCursorString
+    202:203:android.net.Uri getCursorUri(android.database.Cursor,java.lang.String) -> getCursorUri
+    167:180:int getOriginatingUid(android.content.Context,long) -> getOriginatingUid
+    190:192:int getPackageUid(android.content.Context,java.lang.String) -> getPackageUid
+    148:162:android.net.Uri getRefererUri(android.content.Context,long) -> getRefererUri
+    49:56:boolean startViewIntent(android.content.Context,long,int) -> startViewIntent
+    61:64:boolean startViewIntent(android.content.Context,android.content.Intent) -> startViewIntent
+com.android.providers.downloads.RawDocumentsHelper -> com.android.providers.downloads.RawDocumentsHelper:
+    38:38:boolean isRawDocId(java.lang.String) -> isRawDocId
+    53:63:boolean startViewIntent(android.content.Context,android.net.Uri) -> startViewIntent
+com.android.providers.downloads.ui.TrampolineActivity -> com.android.providers.downloads.ui.TrampolineActivity:
+    48:48:void <init>() -> <init>
+    58:146:void onCreate(android.os.Bundle) -> onCreate
+    152:155:void sendRunningDownloadClickedBroadcast(long) -> sendRunningDownloadClickedBroadcast
+com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment -> com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment:
+    220:220:void <init>() -> <init>
+    232:278:android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+    283:286:void onDismiss(android.content.DialogInterface) -> onDismiss
+    222:227:void show(android.app.FragmentManager,long,int) -> show
+com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment$1 -> com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment$1:
+    263:263:void <init>(com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment,android.app.DownloadManager,long) -> <init>
+    266:266:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment$2 -> com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment$2:
+    271:271:void <init>(com.android.providers.downloads.ui.TrampolineActivity$FailedDialogFragment,android.app.DownloadManager,long) -> <init>
+    274:274:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment -> com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment:
+    158:158:void <init>() -> <init>
+    170:207:android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+    212:215:void onDismiss(android.content.DialogInterface) -> onDismiss
+    160:165:void show(android.app.FragmentManager,long,long) -> show
+com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment$1 -> com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment$1:
+    191:191:void <init>(com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment,android.app.DownloadManager,long) -> <init>
+    194:194:void onClick(android.content.DialogInterface,int) -> onClick
+com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment$2 -> com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment$2:
+    200:200:void <init>(com.android.providers.downloads.ui.TrampolineActivity$PausedDialogFragment,android.app.DownloadManager,long) -> <init>
+    203:203:void onClick(android.content.DialogInterface,int) -> onClick

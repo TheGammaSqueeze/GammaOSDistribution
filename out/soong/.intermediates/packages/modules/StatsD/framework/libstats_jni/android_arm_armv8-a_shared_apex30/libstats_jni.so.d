@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/StatsD/framework/libstats_jni/android_arm_armv8-a_shared_apex30/libstats_jni.so:   out/soong/.intermediates/packages/modules/StatsD/framework/libstats_jni/android_arm_armv8-a_shared_apex30/unstripped/libstats_jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

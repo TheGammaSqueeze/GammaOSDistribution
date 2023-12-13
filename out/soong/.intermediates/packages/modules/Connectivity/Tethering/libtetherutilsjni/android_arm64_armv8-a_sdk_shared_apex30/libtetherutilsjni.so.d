@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/Connectivity/Tethering/libtetherutilsjni/android_arm64_armv8-a_sdk_shared_apex30/libtetherutilsjni.so:   out/soong/.intermediates/packages/modules/Connectivity/Tethering/libtetherutilsjni/android_arm64_armv8-a_sdk_shared_apex30/unstripped/libtetherutilsjni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

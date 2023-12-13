@@ -1,0 +1,12 @@
+void AStatsManager_PullAtomMetadata_obtain() {}
+void AStatsManager_PullAtomMetadata_release() {}
+void AStatsManager_PullAtomMetadata_setCoolDownMillis() {}
+void AStatsManager_PullAtomMetadata_getCoolDownMillis() {}
+void AStatsManager_PullAtomMetadata_setTimeoutMillis() {}
+void AStatsManager_PullAtomMetadata_getTimeoutMillis() {}
+void AStatsManager_PullAtomMetadata_setAdditiveFields() {}
+void AStatsManager_PullAtomMetadata_getNumAdditiveFields() {}
+void AStatsManager_PullAtomMetadata_getAdditiveFields() {}
+void AStatsEventList_addStatsEvent() {}
+void AStatsManager_setPullAtomCallback() {}
+void AStatsManager_clearPullAtomCallback() {}

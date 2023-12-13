@@ -1,0 +1,6 @@
+out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi/android_common_apex30/gen/aidl/aidl0.tmp/packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.java : \
+  packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiUsabilityStatsEntry.aidl
+
+packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiUsabilityStatsEntry.aidl :

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest package="com.android.storagemanager" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_RESERVED_DISK"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries>
+
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/ic_storage_manager_48px" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/StorageManager" android:usesNonSdkApi="true">
+        <uses-library android:name="org.apache.http.legacy"/>
+        <!-- Initial Page -->
+        <activity android:exported="true" android:label="@string/deletion_helper_title" android:launchMode="singleTask" android:name="com.android.storagemanager.deletionhelper.DeletionHelperActivity">
+            <intent-filter>
+                <action android:name="android.os.storage.action.MANAGE_STORAGE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Warning for activating the storage manager. -->
+        <activity android:excludeFromRecents="true" android:label="" android:name="com.android.storagemanager.automatic.WarningDialogActivity" android:noHistory="true" android:taskAffinity=".WarningDialogActivity" android:theme="@style/TransparentDialog">
+        </activity>
+
+        <!-- Automatic storage management tasks. -->
+        <service android:enabled="@bool/enable_automatic_storage_management" android:exported="false" android:label="@string/automatic_storage_manager_service_label" android:name="com.android.storagemanager.automatic.AutomaticStorageManagementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <receiver android:enabled="@bool/enable_automatic_storage_management" android:exported="true" android:name="com.android.storagemanager.automatic.AutomaticStorageBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.android.storagemanager.automatic.NotificationController">
+            <intent-filter>
+                <action android:name="com.android.storagemanager.automatic.DISMISS"/>
+                <action android:name="com.android.storagemanager.automatic.ACTIVATE"/>
+                <action android:name="com.android.storagemanager.automatic.NO_THANKS"/>
+                <action android:name="com.android.storagemanager.automatic.SHOW_NOTIFICATION"/>
+                <action android:name="com.android.storagemanager.automatic.DEBUG_SHOW_NOTIFICATION"/>
+                <action android:name="com.android.storagemanager.automatic.SHOW_SETTINGS"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

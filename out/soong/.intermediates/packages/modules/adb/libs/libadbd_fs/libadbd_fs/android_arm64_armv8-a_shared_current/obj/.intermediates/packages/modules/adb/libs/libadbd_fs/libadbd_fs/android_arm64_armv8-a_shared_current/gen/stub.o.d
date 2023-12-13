@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/adb/libs/libadbd_fs/libadbd_fs/android_arm64_armv8-a_shared_current/obj/.intermediates/packages/modules/adb/libs/libadbd_fs/libadbd_fs/android_arm64_armv8-a_shared_current/gen/stub.o: \
+  out/soong/.intermediates/packages/modules/adb/libs/libadbd_fs/libadbd_fs/android_arm64_armv8-a_shared_current/gen/stub.c

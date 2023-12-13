@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/StatsD/lib/libkll/proto/libkll-protos/android_arm_armv8-a_static/gen/proto/kll-quantiles.pb.cc: packages/modules/StatsD/lib/libkll/proto//aggregator.proto packages/modules/StatsD/lib/libkll/proto//kll-quantiles.proto

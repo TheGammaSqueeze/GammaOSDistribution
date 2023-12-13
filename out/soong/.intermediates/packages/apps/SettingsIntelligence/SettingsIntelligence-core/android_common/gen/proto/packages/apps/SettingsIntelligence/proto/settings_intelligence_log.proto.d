@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/SettingsIntelligence/SettingsIntelligence-core/android_common/gen/proto/proto0.tmp/com/android/settings/intelligence/nano/SettingsIntelligenceLogProto.java: packages/apps/SettingsIntelligence/proto/settings_intelligence_log.proto

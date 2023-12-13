@@ -1,0 +1,9 @@
+commands: <
+  command: "cp -f $(echo packages/services/Car/car-lib/api/system-released/system-2.txt | tr \" \" \"\\n\" | sort -n | tail -1) __SBOX_SANDBOX_DIR__/out/last-released-system-api.txt"
+  copy_after: <
+    from: "out/last-released-system-api.txt"
+    to: "out/soong/.intermediates/packages/services/Car/car-lib/android-car-last-released-system-api/gen/last-released-system-api.txt"
+  >
+  input_hash: "6eca484270a93b2e14f7cdb4516b41b7400346b02c16a9846715fbf96eb8b8da"
+>
+

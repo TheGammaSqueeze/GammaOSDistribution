@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/adb/proto/libapp_processes_protos_lite/android_arm64_armv8-a_static/gen/proto/packages/modules/adb/proto/app_processes.pb.cc: packages/modules/adb/proto/app_processes.proto

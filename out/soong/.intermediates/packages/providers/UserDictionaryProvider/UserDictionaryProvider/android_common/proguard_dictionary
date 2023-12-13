@@ -1,0 +1,32 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: b392a58
+# common_typos_disable
+com.android.providers.userdictionary.DictionaryBackupAgent -> com.android.providers.userdictionary.DictionaryBackupAgent:
+    59:69:void <clinit>() -> <clinit>
+    50:50:void <init>() -> <init>
+    152:189:byte[] getDictionary() -> getDictionary
+    82:90:void onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor) -> onBackup
+    97:103:void onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor) -> onRestore
+    292:292:int readInt(byte[],int) -> readInt
+    111:120:long[] readOldChecksums(android.os.ParcelFileDescriptor) -> readOldChecksums
+    193:271:void restoreDictionary(android.app.backup.BackupDataInput,android.net.Uri) -> restoreDictionary
+    136:144:long writeIfChanged(long,java.lang.String,byte[],android.app.backup.BackupDataOutput) -> writeIfChanged
+    284:287:int writeInt(byte[],int,int) -> writeInt
+    126:131:void writeNewChecksums(long[],android.os.ParcelFileDescriptor) -> writeNewChecksums
+com.android.providers.userdictionary.UserDictionaryProvider -> com.android.providers.userdictionary.UserDictionaryProvider:
+    85:95:void <clinit>() -> <clinit>
+    50:50:void <init>() -> <init>
+    317:343:boolean canCallerAccessUserDictionary() -> canCallerAccessUserDictionary
+    261:283:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    354:367:android.database.Cursor getEmptyCursorOrThrow(java.lang.String[]) -> getEmptyCursorOrThrow
+    197:205:java.lang.String getType(android.net.Uri) -> getType
+    212:255:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    145:148:boolean onCreate() -> onCreate
+    156:191:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    290:312:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+com.android.providers.userdictionary.UserDictionaryProvider$DatabaseHelper -> com.android.providers.userdictionary.UserDictionaryProvider$DatabaseHelper:
+    108:110:void <init>(android.content.Context) -> <init>
+    115:115:void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    128:136:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade

@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/Trebuchet/launcher_log_protos_lite/android_common/gen/proto/proto0.tmp/com/android/launcher3/tracing/GestureStateProto.java: packages/apps/Trebuchet/protos/launcher_trace.proto

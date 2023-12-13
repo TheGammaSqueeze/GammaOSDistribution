@@ -1,0 +1,33 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/dep_fixer"
+    to: "tools/out/bin/dep_fixer"
+  >
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/streaming_proto/protoc-gen-javastream/linux_glibc_x86_64/protoc-gen-javastream"
+    to: "tools/out/bin/protoc-gen-javastream"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c 'mkdir -p __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc   --plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protoc-gen-javastream   --dependency_out=__SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.d   --javastream_out=__SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto   -Iexternal/protobuf/src   -I .   packages/modules/Permission/service/proto/com/android/role/roleservice.proto && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -jar -o __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar -C __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto -D __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.proto' && __SBOX_SANDBOX_DIR__/tools/out/bin/dep_fixer -o __SBOX_DEPFILE__ __SBOX_SANDBOX_DIR__/out/packages/modules/Permission/service/proto/com/android/role/roleservice.d"
+  copy_after: <
+    from: "out/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+    to: "out/soong/.intermediates/packages/modules/Permission/service/service-permission-javastream-protos/gen/gensrcs/packages/modules/Permission/service/proto/com/android/role/roleservice.srcjar"
+  >
+  input_hash: "39e2c7c44b9547c057ca402427bc6ac13e6e5e359395941e6183ecc312d0c616"
+>
+output_depfile: "out/soong/.intermediates/packages/modules/Permission/service/service-permission-javastream-protos/gen/gensrcs/gensrcs.d"
+

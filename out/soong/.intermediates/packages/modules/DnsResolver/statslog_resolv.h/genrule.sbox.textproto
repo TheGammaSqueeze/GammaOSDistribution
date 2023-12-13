@@ -1,0 +1,44 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/proto_logging/stats/stats_log_api_gen/stats-log-api-gen/linux_glibc_x86_64/stats-log-api-gen"
+    to: "tools/out/bin/stats-log-api-gen"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/proto_logging/stats/libstats_proto_host/linux_glibc_x86_64_shared/libstats_proto_host.so"
+    to: "tools/out/lib64/libstats_proto_host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/libprotobuf-cpp-full/linux_glibc_x86_64_shared/libprotobuf-cpp-full.so"
+    to: "tools/out/lib64/libprotobuf-cpp-full.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/zlib/libz/linux_glibc_x86_64_shared/libz-host.so"
+    to: "tools/out/lib64/libz-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/system/libbase/libbase/linux_glibc_x86_64_shared/libbase.so"
+    to: "tools/out/lib64/libbase.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/system/logging/liblog/liblog/linux_glibc_x86_64_shared/liblog.so"
+    to: "tools/out/lib64/liblog.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/stats-log-api-gen --header __SBOX_SANDBOX_DIR__/out/statslog_resolv.h --module resolv --namespace android,net,stats"
+  copy_after: <
+    from: "out/statslog_resolv.h"
+    to: "out/soong/.intermediates/packages/modules/DnsResolver/statslog_resolv.h/gen/statslog_resolv.h"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

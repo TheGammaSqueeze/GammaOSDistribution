@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/NetworkStack/statsprotos/android_common/gen/proto/proto0.tmp/com/android/networkstack/metrics/CapportApiData.java: frameworks/proto_logging/stats/enums/stats/connectivity/network_stack.proto packages/modules/NetworkStack/src/com/android/networkstack/metrics/stats.proto

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Empty manifest used as base for merging our library dependencies -->
+<manifest package="com.android.wallpaper" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+        <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="16"/>
+        <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" tools:replace="android:appComponentFactory">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        </application>
+</manifest>

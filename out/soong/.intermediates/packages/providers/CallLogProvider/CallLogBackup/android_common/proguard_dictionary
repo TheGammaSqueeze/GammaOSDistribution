@@ -1,0 +1,37 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 3b9f0fa
+# common_typos_disable
+com.android.calllogbackup.CallLogBackupAgent -> com.android.calllogbackup.CallLogBackupAgent:
+    117:122:void <clinit>() -> <clinit>
+    56:56:void <init>() -> <init>
+    56:56:boolean access$000() -> access$000
+    426:478:void addCallToBackup(android.app.backup.BackupDataOutput,com.android.calllogbackup.CallLogBackupAgent$Call) -> addCallToBackup
+    228:246:java.lang.Iterable getAllCallLogEntries() -> getAllCallLogEntries
+    492:492:com.android.calllogbackup.CallLogBackupAgent$OEMData getOEMDataForCall(com.android.calllogbackup.CallLogBackupAgent$Call) -> getOEMDataForCall
+    592:592:boolean isDebug() -> isDebug
+    150:169:void onBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor) -> onBackup
+    177:186:void onRestore(android.app.backup.BackupDataInput,int,android.os.ParcelFileDescriptor) -> onRestore
+    395:421:com.android.calllogbackup.CallLogBackupAgent$Call readCallFromCursor(android.database.Cursor) -> readCallFromCursor
+    314:389:com.android.calllogbackup.CallLogBackupAgent$Call readCallFromData(android.app.backup.BackupDataInput) -> readCallFromData
+    576:577:java.lang.Integer readInteger(java.io.DataInputStream) -> readInteger
+    273:290:com.android.calllogbackup.CallLogBackupAgent$CallLogBackupState readState(java.io.DataInput) -> readState
+    559:560:java.lang.String readString(java.io.DataInputStream) -> readString
+    585:587:void removeCallFromBackup(android.app.backup.BackupDataOutput,int) -> removeCallFromBackup
+    194:223:void runBackup(com.android.calllogbackup.CallLogBackupAgent$CallLogBackupState,android.app.backup.BackupDataOutput,java.lang.Iterable) -> runBackup
+    253:262:void writeCallToProvider(com.android.calllogbackup.CallLogBackupAgent$Call) -> writeCallToProvider
+    568:571:void writeInteger(java.io.DataOutputStream,java.lang.Integer) -> writeInteger
+    300:306:void writeState(java.io.DataOutput,com.android.calllogbackup.CallLogBackupAgent$CallLogBackupState) -> writeState
+    551:554:void writeString(java.io.DataOutputStream,java.lang.String) -> writeString
+com.android.calllogbackup.CallLogBackupAgent$Call -> com.android.calllogbackup.CallLogBackupAgent$Call:
+    65:83:void <init>() -> <init>
+    87:91:java.lang.String toString() -> toString
+com.android.calllogbackup.CallLogBackupAgent$CallLogBackupState -> com.android.calllogbackup.CallLogBackupAgent$CallLogBackupState:
+    59:59:void <init>() -> <init>
+com.android.calllogbackup.CallLogBackupAgent$OEMData -> com.android.calllogbackup.CallLogBackupAgent$OEMData:
+    100:102:void <init>(java.lang.String,byte[]) -> <init>
+com.android.calllogbackup.CallLogChangeReceiver -> com.android.calllogbackup.CallLogChangeReceiver:
+    32:32:void <clinit>() -> <clinit>
+    30:30:void <init>() -> <init>
+    39:41:void onReceive(android.content.Context,android.content.Intent) -> onReceive

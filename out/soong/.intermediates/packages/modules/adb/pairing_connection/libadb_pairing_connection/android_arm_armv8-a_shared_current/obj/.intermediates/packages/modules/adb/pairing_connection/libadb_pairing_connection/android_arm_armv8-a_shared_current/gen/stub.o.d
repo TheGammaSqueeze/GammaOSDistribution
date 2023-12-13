@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/adb/pairing_connection/libadb_pairing_connection/android_arm_armv8-a_shared_current/obj/.intermediates/packages/modules/adb/pairing_connection/libadb_pairing_connection/android_arm_armv8-a_shared_current/gen/stub.o: \
+  out/soong/.intermediates/packages/modules/adb/pairing_connection/libadb_pairing_connection/android_arm_armv8-a_shared_current/gen/stub.c

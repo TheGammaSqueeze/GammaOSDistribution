@@ -1,0 +1,34 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/packages/modules/common/tools/gen_sdkinfo/linux_glibc_x86_64_PY3/gen_sdkinfo"
+    to: "tools/out/bin/gen_sdkinfo"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/sqlite/dist/libsqlite/linux_glibc_x86_64_shared/libsqlite.so"
+    to: "tools/out/lib64/libsqlite.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/icu/icu4c/source/i18n/libicui18n/linux_glibc_x86_64_shared/libicui18n-host.so"
+    to: "tools/out/lib64/libicui18n-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/icu/icu4c/source/common/libicuuc/linux_glibc_x86_64_shared/libicuuc-host.so"
+    to: "tools/out/lib64/libicuuc-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/gen_sdkinfo -v 1 -o __SBOX_SANDBOX_DIR__/out/packages/modules/common/tools.'"
+  copy_after: <
+    from: "out/packages/modules/common/tools."
+    to: "out/soong/.intermediates/packages/modules/common/tools/cur_sdkinfo_src/gen/gensrcs/packages/modules/common/tools."
+  >
+  input_hash: "e1adbf329e8b3cf7ade46637ae311993502cf7ef53193c80dda2852db1bac87f"
+>
+

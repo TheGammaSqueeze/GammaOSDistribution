@@ -1,0 +1,76 @@
+{
+ "array_types" : [],
+ "builtin_types" : [],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "adb::tls::SHA256BitsToHexString",
+   "linker_set_key" : "_ZN3adb3tls21SHA256BitsToHexStringENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/adb_ca_list.h"
+  },
+  {
+   "function_name" : "adb::tls::SHA256HexStringToBits",
+   "linker_set_key" : "_ZN3adb3tls21SHA256HexStringToBitsENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__18optionalINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEE",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/adb_ca_list.h"
+  },
+  {
+   "function_name" : "adb::tls::ParseEncodedKeyFromCAIssuer",
+   "linker_set_key" : "_ZN3adb3tls27ParseEncodedKeyFromCAIssuerEP12X509_name_st",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP12X509_name_st"
+    }
+   ],
+   "return_type" : "_ZTINSt3__18optionalINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEE",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/adb_ca_list.h"
+  },
+  {
+   "function_name" : "adb::tls::CreateCAIssuerFromEncodedKey",
+   "linker_set_key" : "_ZN3adb3tls28CreateCAIssuerFromEncodedKeyENSt3__117basic_string_viewIcNS1_11char_traitsIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTINSt3__117basic_string_viewIcNS_11char_traitsIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110unique_ptrI12X509_name_stN4bssl8internal7DeleterIS1_EEEE",
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/adb_ca_list.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP12X509_name_st",
+   "name" : "X509_name_st *",
+   "referenced_type" : "_ZTI12X509_name_st",
+   "self_type" : "_ZTIP12X509_name_st",
+   "size" : 4,
+   "source_file" : "packages/modules/adb/tls/include/adb/tls/adb_ca_list.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

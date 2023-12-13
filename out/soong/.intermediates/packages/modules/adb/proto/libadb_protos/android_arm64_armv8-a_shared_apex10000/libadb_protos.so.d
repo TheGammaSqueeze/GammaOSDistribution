@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/adb/proto/libadb_protos/android_arm64_armv8-a_shared_apex10000/libadb_protos.so:   out/soong/.intermediates/packages/modules/adb/proto/libadb_protos/android_arm64_armv8-a_shared_apex10000/unstripped/libadb_protos.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

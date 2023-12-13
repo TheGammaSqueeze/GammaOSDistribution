@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/services/Telephony/ecc/conversion_toolset_v1/proto/ecc-protos-lite/android_common/gen/proto/proto0.tmp/com/android/phone/ecc/nano/ProtobufEccData.java: packages/services/Telephony/ecc/conversion_toolset_v1/proto/protobuf_ecc_data.proto

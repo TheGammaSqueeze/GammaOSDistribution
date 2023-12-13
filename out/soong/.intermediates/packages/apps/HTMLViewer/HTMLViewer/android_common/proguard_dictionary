@@ -1,0 +1,24 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 5094e7f
+# common_typos_disable
+com.android.htmlviewer.HTMLViewerActivity -> com.android.htmlviewer.HTMLViewerActivity:
+    47:47:void <init>() -> <init>
+    47:47:android.view.View access$200(com.android.htmlviewer.HTMLViewerActivity) -> access$200
+    91:94:void loadUrl() -> loadUrl
+    56:83:void onCreate(android.os.Bundle) -> onCreate
+    114:115:void onDestroy() -> onDestroy
+    105:109:boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    98:99:void setBackButton() -> setBackButton
+    87:87:void setContentView() -> setContentView
+com.android.htmlviewer.HTMLViewerActivity$ChromeClient -> com.android.htmlviewer.HTMLViewerActivity$ChromeClient:
+    118:118:void <init>(com.android.htmlviewer.HTMLViewerActivity) -> <init>
+    118:118:void <init>(com.android.htmlviewer.HTMLViewerActivity,com.android.htmlviewer.HTMLViewerActivity$1) -> <init>
+    121:122:void onReceivedTitle(android.webkit.WebView,java.lang.String) -> onReceivedTitle
+com.android.htmlviewer.HTMLViewerActivity$ViewClient -> com.android.htmlviewer.HTMLViewerActivity$ViewClient:
+    127:127:void <init>(com.android.htmlviewer.HTMLViewerActivity) -> <init>
+    127:127:void <init>(com.android.htmlviewer.HTMLViewerActivity,com.android.htmlviewer.HTMLViewerActivity$1) -> <init>
+    130:130:void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    172:184:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldInterceptRequest
+    135:164:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldOverrideUrlLoading

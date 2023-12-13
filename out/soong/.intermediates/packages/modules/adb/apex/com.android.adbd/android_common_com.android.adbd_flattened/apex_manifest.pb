@@ -1,0 +1,2 @@
+
+com.android.adbdÿŸË˜*319999999.57:libadb_pairing_auth.so:libadb_pairing_connection.so:libadb_pairing_server.so:libadbconnection_client.soBlibadbd_auth.soBlibadbd_fs.soBlibbinder_ndk.soBlibc.soBlibdl.soB	liblog.soBlibm.soBlibselinux.so

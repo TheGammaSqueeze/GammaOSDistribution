@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/Settings/protos/settings-log-bridge-protos-lite/android_common/gen/proto/proto0.tmp/com/android/settings/intelligence/LogProto.java: packages/apps/Settings/protos/settings_log_bridge.proto

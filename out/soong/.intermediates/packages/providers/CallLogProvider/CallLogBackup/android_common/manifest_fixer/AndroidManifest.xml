@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.shared" android:sharedUserLabel="@string/sharedUserLabel" package="com.android.calllogbackup" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+
+    <application android:allowBackup="true" android:backupAgent="CallLogBackupAgent" android:extractNativeLibs="true" android:forceQueryable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_label" android:usesCleartextTraffic="false" android:usesNonSdkApi="true">
+
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIVhVYJjcc4bozis7qBfzzgREFk3nIkWGNc5VaRg"/>
+
+        <receiver android:exported="true" android:name="CallLogChangeReceiver" android:permission="android.permission.SEND_CALL_LOG_CHANGE">
+            <!-- Sent when the call log changes.  We use it to trigger a backup request. -->
+            <intent-filter>
+                <action android:name="com.android.internal.action.CALL_LOG_CHANGE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

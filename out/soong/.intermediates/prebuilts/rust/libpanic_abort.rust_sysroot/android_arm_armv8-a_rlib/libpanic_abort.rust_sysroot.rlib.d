@@ -1,0 +1,1 @@
+out/soong/.intermediates/prebuilts/rust/libpanic_abort.rust_sysroot/android_arm_armv8-a_rlib/libpanic_abort.rust_sysroot.rlib: prebuilts/rust/linux-x86/1.51.0/src/stdlibs/library/panic_abort/src/lib.rs prebuilts/rust/linux-x86/1.51.0/src/stdlibs/library/panic_abort/src/android.rs

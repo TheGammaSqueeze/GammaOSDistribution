@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/providers/TelephonyProvider/proto/telephonyprovider-protos/android_common/gen/proto/proto0.tmp/com/android/providers/telephony/nano/CarrierIdProto.java: packages/providers/TelephonyProvider/proto/src/carrierId.proto

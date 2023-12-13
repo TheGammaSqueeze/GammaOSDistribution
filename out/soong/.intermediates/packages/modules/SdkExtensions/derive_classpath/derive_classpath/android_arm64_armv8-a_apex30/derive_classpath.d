@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/SdkExtensions/derive_classpath/derive_classpath/android_arm64_armv8-a_apex30/derive_classpath:   out/soong/.intermediates/packages/modules/SdkExtensions/derive_classpath/derive_classpath/android_arm64_armv8-a_apex30/unstripped/derive_classpath   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

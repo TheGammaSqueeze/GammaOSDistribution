@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/Settings/protos/settings-contextual-card-protos-lite/android_common/gen/proto/proto0.tmp/com/android/settings/intelligence/ContextualCardProto.java: packages/apps/Settings/protos/contextual_card_list.proto

@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/Trebuchet/launcher_quickstep_log_protos_lite/android_common/gen/proto/proto0.tmp/com/android/launcher3/logger/LauncherAtomExtensions.java: packages/apps/Trebuchet/quickstep/protos_overrides/launcher_atom_extension.proto

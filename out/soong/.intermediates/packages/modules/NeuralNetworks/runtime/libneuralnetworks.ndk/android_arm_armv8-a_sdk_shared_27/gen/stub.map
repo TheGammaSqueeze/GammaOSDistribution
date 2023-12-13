@@ -1,0 +1,27 @@
+LIBNEURALNETWORKS {
+    global:
+        ANeuralNetworksMemory_createFromFd;
+        ANeuralNetworksMemory_free;
+        ANeuralNetworksModel_create;
+        ANeuralNetworksModel_free;
+        ANeuralNetworksModel_finish;
+        ANeuralNetworksModel_addOperand;
+        ANeuralNetworksModel_setOperandValue;
+        ANeuralNetworksModel_setOperandValueFromMemory;
+        ANeuralNetworksModel_addOperation;
+        ANeuralNetworksModel_identifyInputsAndOutputs;
+        ANeuralNetworksModel_relaxComputationFloat32toFloat16;
+        ANeuralNetworksCompilation_create;
+        ANeuralNetworksCompilation_free;
+        ANeuralNetworksCompilation_setPreference;
+        ANeuralNetworksCompilation_finish;
+        ANeuralNetworksExecution_create;
+        ANeuralNetworksExecution_free;
+        ANeuralNetworksExecution_setInput;
+        ANeuralNetworksExecution_setInputFromMemory;
+        ANeuralNetworksExecution_setOutput;
+        ANeuralNetworksExecution_setOutputFromMemory;
+        ANeuralNetworksExecution_startCompute;
+        ANeuralNetworksEvent_wait;
+        ANeuralNetworksEvent_free;
+};

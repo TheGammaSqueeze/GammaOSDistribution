@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/common/proto/libclasspaths_proto/android_arm64_armv8-a_static_apex30/gen/proto/packages/modules/common/proto/classpaths.pb.cc: packages/modules/common/proto/classpaths.proto

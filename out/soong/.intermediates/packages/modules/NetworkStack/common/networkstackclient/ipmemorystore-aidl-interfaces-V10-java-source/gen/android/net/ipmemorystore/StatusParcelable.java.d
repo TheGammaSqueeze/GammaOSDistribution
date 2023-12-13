@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/NetworkStack/common/networkstackclient/ipmemorystore-aidl-interfaces-V10-java-source/gen/android/net/ipmemorystore/StatusParcelable.java : \
+  packages/modules/NetworkStack/common/networkstackclient/aidl_api/ipmemorystore-aidl-interfaces/10/android/net/ipmemorystore/StatusParcelable.aidl

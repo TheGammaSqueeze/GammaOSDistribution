@@ -1,0 +1,60 @@
+out/soong/.intermediates/packages/modules/Connectivity/framework/framework-connectivity.stubs.source.system/android_common/gen/aidl/aidl0.tmp/packages/modules/Connectivity/framework/src/android/net/IConnectivityManager.java : \
+  packages/modules/Connectivity/framework/src/android/net/IConnectivityManager.aidl \
+  frameworks/base/core/java/android/app/PendingIntent.aidl \
+  packages/modules/Connectivity/framework/src/android/net/ConnectionInfo.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/ConnectivityDiagnosticsManager.aidl \
+  packages/modules/Connectivity/framework/src/android/net/IConnectivityDiagnosticsCallback.aidl \
+  packages/modules/Connectivity/framework/src/android/net/INetworkAgent.aidl \
+  packages/modules/Connectivity/framework/src/android/net/IOnCompleteListener.aidl \
+  packages/modules/Connectivity/framework/src/android/net/INetworkActivityListener.aidl \
+  packages/modules/Connectivity/framework/src/android/net/INetworkOfferCallback.aidl \
+  packages/modules/Connectivity/framework/src/android/net/IQosCallback.aidl \
+  packages/modules/Connectivity/framework/src/android/net/ISocketKeepaliveCallback.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/LinkProperties.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/Network.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkAgentConfig.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkCapabilities.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkInfo.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkRequest.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/NetworkScore.aidl \
+  frameworks/base/core/java/android/net/NetworkState.aidl \
+  frameworks/base/core/java/android/net/NetworkStateSnapshot.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/OemNetworkPreferences.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/ProxyInfo.aidl \
+  packages/modules/Connectivity/framework/src/android/net/UidRange.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/QosSocketInfo.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/Messenger.aidl \
+  frameworks/native/aidl/binder/android/os/PersistableBundle.aidl \
+  frameworks/base/core/java/android/os/ResultReceiver.aidl \
+  frameworks/base/core/java/android/os/UserHandle.aidl
+
+packages/modules/Connectivity/framework/src/android/net/IConnectivityManager.aidl :
+frameworks/base/core/java/android/app/PendingIntent.aidl :
+packages/modules/Connectivity/framework/src/android/net/ConnectionInfo.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/ConnectivityDiagnosticsManager.aidl :
+packages/modules/Connectivity/framework/src/android/net/IConnectivityDiagnosticsCallback.aidl :
+packages/modules/Connectivity/framework/src/android/net/INetworkAgent.aidl :
+packages/modules/Connectivity/framework/src/android/net/IOnCompleteListener.aidl :
+packages/modules/Connectivity/framework/src/android/net/INetworkActivityListener.aidl :
+packages/modules/Connectivity/framework/src/android/net/INetworkOfferCallback.aidl :
+packages/modules/Connectivity/framework/src/android/net/IQosCallback.aidl :
+packages/modules/Connectivity/framework/src/android/net/ISocketKeepaliveCallback.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/LinkProperties.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/Network.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkAgentConfig.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkCapabilities.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkInfo.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkRequest.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/NetworkScore.aidl :
+frameworks/base/core/java/android/net/NetworkState.aidl :
+frameworks/base/core/java/android/net/NetworkStateSnapshot.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/OemNetworkPreferences.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/ProxyInfo.aidl :
+packages/modules/Connectivity/framework/src/android/net/UidRange.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/QosSocketInfo.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/Messenger.aidl :
+frameworks/native/aidl/binder/android/os/PersistableBundle.aidl :
+frameworks/base/core/java/android/os/ResultReceiver.aidl :
+frameworks/base/core/java/android/os/UserHandle.aidl :

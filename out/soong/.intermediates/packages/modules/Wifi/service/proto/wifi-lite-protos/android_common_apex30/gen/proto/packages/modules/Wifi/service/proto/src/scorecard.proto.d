@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/Wifi/service/proto/wifi-lite-protos/android_common_apex30/gen/proto/proto0.tmp/com/android/server/wifi/proto/WifiScoreCardProto.java: packages/modules/Wifi/service/proto/src/scorecard.proto

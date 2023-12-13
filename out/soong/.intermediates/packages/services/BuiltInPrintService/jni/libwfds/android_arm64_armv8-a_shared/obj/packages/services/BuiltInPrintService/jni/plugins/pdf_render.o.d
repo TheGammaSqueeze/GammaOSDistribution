@@ -1,0 +1,41 @@
+out/soong/.intermediates/packages/services/BuiltInPrintService/jni/libwfds/android_arm64_armv8-a_shared/obj/packages/services/BuiltInPrintService/jni/plugins/pdf_render.o: \
+  packages/services/BuiltInPrintService/jni/plugins/pdf_render.c \
+  libnativehelper/include_jni/jni.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  external/libcxx/include/stdint.h external/libcxx/include/__config \
+  bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h \
+  bionic/libc/include/sys/cdefs.h \
+  bionic/libc/include/android/versioning.h \
+  bionic/libc/include/android/api-level.h \
+  external/libcxx/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  bionic/libc/include/malloc.h external/libcxx/include/stdio.h \
+  bionic/libc/include/stdio.h bionic/libc/include/sys/types.h \
+  bionic/libc/kernel/uapi/linux/types.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/types.h \
+  bionic/libc/kernel/uapi/asm-generic/types.h \
+  bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h \
+  bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+  bionic/libc/kernel/uapi/linux/posix_types.h \
+  bionic/libc/kernel/uapi/linux/stddef.h \
+  bionic/libc/kernel/android/uapi/linux/compiler_types.h \
+  bionic/libc/kernel/android/uapi/linux/compiler.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/posix_types.h \
+  bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+  bionic/libc/include/bits/pthread_types.h \
+  bionic/libc/include/bits/seek_constants.h \
+  bionic/libc/include/bits/fortify/stdio.h \
+  packages/services/BuiltInPrintService/jni/plugins/wprint_mupdf.h \
+  packages/services/BuiltInPrintService/jni/plugins/wprint_image.h \
+  packages/services/BuiltInPrintService/jni/include/mime_types.h \
+  packages/services/BuiltInPrintService/jni/plugins/wprint_scaler.h \
+  packages/services/BuiltInPrintService/jni/include/wtypes.h \
+  external/libcxx/include/stdbool.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h \
+  packages/services/BuiltInPrintService/jni/include/wprint_debug.h \
+  system/logging/liblog/include/android/log.h \
+  packages/services/BuiltInPrintService/jni/include/ifc_wprint.h \
+  packages/services/BuiltInPrintService/jni/include/wprint_msgq.h \
+  packages/services/BuiltInPrintService/jni/plugins/wprint_image_platform.h \
+  external/libcxx/include/setjmp.h bionic/libc/include/setjmp.h

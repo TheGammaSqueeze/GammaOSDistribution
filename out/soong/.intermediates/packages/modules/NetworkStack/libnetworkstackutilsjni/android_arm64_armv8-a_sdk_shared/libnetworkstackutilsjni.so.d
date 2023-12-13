@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/modules/NetworkStack/libnetworkstackutilsjni/android_arm64_armv8-a_sdk_shared/libnetworkstackutilsjni.so:   out/soong/.intermediates/packages/modules/NetworkStack/libnetworkstackutilsjni/android_arm64_armv8-a_sdk_shared/unstripped/libnetworkstackutilsjni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

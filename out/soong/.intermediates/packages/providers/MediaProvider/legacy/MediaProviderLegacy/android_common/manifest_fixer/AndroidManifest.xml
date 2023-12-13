@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="1024" package="com.android.providers.media" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <!-- This "legacy" instance is retained on the device to preserve the
+         database contents before MediaProvider was migrated into a
+         Mainline module.  This ensures that we can reconstruct information
+         such as IDs and other user-generated content. -->
+
+    <application android:allowBackup="false" android:extractNativeLibs="true" android:forceQueryable="true" android:process="android.process.media" android:supportsRtl="true" android:usesCleartextTraffic="true" android:usesNonSdkApi="true">
+        <provider android:authorities="media_legacy" android:exported="true" android:name="com.android.providers.media.LegacyMediaProvider" android:permission="android.permission.WRITE_MEDIA_STORAGE"/>
+    </application>
+</manifest>

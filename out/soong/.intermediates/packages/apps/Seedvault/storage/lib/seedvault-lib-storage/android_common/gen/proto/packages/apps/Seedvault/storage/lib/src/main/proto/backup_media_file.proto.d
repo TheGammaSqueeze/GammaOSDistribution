@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/Seedvault/storage/lib/seedvault-lib-storage/android_common/gen/proto/proto0.tmp/org/calyxos/backup/storage/backup/BackupMediaFile.java: packages/apps/Seedvault/storage/lib/src/main/proto/backup_media_file.proto

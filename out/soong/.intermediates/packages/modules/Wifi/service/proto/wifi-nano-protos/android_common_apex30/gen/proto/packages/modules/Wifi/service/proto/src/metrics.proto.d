@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/Wifi/service/proto/wifi-nano-protos/android_common_apex30/gen/proto/proto0.tmp/com/android/server/wifi/proto/nano/WifiMetricsProto.java: packages/modules/Wifi/service/proto/src/metrics.proto frameworks/base/proto/src/system_messages.proto

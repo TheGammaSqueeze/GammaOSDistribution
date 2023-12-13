@@ -1,0 +1,61 @@
+{
+ "array_types" : [],
+ "builtin_types" : [],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "adb::crypto::X509ToPEMString",
+   "linker_set_key" : "_ZN3adb6crypto15X509ToPEMStringEP7x509_st",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP7x509_st"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/x509_generator.h"
+  },
+  {
+   "function_name" : "adb::crypto::GenerateX509Certificate",
+   "linker_set_key" : "_ZN3adb6crypto23GenerateX509CertificateEP11evp_pkey_st",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP11evp_pkey_st"
+    }
+   ],
+   "return_type" : "_ZTINSt3__110unique_ptrI7x509_stN4bssl8internal7DeleterIS1_EEEE",
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/x509_generator.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP11evp_pkey_st",
+   "name" : "evp_pkey_st *",
+   "referenced_type" : "_ZTI11evp_pkey_st",
+   "self_type" : "_ZTIP11evp_pkey_st",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/x509_generator.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP7x509_st",
+   "name" : "x509_st *",
+   "referenced_type" : "_ZTI7x509_st",
+   "self_type" : "_ZTIP7x509_st",
+   "size" : 8,
+   "source_file" : "packages/modules/adb/crypto/include/adb/crypto/x509_generator.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

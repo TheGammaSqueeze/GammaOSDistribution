@@ -1,0 +1,1 @@
+out/soong/.intermediates/prebuilts/rust/libprofiler_builtins.rust_sysroot/android_arm64_armv8-a_rlib/libprofiler_builtins.rust_sysroot.rlib: prebuilts/rust/linux-x86/1.51.0/src/stdlibs/library/profiler_builtins/src/lib.rs

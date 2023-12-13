@@ -1,0 +1,6 @@
+out/soong/.intermediates/packages/services/Car/car-lib/android.car/android_common/gen/aidl/aidl0.tmp/packages/services/Car/car-lib/src/android/car/cluster/IClusterNavigationStateListener.java : \
+  packages/services/Car/car-lib/src/android/car/cluster/IClusterNavigationStateListener.aidl \
+  packages/services/Car/car-lib/src/android/car/cluster/ClusterState.aidl
+
+packages/services/Car/car-lib/src/android/car/cluster/IClusterNavigationStateListener.aidl :
+packages/services/Car/car-lib/src/android/car/cluster/ClusterState.aidl :

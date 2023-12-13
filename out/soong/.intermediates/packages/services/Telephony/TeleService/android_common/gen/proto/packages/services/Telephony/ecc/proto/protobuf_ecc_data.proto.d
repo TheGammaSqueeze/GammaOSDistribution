@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/services/Telephony/TeleService/android_common/gen/proto/proto0.tmp/com/android/phone/ecc/ProtobufEccData.java: packages/services/Telephony/ecc/proto/protobuf_ecc_data.proto

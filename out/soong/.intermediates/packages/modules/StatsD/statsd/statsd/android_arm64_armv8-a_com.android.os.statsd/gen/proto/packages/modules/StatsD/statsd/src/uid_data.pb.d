@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/modules/StatsD/statsd/statsd/android_arm64_armv8-a_com.android.os.statsd/gen/proto/packages/modules/StatsD/statsd/src/uid_data.pb.cc: packages/modules/StatsD/statsd/src/uid_data.proto

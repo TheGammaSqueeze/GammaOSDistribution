@@ -1,0 +1,18 @@
+LIBSTATSSOCKET {
+    global:
+        AStatsEvent_obtain;
+        AStatsEvent_build;
+        AStatsEvent_write;
+        AStatsEvent_release;
+        AStatsEvent_setAtomId;
+        AStatsEvent_writeInt32;
+        AStatsEvent_writeInt64;
+        AStatsEvent_writeFloat;
+        AStatsEvent_writeBool;
+        AStatsEvent_writeByteArray;
+        AStatsEvent_writeString;
+        AStatsEvent_writeAttributionChain;
+        AStatsEvent_addBoolAnnotation;
+        AStatsEvent_addInt32Annotation;
+        AStatsSocket_close;
+};

@@ -1,0 +1,2 @@
+out/soong/.intermediates/packages/apps/Gallery2/jni_jpegstream/libjni_jpegstream/android_arm64_armv8-a_shared/libjni_jpegstream.so:   out/soong/.intermediates/packages/apps/Gallery2/jni_jpegstream/libjni_jpegstream/android_arm64_armv8-a_shared/unstripped/libjni_jpegstream.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

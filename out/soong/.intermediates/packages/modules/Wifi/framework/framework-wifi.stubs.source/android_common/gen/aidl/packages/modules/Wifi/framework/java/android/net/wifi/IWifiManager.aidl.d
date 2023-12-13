@@ -1,0 +1,62 @@
+out/soong/.intermediates/packages/modules/Wifi/framework/framework-wifi.stubs.source/android_common/gen/aidl/aidl0.tmp/packages/modules/Wifi/framework/java/android/net/wifi/IWifiManager.java : \
+  packages/modules/Wifi/framework/java/android/net/wifi/IWifiManager.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/OsuProvider.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/PasspointConfiguration.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/IProvisioningCallback.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/DhcpInfo.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/Network.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/CoexUnsafeChannel.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IActionListener.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ICoexCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IDppCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ILocalOnlyHotspotCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestMatchCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiActivityEnergyInfoListener.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ISoftApCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ISubsystemRestartCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionConnectionStatusListener.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionUserApprovalStatusListener.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/ITrafficStateCallback.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IWifiConnectedNetworkScorer.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/IWifiVerboseLoggingStatusChangedListener.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/ScanResult.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApConfiguration.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiAvailableChannel.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConfiguration.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiInfo.aidl \
+  packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.aidl \
+  packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkSuggestion.aidl \
+  frameworks/libs/modules-utils/java/com/android/modules/utils/ParceledListSlice.aidl
+
+packages/modules/Wifi/framework/java/android/net/wifi/IWifiManager.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/OsuProvider.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/hotspot2/PasspointConfiguration.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/hotspot2/IProvisioningCallback.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/DhcpInfo.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/Network.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/CoexUnsafeChannel.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IActionListener.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ICoexCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IDppCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ILocalOnlyHotspotCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/INetworkRequestMatchCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiActivityEnergyInfoListener.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IOnWifiUsabilityStatsListener.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IScanResultsCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ISoftApCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ISubsystemRestartCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionConnectionStatusListener.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ISuggestionUserApprovalStatusListener.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/ITrafficStateCallback.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IWifiConnectedNetworkScorer.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/IWifiVerboseLoggingStatusChangedListener.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/ScanResult.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/SoftApConfiguration.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiAvailableChannel.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiConfiguration.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiInfo.aidl :
+packages/modules/Wifi/framework/java/android/net/wifi/WifiManager.aidl :
+packages/modules/Wifi/framework/aidl-export/android/net/wifi/WifiNetworkSuggestion.aidl :
+frameworks/libs/modules-utils/java/com/android/modules/utils/ParceledListSlice.aidl :

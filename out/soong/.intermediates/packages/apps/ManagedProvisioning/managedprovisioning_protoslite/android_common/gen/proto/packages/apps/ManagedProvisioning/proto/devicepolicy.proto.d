@@ -1,0 +1,1 @@
+out/soong/.intermediates/packages/apps/ManagedProvisioning/managedprovisioning_protoslite/android_common/gen/proto/proto0.tmp/com/android/managedprovisioning/DevicePolicyProtos.java: packages/apps/ManagedProvisioning/proto/devicepolicy.proto
