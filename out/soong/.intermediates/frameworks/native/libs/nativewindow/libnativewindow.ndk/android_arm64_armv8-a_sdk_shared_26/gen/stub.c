@@ -1,0 +1,17 @@
+void AHardwareBuffer_acquire() {}
+void AHardwareBuffer_allocate() {}
+void AHardwareBuffer_describe() {}
+void AHardwareBuffer_lock() {}
+void AHardwareBuffer_recvHandleFromUnixSocket() {}
+void AHardwareBuffer_release() {}
+void AHardwareBuffer_sendHandleToUnixSocket() {}
+void AHardwareBuffer_unlock() {}
+void ANativeWindow_acquire() {}
+void ANativeWindow_getFormat() {}
+void ANativeWindow_getHeight() {}
+void ANativeWindow_getWidth() {}
+void ANativeWindow_lock() {}
+void ANativeWindow_release() {}
+void ANativeWindow_setBuffersGeometry() {}
+void ANativeWindow_setBuffersTransform() {}
+void ANativeWindow_unlockAndPost() {}

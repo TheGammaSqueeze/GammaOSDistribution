@@ -1,0 +1,16 @@
+android/frameworks/cameraservice/service/2.2/ICameraService.h: \
+  frameworks/hardware/interfaces/cameraservice/common/2.0/types.hal \
+  frameworks/hardware/interfaces/cameraservice/device/2.0/ICameraDeviceCallback.hal \
+  frameworks/hardware/interfaces/cameraservice/device/2.0/ICameraDeviceUser.hal \
+  frameworks/hardware/interfaces/cameraservice/device/2.0/types.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.0/ICameraService.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.0/ICameraServiceListener.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.0/types.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.1/ICameraService.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.1/ICameraServiceListener.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.1/types.hal \
+  frameworks/hardware/interfaces/cameraservice/service/2.2/ICameraService.hal \
+  frameworks/hardware/interfaces/current.txt \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

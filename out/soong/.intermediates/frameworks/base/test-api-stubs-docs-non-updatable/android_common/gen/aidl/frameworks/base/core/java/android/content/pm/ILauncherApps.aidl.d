@@ -1,0 +1,44 @@
+out/soong/.intermediates/frameworks/base/test-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl4.tmp/frameworks/base/core/java/android/content/pm/ILauncherApps.java : \
+  frameworks/base/core/java/android/content/pm/ILauncherApps.aidl \
+  frameworks/base/core/java/android/app/IApplicationThread.aidl \
+  frameworks/base/core/java/android/app/PendingIntent.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentSender.aidl \
+  frameworks/base/core/java/android/content/LocusId.aidl \
+  frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/IOnAppsChangedListener.aidl \
+  frameworks/base/core/java/android/content/pm/LauncherActivityInfoInternal.aidl \
+  frameworks/base/core/java/android/content/pm/LauncherApps.aidl \
+  frameworks/base/core/java/android/content/pm/ShortcutQueryWrapper.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageInstallerCallback.aidl \
+  frameworks/base/core/java/android/content/pm/IShortcutChangeCallback.aidl \
+  frameworks/base/core/java/android/content/pm/PackageInstaller.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/content/pm/ResolveInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ShortcutInfo.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/UserHandle.aidl
+
+frameworks/base/core/java/android/content/pm/ILauncherApps.aidl :
+frameworks/base/core/java/android/app/IApplicationThread.aidl :
+frameworks/base/core/java/android/app/PendingIntent.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/IntentSender.aidl :
+frameworks/base/core/java/android/content/LocusId.aidl :
+frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl :
+frameworks/base/core/java/android/content/pm/IOnAppsChangedListener.aidl :
+frameworks/base/core/java/android/content/pm/LauncherActivityInfoInternal.aidl :
+frameworks/base/core/java/android/content/pm/LauncherApps.aidl :
+frameworks/base/core/java/android/content/pm/ShortcutQueryWrapper.aidl :
+frameworks/base/core/java/android/content/pm/IPackageInstallerCallback.aidl :
+frameworks/base/core/java/android/content/pm/IShortcutChangeCallback.aidl :
+frameworks/base/core/java/android/content/pm/PackageInstaller.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/content/pm/ResolveInfo.aidl :
+frameworks/base/core/java/android/content/pm/ShortcutInfo.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/UserHandle.aidl :

@@ -1,0 +1,12 @@
+void adbd_auth_new() {}
+void adbd_auth_delete() {}
+void adbd_auth_run() {}
+void adbd_auth_get_public_keys() {}
+void adbd_auth_notify_auth() {}
+void adbd_auth_notify_disconnect() {}
+void adbd_auth_prompt_user() {}
+void adbd_auth_prompt_user_with_id() {}
+void adbd_auth_tls_device_connected() {}
+void adbd_auth_tls_device_disconnected() {}
+void adbd_auth_get_max_version() {}
+void adbd_auth_supports_feature() {}

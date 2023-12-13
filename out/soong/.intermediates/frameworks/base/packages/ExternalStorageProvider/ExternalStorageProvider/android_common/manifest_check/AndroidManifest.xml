@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.android.externalstorage" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application android:extractNativeLibs="true" android:label="@string/app_label" android:usesNonSdkApi="true">
+        <provider android:authorities="com.android.externalstorage.documents" android:exported="true" android:grantUriPermissions="true" android:label="@string/storage_description" android:name=".ExternalStorageProvider" android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+            <!-- Stub that allows MediaProvider to make incoming calls -->
+            <path-permission android:path="/media_internal" android:permission="android.permission.WRITE_MEDIA_STORAGE"/>
+        </provider>
+
+        <receiver android:exported="true" android:name=".MountReceiver">
+            <intent-filter>
+                <action android:name="android.os.storage.action.VOLUME_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- TODO: find a better place for tests to live -->
+        <provider android:authorities="com.example.documents" android:enabled="false" android:exported="true" android:grantUriPermissions="true" android:name=".TestDocumentsProvider" android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+    </application>
+</manifest>

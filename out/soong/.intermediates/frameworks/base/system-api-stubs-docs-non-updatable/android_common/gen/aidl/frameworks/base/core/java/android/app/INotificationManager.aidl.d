@@ -1,0 +1,48 @@
+out/soong/.intermediates/frameworks/base/system-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl0.tmp/frameworks/base/core/java/android/app/INotificationManager.java : \
+  frameworks/base/core/java/android/app/INotificationManager.aidl \
+  frameworks/base/core/java/android/app/ITransientNotification.aidl \
+  frameworks/base/core/java/android/app/ITransientNotificationCallback.aidl \
+  frameworks/base/core/java/android/app/Notification.aidl \
+  frameworks/base/core/java/android/app/NotificationChannel.aidl \
+  frameworks/base/core/java/android/app/NotificationChannelGroup.aidl \
+  frameworks/base/core/java/android/app/NotificationHistory.aidl \
+  frameworks/base/core/java/android/app/NotificationManager.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/UserHandle.aidl \
+  frameworks/base/core/java/android/service/notification/Adjustment.aidl \
+  frameworks/base/core/java/android/service/notification/Condition.aidl \
+  frameworks/base/core/java/android/service/notification/IConditionListener.aidl \
+  frameworks/base/core/java/android/service/notification/IConditionProvider.aidl \
+  frameworks/base/core/java/android/service/notification/INotificationListener.aidl \
+  frameworks/base/core/java/android/service/notification/NotificationListenerFilter.aidl \
+  frameworks/base/core/java/android/service/notification/StatusBarNotification.aidl \
+  frameworks/base/core/java/android/app/AutomaticZenRule.aidl \
+  frameworks/base/core/java/android/service/notification/ZenModeConfig.aidl
+
+frameworks/base/core/java/android/app/INotificationManager.aidl :
+frameworks/base/core/java/android/app/ITransientNotification.aidl :
+frameworks/base/core/java/android/app/ITransientNotificationCallback.aidl :
+frameworks/base/core/java/android/app/Notification.aidl :
+frameworks/base/core/java/android/app/NotificationChannel.aidl :
+frameworks/base/core/java/android/app/NotificationChannelGroup.aidl :
+frameworks/base/core/java/android/app/NotificationHistory.aidl :
+frameworks/base/core/java/android/app/NotificationManager.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/UserHandle.aidl :
+frameworks/base/core/java/android/service/notification/Adjustment.aidl :
+frameworks/base/core/java/android/service/notification/Condition.aidl :
+frameworks/base/core/java/android/service/notification/IConditionListener.aidl :
+frameworks/base/core/java/android/service/notification/IConditionProvider.aidl :
+frameworks/base/core/java/android/service/notification/INotificationListener.aidl :
+frameworks/base/core/java/android/service/notification/NotificationListenerFilter.aidl :
+frameworks/base/core/java/android/service/notification/StatusBarNotification.aidl :
+frameworks/base/core/java/android/app/AutomaticZenRule.aidl :
+frameworks/base/core/java/android/service/notification/ZenModeConfig.aidl :

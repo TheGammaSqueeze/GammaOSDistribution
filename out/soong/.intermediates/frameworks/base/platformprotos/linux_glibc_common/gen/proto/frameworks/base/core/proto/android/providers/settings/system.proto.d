@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/android/providers/settings/System.java: frameworks/base/core/proto/android/providers/settings/common.proto external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/providers/settings/system.proto

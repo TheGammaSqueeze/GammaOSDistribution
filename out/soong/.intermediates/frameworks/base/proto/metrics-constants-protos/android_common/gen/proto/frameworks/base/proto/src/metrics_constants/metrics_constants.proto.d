@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/proto/metrics-constants-protos/android_common/gen/proto/proto0.tmp/com/android/internal/logging/nano/MetricsProto.java: frameworks/base/proto/src/metrics_constants/metrics_constants.proto

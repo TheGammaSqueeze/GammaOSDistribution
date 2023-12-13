@@ -1,0 +1,9 @@
+commands: <
+  command: "awk '{gsub(/#.*$/,\"\"); $1=$1; print;}' frameworks/base/mime/java-res/android.mime.types | grep ' ' > __SBOX_SANDBOX_DIR__/out/android.mime.types"
+  copy_after: <
+    from: "out/android.mime.types"
+    to: "out/soong/.intermediates/frameworks/base/mime/android.mime.types.minimized/android_common/gen/android.mime.types"
+  >
+  input_hash: "75bc7bbca299d7e5117837a341dcf72a6b79b4db995f30873499df1ad2485542"
+>
+

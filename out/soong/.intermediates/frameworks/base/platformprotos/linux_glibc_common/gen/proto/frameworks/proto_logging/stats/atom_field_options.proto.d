@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/com/android/os/AtomFieldOptions.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/proto_logging/stats/atom_field_options.proto

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/base/media/media_permission-aidl-cpp/android_arm64_armv8-a_shared/media_permission-aidl-cpp.so:   out/soong/.intermediates/frameworks/base/media/media_permission-aidl-cpp/android_arm64_armv8-a_shared/unstripped/media_permission-aidl-cpp.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

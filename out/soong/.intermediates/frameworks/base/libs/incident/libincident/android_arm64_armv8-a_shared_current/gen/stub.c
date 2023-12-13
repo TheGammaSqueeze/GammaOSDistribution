@@ -1,0 +1,10 @@
+void AIncidentReportArgs_init() {}
+void AIncidentReportArgs_clone() {}
+void AIncidentReportArgs_delete() {}
+void AIncidentReportArgs_setAll() {}
+void AIncidentReportArgs_setPrivacyPolicy() {}
+void AIncidentReportArgs_addSection() {}
+void AIncidentReportArgs_setReceiverPackage() {}
+void AIncidentReportArgs_setReceiverClass() {}
+void AIncidentReportArgs_addHeader() {}
+void AIncidentReportArgs_takeReport() {}

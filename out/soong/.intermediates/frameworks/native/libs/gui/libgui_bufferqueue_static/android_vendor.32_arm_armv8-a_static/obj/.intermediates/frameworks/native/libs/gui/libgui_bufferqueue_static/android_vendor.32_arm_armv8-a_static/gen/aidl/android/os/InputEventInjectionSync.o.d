@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_vendor.32_arm_armv8-a_static/obj/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_vendor.32_arm_armv8-a_static/gen/aidl/android/os/InputEventInjectionSync.o: \
+  out/soong/.intermediates/frameworks/native/libs/gui/libgui_bufferqueue_static/android_vendor.32_arm_armv8-a_static/gen/aidl/android/os/InputEventInjectionSync.cpp

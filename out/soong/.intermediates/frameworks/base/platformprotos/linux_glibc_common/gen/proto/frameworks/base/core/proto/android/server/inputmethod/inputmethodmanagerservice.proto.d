@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/android/server/inputmethod/InputMethodManagerServiceProto.java: frameworks/base/core/proto/android/view/inputmethod/editorinfo.proto frameworks/base/core/proto/android/server/inputmethod/inputmethodmanagerservice.proto

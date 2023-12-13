@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/cmds/bugreportz/bugreportz/android_arm64_armv8-a/bugreportz:   out/soong/.intermediates/frameworks/native/cmds/bugreportz/bugreportz/android_arm64_armv8-a/unstripped/bugreportz   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

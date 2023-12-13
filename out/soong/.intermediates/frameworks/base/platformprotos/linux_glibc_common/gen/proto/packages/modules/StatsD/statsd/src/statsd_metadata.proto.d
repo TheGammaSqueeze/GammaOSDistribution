@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/os/statsd/metadata/StatsdMetadata.java: packages/modules/StatsD/statsd/src/statsd_metadata.proto

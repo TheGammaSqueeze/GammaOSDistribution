@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/android/service/appwidget/AppWidgetServiceDumpProto.java: frameworks/base/core/proto/android/service/appwidget.proto

@@ -1,0 +1,42 @@
+out/soong/.intermediates/frameworks/base/test-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl20.tmp/frameworks/base/core/java/com/android/internal/app/IVoiceInteractionManagerService.java : \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractionManagerService.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/media/java/android/media/AudioFormat.aidl \
+  frameworks/base/media/aidl/android/media/permission/Identity.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/native/aidl/binder/android/os/PersistableBundle.aidl \
+  frameworks/base/core/java/android/os/RemoteCallback.aidl \
+  frameworks/base/core/java/android/os/SharedMemory.aidl \
+  frameworks/base/core/java/com/android/internal/app/IHotwordRecognitionStatusCallback.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceActionCheckCallback.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSessionShowCallback.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSessionListener.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSoundTriggerSession.aidl \
+  frameworks/base/core/java/android/hardware/soundtrigger/KeyphraseMetadata.aidl \
+  frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.aidl \
+  frameworks/base/core/java/android/service/voice/IVoiceInteractionService.aidl \
+  frameworks/base/core/java/android/service/voice/IVoiceInteractionSession.aidl \
+  frameworks/base/core/java/android/service/voice/IMicrophoneHotwordDetectionVoiceInteractionCallback.aidl
+
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractionManagerService.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/media/java/android/media/AudioFormat.aidl :
+frameworks/base/media/aidl/android/media/permission/Identity.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/native/aidl/binder/android/os/PersistableBundle.aidl :
+frameworks/base/core/java/android/os/RemoteCallback.aidl :
+frameworks/base/core/java/android/os/SharedMemory.aidl :
+frameworks/base/core/java/com/android/internal/app/IHotwordRecognitionStatusCallback.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceActionCheckCallback.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSessionShowCallback.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSessionListener.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractionSoundTriggerSession.aidl :
+frameworks/base/core/java/android/hardware/soundtrigger/KeyphraseMetadata.aidl :
+frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.aidl :
+frameworks/base/core/java/android/service/voice/IVoiceInteractionService.aidl :
+frameworks/base/core/java/android/service/voice/IVoiceInteractionSession.aidl :
+frameworks/base/core/java/android/service/voice/IMicrophoneHotwordDetectionVoiceInteractionCallback.aidl :

@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  command: "mkdir __SBOX_SANDBOX_DIR__/out/res/ && cp out/soong/.intermediates/external/mime-support/debian.mime.types.minimized/android_common/gen/debian.mime.types out/soong/.intermediates/frameworks/base/mime/android.mime.types.minimized/android_common/gen/android.mime.types out/soong/.intermediates/frameworks/base/mime/vendor.mime.types.minimized/android_common/gen/vendor.mime.types __SBOX_SANDBOX_DIR__/out/res/ && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -C __SBOX_SANDBOX_DIR__/out -o __SBOX_SANDBOX_DIR__/out/mimemap-res.jar -D __SBOX_SANDBOX_DIR__/out/res/"
+  copy_after: <
+    from: "out/mimemap-res.jar"
+    to: "out/soong/.intermediates/frameworks/base/mime/mimemap-res.jar/android_common/gen/mimemap-res.jar"
+  >
+  input_hash: "ddeef1d7ba59a66f4e83f2712668ccea4438ce3753a8e3e280abb581d37575fc"
+>
+

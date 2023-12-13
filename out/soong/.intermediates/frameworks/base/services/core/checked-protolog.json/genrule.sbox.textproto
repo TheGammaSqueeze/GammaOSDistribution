@@ -1,0 +1,9 @@
+commands: <
+  command: "cp out/soong/.intermediates/frameworks/base/services/core/generate-protolog.json/gen/services.core.protolog.json __SBOX_SANDBOX_DIR__/out/services.core.protolog.json && { ! (diff __SBOX_SANDBOX_DIR__/out/services.core.protolog.json frameworks/base/data/etc/services.core.protolog.json | grep -q '^<') || { echo -e '\\n\\n################################################################\\n#\\n#  ERROR: ProtoLog viewer config is stale.  To update it, run:\\n#\\n#  cp out/soong/.intermediates/frameworks/base/services/core/generate-protolog.json/gen/services.core.protolog.json frameworks/base/data/etc/services.core.protolog.json\\n#\\n################################################################\\n\\n' >&2 && false; } }"
+  copy_after: <
+    from: "out/services.core.protolog.json"
+    to: "out/soong/.intermediates/frameworks/base/services/core/checked-protolog.json/gen/services.core.protolog.json"
+  >
+  input_hash: "d45e5907fb0369630a5fda8347b1c7800cdfe1769f5ae8c41be652a023357571"
+>
+

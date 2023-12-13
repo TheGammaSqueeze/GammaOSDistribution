@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IDumpstateListener.cpp.d --ninja -Iframeworks/native/cmds/dumpstate/binder -Iframeworks/native/cmds/dumpstate/binder/ frameworks/native/cmds/dumpstate/binder/android/os/IDumpstateListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IDumpstateListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IDumpstate.cpp.d --ninja -Iframeworks/native/cmds/dumpstate/binder -Iframeworks/native/cmds/dumpstate/binder/ frameworks/native/cmds/dumpstate/binder/android/os/IDumpstate.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IDumpstate.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IDumpstateListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IDumpstate.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnDumpstate.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/BnDumpstate.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnDumpstateListener.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/BnDumpstateListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpDumpstate.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/BpDumpstate.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpDumpstateListener.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/BpDumpstateListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IDumpstate.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/IDumpstate.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IDumpstate.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/IDumpstate.h"
+  >
+  copy_after: <
+    from: "out/android/os/IDumpstateListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/IDumpstateListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IDumpstateListener.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/IDumpstateListener.h"
+  >
+  input_hash: "f12cd27a630f0d02603ef8cf7fdd12ab37e07e99cc5411a22611cd372b36885b"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/cmds/dumpstate/libdumpstateaidl/android_arm64_armv8-a_shared/gen/aidl/android/os/IDumpstateListener.cpp.d"
+

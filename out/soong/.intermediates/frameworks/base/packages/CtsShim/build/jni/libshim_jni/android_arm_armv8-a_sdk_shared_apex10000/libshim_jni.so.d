@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/base/packages/CtsShim/build/jni/libshim_jni/android_arm_armv8-a_sdk_shared_apex10000/libshim_jni.so:   out/soong/.intermediates/frameworks/base/packages/CtsShim/build/jni/libshim_jni/android_arm_armv8-a_sdk_shared_apex10000/unstripped/libshim_jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

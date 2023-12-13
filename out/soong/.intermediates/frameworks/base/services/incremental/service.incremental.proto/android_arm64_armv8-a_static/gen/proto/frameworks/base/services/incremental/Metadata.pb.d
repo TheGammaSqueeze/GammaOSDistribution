@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/services/incremental/service.incremental.proto/android_arm64_armv8-a_static/gen/proto/frameworks/base/services/incremental/Metadata.pb.cc: frameworks/base/services/incremental/Metadata.proto

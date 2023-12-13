@@ -1,0 +1,9 @@
+commands: <
+  command: "sed -e s/__HASH__/`sha512sum -b out/soong/.intermediates/frameworks/base/packages/CtsShim/build/CtsShimPrivUpgrade/android_common/CtsShimPrivUpgrade.apk | cut -d' ' -f1`/ frameworks/base/packages/CtsShim/build/shim_priv/AndroidManifest.xml > __SBOX_SANDBOX_DIR__/out/AndroidManifest.xml"
+  copy_after: <
+    from: "out/AndroidManifest.xml"
+    to: "out/soong/.intermediates/frameworks/base/packages/CtsShim/build/generate_priv_manifest/gen/AndroidManifest.xml"
+  >
+  input_hash: "3fc51036f5295f20d9b1f7b50988ce47311a9552484fad722d1171fcb2317431"
+>
+

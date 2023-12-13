@@ -1,0 +1,23 @@
+commands: <
+  copy_before: <
+    from: "out/soong/host/linux-x86/bin/soong_zip"
+    to: "tools/out/bin/soong_zip"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/validatekeymaps/validatekeymaps/linux_glibc_x86_64/validatekeymaps"
+    to: "tools/out/bin/validatekeymaps"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/validatekeymaps -q frameworks/base/packages/InputDevices/res/raw/keyboard_layout_arabic.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_azerbaijani.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_belarusian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_belgian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_brazilian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_bulgarian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_bulgarian_phonetic.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_croatian_and_slovenian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_czech.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_czech_qwerty.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_danish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_uk.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_us.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_us_colemak.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_us_dvorak.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_us_intl.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_english_us_workman.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_estonian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_finnish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_french.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_french_ca.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_georgian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_german.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_greek.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_hebrew.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_hungarian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_icelandic.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_italian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_latvian_qwerty.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_lithuanian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_mongolian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_norwegian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_persian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_polish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_portuguese.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_russian.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_russian_mac.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_slovak.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_spanish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_spanish_latin.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_swedish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_swiss_french.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_swiss_german.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_turkish.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_turkish_f.kcm frameworks/base/packages/InputDevices/res/raw/keyboard_layout_ukrainian.kcm && __SBOX_SANDBOX_DIR__/tools/out/bin/soong_zip -o __SBOX_SANDBOX_DIR__/out/validate_input_devices_keymaps.srcjar"
+  copy_after: <
+    from: "out/validate_input_devices_keymaps.srcjar"
+    to: "out/soong/.intermediates/frameworks/base/packages/InputDevices/validate_input_devices_keymaps/gen/validate_input_devices_keymaps.srcjar"
+  >
+  input_hash: "661f6ee77b8364a6309e3eaed2877465b598cd53f3433adfa238b2c5d94c0c77"
+>
+

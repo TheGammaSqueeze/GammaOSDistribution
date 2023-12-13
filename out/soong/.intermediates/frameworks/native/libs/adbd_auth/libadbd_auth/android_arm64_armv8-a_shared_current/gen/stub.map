@@ -1,0 +1,15 @@
+LIBADBD_AUTH {
+    global:
+        adbd_auth_new;
+        adbd_auth_delete;
+        adbd_auth_run;
+        adbd_auth_get_public_keys;
+        adbd_auth_notify_auth;
+        adbd_auth_notify_disconnect;
+        adbd_auth_prompt_user;
+        adbd_auth_prompt_user_with_id;
+        adbd_auth_tls_device_connected;
+        adbd_auth_tls_device_disconnected;
+        adbd_auth_get_max_version;
+        adbd_auth_supports_feature;
+};

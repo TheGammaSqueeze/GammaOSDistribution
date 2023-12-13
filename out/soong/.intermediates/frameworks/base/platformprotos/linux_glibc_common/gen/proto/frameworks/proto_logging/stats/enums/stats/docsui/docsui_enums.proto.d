@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/stats/docsui/Authority.java: frameworks/proto_logging/stats/enums/stats/docsui/docsui_enums.proto

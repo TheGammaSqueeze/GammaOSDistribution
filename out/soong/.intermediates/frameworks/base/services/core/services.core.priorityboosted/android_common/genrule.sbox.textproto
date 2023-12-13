@@ -1,0 +1,19 @@
+commands: <
+  copy_before: <
+    from: "build/soong/scripts/jar-wrapper.sh"
+    to: "tools/out/bin/lockedregioncodeinjection"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/frameworks/base/tools/locked_region_code_injection/lockedregioncodeinjection/linux_glibc_common/combined/lockedregioncodeinjection.jar"
+    to: "tools/out/framework/lockedregioncodeinjection.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/lockedregioncodeinjection   --targets \"Lcom/android/server/am/ActivityManagerService;,Lcom/android/server/am/ActivityManagerGlobalLock;,Lcom/android/server/wm/WindowManagerGlobalLock;\"   --pre \"com/android/server/am/ActivityManagerService.boostPriorityForLockedSection,com/android/server/am/ActivityManagerService.boostPriorityForProcLockedSection,com/android/server/wm/WindowManagerService.boostPriorityForLockedSection\"   --post \"com/android/server/am/ActivityManagerService.resetPriorityAfterLockedSection,com/android/server/am/ActivityManagerService.resetPriorityAfterProcLockedSection,com/android/server/wm/WindowManagerService.resetPriorityAfterLockedSection\"   -o __SBOX_SANDBOX_DIR__/out/services.core.priorityboosted.jar   -i out/soong/.intermediates/frameworks/base/services/core/services.core.unboosted/android_common/combined/services.core.unboosted.jar"
+  copy_after: <
+    from: "out/services.core.priorityboosted.jar"
+    to: "out/soong/.intermediates/frameworks/base/services/core/services.core.priorityboosted/android_common/gen/services.core.priorityboosted.jar"
+  >
+  input_hash: "4d8b881205c2c1536d4779b2fa37324cd0d4550022ee664fb74090ef82b1be7e"
+>
+

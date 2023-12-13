@@ -1,0 +1,82 @@
+out/soong/.intermediates/frameworks/base/test-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl5.tmp/frameworks/base/core/java/android/content/pm/IPackageManager.java : \
+  frameworks/base/core/java/android/content/pm/IPackageManager.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentFilter.aidl \
+  frameworks/base/core/java/android/content/pm/ActivityInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ChangedPackages.aidl \
+  frameworks/base/core/java/android/content/pm/InstantAppInfo.aidl \
+  frameworks/base/core/java/android/content/pm/FeatureInfo.aidl \
+  frameworks/base/core/java/android/content/pm/IDexModuleRegisterCallback.aidl \
+  frameworks/base/core/java/android/content/pm/InstallSourceInfo.aidl \
+  frameworks/base/core/java/android/content/pm/IOnChecksumsReadyListener.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageInstaller.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageDeleteObserver.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageDeleteObserver2.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageMoveObserver.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageStatsObserver.aidl \
+  frameworks/base/core/java/android/content/pm/IntentFilterVerificationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/InstrumentationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/KeySet.aidl \
+  frameworks/base/core/java/android/content/pm/ModuleInfo.aidl \
+  frameworks/base/core/java/android/content/pm/PackageInfo.aidl \
+  frameworks/base/core/java/android/content/pm/PackageManager.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/content/pm/ProviderInfo.aidl \
+  frameworks/base/core/java/android/content/pm/PermissionGroupInfo.aidl \
+  frameworks/base/core/java/android/content/pm/PermissionInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ResolveInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ServiceInfo.aidl \
+  frameworks/base/core/java/android/content/pm/SuspendDialogInfo.aidl \
+  frameworks/base/core/java/android/content/pm/UserInfo.aidl \
+  frameworks/base/core/java/android/content/pm/VerifierDeviceIdentity.aidl \
+  frameworks/base/core/java/android/content/pm/VersionedPackage.aidl \
+  frameworks/base/core/java/android/content/pm/dex/IArtManager.aidl \
+  frameworks/base/graphics/java/android/graphics/Bitmap.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/native/aidl/binder/android/os/PersistableBundle.aidl \
+  frameworks/base/core/java/android/content/IntentSender.aidl
+
+frameworks/base/core/java/android/content/pm/IPackageManager.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/IntentFilter.aidl :
+frameworks/base/core/java/android/content/pm/ActivityInfo.aidl :
+frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl :
+frameworks/base/core/java/android/content/pm/ChangedPackages.aidl :
+frameworks/base/core/java/android/content/pm/InstantAppInfo.aidl :
+frameworks/base/core/java/android/content/pm/FeatureInfo.aidl :
+frameworks/base/core/java/android/content/pm/IDexModuleRegisterCallback.aidl :
+frameworks/base/core/java/android/content/pm/InstallSourceInfo.aidl :
+frameworks/base/core/java/android/content/pm/IOnChecksumsReadyListener.aidl :
+frameworks/base/core/java/android/content/pm/IPackageInstaller.aidl :
+frameworks/base/core/java/android/content/pm/IPackageDeleteObserver.aidl :
+frameworks/base/core/java/android/content/pm/IPackageDeleteObserver2.aidl :
+frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl :
+frameworks/base/core/java/android/content/pm/IPackageMoveObserver.aidl :
+frameworks/base/core/java/android/content/pm/IPackageStatsObserver.aidl :
+frameworks/base/core/java/android/content/pm/IntentFilterVerificationInfo.aidl :
+frameworks/base/core/java/android/content/pm/InstrumentationInfo.aidl :
+frameworks/base/core/java/android/content/pm/KeySet.aidl :
+frameworks/base/core/java/android/content/pm/ModuleInfo.aidl :
+frameworks/base/core/java/android/content/pm/PackageInfo.aidl :
+frameworks/base/core/java/android/content/pm/PackageManager.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/content/pm/ProviderInfo.aidl :
+frameworks/base/core/java/android/content/pm/PermissionGroupInfo.aidl :
+frameworks/base/core/java/android/content/pm/PermissionInfo.aidl :
+frameworks/base/core/java/android/content/pm/ResolveInfo.aidl :
+frameworks/base/core/java/android/content/pm/ServiceInfo.aidl :
+frameworks/base/core/java/android/content/pm/SuspendDialogInfo.aidl :
+frameworks/base/core/java/android/content/pm/UserInfo.aidl :
+frameworks/base/core/java/android/content/pm/VerifierDeviceIdentity.aidl :
+frameworks/base/core/java/android/content/pm/VersionedPackage.aidl :
+frameworks/base/core/java/android/content/pm/dex/IArtManager.aidl :
+frameworks/base/graphics/java/android/graphics/Bitmap.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/native/aidl/binder/android/os/PersistableBundle.aidl :
+frameworks/base/core/java/android/content/IntentSender.aidl :

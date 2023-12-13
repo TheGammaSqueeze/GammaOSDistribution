@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/hardware/sensor/assist/AssistGestureFeedbackEnum.java: frameworks/proto_logging/stats/enums/hardware/sensor/assist/enums.proto

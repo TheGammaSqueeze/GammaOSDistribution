@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/base/media/jni/libmedia_jni_utils/android_arm_armv8-a_shared/libmedia_jni_utils.so:   out/soong/.intermediates/frameworks/base/media/jni/libmedia_jni_utils/android_arm_armv8-a_shared/unstripped/libmedia_jni_utils.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

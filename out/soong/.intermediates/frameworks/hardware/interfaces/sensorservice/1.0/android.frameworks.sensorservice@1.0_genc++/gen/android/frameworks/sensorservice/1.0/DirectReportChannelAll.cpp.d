@@ -1,0 +1,13 @@
+android/frameworks/sensorservice/1.0/types.cpp: \
+  frameworks/hardware/interfaces/current.txt \
+  frameworks/hardware/interfaces/sensorservice/1.0/IDirectReportChannel.hal \
+  frameworks/hardware/interfaces/sensorservice/1.0/IEventQueue.hal \
+  frameworks/hardware/interfaces/sensorservice/1.0/IEventQueueCallback.hal \
+  frameworks/hardware/interfaces/sensorservice/1.0/ISensorManager.hal \
+  frameworks/hardware/interfaces/sensorservice/1.0/types.hal \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/sensors/1.0/ISensors.hal \
+  hardware/interfaces/sensors/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

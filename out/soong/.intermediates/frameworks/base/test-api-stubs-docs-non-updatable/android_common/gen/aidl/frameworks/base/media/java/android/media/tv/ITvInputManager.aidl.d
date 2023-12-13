@@ -1,0 +1,40 @@
+out/soong/.intermediates/frameworks/base/test-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl26.tmp/frameworks/base/media/java/android/media/tv/ITvInputManager.java : \
+  frameworks/base/media/java/android/media/tv/ITvInputManager.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/media/java/android/media/PlaybackParams.aidl \
+  frameworks/base/media/java/android/media/tv/DvbDeviceInfo.aidl \
+  frameworks/base/media/java/android/media/tv/ITvInputClient.aidl \
+  frameworks/base/media/java/android/media/tv/ITvInputHardware.aidl \
+  frameworks/base/media/java/android/media/tv/ITvInputHardwareCallback.aidl \
+  frameworks/base/media/java/android/media/tv/ITvInputManagerCallback.aidl \
+  frameworks/base/media/java/android/media/tv/TunedInfo.aidl \
+  frameworks/base/media/java/android/media/tv/TvContentRatingSystemInfo.aidl \
+  frameworks/base/media/java/android/media/tv/TvInputHardwareInfo.aidl \
+  frameworks/base/media/java/android/media/tv/TvInputInfo.aidl \
+  frameworks/base/media/java/android/media/tv/TvStreamConfig.aidl \
+  frameworks/base/media/java/android/media/tv/TvTrackInfo.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/native/aidl/gui/android/view/Surface.aidl
+
+frameworks/base/media/java/android/media/tv/ITvInputManager.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/media/java/android/media/PlaybackParams.aidl :
+frameworks/base/media/java/android/media/tv/DvbDeviceInfo.aidl :
+frameworks/base/media/java/android/media/tv/ITvInputClient.aidl :
+frameworks/base/media/java/android/media/tv/ITvInputHardware.aidl :
+frameworks/base/media/java/android/media/tv/ITvInputHardwareCallback.aidl :
+frameworks/base/media/java/android/media/tv/ITvInputManagerCallback.aidl :
+frameworks/base/media/java/android/media/tv/TunedInfo.aidl :
+frameworks/base/media/java/android/media/tv/TvContentRatingSystemInfo.aidl :
+frameworks/base/media/java/android/media/tv/TvInputHardwareInfo.aidl :
+frameworks/base/media/java/android/media/tv/TvInputInfo.aidl :
+frameworks/base/media/java/android/media/tv/TvStreamConfig.aidl :
+frameworks/base/media/java/android/media/tv/TvTrackInfo.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/native/aidl/gui/android/view/Surface.aidl :

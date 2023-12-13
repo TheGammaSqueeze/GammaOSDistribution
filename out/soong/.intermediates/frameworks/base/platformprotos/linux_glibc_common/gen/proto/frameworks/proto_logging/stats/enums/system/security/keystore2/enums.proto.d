@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/system/security/keystore2/Enums.java: frameworks/proto_logging/stats/enums/system/security/keystore2/enums.proto

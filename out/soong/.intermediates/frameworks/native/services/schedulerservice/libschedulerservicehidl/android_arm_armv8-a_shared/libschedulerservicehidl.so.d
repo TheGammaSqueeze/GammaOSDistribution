@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/services/schedulerservice/libschedulerservicehidl/android_arm_armv8-a_shared/libschedulerservicehidl.so:   out/soong/.intermediates/frameworks/native/services/schedulerservice/libschedulerservicehidl/android_arm_armv8-a_shared/unstripped/libschedulerservicehidl.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

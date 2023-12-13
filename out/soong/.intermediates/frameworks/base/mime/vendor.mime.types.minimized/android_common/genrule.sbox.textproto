@@ -1,0 +1,9 @@
+commands: <
+  command: "awk '{gsub(/#.*$/,\"\"); $1=$1; print;}' frameworks/base/mime/java-res/vendor.mime.types | grep ' '         | awk '{for(i=1;i<=NF;i++) { sub(/^\\??/, \"?\", $i); }; print}' > __SBOX_SANDBOX_DIR__/out/vendor.mime.types"
+  copy_after: <
+    from: "out/vendor.mime.types"
+    to: "out/soong/.intermediates/frameworks/base/mime/vendor.mime.types.minimized/android_common/gen/vendor.mime.types"
+  >
+  input_hash: "bd879ea7c601bc19d711574b5567b486a4a8ded6ed0c6e7912a906314f89c72e"
+>
+

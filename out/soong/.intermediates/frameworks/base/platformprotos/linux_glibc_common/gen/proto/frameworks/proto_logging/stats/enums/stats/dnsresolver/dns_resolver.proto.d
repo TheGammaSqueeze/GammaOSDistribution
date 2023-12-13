@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/stats/dnsresolver/DnsResolver.java: frameworks/proto_logging/stats/enums/stats/dnsresolver/dns_resolver.proto

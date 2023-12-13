@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/bluetooth/hfp/BluetoothHfpProtoEnums.java: frameworks/proto_logging/stats/enums/bluetooth/hfp/enums.proto

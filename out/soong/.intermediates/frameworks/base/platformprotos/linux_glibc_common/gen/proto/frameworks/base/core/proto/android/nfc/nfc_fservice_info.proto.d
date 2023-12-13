@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/android/nfc/cardemulation/NfcFServiceInfoProto.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/content/component_name.proto frameworks/base/core/proto/android/nfc/nfc_fservice_info.proto

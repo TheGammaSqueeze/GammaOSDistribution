@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libs/hwui/libhwui/android_arm_armv8-a_static/gen/proto/frameworks/base/libs/hwui/protos/graphicsstats.pb.cc: frameworks/base/libs/hwui/protos/graphicsstats.proto

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/bluetooth/a2dp/AudioCodingModeEnum.java: frameworks/proto_logging/stats/enums/bluetooth/a2dp/enums.proto

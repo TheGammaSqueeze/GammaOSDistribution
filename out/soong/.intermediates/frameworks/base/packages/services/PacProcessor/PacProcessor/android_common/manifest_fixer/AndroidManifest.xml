@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.android.pacprocessor" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:extractNativeLibs="true" android:label="@string/app_name" android:usesNonSdkApi="true">
+
+        <service android:exported="true" android:name=".PacService">
+        </service>
+
+    </application>
+
+</manifest>

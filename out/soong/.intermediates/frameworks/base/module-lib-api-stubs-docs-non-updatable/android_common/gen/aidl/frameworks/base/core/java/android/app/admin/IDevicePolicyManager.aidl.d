@@ -1,0 +1,60 @@
+out/soong/.intermediates/frameworks/base/module-lib-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl1.tmp/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.java : \
+  frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl \
+  frameworks/base/core/java/android/accounts/Account.aidl \
+  frameworks/base/core/java/android/app/admin/NetworkEvent.aidl \
+  frameworks/base/core/java/android/app/IApplicationThread.aidl \
+  frameworks/base/core/java/android/app/IServiceConnection.aidl \
+  frameworks/base/core/java/android/app/admin/ParcelableGranteeMap.aidl \
+  frameworks/base/core/java/android/app/admin/StartInstallingUpdateCallback.aidl \
+  frameworks/base/core/java/android/app/admin/SystemUpdateInfo.aidl \
+  frameworks/base/core/java/android/app/admin/SystemUpdatePolicy.aidl \
+  frameworks/base/core/java/android/app/admin/PasswordMetrics.aidl \
+  frameworks/base/core/java/android/app/admin/FactoryResetProtectionPolicy.aidl \
+  frameworks/base/core/java/android/app/admin/ManagedProfileProvisioningParams.aidl \
+  frameworks/base/core/java/android/app/admin/FullyManagedDeviceProvisioningParams.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentFilter.aidl \
+  frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/content/pm/StringParceledListSlice.aidl \
+  frameworks/base/graphics/java/android/graphics/Bitmap.aidl \
+  packages/modules/Connectivity/framework/aidl-export/android/net/ProxyInfo.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/native/aidl/binder/android/os/PersistableBundle.aidl \
+  frameworks/base/core/java/android/os/RemoteCallback.aidl \
+  frameworks/base/core/java/android/os/UserHandle.aidl \
+  frameworks/base/core/java/android/security/keymaster/KeymasterCertificateChain.aidl \
+  frameworks/base/keystore/java/android/security/keystore/ParcelableKeyGenParameterSpec.aidl \
+  frameworks/base/telephony/java/android/telephony/data/ApnSetting.aidl
+
+frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl :
+frameworks/base/core/java/android/accounts/Account.aidl :
+frameworks/base/core/java/android/app/admin/NetworkEvent.aidl :
+frameworks/base/core/java/android/app/IApplicationThread.aidl :
+frameworks/base/core/java/android/app/IServiceConnection.aidl :
+frameworks/base/core/java/android/app/admin/ParcelableGranteeMap.aidl :
+frameworks/base/core/java/android/app/admin/StartInstallingUpdateCallback.aidl :
+frameworks/base/core/java/android/app/admin/SystemUpdateInfo.aidl :
+frameworks/base/core/java/android/app/admin/SystemUpdatePolicy.aidl :
+frameworks/base/core/java/android/app/admin/PasswordMetrics.aidl :
+frameworks/base/core/java/android/app/admin/FactoryResetProtectionPolicy.aidl :
+frameworks/base/core/java/android/app/admin/ManagedProfileProvisioningParams.aidl :
+frameworks/base/core/java/android/app/admin/FullyManagedDeviceProvisioningParams.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/IntentFilter.aidl :
+frameworks/base/core/java/android/content/pm/IPackageDataObserver.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/content/pm/StringParceledListSlice.aidl :
+frameworks/base/graphics/java/android/graphics/Bitmap.aidl :
+packages/modules/Connectivity/framework/aidl-export/android/net/ProxyInfo.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/native/aidl/binder/android/os/PersistableBundle.aidl :
+frameworks/base/core/java/android/os/RemoteCallback.aidl :
+frameworks/base/core/java/android/os/UserHandle.aidl :
+frameworks/base/core/java/android/security/keymaster/KeymasterCertificateChain.aidl :
+frameworks/base/keystore/java/android/security/keystore/ParcelableKeyGenParameterSpec.aidl :
+frameworks/base/telephony/java/android/telephony/data/ApnSetting.aidl :

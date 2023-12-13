@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/app/ProcessStateEnum.cpp.d --ninja  -Iframeworks/base/core/java/ frameworks/base/core/java/android/app/ProcessStateEnum.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/app/ProcessStateEnum.cpp"
+  copy_after: <
+    from: "out/android/app/BnProcessStateEnum.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_static/gen/aidl/android/app/BnProcessStateEnum.h"
+  >
+  copy_after: <
+    from: "out/android/app/BpProcessStateEnum.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_static/gen/aidl/android/app/BpProcessStateEnum.h"
+  >
+  copy_after: <
+    from: "out/android/app/ProcessStateEnum.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_static/gen/aidl/android/app/ProcessStateEnum.cpp"
+  >
+  copy_after: <
+    from: "out/android/app/ProcessStateEnum.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_static/gen/aidl/android/app/ProcessStateEnum.h"
+  >
+  input_hash: "bac20dc120b8a1f1505f1c5a2b755375b670cfa9c327cd76b025712f138f56a1"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_static/gen/aidl/android/app/ProcessStateEnum.cpp.d"
+

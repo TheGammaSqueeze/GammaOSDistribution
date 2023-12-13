@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/com/android/os/ShellConfig.java: packages/modules/StatsD/statsd/src/statsd_config.proto packages/modules/StatsD/statsd/src/shell/shell_config.proto

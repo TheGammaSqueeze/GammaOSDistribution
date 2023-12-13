@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/packages/SystemUI/SystemUI-proto/android_common/gen/proto/proto0.tmp/com/android/systemui/tracing/nano/EdgeBackGestureHandlerProto.java: frameworks/base/libs/WindowManager/Shell/proto/wm_shell_trace.proto frameworks/base/packages/SystemUI/src/com/android/systemui/tracing/sysui_trace.proto

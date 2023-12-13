@@ -1,0 +1,42 @@
+out/soong/.intermediates/frameworks/base/system-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl17.tmp/frameworks/base/core/java/android/view/IWindowSession.java : \
+  frameworks/base/core/java/android/view/IWindowSession.aidl \
+  frameworks/base/core/java/android/content/ClipData.aidl \
+  frameworks/base/graphics/java/android/graphics/Point.aidl \
+  frameworks/base/graphics/java/android/graphics/Rect.aidl \
+  frameworks/base/graphics/java/android/graphics/Region.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/RemoteCallback.aidl \
+  frameworks/base/core/java/android/util/MergedConfiguration.aidl \
+  frameworks/base/core/java/android/view/DisplayCutout.aidl \
+  frameworks/base/core/java/android/view/InputChannel.aidl \
+  frameworks/base/core/java/android/view/IWindow.aidl \
+  frameworks/base/core/java/android/view/IWindowId.aidl \
+  frameworks/base/core/java/android/view/MotionEvent.aidl \
+  frameworks/base/core/java/android/view/WindowManager.aidl \
+  frameworks/base/core/java/android/view/InsetsSourceControl.aidl \
+  frameworks/base/core/java/android/view/InsetsState.aidl \
+  frameworks/base/core/java/android/view/InsetsVisibilities.aidl \
+  frameworks/native/aidl/gui/android/view/Surface.aidl \
+  frameworks/base/core/java/android/view/SurfaceControl.aidl \
+  frameworks/base/core/java/android/window/ClientWindowFrames.aidl
+
+frameworks/base/core/java/android/view/IWindowSession.aidl :
+frameworks/base/core/java/android/content/ClipData.aidl :
+frameworks/base/graphics/java/android/graphics/Point.aidl :
+frameworks/base/graphics/java/android/graphics/Rect.aidl :
+frameworks/base/graphics/java/android/graphics/Region.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/RemoteCallback.aidl :
+frameworks/base/core/java/android/util/MergedConfiguration.aidl :
+frameworks/base/core/java/android/view/DisplayCutout.aidl :
+frameworks/base/core/java/android/view/InputChannel.aidl :
+frameworks/base/core/java/android/view/IWindow.aidl :
+frameworks/base/core/java/android/view/IWindowId.aidl :
+frameworks/base/core/java/android/view/MotionEvent.aidl :
+frameworks/base/core/java/android/view/WindowManager.aidl :
+frameworks/base/core/java/android/view/InsetsSourceControl.aidl :
+frameworks/base/core/java/android/view/InsetsState.aidl :
+frameworks/base/core/java/android/view/InsetsVisibilities.aidl :
+frameworks/native/aidl/gui/android/view/Surface.aidl :
+frameworks/base/core/java/android/view/SurfaceControl.aidl :
+frameworks/base/core/java/android/window/ClientWindowFrames.aidl :

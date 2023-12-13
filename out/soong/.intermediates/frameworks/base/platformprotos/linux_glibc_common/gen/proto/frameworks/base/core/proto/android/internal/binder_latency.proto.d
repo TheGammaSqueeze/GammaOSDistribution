@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/com/android/internal/os/BinderLatencyProto.java: frameworks/base/core/proto/android/internal/binder_latency.proto

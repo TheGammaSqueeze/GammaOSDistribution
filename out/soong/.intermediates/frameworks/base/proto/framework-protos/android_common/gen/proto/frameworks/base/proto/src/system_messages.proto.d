@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/proto/framework-protos/android_common/gen/proto/proto0.tmp/com/android/internal/messages/nano/SystemMessageProto.java: frameworks/base/proto/src/system_messages.proto

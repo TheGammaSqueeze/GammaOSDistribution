@@ -1,0 +1,54 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIncidentDumpCallback.cpp.d --ninja -Iframeworks/base/core/java -Iframeworks/native/libs/incidentcompanion/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IIncidentDumpCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIncidentDumpCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIncidentManager.cpp.d --ninja -Iframeworks/base/core/java -Iframeworks/native/libs/incidentcompanion/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IIncidentManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIncidentManager.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIncidentReportStatusListener.cpp.d --ninja -Iframeworks/base/core/java -Iframeworks/native/libs/incidentcompanion/binder -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IIncidentReportStatusListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIncidentReportStatusListener.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IIncidentDumpCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IIncidentManager.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IIncidentReportStatusListener.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnIncidentDumpCallback.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BnIncidentDumpCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnIncidentManager.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BnIncidentManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnIncidentReportStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BnIncidentReportStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIncidentDumpCallback.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BpIncidentDumpCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIncidentManager.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BpIncidentManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIncidentReportStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/BpIncidentReportStatusListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentDumpCallback.cpp"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentDumpCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentDumpCallback.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentDumpCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentManager.cpp"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentManager.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentReportStatusListener.cpp"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentReportStatusListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentReportStatusListener.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentReportStatusListener.h"
+  >
+  input_hash: "224e14a59e2ad944e5f5666cccedaca605b70f7b20056d253684d9a4d87219ff"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/libs/incident/libincidentpriv/android_arm64_armv8-a_shared/gen/aidl/android/os/IIncidentDumpCallback.cpp.d"
+

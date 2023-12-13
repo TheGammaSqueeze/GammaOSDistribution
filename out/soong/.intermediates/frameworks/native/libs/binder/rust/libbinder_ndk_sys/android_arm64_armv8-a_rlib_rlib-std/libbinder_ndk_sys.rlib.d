@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/native/libs/binder/rust/libbinder_ndk_sys/android_arm64_armv8-a_rlib_rlib-std/libbinder_ndk_sys.rlib: frameworks/native/libs/binder/rust/sys/lib.rs /home/ubuntu/GammaOS/out/soong/.intermediates/frameworks/native/libs/binder/rust/libbinder_ndk_sys/android_arm64_armv8-a_rlib_rlib-std/out/bindings.rs

@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/tracing/ITracingServiceProxy.cpp.d --ninja -Iframeworks/base/core/java -Iframeworks/base/core/java/ frameworks/base/core/java/android/tracing/ITracingServiceProxy.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/tracing/ITracingServiceProxy.cpp"
+  copy_after: <
+    from: "out/android/tracing/BnTracingServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/tracingproxy/libtracingproxy/android_arm64_armv8-a_shared/gen/aidl/android/tracing/BnTracingServiceProxy.h"
+  >
+  copy_after: <
+    from: "out/android/tracing/BpTracingServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/tracingproxy/libtracingproxy/android_arm64_armv8-a_shared/gen/aidl/android/tracing/BpTracingServiceProxy.h"
+  >
+  copy_after: <
+    from: "out/android/tracing/ITracingServiceProxy.cpp"
+    to: "out/soong/.intermediates/frameworks/base/libs/tracingproxy/libtracingproxy/android_arm64_armv8-a_shared/gen/aidl/android/tracing/ITracingServiceProxy.cpp"
+  >
+  copy_after: <
+    from: "out/android/tracing/ITracingServiceProxy.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/tracingproxy/libtracingproxy/android_arm64_armv8-a_shared/gen/aidl/android/tracing/ITracingServiceProxy.h"
+  >
+  input_hash: "8f2f21138d8fa5fc14885b36105911b76de944f7dcb3ab01ef3bf445fb0ecdf2"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/libs/tracingproxy/libtracingproxy/android_arm64_armv8-a_shared/gen/aidl/android/tracing/ITracingServiceProxy.cpp.d"
+

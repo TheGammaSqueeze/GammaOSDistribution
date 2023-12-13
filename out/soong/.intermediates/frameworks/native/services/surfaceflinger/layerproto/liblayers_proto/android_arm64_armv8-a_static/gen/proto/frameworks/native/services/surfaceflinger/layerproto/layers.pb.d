@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/native/services/surfaceflinger/layerproto/liblayers_proto/android_arm64_armv8-a_static/gen/proto/frameworks/native/services/surfaceflinger/layerproto/layers.pb.cc: frameworks/native/services/surfaceflinger/layerproto/common.proto frameworks/native/services/surfaceflinger/layerproto/layers.proto

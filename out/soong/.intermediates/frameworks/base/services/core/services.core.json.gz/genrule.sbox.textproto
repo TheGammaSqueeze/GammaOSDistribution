@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/zlib/minigzip/linux_glibc_x86_64/minigzip"
+    to: "tools/out/bin/minigzip"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/minigzip -c < out/soong/.intermediates/frameworks/base/services/core/checked-protolog.json/gen/services.core.protolog.json > __SBOX_SANDBOX_DIR__/out/services.core.protolog.json.gz"
+  copy_after: <
+    from: "out/services.core.protolog.json.gz"
+    to: "out/soong/.intermediates/frameworks/base/services/core/services.core.json.gz/gen/services.core.protolog.json.gz"
+  >
+  input_hash: "aec75d4641384567425cd619b1fd940dc45e97d8f836394f2e6b255b00a4e14a"
+>
+

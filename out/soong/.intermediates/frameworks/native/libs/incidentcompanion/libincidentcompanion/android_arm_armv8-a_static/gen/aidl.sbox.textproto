@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIncidentAuthListener.cpp.d --ninja -Iframeworks/native/libs/incidentcompanion/binder -Iframeworks/native/libs/incidentcompanion/binder/ frameworks/native/libs/incidentcompanion/binder/android/os/IIncidentAuthListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIncidentAuthListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IIncidentCompanion.cpp.d --ninja -Iframeworks/native/libs/incidentcompanion/binder -Iframeworks/native/libs/incidentcompanion/binder/ frameworks/native/libs/incidentcompanion/binder/android/os/IIncidentCompanion.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IIncidentCompanion.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IIncidentAuthListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IIncidentCompanion.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnIncidentAuthListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/BnIncidentAuthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnIncidentCompanion.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/BnIncidentCompanion.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIncidentAuthListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/BpIncidentAuthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpIncidentCompanion.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/BpIncidentCompanion.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentAuthListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/IIncidentAuthListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentAuthListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/IIncidentAuthListener.h"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentCompanion.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/IIncidentCompanion.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IIncidentCompanion.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/IIncidentCompanion.h"
+  >
+  input_hash: "c254994f9cb4e50f44a188060e47bc7ea6ea7bf8593e52fac9489d9fe2a0c193"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/incidentcompanion/libincidentcompanion/android_arm_armv8-a_static/gen/aidl/android/os/IIncidentAuthListener.cpp.d"
+

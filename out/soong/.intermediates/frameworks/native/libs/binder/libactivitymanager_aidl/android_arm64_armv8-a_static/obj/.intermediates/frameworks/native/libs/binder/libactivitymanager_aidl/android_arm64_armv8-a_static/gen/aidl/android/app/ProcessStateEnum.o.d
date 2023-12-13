@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm64_armv8-a_static/obj/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm64_armv8-a_static/gen/aidl/android/app/ProcessStateEnum.o: \
+  out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm64_armv8-a_static/gen/aidl/android/app/ProcessStateEnum.cpp

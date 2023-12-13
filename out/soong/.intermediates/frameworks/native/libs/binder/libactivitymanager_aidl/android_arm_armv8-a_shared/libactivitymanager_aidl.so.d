@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_shared/libactivitymanager_aidl.so:   out/soong/.intermediates/frameworks/native/libs/binder/libactivitymanager_aidl/android_arm_armv8-a_shared/unstripped/libactivitymanager_aidl.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

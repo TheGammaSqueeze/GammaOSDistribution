@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/packages/SystemUI/SystemUI-proto/android_common/gen/proto/proto0.tmp/com/android/systemui/statusbar/phone/nano/TouchAnalyticsProto.java: frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/touch_analytics.proto

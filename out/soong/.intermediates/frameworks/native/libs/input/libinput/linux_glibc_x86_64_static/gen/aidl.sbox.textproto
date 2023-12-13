@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputConstants.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp.d --ninja -Iframeworks/native/libs/input -Iframeworks/native/libs/gui -Iframeworks/native/libs/input/ frameworks/native/libs/input/android/os/IInputFlinger.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IInputConstants.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInputFlinger.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/BnInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/BnInputFlinger.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/BpInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/BpInputFlinger.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/IInputConstants.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputConstants.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/IInputConstants.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInputFlinger.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/IInputFlinger.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInputFlinger.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/IInputFlinger.h"
+  >
+  input_hash: "2bf23ae3f98e982356d55918e389a092f050f2d5b0963125199e245f2e3f64c9"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/input/libinput/linux_glibc_x86_64_static/gen/aidl/android/os/IInputConstants.cpp.d"
+

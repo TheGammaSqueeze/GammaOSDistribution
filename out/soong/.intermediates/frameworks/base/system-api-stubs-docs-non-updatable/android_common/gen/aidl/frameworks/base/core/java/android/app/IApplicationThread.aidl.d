@@ -1,0 +1,64 @@
+out/soong/.intermediates/frameworks/base/system-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl0.tmp/frameworks/base/core/java/android/app/IApplicationThread.java : \
+  frameworks/base/core/java/android/app/IApplicationThread.aidl \
+  frameworks/base/core/java/android/app/ContentProviderHolder.aidl \
+  frameworks/base/core/java/android/app/IInstrumentationWatcher.aidl \
+  frameworks/base/core/java/android/app/IUiAutomationConnection.aidl \
+  frameworks/base/core/java/android/app/ProfilerInfo.aidl \
+  frameworks/base/core/java/android/app/ResultInfo.aidl \
+  frameworks/base/core/java/android/app/servertransaction/ClientTransaction.aidl \
+  frameworks/base/core/java/android/content/AutofillOptions.aidl \
+  frameworks/base/core/java/android/content/ComponentName.aidl \
+  frameworks/base/core/java/android/content/ContentCaptureOptions.aidl \
+  frameworks/base/core/java/android/content/IIntentReceiver.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/pm/ActivityInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl \
+  frameworks/base/core/java/android/content/pm/ProviderInfo.aidl \
+  frameworks/base/core/java/android/content/pm/ProviderInfoList.aidl \
+  frameworks/base/core/java/android/content/pm/ServiceInfo.aidl \
+  frameworks/base/core/java/android/content/res/CompatibilityInfo.aidl \
+  frameworks/base/core/java/android/content/res/Configuration.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl \
+  frameworks/base/core/java/android/os/Bundle.aidl \
+  frameworks/base/core/java/android/os/Debug.aidl \
+  frameworks/native/aidl/binder/android/os/PersistableBundle.aidl \
+  frameworks/base/core/java/android/os/RemoteCallback.aidl \
+  frameworks/base/core/java/android/os/SharedMemory.aidl \
+  frameworks/base/core/java/android/view/autofill/AutofillId.aidl \
+  frameworks/base/core/java/android/view/translation/TranslationSpec.aidl \
+  frameworks/base/core/java/android/view/translation/UiTranslationSpec.aidl \
+  frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl \
+  frameworks/base/core/java/com/android/internal/content/ReferrerIntent.aidl
+
+frameworks/base/core/java/android/app/IApplicationThread.aidl :
+frameworks/base/core/java/android/app/ContentProviderHolder.aidl :
+frameworks/base/core/java/android/app/IInstrumentationWatcher.aidl :
+frameworks/base/core/java/android/app/IUiAutomationConnection.aidl :
+frameworks/base/core/java/android/app/ProfilerInfo.aidl :
+frameworks/base/core/java/android/app/ResultInfo.aidl :
+frameworks/base/core/java/android/app/servertransaction/ClientTransaction.aidl :
+frameworks/base/core/java/android/content/AutofillOptions.aidl :
+frameworks/base/core/java/android/content/ComponentName.aidl :
+frameworks/base/core/java/android/content/ContentCaptureOptions.aidl :
+frameworks/base/core/java/android/content/IIntentReceiver.aidl :
+frameworks/base/core/java/android/content/Intent.aidl :
+frameworks/base/core/java/android/content/pm/ActivityInfo.aidl :
+frameworks/base/core/java/android/content/pm/ApplicationInfo.aidl :
+frameworks/base/core/java/android/content/pm/ParceledListSlice.aidl :
+frameworks/base/core/java/android/content/pm/ProviderInfo.aidl :
+frameworks/base/core/java/android/content/pm/ProviderInfoList.aidl :
+frameworks/base/core/java/android/content/pm/ServiceInfo.aidl :
+frameworks/base/core/java/android/content/res/CompatibilityInfo.aidl :
+frameworks/base/core/java/android/content/res/Configuration.aidl :
+frameworks/base/core/java/android/net/Uri.aidl :
+frameworks/base/core/java/android/os/Bundle.aidl :
+frameworks/base/core/java/android/os/Debug.aidl :
+frameworks/native/aidl/binder/android/os/PersistableBundle.aidl :
+frameworks/base/core/java/android/os/RemoteCallback.aidl :
+frameworks/base/core/java/android/os/SharedMemory.aidl :
+frameworks/base/core/java/android/view/autofill/AutofillId.aidl :
+frameworks/base/core/java/android/view/translation/TranslationSpec.aidl :
+frameworks/base/core/java/android/view/translation/UiTranslationSpec.aidl :
+frameworks/base/core/java/com/android/internal/app/IVoiceInteractor.aidl :
+frameworks/base/core/java/com/android/internal/content/ReferrerIntent.aidl :

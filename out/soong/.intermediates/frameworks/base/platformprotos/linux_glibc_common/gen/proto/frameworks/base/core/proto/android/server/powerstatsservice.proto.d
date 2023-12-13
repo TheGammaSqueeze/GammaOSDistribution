@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/com/android/server/powerstats/ChannelProto.java: frameworks/base/core/proto/android/server/powerstatsservice.proto

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/vulkan/libvulkan/libvulkan/android_arm64_armv8-a_shared/libvulkan.so:   out/soong/.intermediates/frameworks/native/vulkan/libvulkan/libvulkan/android_arm64_armv8-a_shared/unstripped/libvulkan.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

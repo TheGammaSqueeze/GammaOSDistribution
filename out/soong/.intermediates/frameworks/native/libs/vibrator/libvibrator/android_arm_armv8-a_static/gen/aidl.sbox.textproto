@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IExternalVibrationController.cpp.d --ninja -Iframeworks/native/libs/vibrator/include -Iframeworks/base/core/java -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IExternalVibrationController.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IExternalVibrationController.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IExternalVibratorService.cpp.d --ninja -Iframeworks/native/libs/vibrator/include -Iframeworks/base/core/java -Iframeworks/base/core/java/ frameworks/base/core/java/android/os/IExternalVibratorService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IExternalVibratorService.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/IExternalVibrationController.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IExternalVibratorService.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnExternalVibrationController.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/BnExternalVibrationController.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnExternalVibratorService.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/BnExternalVibratorService.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpExternalVibrationController.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/BpExternalVibrationController.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpExternalVibratorService.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/BpExternalVibratorService.h"
+  >
+  copy_after: <
+    from: "out/android/os/IExternalVibrationController.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/IExternalVibrationController.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IExternalVibrationController.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/IExternalVibrationController.h"
+  >
+  copy_after: <
+    from: "out/android/os/IExternalVibratorService.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/IExternalVibratorService.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IExternalVibratorService.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/IExternalVibratorService.h"
+  >
+  input_hash: "3ec8da36017521637d4d977d5be9a79344049951fbf29218d8bb29f134b964bc"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/vibrator/libvibrator/android_arm_armv8-a_static/gen/aidl/android/os/IExternalVibrationController.cpp.d"
+

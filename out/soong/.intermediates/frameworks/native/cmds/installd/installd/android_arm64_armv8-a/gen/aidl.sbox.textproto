@@ -1,0 +1,70 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataArgs.cpp.d --ninja  -Iframeworks/native/cmds/installd/binder/ frameworks/native/cmds/installd/binder/android/os/CreateAppDataArgs.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataArgs.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataResult.cpp.d --ninja  -Iframeworks/native/cmds/installd/binder/ frameworks/native/cmds/installd/binder/android/os/CreateAppDataResult.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataResult.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IInstalld.cpp.d --ninja  -Iframeworks/native/cmds/installd/binder/ frameworks/native/cmds/installd/binder/android/os/IInstalld.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IInstalld.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/storage/CrateMetadata.cpp.d --ninja  -Iframeworks/native/cmds/installd/binder/ frameworks/native/cmds/installd/binder/android/os/storage/CrateMetadata.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/storage/CrateMetadata.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataArgs.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/CreateAppDataResult.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IInstalld.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/storage/CrateMetadata.cpp.d"
+  copy_after: <
+    from: "out/android/os/BnCreateAppDataArgs.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BnCreateAppDataArgs.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnCreateAppDataResult.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BnCreateAppDataResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnInstalld.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BnInstalld.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpCreateAppDataArgs.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BpCreateAppDataArgs.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpCreateAppDataResult.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BpCreateAppDataResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpInstalld.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/BpInstalld.h"
+  >
+  copy_after: <
+    from: "out/android/os/CreateAppDataArgs.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/CreateAppDataArgs.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/CreateAppDataArgs.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/CreateAppDataArgs.h"
+  >
+  copy_after: <
+    from: "out/android/os/CreateAppDataResult.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/CreateAppDataResult.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/CreateAppDataResult.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/CreateAppDataResult.h"
+  >
+  copy_after: <
+    from: "out/android/os/IInstalld.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/IInstalld.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IInstalld.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/IInstalld.h"
+  >
+  copy_after: <
+    from: "out/android/os/storage/BnCrateMetadata.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/storage/BnCrateMetadata.h"
+  >
+  copy_after: <
+    from: "out/android/os/storage/BpCrateMetadata.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/storage/BpCrateMetadata.h"
+  >
+  copy_after: <
+    from: "out/android/os/storage/CrateMetadata.cpp"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/storage/CrateMetadata.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/storage/CrateMetadata.h"
+    to: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/storage/CrateMetadata.h"
+  >
+  input_hash: "56ec0558d653d35c6cb9aeec89b9c62968f916a9f50fb229432d4e2489f83d11"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/cmds/installd/installd/android_arm64_armv8-a/gen/aidl/android/os/CreateAppDataArgs.cpp.d"
+

@@ -1,0 +1,12 @@
+android/frameworks/bufferhub/1.0/types.cpp: \
+  frameworks/hardware/interfaces/bufferhub/1.0/IBufferClient.hal \
+  frameworks/hardware/interfaces/bufferhub/1.0/IBufferHub.hal \
+  frameworks/hardware/interfaces/bufferhub/1.0/types.hal \
+  frameworks/hardware/interfaces/current.txt \
+  hardware/interfaces/current.txt \
+  hardware/interfaces/graphics/common/1.0/types.hal \
+  hardware/interfaces/graphics/common/1.1/types.hal \
+  hardware/interfaces/graphics/common/1.2/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

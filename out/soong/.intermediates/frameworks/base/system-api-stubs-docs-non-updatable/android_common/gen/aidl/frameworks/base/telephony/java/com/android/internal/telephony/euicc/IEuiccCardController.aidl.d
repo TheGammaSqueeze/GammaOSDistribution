@@ -1,0 +1,48 @@
+out/soong/.intermediates/frameworks/base/system-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl31.tmp/frameworks/base/telephony/java/com/android/internal/telephony/euicc/IEuiccCardController.java : \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IEuiccCardController.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetAllProfilesCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetProfileCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IDisableProfileCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISwitchToProfileCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISetNicknameCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IDeleteProfileCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IResetMemoryCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetDefaultSmdpAddressCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetSmdsAddressCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISetDefaultSmdpAddressCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IAuthenticateServerCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/ICancelSessionCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccChallengeCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccInfo1Callback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccInfo2Callback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetRulesAuthTableCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IListNotificationsCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/ILoadBoundProfilePackageCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IPrepareDownloadCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRemoveNotificationFromListCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRetrieveNotificationCallback.aidl \
+  frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRetrieveNotificationListCallback.aidl
+
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IEuiccCardController.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetAllProfilesCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetProfileCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IDisableProfileCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISwitchToProfileCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISetNicknameCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IDeleteProfileCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IResetMemoryCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetDefaultSmdpAddressCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetSmdsAddressCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/ISetDefaultSmdpAddressCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IAuthenticateServerCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/ICancelSessionCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccChallengeCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccInfo1Callback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetEuiccInfo2Callback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IGetRulesAuthTableCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IListNotificationsCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/ILoadBoundProfilePackageCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IPrepareDownloadCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRemoveNotificationFromListCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRetrieveNotificationCallback.aidl :
+frameworks/base/telephony/java/com/android/internal/telephony/euicc/IRetrieveNotificationListCallback.aidl :

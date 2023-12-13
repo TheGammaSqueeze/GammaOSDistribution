@@ -1,0 +1,21 @@
+commands: <
+  command: "BISON_PKGDATADIR=prebuilts/build-tools/common/bison M4=prebuilts/build-tools/linux-x86/bin/m4 prebuilts/build-tools/linux-x86/bin/bison -d --defines=__SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/ScriptParser.h -o __SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/ScriptParser.cpp frameworks/compile/mclinker/lib/Script/ScriptParser.yy && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/ScriptParser.cpp && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/ScriptParser.h && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/location.hh && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc#' __SBOX_SANDBOX_DIR__/out/frameworks/compile/mclinker/lib/Script/position.hh"
+  copy_after: <
+    from: "out/frameworks/compile/mclinker/lib/Script/ScriptParser.cpp"
+    to: "out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc/frameworks/compile/mclinker/lib/Script/ScriptParser.cpp"
+  >
+  copy_after: <
+    from: "out/frameworks/compile/mclinker/lib/Script/ScriptParser.h"
+    to: "out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc/frameworks/compile/mclinker/lib/Script/ScriptParser.h"
+  >
+  copy_after: <
+    from: "out/frameworks/compile/mclinker/lib/Script/location.hh"
+    to: "out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc/frameworks/compile/mclinker/lib/Script/location.hh"
+  >
+  copy_after: <
+    from: "out/frameworks/compile/mclinker/lib/Script/position.hh"
+    to: "out/soong/.intermediates/frameworks/compile/mclinker/lib/Script/libmcldScript/android_arm64_armv8-a_static/gen/yacc/frameworks/compile/mclinker/lib/Script/position.hh"
+  >
+  input_hash: "b8e2c5fef23d07d02f2851f3f6e1493def7e90585378f4c6ffd940f21b31b331"
+>
+

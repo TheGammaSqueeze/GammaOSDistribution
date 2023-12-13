@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" coreApp="true" package="com.android.providers.settings" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <application android:allowClearUserData="false" android:backupAgent="SettingsBackupAgent" android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:extractNativeLibs="true" android:forceQueryable="true" android:icon="@mipmap/ic_launcher_settings" android:killAfterRestore="false" android:label="@string/app_label" android:process="system" android:restoreAnyVersion="true" android:usesNonSdkApi="true">
+
+        <provider android:authorities="settings" android:exported="true" android:initOrder="100" android:multiprocess="false" android:name="SettingsProvider" android:singleUser="true" android:visibleToInstantApps="true"/>
+
+        <service android:exported="true" android:name="WriteFallbackSettingsFilesJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    </application>
+</manifest>

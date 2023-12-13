@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/libs/WindowManager/Shell/WindowManager-Shell-proto/android_common/gen/proto/proto0.tmp/com/android/wm/shell/nano/WmShellTraceProto.java: frameworks/base/libs/WindowManager/Shell/proto/wm_shell_trace.proto

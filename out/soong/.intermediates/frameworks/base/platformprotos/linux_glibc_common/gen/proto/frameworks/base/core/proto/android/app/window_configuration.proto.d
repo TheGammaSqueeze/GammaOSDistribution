@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/app/WindowConfiguration.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/graphics/rect.proto frameworks/base/core/proto/android/app/window_configuration.proto

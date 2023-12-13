@@ -1,0 +1,211 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIb",
+   "name" : "bool",
+   "referenced_type" : "_ZTIb",
+   "self_type" : "_ZTIb",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 100,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_FOREGROUND"
+    },
+    {
+     "enum_field_value" : 125,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_FOREGROUND_SERVICE"
+    },
+    {
+     "enum_field_value" : 200,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_VISIBLE"
+    },
+    {
+     "enum_field_value" : 230,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_PERCEPTIBLE"
+    },
+    {
+     "enum_field_value" : 300,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_SERVICE"
+    },
+    {
+     "enum_field_value" : 325,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_TOP_SLEEPING"
+    },
+    {
+     "enum_field_value" : 350,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_CANT_SAVE_STATE"
+    },
+    {
+     "enum_field_value" : 400,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_CACHED"
+    },
+    {
+     "enum_field_value" : 1000,
+     "name" : "AACTIVITYMANAGER_IMPORTANCE_GONE"
+    }
+   ],
+   "linker_set_key" : "_ZTI35$AACTIVITYMANAGER_IMPORTANCE_CACHED",
+   "name" : "(anonymous enum at frameworks/base/native/android/include_platform/android/activity_manager.h:47:1)",
+   "referenced_type" : "_ZTI35$AACTIVITYMANAGER_IMPORTANCE_CACHED",
+   "self_type" : "_ZTI35$AACTIVITYMANAGER_IMPORTANCE_CACHED",
+   "size" : 4,
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvjiPvE",
+   "name" : "void (unsigned int, int, void *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "referenced_type" : "_ZTIFvjiPvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvjiPvE",
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "AActivityManager_addUidImportanceListener",
+   "linker_set_key" : "AActivityManager_addUidImportanceListener",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFvjiPvE"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    }
+   ],
+   "return_type" : "_ZTIP38AActivityManager_UidImportanceListener",
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  },
+  {
+   "function_name" : "AActivityManager_getUidImportance",
+   "linker_set_key" : "AActivityManager_getUidImportance",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  },
+  {
+   "function_name" : "AActivityManager_isUidActive",
+   "linker_set_key" : "AActivityManager_isUidActive",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIb",
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  },
+  {
+   "function_name" : "AActivityManager_removeUidImportanceListener",
+   "linker_set_key" : "AActivityManager_removeUidImportanceListener",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP38AActivityManager_UidImportanceListener"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP38AActivityManager_UidImportanceListener",
+   "name" : "AActivityManager_UidImportanceListener *",
+   "referenced_type" : "_ZTI38AActivityManager_UidImportanceListener",
+   "self_type" : "_ZTIP38AActivityManager_UidImportanceListener",
+   "size" : 8,
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvjiPvE",
+   "name" : "void (*)(unsigned int, int, void *)",
+   "referenced_type" : "_ZTIFvjiPvE",
+   "self_type" : "_ZTIPFvjiPvE",
+   "size" : 8,
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "frameworks/base/native/android/include_platform/android/activity_manager.h"
+  }
+ ],
+ "qualified_types" : [],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

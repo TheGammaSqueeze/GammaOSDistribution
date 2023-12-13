@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/services/vibratorservice/libvibratorservice/android_arm_armv8-a_shared/libvibratorservice.so:   out/soong/.intermediates/frameworks/native/services/vibratorservice/libvibratorservice/android_arm_armv8-a_shared/unstripped/libvibratorservice.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

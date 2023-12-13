@@ -1,0 +1,154 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "android::procpartition::Partition::UNKNOWN"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "android::procpartition::Partition::SYSTEM"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "android::procpartition::Partition::VENDOR"
+    },
+    {
+     "enum_field_value" : 3,
+     "name" : "android::procpartition::Partition::ODM"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android13procpartition9PartitionE",
+   "name" : "android::procpartition::Partition",
+   "referenced_type" : "_ZTIN7android13procpartition9PartitionE",
+   "self_type" : "_ZTIN7android13procpartition9PartitionE",
+   "size" : 4,
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h",
+   "underlying_type" : "_ZTIi"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "android::procpartition::getCmdline",
+   "linker_set_key" : "_ZN7android13procpartition10getCmdlineEi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  },
+  {
+   "function_name" : "android::procpartition::getPartition",
+   "linker_set_key" : "_ZN7android13procpartition12getPartitionEi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIN7android13procpartition9PartitionE",
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  },
+  {
+   "function_name" : "android::procpartition::parsePartition",
+   "linker_set_key" : "_ZN7android13procpartition14parsePartitionERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE"
+    }
+   ],
+   "return_type" : "_ZTIN7android13procpartition9PartitionE",
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  },
+  {
+   "function_name" : "android::procpartition::getExe",
+   "linker_set_key" : "_ZN7android13procpartition6getExeEi",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  },
+  {
+   "function_name" : "android::procpartition::operator<<",
+   "linker_set_key" : "_ZN7android13procpartitionlsERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEENS0_9PartitionE",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE"
+    },
+    {
+     "referenced_type" : "_ZTIN7android13procpartition9PartitionE"
+    }
+   ],
+   "return_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &",
+   "referenced_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "name" : "std::basic_ostream<char, std::char_traits<char>> &",
+   "referenced_type" : "_ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "self_type" : "_ZTIRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE",
+   "size" : 8,
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  }
+ ],
+ "pointer_types" : [],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 8,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "name" : "const std::basic_string<char, std::char_traits<char>, std::allocator<char>>",
+   "referenced_type" : "_ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "self_type" : "_ZTIKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE",
+   "size" : 24,
+   "source_file" : "frameworks/native/cmds/lshal/libprocpartition/include/procpartition/procpartition.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

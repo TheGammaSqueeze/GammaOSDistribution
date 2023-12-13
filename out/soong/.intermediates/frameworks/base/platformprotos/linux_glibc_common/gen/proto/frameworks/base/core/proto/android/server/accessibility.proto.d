@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/com/android/server/accessibility/Accessibility.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/typedef.proto frameworks/base/core/proto/android/server/accessibility.proto

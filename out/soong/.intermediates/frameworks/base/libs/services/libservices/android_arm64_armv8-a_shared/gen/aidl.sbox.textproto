@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/com/android/internal/os/IDropBoxManagerService.cpp.d --ninja -Iframeworks/base/core/java -Iframeworks/base/core/java/ frameworks/base/core/java/com/android/internal/os/IDropBoxManagerService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/com/android/internal/os/IDropBoxManagerService.cpp"
+  copy_after: <
+    from: "out/com/android/internal/os/BnDropBoxManagerService.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/services/libservices/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/os/BnDropBoxManagerService.h"
+  >
+  copy_after: <
+    from: "out/com/android/internal/os/BpDropBoxManagerService.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/services/libservices/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/os/BpDropBoxManagerService.h"
+  >
+  copy_after: <
+    from: "out/com/android/internal/os/IDropBoxManagerService.cpp"
+    to: "out/soong/.intermediates/frameworks/base/libs/services/libservices/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/os/IDropBoxManagerService.cpp"
+  >
+  copy_after: <
+    from: "out/com/android/internal/os/IDropBoxManagerService.h"
+    to: "out/soong/.intermediates/frameworks/base/libs/services/libservices/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/os/IDropBoxManagerService.h"
+  >
+  input_hash: "2f6cdd9c955ebc0f876b3f5d27dc258acb246b434a0f47c42410913efda3ad9d"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/libs/services/libservices/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/os/IDropBoxManagerService.cpp.d"
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/com/android/server/AppStateTrackerProto.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/base/core/proto/android/server/statlogger.proto frameworks/base/core/proto/android/server/appstatetracker.proto

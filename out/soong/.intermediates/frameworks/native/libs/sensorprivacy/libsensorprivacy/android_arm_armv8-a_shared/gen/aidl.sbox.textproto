@@ -1,0 +1,38 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyListener.cpp.d --ninja -Iframeworks/native/libs/sensorprivacy/aidl -Iframeworks/native/libs/sensorprivacy/aidl/ frameworks/native/libs/sensorprivacy/aidl/android/hardware/ISensorPrivacyListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyManager.cpp.d --ninja -Iframeworks/native/libs/sensorprivacy/aidl -Iframeworks/native/libs/sensorprivacy/aidl/ frameworks/native/libs/sensorprivacy/aidl/android/hardware/ISensorPrivacyManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyManager.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/hardware/ISensorPrivacyManager.cpp.d"
+  copy_after: <
+    from: "out/android/hardware/BnSensorPrivacyListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/BnSensorPrivacyListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BnSensorPrivacyManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/BnSensorPrivacyManager.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BpSensorPrivacyListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/BpSensorPrivacyListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/BpSensorPrivacyManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/BpSensorPrivacyManager.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/ISensorPrivacyListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/ISensorPrivacyListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/ISensorPrivacyListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/ISensorPrivacyListener.h"
+  >
+  copy_after: <
+    from: "out/android/hardware/ISensorPrivacyManager.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/ISensorPrivacyManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/hardware/ISensorPrivacyManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/ISensorPrivacyManager.h"
+  >
+  input_hash: "20a5088e20349b2d10ee3dfea5cdd93239a2399b31fa5a3a43e5bda7080e9e5a"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/sensorprivacy/libsensorprivacy/android_arm_armv8-a_shared/gen/aidl/android/hardware/ISensorPrivacyListener.cpp.d"
+

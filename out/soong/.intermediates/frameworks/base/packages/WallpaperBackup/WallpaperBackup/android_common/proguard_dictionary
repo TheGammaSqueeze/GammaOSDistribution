@@ -1,0 +1,26 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 96591c4
+# common_typos_disable
+com.android.wallpaperbackup.WallpaperBackupAgent -> com.android.wallpaperbackup.WallpaperBackupAgent:
+    55:55:void <init>() -> <init>
+    55:55:android.app.WallpaperManager access$000(com.android.wallpaperbackup.WallpaperBackupAgent) -> access$000
+    413:414:void applyComponentAtInstall(android.content.ComponentName,boolean) -> applyComponentAtInstall
+    228:228:void backupFile(java.io.File,android.app.backup.FullBackupDataOutput) -> backupFile
+    377:378:int getAttributeInt(org.xmlpull.v1.XmlPullParser,java.lang.String,int) -> getAttributeInt
+    110:110:java.io.File getWallpaperDir() -> getWallpaperDir
+    419:419:com.android.internal.content.PackageMonitor getWallpaperPackageMonitor(android.content.ComponentName,boolean) -> getWallpaperPackageMonitor
+    448:456:boolean isDeviceInRestore() -> isDeviceInRestore
+    95:102:void onCreate() -> onCreate
+    116:222:void onFullBackup(android.app.backup.FullBackupDataOutput) -> onFullBackup
+    233:237:void onQuotaExceeded(long,long) -> onQuotaExceeded
+    245:279:void onRestoreFinished() -> onRestoreFinished
+    323:342:android.graphics.Rect parseCropHint(java.io.File,java.lang.String) -> parseCropHint
+    351:370:android.content.ComponentName parseWallpaperComponent(java.io.File,java.lang.String) -> parseWallpaperComponent
+    306:318:void restoreFromStage(java.io.File,java.io.File,java.lang.String,int) -> restoreFromStage
+    385:391:boolean servicePackageExists(android.content.ComponentName) -> servicePackageExists
+    284:298:void updateWallpaperComponent(android.content.ComponentName,boolean) -> updateWallpaperComponent
+com.android.wallpaperbackup.WallpaperBackupAgent$1 -> com.android.wallpaperbackup.WallpaperBackupAgent$1:
+    419:419:void <init>(com.android.wallpaperbackup.WallpaperBackupAgent,android.content.ComponentName,boolean) -> <init>
+    422:439:void onPackageAdded(java.lang.String,int) -> onPackageAdded

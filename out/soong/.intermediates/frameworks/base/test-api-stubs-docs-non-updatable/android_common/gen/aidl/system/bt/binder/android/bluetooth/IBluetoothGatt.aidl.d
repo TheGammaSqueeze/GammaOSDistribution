@@ -1,0 +1,42 @@
+out/soong/.intermediates/frameworks/base/test-api-stubs-docs-non-updatable/android_common/gen/aidl/aidl33.tmp/system/bt/binder/android/bluetooth/IBluetoothGatt.java : \
+  system/bt/binder/android/bluetooth/IBluetoothGatt.aidl \
+  frameworks/base/core/java/android/app/PendingIntent.aidl \
+  system/bt/binder/android/bluetooth/BluetoothDevice.aidl \
+  system/bt/binder/android/bluetooth/BluetoothGattService.aidl \
+  system/bt/binder/android/bluetooth/le/AdvertiseSettings.aidl \
+  system/bt/binder/android/bluetooth/le/AdvertiseData.aidl \
+  system/bt/binder/android/bluetooth/le/AdvertisingSetParameters.aidl \
+  system/bt/binder/android/bluetooth/le/PeriodicAdvertisingParameters.aidl \
+  system/bt/binder/android/bluetooth/le/ScanFilter.aidl \
+  system/bt/binder/android/bluetooth/le/ScanResult.aidl \
+  system/bt/binder/android/bluetooth/le/ScanSettings.aidl \
+  system/bt/binder/android/bluetooth/le/ResultStorageDescriptor.aidl \
+  frameworks/base/core/java/android/content/AttributionSource.aidl \
+  frameworks/base/core/java/android/os/ParcelUuid.aidl \
+  frameworks/base/core/java/android/os/WorkSource.aidl \
+  system/bt/binder/android/bluetooth/IBluetoothGattCallback.aidl \
+  system/bt/binder/android/bluetooth/IBluetoothGattServerCallback.aidl \
+  system/bt/binder/android/bluetooth/le/IAdvertisingSetCallback.aidl \
+  system/bt/binder/android/bluetooth/le/IPeriodicAdvertisingCallback.aidl \
+  system/bt/binder/android/bluetooth/le/IScannerCallback.aidl
+
+system/bt/binder/android/bluetooth/IBluetoothGatt.aidl :
+frameworks/base/core/java/android/app/PendingIntent.aidl :
+system/bt/binder/android/bluetooth/BluetoothDevice.aidl :
+system/bt/binder/android/bluetooth/BluetoothGattService.aidl :
+system/bt/binder/android/bluetooth/le/AdvertiseSettings.aidl :
+system/bt/binder/android/bluetooth/le/AdvertiseData.aidl :
+system/bt/binder/android/bluetooth/le/AdvertisingSetParameters.aidl :
+system/bt/binder/android/bluetooth/le/PeriodicAdvertisingParameters.aidl :
+system/bt/binder/android/bluetooth/le/ScanFilter.aidl :
+system/bt/binder/android/bluetooth/le/ScanResult.aidl :
+system/bt/binder/android/bluetooth/le/ScanSettings.aidl :
+system/bt/binder/android/bluetooth/le/ResultStorageDescriptor.aidl :
+frameworks/base/core/java/android/content/AttributionSource.aidl :
+frameworks/base/core/java/android/os/ParcelUuid.aidl :
+frameworks/base/core/java/android/os/WorkSource.aidl :
+system/bt/binder/android/bluetooth/IBluetoothGattCallback.aidl :
+system/bt/binder/android/bluetooth/IBluetoothGattServerCallback.aidl :
+system/bt/binder/android/bluetooth/le/IAdvertisingSetCallback.aidl :
+system/bt/binder/android/bluetooth/le/IPeriodicAdvertisingCallback.aidl :
+system/bt/binder/android/bluetooth/le/IScannerCallback.aidl :

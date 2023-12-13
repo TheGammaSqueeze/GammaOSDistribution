@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.android.cameraextensions" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <queries>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+    </queries>
+
+    <application android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:extractNativeLibs="true" android:label="@string/app_name" android:usesNonSdkApi="true">
+
+        <service android:exported="true" android:name=".CameraExtensionsProxyService" android:visibleToInstantApps="true">
+        </service>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+    </application>
+
+</manifest>

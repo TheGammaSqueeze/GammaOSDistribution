@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/media/midi/IMidiDeviceServer.cpp.d --ninja -Iframeworks/base/media/java -Iframeworks/base/media/java/ frameworks/base/media/java/android/media/midi/IMidiDeviceServer.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/media/midi/IMidiDeviceServer.cpp"
+  copy_after: <
+    from: "out/android/media/midi/BnMidiDeviceServer.h"
+    to: "out/soong/.intermediates/frameworks/base/media/native/midi/libamidi/android_arm64_armv8-a_shared/gen/aidl/android/media/midi/BnMidiDeviceServer.h"
+  >
+  copy_after: <
+    from: "out/android/media/midi/BpMidiDeviceServer.h"
+    to: "out/soong/.intermediates/frameworks/base/media/native/midi/libamidi/android_arm64_armv8-a_shared/gen/aidl/android/media/midi/BpMidiDeviceServer.h"
+  >
+  copy_after: <
+    from: "out/android/media/midi/IMidiDeviceServer.cpp"
+    to: "out/soong/.intermediates/frameworks/base/media/native/midi/libamidi/android_arm64_armv8-a_shared/gen/aidl/android/media/midi/IMidiDeviceServer.cpp"
+  >
+  copy_after: <
+    from: "out/android/media/midi/IMidiDeviceServer.h"
+    to: "out/soong/.intermediates/frameworks/base/media/native/midi/libamidi/android_arm64_armv8-a_shared/gen/aidl/android/media/midi/IMidiDeviceServer.h"
+  >
+  input_hash: "765d65cfdbc6a0e377bad033bd8bb9108552988f89a1986c39522c6f121182ee"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/media/native/midi/libamidi/android_arm64_armv8-a_shared/gen/aidl/android/media/midi/IMidiDeviceServer.cpp.d"
+

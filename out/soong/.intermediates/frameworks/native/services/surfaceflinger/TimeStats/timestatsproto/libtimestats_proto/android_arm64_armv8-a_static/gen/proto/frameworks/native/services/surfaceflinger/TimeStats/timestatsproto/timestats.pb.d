@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/native/services/surfaceflinger/TimeStats/timestatsproto/libtimestats_proto/android_arm64_armv8-a_static/gen/proto/frameworks/native/services/surfaceflinger/TimeStats/timestatsproto/timestats.pb.cc: frameworks/native/services/surfaceflinger/TimeStats/timestatsproto/timestats.proto

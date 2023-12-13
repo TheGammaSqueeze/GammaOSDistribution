@@ -1,0 +1,13 @@
+void AImageDecoder_getFrameInfo() {}
+void AImageDecoder_setInternallyHandleDisposePrevious() {}
+void AImageDecoderFrameInfo_create() {}
+void AImageDecoderFrameInfo_delete() {}
+void AImageDecoderFrameInfo_getDuration() {}
+void AImageDecoderFrameInfo_getFrameRect() {}
+void AImageDecoderFrameInfo_hasAlphaWithinBounds() {}
+void AImageDecoderFrameInfo_getDisposeOp() {}
+void AImageDecoderFrameInfo_getBlendOp() {}
+void AndroidBitmap_getInfo() {}
+void AndroidBitmap_getDataSpace() {}
+void AndroidBitmap_lockPixels() {}
+void AndroidBitmap_unlockPixels() {}

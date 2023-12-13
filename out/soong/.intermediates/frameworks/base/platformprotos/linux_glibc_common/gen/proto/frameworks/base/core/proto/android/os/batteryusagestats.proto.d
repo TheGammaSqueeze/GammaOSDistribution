@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/android/os/BatteryUsageStatsAtomsProto.java: frameworks/proto_logging/stats/enums/os/enums.proto frameworks/base/core/proto/android/os/batteryusagestats.proto

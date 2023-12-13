@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/base/media/jni/audioeffect/libaudioeffect_jni/android_arm64_armv8-a_shared/libaudioeffect_jni.so:   out/soong/.intermediates/frameworks/base/media/jni/audioeffect/libaudioeffect_jni/android_arm64_armv8-a_shared/unstripped/libaudioeffect_jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

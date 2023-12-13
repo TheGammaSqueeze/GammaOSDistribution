@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto1.tmp/com/android/server/BluetoothManagerService.java: external/protobuf/src/google/protobuf/descriptor.proto frameworks/base/core/proto/android/privacy.proto frameworks/proto_logging/stats/enums/bluetooth/enums.proto frameworks/base/core/proto/android/server/bluetooth_manager_service.proto

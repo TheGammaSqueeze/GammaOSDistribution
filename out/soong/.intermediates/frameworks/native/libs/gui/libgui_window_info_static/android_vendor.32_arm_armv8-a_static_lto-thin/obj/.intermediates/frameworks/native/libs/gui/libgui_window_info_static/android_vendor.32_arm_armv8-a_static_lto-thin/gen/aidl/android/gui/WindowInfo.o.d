@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_vendor.32_arm_armv8-a_static_lto-thin/obj/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_vendor.32_arm_armv8-a_static_lto-thin/gen/aidl/android/gui/WindowInfo.o: \
+  out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_vendor.32_arm_armv8-a_static_lto-thin/gen/aidl/android/gui/WindowInfo.cpp

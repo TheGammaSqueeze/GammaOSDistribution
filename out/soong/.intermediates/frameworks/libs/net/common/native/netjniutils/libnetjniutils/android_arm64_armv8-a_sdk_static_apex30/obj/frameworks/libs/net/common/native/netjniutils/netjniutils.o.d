@@ -1,0 +1,36 @@
+out/soong/.intermediates/frameworks/libs/net/common/native/netjniutils/libnetjniutils/android_arm64_armv8-a_sdk_static_apex30/obj/frameworks/libs/net/common/native/netjniutils/netjniutils.o: \
+  frameworks/libs/net/common/native/netjniutils/netjniutils.cpp \
+  frameworks/libs/net/common/native/netjniutils/include/netjniutils/netjniutils.h \
+  libnativehelper/include_jni/jni.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  out/soong/ndk/sysroot/usr/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/bits/wchar_limits.h \
+  out/soong/ndk/sysroot/usr/include/sys/cdefs.h \
+  out/soong/ndk/sysroot/usr/include/android/versioning.h \
+  out/soong/ndk/sysroot/usr/include/android/api-level.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  out/soong/ndk/sysroot/usr/include/dlfcn.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h \
+  out/soong/ndk/sysroot/usr/include/string.h \
+  out/soong/ndk/sysroot/usr/include/xlocale.h \
+  out/soong/ndk/sysroot/usr/include/bits/strcasecmp.h \
+  out/soong/ndk/sysroot/usr/include/sys/types.h \
+  out/soong/ndk/sysroot/usr/include/linux/types.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/int-ll64.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/bitsperlong.h \
+  out/soong/ndk/sysroot/usr/include/linux/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/linux/stddef.h \
+  out/soong/ndk/sysroot/usr/include/linux/compiler_types.h \
+  out/soong/ndk/sysroot/usr/include/linux/compiler.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/asm-generic/posix_types.h \
+  out/soong/ndk/sysroot/usr/include/bits/pthread_types.h \
+  out/soong/ndk/sysroot/usr/include/strings.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/strings.h \
+  out/soong/ndk/sysroot/usr/include/bits/fortify/string.h \
+  out/soong/ndk/sysroot/usr/include/sys/system_properties.h \
+  out/soong/ndk/sysroot/usr/include/android/log.h

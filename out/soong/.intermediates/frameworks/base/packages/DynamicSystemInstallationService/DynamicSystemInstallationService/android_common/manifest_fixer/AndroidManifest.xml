@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" package="com.android.dynsystem" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="32"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_DYNAMIC_SYSTEM"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_OEM_UNLOCK_STATE"/>
+
+    <application android:allowBackup="false" android:extractNativeLibs="true" android:label="@string/app_name" android:usesNonSdkApi="true">
+
+        <service android:enabled="true" android:exported="true" android:name=".DynamicSystemInstallationService" android:permission="android.permission.INSTALL_DYNAMIC_SYSTEM" android:process=":dynsystem">
+            <intent-filter>
+                <action android:name="android.os.image.action.NOTIFY_IF_IN_USE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:exported="true" android:name=".VerificationActivity" android:permission="android.permission.INSTALL_DYNAMIC_SYSTEM" android:process=":dynsystem" android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="android.os.image.action.START_INSTALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:enabled="true" android:exported="false" android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/android/stats/textclassifier/EventType.java: frameworks/proto_logging/stats/enums/stats/textclassifier/textclassifier_enums.proto

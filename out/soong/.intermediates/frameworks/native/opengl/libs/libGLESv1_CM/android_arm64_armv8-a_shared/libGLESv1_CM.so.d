@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/native/opengl/libs/libGLESv1_CM/android_arm64_armv8-a_shared/libGLESv1_CM.so:   out/soong/.intermediates/frameworks/native/opengl/libs/libGLESv1_CM/android_arm64_armv8-a_shared/unstripped/libGLESv1_CM.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

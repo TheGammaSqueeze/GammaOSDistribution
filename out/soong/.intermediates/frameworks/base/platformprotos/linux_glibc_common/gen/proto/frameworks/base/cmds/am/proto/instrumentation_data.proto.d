@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/base/platformprotos/linux_glibc_common/gen/proto/proto0.tmp/com/android/commands/am/InstrumentationData.java: frameworks/base/cmds/am/proto/instrumentation_data.proto

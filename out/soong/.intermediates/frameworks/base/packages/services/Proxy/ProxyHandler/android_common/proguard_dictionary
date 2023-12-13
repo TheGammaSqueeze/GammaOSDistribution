@@ -1,0 +1,37 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 08a0734
+# common_typos_disable
+com.android.proxyhandler.ProxyServer -> com.android.proxyhandler.ProxyServer:
+    56:324:void <init>() -> <init>
+    330:355:void run() -> run
+    370:378:void setCallback(com.android.net.IProxyPortListener) -> setCallback
+    359:367:void setPort(int) -> setPort
+    381:383:void startServer() -> startServer
+    386:395:void stopServer() -> stopServer
+com.android.proxyhandler.ProxyServer$ProxyConnection -> com.android.proxyhandler.ProxyServer$ProxyConnection:
+    62:62:void <init>(com.android.proxyhandler.ProxyServer,java.net.Socket,com.android.proxyhandler.ProxyServer$1) -> <init>
+    65:66:void <init>(com.android.proxyhandler.ProxyServer,java.net.Socket) -> <init>
+    293:297:void filterAndForwardRequestHeaders(java.net.Socket,java.net.Socket) -> filterAndForwardRequestHeaders
+    206:222:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI) -> getAbsolutePathFromAbsoluteURI
+    226:236:java.lang.String getLine(java.io.InputStream) -> getLine
+    72:172:void run() -> run
+    271:280:void sendAugmentedRequestToHost(java.net.Socket,java.net.Socket,java.lang.String,java.net.URI,java.lang.String) -> sendAugmentedRequestToHost
+    240:244:void sendLine(java.net.Socket,java.lang.String) -> sendLine
+    191:194:void sendRequestLineWithPath(java.net.Socket,java.lang.String,java.net.URI,java.lang.String) -> sendRequestLineWithPath
+    307:312:boolean shouldRemoveHeaderLine(java.lang.String) -> shouldRemoveHeaderLine
+    254:254:void skipToRequestBody(java.net.Socket) -> skipToRequestBody
+com.android.proxyhandler.ProxyService -> com.android.proxyhandler.ProxyService:
+    29:29:void <init>() -> <init>
+    29:29:com.android.proxyhandler.ProxyServer access$000() -> access$000
+    57:57:android.os.IBinder onBind(android.content.Intent) -> onBind
+    40:43:void onCreate() -> onCreate
+    49:51:void onDestroy() -> onDestroy
+com.android.proxyhandler.ProxyService$1 -> com.android.proxyhandler.ProxyService$1:
+    57:57:void <init>(com.android.proxyhandler.ProxyService) -> <init>
+    60:63:void getProxyPort(android.os.IBinder) -> getProxyPort
+com.android.proxyhandler.SocketConnect -> com.android.proxyhandler.SocketConnect:
+    16:19:void <init>(java.net.Socket,java.net.Socket) -> <init>
+    43:54:void connect(java.net.Socket,java.net.Socket) -> connect
+    28:35:void run() -> run

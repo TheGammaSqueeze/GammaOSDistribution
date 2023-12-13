@@ -1,0 +1,18 @@
+# compiler: R8
+# compiler_version: 3.0.41-sc04
+# min_api: 32
+# pg_map_id: 85a6dce
+# common_typos_disable
+com.android.sharedstoragebackup.ObbBackupService -> com.android.sharedstoragebackup.ObbBackupService:
+    44:51:void <init>() -> <init>
+    149:149:android.os.IBinder onBind(android.content.Intent) -> onBind
+com.android.sharedstoragebackup.ObbBackupService$1 -> com.android.sharedstoragebackup.ObbBackupService$1:
+    51:51:void <init>(com.android.sharedstoragebackup.ObbBackupService) -> <init>
+    129:139:java.util.ArrayList allFileContents(java.io.File) -> allFileContents
+    58:98:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager) -> backupObbs
+    109:125:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager) -> restoreObbFile
+com.android.sharedstoragebackup.SharedStorageAgent -> com.android.sharedstoragebackup.SharedStorageAgent:
+    17:17:void <init>() -> <init>
+    25:29:void onCreate() -> onCreate
+    41:56:void onFullBackup(android.app.backup.FullBackupDataOutput) -> onFullBackup
+    70:95:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long) -> onRestoreFile

@@ -1,0 +1,9 @@
+android/frameworks/displayservice/1.0/types.h: \
+  frameworks/hardware/interfaces/current.txt \
+  frameworks/hardware/interfaces/displayservice/1.0/IDisplayEventReceiver.hal \
+  frameworks/hardware/interfaces/displayservice/1.0/IDisplayService.hal \
+  frameworks/hardware/interfaces/displayservice/1.0/IEventCallback.hal \
+  frameworks/hardware/interfaces/displayservice/1.0/types.hal \
+  system/libhidl/transport/base/1.0/IBase.hal \
+  system/libhidl/transport/base/1.0/types.hal \
+  system/libhidl/transport/current.txt \

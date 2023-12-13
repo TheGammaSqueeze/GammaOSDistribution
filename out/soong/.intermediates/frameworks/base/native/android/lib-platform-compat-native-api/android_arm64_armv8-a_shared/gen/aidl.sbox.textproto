@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/com/android/internal/compat/IPlatformCompatNative.cpp.d --ninja -Iframeworks/base/native/android/aidl -Iframeworks/base/native/android/aidl/ frameworks/base/native/android/aidl/com/android/internal/compat/IPlatformCompatNative.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/com/android/internal/compat/IPlatformCompatNative.cpp"
+  copy_after: <
+    from: "out/com/android/internal/compat/BnPlatformCompatNative.h"
+    to: "out/soong/.intermediates/frameworks/base/native/android/lib-platform-compat-native-api/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/compat/BnPlatformCompatNative.h"
+  >
+  copy_after: <
+    from: "out/com/android/internal/compat/BpPlatformCompatNative.h"
+    to: "out/soong/.intermediates/frameworks/base/native/android/lib-platform-compat-native-api/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/compat/BpPlatformCompatNative.h"
+  >
+  copy_after: <
+    from: "out/com/android/internal/compat/IPlatformCompatNative.cpp"
+    to: "out/soong/.intermediates/frameworks/base/native/android/lib-platform-compat-native-api/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/compat/IPlatformCompatNative.cpp"
+  >
+  copy_after: <
+    from: "out/com/android/internal/compat/IPlatformCompatNative.h"
+    to: "out/soong/.intermediates/frameworks/base/native/android/lib-platform-compat-native-api/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/compat/IPlatformCompatNative.h"
+  >
+  input_hash: "66f37e5906b93d9c70a36a3c5966e81b3d3f2840cfed4322c58e5796f9866e87"
+>
+output_depfile: "out/soong/.intermediates/frameworks/base/native/android/lib-platform-compat-native-api/android_arm64_armv8-a_shared/gen/aidl/com/android/internal/compat/IPlatformCompatNative.cpp.d"
+
