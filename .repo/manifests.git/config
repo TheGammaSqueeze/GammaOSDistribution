@@ -1,0 +1,53 @@
+[core]
+	repositoryFormatVersion = 1
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+[remote "origin"]
+	url = https://github.com/LineageOS/android.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[manifest]
+	platform = auto
+[repo]
+	git-lfs = true
+	existingprojectcount = 1151
+	newprojectcount = 0
+[extensions]
+	preciousObjects = true
+[branch "default"]
+	remote = origin
+	merge = refs/heads/lineage-19.1
+[user]
+	name = TheGammaSqueeze
+	email = thegammasqueeze@gmail.com
+[repo "syncstate.main"]
+	synctime = 2023-12-09T21:05:31.885355+00:00
+	version = 1
+[repo "syncstate.sys"]
+	argv = ['/home/ubuntu/GammaOS/.repo/repo/main.py', '--repo-dir=/home/ubuntu/GammaOS/.repo', '--wrapper-version=2.39', '--wrapper-path=/usr/bin/repo', '--', 'sync', '-c', '--force-sync', '--no-clone-bundle', '--no-tags', '-j32']
+[repo "syncstate.options"]
+	jobs = 32
+	outermanifest = true
+	jobsnetwork = 32
+	jobscheckout = 32
+	forcesync = true
+	mpupdate = true
+	currentbranchonly = true
+	clonebundle = false
+	tags = false
+	retryfetches = 0
+	prune = true
+	repoverify = true
+	quiet = false
+	verbose = false
+[repo "syncstate.remote.origin"]
+	url = https://github.com/LineageOS/android.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[repo "syncstate.repo"]
+	git-lfs = true
+	existingprojectcount = 1151
+	newprojectcount = 0
+[repo "syncstate.branch.default"]
+	remote = origin
+	merge = refs/heads/lineage-19.1
