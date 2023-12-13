@@ -3,6 +3,8 @@
 # Enable verbose logging
 set -x
 
+find -name .git -prune -o -type d -empty -print  -exec touch {}/$placeholder \;
+
 # Identify all untracked files (including hidden files and symbolic links) and save them to a file
 git ls-files --others --exclude-standard --directory > untracked_files.txt
 
