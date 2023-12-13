@@ -1,0 +1,22 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/art/tools/generate_operator_out/linux_glibc_x86_64_PY2/generate_operator_out"
+    to: "tools/out/bin/generate_operator_out"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/libartbase art/libartbase/arch/instruction_set.h > __SBOX_SANDBOX_DIR__/out/art/libartbase/arch/instruction_set.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/libartbase art/libartbase/base/allocator.h > __SBOX_SANDBOX_DIR__/out/art/libartbase/base/allocator.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/libartbase art/libartbase/base/unix_file/fd_file.h > __SBOX_SANDBOX_DIR__/out/art/libartbase/base/unix_file/fd_file.operator_out.cc'"
+  copy_after: <
+    from: "out/art/libartbase/arch/instruction_set.operator_out.cc"
+    to: "out/soong/.intermediates/art/libartbase/art_libartbase_operator_srcs/gen/gensrcs/art/libartbase/arch/instruction_set.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/libartbase/base/allocator.operator_out.cc"
+    to: "out/soong/.intermediates/art/libartbase/art_libartbase_operator_srcs/gen/gensrcs/art/libartbase/base/allocator.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/libartbase/base/unix_file/fd_file.operator_out.cc"
+    to: "out/soong/.intermediates/art/libartbase/art_libartbase_operator_srcs/gen/gensrcs/art/libartbase/base/unix_file/fd_file.operator_out.cc"
+  >
+  input_hash: "42074c3d6f98a41ee9004d4490db0d24c57216e031f16727e542d60f24950607"
+>
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/bootable/recovery/update_verifier/libupdate_verifier/android_arm64_armv8-a_static/gen/proto/bootable/recovery/update_verifier/care_map.pb.cc: bootable/recovery/update_verifier/care_map.proto

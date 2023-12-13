@@ -1,0 +1,30 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/art/tools/generate_operator_out/linux_glibc_x86_64_PY2/generate_operator_out"
+    to: "tools/out/bin/generate_operator_out"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/compiler art/compiler/linker/linker_patch.h > __SBOX_SANDBOX_DIR__/out/art/compiler/linker/linker_patch.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/compiler art/compiler/optimizing/locations.h > __SBOX_SANDBOX_DIR__/out/art/compiler/optimizing/locations.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/compiler art/compiler/optimizing/nodes.h > __SBOX_SANDBOX_DIR__/out/art/compiler/optimizing/nodes.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/compiler art/compiler/optimizing/optimizing_compiler_stats.h > __SBOX_SANDBOX_DIR__/out/art/compiler/optimizing/optimizing_compiler_stats.operator_out.cc' && bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/compiler art/compiler/utils/arm/constants_arm.h > __SBOX_SANDBOX_DIR__/out/art/compiler/utils/arm/constants_arm.operator_out.cc'"
+  copy_after: <
+    from: "out/art/compiler/linker/linker_patch.operator_out.cc"
+    to: "out/soong/.intermediates/art/compiler/art_compiler_operator_srcs/gen/gensrcs/art/compiler/linker/linker_patch.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/compiler/optimizing/locations.operator_out.cc"
+    to: "out/soong/.intermediates/art/compiler/art_compiler_operator_srcs/gen/gensrcs/art/compiler/optimizing/locations.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/compiler/optimizing/nodes.operator_out.cc"
+    to: "out/soong/.intermediates/art/compiler/art_compiler_operator_srcs/gen/gensrcs/art/compiler/optimizing/nodes.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/compiler/optimizing/optimizing_compiler_stats.operator_out.cc"
+    to: "out/soong/.intermediates/art/compiler/art_compiler_operator_srcs/gen/gensrcs/art/compiler/optimizing/optimizing_compiler_stats.operator_out.cc"
+  >
+  copy_after: <
+    from: "out/art/compiler/utils/arm/constants_arm.operator_out.cc"
+    to: "out/soong/.intermediates/art/compiler/art_compiler_operator_srcs/gen/gensrcs/art/compiler/utils/arm/constants_arm.operator_out.cc"
+  >
+  input_hash: "446002499194798bb1a8ee0a422373c6d96de7eaadd2164a82fa2df629963468"
+>
+

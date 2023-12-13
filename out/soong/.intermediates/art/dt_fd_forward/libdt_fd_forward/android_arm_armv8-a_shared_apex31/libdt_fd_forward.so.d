@@ -1,0 +1,2 @@
+out/soong/.intermediates/art/dt_fd_forward/libdt_fd_forward/android_arm_armv8-a_shared_apex31/libdt_fd_forward.so:   out/soong/.intermediates/art/dt_fd_forward/libdt_fd_forward/android_arm_armv8-a_shared_apex31/unstripped/libdt_fd_forward.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

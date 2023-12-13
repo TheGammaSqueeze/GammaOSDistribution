@@ -1,0 +1,29 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/conscrypt/conscrypt_generate_constants/linux_glibc_x86_64/conscrypt_generate_constants"
+    to: "tools/out/bin/conscrypt_generate_constants"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/boringssl/libssl/linux_glibc_x86_64_shared/libssl-host.so"
+    to: "tools/out/lib64/libssl-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/boringssl/libcrypto/linux_glibc_x86_64_shared/libcrypto-host.so"
+    to: "tools/out/lib64/libcrypto-host.so"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/conscrypt_generate_constants > __SBOX_SANDBOX_DIR__/out/org/conscrypt/NativeConstants.java"
+  copy_after: <
+    from: "out/org/conscrypt/NativeConstants.java"
+    to: "out/soong/.intermediates/external/conscrypt/conscrypt-unbundled_generated_constants/gen/org/conscrypt/NativeConstants.java"
+  >
+  input_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+>
+

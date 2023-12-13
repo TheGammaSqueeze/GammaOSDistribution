@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "art/tools/cpp-define-generator/make_header.py"
+    to: "tools/src/art/tools/cpp-define-generator/make_header.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/art/tools/cpp-define-generator/make_header.py \"out/soong/.intermediates/art/tools/cpp-define-generator/asm_defines.s/linux_glibc_x86_64/obj/art/tools/cpp-define-generator/asm_defines.o\" > \"__SBOX_SANDBOX_DIR__/out/asm_defines.h\""
+  copy_after: <
+    from: "out/asm_defines.h"
+    to: "out/soong/.intermediates/art/tools/cpp-define-generator/cpp-define-generator-asm-support/linux_glibc_x86_64/gen/asm_defines.h"
+  >
+  input_hash: "962ff999ae09246c00309120afd76f78c2da3acc64cfaa7784de041326b09ffb"
+>
+

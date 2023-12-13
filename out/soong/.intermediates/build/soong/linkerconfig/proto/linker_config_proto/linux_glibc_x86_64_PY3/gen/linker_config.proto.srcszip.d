@@ -1,0 +1,1 @@
+out/soong/.intermediates/build/soong/linkerconfig/proto/linker_config_proto/linux_glibc_x86_64_PY3/gen/linker_config.proto.tmp/linker_config_pb2.py: build/soong/linkerconfig/proto//linker_config.proto

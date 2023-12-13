@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/art/tools/generate_operator_out/linux_glibc_x86_64_PY2/generate_operator_out"
+    to: "tools/out/bin/generate_operator_out"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/odrefresh art/odrefresh/odr_metrics.h > __SBOX_SANDBOX_DIR__/out/art/odrefresh/odr_metrics.operator_out.cc'"
+  copy_after: <
+    from: "out/art/odrefresh/odr_metrics.operator_out.cc"
+    to: "out/soong/.intermediates/art/odrefresh/art-odrefresh-operator-srcs/gen/gensrcs/art/odrefresh/odr_metrics.operator_out.cc"
+  >
+  input_hash: "8590658d95a191a452eac93a7c2d1d71e89587c09a65cb943cc0acdbae5653a5"
+>
+

@@ -1,0 +1,26 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/bionic/libc/tools/genseccomp/linux_glibc_x86_64_PY3/genseccomp"
+    to: "tools/out/bin/genseccomp"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/genseccomp --out-dir=__SBOX_SANDBOX_DIR__/out --name-modifier=app bionic/libc/SYSCALLS.TXT bionic/libc/SECCOMP_ALLOWLIST_COMMON.TXT bionic/libc/SECCOMP_ALLOWLIST_APP.TXT bionic/libc/SECCOMP_BLOCKLIST_COMMON.TXT bionic/libc/SECCOMP_BLOCKLIST_APP.TXT bionic/libc/SECCOMP_PRIORITY.TXT out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_arm/android_arm_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_arm64/android_arm_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_x86/android_arm_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs_x86.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_x86_64/android_arm_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs_x86_64.o"
+  copy_after: <
+    from: "out/arm64_app_policy.cpp"
+    to: "out/soong/.intermediates/bionic/libc/libseccomp_policy_app_sources/android_arm_armv8-a/gen/arm64_app_policy.cpp"
+  >
+  copy_after: <
+    from: "out/arm_app_policy.cpp"
+    to: "out/soong/.intermediates/bionic/libc/libseccomp_policy_app_sources/android_arm_armv8-a/gen/arm_app_policy.cpp"
+  >
+  copy_after: <
+    from: "out/x86_64_app_policy.cpp"
+    to: "out/soong/.intermediates/bionic/libc/libseccomp_policy_app_sources/android_arm_armv8-a/gen/x86_64_app_policy.cpp"
+  >
+  copy_after: <
+    from: "out/x86_app_policy.cpp"
+    to: "out/soong/.intermediates/bionic/libc/libseccomp_policy_app_sources/android_arm_armv8-a/gen/x86_app_policy.cpp"
+  >
+  input_hash: "106f610548d4ae32585f1c92767305fe5015174fc4045b9898d0d37bb52b5c37"
+>
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/build/soong/linkerconfig/proto/lib_linker_config_proto_lite/android_arm64_armv8-a_static/gen/proto/build/soong/linkerconfig/proto/linker_config.pb.cc: build/soong/linkerconfig/proto/linker_config.proto

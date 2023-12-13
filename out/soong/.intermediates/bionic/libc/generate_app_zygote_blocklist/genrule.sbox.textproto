@@ -1,0 +1,9 @@
+commands: <
+  command: "grep -v '^int[ \t]*setresgid' bionic/libc/SECCOMP_BLOCKLIST_APP.TXT > __SBOX_SANDBOX_DIR__/out/SECCOMP_BLOCKLIST_APP_ZYGOTE.TXT"
+  copy_after: <
+    from: "out/SECCOMP_BLOCKLIST_APP_ZYGOTE.TXT"
+    to: "out/soong/.intermediates/bionic/libc/generate_app_zygote_blocklist/gen/SECCOMP_BLOCKLIST_APP_ZYGOTE.TXT"
+  >
+  input_hash: "fe96d2a708f1693790ab225ad6c3b2a424ee9a1309eede717a9ddf70a4d3e693"
+>
+

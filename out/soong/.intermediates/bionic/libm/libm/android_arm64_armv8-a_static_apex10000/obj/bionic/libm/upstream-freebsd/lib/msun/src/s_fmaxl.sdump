@@ -1,0 +1,255 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 16,
+   "linker_set_key" : "_ZTIe",
+   "name" : "long double",
+   "referenced_type" : "_ZTIe",
+   "self_type" : "_ZTIe",
+   "size" : 16
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIf",
+   "name" : "float",
+   "referenced_type" : "_ZTIf",
+   "self_type" : "_ZTIf",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "fmaxl",
+   "linker_set_key" : "fmaxl",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "referenced_type" : "_ZTIe"
+    }
+   ],
+   "return_type" : "_ZTIe",
+   "source_file" : "bionic/libc/include/math.h"
+  }
+ ],
+ "global_vars" :
+ [
+  {
+   "linker_set_key" : "signgam",
+   "name" : "signgam",
+   "referenced_type" : "_ZTIi",
+   "source_file" : "bionic/libc/include/math.h"
+  }
+ ],
+ "lvalue_reference_types" : [],
+ "pointer_types" : [],
+ "qualified_types" : [],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "d",
+     "referenced_type" : "_ZTId"
+    },
+    {
+     "field_name" : "bits",
+     "referenced_type" : "_ZTIN10IEEEd2bitsUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI10IEEEd2bits",
+   "name" : "IEEEd2bits",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI10IEEEd2bits",
+   "self_type" : "_ZTI10IEEEd2bits",
+   "size" : 8,
+   "source_file" : "bionic/libm/fpmath.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "f",
+     "referenced_type" : "_ZTIf"
+    },
+    {
+     "field_name" : "bits",
+     "referenced_type" : "_ZTIN10IEEEf2bitsUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI10IEEEf2bits",
+   "name" : "IEEEf2bits",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI10IEEEf2bits",
+   "self_type" : "_ZTI10IEEEf2bits",
+   "size" : 4,
+   "source_file" : "bionic/libm/fpmath.h"
+  },
+  {
+   "alignment" : 16,
+   "fields" :
+   [
+    {
+     "field_name" : "e",
+     "referenced_type" : "_ZTIe"
+    },
+    {
+     "field_name" : "bits",
+     "referenced_type" : "_ZTIN10IEEEl2bitsUt_E"
+    },
+    {
+     "field_name" : "xbits",
+     "referenced_type" : "_ZTIN10IEEEl2bitsUt_E"
+    }
+   ],
+   "linker_set_key" : "_ZTI10IEEEl2bits",
+   "name" : "IEEEl2bits",
+   "record_kind" : "union",
+   "referenced_type" : "_ZTI10IEEEl2bits",
+   "self_type" : "_ZTI10IEEEl2bits",
+   "size" : 16,
+   "source_file" : "bionic/libm/fpmath.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "manl",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "manh",
+     "field_offset" : 32,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "exp",
+     "field_offset" : 52,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sign",
+     "field_offset" : 63,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN10IEEEd2bitsUt_E",
+   "name" : "IEEEd2bits::(anonymous struct at bionic/libm/fpmath.h:54:3)",
+   "referenced_type" : "_ZTIN10IEEEd2bitsUt_E",
+   "self_type" : "_ZTIN10IEEEd2bitsUt_E",
+   "size" : 8,
+   "source_file" : "bionic/libm/fpmath.h"
+  },
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "man",
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "exp",
+     "field_offset" : 23,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sign",
+     "field_offset" : 31,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN10IEEEf2bitsUt_E",
+   "name" : "IEEEf2bits::(anonymous struct at bionic/libm/fpmath.h:42:3)",
+   "referenced_type" : "_ZTIN10IEEEf2bitsUt_E",
+   "self_type" : "_ZTIN10IEEEf2bitsUt_E",
+   "size" : 4,
+   "source_file" : "bionic/libm/fpmath.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "manl",
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "manh",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "exp",
+     "field_offset" : 112,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "sign",
+     "field_offset" : 127,
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "is_anonymous" : true,
+   "linker_set_key" : "_ZTIN10IEEEl2bitsUt_E",
+   "name" : "IEEEl2bits::(anonymous struct at bionic/libm/fpmath.h:66:3)",
+   "referenced_type" : "_ZTIN10IEEEl2bitsUt_E",
+   "self_type" : "_ZTIN10IEEEl2bitsUt_E",
+   "size" : 16,
+   "source_file" : "bionic/libm/fpmath.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

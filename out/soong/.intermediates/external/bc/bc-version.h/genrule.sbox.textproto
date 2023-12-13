@@ -1,0 +1,9 @@
+commands: <
+  command: "sed -n 's/VERSION = /#define VERSION /p' external/bc/Makefile.in > __SBOX_SANDBOX_DIR__/out/bc-version.h"
+  copy_after: <
+    from: "out/bc-version.h"
+    to: "out/soong/.intermediates/external/bc/bc-version.h/gen/bc-version.h"
+  >
+  input_hash: "80fbcdd9b7c7d2a46878ee05da65ec7daffc380d964f875f637fbf47d9ff0e15"
+>
+

@@ -1,0 +1,197 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" : [],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP13cbb_buffer_st",
+   "name" : "cbb_buffer_st *",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTIP13cbb_buffer_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIP6cbb_st",
+   "name" : "cbb_st *",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTIP6cbb_st",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKh",
+   "name" : "const unsigned char *",
+   "referenced_type" : "_ZTIKh",
+   "self_type" : "_ZTIPKh",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKh",
+   "name" : "const unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIKh",
+   "size" : 1,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "buf",
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "cap",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "can_resize",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "error",
+     "field_offset" : 200,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI13cbb_buffer_st",
+   "name" : "cbb_buffer_st",
+   "referenced_type" : "_ZTI13cbb_buffer_st",
+   "self_type" : "_ZTI13cbb_buffer_st",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "base",
+     "referenced_type" : "_ZTIP13cbb_buffer_st"
+    },
+    {
+     "field_name" : "child",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIP6cbb_st"
+    },
+    {
+     "field_name" : "offset",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIm"
+    },
+    {
+     "field_name" : "pending_len_len",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIh"
+    },
+    {
+     "field_name" : "pending_is_asn1",
+     "field_offset" : 200,
+     "referenced_type" : "_ZTIc"
+    },
+    {
+     "field_name" : "is_child",
+     "field_offset" : 208,
+     "referenced_type" : "_ZTIc"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbb_st",
+   "name" : "cbb_st",
+   "referenced_type" : "_ZTI6cbb_st",
+   "self_type" : "_ZTI6cbb_st",
+   "size" : 32,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "data",
+     "referenced_type" : "_ZTIPKh"
+    },
+    {
+     "field_name" : "len",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "linker_set_key" : "_ZTI6cbs_st",
+   "name" : "cbs_st",
+   "referenced_type" : "_ZTI6cbs_st",
+   "self_type" : "_ZTI6cbs_st",
+   "size" : 16,
+   "source_file" : "external/boringssl/src/include/openssl/bytestring.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

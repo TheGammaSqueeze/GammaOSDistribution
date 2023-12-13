@@ -1,0 +1,1 @@
+out/soong/.intermediates/build/make/tools/releasetools/ota_metadata_proto_java/android_common/gen/proto/proto0.tmp/android/ota/nano/OtaPackageMetadata.java: build/make/tools/releasetools/ota_metadata.proto

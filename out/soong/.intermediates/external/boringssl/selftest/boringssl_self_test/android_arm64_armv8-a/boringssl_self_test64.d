@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/boringssl/selftest/boringssl_self_test/android_arm64_armv8-a/boringssl_self_test64:   out/soong/.intermediates/external/boringssl/selftest/boringssl_self_test/android_arm64_armv8-a/unstripped/boringssl_self_test64   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

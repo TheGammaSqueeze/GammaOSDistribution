@@ -1,0 +1,17 @@
+commands: <
+  copy_before: <
+    from: "external/clang/clang-version-inc.py"
+    to: "tools/src/external/clang/clang-version-inc.py"
+  >
+  copy_before: <
+    from: "external/clang/version.py"
+    to: "tools/src/external/clang/version.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/clang/clang-version-inc.py external/clang/include/clang/Basic/Version.inc.in > __SBOX_SANDBOX_DIR__/out/clang/Basic/Version.inc"
+  copy_after: <
+    from: "out/clang/Basic/Version.inc"
+    to: "out/soong/.intermediates/external/clang/clang-version/gen/clang/Basic/Version.inc"
+  >
+  input_hash: "4209ab6cf9b2c4f2c5c50d4f745c337e50066752d166f0195bbed84aa551a3fb"
+>
+

@@ -1,0 +1,26 @@
+2023/12/10 09:35:44.405721 build/soong/cmd/soong_ui/main.go:240: Detected 124 GB total RAM
+2023/12/10 09:35:44.405732 build/soong/cmd/soong_ui/main.go:241: Parallelism (local/remote/highmem): 34/0/15
+2023/12/10 09:35:44.405738 build/soong/cmd/soong_ui/main.go:267: Took 60ms to start up.
+2023/12/10 09:35:44.657575 build/soong/ui/build/sandbox_linux.go:120: [prebuilts/build-tools/linux-x86/bin/nsjail -H android-build -e -u nobody -g nogroup -R / -B /home/ubuntu/GammaOS -B /tmp -B /home/ubuntu/GammaOS/out --disable_clone_newcgroup -- /bin/bash -c if [ $(hostname) == "android-build" ]; then echo "Android" "Success"; else echo Failure; fi]
+2023/12/10 09:35:44.665016 build/soong/ui/build/sandbox_linux.go:127: Build sandboxing disabled due to nsjail error.
+2023/12/10 09:35:44.665066 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mode: STANDALONE_ONCE
+2023/12/10 09:35:44.665072 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Jail parameters: hostname:'android-build', chroot:'', process:'/bin/bash', bind:[::]:0, max_conns_per_ip:0, time_limit:0, personality:0, daemonize:false, clone_newnet:true, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:false, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+2023/12/10 09:35:44.665075 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/' flags:MS_RDONLY type:'tmpfs' options:'' is_dir:true
+2023/12/10 09:35:44.665077 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:35:44.665082 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/home/ubuntu/GammaOS' -> '/home/ubuntu/GammaOS' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:35:44.665084 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/tmp' -> '/tmp' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:35:44.665086 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/home/ubuntu/GammaOS/out' -> '/home/ubuntu/GammaOS/out' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' is_dir:true
+2023/12/10 09:35:44.665088 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Mount point: '/proc' flags:MS_RDONLY type:'proc' options:'' is_dir:true
+2023/12/10 09:35:44.665090 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+2023/12/10 09:35:44.665092 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:35:44+0000][3375779] void cmdline::logParams(nsjconf_t *)():250 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+2023/12/10 09:35:44.665094 build/soong/ui/build/sandbox_linux.go:130: [I][2023-12-10T09:35:44+0000] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+2023/12/10 09:35:44.665096 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:35:44+0000][3375779] void cmdline::logParams(nsjconf_t *)():260 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+2023/12/10 09:35:44.665098 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:35:44+0000][1] bool util::createDirRecursively(const char *)():150 openat('5', 'ubuntu', O_DIRECTORY | O_CLOEXEC): Permission denied
+2023/12/10 09:35:44.665100 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:35:44+0000][1] bool mnt::mountPt(mount_t *, const char *, const char *)():140 Couldn't create upper directories for '/run/user//nsjail.0.root//home/ubuntu/GammaOS'
+2023/12/10 09:35:44.665102 build/soong/ui/build/sandbox_linux.go:130: [F][2023-12-10T09:35:44+0000][1] bool subproc::runChild(nsjconf_t *, int, int, int)():433 Launching child process failed
+2023/12/10 09:35:44.665104 build/soong/ui/build/sandbox_linux.go:130: [W][2023-12-10T09:35:44+0000][3375779] bool subproc::runChild(nsjconf_t *, int, int, int)():461 Received error message from the child process before it has been executed
+2023/12/10 09:35:44.665112 build/soong/ui/build/sandbox_linux.go:130: [E][2023-12-10T09:35:44+0000][3375779] int nsjail::standaloneMode(nsjconf_t *)():146 Couldn't launch the child process
+2023/12/10 09:35:44.665116 build/soong/ui/build/sandbox_linux.go:136: nsjail failed with exit status 255
+2023/12/10 09:35:44.665127 build/soong/ui/build/exec.go:64: "dumpvars" executing "prebuilts/build-tools/linux-x86/bin/ckati" [prebuilts/build-tools/linux-x86/bin/ckati -f build/make/core/config.mk --color_warnings --kati_stats dump-many-vars MAKECMDGOALS=]
+2023/12/10 09:35:45.107918 build/soong/ui/build/exec.go:74: "dumpvars" finished with exit code 0 (443ms real, 374ms user, 62ms system, 183MB maxrss)
+2023/12/10 09:35:45.107948 build/soong/ui/build/dumpvars.go:123: TARGET_DEVICE phhgsi_arm64_ab

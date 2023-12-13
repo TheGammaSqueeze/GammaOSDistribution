@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/art/tools/generate_operator_out/linux_glibc_x86_64_PY2/generate_operator_out"
+    to: "tools/out/bin/generate_operator_out"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/dex2oat art/dex2oat/linker/image_writer.h > __SBOX_SANDBOX_DIR__/out/art/dex2oat/linker/image_writer.operator_out.cc'"
+  copy_after: <
+    from: "out/art/dex2oat/linker/image_writer.operator_out.cc"
+    to: "out/soong/.intermediates/art/dex2oat/art_dex2oat_operator_srcs/gen/gensrcs/art/dex2oat/linker/image_writer.operator_out.cc"
+  >
+  input_hash: "89cfcbd0525e50d76d01862b304b73177302dbb7a5b2191fab0459af5682c684"
+>
+

@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "bionic/tools/generate-version-script.py"
+    to: "tools/src/bionic/tools/generate-version-script.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/bionic/tools/generate-version-script.py arm64 bionic/libdl/libdl.map.txt __SBOX_SANDBOX_DIR__/out/libdl.arm64.map"
+  copy_after: <
+    from: "out/libdl.arm64.map"
+    to: "out/soong/.intermediates/bionic/libdl/libdl.arm64.map/gen/libdl.arm64.map"
+  >
+  input_hash: "cf075f6fac454303e62b36164ecea5b07ea54aae5302d5b5c949c09a4a7b255c"
+>
+

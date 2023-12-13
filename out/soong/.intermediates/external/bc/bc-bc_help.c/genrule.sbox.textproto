@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/bc/gen/strgen.sh"
+    to: "tools/src/external/bc/gen/strgen.sh"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/bc/gen/strgen.sh external/bc/gen/bc_help.txt __SBOX_SANDBOX_DIR__/out/gen/bc_help.c bc_help '' BC_ENABLED"
+  copy_after: <
+    from: "out/gen/bc_help.c"
+    to: "out/soong/.intermediates/external/bc/bc-bc_help.c/gen/gen/bc_help.c"
+  >
+  input_hash: "e2a556242a46aafa7a52724dc70c08501e0da04dd0f2d333d7d16c3a9aacf983"
+>
+

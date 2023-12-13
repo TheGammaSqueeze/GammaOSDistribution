@@ -1,0 +1,255 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTId",
+   "name" : "double",
+   "referenced_type" : "_ZTId",
+   "self_type" : "_ZTId",
+   "size" : 8
+  },
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIh",
+   "name" : "unsigned char",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIh",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPhmE",
+   "name" : "int (unsigned char *, unsigned long)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPh"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPhmE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPhmE",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFivE",
+   "name" : "int (void)",
+   "referenced_type" : "_ZTIFivE",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFivE",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPKviE",
+   "name" : "void (const void *, int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPKviE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPKviE",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvPKvidE",
+   "name" : "void (const void *, int, double)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTId"
+    }
+   ],
+   "referenced_type" : "_ZTIFvPKvidE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvPKvidE",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFvvE",
+   "name" : "void (void)",
+   "referenced_type" : "_ZTIFvvE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFvvE",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  }
+ ],
+ "functions" : [],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFiPhmE",
+   "name" : "int (*)(unsigned char *, unsigned long)",
+   "referenced_type" : "_ZTIFiPhmE",
+   "self_type" : "_ZTIPFiPhmE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFivE",
+   "name" : "int (*)(void)",
+   "referenced_type" : "_ZTIFivE",
+   "self_type" : "_ZTIPFivE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvPKviE",
+   "name" : "void (*)(const void *, int)",
+   "referenced_type" : "_ZTIFvPKviE",
+   "self_type" : "_ZTIPFvPKviE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvPKvidE",
+   "name" : "void (*)(const void *, int, double)",
+   "referenced_type" : "_ZTIFvPKvidE",
+   "self_type" : "_ZTIPFvPKvidE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPFvvE",
+   "name" : "void (*)(void)",
+   "referenced_type" : "_ZTIFvvE",
+   "self_type" : "_ZTIPFvvE",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPh",
+   "name" : "unsigned char *",
+   "referenced_type" : "_ZTIh",
+   "self_type" : "_ZTIPh",
+   "size" : 8,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "seed",
+     "referenced_type" : "_ZTIPFvPKviE"
+    },
+    {
+     "field_name" : "bytes",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIPFiPhmE"
+    },
+    {
+     "field_name" : "cleanup",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIPFvvE"
+    },
+    {
+     "field_name" : "add",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIPFvPKvidE"
+    },
+    {
+     "field_name" : "pseudorand",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIPFiPhmE"
+    },
+    {
+     "field_name" : "status",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIPFivE"
+    }
+   ],
+   "linker_set_key" : "_ZTI12rand_meth_st",
+   "name" : "rand_meth_st",
+   "referenced_type" : "_ZTI12rand_meth_st",
+   "self_type" : "_ZTI12rand_meth_st",
+   "size" : 48,
+   "source_file" : "external/boringssl/src/include/openssl/rand.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

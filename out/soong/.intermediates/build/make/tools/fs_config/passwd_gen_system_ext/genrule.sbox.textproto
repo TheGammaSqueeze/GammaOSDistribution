@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "build/make/tools/fs_config/fs_config_generator.py"
+    to: "tools/src/build/make/tools/fs_config/fs_config_generator.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/build/make/tools/fs_config/fs_config_generator.py passwd --partition=system_ext --aid-header=system/core/libcutils/include/private/android_filesystem_config.h out/soong/.intermediates/build/make/tools/fs_config/target_fs_config_gen/gen/empty >__SBOX_SANDBOX_DIR__/out/passwd"
+  copy_after: <
+    from: "out/passwd"
+    to: "out/soong/.intermediates/build/make/tools/fs_config/passwd_gen_system_ext/gen/passwd"
+  >
+  input_hash: "d5ec17ff8d925d1e4a593b930e35a2eb522fd6a3caaa8bed0e588e93c8ea5a6c"
+>
+

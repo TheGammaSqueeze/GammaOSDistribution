@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/bionic/libc/tools/genfunctosyscallnrs/linux_glibc_x86_64_PY3/genfunctosyscallnrs"
+    to: "tools/out/bin/genfunctosyscallnrs"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/genfunctosyscallnrs --out-dir=__SBOX_SANDBOX_DIR__/out bionic/libc/SYSCALLS.TXT out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_arm/android_arm64_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_arm64/android_arm64_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_x86/android_arm64_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs_x86.o out/soong/.intermediates/bionic/libc/libseccomp_gen_syscall_nrs_x86_64/android_arm64_armv8-a/obj/bionic/libc/seccomp/gen_syscall_nrs_x86_64.o"
+  copy_after: <
+    from: "out/func_to_syscall_nrs.h"
+    to: "out/soong/.intermediates/bionic/libc/func_to_syscall_nrs/android_arm64_armv8-a/gen/func_to_syscall_nrs.h"
+  >
+  input_hash: "721ae00512fbab7185d3b7a1c9667f26425da5393fe320eadbcc30bdfaaefdbf"
+>
+

@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/compiler-rt/libcompiler_rt/android_vendor.32_arm64_armv8-a_shared/libcompiler_rt.so:   out/soong/.intermediates/external/compiler-rt/libcompiler_rt/android_vendor.32_arm64_armv8-a_shared/unstripped/libcompiler_rt.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

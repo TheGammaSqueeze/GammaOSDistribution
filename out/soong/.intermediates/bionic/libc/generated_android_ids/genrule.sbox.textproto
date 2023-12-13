@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "bionic/libc/fs_config_generator.py"
+    to: "tools/src/bionic/libc/fs_config_generator.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/bionic/libc/fs_config_generator.py aidarray system/core/libcutils/include/private/android_filesystem_config.h > __SBOX_SANDBOX_DIR__/out/generated_android_ids.h"
+  copy_after: <
+    from: "out/generated_android_ids.h"
+    to: "out/soong/.intermediates/bionic/libc/generated_android_ids/gen/generated_android_ids.h"
+  >
+  input_hash: "c3c39cb81e15cf9b8640aaab725e1e085ab76d0d49a1c4725892caf0d7465dd1"
+>
+

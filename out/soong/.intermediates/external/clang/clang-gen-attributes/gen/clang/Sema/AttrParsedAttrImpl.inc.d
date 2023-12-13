@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/clang/clang-gen-attributes/gen/clang/Sema/AttrParsedAttrImpl.inc: external/clang/include/clang/Basic/AttrDocs.td external/clang/include/clang/Basic/DeclNodes.td external/clang/include/clang/Basic/StmtNodes.td

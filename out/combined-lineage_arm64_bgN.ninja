@@ -1,0 +1,7 @@
+
+builddir = out
+pool highmem_pool
+ depth = 15
+subninja out/build-lineage_arm64_bgN.ninja
+subninja out/build-lineage_arm64_bgN-package.ninja
+subninja out/soong/build.ninja

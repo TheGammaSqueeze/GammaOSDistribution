@@ -1,0 +1,2 @@
+out/soong/.intermediates/bionic/linker/ld-android/android_arm64_armv8-a_shared/ld-android.so.toc: \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf \

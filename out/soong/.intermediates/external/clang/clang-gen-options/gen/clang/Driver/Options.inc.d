@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/clang/clang-gen-options/gen/clang/Driver/Options.inc: external/clang/include/clang/Driver/CC1Options.td external/clang/include/clang/Driver/CLCompatOptions.td external/llvm/include/llvm/Option/OptParser.td

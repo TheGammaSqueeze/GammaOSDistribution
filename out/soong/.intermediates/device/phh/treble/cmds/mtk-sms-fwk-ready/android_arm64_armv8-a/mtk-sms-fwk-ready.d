@@ -1,0 +1,2 @@
+out/soong/.intermediates/device/phh/treble/cmds/mtk-sms-fwk-ready/android_arm64_armv8-a/mtk-sms-fwk-ready:   out/soong/.intermediates/device/phh/treble/cmds/mtk-sms-fwk-ready/android_arm64_armv8-a/unstripped/mtk-sms-fwk-ready   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

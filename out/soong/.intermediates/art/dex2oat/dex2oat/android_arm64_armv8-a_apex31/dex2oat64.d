@@ -1,0 +1,2 @@
+out/soong/.intermediates/art/dex2oat/dex2oat/android_arm64_armv8-a_apex31/dex2oat64:   out/soong/.intermediates/art/dex2oat/dex2oat/android_arm64_armv8-a_apex31/unstripped/dex2oat64   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

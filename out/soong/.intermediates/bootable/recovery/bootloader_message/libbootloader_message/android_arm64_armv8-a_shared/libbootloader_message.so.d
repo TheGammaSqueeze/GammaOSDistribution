@@ -1,0 +1,2 @@
+out/soong/.intermediates/bootable/recovery/bootloader_message/libbootloader_message/android_arm64_armv8-a_shared/libbootloader_message.so:   out/soong/.intermediates/bootable/recovery/bootloader_message/libbootloader_message/android_arm64_armv8-a_shared/unstripped/libbootloader_message.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

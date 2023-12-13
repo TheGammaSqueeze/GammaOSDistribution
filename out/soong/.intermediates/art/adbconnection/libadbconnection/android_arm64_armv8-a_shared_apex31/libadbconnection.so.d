@@ -1,0 +1,2 @@
+out/soong/.intermediates/art/adbconnection/libadbconnection/android_arm64_armv8-a_shared_apex31/libadbconnection.so:   out/soong/.intermediates/art/adbconnection/libadbconnection/android_arm64_armv8-a_shared_apex31/unstripped/libadbconnection.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

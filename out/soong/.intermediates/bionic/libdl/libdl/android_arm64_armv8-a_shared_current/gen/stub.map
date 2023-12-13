@@ -1,0 +1,21 @@
+LIBC {
+    global:
+        android_dlopen_ext;
+        dl_iterate_phdr;
+        dladdr;
+        dlclose;
+        dlerror;
+        dlopen;
+        dlsym;
+};
+LIBC_N {
+    global:
+        android_get_application_target_sdk_version;
+        dlvsym;
+} LIBC;
+LIBC_OMR1 {
+    global:
+        __cfi_shadow_size;
+        __cfi_slowpath;
+        __cfi_slowpath_diag;
+} LIBC_N;

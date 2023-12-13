@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/art/tools/generate_operator_out/linux_glibc_x86_64_PY2/generate_operator_out"
+    to: "tools/out/bin/generate_operator_out"
+    executable: false
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/out/bin/generate_operator_out art/perfetto_hprof art/perfetto_hprof/perfetto_hprof.h > __SBOX_SANDBOX_DIR__/out/art/perfetto_hprof/perfetto_hprof.operator_out.cc'"
+  copy_after: <
+    from: "out/art/perfetto_hprof/perfetto_hprof.operator_out.cc"
+    to: "out/soong/.intermediates/art/perfetto_hprof/art_perfetto_hprof_operator_srcs/gen/gensrcs/art/perfetto_hprof/perfetto_hprof.operator_out.cc"
+  >
+  input_hash: "9d48690f8f077792e8c86cba47c4e54b121a6652664c76263ad475a18fb2619a"
+>
+

@@ -1,0 +1,21 @@
+commands: <
+  copy_before: <
+    from: "art/libdexfile/dex/dex_instruction_list.h"
+    to: "tools/src/art/libdexfile/dex/dex_instruction_list.h"
+  >
+  copy_before: <
+    from: "art/runtime/interpreter/mterp/common/gen_setup.py"
+    to: "tools/src/art/runtime/interpreter/mterp/common/gen_setup.py"
+  >
+  copy_before: <
+    from: "art/runtime/interpreter/mterp/gen_mterp.py"
+    to: "tools/src/art/runtime/interpreter/mterp/gen_mterp.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/art/runtime/interpreter/mterp/gen_mterp.py __SBOX_SANDBOX_DIR__/out/mterp_armng.S art/runtime/interpreter/mterp/armng/arithmetic.S art/runtime/interpreter/mterp/armng/array.S art/runtime/interpreter/mterp/armng/control_flow.S art/runtime/interpreter/mterp/armng/floating_point.S art/runtime/interpreter/mterp/armng/invoke.S art/runtime/interpreter/mterp/armng/main.S art/runtime/interpreter/mterp/armng/object.S art/runtime/interpreter/mterp/armng/other.S"
+  copy_after: <
+    from: "out/mterp_armng.S"
+    to: "out/soong/.intermediates/art/runtime/libart_mterp.armng/gen/mterp_armng.S"
+  >
+  input_hash: "e3351a7b283201b589a270c613bbf4b0a5d489092bbcfa5c092ac734b49d6612"
+>
+

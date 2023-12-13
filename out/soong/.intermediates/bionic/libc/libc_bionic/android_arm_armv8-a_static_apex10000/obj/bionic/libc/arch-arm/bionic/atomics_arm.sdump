@@ -1,0 +1,108 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "__atomic_cmpxchg",
+   "linker_set_key" : "__atomic_cmpxchg",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPVi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  },
+  {
+   "function_name" : "__atomic_dec",
+   "linker_set_key" : "__atomic_dec",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPVi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  },
+  {
+   "function_name" : "__atomic_inc",
+   "linker_set_key" : "__atomic_inc",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPVi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  },
+  {
+   "function_name" : "__atomic_swap",
+   "linker_set_key" : "__atomic_swap",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPVi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPVi",
+   "name" : "volatile int *",
+   "referenced_type" : "_ZTIVi",
+   "self_type" : "_ZTIPVi",
+   "size" : 4,
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_volatile" : true,
+   "linker_set_key" : "_ZTIVi",
+   "name" : "volatile int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIVi",
+   "size" : 4,
+   "source_file" : "bionic/libc/arch-arm/bionic/atomics_arm.c"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

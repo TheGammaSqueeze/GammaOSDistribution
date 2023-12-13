@@ -1,0 +1,9 @@
+commands: <
+  command: "sed 's/${PLATFORM_SDK_VERSION}/0/ ; s/^Pkg.Revision=\\(.*\\)/#define PLATFORM_TOOLS_VERSION \"\\1\"/p ; d' development/sdk/plat_tools_source.prop_template > __SBOX_SANDBOX_DIR__/out/platform_tools_version.h"
+  copy_after: <
+    from: "out/platform_tools_version.h"
+    to: "out/soong/.intermediates/development/sdk/platform_tools_version/gen/platform_tools_version.h"
+  >
+  input_hash: "a6dfe3d5e103455f249aba66f9f81b1a42f1fea9f6257f82373c342b711160a7"
+>
+
