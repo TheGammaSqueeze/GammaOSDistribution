@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/gptfdisk/sgdisk/android_arm64_armv8-a/sgdisk:   out/soong/.intermediates/external/gptfdisk/sgdisk/android_arm64_armv8-a/unstripped/sgdisk   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

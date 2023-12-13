@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/log/liblog_rust/android_arm64_armv8-a_dylib/liblog.dylib.so: external/rust/crates/log/src/lib.rs external/rust/crates/log/src/macros.rs external/rust/crates/log/src/serde.rs

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/drm/drmserver/drmserver/android_arm_armv8-a/drmserver:   out/soong/.intermediates/frameworks/av/drm/drmserver/drmserver/android_arm_armv8-a/unstripped/drmserver   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

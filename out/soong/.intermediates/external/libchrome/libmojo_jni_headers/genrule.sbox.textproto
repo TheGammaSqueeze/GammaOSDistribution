@@ -1,0 +1,46 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/jni_generator_helper.sh"
+    to: "tools/src/external/libchrome/libchrome_tools/jni_generator_helper.sh"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libchrome/jni_generator/linux_glibc_x86_64_PY2/jni_generator"
+    to: "tools/out/bin/jni_generator"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/jni_generator_helper.sh    --jni_generator=__SBOX_SANDBOX_DIR__/tools/out/bin/jni_generator    --output_dir=__SBOX_SANDBOX_DIR__/out/jni    --includes=base/android/jni_generator/jni_generator_helper.h    --ptr_type=long    external/libchrome/base/android/java/src/org/chromium/base/BuildInfo.java external/libchrome/base/android/java/src/org/chromium/base/ContentUriUtils.java external/libchrome/base/android/java/src/org/chromium/base/JavaExceptionReporter.java external/libchrome/base/android/java/src/org/chromium/base/PathUtils.java external/libchrome/base/android/java/src/org/chromium/base/SysUtils.java external/libchrome/base/android/java/src/org/chromium/base/ThreadUtils.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/BaseRunLoop.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/CoreImpl.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/WatcherImpl.java"
+  copy_after: <
+    from: "out/jni/BaseRunLoop_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/BaseRunLoop_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/BuildInfo_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/BuildInfo_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/ContentUriUtils_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/ContentUriUtils_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/CoreImpl_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/CoreImpl_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/JavaExceptionReporter_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/JavaExceptionReporter_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/PathUtils_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/PathUtils_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/SysUtils_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/SysUtils_jni.h"
+  >
+  copy_after: <
+    from: "out/jni/WatcherImpl_jni.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_headers/gen/jni/WatcherImpl_jni.h"
+  >
+  input_hash: "29e171462d41f29cee0595ce39fbc80239d02f136352f61e7ad7da9bff9f0963"
+>
+

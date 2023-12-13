@@ -1,0 +1,1 @@
+outputfile: external/tflite-support/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config.fbs external/tflite-support/tensorflow_lite_support/custom_ops/kernel/sentencepiece/encoder_config.fbs

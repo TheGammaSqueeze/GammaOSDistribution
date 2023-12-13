@@ -1,0 +1,9 @@
+void AHeapProfileEnableCallbackInfo_getSamplingInterval() {}
+void AHeapProfile_reportSample() {}
+void AHeapProfile_reportFree() {}
+void AHeapProfile_reportAllocation() {}
+void AHeapProfile_registerHeap() {}
+void AHeapInfo_setEnabledCallback() {}
+void AHeapInfo_setDisabledCallback() {}
+void AHeapInfo_create() {}
+void AHeapProfile_initSession() {}

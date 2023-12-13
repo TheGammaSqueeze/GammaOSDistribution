@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/tokio-macros/libtokio_macros/linux_glibc_x86_64/libtokio_macros.so: external/rust/crates/tokio-macros/src/lib.rs external/rust/crates/tokio-macros/src/entry.rs external/rust/crates/tokio-macros/src/select.rs

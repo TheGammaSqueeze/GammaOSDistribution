@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/icu/android_icu4j/libcore_bridge/src/native/libicu_jni/android_arm_armv8-a_shared_apex10000/libicu_jni.so:   out/soong/.intermediates/external/icu/android_icu4j/libcore_bridge/src/native/libicu_jni/android_arm_armv8-a_shared_apex10000/unstripped/libicu_jni.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

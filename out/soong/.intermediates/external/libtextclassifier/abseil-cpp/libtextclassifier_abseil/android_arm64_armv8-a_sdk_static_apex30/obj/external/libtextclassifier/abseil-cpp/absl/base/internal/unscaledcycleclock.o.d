@@ -1,0 +1,36 @@
+out/soong/.intermediates/external/libtextclassifier/abseil-cpp/libtextclassifier_abseil/android_arm64_armv8-a_sdk_static_apex30/obj/external/libtextclassifier/abseil-cpp/absl/base/internal/unscaledcycleclock.o: \
+  external/libtextclassifier/abseil-cpp/absl/base/internal/unscaledcycleclock.cc \
+  external/libtextclassifier/abseil-cpp/absl/base/internal/unscaledcycleclock.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstdint \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__config \
+  out/soong/ndk/sysroot/usr/include/features.h \
+  out/soong/ndk/sysroot/usr/include/sys/cdefs.h \
+  out/soong/ndk/sysroot/usr/include/android/versioning.h \
+  out/soong/ndk/sysroot/usr/include/android/api-level.h \
+  out/soong/ndk/sysroot/usr/include/pthread.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/bits/wchar_limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__nullptr \
+  external/libtextclassifier/abseil-cpp/absl/base/port.h \
+  external/libtextclassifier/abseil-cpp/absl/base/attributes.h \
+  external/libtextclassifier/abseil-cpp/absl/base/config.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/limits.h \
+  out/soong/ndk/sysroot/usr/include/limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/float.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h \
+  out/soong/ndk/sysroot/usr/include/linux/limits.h \
+  out/soong/ndk/sysroot/usr/include/bits/posix_limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/cstddef \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/version \
+  external/libtextclassifier/abseil-cpp/absl/base/options.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/ciso646 \
+  external/libtextclassifier/abseil-cpp/absl/base/policy_checks.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/any \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/optional \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/variant \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/string_view \
+  external/libtextclassifier/abseil-cpp/absl/base/optimization.h

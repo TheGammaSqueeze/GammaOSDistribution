@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/bindgen/android/bindgen_cmd/libbindgen_cmd/linux_glibc_x86_64_rlib_rlib-std/libbindgen_cmd.rlib: external/rust/crates/bindgen/android/bindgen_cmd/src/lib.rs external/rust/crates/bindgen/android/bindgen_cmd/src/../../../src/options.rs

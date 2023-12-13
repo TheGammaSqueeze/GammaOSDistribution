@@ -1,0 +1,91 @@
+out/soong/.intermediates/frameworks/av/media/codecs/amrnb/dec/libstagefright_amrnbdec/android_arm64_armv8-a_static_cfi_apex29/obj/frameworks/av/media/codecs/amrnb/dec/src/a_refl.o: \
+  external/compiler-rt/lib/cfi/cfi_blocklist.txt \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/share/cfi_blacklist.txt \
+  frameworks/av/media/codecs/amrnb/dec/src/a_refl.cpp \
+  system/logging/liblog/include/log/log.h bionic/libc/include/pthread.h \
+  external/libcxx/include/limits.h external/libcxx/include/__config \
+  bionic/libc/include/features.h bionic/libc/include/sys/cdefs.h \
+  bionic/libc/include/android/versioning.h \
+  bionic/libc/include/android/api-level.h bionic/libc/include/limits.h \
+  external/libcxx/include/float.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h \
+  bionic/libc/kernel/uapi/linux/limits.h \
+  bionic/libc/include/bits/posix_limits.h \
+  bionic/libc/include/bits/pthread_types.h \
+  bionic/libc/include/sys/types.h external/libcxx/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr external/libcxx/include/stdint.h \
+  bionic/libc/include/stdint.h bionic/libc/include/bits/wchar_limits.h \
+  bionic/libc/kernel/uapi/linux/types.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/types.h \
+  bionic/libc/kernel/uapi/asm-generic/types.h \
+  bionic/libc/kernel/uapi/asm-generic/int-ll64.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/bitsperlong.h \
+  bionic/libc/kernel/uapi/asm-generic/bitsperlong.h \
+  bionic/libc/kernel/uapi/linux/posix_types.h \
+  bionic/libc/kernel/uapi/linux/stddef.h \
+  bionic/libc/kernel/android/uapi/linux/compiler_types.h \
+  bionic/libc/kernel/android/uapi/linux/compiler.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/posix_types.h \
+  bionic/libc/kernel/uapi/asm-generic/posix_types.h \
+  bionic/libc/include/sched.h bionic/libc/include/bits/timespec.h \
+  bionic/libc/kernel/uapi/linux/sched.h bionic/libc/include/time.h \
+  bionic/libc/include/sys/time.h bionic/libc/kernel/uapi/linux/time.h \
+  bionic/libc/kernel/uapi/linux/time_types.h \
+  bionic/libc/include/sys/select.h bionic/libc/include/signal.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/sigcontext.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/sve_context.h \
+  bionic/libc/include/bits/signal_types.h \
+  bionic/libc/kernel/uapi/linux/signal.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/signal.h \
+  bionic/libc/kernel/uapi/asm-generic/signal.h \
+  bionic/libc/kernel/uapi/asm-generic/signal-defs.h \
+  bionic/libc/kernel/uapi/asm-arm64/asm/siginfo.h \
+  bionic/libc/kernel/uapi/asm-generic/siginfo.h \
+  bionic/libc/include/sys/ucontext.h bionic/libc/include/sys/user.h \
+  bionic/libc/include/android/legacy_signal_inlines.h \
+  bionic/libc/include/xlocale.h external/libcxx/include/stdio.h \
+  bionic/libc/include/stdio.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  bionic/libc/include/bits/seek_constants.h \
+  bionic/libc/include/bits/fortify/stdio.h bionic/libc/include/unistd.h \
+  bionic/libc/include/bits/fcntl.h bionic/libc/include/bits/getopt.h \
+  bionic/libc/include/bits/ioctl.h bionic/libc/include/bits/lockf.h \
+  bionic/libc/include/bits/sysconf.h \
+  bionic/libc/include/bits/fortify/unistd.h \
+  bionic/libc/include/android/legacy_unistd_inlines.h \
+  system/logging/liblog/include/android/log.h \
+  system/logging/liblog/include/log/log_id.h \
+  system/logging/liblog/include/log/log_main.h \
+  external/libcxx/include/stdbool.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h \
+  system/logging/liblog/include/log/log_radio.h \
+  system/logging/liblog/include/log/log_safetynet.h \
+  system/logging/liblog/include/log/log_system.h \
+  system/logging/liblog/include/log/log_time.h \
+  frameworks/av/media/codecs/amrnb/dec/src/a_refl.h \
+  frameworks/av/media/codecs/amrnb/common/include/typedef.h \
+  frameworks/av/media/codecs/amrnb/common/include/gsm_amr_typedefs.h \
+  frameworks/av/media/codecs/amrnb/common/include/cnst.h \
+  frameworks/av/media/codecs/amrnb/common/include/basic_op.h \
+  frameworks/av/media/codecs/amrnb/common/include/basicop_malloc.h \
+  frameworks/av/media/codecs/amrnb/common/include/basic_op_c_equivalent.h \
+  frameworks/av/media/codecs/amrnb/common/include/add.h \
+  frameworks/av/media/codecs/amrnb/common/include/div_s.h \
+  frameworks/av/media/codecs/amrnb/common/include/div_32.h \
+  frameworks/av/media/codecs/amrnb/common/include/extract_h.h \
+  frameworks/av/media/codecs/amrnb/common/include/extract_l.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_deposit_h.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_deposit_l.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_shr_r.h \
+  frameworks/av/media/codecs/amrnb/common/include/mult_r.h \
+  frameworks/av/media/codecs/amrnb/common/include/norm_l.h \
+  frameworks/av/media/codecs/amrnb/common/include/norm_s.h \
+  frameworks/av/media/codecs/amrnb/common/include/round.h \
+  frameworks/av/media/codecs/amrnb/common/include/shr_r.h \
+  frameworks/av/media/codecs/amrnb/common/include/sub.h \
+  frameworks/av/media/codecs/amrnb/common/include/shr.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_abs.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_negate.h \
+  frameworks/av/media/codecs/amrnb/common/include/l_extract.h

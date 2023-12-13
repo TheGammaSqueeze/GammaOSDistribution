@@ -1,0 +1,31 @@
+out/soong/.intermediates/external/icu/icu4c/source/i18n/libicui18n/linux_glibc_x86_64_static/obj/external/icu/icu4c/source/i18n/windtfmt.o: \
+  external/icu/icu4c/source/i18n/windtfmt.cpp \
+  external/icu/icu4c/source/common/unicode/utypes.h \
+  external/icu/icu4c/source/common/unicode/umachine.h \
+  external/icu/icu4c/source/common/unicode/ptypes.h \
+  external/libcxx/include/stddef.h external/libcxx/include/__config \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/features.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdc-predef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/predefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/pthread.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr \
+  external/icu/icu4c/source/common/unicode/platform.h \
+  external/icu/icu4c/source/common/unicode/uconfig.h \
+  external/icu/android_icu4c/include/uconfig_local.h \
+  external/icu/icu4c/source/common/unicode/uvernum.h \
+  external/libcxx/include/stdint.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdint.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wchar.h \
+  external/libcxx/include/stdbool.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h \
+  external/icu/icu4c/source/common/unicode/urename.h \
+  external/icu/icu4c/source/common/unicode/uversion.h \
+  external/libcxx/include/float.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h

@@ -1,0 +1,69 @@
+commands: <
+  copy_before: <
+    from: "external/iptables/extensions/filter_init"
+    to: "tools/src/external/iptables/extensions/filter_init"
+  >
+  command: "bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_CLUSTERIP.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_CLUSTERIP.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_DNAT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_DNAT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_ECN.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_ECN.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_LOG.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_LOG.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_MASQUERADE.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_MASQUERADE.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_NETMAP.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_NETMAP.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_REDIRECT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_REDIRECT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_REJECT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_REJECT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_SNAT.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_SNAT.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_TTL.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_TTL.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_ULOG.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_ULOG.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_ah.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_ah.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_icmp.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_icmp.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_realm.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_realm.c' && bash -c '__SBOX_SANDBOX_DIR__/tools/src/external/iptables/extensions/filter_init external/iptables/extensions/libipt_ttl.c > __SBOX_SANDBOX_DIR__/out/external/iptables/extensions/libipt_ttl.c'"
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_CLUSTERIP.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_CLUSTERIP.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_DNAT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_DNAT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_ECN.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_ECN.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_LOG.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_LOG.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_MASQUERADE.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_MASQUERADE.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_NETMAP.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_NETMAP.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_REDIRECT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_REDIRECT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_REJECT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_REJECT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_SNAT.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_SNAT.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_TTL.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_TTL.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_ULOG.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_ULOG.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_ah.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_ah.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_icmp.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_icmp.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_realm.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_realm.c"
+  >
+  copy_after: <
+    from: "out/external/iptables/extensions/libipt_ttl.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_srcs/gen/gensrcs/external/iptables/extensions/libipt_ttl.c"
+  >
+  input_hash: "d20a713b9fd9783732477865dbac622c95c84661b087a4770da3205f12cd4b75"
+>
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/lazy_static/liblazy_static/android_arm64_armv8-a_dylib/liblazy_static.dylib.so: external/rust/crates/lazy_static/src/lib.rs external/rust/crates/lazy_static/src/inline_lazy.rs

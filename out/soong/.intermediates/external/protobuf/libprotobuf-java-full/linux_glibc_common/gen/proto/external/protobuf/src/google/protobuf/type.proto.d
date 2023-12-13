@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/protobuf/libprotobuf-java-full/linux_glibc_common/gen/proto/proto0.tmp/com/google/protobuf/Enum.java: external/protobuf/src//google/protobuf/any.proto external/protobuf/src//google/protobuf/source_context.proto external/protobuf/src//google/protobuf/type.proto

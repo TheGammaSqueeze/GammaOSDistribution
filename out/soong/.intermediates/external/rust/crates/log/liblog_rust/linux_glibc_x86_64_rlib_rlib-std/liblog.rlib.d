@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/log/liblog_rust/linux_glibc_x86_64_rlib_rlib-std/liblog.rlib: external/rust/crates/log/src/lib.rs external/rust/crates/log/src/macros.rs external/rust/crates/log/src/serde.rs

@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/iputils/traceroute6/android_arm64_armv8-a/traceroute6:   out/soong/.intermediates/external/iputils/traceroute6/android_arm64_armv8-a/unstripped/traceroute6   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

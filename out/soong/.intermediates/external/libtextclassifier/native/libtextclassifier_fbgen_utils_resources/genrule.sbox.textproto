@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/utils/resources.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/utils/resources_generated.h) external/libtextclassifier/native/utils/resources.fbs"
+  copy_after: <
+    from: "out/utils/resources_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_resources/gen/utils/resources_generated.h"
+  >
+  input_hash: "31f7cfb34caedb15d49c3863d6872364a5d5c1f4db0cf69b03c80b277438e38d"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_resources/gen/utils/resources_generated.d"
+

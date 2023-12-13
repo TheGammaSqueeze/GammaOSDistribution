@@ -1,0 +1,22 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/chrome/chrome_benchmark_metadata.proto external/perfetto/protos/perfetto/trace/chrome/chrome_metadata.proto external/perfetto/protos/perfetto/trace/chrome/chrome_trace_event.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/chrome/chrome_benchmark_metadata.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_chrome_lite_gen/gen/external/perfetto/protos/perfetto/trace/chrome/chrome_benchmark_metadata.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/chrome/chrome_metadata.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_chrome_lite_gen/gen/external/perfetto/protos/perfetto/trace/chrome/chrome_metadata.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/chrome/chrome_trace_event.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_chrome_lite_gen/gen/external/perfetto/protos/perfetto/trace/chrome/chrome_trace_event.pb.cc"
+  >
+  input_hash: "dd81e1684857883e95a228277e305e5850a62a9bb886608f924c902d7e773c5d"
+>
+

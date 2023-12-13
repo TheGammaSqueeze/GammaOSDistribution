@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/media/IPlayer.cpp.d --ninja -Iframeworks/av/media/libaudioclient/aidl -Iframeworks/av/aidl -Iframeworks/av/media/libaudioclient/aidl/ frameworks/av/media/libaudioclient/aidl/android/media/IPlayer.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/media/IPlayer.cpp"
+  copy_after: <
+    from: "out/android/media/BnPlayer.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libaudioclient/libaudioclient/android_arm64_armv8-a_static_cfi/gen/aidl/android/media/BnPlayer.h"
+  >
+  copy_after: <
+    from: "out/android/media/BpPlayer.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libaudioclient/libaudioclient/android_arm64_armv8-a_static_cfi/gen/aidl/android/media/BpPlayer.h"
+  >
+  copy_after: <
+    from: "out/android/media/IPlayer.cpp"
+    to: "out/soong/.intermediates/frameworks/av/media/libaudioclient/libaudioclient/android_arm64_armv8-a_static_cfi/gen/aidl/android/media/IPlayer.cpp"
+  >
+  copy_after: <
+    from: "out/android/media/IPlayer.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libaudioclient/libaudioclient/android_arm64_armv8-a_static_cfi/gen/aidl/android/media/IPlayer.h"
+  >
+  input_hash: "d761197ca3ad9d3984c12ae690b4c0a10aad52fa937584ee9a090058c4418263"
+>
+output_depfile: "out/soong/.intermediates/frameworks/av/media/libaudioclient/libaudioclient/android_arm64_armv8-a_static_cfi/gen/aidl/android/media/IPlayer.cpp.d"
+

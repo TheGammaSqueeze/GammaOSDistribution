@@ -1,0 +1,42 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/extension_descriptor.proto external/perfetto/protos/perfetto/trace/memory_graph.proto external/perfetto/protos/perfetto/trace/test_event.proto external/perfetto/protos/perfetto/trace/test_extensions.proto external/perfetto/protos/perfetto/trace/trace.proto external/perfetto/protos/perfetto/trace/trace_packet.proto external/perfetto/protos/perfetto/trace/trace_packet_defaults.proto external/perfetto/protos/perfetto/trace/ui_state.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/extension_descriptor.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/extension_descriptor.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/memory_graph.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/memory_graph.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/test_event.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/test_event.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/test_extensions.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/test_extensions.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/trace.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/trace.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/trace_packet.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/trace_packet.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/trace_packet_defaults.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/trace_packet_defaults.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/ui_state.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_non_minimal_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/ui_state.pb.h"
+  >
+  input_hash: "3a8eda3a0c14c685b851a557ea7980cf15145d388ea1d9978e9f9ad375b559ee"
+>
+

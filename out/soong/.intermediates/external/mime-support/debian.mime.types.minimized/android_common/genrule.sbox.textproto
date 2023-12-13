@@ -1,0 +1,9 @@
+commands: <
+  command: "awk '{gsub(/#.*$/,\"\"); $1=$1; print;}' external/mime-support/mime.types | grep ' ' > __SBOX_SANDBOX_DIR__/out/debian.mime.types"
+  copy_after: <
+    from: "out/debian.mime.types"
+    to: "out/soong/.intermediates/external/mime-support/debian.mime.types.minimized/android_common/gen/debian.mime.types"
+  >
+  input_hash: "c7d31583baa13dc1d70c5e29a4572fe678554a7f57e04d46081a57b5d8406557"
+>
+

@@ -1,0 +1,13 @@
+commands: <
+  command: "cp external/rust/crates/bindgen/out/host-target.txt external/rust/crates/bindgen/out/tests.rs __SBOX_SANDBOX_DIR__/out"
+  copy_after: <
+    from: "out/host-target.txt"
+    to: "out/soong/.intermediates/external/rust/crates/bindgen/copy_bindgen_build_out/gen/host-target.txt"
+  >
+  copy_after: <
+    from: "out/tests.rs"
+    to: "out/soong/.intermediates/external/rust/crates/bindgen/copy_bindgen_build_out/gen/tests.rs"
+  >
+  input_hash: "4191deb8ede3a1e5a44e1a3da644e119224bb6889aa428683c8479fcf79340cf"
+>
+

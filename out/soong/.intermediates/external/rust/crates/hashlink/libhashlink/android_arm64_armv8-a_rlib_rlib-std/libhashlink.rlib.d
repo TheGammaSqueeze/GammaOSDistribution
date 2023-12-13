@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/hashlink/libhashlink/android_arm64_armv8-a_rlib_rlib-std/libhashlink.rlib: external/rust/crates/hashlink/src/lib.rs external/rust/crates/hashlink/src/linked_hash_map.rs external/rust/crates/hashlink/src/linked_hash_set.rs external/rust/crates/hashlink/src/lru_cache.rs

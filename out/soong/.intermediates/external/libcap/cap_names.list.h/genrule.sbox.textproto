@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/libcap/generate_cap_names_list.awk"
+    to: "tools/src/external/libcap/generate_cap_names_list.awk"
+  >
+  command: "awk -f __SBOX_SANDBOX_DIR__/tools/src/external/libcap/generate_cap_names_list.awk external/libcap/libcap/include/uapi/linux/capability.h > __SBOX_SANDBOX_DIR__/out/cap_names.list.h"
+  copy_after: <
+    from: "out/cap_names.list.h"
+    to: "out/soong/.intermediates/external/libcap/cap_names.list.h/gen/cap_names.list.h"
+  >
+  input_hash: "d8df9c336db50fe7d6fc31a5607a19bf4749b007ab1ccb634f6edb24828a1bc6"
+>
+

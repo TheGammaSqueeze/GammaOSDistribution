@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --descriptor_set_out=__SBOX_SANDBOX_DIR__/out/perfetto_protos_perfetto_config_perfetto_config_descriptor.bin external/perfetto/protos/perfetto/config/perfetto_config.proto"
+  copy_after: <
+    from: "out/perfetto_protos_perfetto_config_perfetto_config_descriptor.bin"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_perfetto_config_descriptor/gen/perfetto_protos_perfetto_config_perfetto_config_descriptor.bin"
+  >
+  input_hash: "106cc1835cfb5e45ccb27a7f04c3bb42d6fc9209c64b2104b01e8f1af19dd051"
+>
+

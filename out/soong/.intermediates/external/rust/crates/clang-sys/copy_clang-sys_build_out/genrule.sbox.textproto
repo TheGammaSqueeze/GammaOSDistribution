@@ -1,0 +1,13 @@
+commands: <
+  command: "cp external/rust/crates/clang-sys/out/common.rs external/rust/crates/clang-sys/out/dynamic.rs __SBOX_SANDBOX_DIR__/out"
+  copy_after: <
+    from: "out/common.rs"
+    to: "out/soong/.intermediates/external/rust/crates/clang-sys/copy_clang-sys_build_out/gen/common.rs"
+  >
+  copy_after: <
+    from: "out/dynamic.rs"
+    to: "out/soong/.intermediates/external/rust/crates/clang-sys/copy_clang-sys_build_out/gen/dynamic.rs"
+  >
+  input_hash: "9ab840c2544c7c2ed47ad6f031d2a1502186a32c1ea161ce1ba4ce3c644c210a"
+>
+

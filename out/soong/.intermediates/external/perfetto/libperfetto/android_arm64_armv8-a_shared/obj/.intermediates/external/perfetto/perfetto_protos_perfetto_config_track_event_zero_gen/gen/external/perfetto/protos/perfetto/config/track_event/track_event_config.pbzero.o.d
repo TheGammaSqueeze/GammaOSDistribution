@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/libperfetto/android_arm64_armv8-a_shared/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_config_track_event_zero_gen/gen/external/perfetto/protos/perfetto/config/track_event/track_event_config.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_track_event_zero_gen/gen/external/perfetto/protos/perfetto/config/track_event/track_event_config.pbzero.cc

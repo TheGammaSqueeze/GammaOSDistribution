@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/annotator/entity-data.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/annotator/entity-data_generated.h) external/libtextclassifier/native/annotator/entity-data.fbs"
+  copy_after: <
+    from: "out/annotator/entity-data_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_annotator_entity-data/gen/annotator/entity-data_generated.h"
+  >
+  input_hash: "6e29c3a4429a8b352cb582e8f97410dc9b30e01b905c3ac54263a1a4cd828125"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_annotator_entity-data/gen/annotator/entity-data_generated.d"
+

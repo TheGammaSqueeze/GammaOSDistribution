@@ -1,0 +1,9 @@
+commands: <
+  command: "external/iptables/extensions/gen_init '4' external/iptables/extensions/libipt_CLUSTERIP.c external/iptables/extensions/libipt_DNAT.c external/iptables/extensions/libipt_ECN.c external/iptables/extensions/libipt_LOG.c external/iptables/extensions/libipt_MASQUERADE.c external/iptables/extensions/libipt_NETMAP.c external/iptables/extensions/libipt_REDIRECT.c external/iptables/extensions/libipt_REJECT.c external/iptables/extensions/libipt_SNAT.c external/iptables/extensions/libipt_TTL.c external/iptables/extensions/libipt_ULOG.c external/iptables/extensions/libipt_ah.c external/iptables/extensions/libipt_icmp.c external/iptables/extensions/libipt_realm.c external/iptables/extensions/libipt_ttl.c > __SBOX_SANDBOX_DIR__/out/initext.c"
+  copy_after: <
+    from: "out/initext.c"
+    to: "out/soong/.intermediates/external/iptables/extensions/libext4_init/gen/initext.c"
+  >
+  input_hash: "451c5e4fe4e07dec1db550536364e62d9bade59a980f95f919121a28b57f0787"
+>
+

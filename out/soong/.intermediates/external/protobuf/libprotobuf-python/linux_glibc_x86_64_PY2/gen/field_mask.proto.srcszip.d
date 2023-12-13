@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/protobuf/libprotobuf-python/linux_glibc_x86_64_PY2/gen/field_mask.proto.tmp/google/protobuf/field_mask_pb2.py: external/protobuf/src//google/protobuf/field_mask.proto

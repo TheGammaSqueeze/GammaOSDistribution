@@ -1,0 +1,19 @@
+commands: <
+  copy_before: <
+    from: "external/oj-libjdwp/etc/jdwpgen.sh"
+    to: "tools/out/bin/jdwpgen"
+    executable: true
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/oj-libjdwp/jdwpgen/linux_glibc_common/combined/jdwpgen.jar"
+    to: "tools/out/framework/jdwpgen.jar"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/jdwpgen external/oj-libjdwp/make/data/jdwp/jdwp.spec -include __SBOX_SANDBOX_DIR__/out/JDWPCommands.h"
+  copy_after: <
+    from: "out/JDWPCommands.h"
+    to: "out/soong/.intermediates/external/oj-libjdwp/jdwp_generated_headers/gen/JDWPCommands.h"
+  >
+  input_hash: "388afc1260cb06a91cf7e1176bb55a67128938dac08c6f512d36690bff37e3c8"
+>
+

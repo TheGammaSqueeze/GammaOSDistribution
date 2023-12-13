@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/memchr/libmemchr/android_arm64_armv8-a_rlib_rlib-std/libmemchr.rlib: external/rust/crates/memchr/src/lib.rs external/rust/crates/memchr/src/fallback.rs external/rust/crates/memchr/src/iter.rs external/rust/crates/memchr/src/naive.rs

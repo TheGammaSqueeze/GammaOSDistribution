@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/grpcio-sys/libgrpcio_sys/android_arm64_armv8-a_rlib_rlib-std/libgrpcio_sys.rlib: external/rust/crates/grpcio-sys/src/lib.rs external/rust/crates/grpcio-sys/src/grpc_wrap.rs /home/ubuntu/GammaOS/out/soong/.intermediates/external/rust/crates/grpcio-sys/libgrpcio_sys/android_arm64_armv8-a_rlib_rlib-std/out/grpc-bindings.rs

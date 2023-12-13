@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/turbine/turbine/linux_glibc_common/gen/proto/proto0.tmp/com/google/turbine/proto/DepsProto.java: external/turbine/proto/deps.proto external/turbine/proto/manifest.proto

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm64_armv8-a_shared_cfi/libcamera_client.so:   out/soong/.intermediates/frameworks/av/camera/libcamera_client/android_arm64_armv8-a_shared_cfi/unstripped/libcamera_client.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

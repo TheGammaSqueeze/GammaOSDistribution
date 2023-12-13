@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/minijail/gen_constants.sh"
+    to: "tools/src/external/minijail/gen_constants.sh"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/minijail/gen_constants.sh out/soong/.intermediates/external/minijail/libminijail_gen_constants_obj/android_vendor.32_arm64_armv8-a/obj/external/minijail/gen_constants.o __SBOX_SANDBOX_DIR__/out/libconstants.c"
+  copy_after: <
+    from: "out/libconstants.c"
+    to: "out/soong/.intermediates/external/minijail/libminijail_gen_constants/android_vendor.32_arm64_armv8-a/gen/libconstants.c"
+  >
+  input_hash: "3f19b067536ea9337b22dbf2b69c706c4cd96282aac93ef8be728e211e6d88bc"
+>
+

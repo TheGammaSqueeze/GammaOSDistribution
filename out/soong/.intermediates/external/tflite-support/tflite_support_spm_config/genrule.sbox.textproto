@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/tflite-support -M external/tflite-support/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/tflite-support -o $(dirname __SBOX_SANDBOX_DIR__/out/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config_generated.h) external/tflite-support/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config.fbs"
+  copy_after: <
+    from: "out/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config_generated.h"
+    to: "out/soong/.intermediates/external/tflite-support/tflite_support_spm_config/gen/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config_generated.h"
+  >
+  input_hash: "85847e1bac58e4c6693c4839ae7c8bde1a257fd68ecc4489ca0ffb9e3867bb7d"
+>
+output_depfile: "out/soong/.intermediates/external/tflite-support/tflite_support_spm_config/gen/tensorflow_lite_support/custom_ops/kernel/sentencepiece/config_generated.d"
+

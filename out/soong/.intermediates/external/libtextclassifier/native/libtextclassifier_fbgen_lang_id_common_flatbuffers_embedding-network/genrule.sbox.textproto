@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/lang_id/common/flatbuffers/embedding-network.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/lang_id/common/flatbuffers/embedding-network_generated.h) external/libtextclassifier/native/lang_id/common/flatbuffers/embedding-network.fbs"
+  copy_after: <
+    from: "out/lang_id/common/flatbuffers/embedding-network_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_lang_id_common_flatbuffers_embedding-network/gen/lang_id/common/flatbuffers/embedding-network_generated.h"
+  >
+  input_hash: "23b5143fcc64a8b8b07c5da057bf5b938b636f845c793df23c2c872334c87dc5"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_lang_id_common_flatbuffers_embedding-network/gen/lang_id/common/flatbuffers/embedding-network_generated.d"
+

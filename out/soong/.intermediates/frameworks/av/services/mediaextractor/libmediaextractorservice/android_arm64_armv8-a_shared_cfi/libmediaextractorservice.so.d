@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/services/mediaextractor/libmediaextractorservice/android_arm64_armv8-a_shared_cfi/libmediaextractorservice.so:   out/soong/.intermediates/frameworks/av/services/mediaextractor/libmediaextractorservice/android_arm64_armv8-a_shared_cfi/unstripped/libmediaextractorservice.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

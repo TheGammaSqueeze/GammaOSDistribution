@@ -1,0 +1,180 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" : [],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "evutil_configure_monotonic_time",
+   "linker_set_key" : "evutil_configure_monotonic_time",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP22evutil_monotonic_timer"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_date_rfc1123",
+   "linker_set_key" : "evutil_date_rfc1123",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIKj"
+    },
+    {
+     "referenced_type" : "_ZTIPK2tm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_gettime_monotonic",
+   "linker_set_key" : "evutil_gettime_monotonic",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP22evutil_monotonic_timer"
+    },
+    {
+     "referenced_type" : "_ZTIP7timeval"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_monotonic_timer_free",
+   "linker_set_key" : "evutil_monotonic_timer_free",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIP22evutil_monotonic_timer"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "function_name" : "evutil_monotonic_timer_new",
+   "linker_set_key" : "evutil_monotonic_timer_new",
+   "return_type" : "_ZTIP22evutil_monotonic_timer",
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP22evutil_monotonic_timer",
+   "name" : "evutil_monotonic_timer *",
+   "referenced_type" : "_ZTI22evutil_monotonic_timer",
+   "self_type" : "_ZTIP22evutil_monotonic_timer",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIP7timeval",
+   "name" : "timeval *",
+   "referenced_type" : "_ZTI7timeval",
+   "self_type" : "_ZTIP7timeval",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPK2tm",
+   "name" : "const tm *",
+   "referenced_type" : "_ZTIK2tm",
+   "self_type" : "_ZTIPK2tm",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIK2tm",
+   "name" : "const tm",
+   "referenced_type" : "_ZTI2tm",
+   "self_type" : "_ZTIK2tm",
+   "size" : 44,
+   "source_file" : "external/libevent/include/event2/util.h"
+  },
+  {
+   "alignment" : 4,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKj",
+   "name" : "const unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIKj",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/util.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

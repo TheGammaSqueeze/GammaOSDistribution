@@ -1,0 +1,23 @@
+out/soong/.intermediates/external/tensorflow/tensorflow/lite/libtflite_static/android_arm64_armv8-a_sdk_static_apex30/obj/external/tensorflow/tensorflow/lite/kernels/internal/optimized/cpu_check.o: \
+  external/tensorflow/tensorflow/lite/kernels/internal/optimized/cpu_check.cc \
+  external/tensorflow/tensorflow/lite/kernels/internal/optimized/cpu_check.h \
+  external/tensorflow/tensorflow/lite/kernels/internal/optimized/neon_check.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/arm_neon.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stdint.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__config \
+  out/soong/ndk/sysroot/usr/include/features.h \
+  out/soong/ndk/sysroot/usr/include/sys/cdefs.h \
+  out/soong/ndk/sysroot/usr/include/android/versioning.h \
+  out/soong/ndk/sysroot/usr/include/android/api-level.h \
+  out/soong/ndk/sysroot/usr/include/pthread.h \
+  out/soong/ndk/sysroot/usr/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/bits/wchar_limits.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  prebuilts/ndk/current/sources/cxx-stl/llvm-libc++/include/__nullptr \
+  out/soong/ndk/sysroot/usr/include/sys/auxv.h \
+  out/soong/ndk/sysroot/usr/include/bits/auxvec.h \
+  out/soong/ndk/sysroot/usr/include/linux/auxvec.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/auxvec.h \
+  out/soong/ndk/sysroot/usr/include/aarch64-linux-android/asm/hwcap.h

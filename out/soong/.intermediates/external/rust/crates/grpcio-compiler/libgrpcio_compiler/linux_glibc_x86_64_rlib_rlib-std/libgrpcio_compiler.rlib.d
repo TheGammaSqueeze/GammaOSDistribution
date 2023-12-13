@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/grpcio-compiler/libgrpcio_compiler/linux_glibc_x86_64_rlib_rlib-std/libgrpcio_compiler.rlib: external/rust/crates/grpcio-compiler/src/lib.rs external/rust/crates/grpcio-compiler/src/codegen.rs external/rust/crates/grpcio-compiler/src/util.rs

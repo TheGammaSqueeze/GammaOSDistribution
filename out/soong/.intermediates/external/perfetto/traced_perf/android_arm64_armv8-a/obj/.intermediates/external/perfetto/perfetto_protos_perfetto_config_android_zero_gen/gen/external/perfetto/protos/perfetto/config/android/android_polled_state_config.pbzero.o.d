@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/traced_perf/android_arm64_armv8-a/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_config_android_zero_gen/gen/external/perfetto/protos/perfetto/config/android/android_polled_state_config.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_android_zero_gen/gen/external/perfetto/protos/perfetto/config/android/android_polled_state_config.pbzero.cc

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/libshmem/shared-file-region-aidl-cpp/android_arm64_armv8-a_shared_cfi/shared-file-region-aidl-cpp.so:   out/soong/.intermediates/frameworks/av/media/libshmem/shared-file-region-aidl-cpp/android_arm64_armv8-a_shared_cfi/unstripped/shared-file-region-aidl-cpp.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

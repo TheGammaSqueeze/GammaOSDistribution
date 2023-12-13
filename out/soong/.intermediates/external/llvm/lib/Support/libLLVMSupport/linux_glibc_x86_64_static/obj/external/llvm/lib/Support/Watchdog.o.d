@@ -1,0 +1,25 @@
+out/soong/.intermediates/external/llvm/lib/Support/libLLVMSupport/linux_glibc_x86_64_static/obj/external/llvm/lib/Support/Watchdog.o: \
+  external/llvm/lib/Support/Watchdog.cpp \
+  external/llvm/include/llvm/Support/Watchdog.h \
+  external/llvm/include/llvm/Support/Compiler.h \
+  external/llvm/host/include/llvm/Config/llvm-config.h \
+  external/llvm/include/llvm/Config/llvm-platform-config.h \
+  external/llvm/host/include/llvm/Config/config.h \
+  external/llvm/lib/Support/Unix/Watchdog.inc \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/unistd.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/features.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdc-predef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/predefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/environments.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  external/libcxx/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/confname.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/getopt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/unistd.h

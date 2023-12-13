@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/lazy_static/liblazy_static/linux_glibc_x86_64_rlib_rlib-std/liblazy_static.rlib: external/rust/crates/lazy_static/src/lib.rs external/rust/crates/lazy_static/src/inline_lazy.rs

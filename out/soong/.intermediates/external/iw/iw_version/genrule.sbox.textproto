@@ -1,0 +1,9 @@
+commands: <
+  command: "echo '#include \"iw.h\"' >__SBOX_SANDBOX_DIR__/out/version.c && echo \"const char iw_version[] = $(grep ^VERSION external/iw/version.sh | sed \"s/VERSION=//\");\" >>__SBOX_SANDBOX_DIR__/out/version.c"
+  copy_after: <
+    from: "out/version.c"
+    to: "out/soong/.intermediates/external/iw/iw_version/gen/version.c"
+  >
+  input_hash: "6f92d7918efb35d9eb7f1d55ab222cb848dc7180c9caf2d497c8e194f6fca611"
+>
+

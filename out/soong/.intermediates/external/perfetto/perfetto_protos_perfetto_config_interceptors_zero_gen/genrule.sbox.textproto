@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/perfetto/protozero_plugin/linux_glibc_x86_64/protozero_plugin"
+    to: "tools/out/bin/protozero_plugin"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --plugin=protoc-gen-plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protozero_plugin --plugin_out=wrapper_namespace=pbzero:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/config/interceptors/console_config.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/interceptors/console_config.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_interceptors_zero_gen/gen/external/perfetto/protos/perfetto/config/interceptors/console_config.pbzero.cc"
+  >
+  input_hash: "250865face8cf37718dd5cbb3d4f4df03153e2a79f6fd12620f9704c8bb09d09"
+>
+

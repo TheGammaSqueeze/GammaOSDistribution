@@ -1,0 +1,1 @@
+outputfile: external/libtextclassifier/native/utils/flatbuffers/flatbuffers.fbs external/libtextclassifier/native/utils/grammar/rules.fbs external/libtextclassifier/native/utils/grammar/semantics/expression.fbs external/libtextclassifier/native/utils/i18n/language-tag.fbs external/libtextclassifier/native/utils/zlib/buffer.fbs

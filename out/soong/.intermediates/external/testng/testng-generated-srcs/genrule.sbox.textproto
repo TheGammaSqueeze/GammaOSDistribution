@@ -1,0 +1,17 @@
+commands: <
+  copy_before: <
+    from: "external/testng/generate-version-file"
+    to: "tools/src/external/testng/generate-version-file"
+  >
+  copy_before: <
+    from: "external/testng/kobalt/src/Build.kt"
+    to: "tools/src/external/testng/kobalt/src/Build.kt"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/testng/generate-version-file external/testng/src/main/resources/org/testng/internal/VersionTemplateJava @version@ __SBOX_SANDBOX_DIR__/tools/src/external/testng/kobalt/src/Build.kt VERSION > __SBOX_SANDBOX_DIR__/out/src/generated/java/org/testng/internal/Version.java"
+  copy_after: <
+    from: "out/src/generated/java/org/testng/internal/Version.java"
+    to: "out/soong/.intermediates/external/testng/testng-generated-srcs/gen/src/generated/java/org/testng/internal/Version.java"
+  >
+  input_hash: "887b561ace7f5883be7ec2693c968be9bb5dd475a27922c3097ed3ea314ce3e5"
+>
+

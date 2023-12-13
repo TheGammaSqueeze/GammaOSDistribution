@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/sqlite/dist/sqlite3/android_arm64_armv8-a/sqlite3:   out/soong/.intermediates/external/sqlite/dist/sqlite3/android_arm64_armv8-a/unstripped/sqlite3   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

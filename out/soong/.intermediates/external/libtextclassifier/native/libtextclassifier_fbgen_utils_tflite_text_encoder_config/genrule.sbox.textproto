@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/utils/tflite/text_encoder_config.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/utils/tflite/text_encoder_config_generated.h) external/libtextclassifier/native/utils/tflite/text_encoder_config.fbs"
+  copy_after: <
+    from: "out/utils/tflite/text_encoder_config_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_tflite_text_encoder_config/gen/utils/tflite/text_encoder_config_generated.h"
+  >
+  input_hash: "8747331cad3f5a56f91bc4ad855aca7b2f5f88bce64f97cf8021e7ec58b67424"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_tflite_text_encoder_config/gen/utils/tflite/text_encoder_config_generated.d"
+

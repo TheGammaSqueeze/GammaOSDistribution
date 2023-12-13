@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/icu/icu4c/source/i18n/libicui18n/android_arm64_armv8-a_shared/libicui18n.so:   out/soong/.intermediates/external/icu/icu4c/source/i18n/libicui18n/android_arm64_armv8-a_shared/unstripped/libicui18n.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

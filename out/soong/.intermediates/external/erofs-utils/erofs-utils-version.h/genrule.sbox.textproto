@@ -1,0 +1,9 @@
+commands: <
+  command: "sed -n '1p' external/erofs-utils/VERSION | tr -d '\n' | sed 's/\\(.*\\)/#define PACKAGE_VERSION \"\\1\"/' > __SBOX_SANDBOX_DIR__/out/erofs-utils-version.h"
+  copy_after: <
+    from: "out/erofs-utils-version.h"
+    to: "out/soong/.intermediates/external/erofs-utils/erofs-utils-version.h/gen/erofs-utils-version.h"
+  >
+  input_hash: "c33942001e9292ec80b273c83721e516c93fe8d4883cb8edc94353d9100c03ea"
+>
+

@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/perfetto/tools/gen_cc_proto_descriptor.py"
+    to: "tools/src/external/perfetto/tools/gen_cc_proto_descriptor.py"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/perfetto/tools/gen_cc_proto_descriptor.py --gen_dir=__SBOX_SANDBOX_DIR__/out --cpp_out=__SBOX_SANDBOX_DIR__/out/src/perfetto_cmd/perfetto_config.descriptor.h out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_perfetto_config_descriptor/gen/perfetto_protos_perfetto_config_perfetto_config_descriptor.bin"
+  copy_after: <
+    from: "out/src/perfetto_cmd/perfetto_config.descriptor.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_src_perfetto_cmd_gen_cc_config_descriptor/gen/src/perfetto_cmd/perfetto_config.descriptor.h"
+  >
+  input_hash: "01118d0267d941cd94fbf8ff3419132bd532b999a1a5c2e9f6565cb0bf827325"
+>
+

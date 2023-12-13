@@ -1,0 +1,234 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EV_FEATURE_ET"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EV_FEATURE_O1"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EV_FEATURE_FDS"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EV_FEATURE_EARLY_CLOSE"
+    }
+   ],
+   "linker_set_key" : "_ZTI20event_method_feature",
+   "name" : "event_method_feature",
+   "referenced_type" : "_ZTI20event_method_feature",
+   "self_type" : "_ZTI20event_method_feature",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "EVENT_BASE_FLAG_NOLOCK"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "EVENT_BASE_FLAG_IGNORE_ENV"
+    },
+    {
+     "enum_field_value" : 4,
+     "name" : "EVENT_BASE_FLAG_STARTUP_IOCP"
+    },
+    {
+     "enum_field_value" : 8,
+     "name" : "EVENT_BASE_FLAG_NO_CACHE_TIME"
+    },
+    {
+     "enum_field_value" : 16,
+     "name" : "EVENT_BASE_FLAG_EPOLL_USE_CHANGELIST"
+    },
+    {
+     "enum_field_value" : 32,
+     "name" : "EVENT_BASE_FLAG_PRECISE_TIMER"
+    }
+   ],
+   "linker_set_key" : "_ZTI22event_base_config_flag",
+   "name" : "event_base_config_flag",
+   "referenced_type" : "_ZTI22event_base_config_flag",
+   "self_type" : "_ZTI22event_base_config_flag",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFviE",
+   "name" : "void (int)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    }
+   ],
+   "referenced_type" : "_ZTIFviE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFviE",
+   "source_file" : "external/libevent/include/event2/event.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFviPKcE",
+   "name" : "void (int, const char *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    }
+   ],
+   "referenced_type" : "_ZTIFviPKcE",
+   "return_type" : "_ZTIv",
+   "self_type" : "_ZTIFviPKcE",
+   "source_file" : "external/libevent/include/event2/event.h"
+  }
+ ],
+ "functions" :
+ [
+  {
+   "function_name" : "event_enable_debug_logging",
+   "linker_set_key" : "event_enable_debug_logging",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/event.h"
+  },
+  {
+   "function_name" : "event_set_fatal_callback",
+   "linker_set_key" : "event_set_fatal_callback",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFviE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/event.h"
+  },
+  {
+   "function_name" : "event_set_log_callback",
+   "linker_set_key" : "event_set_log_callback",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPFviPKcE"
+    }
+   ],
+   "return_type" : "_ZTIv",
+   "source_file" : "external/libevent/include/event2/event.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFviE",
+   "name" : "void (*)(int)",
+   "referenced_type" : "_ZTIFviE",
+   "self_type" : "_ZTIPFviE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFviPKcE",
+   "name" : "void (*)(int, const char *)",
+   "referenced_type" : "_ZTIFviPKcE",
+   "self_type" : "_ZTIPFviPKcE",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 4,
+   "source_file" : "external/libevent/include/event2/event.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/libevent/include/event2/event.h"
+  }
+ ],
+ "record_types" : [],
+ "rvalue_reference_types" : []
+}

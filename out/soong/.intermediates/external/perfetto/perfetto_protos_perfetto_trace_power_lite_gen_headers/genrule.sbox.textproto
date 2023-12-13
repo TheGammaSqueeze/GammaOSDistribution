@@ -1,0 +1,22 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/power/android_energy_estimation_breakdown.proto external/perfetto/protos/perfetto/trace/power/battery_counters.proto external/perfetto/protos/perfetto/trace/power/power_rails.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/power/android_energy_estimation_breakdown.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_power_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/power/android_energy_estimation_breakdown.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/power/battery_counters.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_power_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/power/battery_counters.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/power/power_rails.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_power_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/power/power_rails.pb.h"
+  >
+  input_hash: "bd17b5c1e14ca551bc574237bec93ab087bbe647668755f017875edfa37572ee"
+>
+

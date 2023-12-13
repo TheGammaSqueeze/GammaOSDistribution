@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/perfetto/protozero_plugin/linux_glibc_x86_64/protozero_plugin"
+    to: "tools/out/bin/protozero_plugin"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --plugin=protoc-gen-plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protozero_plugin --plugin_out=wrapper_namespace=pbzero:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.pbzero.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_filesystem_zero_gen_headers/gen/external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.pbzero.h"
+  >
+  input_hash: "57d2351016731df83b5fc6a1caef13cdbf3856e1af949063615973dde97148fe"
+>
+

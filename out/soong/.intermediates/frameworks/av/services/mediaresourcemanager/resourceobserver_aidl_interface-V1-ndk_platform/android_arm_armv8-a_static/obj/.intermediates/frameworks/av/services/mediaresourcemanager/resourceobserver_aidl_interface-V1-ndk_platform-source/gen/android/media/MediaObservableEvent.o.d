@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/services/mediaresourcemanager/resourceobserver_aidl_interface-V1-ndk_platform/android_arm_armv8-a_static/obj/.intermediates/frameworks/av/services/mediaresourcemanager/resourceobserver_aidl_interface-V1-ndk_platform-source/gen/android/media/MediaObservableEvent.o: \
+  out/soong/.intermediates/frameworks/av/services/mediaresourcemanager/resourceobserver_aidl_interface-V1-ndk_platform-source/gen/android/media/MediaObservableEvent.cpp

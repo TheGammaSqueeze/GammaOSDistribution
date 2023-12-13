@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/libperfetto_client_experimental/android_arm64_armv8-a_static_apex31/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_config_sys_stats_zero_gen/gen/external/perfetto/protos/perfetto/config/sys_stats/sys_stats_config.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_sys_stats_zero_gen/gen/external/perfetto/protos/perfetto/config/sys_stats/sys_stats_config.pbzero.cc

@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/iputils/tracepath/android_arm64_armv8-a/tracepath:   out/soong/.intermediates/external/iputils/tracepath/android_arm64_armv8-a/unstripped/tracepath   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

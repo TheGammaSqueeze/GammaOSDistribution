@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/google-fruit/libfruit/android_arm64_armv8-a_shared/libfruit.so:   out/soong/.intermediates/external/google-fruit/libfruit/android_arm64_armv8-a_shared/unstripped/libfruit.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,40 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/perfetto/protozero_plugin/linux_glibc_x86_64/protozero_plugin"
+    to: "tools/out/bin/protozero_plugin"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --plugin=protoc-gen-plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/protozero_plugin --plugin_out=wrapper_namespace=pbzero:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/profiling/deobfuscation.proto external/perfetto/protos/perfetto/trace/profiling/heap_graph.proto external/perfetto/protos/perfetto/trace/profiling/profile_common.proto external/perfetto/protos/perfetto/trace/profiling/profile_packet.proto external/perfetto/protos/perfetto/trace/profiling/smaps.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/deobfuscation.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_zero_gen/gen/external/perfetto/protos/perfetto/trace/profiling/deobfuscation.pbzero.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/heap_graph.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_zero_gen/gen/external/perfetto/protos/perfetto/trace/profiling/heap_graph.pbzero.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/profile_common.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_zero_gen/gen/external/perfetto/protos/perfetto/trace/profiling/profile_common.pbzero.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/profile_packet.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_zero_gen/gen/external/perfetto/protos/perfetto/trace/profiling/profile_packet.pbzero.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/smaps.pbzero.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_zero_gen/gen/external/perfetto/protos/perfetto/trace/profiling/smaps.pbzero.cc"
+  >
+  input_hash: "9fbe33f62bf5277e925636af9e4602aa22d8c1b0a3b6655cfb7ef3d4ce257001"
+>
+

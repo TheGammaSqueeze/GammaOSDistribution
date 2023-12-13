@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/selinux/libselinux/libselinux_bindgen/android_arm64_armv8-a_rlib_rlib-std/libselinux_bindgen.rlib: out/soong/.intermediates/external/selinux/libselinux/libselinux_bindgen/android_arm64_armv8-a_source/bindings.rs

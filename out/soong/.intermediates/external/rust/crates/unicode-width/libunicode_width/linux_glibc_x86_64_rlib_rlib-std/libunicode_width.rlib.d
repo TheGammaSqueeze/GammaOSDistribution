@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/unicode-width/libunicode_width/linux_glibc_x86_64_rlib_rlib-std/libunicode_width.rlib: external/rust/crates/unicode-width/src/lib.rs external/rust/crates/unicode-width/src/tables.rs

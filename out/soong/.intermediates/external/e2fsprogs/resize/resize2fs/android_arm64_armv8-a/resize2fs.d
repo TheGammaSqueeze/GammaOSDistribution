@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/e2fsprogs/resize/resize2fs/android_arm64_armv8-a/resize2fs:   out/soong/.intermediates/external/e2fsprogs/resize/resize2fs/android_arm64_armv8-a/unstripped/resize2fs   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

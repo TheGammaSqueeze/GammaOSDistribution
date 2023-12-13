@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/byteorder/libbyteorder/android_arm64_armv8-a_dylib/libbyteorder.dylib.so: external/rust/crates/byteorder/src/lib.rs external/rust/crates/byteorder/src/io.rs

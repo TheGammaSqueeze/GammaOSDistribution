@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/fft2d/libfft2d/android_arm64_armv8-a_sdk_static_apex30/obj/external/fft2d/src/fft2d/fft2d/shrtdct.o: \
+  external/fft2d/src/fft2d/fft2d/shrtdct.c

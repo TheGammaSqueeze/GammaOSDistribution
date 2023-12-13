@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/utils/grammar/semantics/expression.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/utils/grammar/semantics/expression_generated.h) external/libtextclassifier/native/utils/grammar/semantics/expression.fbs"
+  copy_after: <
+    from: "out/utils/grammar/semantics/expression_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_grammar_semantics_expression/gen/utils/grammar/semantics/expression_generated.h"
+  >
+  input_hash: "919903c9b5fc130c825d809f046e661a0540e3dfc0886e1abaa42c013c11a42a"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_utils_grammar_semantics_expression/gen/utils/grammar/semantics/expression_generated.d"
+

@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/libperfetto_android_internal/android_arm64_armv8-a_shared/libperfetto_android_internal.so:   out/soong/.intermediates/external/perfetto/libperfetto_android_internal/android_arm64_armv8-a_shared/unstripped/libperfetto_android_internal.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

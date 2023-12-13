@@ -1,0 +1,9 @@
+commands: <
+  command: "zip -q --temp-path ${TMPDIR:-/tmp} external/guice/lib/build/munge.jar -O __SBOX_SANDBOX_DIR__/out/guice_munge.srcjar -d MungeTask.java *.class"
+  copy_after: <
+    from: "out/guice_munge.srcjar"
+    to: "out/soong/.intermediates/external/guice/guice_munge_srcjar/gen/guice_munge.srcjar"
+  >
+  input_hash: "660184afd766be493f3fb01bcf40dfce45b0369c8d9a4585bba2ea3c0a15e3ad"
+>
+

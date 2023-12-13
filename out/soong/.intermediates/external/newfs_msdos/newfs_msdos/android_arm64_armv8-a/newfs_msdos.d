@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/newfs_msdos/newfs_msdos/android_arm64_armv8-a/newfs_msdos:   out/soong/.intermediates/external/newfs_msdos/newfs_msdos/android_arm64_armv8-a/unstripped/newfs_msdos   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

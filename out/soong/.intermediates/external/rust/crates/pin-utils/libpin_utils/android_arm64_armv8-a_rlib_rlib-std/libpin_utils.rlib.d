@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/pin-utils/libpin_utils/android_arm64_armv8-a_rlib_rlib-std/libpin_utils.rlib: external/rust/crates/pin-utils/src/lib.rs external/rust/crates/pin-utils/src/stack_pin.rs external/rust/crates/pin-utils/src/projection.rs

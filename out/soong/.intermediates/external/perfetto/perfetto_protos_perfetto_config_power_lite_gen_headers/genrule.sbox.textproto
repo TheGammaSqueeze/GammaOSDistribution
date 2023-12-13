@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/config/power/android_power_config.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/power/android_power_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_power_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/power/android_power_config.pb.h"
+  >
+  input_hash: "069cf65d95ef532f9e3aebe99dfc5f0c4ad3d7714569415b50500907115c9bdc"
+>
+

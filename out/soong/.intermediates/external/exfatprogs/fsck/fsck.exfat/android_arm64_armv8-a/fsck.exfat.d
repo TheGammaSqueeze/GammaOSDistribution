@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/exfatprogs/fsck/fsck.exfat/android_arm64_armv8-a/fsck.exfat:   out/soong/.intermediates/external/exfatprogs/fsck/fsck.exfat/android_arm64_armv8-a/unstripped/fsck.exfat   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

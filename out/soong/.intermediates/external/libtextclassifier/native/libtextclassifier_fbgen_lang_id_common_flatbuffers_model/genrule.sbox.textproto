@@ -1,0 +1,20 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/flatbuffers/flatc/linux_glibc_x86_64/flatc"
+    to: "tools/out/bin/flatc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -M external/libtextclassifier/native/lang_id/common/flatbuffers/model.fbs >__SBOX_DEPFILE__ && __SBOX_SANDBOX_DIR__/tools/out/bin/flatc --cpp --no-union-value-namespacing --gen-object-api --keep-prefix -I external/libtextclassifier/native -o $(dirname __SBOX_SANDBOX_DIR__/out/lang_id/common/flatbuffers/model_generated.h) external/libtextclassifier/native/lang_id/common/flatbuffers/model.fbs"
+  copy_after: <
+    from: "out/lang_id/common/flatbuffers/model_generated.h"
+    to: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_lang_id_common_flatbuffers_model/gen/lang_id/common/flatbuffers/model_generated.h"
+  >
+  input_hash: "f227848cdb9000e7ffdea95b52091bd28e7ab3c5c3e06ab54f840a6ed9409248"
+>
+output_depfile: "out/soong/.intermediates/external/libtextclassifier/native/libtextclassifier_fbgen_lang_id_common_flatbuffers_model/gen/lang_id/common/flatbuffers/model_generated.d"
+

@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/heapprofd_client/android_arm_armv8-a_shared/heapprofd_client.so:   out/soong/.intermediates/external/perfetto/heapprofd_client/android_arm_armv8-a_shared/unstripped/heapprofd_client.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

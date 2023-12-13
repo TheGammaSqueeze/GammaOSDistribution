@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/perfetto/tools/write_version_header.py"
+    to: "tools/src/external/perfetto/tools/write_version_header.py"
+  >
+  command: "python3 __SBOX_SANDBOX_DIR__/tools/src/external/perfetto/tools/write_version_header.py --no_git --changelog=external/perfetto/CHANGELOG --cpp_out=__SBOX_SANDBOX_DIR__/out/perfetto_version.gen.h"
+  copy_after: <
+    from: "out/perfetto_version.gen.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_src_base_version_gen_h/gen/perfetto_version.gen.h"
+  >
+  input_hash: "11834f9045efc0a73b2c97f4b25779a1738efdb01a32b2e5271ba85723f1afed"
+>
+

@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/IOMXBufferSource.cpp.d --ninja -Iframeworks/av/media/libmedia/aidl -Iframeworks/av/media/libmedia/aidl/ frameworks/av/media/libmedia/aidl/android/IOMXBufferSource.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/IOMXBufferSource.cpp"
+  copy_after: <
+    from: "out/android/BnOMXBufferSource.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia_omx/android_vendor.32_arm_armv8-a_shared/gen/aidl/android/BnOMXBufferSource.h"
+  >
+  copy_after: <
+    from: "out/android/BpOMXBufferSource.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia_omx/android_vendor.32_arm_armv8-a_shared/gen/aidl/android/BpOMXBufferSource.h"
+  >
+  copy_after: <
+    from: "out/android/IOMXBufferSource.cpp"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia_omx/android_vendor.32_arm_armv8-a_shared/gen/aidl/android/IOMXBufferSource.cpp"
+  >
+  copy_after: <
+    from: "out/android/IOMXBufferSource.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia_omx/android_vendor.32_arm_armv8-a_shared/gen/aidl/android/IOMXBufferSource.h"
+  >
+  input_hash: "6b7af56543a11cc0098b7f7efe093487c963138804e4f2454d3b51968bfd24b9"
+>
+output_depfile: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia_omx/android_vendor.32_arm_armv8-a_shared/gen/aidl/android/IOMXBufferSource.cpp.d"
+

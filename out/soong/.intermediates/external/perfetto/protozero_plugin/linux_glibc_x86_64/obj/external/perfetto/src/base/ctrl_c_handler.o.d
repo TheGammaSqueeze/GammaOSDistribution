@@ -1,0 +1,51 @@
+out/soong/.intermediates/external/perfetto/protozero_plugin/linux_glibc_x86_64/obj/external/perfetto/src/base/ctrl_c_handler.o: \
+  external/perfetto/src/base/ctrl_c_handler.cc \
+  external/perfetto/include/perfetto/ext/base/ctrl_c_handler.h \
+  external/perfetto/include/perfetto/base/build_config.h \
+  external/perfetto/include/perfetto/base/build_configs/android_tree/perfetto_build_flags.h \
+  external/perfetto/include/perfetto/base/compiler.h \
+  external/libcxx/include/stddef.h external/libcxx/include/__config \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/features.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/stdc-predef.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/predefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/pthread.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  external/libcxx/include/__nullptr external/libcxx/include/type_traits \
+  external/libcxx/include/cstddef external/libcxx/include/version \
+  external/perfetto/include/perfetto/base/logging.h \
+  external/libcxx/include/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/linux/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/asm/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/asm-generic/errno-base.h \
+  external/libcxx/include/string.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/string.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/xlocale.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/string3.h \
+  external/perfetto/include/perfetto/base/export.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/signal.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigset.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/types.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/signum.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/time.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/siginfo.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/unistd.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/environments.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/confname.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/getopt.h \
+  prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot/usr/include/x86_64-linux-gnu/bits/unistd.h

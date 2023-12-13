@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/icing/proto/icing-java-proto-lite/android_common_apex10000/gen/proto/proto0.tmp/com/google/android/icing/proto/Term.java: external/icing/proto//icing/proto/term.proto

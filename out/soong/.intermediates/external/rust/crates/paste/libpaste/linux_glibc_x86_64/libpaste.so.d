@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/paste/libpaste/linux_glibc_x86_64/libpaste.so: external/rust/crates/paste/src/lib.rs external/rust/crates/paste/src/attr.rs external/rust/crates/paste/src/error.rs external/rust/crates/paste/src/segment.rs

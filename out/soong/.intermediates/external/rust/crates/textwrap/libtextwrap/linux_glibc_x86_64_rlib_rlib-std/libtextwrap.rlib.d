@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/textwrap/libtextwrap/linux_glibc_x86_64_rlib_rlib-std/libtextwrap.rlib: external/rust/crates/textwrap/src/lib.rs external/rust/crates/textwrap/src/indentation.rs external/rust/crates/textwrap/src/splitting.rs external/rust/crates/textwrap/src/core.rs

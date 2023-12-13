@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/num-integer/libnum_integer/android_arm64_armv8-a_dylib/libnum_integer.dylib.so: external/rust/crates/num-integer/src/lib.rs external/rust/crates/num-integer/src/roots.rs external/rust/crates/num-integer/src/average.rs

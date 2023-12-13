@@ -1,0 +1,14 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_filesystem_lite_gen_headers/gen/external/perfetto/protos/perfetto/trace/filesystem/inode_file_map.pb.h"
+  >
+  input_hash: "57d2351016731df83b5fc6a1caef13cdbf3856e1af949063615973dde97148fe"
+>
+

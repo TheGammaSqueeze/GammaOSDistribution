@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/rust/crates/num-integer/libnum_integer/android_arm64_armv8-a_dylib/stripped/libnum_integer.dylib.so:   out/soong/.intermediates/external/rust/crates/num-integer/libnum_integer/android_arm64_armv8-a_dylib/libnum_integer.dylib.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

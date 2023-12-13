@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/cexpr/libcexpr/linux_glibc_x86_64_rlib_rlib-std/libcexpr.rlib: external/rust/crates/cexpr/src/lib.rs external/rust/crates/cexpr/src/expr.rs external/rust/crates/cexpr/src/literal.rs external/rust/crates/cexpr/src/token.rs

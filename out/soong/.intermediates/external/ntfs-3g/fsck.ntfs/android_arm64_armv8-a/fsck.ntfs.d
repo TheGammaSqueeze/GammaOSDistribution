@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/ntfs-3g/fsck.ntfs/android_arm64_armv8-a/fsck.ntfs:   out/soong/.intermediates/external/ntfs-3g/fsck.ntfs/android_arm64_armv8-a/unstripped/fsck.ntfs   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

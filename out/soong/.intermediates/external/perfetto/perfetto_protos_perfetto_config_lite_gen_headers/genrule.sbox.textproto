@@ -1,0 +1,34 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/config/chrome/chrome_config.proto external/perfetto/protos/perfetto/config/data_source_config.proto external/perfetto/protos/perfetto/config/interceptor_config.proto external/perfetto/protos/perfetto/config/stress_test_config.proto external/perfetto/protos/perfetto/config/test_config.proto external/perfetto/protos/perfetto/config/trace_config.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/chrome/chrome_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/chrome/chrome_config.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/data_source_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/data_source_config.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/interceptor_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/interceptor_config.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/stress_test_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/stress_test_config.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/test_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/test_config.pb.h"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/config/trace_config.pb.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_config_lite_gen_headers/gen/external/perfetto/protos/perfetto/config/trace_config.pb.h"
+  >
+  input_hash: "de5be05d73247cc9bab5ecfc885b50b276577d39600624d79d8369822d9eac4b"
+>
+

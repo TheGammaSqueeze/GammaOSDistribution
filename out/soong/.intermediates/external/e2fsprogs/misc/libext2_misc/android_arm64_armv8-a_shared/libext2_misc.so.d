@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/e2fsprogs/misc/libext2_misc/android_arm64_armv8-a_shared/libext2_misc.so:   out/soong/.intermediates/external/e2fsprogs/misc/libext2_misc/android_arm64_armv8-a_shared/unstripped/libext2_misc.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

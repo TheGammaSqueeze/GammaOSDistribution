@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/ppp/pppd/pppol2tp-android/android_arm64_armv8-a_shared/pppol2tp-android.so:   out/soong/.intermediates/external/ppp/pppd/pppol2tp-android/android_arm64_armv8-a_shared/unstripped/pppol2tp-android.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

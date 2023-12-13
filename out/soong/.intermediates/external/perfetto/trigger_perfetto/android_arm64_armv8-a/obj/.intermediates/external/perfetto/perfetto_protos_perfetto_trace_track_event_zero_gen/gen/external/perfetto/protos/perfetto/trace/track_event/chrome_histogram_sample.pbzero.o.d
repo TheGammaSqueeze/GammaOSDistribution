@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/trigger_perfetto/android_arm64_armv8-a/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_zero_gen/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_histogram_sample.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_track_event_zero_gen/gen/external/perfetto/protos/perfetto/trace/track_event/chrome_histogram_sample.pbzero.cc

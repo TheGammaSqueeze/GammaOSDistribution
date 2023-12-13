@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/lock_api/liblock_api/android_arm_armv8-a_rlib_rlib-std/liblock_api.rlib: external/rust/crates/lock_api/src/lib.rs external/rust/crates/lock_api/src/mutex.rs external/rust/crates/lock_api/src/remutex.rs external/rust/crates/lock_api/src/rwlock.rs

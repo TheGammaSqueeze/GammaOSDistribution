@@ -1,0 +1,13 @@
+commands: <
+  copy_before: <
+    from: "external/minijail/gen_syscalls.sh"
+    to: "tools/src/external/minijail/gen_syscalls.sh"
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/minijail/gen_syscalls.sh out/soong/.intermediates/external/minijail/libminijail_gen_syscall_obj/android_vendor.32_arm_armv8-a/obj/external/minijail/gen_syscalls.o __SBOX_SANDBOX_DIR__/out/libsyscalls.c"
+  copy_after: <
+    from: "out/libsyscalls.c"
+    to: "out/soong/.intermediates/external/minijail/libminijail_gen_syscall/android_vendor.32_arm_armv8-a/gen/libsyscalls.c"
+  >
+  input_hash: "39f7c3cda2f7cc48a965ae8e410b0c04e67d207610d21b3acf1c7a7d90e1a133"
+>
+

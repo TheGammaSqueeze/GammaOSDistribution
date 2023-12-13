@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/libperfetto/android_arm64_armv8-a_shared/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_common_zero_gen/gen/external/perfetto/protos/perfetto/common/descriptor.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_common_zero_gen/gen/external/perfetto/protos/perfetto/common/descriptor.pbzero.cc

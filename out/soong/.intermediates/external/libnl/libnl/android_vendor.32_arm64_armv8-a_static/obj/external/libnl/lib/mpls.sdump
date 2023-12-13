@@ -1,0 +1,275 @@
+{
+ "array_types" : [],
+ "builtin_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIi",
+   "name" : "int",
+   "referenced_type" : "_ZTIi",
+   "self_type" : "_ZTIi",
+   "size" : 4
+  },
+  {
+   "alignment" : 4,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIj",
+   "name" : "unsigned int",
+   "referenced_type" : "_ZTIj",
+   "self_type" : "_ZTIj",
+   "size" : 4
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIm",
+   "name" : "unsigned long",
+   "referenced_type" : "_ZTIm",
+   "self_type" : "_ZTIm",
+   "size" : 8
+  },
+  {
+   "linker_set_key" : "_ZTIv",
+   "name" : "void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIv"
+  },
+  {
+   "alignment" : 8,
+   "is_integral" : true,
+   "is_unsigned" : true,
+   "linker_set_key" : "_ZTIy",
+   "name" : "unsigned long long",
+   "referenced_type" : "_ZTIy",
+   "self_type" : "_ZTIy",
+   "size" : 8
+  }
+ ],
+ "elf_functions" : [],
+ "elf_objects" : [],
+ "enum_types" :
+ [
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "MPLS_STATS_UNSPEC"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "MPLS_STATS_LINK"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "__MPLS_STATS_MAX"
+    }
+   ],
+   "linker_set_key" : "_ZTI16$MPLS_STATS_LINK",
+   "name" : "(anonymous enum at external/libnl/include/linux-private/linux/mpls.h:57:1)",
+   "referenced_type" : "_ZTI16$MPLS_STATS_LINK",
+   "self_type" : "_ZTI16$MPLS_STATS_LINK",
+   "size" : 4,
+   "source_file" : "external/libnl/include/linux-private/linux/mpls.h",
+   "underlying_type" : "_ZTIj"
+  }
+ ],
+ "function_types" : [],
+ "functions" :
+ [
+  {
+   "function_name" : "mpls_ntop",
+   "linker_set_key" : "mpls_ntop",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKv"
+    },
+    {
+     "referenced_type" : "_ZTIPc"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIPKc",
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  },
+  {
+   "function_name" : "mpls_pton",
+   "linker_set_key" : "mpls_pton",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPKc"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIm"
+    }
+   ],
+   "return_type" : "_ZTIi",
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  }
+ ],
+ "global_vars" : [],
+ "lvalue_reference_types" : [],
+ "pointer_types" :
+ [
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKc",
+   "name" : "const char *",
+   "referenced_type" : "_ZTIKc",
+   "self_type" : "_ZTIPKc",
+   "size" : 8,
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPKv",
+   "name" : "const void *",
+   "referenced_type" : "_ZTIKv",
+   "self_type" : "_ZTIPKv",
+   "size" : 8,
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 8,
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  },
+  {
+   "alignment" : 8,
+   "linker_set_key" : "_ZTIPv",
+   "name" : "void *",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIPv",
+   "size" : 8,
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  }
+ ],
+ "qualified_types" :
+ [
+  {
+   "alignment" : 1,
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKc",
+   "name" : "const char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIKc",
+   "size" : 1,
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  },
+  {
+   "is_const" : true,
+   "linker_set_key" : "_ZTIKv",
+   "name" : "const void",
+   "referenced_type" : "_ZTIv",
+   "self_type" : "_ZTIKv",
+   "source_file" : "external/libnl/include/netlink-private/route/mpls.h"
+  }
+ ],
+ "record_types" :
+ [
+  {
+   "alignment" : 4,
+   "fields" :
+   [
+    {
+     "field_name" : "entry",
+     "referenced_type" : "_ZTIj"
+    }
+   ],
+   "linker_set_key" : "_ZTI10mpls_label",
+   "name" : "mpls_label",
+   "referenced_type" : "_ZTI10mpls_label",
+   "self_type" : "_ZTI10mpls_label",
+   "size" : 4,
+   "source_file" : "external/libnl/include/linux-private/linux/mpls.h"
+  },
+  {
+   "alignment" : 8,
+   "fields" :
+   [
+    {
+     "field_name" : "rx_packets",
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "tx_packets",
+     "field_offset" : 64,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "rx_bytes",
+     "field_offset" : 128,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "tx_bytes",
+     "field_offset" : 192,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "rx_errors",
+     "field_offset" : 256,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "tx_errors",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "rx_dropped",
+     "field_offset" : 384,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "tx_dropped",
+     "field_offset" : 448,
+     "referenced_type" : "_ZTIy"
+    },
+    {
+     "field_name" : "rx_noroute",
+     "field_offset" : 512,
+     "referenced_type" : "_ZTIy"
+    }
+   ],
+   "linker_set_key" : "_ZTI15mpls_link_stats",
+   "name" : "mpls_link_stats",
+   "referenced_type" : "_ZTI15mpls_link_stats",
+   "self_type" : "_ZTI15mpls_link_stats",
+   "size" : 72,
+   "source_file" : "external/libnl/include/linux-private/linux/mpls.h"
+  }
+ ],
+ "rvalue_reference_types" : []
+}

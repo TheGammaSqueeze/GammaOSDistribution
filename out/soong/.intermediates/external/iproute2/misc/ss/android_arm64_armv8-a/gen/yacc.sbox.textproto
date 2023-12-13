@@ -1,0 +1,13 @@
+commands: <
+  command: "BISON_PKGDATADIR=prebuilts/build-tools/common/bison M4=prebuilts/build-tools/linux-x86/bin/m4 prebuilts/build-tools/linux-x86/bin/bison -d --defines=__SBOX_SANDBOX_DIR__/out/external/iproute2/misc/ssfilter.h -o __SBOX_SANDBOX_DIR__/out/external/iproute2/misc/ssfilter.c external/iproute2/misc/ssfilter.y && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/external/iproute2/misc/ss/android_arm64_armv8-a/gen/yacc#' __SBOX_SANDBOX_DIR__/out/external/iproute2/misc/ssfilter.c && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/external/iproute2/misc/ss/android_arm64_armv8-a/gen/yacc#' __SBOX_SANDBOX_DIR__/out/external/iproute2/misc/ssfilter.h"
+  copy_after: <
+    from: "out/external/iproute2/misc/ssfilter.c"
+    to: "out/soong/.intermediates/external/iproute2/misc/ss/android_arm64_armv8-a/gen/yacc/external/iproute2/misc/ssfilter.c"
+  >
+  copy_after: <
+    from: "out/external/iproute2/misc/ssfilter.h"
+    to: "out/soong/.intermediates/external/iproute2/misc/ss/android_arm64_armv8-a/gen/yacc/external/iproute2/misc/ssfilter.h"
+  >
+  input_hash: "e8b5855f062fac68e8446cbdd2b527a18d05905993e3429509912d3dc3dc0927"
+>
+

@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/ndk/libmediandk/android_vendor.32_arm64_armv8-a_shared/obj/.intermediates/frameworks/av/media/ndk/libmediandk/android_vendor.32_arm64_armv8-a_shared/gen/stub.o: \
+  out/soong/.intermediates/frameworks/av/media/ndk/libmediandk/android_vendor.32_arm64_armv8-a_shared/gen/stub.c

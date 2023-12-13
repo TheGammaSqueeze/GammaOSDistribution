@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/icing/proto/icing-c-proto/android_arm64_armv8-a_static_apex10000/gen/proto/icing/legacy/index/proto/icing-dynamic-trie-header.pb.cc: external/icing/proto//icing/legacy/index/proto/icing-dynamic-trie-header.proto

@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/protobuf/libprotobuf-python/linux_glibc_x86_64_PY2/gen/plugin.proto.tmp/google/protobuf/compiler/plugin_pb2.py: external/protobuf/src//google/protobuf/descriptor.proto external/protobuf/src//google/protobuf/compiler/plugin.proto

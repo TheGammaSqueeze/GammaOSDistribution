@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/e2fsprogs/misc/badblocks/android_arm64_armv8-a/badblocks:   out/soong/.intermediates/external/e2fsprogs/misc/badblocks/android_arm64_armv8-a/unstripped/badblocks   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/unicode-xid/libunicode_xid/linux_glibc_x86_64_rlib_rlib-std/libunicode_xid.rlib: external/rust/crates/unicode-xid/src/lib.rs external/rust/crates/unicode-xid/src/tables.rs

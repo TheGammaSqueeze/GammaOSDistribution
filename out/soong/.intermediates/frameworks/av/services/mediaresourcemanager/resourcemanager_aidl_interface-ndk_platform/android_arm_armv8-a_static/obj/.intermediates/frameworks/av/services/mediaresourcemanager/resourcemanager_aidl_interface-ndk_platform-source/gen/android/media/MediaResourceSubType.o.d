@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/services/mediaresourcemanager/resourcemanager_aidl_interface-ndk_platform/android_arm_armv8-a_static/obj/.intermediates/frameworks/av/services/mediaresourcemanager/resourcemanager_aidl_interface-ndk_platform-source/gen/android/media/MediaResourceSubType.o: \
+  out/soong/.intermediates/frameworks/av/services/mediaresourcemanager/resourcemanager_aidl_interface-ndk_platform-source/gen/android/media/MediaResourceSubType.cpp

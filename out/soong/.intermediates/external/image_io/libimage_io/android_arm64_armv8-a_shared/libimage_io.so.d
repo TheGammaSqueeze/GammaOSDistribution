@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/image_io/libimage_io/android_arm64_armv8-a_shared/libimage_io.so:   out/soong/.intermediates/external/image_io/libimage_io/android_arm64_armv8-a_shared/unstripped/libimage_io.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

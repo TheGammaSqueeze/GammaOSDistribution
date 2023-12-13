@@ -1,0 +1,1 @@
+out/soong/.intermediates/frameworks/av/drm/libmediadrm/libmediadrmmetrics_lite/android_arm64_armv8-a_shared/gen/proto/frameworks/av/drm/libmediadrm/protos/metrics.pb.cc: frameworks/av/drm/libmediadrm/protos/metrics.proto

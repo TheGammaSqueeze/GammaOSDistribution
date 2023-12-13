@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/libmediahelper/libmedia_helper/android_vendor.32_arm_armv8-a_shared/libmedia_helper.so:   out/soong/.intermediates/frameworks/av/media/libmediahelper/libmedia_helper/android_vendor.32_arm_armv8-a_shared/unstripped/libmedia_helper.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/macaddr/libmacaddr/android_arm64_armv8-a_dylib/libmacaddr.dylib.so: external/rust/crates/macaddr/src/lib.rs external/rust/crates/macaddr/src/addr.rs external/rust/crates/macaddr/src/addr6.rs external/rust/crates/macaddr/src/addr8.rs external/rust/crates/macaddr/src/parser/mod.rs

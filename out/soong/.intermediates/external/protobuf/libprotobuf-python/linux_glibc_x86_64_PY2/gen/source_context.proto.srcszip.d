@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/protobuf/libprotobuf-python/linux_glibc_x86_64_PY2/gen/source_context.proto.tmp/google/protobuf/source_context_pb2.py: external/protobuf/src//google/protobuf/source_context.proto

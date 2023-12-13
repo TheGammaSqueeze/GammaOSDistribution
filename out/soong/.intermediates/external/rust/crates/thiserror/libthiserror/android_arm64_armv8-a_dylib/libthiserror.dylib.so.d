@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/thiserror/libthiserror/android_arm64_armv8-a_dylib/libthiserror.dylib.so: external/rust/crates/thiserror/src/lib.rs external/rust/crates/thiserror/src/aserror.rs external/rust/crates/thiserror/src/display.rs

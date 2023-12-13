@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/mediaserver/mediaserver/android_arm_armv8-a/mediaserver:   out/soong/.intermediates/frameworks/av/media/mediaserver/mediaserver/android_arm_armv8-a/unstripped/mediaserver   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

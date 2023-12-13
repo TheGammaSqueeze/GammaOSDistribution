@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/libaudiohal/impl/libaudiohal@6.0/android_arm_armv8-a_shared/libaudiohal@6.0.so:   out/soong/.intermediates/frameworks/av/media/libaudiohal/impl/libaudiohal@6.0/android_arm_armv8-a_shared/unstripped/libaudiohal@6.0.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

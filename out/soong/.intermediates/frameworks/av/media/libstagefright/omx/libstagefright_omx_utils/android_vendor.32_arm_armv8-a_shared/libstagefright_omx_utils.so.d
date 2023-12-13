@@ -1,0 +1,2 @@
+out/soong/.intermediates/frameworks/av/media/libstagefright/omx/libstagefright_omx_utils/android_vendor.32_arm_armv8-a_shared/libstagefright_omx_utils.so:   out/soong/.intermediates/frameworks/av/media/libstagefright/omx/libstagefright_omx_utils/android_vendor.32_arm_armv8-a_shared/unstripped/libstagefright_omx_utils.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

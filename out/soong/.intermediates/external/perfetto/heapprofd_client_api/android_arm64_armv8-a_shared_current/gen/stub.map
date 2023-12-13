@@ -1,0 +1,15 @@
+HEAPPROFD_API_S {
+    global:
+        AHeapProfileEnableCallbackInfo_getSamplingInterval;
+        AHeapProfile_reportSample;
+        AHeapProfile_reportFree;
+        AHeapProfile_reportAllocation;
+        AHeapProfile_registerHeap;
+        AHeapInfo_setEnabledCallback;
+        AHeapInfo_setDisabledCallback;
+        AHeapInfo_create;
+};
+PRIVATE {
+    global:
+        AHeapProfile_initSession;
+} HEAPPROFD_API_S;

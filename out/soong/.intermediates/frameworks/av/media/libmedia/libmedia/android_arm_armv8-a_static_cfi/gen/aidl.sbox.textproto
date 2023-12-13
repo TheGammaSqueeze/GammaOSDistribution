@@ -1,0 +1,22 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/IMediaExtractorService.cpp.d --ninja -Iframeworks/av/media/libmedia/aidl -Iframeworks/av/media/libmedia/aidl/ frameworks/av/media/libmedia/aidl/android/IMediaExtractorService.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/IMediaExtractorService.cpp"
+  copy_after: <
+    from: "out/android/BnMediaExtractorService.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia/android_arm_armv8-a_static_cfi/gen/aidl/android/BnMediaExtractorService.h"
+  >
+  copy_after: <
+    from: "out/android/BpMediaExtractorService.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia/android_arm_armv8-a_static_cfi/gen/aidl/android/BpMediaExtractorService.h"
+  >
+  copy_after: <
+    from: "out/android/IMediaExtractorService.cpp"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia/android_arm_armv8-a_static_cfi/gen/aidl/android/IMediaExtractorService.cpp"
+  >
+  copy_after: <
+    from: "out/android/IMediaExtractorService.h"
+    to: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia/android_arm_armv8-a_static_cfi/gen/aidl/android/IMediaExtractorService.h"
+  >
+  input_hash: "a3136c06cff6f536d587876920b0eeea93e2953f3a9399d576b9be93bfd7af8c"
+>
+output_depfile: "out/soong/.intermediates/frameworks/av/media/libmedia/libmedia/android_arm_armv8-a_static_cfi/gen/aidl/android/IMediaExtractorService.cpp.d"
+

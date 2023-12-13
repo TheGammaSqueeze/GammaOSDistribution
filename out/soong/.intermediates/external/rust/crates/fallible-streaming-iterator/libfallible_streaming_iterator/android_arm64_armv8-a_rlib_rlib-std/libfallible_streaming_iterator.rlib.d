@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/fallible-streaming-iterator/libfallible_streaming_iterator/android_arm64_armv8-a_rlib_rlib-std/libfallible_streaming_iterator.rlib: external/rust/crates/fallible-streaming-iterator/src/lib.rs

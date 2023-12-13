@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/proc-macro-nested/libproc_macro_nested/android_arm64_armv8-a_rlib_rlib-std/libproc_macro_nested.rlib: external/rust/crates/proc-macro-nested/src/lib.rs /home/ubuntu/GammaOS/out/soong/.intermediates/external/rust/crates/proc-macro-nested/libproc_macro_nested/android_arm64_armv8-a_rlib_rlib-std/out/count.rs

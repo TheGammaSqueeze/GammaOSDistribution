@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/futures-macro/libfutures_macro/linux_glibc_x86_64/libfutures_macro.so: external/rust/crates/futures-macro/src/lib.rs external/rust/crates/futures-macro/src/join.rs external/rust/crates/futures-macro/src/select.rs

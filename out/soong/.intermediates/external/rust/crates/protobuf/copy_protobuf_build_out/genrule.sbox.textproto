@@ -1,0 +1,9 @@
+commands: <
+  command: "cp external/rust/crates/protobuf/out/version.rs __SBOX_SANDBOX_DIR__/out"
+  copy_after: <
+    from: "out/version.rs"
+    to: "out/soong/.intermediates/external/rust/crates/protobuf/copy_protobuf_build_out/gen/version.rs"
+  >
+  input_hash: "8295217ab5f67fcd7ceb173ef8ad12245d358afbf4f6f223796a4b009454d8a2"
+>
+

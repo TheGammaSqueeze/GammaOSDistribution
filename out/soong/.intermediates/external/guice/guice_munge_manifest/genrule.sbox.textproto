@@ -1,0 +1,9 @@
+commands: <
+  command: "unzip -p -q external/guice/lib/build/munge.jar META-INF/MANIFEST.MF > __SBOX_SANDBOX_DIR__/out/guice_munge.manifest"
+  copy_after: <
+    from: "out/guice_munge.manifest"
+    to: "out/soong/.intermediates/external/guice/guice_munge_manifest/gen/guice_munge.manifest"
+  >
+  input_hash: "660184afd766be493f3fb01bcf40dfce45b0369c8d9a4585bba2ea3c0a15e3ad"
+>
+

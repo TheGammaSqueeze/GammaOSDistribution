@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/perfetto/perfetto_src_protozero_protoc_plugin_cppgen_plugin/linux_glibc_x86_64/perfetto_src_protozero_protoc_plugin_cppgen_plugin"
+    to: "tools/out/bin/perfetto_src_protozero_protoc_plugin_cppgen_plugin"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --plugin=protoc-gen-plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/perfetto_src_protozero_protoc_plugin_cppgen_plugin --plugin_out=wrapper_namespace=gen:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/src/perfetto_cmd/perfetto_cmd_state.proto"
+  copy_after: <
+    from: "out/external/perfetto/src/perfetto_cmd/perfetto_cmd_state.gen.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_src_perfetto_cmd_protos_gen_headers/gen/external/perfetto/src/perfetto_cmd/perfetto_cmd_state.gen.h"
+  >
+  input_hash: "d7ead67c82a19a3df55318f4e52e106e694c313374f892079c0f843e5b1aa9f1"
+>
+

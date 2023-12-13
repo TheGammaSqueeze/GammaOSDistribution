@@ -1,0 +1,13 @@
+commands: <
+  command: "BISON_PKGDATADIR=prebuilts/build-tools/common/bison M4=prebuilts/build-tools/linux-x86/bin/m4 prebuilts/build-tools/linux-x86/bin/bison -d --defines=__SBOX_SANDBOX_DIR__/out/external/selinux/checkpolicy/policy_parse.h -o __SBOX_SANDBOX_DIR__/out/external/selinux/checkpolicy/policy_parse.c external/selinux/checkpolicy/policy_parse.y && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/external/selinux/checkpolicy/checkpolicy/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/external/selinux/checkpolicy/policy_parse.c && sed -i.bak 's#__SBOX_SANDBOX_DIR__/out#out/soong/.intermediates/external/selinux/checkpolicy/checkpolicy/linux_glibc_x86_64/gen/yacc#' __SBOX_SANDBOX_DIR__/out/external/selinux/checkpolicy/policy_parse.h"
+  copy_after: <
+    from: "out/external/selinux/checkpolicy/policy_parse.c"
+    to: "out/soong/.intermediates/external/selinux/checkpolicy/checkpolicy/linux_glibc_x86_64/gen/yacc/external/selinux/checkpolicy/policy_parse.c"
+  >
+  copy_after: <
+    from: "out/external/selinux/checkpolicy/policy_parse.h"
+    to: "out/soong/.intermediates/external/selinux/checkpolicy/checkpolicy/linux_glibc_x86_64/gen/yacc/external/selinux/checkpolicy/policy_parse.h"
+  >
+  input_hash: "6767bdc67a1111c9c5e48d8fa4e6573b3c7885286c387826292f6abfdc6c92d4"
+>
+

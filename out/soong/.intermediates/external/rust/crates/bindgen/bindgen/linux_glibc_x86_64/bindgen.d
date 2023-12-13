@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/rust/crates/bindgen/bindgen/linux_glibc_x86_64/bindgen: external/rust/crates/bindgen/src/main.rs external/rust/crates/bindgen/src/log_stubs.rs external/rust/crates/bindgen/src/options.rs

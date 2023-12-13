@@ -1,0 +1,30 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --cpp_out=lite=true:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/trace/profiling/deobfuscation.proto external/perfetto/protos/perfetto/trace/profiling/heap_graph.proto external/perfetto/protos/perfetto/trace/profiling/profile_common.proto external/perfetto/protos/perfetto/trace/profiling/profile_packet.proto external/perfetto/protos/perfetto/trace/profiling/smaps.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/deobfuscation.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_lite_gen/gen/external/perfetto/protos/perfetto/trace/profiling/deobfuscation.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/heap_graph.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_lite_gen/gen/external/perfetto/protos/perfetto/trace/profiling/heap_graph.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/profile_common.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_lite_gen/gen/external/perfetto/protos/perfetto/trace/profiling/profile_common.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/profile_packet.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_lite_gen/gen/external/perfetto/protos/perfetto/trace/profiling/profile_packet.pb.cc"
+  >
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/trace/profiling/smaps.pb.cc"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_profiling_lite_gen/gen/external/perfetto/protos/perfetto/trace/profiling/smaps.pb.cc"
+  >
+  input_hash: "9fbe33f62bf5277e925636af9e4602aa22d8c1b0a3b6655cfb7ef3d4ce257001"
+>
+

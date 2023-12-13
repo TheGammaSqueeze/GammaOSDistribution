@@ -1,0 +1,24 @@
+commands: <
+  copy_before: <
+    from: "out/soong/.intermediates/external/protobuf/aprotoc/linux_glibc_x86_64/aprotoc"
+    to: "tools/out/bin/aprotoc"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/perfetto/perfetto_src_protozero_protoc_plugin_cppgen_plugin/linux_glibc_x86_64/perfetto_src_protozero_protoc_plugin_cppgen_plugin"
+    to: "tools/out/bin/perfetto_src_protozero_protoc_plugin_cppgen_plugin"
+    executable: false
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libcxx/libc++/linux_glibc_x86_64_shared/libc++.so"
+    to: "tools/out/lib64/libc++.so"
+    executable: false
+  >
+  command: "mkdir -p __SBOX_SANDBOX_DIR__/out/external/perfetto/ && __SBOX_SANDBOX_DIR__/tools/out/bin/aprotoc --proto_path=external/perfetto --plugin=protoc-gen-plugin=__SBOX_SANDBOX_DIR__/tools/out/bin/perfetto_src_protozero_protoc_plugin_cppgen_plugin --plugin_out=wrapper_namespace=gen:__SBOX_SANDBOX_DIR__/out/external/perfetto/ external/perfetto/protos/perfetto/ipc/wire_protocol.proto"
+  copy_after: <
+    from: "out/external/perfetto/protos/perfetto/ipc/wire_protocol.gen.h"
+    to: "out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_ipc_wire_protocol_cpp_gen_headers/gen/external/perfetto/protos/perfetto/ipc/wire_protocol.gen.h"
+  >
+  input_hash: "cfbef326a5fc193ad821f5daa926c2b9d665900f99b79e5707355503996c625a"
+>
+

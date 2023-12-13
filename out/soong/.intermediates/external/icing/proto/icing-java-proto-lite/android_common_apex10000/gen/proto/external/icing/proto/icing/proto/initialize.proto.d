@@ -1,0 +1,1 @@
+out/soong/.intermediates/external/icing/proto/icing-java-proto-lite/android_common_apex10000/gen/proto/proto0.tmp/com/google/android/icing/proto/IcingSearchEngineOptions.java: external/icing/proto//icing/proto/scoring.proto external/icing/proto//icing/proto/logging.proto external/icing/proto//icing/proto/status.proto external/icing/proto//icing/proto/initialize.proto

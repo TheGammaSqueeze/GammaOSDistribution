@@ -1,0 +1,18 @@
+commands: <
+  copy_before: <
+    from: "external/libchrome/libchrome_tools/jni_registration_generator_helper.sh"
+    to: "tools/src/external/libchrome/libchrome_tools/jni_registration_generator_helper.sh"
+  >
+  copy_before: <
+    from: "out/soong/.intermediates/external/libchrome/jni_registration_generator/linux_glibc_x86_64_PY2/jni_registration_generator"
+    to: "tools/out/bin/jni_registration_generator"
+    executable: false
+  >
+  command: "__SBOX_SANDBOX_DIR__/tools/src/external/libchrome/libchrome_tools/jni_registration_generator_helper.sh    --jni_generator=__SBOX_SANDBOX_DIR__/tools/out/bin/jni_registration_generator    --output=__SBOX_SANDBOX_DIR__/out/jni/libmojo_jni_registrations.h    external/libchrome/base/android/java/src/org/chromium/base/BuildInfo.java external/libchrome/base/android/java/src/org/chromium/base/JavaExceptionReporter.java external/libchrome/base/android/java/src/org/chromium/base/ThreadUtils.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/BaseRunLoop.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/CoreImpl.java external/libchrome/mojo/public/java/system/src/org/chromium/mojo/system/impl/WatcherImpl.java"
+  copy_after: <
+    from: "out/jni/libmojo_jni_registrations.h"
+    to: "out/soong/.intermediates/external/libchrome/libmojo_jni_registration_headers/gen/jni/libmojo_jni_registrations.h"
+  >
+  input_hash: "3e1dee34a6d7da7bfcb3feedb0052895adc600f6cb973a4601c00668b4656e88"
+>
+

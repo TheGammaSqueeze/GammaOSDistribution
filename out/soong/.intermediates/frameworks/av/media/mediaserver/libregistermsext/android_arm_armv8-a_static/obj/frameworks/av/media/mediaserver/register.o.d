@@ -1,0 +1,3 @@
+out/soong/.intermediates/frameworks/av/media/mediaserver/libregistermsext/android_arm_armv8-a_static/obj/frameworks/av/media/mediaserver/register.o: \
+  frameworks/av/media/mediaserver/register.cpp \
+  frameworks/av/media/mediaserver/RegisterExtensions.h

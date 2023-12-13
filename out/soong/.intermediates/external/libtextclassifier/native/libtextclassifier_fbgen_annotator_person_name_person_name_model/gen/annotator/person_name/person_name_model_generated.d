@@ -1,0 +1,1 @@
+outputfile: external/libtextclassifier/native/annotator/person_name/person_name_model.fbs

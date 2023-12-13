@@ -1,0 +1,2 @@
+out/soong/.intermediates/external/perfetto/perfetto/android_arm64_armv8-a/obj/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_perfetto_zero_gen/gen/external/perfetto/protos/perfetto/trace/perfetto/tracing_service_event.pbzero.o: \
+  out/soong/.intermediates/external/perfetto/perfetto_protos_perfetto_trace_perfetto_zero_gen/gen/external/perfetto/protos/perfetto/trace/perfetto/tracing_service_event.pbzero.cc
