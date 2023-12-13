@@ -1,0 +1,17 @@
+allow ueventd proc:file r_file_perms;
+permissive ueventd;
+
+type teecd_data_file, file_type;
+type dmd_device, file_type;
+allow hal_fingerprint_server dmd_device:chr_file rw_file_perms;
+allow hal_fingerprint_server sysfs:file rw_file_perms;
+allow tee hal_fingerprint_default:process { getattr };
+allow tee teecd_data_file:dir { search read write create getattr add_name open };
+allow tee teecd_data_file:file { read write create getattr open };
+allow tee system_data_file:dir { getattr };
+
+type oeminfo_nvm, domain;
+type oeminfo_nvm_device, file_type;
+allowxperm oeminfo_nvm oeminfo_nvm_device:blk_file ioctl { 0x1260 };
+
+allow charger rootfs:file { ioctl read getattr lock map execute entrypoint open };
