@@ -1,0 +1,24 @@
+license_package_name: "external_apache-http_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "external/apache-http/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/JAVA_LIBRARIES/org.apache.http.legacy_intermediates/javalib.jar"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm/org.apache.http.legacy.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm/org.apache.http.legacy.vdex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm64/org.apache.http.legacy.odex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/oat/arm64/org.apache.http.legacy.vdex"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/org.apache.http.legacy.jar"
+target: "out/target/product/phhgsi_arm64_ab/system/framework/org.apache.http.legacy.jar.prof"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/org.apache.http.legacy.xml.meta_lic
+  dep_package_name:  "external_apache-http_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "external/apache-http/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/ETC/org.apache.http.legacy.xml_intermediates/org.apache.http.legacy.xml"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/etc/permissions/org.apache.http.legacy.xml"
+  dep_effective_condition: "notice"
+}

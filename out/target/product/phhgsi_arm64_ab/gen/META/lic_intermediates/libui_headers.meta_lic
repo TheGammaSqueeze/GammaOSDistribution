@@ -1,0 +1,29 @@
+license_package_name: "frameworks_native_libs_ui_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "frameworks/native/libs/ui/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libui_headers_intermediates/libui_headers.a"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libmath_headers.meta_lic
+  dep_package_name:  "frameworks_native_libs_math_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/math/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libmath_headers_intermediates/libmath_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libmath_headers_intermediates/libmath_headers.a"
+  dep_effective_condition: "notice"
+}
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libnativewindow_headers.meta_lic
+  dep_package_name:  "frameworks_native_libs_nativewindow_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "frameworks/native/libs/nativewindow/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libnativewindow_headers_intermediates/libnativewindow_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libnativewindow_headers_intermediates/libnativewindow_headers.a"
+  dep_effective_condition: "notice"
+}

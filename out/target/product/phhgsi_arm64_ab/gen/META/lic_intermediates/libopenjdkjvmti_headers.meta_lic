@@ -1,0 +1,24 @@
+license_package_name: "art_openjdkjvmti_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_kind: "SPDX-license-identifier-GPL-2.0"
+license_kind: "SPDX-license-identifier-GPL-with-classpath-exception"
+license_condition: "notice"
+license_condition: "restricted"
+license_text: "art/openjdkjvmti/NOTICE"
+is_container: false
+target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libopenjdkjvmti_headers_intermediates/libopenjdkjvmti_headers.a"
+target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libopenjdkjvmti_headers_intermediates/libopenjdkjvmti_headers.a"
+effective_condition: "notice"
+effective_condition: "restricted"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/jni_headers.meta_lic
+  dep_package_name:  "libnativehelper_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "libnativehelper/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/jni_headers_intermediates/jni_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/jni_headers_intermediates/jni_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "restricted"
+}

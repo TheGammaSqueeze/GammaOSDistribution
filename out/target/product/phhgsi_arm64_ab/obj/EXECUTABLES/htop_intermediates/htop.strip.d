@@ -1,0 +1,2 @@
+out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/htop_intermediates/htop:   out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/htop_intermediates/LINKED/htop   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

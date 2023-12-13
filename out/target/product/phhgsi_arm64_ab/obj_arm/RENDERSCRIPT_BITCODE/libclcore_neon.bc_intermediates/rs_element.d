@@ -1,0 +1,21 @@
+out/target/product/phhgsi_arm64_ab/obj_arm/RENDERSCRIPT_BITCODE/libclcore_neon.bc_intermediates/rs_element.bc: \
+  frameworks/rs/driver/runtime/rs_element.c \
+  frameworks/rs/script_api/include/rs_core.rsh \
+  external/clang/lib/Headers/stdbool.h \
+  frameworks/rs/script_api/include/rs_value_types.rsh \
+  frameworks/rs/script_api/include/rs_object_types.rsh \
+  frameworks/rs/script_api/include/rs_allocation_create.rsh \
+  frameworks/rs/script_api/include/rs_allocation_data.rsh \
+  frameworks/rs/script_api/include/rs_atomic.rsh \
+  frameworks/rs/script_api/include/rs_convert.rsh \
+  frameworks/rs/script_api/include/rs_debug.rsh \
+  frameworks/rs/script_api/include/rs_for_each.rsh \
+  frameworks/rs/script_api/include/rs_io.rsh \
+  frameworks/rs/script_api/include/rs_math.rsh \
+  frameworks/rs/script_api/include/rs_matrix.rsh \
+  frameworks/rs/script_api/include/rs_vector_math.rsh \
+  frameworks/rs/script_api/include/rs_object_info.rsh \
+  frameworks/rs/script_api/include/rs_quaternion.rsh \
+  frameworks/rs/script_api/include/rs_time.rsh \
+  frameworks/rs/driver/runtime/rs_structs.h \
+  frameworks/rs/script_api/include/rs_graphics.rsh

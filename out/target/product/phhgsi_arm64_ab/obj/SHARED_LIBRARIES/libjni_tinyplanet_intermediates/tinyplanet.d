@@ -1,0 +1,19 @@
+out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libjni_tinyplanet_intermediates/tinyplanet.o: \
+  packages/apps/Camera2/jni/tinyplanet.cc \
+  out/soong/ndk/sysroot/usr/include/jni.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdarg.h \
+  out/soong/ndk/sysroot/usr/include/stdint.h \
+  out/soong/ndk/sysroot/usr/include/bits/wchar_limits.h \
+  out/soong/ndk/sysroot/usr/include/sys/cdefs.h \
+  out/soong/ndk/sysroot/usr/include/android/versioning.h \
+  out/soong/ndk/sysroot/usr/include/android/api-level.h \
+  out/soong/ndk/sysroot/usr/include/bits/get_device_api_level_inlines.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stddef.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/__stddef_max_align_t.h \
+  out/soong/ndk/sysroot/usr/include/math.h \
+  out/soong/ndk/sysroot/usr/include/limits.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/float.h \
+  out/soong/ndk/sysroot/usr/include/linux/limits.h \
+  out/soong/ndk/sysroot/usr/include/bits/posix_limits.h \
+  out/soong/ndk/sysroot/usr/include/android/bitmap.h \
+  prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdbool.h

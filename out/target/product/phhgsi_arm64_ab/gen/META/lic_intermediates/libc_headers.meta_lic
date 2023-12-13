@@ -1,0 +1,33 @@
+license_package_name: "bionic_libc_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_kind: "SPDX-license-identifier-BSD"
+license_kind: "SPDX-license-identifier-ISC"
+license_kind: "SPDX-license-identifier-MIT"
+license_kind: "legacy_notice"
+license_kind: "legacy_unencumbered"
+license_condition: "notice"
+license_condition: "unencumbered"
+license_text: "bionic/libc/NOTICE"
+is_container: false
+target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libc_headers_intermediates/libc_headers.a"
+target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libc_headers_intermediates/libc_headers.a"
+effective_condition: "notice"
+effective_condition: "unencumbered"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/libc_llndk_headers.meta_lic
+  dep_package_name:  "bionic_libc_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_kind: "SPDX-license-identifier-BSD"
+  dep_license_kind: "SPDX-license-identifier-ISC"
+  dep_license_kind: "SPDX-license-identifier-MIT"
+  dep_license_kind: "legacy_notice"
+  dep_license_kind: "legacy_unencumbered"
+  dep_license_condition: "notice"
+  dep_license_condition: "unencumbered"
+  dep_license_text:  "bionic/libc/NOTICE"
+  dep_is_container: false
+  dep_target: "out/host/linux-x86/obj/HEADER_LIBRARIES/libc_llndk_headers_intermediates/libc_llndk_headers.a"
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libc_llndk_headers_intermediates/libc_llndk_headers.a"
+  dep_effective_condition: "notice"
+  dep_effective_condition: "unencumbered"
+}

@@ -1,0 +1,2 @@
+out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libjni_jpegutil_intermediates/libjni_jpegutil.so:   out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libjni_jpegutil_intermediates/LINKED/libjni_jpegutil.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

@@ -1,0 +1,2 @@
+out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libjni_tinyplanet_intermediates/libjni_tinyplanet.so:   out/target/product/phhgsi_arm64_ab/obj/SHARED_LIBRARIES/libjni_tinyplanet_intermediates/LINKED/libjni_tinyplanet.so   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r416183b1/bin/llvm-strip
+

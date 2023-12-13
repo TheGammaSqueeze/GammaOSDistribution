@@ -1,0 +1,37 @@
+out/target/product/phhgsi_arm64_ab/obj/APPS/GooglePartnerSetup_intermediates/dexpreopt.zip: \
+    out/soong/host/linux-x86/bin/construct_context \
+    out/soong/host/linux-x86/bin/dex2oatd \
+    out/soong/host/linux-x86/bin/manifest_check \
+    out/soong/host/linux-x86/bin/soong_zip \
+    out/soong/host/linux-x86/bin/aapt \
+    out/soong/phhgsi_arm64_ab/dex_artjars_input/apache-xml.jar \
+    out/soong/phhgsi_arm64_ab/dex_artjars_input/bouncycastle.jar \
+    out/soong/phhgsi_arm64_ab/dex_artjars_input/core-libart.jar \
+    out/soong/phhgsi_arm64_ab/dex_artjars_input/core-oj.jar \
+    out/soong/phhgsi_arm64_ab/dex_artjars_input/okhttp.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/core-icu4j.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/ext.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/framework-graphics.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/framework.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/ims-common.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/telephony-common.jar \
+    out/soong/phhgsi_arm64_ab/dex_bootjars_input/voip-common.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/android.net.ipsec.ike.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/conscrypt.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-appsearch.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-connectivity.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-mediaprovider.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-permission-s.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-permission.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-scheduling.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-sdkextensions.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-statsd.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-tethering.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/framework-wifi.jar \
+    out/soong/phhgsi_arm64_ab/updatable_bootjars/updatable-media.jar \
+    out/target/common/obj/APPS/GooglePartnerSetup_intermediates/enforce_uses_libraries.status \
+    out/target/common/obj/JAVA_LIBRARIES/android.hidl.base-V1.0-java_intermediates/javalib.jar \
+    out/target/common/obj/JAVA_LIBRARIES/android.hidl.manager-V1.0-java_intermediates/javalib.jar \
+    out/target/common/obj/JAVA_LIBRARIES/android.test.base_intermediates/javalib.jar \
+    out/target/common/obj/JAVA_LIBRARIES/org.apache.http.legacy_intermediates/javalib.jar \
+

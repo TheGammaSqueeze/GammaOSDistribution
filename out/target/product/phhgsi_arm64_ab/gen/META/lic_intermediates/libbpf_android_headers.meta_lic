@@ -1,0 +1,17 @@
+license_package_name: "system_bpf_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "system/bpf/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/libbpf_android_headers_intermediates/libbpf_android_headers.a"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/bpf_syscall_wrappers.meta_lic
+  dep_package_name:  "Android"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "build/soong/licenses/LICENSE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/HEADER_LIBRARIES/bpf_syscall_wrappers_intermediates/bpf_syscall_wrappers.a"
+  dep_effective_condition: "notice"
+}

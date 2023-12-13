@@ -1,0 +1,22 @@
+license_package_name: "system_logging_logcat_license"
+license_kind: "SPDX-license-identifier-Apache-2.0"
+license_condition: "notice"
+license_text: "system/logging/logcat/NOTICE"
+is_container: false
+target: "out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/logpersist.start_intermediates/logpersist.start"
+target: "out/target/product/phhgsi_arm64_ab/system/bin/logpersist.cat"
+target: "out/target/product/phhgsi_arm64_ab/system/bin/logpersist.start"
+target: "out/target/product/phhgsi_arm64_ab/system/bin/logpersist.stop"
+target: "out/target/product/phhgsi_arm64_ab/system/etc/init/logcatd.rc"
+effective_condition: "notice"
+dep {
+  dep_name: out/target/product/phhgsi_arm64_ab/gen/META/lic_intermediates/logcatd.meta_lic
+  dep_package_name:  "system_logging_logcat_license"
+  dep_license_kind: "SPDX-license-identifier-Apache-2.0"
+  dep_license_condition: "notice"
+  dep_license_text:  "system/logging/logcat/NOTICE"
+  dep_is_container: false
+  dep_target: "out/target/product/phhgsi_arm64_ab/obj/EXECUTABLES/logcatd_intermediates/logcatd"
+  dep_target: "out/target/product/phhgsi_arm64_ab/system/bin/logcatd"
+  dep_effective_condition: "notice"
+}
