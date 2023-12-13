@@ -1,0 +1,118 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/DropInputMode.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/DropInputMode.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/DropInputMode.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/TouchOcclusionMode.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/TouchOcclusionMode.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/TouchOcclusionMode.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/FocusRequest.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/FocusRequest.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/FocusRequest.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/InputApplicationInfo.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/InputApplicationInfo.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/InputApplicationInfo.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosListener.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/IWindowInfosListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosReportedListener.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/IWindowInfosReportedListener.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosReportedListener.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/gui/WindowInfo.cpp.d --ninja  -Iframeworks/native/libs/gui/ frameworks/native/libs/gui/android/gui/WindowInfo.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/gui/WindowInfo.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/gui/DropInputMode.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/TouchOcclusionMode.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/FocusRequest.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/InputApplicationInfo.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/IWindowInfosReportedListener.cpp.d __SBOX_SANDBOX_DIR__/out/android/gui/WindowInfo.cpp.d"
+  copy_after: <
+    from: "out/android/gui/BnDropInputMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnDropInputMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnFocusRequest.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnFocusRequest.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnInputApplicationInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnInputApplicationInfo.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnTouchOcclusionMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnTouchOcclusionMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnWindowInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnWindowInfo.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnWindowInfosListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnWindowInfosListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BnWindowInfosReportedListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BnWindowInfosReportedListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpDropInputMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpDropInputMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpFocusRequest.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpFocusRequest.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpInputApplicationInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpInputApplicationInfo.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpTouchOcclusionMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpTouchOcclusionMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpWindowInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpWindowInfo.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpWindowInfosListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpWindowInfosListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/BpWindowInfosReportedListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/BpWindowInfosReportedListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/DropInputMode.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/DropInputMode.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/DropInputMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/DropInputMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/FocusRequest.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/FocusRequest.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/FocusRequest.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/FocusRequest.h"
+  >
+  copy_after: <
+    from: "out/android/gui/IWindowInfosListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/IWindowInfosListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/IWindowInfosListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/IWindowInfosListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/IWindowInfosReportedListener.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/IWindowInfosReportedListener.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/IWindowInfosReportedListener.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/IWindowInfosReportedListener.h"
+  >
+  copy_after: <
+    from: "out/android/gui/InputApplicationInfo.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/InputApplicationInfo.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/InputApplicationInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/InputApplicationInfo.h"
+  >
+  copy_after: <
+    from: "out/android/gui/TouchOcclusionMode.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/TouchOcclusionMode.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/TouchOcclusionMode.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/TouchOcclusionMode.h"
+  >
+  copy_after: <
+    from: "out/android/gui/WindowInfo.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/WindowInfo.cpp"
+  >
+  copy_after: <
+    from: "out/android/gui/WindowInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/WindowInfo.h"
+  >
+  input_hash: "36452dd9b0026fd92d9bfba57d7c02ae2f3bb7c68250ad6eaf31483df1f1a563"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/gui/libgui_window_info_static/android_arm_armv8-a_static/gen/aidl/android/gui/DropInputMode.cpp.d"
+

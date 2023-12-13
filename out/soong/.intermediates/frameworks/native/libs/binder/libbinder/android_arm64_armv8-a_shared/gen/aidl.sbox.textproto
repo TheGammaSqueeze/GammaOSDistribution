@@ -1,0 +1,118 @@
+commands: <
+  command: "out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageChangeObserver.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/content/pm/IPackageChangeObserver.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageChangeObserver.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageManagerNative.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/content/pm/IPackageManagerNative.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageManagerNative.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/content/pm/PackageChangeEvent.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/content/pm/PackageChangeEvent.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/content/pm/PackageChangeEvent.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IClientCallback.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/os/IClientCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IClientCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IServiceCallback.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/os/IServiceCallback.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IServiceCallback.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/IServiceManager.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/os/IServiceManager.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/IServiceManager.cpp && out/soong/host/linux-x86/bin/aidl-cpp -d__SBOX_SANDBOX_DIR__/out/android/os/ServiceDebugInfo.cpp.d --ninja  -Iframeworks/native/libs/binder/aidl/ frameworks/native/libs/binder/aidl/android/os/ServiceDebugInfo.aidl __SBOX_SANDBOX_DIR__/out __SBOX_SANDBOX_DIR__/out/android/os/ServiceDebugInfo.cpp && out/soong/host/linux-x86/bin/dep_fixer __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageChangeObserver.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/IPackageManagerNative.cpp.d __SBOX_SANDBOX_DIR__/out/android/content/pm/PackageChangeEvent.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IClientCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IServiceCallback.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/IServiceManager.cpp.d __SBOX_SANDBOX_DIR__/out/android/os/ServiceDebugInfo.cpp.d"
+  copy_after: <
+    from: "out/android/content/pm/BnPackageChangeEvent.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BnPackageChangeEvent.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnPackageChangeObserver.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BnPackageChangeObserver.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BnPackageManagerNative.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BnPackageManagerNative.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpPackageChangeEvent.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BpPackageChangeEvent.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpPackageChangeObserver.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BpPackageChangeObserver.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/BpPackageManagerNative.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/BpPackageManagerNative.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageChangeObserver.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/IPackageChangeObserver.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageChangeObserver.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/IPackageChangeObserver.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageManagerNative.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/IPackageManagerNative.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/IPackageManagerNative.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/IPackageManagerNative.h"
+  >
+  copy_after: <
+    from: "out/android/content/pm/PackageChangeEvent.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/PackageChangeEvent.cpp"
+  >
+  copy_after: <
+    from: "out/android/content/pm/PackageChangeEvent.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/PackageChangeEvent.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnClientCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BnClientCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnServiceCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BnServiceCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnServiceDebugInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BnServiceDebugInfo.h"
+  >
+  copy_after: <
+    from: "out/android/os/BnServiceManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BnServiceManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpClientCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BpClientCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpServiceCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BpServiceCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpServiceDebugInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BpServiceDebugInfo.h"
+  >
+  copy_after: <
+    from: "out/android/os/BpServiceManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/BpServiceManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/IClientCallback.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IClientCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IClientCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IClientCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/IServiceCallback.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IServiceCallback.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IServiceCallback.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IServiceCallback.h"
+  >
+  copy_after: <
+    from: "out/android/os/IServiceManager.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IServiceManager.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/IServiceManager.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/IServiceManager.h"
+  >
+  copy_after: <
+    from: "out/android/os/ServiceDebugInfo.cpp"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/ServiceDebugInfo.cpp"
+  >
+  copy_after: <
+    from: "out/android/os/ServiceDebugInfo.h"
+    to: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/os/ServiceDebugInfo.h"
+  >
+  input_hash: "0f5d931b0389a35d6bd6bef5956ea07a633338a0b805f479ee1b0a6292954fab"
+>
+output_depfile: "out/soong/.intermediates/frameworks/native/libs/binder/libbinder/android_arm64_armv8-a_shared/gen/aidl/android/content/pm/IPackageChangeObserver.cpp.d"
+
