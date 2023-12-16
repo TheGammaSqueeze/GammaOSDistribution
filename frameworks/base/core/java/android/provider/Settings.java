@@ -8964,7 +8964,7 @@ public final class Settings {
          * @hide
          */
         public static final int SHOW_ROTATION_SUGGESTIONS_DEFAULT =
-                SHOW_ROTATION_SUGGESTIONS_ENABLED;
+                SHOW_ROTATION_SUGGESTIONS_DISABLED;
 
         /**
          * The number of accepted rotation suggestions. Used to determine if the user has been
