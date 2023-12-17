@@ -186,7 +186,7 @@ public class DisplayRotation {
     private int mUserRotationMode = WindowManagerPolicy.USER_ROTATION_FREE;
 
     @Surface.Rotation
-    private int mUserRotation = Surface.ROTATION_0;
+    private int mUserRotation = Surface.ROTATION_90;
 
     private static final int CAMERA_ROTATION_DISABLED = 0;
     private static final int CAMERA_ROTATION_ENABLED = 1;
@@ -298,21 +298,21 @@ public class DisplayRotation {
     void configure(int width, int height, int shortSizeDp, int longSizeDp) {
         final Resources res = mContext.getResources();
         if (width > height) {
-            mLandscapeRotation = Surface.ROTATION_0;
-            mSeascapeRotation = Surface.ROTATION_180;
+            mLandscapeRotation = Surface.ROTATION_90;
+            mSeascapeRotation = Surface.ROTATION_270;
             if (res.getBoolean(R.bool.config_reverseDefaultRotation)) {
                 mPortraitRotation = Surface.ROTATION_90;
                 mUpsideDownRotation = Surface.ROTATION_270;
             } else {
-                mPortraitRotation = Surface.ROTATION_270;
-                mUpsideDownRotation = Surface.ROTATION_90;
+                mPortraitRotation = Surface.ROTATION_90;
+                mUpsideDownRotation = Surface.ROTATION_270;
             }
         } else {
-            mPortraitRotation = Surface.ROTATION_0;
-            mUpsideDownRotation = Surface.ROTATION_180;
+            mPortraitRotation = Surface.ROTATION_90;
+            mUpsideDownRotation = Surface.ROTATION_270;
             if (res.getBoolean(R.bool.config_reverseDefaultRotation)) {
-                mLandscapeRotation = Surface.ROTATION_270;
-                mSeascapeRotation = Surface.ROTATION_90;
+                mLandscapeRotation = Surface.ROTATION_90;
+                mSeascapeRotation = Surface.ROTATION_270;
             } else {
                 mLandscapeRotation = Surface.ROTATION_90;
                 mSeascapeRotation = Surface.ROTATION_270;
@@ -825,7 +825,7 @@ public class DisplayRotation {
         if (userRotation < Surface.ROTATION_0 || userRotation > Surface.ROTATION_270) {
             Slog.w(TAG, "Trying to restore an invalid user rotation " + userRotation
                     + " for " + mDisplayContent);
-            userRotation = Surface.ROTATION_0;
+            userRotation = Surface.ROTATION_90;
         }
         mUserRotationMode = userRotationMode;
         mUserRotation = userRotation;
@@ -1240,11 +1240,11 @@ public class DisplayRotation {
             // to avoid leaving the rotation to the reverse of it which has the compatible
             // orientation, but isn't what app wants, when the user rotation is the reverse of the
             // preferred rotation.
-            preferredRotation = mUserRotation;
+            preferredRotation = Surface.ROTATION_90;
         } else {
             // No overriding preference.
             // We will do exactly what the application asked us to do.
-            preferredRotation = -1;
+            preferredRotation = Surface.ROTATION_90;
         }
 
         switch (orientation) {
@@ -1304,7 +1304,7 @@ public class DisplayRotation {
                 if (preferredRotation >= 0) {
                     return preferredRotation;
                 }
-                return Surface.ROTATION_0;
+                return Surface.ROTATION_90;
         }
     }
 
@@ -1459,7 +1459,7 @@ public class DisplayRotation {
 
             // Configure rotation lock.
             final int userRotation = Settings.System.getIntForUser(resolver,
-                    Settings.System.USER_ROTATION, Surface.ROTATION_0,
+                    Settings.System.USER_ROTATION, Surface.ROTATION_90,
                     UserHandle.USER_CURRENT);
             if (mUserRotation != userRotation) {
                 mUserRotation = userRotation;
