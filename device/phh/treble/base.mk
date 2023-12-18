@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
 #   vendor/etc
 PRODUCT_COPY_FILES += \
 	device/phh/treble/nfc/libnfc-nci.conf:system/phh/libnfc-nci-oreo.conf \
-	device/phh/treble/nfc/libnfc-nci-huawei.conf:system/phh/libnfc-nci-huawei.conf
 
 # LineageOS build may need this to make NFC work
 PRODUCT_PACKAGES += \
@@ -76,7 +75,7 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/daijisho/launcher3.tar.gz:system/etc/launcher3.tar.gz \
         device/phh/treble/gammaos/daijisho/launcherconfig.tar.gz:system/etc/launcherconfig.tar.gz \
         device/phh/treble/gammaos/customization.sh:system/bin/customization.sh \
-        device/phh/treble/gammaos/aurora/AuroraStore_4.3.5.apk:system/etc/AuroraStore_4.3.5.apk \
+        device/phh/treble/gammaos/aurora/AuroraStore_4.3.5.apk:system/product/app/aurora/AuroraStore_4.3.5.apk \
         device/phh/treble/gammaos/firefox/Firefox_120.0.1.apk:system/etc/Firefox_120.0.1.apk \
         device/phh/treble/gammaos/magisk/magisk.apk:system/etc/magisk.apk \
         device/phh/treble/gammaos/magisk/magisk_user_de.tar.gz:system/etc/magisk_user_de.tar.gz \
@@ -93,7 +92,7 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
         device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
-        device/phh/treble/gammaos/toast/Toast.apk:system/etc/Toast.apk \
+        device/phh/treble/gammaos/toast/Toast.apk:system/product/app/toast/Toast.apk \
         device/phh/treble/gammaos/aptx/lib/libaptXHD_encoder.so:system/aptx/lib/libaptXHD_encoder.so \
         device/phh/treble/gammaos/aptx/lib/libaptX_encoder.so:system/aptx/lib/libaptX_encoder.so \
         device/phh/treble/gammaos/aptx/lib64/libaptXHD_encoder.so:system/aptx/lib64/libaptXHD_encoder.so \
@@ -105,12 +104,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	bootctl \
 	vintf \
-
-# Fix Offline Charging on Huawmeme
-PRODUCT_PACKAGES += \
-	huawei-charger
-PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,device/phh/treble/huawei_charger/files,system/etc/charger)
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/twrp/twrp.rc:system/etc/init/twrp.rc \
@@ -130,44 +123,9 @@ endif
 PRODUCT_PACKAGES += \
 	android.hidl.manager-V1.0-java \
 	android.hardware.wifi.hostapd-V1.0-java \
-	vendor.huawei.hardware.biometrics.fingerprint-V2.1-java \
-	vendor.huawei.hardware.tp-V1.0-java \
-	vendor.qti.hardware.radio.am-V1.0-java \
-	vendor.qti.qcril.am-V1.0-java \
-	vendor.xiaomi.hardware.displayfeature-V1.0-java
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/interfaces.xml:system/etc/permissions/interfaces.xml
-
-PRODUCT_COPY_FILES += \
-	device/phh/treble/files/samsung-gpio_keys.kl:system/phh/samsung-gpio_keys.kl \
-	device/phh/treble/files/samsung-sec_touchscreen.kl:system/phh/samsung-sec_touchscreen.kl \
-	device/phh/treble/files/samsung-sec_touchkey.kl:system/phh/samsung-sec_touchkey.kl \
-	device/phh/treble/files/oneplus6-synaptics_s3320.kl:system/phh/oneplus6-synaptics_s3320.kl \
-	device/phh/treble/files/huawei-fingerprint.kl:system/phh/huawei/fingerprint.kl \
-	device/phh/treble/files/samsung-sec_e-pen.idc:system/usr/idc/sec_e-pen.idc \
-	device/phh/treble/files/samsung-9810-floating_feature.xml:system/ph/sam-9810-flo_feat.xml \
-	device/phh/treble/files/mimix3-gpio-keys.kl:system/phh/mimix3-gpio-keys.kl \
-	device/phh/treble/files/nokia-soc_gpio_keys.kl:system/phh/nokia-soc_gpio_keys.kl \
-	device/phh/treble/files/lenovo-synaptics_dsx.kl:system/phh/lenovo-synaptics_dsx.kl \
-	device/phh/treble/files/oppo-touchpanel.kl:system/phh/oppo-touchpanel.kl \
-	device/phh/treble/files/google-uinput-fpc.kl:system/phh/google-uinput-fpc.kl \
-	device/phh/treble/files/moto-uinput-egis.kl:system/phh/moto-uinput-egis.kl \
-	device/phh/treble/files/daisy-buttonJack.kl:system/phh/daisy-buttonJack.kl \
-	device/phh/treble/files/daisy-uinput-fpc.kl:system/phh/daisy-uinput-fpc.kl \
-	device/phh/treble/files/daisy-uinput-goodix.kl:system/phh/daisy-uinput-goodix.kl \
-	device/phh/treble/files/nubia-nubia_synaptics_dsx.kl:system/phh/nubia-nubia_synaptics_dsx.kl \
-	device/phh/treble/files/unihertz-mtk-kpd.kl:system/phh/unihertz-mtk-kpd.kl \
-	device/phh/treble/files/unihertz-mtk-tpd.kl:system/phh/unihertz-mtk-tpd.kl \
-	device/phh/treble/files/unihertz-mtk-tpd-kpd.kl:system/phh/unihertz-mtk-tpd-kpd.kl \
-	device/phh/treble/files/unihertz-fingerprint_key.kl:system/phh/unihertz-fingerprint_key.kl \
-	device/phh/treble/files/zf6-goodixfp.kl:system/phh/zf6-goodixfp.kl \
-	device/phh/treble/files/zf6-googlekey_input.kl:system/phh/zf6-googlekey_input.kl \
-	device/phh/treble/files/teracube2e-mtk-kpd.kl:system/phh/teracube2e-mtk-kpd.kl \
-	device/phh/treble/files/bv9500plus-mtk-kpd.kl:system/phh/bv9500plus-mtk-kpd.kl \
-	device/phh/treble/files/moto-liber-gpio-keys.kl:system/phh/moto-liber-gpio-keys.kl \
-	device/phh/treble/files/tecno-touchpanel.kl:system/phh/tecno-touchpanel.kl \
-	device/phh/treble/files/rosemary-excluded-input-devices.xml:system/phh/rosemary-excluded-input-devices.xml
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
@@ -226,10 +184,6 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/remote/phh-remotectl.sh:system/bin/phh-remotectl.sh \
 
 PRODUCT_PACKAGES += \
-	android.hardware.biometrics.fingerprint@2.1-service.oppo.compat \
-	android.hardware.biometrics.fingerprint@2.1-service.oplus.compat \
-
-PRODUCT_PACKAGES += \
 	vr_hwc \
 	curl \
 	healthd \
@@ -246,21 +200,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # AOSP overlays
 PRODUCT_PACKAGES += \
     NavigationBarMode2ButtonOverlay
-
-PRODUCT_PACKAGES += \
-	oplus-alert-slider
-
-PRODUCT_COPY_FILES += \
-	device/phh/treble/empty:system/etc/smartpa_params/empty \
-	device/phh/treble/proprietary-files/gome/fs16xx_01s_left.preset:system/phh/gome/fs16xx_01s_left.preset \
-	device/phh/treble/proprietary-files/gome/fs16xx_01s_mono.preset:system/phh/gome/fs16xx_01s_mono.preset \
-	device/phh/treble/proprietary-files/gome/fs16xx_01s_right.preset:system/phh/gome/fs16xx_01s_right.preset \
-	device/phh/treble/proprietary-files/umidigi/fs16xx_01s_mono.preset:system/phh/umidigi/fs16xx_01s_mono.preset
-
-PRODUCT_PACKAGES += phh-ota
-
-PRODUCT_PACKAGES += \
-    xiaomi-touch
 
 PRODUCT_COPY_FILES += \
 	frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:system/etc/a2dp_audio_policy_configuration_7_0.xml \
