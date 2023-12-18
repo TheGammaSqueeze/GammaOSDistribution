@@ -1,15 +1,26 @@
 #!/system/bin/sh
 
-echo "powersave" > /sys/class/devfreq/fde60000.gpu/governor
-echo "200000000" > /sys/class/devfreq/fde60000.gpu/min_freq
-echo "200000000" > /sys/class/devfreq/fde60000.gpu/max_freq
-echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-echo "408000" > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-echo "1104000" > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
-echo "dmc_ondemand" > /sys/class/devfreq/dmc/governor
-echo "324000000" > /sys/class/devfreq/dmc/min_freq
-echo "780000000" > /sys/class/devfreq/dmc/max_freq
+echo "384000000" > /sys/devices/platform/soc/soc:mm/60000000.gpu/devfreq/60000000.gpu/min_freq
+echo "850000000" > /sys/devices/platform/soc/soc:mm/60000000.gpu/devfreq/60000000.gpu/max_freq
+echo "powersave" > /sys/devices/platform/soc/soc:mm/60000000.gpu/devfreq/60000000.gpu/governor
 
-echo "255" > /sys/class/leds/battery_full/brightness
-echo "255" > /sys/class/leds/battery_charging/brightness
-echo "255" > /sys/class/leds/low_power/brightness
+echo "614400" > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+echo "2002000" > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+echo 0 > /sys/devices/system/cpu/cpufreq/policy0/scaling_fix_freq
+echo "powersave" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+
+echo "614400" > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
+echo "2002000" > /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
+echo 0 > /sys/devices/system/cpu/cpufreq/policy6/scaling_fix_freq
+echo "powersave" > /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
+
+echo 0 > /sys/class/devfreq/scene-frequency/sprd-governor/scaling_force_ddr_freq
+echo "userspace" > /sys/class/devfreq/scene-frequency/governor
+echo "512" > /sys/class/devfreq/scene-frequency/userspace/set_freq
+echo "50" > /sys/class/devfreq/scene-frequency/polling_interval
+# echo "256" > /sys/class/devfreq/scene-frequency/min_freq
+# echo "1866" > /sys/class/devfreq/scene-frequency/max_freq
+
+echo "0" > /sys/class/leds/sc27xx\:blue/brightness
+echo "255" > /sys/class/leds/sc27xx\:green/brightness
+echo "0" > /sys/class/leds/sc27xx\:red/brightness
