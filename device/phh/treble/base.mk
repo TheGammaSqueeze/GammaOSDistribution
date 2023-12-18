@@ -69,6 +69,32 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/empty:system/phh/empty \
 	device/phh/treble/phh-on-boot.sh:system/bin/phh-on-boot.sh
 
+
+# GammaOS Customizations
+PRODUCT_COPY_FILES += \
+        device/phh/treble/gammaos/daijisho/399.apk:system/product/app/daijisho/399.apk \
+        device/phh/treble/gammaos/daijisho/launcher3.tar.gz:system/etc/launcher3.tar.gz \
+        device/phh/treble/gammaos/daijisho/launcherconfig.tar.gz:system/etc/launcherconfig.tar.gz \
+        device/phh/treble/gammaos/customization.sh:system/bin/customization.sh \
+        device/phh/treble/gammaos/aurora/AuroraStore_4.3.5.apk:system/etc/AuroraStore_4.3.5.apk \
+        device/phh/treble/gammaos/firefox/Firefox_120.0.1.apk:system/etc/Firefox_120.0.1.apk \
+        device/phh/treble/gammaos/magisk/magisk.apk:system/etc/magisk.apk \
+        device/phh/treble/gammaos/magisk/magisk_user_de.tar.gz:system/etc/magisk_user_de.tar.gz \
+        device/phh/treble/gammaos/magisk/magisk-data-adb.tar.gz:system/etc/magisk-data-adb.tar.gz \
+        device/phh/treble/gammaos/retroarch/RetroArch_aarch64.apk:system/etc/RetroArch_aarch64.apk \
+        device/phh/treble/gammaos/retroarch/retroarch64.tar.gz:system/etc/retroarch64.tar.gz \
+        device/phh/treble/gammaos/retroarch/retroarch64sdcard.tar.gz:system/etc/retroarch64sdcard.tar.gz \
+        device/phh/treble/gammaos/retroarch/retroarch64sdcard1-arc.tar.gz:system/etc/retroarch64sdcard1-arc.tar.gz \
+        device/phh/treble/gammaos/retroarch/retroarch64sdcard2-405.tar.gz:system/etc/retroarch64sdcard2-405.tar.gz \
+        device/phh/treble/gammaos/retroarch/retroarch64sdcard2.tar.gz:system/etc/retroarch64sdcard2.tar.gz \
+        device/phh/treble/gammaos/retroarch/roms.tar.gz:system/etc/roms.tar.gz \
+        device/phh/treble/gammaos/rgp2xbox/rgp2xbox:system/bin/rgp2xbox \
+        device/phh/treble/gammaos/rgp2xbox/rgp2xbox.sh:system/bin/rgp2xbox.sh \
+        device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
+        device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
+        device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
+        device/phh/treble/gammaos/toast/Toast.apk:system/etc/Toast.apk
+
 PRODUCT_PACKAGES += \
 	treble-environ-rc \
 
