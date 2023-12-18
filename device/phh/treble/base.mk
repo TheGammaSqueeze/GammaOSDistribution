@@ -93,7 +93,11 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
         device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
-        device/phh/treble/gammaos/toast/Toast.apk:system/etc/Toast.apk
+        device/phh/treble/gammaos/toast/Toast.apk:system/etc/Toast.apk \
+        device/phh/treble/gammaos/aptx/lib/libaptXHD_encoder.so:system/aptx/lib/libaptXHD_encoder.so \
+        device/phh/treble/gammaos/aptx/lib/libaptX_encoder.so:system/aptx/lib/libaptX_encoder.so \
+        device/phh/treble/gammaos/aptx/lib64/libaptXHD_encoder.so:system/aptx/lib64/libaptXHD_encoder.so \
+        device/phh/treble/gammaos/aptx/lib64/libaptX_encoder.so:system/aptx/lib64/libaptX_encoder.so
 
 PRODUCT_PACKAGES += \
 	treble-environ-rc \
