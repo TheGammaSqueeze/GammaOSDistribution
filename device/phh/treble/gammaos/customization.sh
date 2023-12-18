@@ -5,9 +5,9 @@ then
 	
 	settings put system screen_off_timeout 1800000
 	setenforce 0
-    setprop service.bootanim.exit 0
-    setprop service.bootanim.progress 0
-    start bootanim
+	setprop service.bootanim.exit 0
+        setprop service.bootanim.progress 0
+        start bootanim
 	
 	settings put system screen_brightness 255
 	
@@ -49,9 +49,11 @@ then
 	settings put secure immersive_mode_confirmations confirmed
 	settings put secure ui_night_mode 2	
 	
-	settings put global window_animation_scale 0
-	settings put global transition_animation_scale 0
-	settings put global animator_duration_scale 0
+# Only for RK3566
+#	settings put global window_animation_scale 0
+#	settings put global transition_animation_scale 0
+#	settings put global animator_duration_scale 0
+
 
 	settings put global private_dns_mode "hostname"
 	settings put global private_dns_specifier "dns.adguard-dns.com"
@@ -177,7 +179,7 @@ then
 	fi
 
 	setprop service.bootanim.exit 1
-    setprop service.bootanim.progress 1
+        setprop service.bootanim.progress 1
 	
 	input keyevent 61
 	sleep 0.5
@@ -193,9 +195,6 @@ else
 	sleep 1
 	input keyevent 26
 
-	pm enable com.android.phone
-	if [[ $(pm list packages bellavita.toast) != *"bellavita.toast"* ]]; then /system/bin/pm install /system/etc/Toast.apk; fi
-	if [[ $(pm list packages com.aurora.store) != *"com.aurora.store"* ]]; then /system/bin/pm install /system/etc/AuroraStore_4.3.5.apk; fi
 	dumpsys deviceidle whitelist +com.retroarch.aarch64
 	dumpsys deviceidle whitelist +com.magneticchen.daijishou
 	
