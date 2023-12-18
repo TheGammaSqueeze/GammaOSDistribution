@@ -48,7 +48,7 @@ public final class RotationPolicy {
     private static final String TAG = "RotationPolicy";
     private static final int CURRENT_ROTATION = -1;
 
-    private static int sNaturalRotation = Surface.ROTATION_90;
+    private static int sNaturalRotation = -1;
 
     private RotationPolicy() {
     }
@@ -267,7 +267,7 @@ public final class RotationPolicy {
             // do nothing
         }
 
-        return Surface.ROTATION_90;
+        return Surface.ROTATION_0;
     }
 
     /**
