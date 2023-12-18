@@ -126,9 +126,9 @@ then
 	dumpsys deviceidle whitelist +com.retroarch.aarch64
 	dumpsys deviceidle whitelist +com.magneticchen.daijishou
 
-	/system/bin/pm install /system/etc/AuroraStore_4.3.5.apk
+#	/system/bin/pm install /system/etc/AuroraStore_4.3.5.apk
 	/system/bin/pm install /system/etc/Firefox_120.0.1.apk
-	/system/bin/pm install /system/etc/Toast.apk
+#	/system/bin/pm install /system/etc/Toast.apk
 	/system/bin/pm install /system/etc/RetroArch_aarch64.apk
 
 	/system/bin/tar -xvf /system/etc/roms.tar.gz -C /
@@ -153,11 +153,11 @@ then
 	/system/bin/rm -rf /data/tmpsetup/data/data/com.retroarch.aarch64/code_cache
 	/system/bin/cp -pdrav /data/tmpsetup/data/data/com.retroarch.aarch64 /data/data/
 	/system/bin/rm -rf /data/tmpsetup/*
-	
 
-	
+
+
 	screensize=$(wm size)
-    # for RG405M
+    	# for RG405M
 	if [[ "$screensize" == *"480x640"* ]]; then
 	settings put system accelerometer_rotation 0
 	settings put system user_rotation 1
