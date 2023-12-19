@@ -19,7 +19,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 $(call inherit-product, vendor/hardware_overlay/overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 #Those overrides are here because Huawei's init read properties
 #from /system/etc/prop.default, then /vendor/build.prop, then /system/build.prop
@@ -141,15 +141,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/phh/treble/files/adbd.rc:system/etc/init/adbd.rc
 
-#MTK incoming SMS fix
-PRODUCT_PACKAGES += \
-	mtk-sms-fwk-ready
-
-# Helper to debug Xiaomi motorized camera
-PRODUCT_PACKAGES += \
-	xiaomi-motor \
-	oneplus-motor
-
 PRODUCT_PACKAGES += \
 	Stk
 
@@ -169,9 +160,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
         device/phh/treble/ld.config.26.txt:system/etc/ld.config.26.txt \
-
-PRODUCT_PACKAGES += \
-    asus-motor
 
 # Privapp-permissions whitelist for PhhTrebleApp
 PRODUCT_COPY_FILES += \
