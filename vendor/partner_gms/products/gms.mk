@@ -11,7 +11,6 @@ DONT_UNCOMPRESS_PRIV_APPS_DEXS := true
 
 # GMS mandatory core packages
 PRODUCT_PACKAGES := \
-    AndroidAutoStub \
     AndroidPlatformServices \
     ConfigUpdater \
     GoogleExtShared \
