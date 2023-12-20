@@ -18,6 +18,6 @@
 # hardware, and install to the product partition.
 
 # /product packages
-PRODUCT_PACKAGES += \
-    Dialer \
-    ImsServiceEntitlement \
+#PRODUCT_PACKAGES += \
+#    Dialer \
+#    ImsServiceEntitlement \

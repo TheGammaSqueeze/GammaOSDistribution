@@ -55,8 +55,8 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/nfc/libnfc-nci.conf:system/phh/libnfc-nci-oreo.conf \
 
 # LineageOS build may need this to make NFC work
-PRODUCT_PACKAGES += \
-        NfcNci \
+#PRODUCT_PACKAGES += \
+#        NfcNci \
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/rw-system.sh:system/bin/rw-system.sh \
@@ -141,8 +141,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/phh/treble/files/adbd.rc:system/etc/init/adbd.rc
 
-PRODUCT_PACKAGES += \
-	Stk
+#PRODUCT_PACKAGES += \
+#	Stk
 
 PRODUCT_PACKAGES += \
 	resetprop_phh
