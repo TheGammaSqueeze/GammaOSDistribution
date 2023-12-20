@@ -14,22 +14,15 @@ PRODUCT_PACKAGES := \
     AndroidPlatformServices \
     ConfigUpdater \
     GoogleExtShared \
-    GoogleFeedback \
-    GoogleLocationHistory \
     GoogleOneTimeInitializer \
     GooglePackageInstaller \
     GooglePartnerSetup \
-    GooglePrintRecommendationService \
-    GoogleRestore \
     GoogleServicesFramework \
-    GoogleCalendarSyncAdapter \
-    GoogleContactsSyncAdapter \
     SpeechServicesByGoogle \
     GmsCore \
     Phonesky \
     SetupWizard \
-    WebViewGoogle \
-    Wellbeing
+    WebViewGoogle
 
 # GMS common RRO packages
 PRODUCT_PACKAGES += GmsConfigOverlayCommon GmsConfigOverlayGSA
@@ -48,7 +41,6 @@ PRODUCT_PACKAGES += \
     split_permissions_google \
     preferred_apps_google \
     sysconfig_google \
-    sysconfig_wellbeing \
     sysconfig_d2d_cable_migration_feature \
     google_hiddenapi_package_allowlist
 
