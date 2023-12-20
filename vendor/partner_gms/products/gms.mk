@@ -57,30 +57,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += $(ANDROID_PARTNER_GMS_HOME)/overlay/gms_overlay
 
 # GMS mandatory application packages
-PRODUCT_PACKAGES += \
-    Chrome \
-    Drive \
-    Gmail2 \
-    Duo \
-    Maps \
-    YTMusic \
-    Photos \
-    Velvet \
-    Videos \
-    YouTube
+#PRODUCT_PACKAGES += \
+#    Chrome \
+#    Drive \
+#    Gmail2 \
+#    Duo \
+#    Maps \
+#    YTMusic \
+#    Photos \
+#    Velvet \
+#    Videos \
+#    YouTube
 
 # GMS comms suite
 $(call inherit-product, $(ANDROID_PARTNER_GMS_HOME)/products/google_comms_suite.mk)
 
 # GMS optional application packages
 PRODUCT_PACKAGES += \
-    CalendarGoogle \
-    DeskClockGoogle \
+#    CalendarGoogle \
+#    DeskClockGoogle \
     LatinImeGoogle \
-    TagGoogle \
-    talkback \
-    Keep \
-    CalculatorGoogle
+#    TagGoogle \
+    talkback
+#    Keep \
+#    CalculatorGoogle
 
 # GMS sample application packages
 PRODUCT_PACKAGES += \
@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
     SearchLauncherQuickStep
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.setupwizard.rotation_locked=true \
+    ro.setupwizard.rotation_locked=false \
     setupwizard.theme=glif_v3_light \
     ro.opa.eligible_device=true \
     ro.com.google.gmsversion=12_202110
