@@ -9,7 +9,6 @@ PRODUCT_PACKAGES := $(filter-out GoogleContacts, $(PRODUCT_PACKAGES))
 
 PRODUCT_PACKAGES += \
 	phh-gapps-overrides \
-	Chrome \
 	GoogleContactsSyncAdapter \
 	talkback \
 
@@ -31,10 +30,6 @@ GAPPS_FORCE_PACKAGE_OVERRIDES := true
 GAPPS_FORCE_BROWSER_OVERRIDES := true
 GAPPS_FORCE_WEBVIEW_OVERRIDES := true
 PRODUCT_PACKAGES += \
-       Chrome \
-       CalculatorGoogle \
-       PrebuiltDeskClockGoogle \
-       CalendarGooglePrebuilt \
        LatinImeGoogle \
        phh-overrides
 

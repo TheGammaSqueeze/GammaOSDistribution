@@ -12,9 +12,9 @@ PRODUCT_PACKAGES += \
     apns-conf.xml
 
 # Telephony packages
-PRODUCT_PACKAGES += \
-    messaging \
-    Stk
+#PRODUCT_PACKAGES += \
+#    messaging \
+#    Stk
 
 # Default ringtone
 PRODUCT_PRODUCT_PROPERTIES += \

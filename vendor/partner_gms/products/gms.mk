@@ -55,31 +55,13 @@ PRODUCT_PACKAGES += \
 # Overlay for GMS devices: default backup transport in SettingsProvider
 PRODUCT_PACKAGE_OVERLAYS += $(ANDROID_PARTNER_GMS_HOME)/overlay/gms_overlay
 
-# GMS mandatory application packages
-#PRODUCT_PACKAGES += \
-#    Chrome \
-#    Drive \
-#    Gmail2 \
-#    Duo \
-#    Maps \
-#    YTMusic \
-#    Photos \
-#    Velvet \
-#    Videos \
-#    YouTube
-
 # GMS comms suite
 $(call inherit-product, $(ANDROID_PARTNER_GMS_HOME)/products/google_comms_suite.mk)
 
 # GMS optional application packages
 PRODUCT_PACKAGES += \
-#    CalendarGoogle \
-#    DeskClockGoogle \
     LatinImeGoogle \
-#    TagGoogle \
     talkback
-#    Keep \
-#    CalculatorGoogle
 
 # GMS sample application packages
 PRODUCT_PACKAGES += \
