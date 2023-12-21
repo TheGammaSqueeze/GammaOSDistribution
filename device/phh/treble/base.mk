@@ -96,7 +96,9 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/aptx/lib/libaptXHD_encoder.so:system/aptx/lib/libaptXHD_encoder.so \
         device/phh/treble/gammaos/aptx/lib/libaptX_encoder.so:system/aptx/lib/libaptX_encoder.so \
         device/phh/treble/gammaos/aptx/lib64/libaptXHD_encoder.so:system/aptx/lib64/libaptXHD_encoder.so \
-        device/phh/treble/gammaos/aptx/lib64/libaptX_encoder.so:system/aptx/lib64/libaptX_encoder.so
+        device/phh/treble/gammaos/aptx/lib64/libaptX_encoder.so:system/aptx/lib64/libaptX_encoder.so \
+        device/phh/treble/gammaos/inotifytools/inotifywait:system/bin/inotifywait \
+        device/phh/treble/gammaos/inotifytools/inotifywatch:system/bin/inotifywatch
 
 PRODUCT_PACKAGES += \
 	treble-environ-rc \
