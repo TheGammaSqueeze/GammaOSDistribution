@@ -1,7 +1,5 @@
 #!/system/bin/sh
 
-/system/bin/setclock_max.sh
-
 vndk="$(getprop persist.sys.vndk)"
 [ -z "$vndk" ] && vndk="$(getprop ro.vndk.version |grep -oE '^[0-9]+')"
 
