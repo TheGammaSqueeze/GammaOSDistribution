@@ -23,3 +23,7 @@ echo "1866" > /sys/class/devfreq/scene-frequency/max_freq
 echo "255" > /sys/class/leds/sc27xx\:blue/brightness
 echo "0" > /sys/class/leds/sc27xx\:green/brightness
 echo "0" > /sys/class/leds/sc27xx\:red/brightness
+
+( sleep 5s; echo "0" > /sys/class/leds/sc27xx\:blue/brightness ) &
+( sleep 5s; echo "0" > /sys/class/leds/sc27xx\:green/brightness ) &
+( sleep 5s; echo "0" > /sys/class/leds/sc27xx\:red/brightness ) &
