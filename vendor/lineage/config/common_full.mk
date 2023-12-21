@@ -19,5 +19,5 @@ PRODUCT_PACKAGES += \
     FontRubikOverlay
 
 # Recorder
-PRODUCT_PACKAGES += \
-    Recorder
+#PRODUCT_PACKAGES += \
+#    Recorder

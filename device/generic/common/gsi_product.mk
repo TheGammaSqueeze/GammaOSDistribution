@@ -20,10 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 
 PRODUCT_PACKAGES += \
     Browser2 \
-    Camera2 \
-    Dialer \
     LatinIME \
-    messaging \
 
 # Default AOSP sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)

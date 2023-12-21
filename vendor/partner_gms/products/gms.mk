@@ -11,26 +11,18 @@ DONT_UNCOMPRESS_PRIV_APPS_DEXS := true
 
 # GMS mandatory core packages
 PRODUCT_PACKAGES := \
-    AndroidAutoStub \
     AndroidPlatformServices \
     ConfigUpdater \
     GoogleExtShared \
-    GoogleFeedback \
-    GoogleLocationHistory \
     GoogleOneTimeInitializer \
     GooglePackageInstaller \
     GooglePartnerSetup \
-    GooglePrintRecommendationService \
-    GoogleRestore \
     GoogleServicesFramework \
-    GoogleCalendarSyncAdapter \
-    GoogleContactsSyncAdapter \
     SpeechServicesByGoogle \
     GmsCore \
     Phonesky \
     SetupWizard \
-    WebViewGoogle \
-    Wellbeing
+    WebViewGoogle
 
 # GMS common RRO packages
 PRODUCT_PACKAGES += GmsConfigOverlayCommon GmsConfigOverlayGSA
@@ -49,38 +41,19 @@ PRODUCT_PACKAGES += \
     split_permissions_google \
     preferred_apps_google \
     sysconfig_google \
-    sysconfig_wellbeing \
     sysconfig_d2d_cable_migration_feature \
     google_hiddenapi_package_allowlist
 
 # Overlay for GMS devices: default backup transport in SettingsProvider
 PRODUCT_PACKAGE_OVERLAYS += $(ANDROID_PARTNER_GMS_HOME)/overlay/gms_overlay
 
-# GMS mandatory application packages
-PRODUCT_PACKAGES += \
-    Chrome \
-    Drive \
-    Gmail2 \
-    Duo \
-    Maps \
-    YTMusic \
-    Photos \
-    Velvet \
-    Videos \
-    YouTube
-
 # GMS comms suite
 $(call inherit-product, $(ANDROID_PARTNER_GMS_HOME)/products/google_comms_suite.mk)
 
 # GMS optional application packages
 PRODUCT_PACKAGES += \
-    CalendarGoogle \
-    DeskClockGoogle \
     LatinImeGoogle \
-    TagGoogle \
-    talkback \
-    Keep \
-    CalculatorGoogle
+    talkback
 
 # GMS sample application packages
 PRODUCT_PACKAGES += \
@@ -88,7 +61,7 @@ PRODUCT_PACKAGES += \
     SearchLauncherQuickStep
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.setupwizard.rotation_locked=true \
+    ro.setupwizard.rotation_locked=false \
     setupwizard.theme=glif_v3_light \
     ro.opa.eligible_device=true \
     ro.com.google.gmsversion=12_202110
