@@ -89,6 +89,8 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/retroarch/roms.tar.gz:system/etc/roms.tar.gz \
         device/phh/treble/gammaos/rgp2xbox/rgp2xbox:system/bin/rgp2xbox \
         device/phh/treble/gammaos/rgp2xbox/rgp2xbox.sh:system/bin/rgp2xbox.sh \
+        device/phh/treble/gammaos/rgp2xbox/setdpadanalogtoggle_on.sh:system/bin/setdpadanalogtoggle_on.sh \
+        device/phh/treble/gammaos/rgp2xbox/setdpadanalogtoggle_off.sh:system/bin/setdpadanalogtoggle_off.sh \
         device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
         device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
