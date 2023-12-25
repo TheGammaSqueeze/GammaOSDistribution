@@ -95,11 +95,11 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-                sendShellCommand("/system/bin/setdpadanalogtoggle_off.sh");
+                sendShellCommand("/system/bin/setdpadanalogtoggle_on.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setdpadanalogtoggle_on.sh");
+                sendShellCommand("/system/bin/setdpadanalogtoggle_off.sh");
                 currentState = STATE_ONE;
                 break;
         }
