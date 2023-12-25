@@ -57,7 +57,7 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
     private int currentState = STATE_ONE;
 
 
-    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_device_fan_on);
+    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_qs_plus);
     private final Receiver mReceiver = new Receiver();
 
     @Inject
@@ -99,7 +99,7 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setdpadanalogtoggle_off.sh");
+                sendShellCommand("/system/bin/setdpadanalogtoggle_on.sh");
                 currentState = STATE_ONE;
                 break;
         }
@@ -131,12 +131,12 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
         switch (currentState) {
             case STATE_ONE:
                 state.label = "DPAD/Analog Swap Off";
-                state.icon = ResourceIcon.get(R.drawable.ic_device_fan_off);
+                state.icon = ResourceIcon.get(R.drawable.ic_qs_plus);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
                 state.label = "DPAD/Analog Swap On";
-                state.icon = ResourceIcon.get(R.drawable.ic_device_fan_on);
+                state.icon = ResourceIcon.get(R.drawable.ic_qs_circle);
                 state.state = Tile.STATE_ACTIVE;
                 break;
         }
