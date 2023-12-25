@@ -54,7 +54,7 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
 
     private static final int STATE_ONE = 0;
     private static final int STATE_TWO = 1;
-    private int currentState = STATE_ONE;
+    private int currentState;
 
 
     private final Icon mIcon = ResourceIcon.get(R.drawable.ic_qs_plus);
@@ -73,7 +73,18 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
     ) {
         super(host, backgroundLooper, mainHandler, falsingManager, metricsLogger,
                 statusBarStateController, activityStarter, qsLogger);
+	currentState = readDpadAnalogSwapValue(); // Initialize currentState based on DPAD_ANALOG_SWAP
         mReceiver.init();
+    }
+
+    private int readDpadAnalogSwapValue() {
+        try {
+            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/DPAD_ANALOG_SWAP");
+            return Integer.parseInt(commandOutput.trim());
+        } catch (NumberFormatException e) {
+            Log.e("DpadAnalogToggleTile", "Error parsing DPAD_ANALOG_SWAP value", e);
+            return STATE_ONE; // default value if reading fails
+        }
     }
 
     @Override
@@ -142,18 +153,40 @@ public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
         }
     }
 
-    private void sendShellCommand(String command) {
+
+    private String sendShellCommand(String command) {
+        StringBuilder output = new StringBuilder();
+        Process process = null;
+        BufferedReader reader = null;
+
         try {
-        Process process = Runtime.getRuntime().exec(command); // Execute the command directly
-        OutputStream os = process.getOutputStream();
-        os.write("exit\n".getBytes());
-        os.flush();
-        os.close();
-        process.waitFor();
+            process = Runtime.getRuntime().exec(command); // Execute the command
+            reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                output.append(line);
+            }
+
+            process.waitFor();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (process != null) {
+                process.destroy();
+            }
         }
+
+        return output.toString();
     }
+
 
     private final class Receiver extends BroadcastReceiver {
         public void init() {
