@@ -47,6 +47,10 @@ import com.android.systemui.qs.tileimpl.QSTileImpl;
 
 import javax.inject.Inject;
 import java.io.OutputStream;
+import android.util.Log;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 /** Quick settings tile: Fan **/
 public class FanTile extends QSTileImpl<BooleanState> {
@@ -56,7 +60,7 @@ public class FanTile extends QSTileImpl<BooleanState> {
     private static final int STATE_TWO = 1;
     private static final int STATE_THREE = 2;
     private static final int STATE_FOUR = 3;
-    private int currentState = STATE_ONE;
+    private int currentState;
 
 
     private final Icon mIcon = ResourceIcon.get(R.drawable.ic_device_fan_on);
@@ -75,7 +79,18 @@ public class FanTile extends QSTileImpl<BooleanState> {
     ) {
         super(host, backgroundLooper, mainHandler, falsingManager, metricsLogger,
                 statusBarStateController, activityStarter, qsLogger);
+	currentState = readFanControlValue(); // Initialize currentState based on FAN_CONTROL
         mReceiver.init();
+    }
+
+    private int readFanControlValue() {
+        try {
+            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/FAN_CONTROL");
+            return Integer.parseInt(commandOutput.trim());
+        } catch (NumberFormatException e) {
+            Log.e("DpadAnalogToggleTile", "Error parsing FAN_CONTROL value", e);
+            return STATE_ONE; // default value if reading fails
+        }
     }
 
     @Override
@@ -97,15 +112,19 @@ public class FanTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-                sendShellCommand("echo 1 > /sys/devices/platform/singleadc-joypad/fan_power && echo 1 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm_en && echo 204 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm1");
+		sendShellCommand("/system/bin/setfanvalue_off.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("echo 1 > /sys/devices/platform/singleadc-joypad/fan_power && echo 1 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm_en && echo 255 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm1");
+                sendShellCommand("/system/bin/setfanvalue_auto.sh");
                 currentState = STATE_THREE;
                 break;
             case STATE_THREE:
-                sendShellCommand("echo 0 > /sys/devices/platform/singleadc-joypad/fan_power && echo 0 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm_en && echo 0 > /sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm1");
+                sendShellCommand("/system/bin/setfanvalue_cool.sh");
+                currentState = STATE_FOUR;
+                break;
+            case STATE_FOUR:
+                sendShellCommand("/system/bin/setfanvalue_max.sh");
                 currentState = STATE_ONE;
                 break;
         }
@@ -141,11 +160,16 @@ public class FanTile extends QSTileImpl<BooleanState> {
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "Fan Cool";
+                state.label = "Fan Auto";
                 state.icon = ResourceIcon.get(R.drawable.ic_device_fan_on);
                 state.state = Tile.STATE_ACTIVE;
                 break;
             case STATE_THREE:
+                state.label = "Fan Cool";
+                state.icon = ResourceIcon.get(R.drawable.ic_device_fan_on);
+                state.state = Tile.STATE_ACTIVE;
+                break;
+            case STATE_FOUR:
                 state.label = "Fan Max";
                 state.icon = ResourceIcon.get(R.drawable.ic_device_fan_on);
                 state.state = Tile.STATE_ACTIVE;
@@ -153,18 +177,37 @@ public class FanTile extends QSTileImpl<BooleanState> {
         }
     }
 
-    private void sendShellCommand(String command) {
+    private String sendShellCommand(String command) {
+        StringBuilder output = new StringBuilder();
+        Process process = null;
+        BufferedReader reader = null;
+
         try {
-            Process process = Runtime.getRuntime().exec("su");
-            OutputStream os = process.getOutputStream();
-            os.write((command + "\n").getBytes());
-            os.write("exit\n".getBytes());
-            os.flush();
-            os.close();
+            process = Runtime.getRuntime().exec(command); // Execute the command
+            reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                output.append(line);
+            }
+
             process.waitFor();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (process != null) {
+                process.destroy();
+            }
         }
+
+        return output.toString();
     }
 
     private final class Receiver extends BroadcastReceiver {
