@@ -99,6 +99,13 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/gammaos/rgp2xbox/setfanvalue_cool.sh:system/bin/setfanvalue_cool.sh \
 	device/phh/treble/gammaos/rgp2xbox/setfanvalue_max.sh:system/bin/setfanvalue_max.sh \
 	device/phh/treble/gammaos/rgp2xbox/setfanvalue_off.sh:system/bin/setfanvalue_off.sh \
+        device/phh/treble/gammaos/rgp2xbox/setabxyvalue_default.sh:system/bin/setabxyvalue_default.sh \
+        device/phh/treble/gammaos/rgp2xbox/setabxyvalue_swapped.sh:system/bin/setabxyvalue_swapped.sh \
+        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_default.sh:system/bin/setanalogaxisvalue_default.sh \
+        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_swapped.sh:system/bin/setanalogaxisvalue_swapped.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_max.sh:system/bin/setclockvalue_max.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_powersave.sh:system/bin/setclockvalue_powersave.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_stock.sh:system/bin/setclockvalue_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
         device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
