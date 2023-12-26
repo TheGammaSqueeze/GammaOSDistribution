@@ -112,19 +112,19 @@ public class FanTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-		sendShellCommand("/system/bin/setfanvalue_off.sh");
+		sendShellCommand("/system/bin/setfanvalue_auto.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setfanvalue_auto.sh");
+                sendShellCommand("/system/bin/setfanvalue_cool.sh");
                 currentState = STATE_THREE;
                 break;
             case STATE_THREE:
-                sendShellCommand("/system/bin/setfanvalue_cool.sh");
+                sendShellCommand("/system/bin/setfanvalue_max.sh");
                 currentState = STATE_FOUR;
                 break;
             case STATE_FOUR:
-                sendShellCommand("/system/bin/setfanvalue_max.sh");
+                sendShellCommand("/system/bin/setfanvalue_off.sh");
                 currentState = STATE_ONE;
                 break;
         }
