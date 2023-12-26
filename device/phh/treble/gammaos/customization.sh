@@ -178,6 +178,12 @@ then
 	/system/bin/chown -R $launcheruser:media_rw /sdcard/RetroArch
 	fi
 
+
+        is405v=$(getprop ro.product.vendor_dlkm.model)
+        if [[ "$is405v" == *"RG405V"* ]]; then
+	value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+        fi
+
 	setprop service.bootanim.exit 1
         setprop service.bootanim.progress 1
 
@@ -197,6 +203,11 @@ else
 
 	dumpsys deviceidle whitelist +com.retroarch.aarch64
 	dumpsys deviceidle whitelist +com.magneticchen.daijishou
+
+        is405v=$(getprop ro.product.vendor_dlkm.model)
+        if [[ "$is405v" == *"RG405V"* ]]; then
+        value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+        fi
 
 fi
 
