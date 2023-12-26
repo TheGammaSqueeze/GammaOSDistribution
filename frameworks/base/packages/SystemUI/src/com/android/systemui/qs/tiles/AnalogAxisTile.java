@@ -52,8 +52,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-/** Quick settings tile: ABXY **/
-public class ABXYTile extends QSTileImpl<BooleanState> {
+/** Quick settings tile: AnalogAxis **/
+public class AnalogAxisTile extends QSTileImpl<BooleanState> {
 
 
     private static final int STATE_ONE = 0;
@@ -61,11 +61,11 @@ public class ABXYTile extends QSTileImpl<BooleanState> {
     private int currentState;
 
 
-    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_sysbar_rotate_button_ccw_start_0);
+    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_add_circle);
     private final Receiver mReceiver = new Receiver();
 
     @Inject
-    public ABXYTile(
+    public AnalogAxisTile(
             QSHost host,
             @Background Looper backgroundLooper,
             @Main Handler mainHandler,
@@ -77,16 +77,16 @@ public class ABXYTile extends QSTileImpl<BooleanState> {
     ) {
         super(host, backgroundLooper, mainHandler, falsingManager, metricsLogger,
                 statusBarStateController, activityStarter, qsLogger);
-	currentState = readABXYControlValue(); // Initialize currentState based on ABXY_LAYOUT
+	currentState = readAnalogAxisControlValue(); // Initialize currentState based on ANALOG_AXIS
         mReceiver.init();
     }
 
-    private int readABXYControlValue() {
+    private int readAnalogAxisControlValue() {
         try {
-            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/ABXY_LAYOUT");
+            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/ANALOG_AXIS");
             return Integer.parseInt(commandOutput.trim());
         } catch (NumberFormatException e) {
-            Log.e("ABXYToggleTile", "Error parsing ABXY_LAYOUT value", e);
+            Log.e("AnalogAxisToggleTile", "Error parsing ANALOG_AXIS value", e);
             return STATE_ONE; // default value if reading fails
         }
     }
@@ -110,11 +110,11 @@ public class ABXYTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-		sendShellCommand("/system/bin/setabxyvalue_swapped.sh");
+		sendShellCommand("/system/bin/setanalogaxisvalue_swapped.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setabxyvalue_default.sh");
+                sendShellCommand("/system/bin/setanalogaxisvalue_default.sh");
                 currentState = STATE_ONE;
                 break;
         }
@@ -133,7 +133,7 @@ public class ABXYTile extends QSTileImpl<BooleanState> {
 
     @Override
     public CharSequence getTileLabel() {
-        return "ABXY Layout";
+        return "Left Analog Axis";
     }
 
     @Override
@@ -145,13 +145,13 @@ public class ABXYTile extends QSTileImpl<BooleanState> {
     protected void handleUpdateState(BooleanState state, Object arg) {
         switch (currentState) {
             case STATE_ONE:
-                state.label = "ABXY Default";
-                state.icon = ResourceIcon.get(R.drawable.ic_sysbar_rotate_button_ccw_start_0);
+                state.label = "Left Analog Default";
+                state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "ABXY Swapped";
-                state.icon = ResourceIcon.get(R.drawable.ic_sysbar_rotate_button_ccw_start_90);
+                state.label = "Left Analog Swapped";
+                state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_ACTIVE;
                 break;
         }
