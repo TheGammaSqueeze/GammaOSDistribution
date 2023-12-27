@@ -178,6 +178,28 @@ then
 	/system/bin/chown -R $launcheruser:media_rw /sdcard/RetroArch
 	fi
 
+
+        is405v=$(getprop ro.product.vendor_dlkm.model)
+        if [[ "$is405v" == *"RG405V"* ]]; then
+	value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+        fi
+
+
+        isktr1=$(getprop ro.vendor.soc.model)
+        if [[ "$isktr1" == *"MT6789V/CD"* ]]; then
+	/system/bin/pm install /system/etc/com.ktpocket.launcher.apk
+        settings put system accelerometer_rotation 0
+        settings put system user_rotation 1
+        settings put system accelerometer_rotation_angles 2
+        settings put system accelerometer_rotation 1
+        settings put --lineage system lockscreen_rotation 1
+        wm size 1620x1080
+        wm reset
+        /system/bin/tar -xvf /system/etc/retroarch64sdcard2-ktr1.tar.gz -C /
+        launcheruser=$( stat -c "%U" /data/data/com.retroarch.aarch64)
+        /system/bin/chown -R $launcheruser:ext_data_rw /sdcard/Android/data/com.retroarch.aarch64
+        fi
+
 	setprop service.bootanim.exit 1
         setprop service.bootanim.progress 1
 
@@ -197,6 +219,11 @@ else
 
 	dumpsys deviceidle whitelist +com.retroarch.aarch64
 	dumpsys deviceidle whitelist +com.magneticchen.daijishou
+
+        is405v=$(getprop ro.product.vendor_dlkm.model)
+        if [[ "$is405v" == *"RG405V"* ]]; then
+        value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+        fi
 
 fi
 

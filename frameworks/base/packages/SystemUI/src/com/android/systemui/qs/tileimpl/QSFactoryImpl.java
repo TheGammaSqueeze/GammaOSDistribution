@@ -33,6 +33,8 @@ import com.android.systemui.qs.tiles.AODTile;
 import com.android.systemui.qs.tiles.BatterySaverTile;
 import com.android.systemui.qs.tiles.BluetoothTile;
 import com.android.systemui.qs.tiles.FanTile;
+import com.android.systemui.qs.tiles.ABXYTile;
+import com.android.systemui.qs.tiles.DpadAnalogToggleTile;
 import com.android.systemui.qs.tiles.CaffeineTile;
 import com.android.systemui.qs.tiles.CameraToggleTile;
 import com.android.systemui.qs.tiles.CastTile;
@@ -104,7 +106,9 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<QuickAccessWalletTile> mQuickAccessWalletTileProvider;
     private final Provider<AmbientDisplayTile> mAmbientDisplayTileProvider;
     private final Provider<AODTile> mAODTileProvider;
+    private final Provider<DpadAnalogToggleTile> mDpadAnalogToggleTileProvider;
     private final Provider<FanTile> mFanTileProvider;
+    private final Provider<ABXYTile> mABXYTileProvider;
     private final Provider<CaffeineTile> mCaffeineTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
     private final Provider<ReadingModeTile> mReadingModeTileProvider;
@@ -150,7 +154,9 @@ public class QSFactoryImpl implements QSFactory {
             Provider<QuickAccessWalletTile> quickAccessWalletTileProvider,
             Provider<AmbientDisplayTile> ambientDisplayTileProvider,
             Provider<AODTile> aodTileProvider,
+            Provider<DpadAnalogToggleTile> dpadAnalogToggleTileProvider,
             Provider<FanTile> fanTileProvider,
+            Provider<ABXYTile> abxyTileProvider,
             Provider<CaffeineTile> caffeineTileProvider,
             Provider<HeadsUpTile> headsUpTileProvider,
             Provider<PowerShareTile> powerShareTileProvider,
@@ -191,7 +197,9 @@ public class QSFactoryImpl implements QSFactory {
         mQuickAccessWalletTileProvider = quickAccessWalletTileProvider;
         mAmbientDisplayTileProvider = ambientDisplayTileProvider;
         mAODTileProvider = aodTileProvider;
+        mDpadAnalogToggleTileProvider = dpadAnalogToggleTileProvider;
         mFanTileProvider = fanTileProvider;
+        mABXYTileProvider = abxyTileProvider;
         mCaffeineTileProvider = caffeineTileProvider;
         mHeadsUpTileProvider = headsUpTileProvider;
         mReadingModeTileProvider = readingModeTileProvider;
@@ -220,8 +228,12 @@ public class QSFactoryImpl implements QSFactory {
                 return mInternetTileProvider.get();
             case "bt":
                 return mBluetoothTileProvider.get();
+            case "dpadAnalogToggle":
+                return mDpadAnalogToggleTileProvider.get();
             case "fan":
                 return mFanTileProvider.get();
+            case "abxy":
+                return mABXYTileProvider.get();
             case "cell":
                 return mCellularTileProvider.get();
             case "dnd":

@@ -89,6 +89,23 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/retroarch/roms.tar.gz:system/etc/roms.tar.gz \
         device/phh/treble/gammaos/rgp2xbox/rgp2xbox:system/bin/rgp2xbox \
         device/phh/treble/gammaos/rgp2xbox/rgp2xbox.sh:system/bin/rgp2xbox.sh \
+        device/phh/treble/gammaos/rgp2xbox/setdpadanalogtoggle_on.sh:system/bin/setdpadanalogtoggle_on.sh \
+        device/phh/treble/gammaos/rgp2xbox/setdpadanalogtoggle_off.sh:system/bin/setdpadanalogtoggle_off.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfan_auto.sh:system/bin/setfan_auto.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfan_cool.sh:system/bin/setfan_cool.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfan_max.sh:system/bin/setfan_max.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfan_off.sh:system/bin/setfan_off.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfanvalue_auto.sh:system/bin/setfanvalue_auto.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfanvalue_cool.sh:system/bin/setfanvalue_cool.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfanvalue_max.sh:system/bin/setfanvalue_max.sh \
+	device/phh/treble/gammaos/rgp2xbox/setfanvalue_off.sh:system/bin/setfanvalue_off.sh \
+        device/phh/treble/gammaos/rgp2xbox/setabxyvalue_default.sh:system/bin/setabxyvalue_default.sh \
+        device/phh/treble/gammaos/rgp2xbox/setabxyvalue_swapped.sh:system/bin/setabxyvalue_swapped.sh \
+        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_default.sh:system/bin/setanalogaxisvalue_default.sh \
+        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_swapped.sh:system/bin/setanalogaxisvalue_swapped.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_max.sh:system/bin/setclockvalue_max.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_powersave.sh:system/bin/setclockvalue_powersave.sh \
+        device/phh/treble/gammaos/rgp2xbox/setclockvalue_stock.sh:system/bin/setclockvalue_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_max.sh:system/bin/setclock_max.sh \
         device/phh/treble/gammaos/setclock/setclock_stock.sh:system/bin/setclock_stock.sh \
         device/phh/treble/gammaos/setclock/setclock_powersave.sh:system/bin/setclock_powersave.sh \
@@ -98,7 +115,8 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/aptx/lib64/libaptXHD_encoder.so:system/aptx/lib64/libaptXHD_encoder.so \
         device/phh/treble/gammaos/aptx/lib64/libaptX_encoder.so:system/aptx/lib64/libaptX_encoder.so \
         device/phh/treble/gammaos/inotifytools/inotifywait:system/bin/inotifywait \
-        device/phh/treble/gammaos/inotifytools/inotifywatch:system/bin/inotifywatch
+        device/phh/treble/gammaos/inotifytools/inotifywatch:system/bin/inotifywatch \
+        device/phh/treble/gammaos/ktr1/com.ktpocket.launcher.apk:system/etc/com.ktpocket.launcher.apk
 
 PRODUCT_PACKAGES += \
 	treble-environ-rc \
