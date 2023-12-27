@@ -34,6 +34,8 @@ import com.android.systemui.qs.tiles.BatterySaverTile;
 import com.android.systemui.qs.tiles.BluetoothTile;
 import com.android.systemui.qs.tiles.FanTile;
 import com.android.systemui.qs.tiles.ABXYTile;
+import com.android.systemui.qs.tiles.AnalogAxisTile;
+import com.android.systemui.qs.tiles.PerformanceTile;
 import com.android.systemui.qs.tiles.DpadAnalogToggleTile;
 import com.android.systemui.qs.tiles.CaffeineTile;
 import com.android.systemui.qs.tiles.CameraToggleTile;
@@ -109,6 +111,8 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<DpadAnalogToggleTile> mDpadAnalogToggleTileProvider;
     private final Provider<FanTile> mFanTileProvider;
     private final Provider<ABXYTile> mABXYTileProvider;
+    private final Provider<AnalogAxisTile> mAnalogAxisTileProvider;
+    private final Provider<PerformanceTile> mPerformanceTileProvider;
     private final Provider<CaffeineTile> mCaffeineTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
     private final Provider<ReadingModeTile> mReadingModeTileProvider;
@@ -157,6 +161,8 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DpadAnalogToggleTile> dpadAnalogToggleTileProvider,
             Provider<FanTile> fanTileProvider,
             Provider<ABXYTile> abxyTileProvider,
+            Provider<AnalogAxisTile> analogaxisTileProvider,
+            Provider<PerformanceTile> performanceTileProvider,
             Provider<CaffeineTile> caffeineTileProvider,
             Provider<HeadsUpTile> headsUpTileProvider,
             Provider<PowerShareTile> powerShareTileProvider,
@@ -200,6 +206,8 @@ public class QSFactoryImpl implements QSFactory {
         mDpadAnalogToggleTileProvider = dpadAnalogToggleTileProvider;
         mFanTileProvider = fanTileProvider;
         mABXYTileProvider = abxyTileProvider;
+        mAnalogAxisTileProvider = analogaxisTileProvider;
+        mPerformanceTileProvider = performanceTileProvider;
         mCaffeineTileProvider = caffeineTileProvider;
         mHeadsUpTileProvider = headsUpTileProvider;
         mReadingModeTileProvider = readingModeTileProvider;
@@ -234,6 +242,10 @@ public class QSFactoryImpl implements QSFactory {
                 return mFanTileProvider.get();
             case "abxy":
                 return mABXYTileProvider.get();
+            case "analogaxis":
+                return mAnalogAxisTileProvider.get();
+            case "performance":
+                return mPerformanceTileProvider.get();
             case "cell":
                 return mCellularTileProvider.get();
             case "dnd":
