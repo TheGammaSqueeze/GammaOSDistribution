@@ -156,7 +156,7 @@ public class PerformanceTile extends QSTileImpl<BooleanState> {
                 break;
             case STATE_TWO:
                 state.label = "Normal Performance Mode";
-                state.icon = ResourceIcon.get(R.drawable.ic_reverse_charging);
+                state.icon = ResourceIcon.get(R.drawable.ic_qs_minus);
                 state.state = Tile.STATE_ACTIVE;
                 break;
             case STATE_THREE:
