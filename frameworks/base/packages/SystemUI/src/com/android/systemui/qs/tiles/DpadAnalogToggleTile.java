@@ -47,6 +47,10 @@ import com.android.systemui.qs.tileimpl.QSTileImpl;
 
 import javax.inject.Inject;
 import java.io.OutputStream;
+import android.util.Log;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 /** Quick settings tile: DpadAnalogToggle **/
 public class DpadAnalogToggleTile extends QSTileImpl<BooleanState> {
