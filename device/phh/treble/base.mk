@@ -103,8 +103,8 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/rgp2xbox/setabxyvalue_swapped.sh:system/bin/setabxyvalue_swapped.sh \
         device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_default.sh:system/bin/setanalogaxisvalue_default.sh \
         device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_swapped.sh:system/bin/setanalogaxisvalue_swapped.sh \
-        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_default.sh:system/bin/setrightanalogaxisvalue_default.sh \
-        device/phh/treble/gammaos/rgp2xbox/setanalogaxisvalue_swapped.sh:system/bin/setrightanalogaxisvalue_swapped.sh \
+        device/phh/treble/gammaos/rgp2xbox/setrightanalogaxisvalue_default.sh:system/bin/setrightanalogaxisvalue_default.sh \
+        device/phh/treble/gammaos/rgp2xbox/setrightanalogaxisvalue_swapped.sh:system/bin/setrightanalogaxisvalue_swapped.sh \
         device/phh/treble/gammaos/rgp2xbox/setclockvalue_max.sh:system/bin/setclockvalue_max.sh \
         device/phh/treble/gammaos/rgp2xbox/setclockvalue_powersave.sh:system/bin/setclockvalue_powersave.sh \
         device/phh/treble/gammaos/rgp2xbox/setclockvalue_stock.sh:system/bin/setclockvalue_stock.sh \
