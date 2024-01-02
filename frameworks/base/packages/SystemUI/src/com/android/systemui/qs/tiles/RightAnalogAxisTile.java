@@ -145,12 +145,12 @@ public class RightAnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleUpdateState(BooleanState state, Object arg) {
         switch (currentState) {
             case STATE_ONE:
-                state.label = "Off";
+                state.label = "Invert Right Analog Off";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "On";
+                state.label = "Invert Right Analog On";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_ACTIVE;
                 break;

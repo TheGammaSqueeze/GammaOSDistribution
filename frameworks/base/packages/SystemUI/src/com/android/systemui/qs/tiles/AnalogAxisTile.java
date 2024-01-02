@@ -133,7 +133,7 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
 
     @Override
     public CharSequence getTileLabel() {
-        return "Left Analog Axis";
+        return "Invert Left Analog";
     }
 
     @Override
@@ -145,12 +145,12 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleUpdateState(BooleanState state, Object arg) {
         switch (currentState) {
             case STATE_ONE:
-                state.label = "Left Analog Default";
+                state.label = "Invert Left Analog Off";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "Left Analog Swapped";
+                state.label = "Invert Left Analog On";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_ACTIVE;
                 break;
