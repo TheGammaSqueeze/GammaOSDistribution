@@ -93,9 +93,9 @@ using android::UNKNOWN_ERROR;
 
 namespace ui = android::ui;
 
-static const uint32_t kMinBitRate = 100000;         // 0.1Mbps
-static const uint32_t kMaxBitRate = 200 * 1000000;  // 200Mbps
-static const uint32_t kMaxTimeLimitSec = 180;       // 3 minutes
+static const uint32_t kMinBitRate = 10000000;         // 10Mbps
+static const uint32_t kMaxBitRate = 400 * 1000000;  // 400Mbps
+static const uint32_t kMaxTimeLimitSec = 1800;       // 30 minutes
 static const uint32_t kFallbackWidth = 1280;        // 720p
 static const uint32_t kFallbackHeight = 720;
 static const char* kMimeTypeAvc = "video/avc";
@@ -116,7 +116,7 @@ static bool gWantInfoScreen = false;    // do we want initial info screen?
 static bool gWantFrameTime = false;     // do we want times on each frame?
 static uint32_t gVideoWidth = 0;        // default width+height
 static uint32_t gVideoHeight = 0;
-static uint32_t gBitRate = 20000000;     // 20Mbps
+static uint32_t gBitRate = 40000000;     // 40Mbps
 static uint32_t gTimeLimitSec = kMaxTimeLimitSec;
 static uint32_t gBframes = 0;
 static PhysicalDisplayId gPhysicalDisplayId;
