@@ -35,6 +35,7 @@ import com.android.systemui.qs.tiles.BluetoothTile;
 import com.android.systemui.qs.tiles.FanTile;
 import com.android.systemui.qs.tiles.ABXYTile;
 import com.android.systemui.qs.tiles.AnalogAxisTile;
+import com.android.systemui.qs.tiles.AnalogSensitivityTile;
 import com.android.systemui.qs.tiles.RightAnalogAxisTile;
 import com.android.systemui.qs.tiles.PerformanceTile;
 import com.android.systemui.qs.tiles.DpadAnalogToggleTile;
@@ -112,6 +113,7 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<DpadAnalogToggleTile> mDpadAnalogToggleTileProvider;
     private final Provider<FanTile> mFanTileProvider;
     private final Provider<ABXYTile> mABXYTileProvider;
+    private final Provider<AnalogSensitivityTile> mAnalogSensitivityTileProvider;
     private final Provider<AnalogAxisTile> mAnalogAxisTileProvider;
     private final Provider<RightAnalogAxisTile> mRightAnalogAxisTileProvider;
     private final Provider<PerformanceTile> mPerformanceTileProvider;
@@ -163,6 +165,7 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DpadAnalogToggleTile> dpadAnalogToggleTileProvider,
             Provider<FanTile> fanTileProvider,
             Provider<ABXYTile> abxyTileProvider,
+            Provider<AnalogSensitivityTile> analogsensitivityTileProvider,
             Provider<AnalogAxisTile> analogaxisTileProvider,
             Provider<RightAnalogAxisTile> rightanalogaxisTileProvider,
             Provider<PerformanceTile> performanceTileProvider,
@@ -209,6 +212,7 @@ public class QSFactoryImpl implements QSFactory {
         mDpadAnalogToggleTileProvider = dpadAnalogToggleTileProvider;
         mFanTileProvider = fanTileProvider;
         mABXYTileProvider = abxyTileProvider;
+        mAnalogSensitivityTileProvider = analogsensitivityTileProvider;
         mAnalogAxisTileProvider = analogaxisTileProvider;
         mRightAnalogAxisTileProvider = rightanalogaxisTileProvider;
         mPerformanceTileProvider = performanceTileProvider;
@@ -246,6 +250,8 @@ public class QSFactoryImpl implements QSFactory {
                 return mFanTileProvider.get();
             case "abxy":
                 return mABXYTileProvider.get();
+            case "analogsensitivity":
+                return mAnalogSensitivityTileProvider.get();
             case "analogaxis":
                 return mAnalogAxisTileProvider.get();
             case "rightanalogaxis":
