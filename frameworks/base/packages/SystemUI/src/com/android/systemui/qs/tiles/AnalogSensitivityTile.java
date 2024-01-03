@@ -52,20 +52,23 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-/** Quick settings tile: AnalogAxis **/
-public class AnalogAxisTile extends QSTileImpl<BooleanState> {
+/** Quick settings tile: AnalogSensitivity **/
+public class AnalogSensitivityTile extends QSTileImpl<BooleanState> {
 
 
     private static final int STATE_ONE = 0;
     private static final int STATE_TWO = 1;
+    private static final int STATE_THREE = 2;
+    private static final int STATE_FOUR = 3;
+    private static final int STATE_FIVE = 5;
     private int currentState;
 
 
-    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_add_circle);
+    private final Icon mIcon = ResourceIcon.get(R.drawable.ic_more_vert);
     private final Receiver mReceiver = new Receiver();
 
     @Inject
-    public AnalogAxisTile(
+    public AnalogSensitivityTile(
             QSHost host,
             @Background Looper backgroundLooper,
             @Main Handler mainHandler,
@@ -77,16 +80,16 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     ) {
         super(host, backgroundLooper, mainHandler, falsingManager, metricsLogger,
                 statusBarStateController, activityStarter, qsLogger);
-	currentState = readAnalogAxisControlValue(); // Initialize currentState based on ANALOG_AXIS
+	currentState = readAnalogSensitivityControlValue(); // Initialize currentState based on ANALOG_SENSITIVITY
         mReceiver.init();
     }
 
-    private int readAnalogAxisControlValue() {
+    private int readAnalogSensitivityControlValue() {
         try {
-            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/ANALOG_AXIS");
+            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/ANALOG_SENSITIVITY");
             return Integer.parseInt(commandOutput.trim());
         } catch (NumberFormatException e) {
-            Log.e("AnalogAxisToggleTile", "Error parsing ANALOG_AXIS value", e);
+            Log.e("AnalogSensitivityTile", "Error parsing ANALOG_SENSITIVITY value", e);
             return STATE_ONE; // default value if reading fails
         }
     }
@@ -110,11 +113,23 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-		sendShellCommand("/system/bin/setanalogaxisvalue_swapped.sh");
+		sendShellCommand("/system/bin/setanalogsensitivity_15.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setanalogaxisvalue_default.sh");
+                sendShellCommand("/system/bin/setanalogsensitivity_25.sh");
+                currentState = STATE_THREE;
+                break;
+            case STATE_THREE:
+                sendShellCommand("/system/bin/setanalogsensitivity_50.sh");
+                currentState = STATE_FOUR;
+                break;
+            case STATE_FOUR:
+                sendShellCommand("/system/bin/setanalogsensitivity_custom.sh");
+                currentState = STATE_FIVE;
+                break;
+            case STATE_FIVE:
+                sendShellCommand("/system/bin/setanalogsensitivity_default.sh");
                 currentState = STATE_ONE;
                 break;
         }
@@ -133,7 +148,7 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
 
     @Override
     public CharSequence getTileLabel() {
-        return "Invert Left Analog";
+        return "Analog Sensitivity";
     }
 
     @Override
@@ -145,13 +160,28 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleUpdateState(BooleanState state, Object arg) {
         switch (currentState) {
             case STATE_ONE:
-                state.label = "Invert Left Analog Off";
-                state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
+                state.label = "Normal Analog Sensitivity";
+                state.icon = ResourceIcon.get(R.drawable.ic_more_vert);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "Invert Left Analog On";
-                state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
+                state.label = "Analog Sensitivity -15%";
+                state.icon = ResourceIcon.get(R.drawable.ic_more_vert);
+                state.state = Tile.STATE_ACTIVE;
+                break;
+            case STATE_THREE:
+                state.label = "Analog Sensitivity -25%";
+                state.icon = ResourceIcon.get(R.drawable.ic_more_vert);
+                state.state = Tile.STATE_ACTIVE;
+                break;
+            case STATE_FOUR:
+                state.label = "Analog Sensitivity -50%";
+                state.icon = ResourceIcon.get(R.drawable.ic_more_vert);
+                state.state = Tile.STATE_ACTIVE;
+                break;
+            case STATE_FIVE:
+                state.label = "Analog Sensitivity Custom";
+                state.icon = ResourceIcon.get(R.drawable.ic_more_vert);
                 state.state = Tile.STATE_ACTIVE;
                 break;
         }

@@ -52,8 +52,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-/** Quick settings tile: AnalogAxis **/
-public class AnalogAxisTile extends QSTileImpl<BooleanState> {
+/** Quick settings tile: RightAnalogAxis **/
+public class RightAnalogAxisTile extends QSTileImpl<BooleanState> {
 
 
     private static final int STATE_ONE = 0;
@@ -65,7 +65,7 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     private final Receiver mReceiver = new Receiver();
 
     @Inject
-    public AnalogAxisTile(
+    public RightAnalogAxisTile(
             QSHost host,
             @Background Looper backgroundLooper,
             @Main Handler mainHandler,
@@ -77,16 +77,16 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     ) {
         super(host, backgroundLooper, mainHandler, falsingManager, metricsLogger,
                 statusBarStateController, activityStarter, qsLogger);
-	currentState = readAnalogAxisControlValue(); // Initialize currentState based on ANALOG_AXIS
+	currentState = readRightAnalogAxisControlValue(); // Initialize currentState based on RIGHTANALOG_AXIS
         mReceiver.init();
     }
 
-    private int readAnalogAxisControlValue() {
+    private int readRightAnalogAxisControlValue() {
         try {
-            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/ANALOG_AXIS");
+            String commandOutput = sendShellCommand("od -An -t dI /data/rgp2xbox/RIGHTANALOG_AXIS");
             return Integer.parseInt(commandOutput.trim());
         } catch (NumberFormatException e) {
-            Log.e("AnalogAxisToggleTile", "Error parsing ANALOG_AXIS value", e);
+            Log.e("RightAnalogAxisToggleTile", "Error parsing RIGHTANALOG_AXIS value", e);
             return STATE_ONE; // default value if reading fails
         }
     }
@@ -110,11 +110,11 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleClick(@Nullable View view) {
         switch (currentState) {
             case STATE_ONE:
-		sendShellCommand("/system/bin/setanalogaxisvalue_swapped.sh");
+		sendShellCommand("/system/bin/setrightanalogaxisvalue_swapped.sh");
                 currentState = STATE_TWO;
                 break;
             case STATE_TWO:
-                sendShellCommand("/system/bin/setanalogaxisvalue_default.sh");
+                sendShellCommand("/system/bin/setrightanalogaxisvalue_default.sh");
                 currentState = STATE_ONE;
                 break;
         }
@@ -133,7 +133,7 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
 
     @Override
     public CharSequence getTileLabel() {
-        return "Invert Left Analog";
+        return "Invert Right Analog";
     }
 
     @Override
@@ -145,12 +145,12 @@ public class AnalogAxisTile extends QSTileImpl<BooleanState> {
     protected void handleUpdateState(BooleanState state, Object arg) {
         switch (currentState) {
             case STATE_ONE:
-                state.label = "Invert Left Analog Off";
+                state.label = "Invert Right Analog Off";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_INACTIVE;
                 break;
             case STATE_TWO:
-                state.label = "Invert Left Analog On";
+                state.label = "Invert Right Analog On";
                 state.icon = ResourceIcon.get(R.drawable.ic_add_circle);
                 state.state = Tile.STATE_ACTIVE;
                 break;

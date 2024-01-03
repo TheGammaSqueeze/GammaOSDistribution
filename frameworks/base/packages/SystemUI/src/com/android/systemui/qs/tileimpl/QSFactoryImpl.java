@@ -35,6 +35,8 @@ import com.android.systemui.qs.tiles.BluetoothTile;
 import com.android.systemui.qs.tiles.FanTile;
 import com.android.systemui.qs.tiles.ABXYTile;
 import com.android.systemui.qs.tiles.AnalogAxisTile;
+import com.android.systemui.qs.tiles.AnalogSensitivityTile;
+import com.android.systemui.qs.tiles.RightAnalogAxisTile;
 import com.android.systemui.qs.tiles.PerformanceTile;
 import com.android.systemui.qs.tiles.DpadAnalogToggleTile;
 import com.android.systemui.qs.tiles.CaffeineTile;
@@ -111,7 +113,9 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<DpadAnalogToggleTile> mDpadAnalogToggleTileProvider;
     private final Provider<FanTile> mFanTileProvider;
     private final Provider<ABXYTile> mABXYTileProvider;
+    private final Provider<AnalogSensitivityTile> mAnalogSensitivityTileProvider;
     private final Provider<AnalogAxisTile> mAnalogAxisTileProvider;
+    private final Provider<RightAnalogAxisTile> mRightAnalogAxisTileProvider;
     private final Provider<PerformanceTile> mPerformanceTileProvider;
     private final Provider<CaffeineTile> mCaffeineTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
@@ -161,7 +165,9 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DpadAnalogToggleTile> dpadAnalogToggleTileProvider,
             Provider<FanTile> fanTileProvider,
             Provider<ABXYTile> abxyTileProvider,
+            Provider<AnalogSensitivityTile> analogsensitivityTileProvider,
             Provider<AnalogAxisTile> analogaxisTileProvider,
+            Provider<RightAnalogAxisTile> rightanalogaxisTileProvider,
             Provider<PerformanceTile> performanceTileProvider,
             Provider<CaffeineTile> caffeineTileProvider,
             Provider<HeadsUpTile> headsUpTileProvider,
@@ -206,7 +212,9 @@ public class QSFactoryImpl implements QSFactory {
         mDpadAnalogToggleTileProvider = dpadAnalogToggleTileProvider;
         mFanTileProvider = fanTileProvider;
         mABXYTileProvider = abxyTileProvider;
+        mAnalogSensitivityTileProvider = analogsensitivityTileProvider;
         mAnalogAxisTileProvider = analogaxisTileProvider;
+        mRightAnalogAxisTileProvider = rightanalogaxisTileProvider;
         mPerformanceTileProvider = performanceTileProvider;
         mCaffeineTileProvider = caffeineTileProvider;
         mHeadsUpTileProvider = headsUpTileProvider;
@@ -242,8 +250,12 @@ public class QSFactoryImpl implements QSFactory {
                 return mFanTileProvider.get();
             case "abxy":
                 return mABXYTileProvider.get();
+            case "analogsensitivity":
+                return mAnalogSensitivityTileProvider.get();
             case "analogaxis":
                 return mAnalogAxisTileProvider.get();
+            case "rightanalogaxis":
+                return mRightAnalogAxisTileProvider.get();
             case "performance":
                 return mPerformanceTileProvider.get();
             case "cell":
