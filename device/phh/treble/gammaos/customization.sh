@@ -154,7 +154,7 @@ then
 	/system/bin/cp -pdrav /data/tmpsetup/data/data/com.retroarch.aarch64 /data/data/
 	/system/bin/rm -rf /data/tmpsetup/*
 
-
+	settings put secure sysui_qs_tiles "wifi,bt,performance,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
 
 	screensize=$(wm size)
     	# for RG405M
@@ -182,6 +182,7 @@ then
         is405v=$(getprop ro.product.vendor_dlkm.model)
         if [[ "$is405v" == *"RG405V"* ]]; then
 	value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+	settings put secure sysui_qs_tiles "wifi,bt,performance,fan,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
         fi
 
 
