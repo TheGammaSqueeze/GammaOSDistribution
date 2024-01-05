@@ -1,3 +1,7 @@
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+PRODUCT_PRODUCT_PROPERTIES += ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+
 #Huawei devices don't declare fingerprint and telephony hardware feature
 #TODO: Proper detection
 PRODUCT_COPY_FILES := \

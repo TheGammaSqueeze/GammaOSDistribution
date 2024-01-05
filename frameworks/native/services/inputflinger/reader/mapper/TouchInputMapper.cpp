@@ -470,18 +470,20 @@ void TouchInputMapper::configureParameters() {
     getDeviceContext().getConfiguration().tryGetProperty(String8("touch.orientationAware"),
                                                          mParameters.orientationAware);
 
-    mParameters.orientation = Parameters::Orientation::ORIENTATION_0;
+    mParameters.orientation = Parameters::Orientation::ORIENTATION_90;
     String8 orientationString;
     if (getDeviceContext().getConfiguration().tryGetProperty(String8("touch.orientation"),
                                                              orientationString)) {
         if (mParameters.deviceType != Parameters::DeviceType::TOUCH_SCREEN) {
             ALOGW("The configuration 'touch.orientation' is only supported for touchscreens.");
         } else if (orientationString == "ORIENTATION_90") {
-            mParameters.orientation = Parameters::Orientation::ORIENTATION_90;
-        } else if (orientationString == "ORIENTATION_180") {
             mParameters.orientation = Parameters::Orientation::ORIENTATION_180;
-        } else if (orientationString == "ORIENTATION_270") {
+        } else if (orientationString == "ORIENTATION_180") {
             mParameters.orientation = Parameters::Orientation::ORIENTATION_270;
+        } else if (orientationString == "ORIENTATION_270") {
+            mParameters.orientation = Parameters::Orientation::ORIENTATION_0;
+        } else if (orientationString == "ORIENTATION_0") {
+            mParameters.orientation = Parameters::Orientation::ORIENTATION_90;
         } else if (orientationString != "ORIENTATION_0") {
             ALOGW("Invalid value for touch.orientation: '%s'", orientationString.string());
         }
