@@ -117,17 +117,17 @@ PRODUCT_COPY_FILES += \
         device/phh/treble/gammaos/rgp2xbox/setanalogsensitivity_50.sh:system/bin/setanalogsensitivity_50.sh \
         device/phh/treble/gammaos/rgp2xbox/setanalogsensitivity_custom.sh:system/bin/setanalogsensitivity_custom.sh \
         device/phh/treble/gammaos/toast/Toast.apk:system/product/app/toast/Toast.apk \
-        device/phh/treble/gammaos/aptx/lib/libaptXHD_encoder.so:system/aptx/lib/libaptXHD_encoder.so \
-        device/phh/treble/gammaos/aptx/lib/libaptX_encoder.so:system/aptx/lib/libaptX_encoder.so \
+        device/phh/treble/gammaos/aptx/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
+        device/phh/treble/gammaos/aptx/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
         device/phh/treble/gammaos/aptx/lib64/libaptXHD_encoder.so:system/aptx/lib64/libaptXHD_encoder.so \
         device/phh/treble/gammaos/aptx/lib64/libaptX_encoder.so:system/aptx/lib64/libaptX_encoder.so \
         device/phh/treble/gammaos/inotifytools/inotifywait:system/bin/inotifywait \
         device/phh/treble/gammaos/inotifytools/inotifywatch:system/bin/inotifywatch \
         device/phh/treble/gammaos/ktr1/com.ktpocket.launcher.apk:system/etc/com.ktpocket.launcher.apk \
-        device/phh/treble/gammaos/aptx/lib/libldacBT_abr.so:system/aptx/lib/libldacBT_abr.so \
-        device/phh/treble/gammaos/aptx/lib/libldacBT_enc.so:system/aptx/lib/libldacBT_enc.so \
-        device/phh/treble/gammaos/aptx/lib64/libldacBT_abr.so:system/aptx/lib64/libldacBT_abr.so \
-        device/phh/treble/gammaos/aptx/lib64/libldacBT_enc.so:system/aptx/lib64/libldacBT_enc.so
+        device/phh/treble/gammaos/aptx/lib/libldacBT_abr.so:system/lib/libldacBT_abr.so \
+        device/phh/treble/gammaos/aptx/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
+        device/phh/treble/gammaos/aptx/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
+        device/phh/treble/gammaos/aptx/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so
 
 PRODUCT_PACKAGES += \
 	treble-environ-rc \
