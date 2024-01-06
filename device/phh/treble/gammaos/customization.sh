@@ -225,6 +225,7 @@ else
         is405v=$(getprop ro.product.vendor_dlkm.model)
         if [[ "$is405v" == *"RG405V"* ]]; then
         value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
+	settings put global device_name "Anbernic RG405V"
         fi
 
 	# Migrations to GammaOS 1.5
@@ -246,6 +247,19 @@ else
                 setprop service.bootanim.exit 0
                 setprop service.bootanim.progress 0
                 start bootanim
+
+        	modelname=$(getprop ro.product.vendor_dlkm.model)
+        	if [[ "$modelname" == *"RG405V"* ]]; then
+        	settings put global device_name "Anbernic RG405V"
+        	fi
+
+                if [[ "$modelname" == *"RG405M"* ]]; then
+                settings put global device_name "Anbernic RG405M"
+                fi
+
+                if [[ "$modelname" == *"RG505"* ]]; then
+                settings put global device_name "Anbernic RG505"
+                fi
 
                 pm install /system/product/app/daijisho/399.apk
                 /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
