@@ -225,7 +225,6 @@ else
         is405v=$(getprop ro.product.vendor_dlkm.model)
         if [[ "$is405v" == *"RG405V"* ]]; then
         value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
-	settings put global device_name "Anbernic RG405V"
         fi
 
 	# Migrations to GammaOS 1.5
