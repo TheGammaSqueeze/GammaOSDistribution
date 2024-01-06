@@ -210,10 +210,11 @@ then
 	sleep 2
 
 	mkdir /data/setupcompleted
+        mkdir /data/setupcompleted/1.5
 	settings put system screen_off_timeout 120000
 else
+        /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
 	setenforce 0
-
 	input keyevent 26
 	sleep 1
 	input keyevent 26
@@ -226,5 +227,80 @@ else
         value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
         fi
 
+	# Migrations to GammaOS 1.5
+	if [ ! -d /data/setupcompleted/1.5 ]
+	then
+		while true; do
+    				# Check the mDreamingLockscreen value
+    				if dumpsys window | grep 'mDreamingLockscreen=true'; then
+        			# If the device is locked, wait for 1 second
+        			echo "Device is locked. Waiting..."
+        			sleep 1
+    			else
+        			# If the device is unlocked, break the loop
+        			echo "Device is unlocked. Executing commands..."
+        			break
+    			fi
+		done
+
+                setprop service.bootanim.exit 0
+                setprop service.bootanim.progress 0
+                start bootanim
+
+        	modelname=$(getprop ro.product.vendor_dlkm.model)
+        	if [[ "$modelname" == *"RG405V"* ]]; then
+        	settings put global device_name "Anbernic RG405V"
+        	fi
+
+                if [[ "$modelname" == *"RG405M"* ]]; then
+                settings put global device_name "Anbernic RG405M"
+                fi
+
+                if [[ "$modelname" == *"RG505"* ]]; then
+                settings put global device_name "Anbernic RG505"
+                fi
+
+                pm install /system/product/app/daijisho/399.apk
+                /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
+                #settings put system accelerometer_rotation 0
+		/system/bin/pm install /system/etc/Firefox_120.0.1.apk
+
+	        screensize=$(wm size)
+        	# for RG405M
+        	if [[ "$screensize" == *"480x640"* ]]; then
+        	wm size 640x480
+        	wm reset
+        	fi
+
+ 		/system/bin/rm -rf /data/tmpsetup/*
+		/system/bin/tar -xvf /system/etc/retroarch64.tar.gz -C /data/tmpsetup/
+        	launcheruser=$( stat -c "%U" /data/data/com.retroarch.aarch64)
+        	launchergroup=$( stat -c "%G" /data/data/com.retroarch.aarch64)
+        	/system/bin/chown -R $launcheruser:$launchergroup /data/tmpsetup/data/data/com.retroarch.aarch64
+        	/system/bin/rm -rf /data/tmpsetup/data/data/com.retroarch.aarch64/cache
+        	/system/bin/rm -rf /data/tmpsetup/data/data/com.retroarch.aarch64/code_cache
+        	/system/bin/cp -pdrav /data/tmpsetup/data/data/com.retroarch.aarch64 /data/data/
+        	/system/bin/rm -rf /data/tmpsetup/*
+
+		sed -i '/^input_block_timeout/c\input_block_timeout = "0"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^audio_out_rate/c\audio_out_rate = "44100"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^autosave_interval/c\autosave_interval = "5"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^input_exit_emulator_btn/c\input_exit_emulator_btn = "190"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^input_menu_toggle_btn/c\input_menu_toggle_btn = "189"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^menu_pause_libretro/c\menu_pause_libretro = "true"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^quit_press_twice/c\quit_press_twice = "false"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^savestate_auto_load/c\savestate_auto_load = "true"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+
+        	if [[ "$is405v" == *"RG405V"* ]]; then
+		settings put secure sysui_qs_tiles "wifi,bt,performance,fan,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
+		else
+		settings put secure sysui_qs_tiles "wifi,bt,performance,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
+		fi
+
+		setprop service.bootanim.exit 1
+        	setprop service.bootanim.progress 1
+
+		mkdir -p /data/setupcompleted/1.5
+	fi
 fi
 
