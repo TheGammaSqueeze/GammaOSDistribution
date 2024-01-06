@@ -210,10 +210,11 @@ then
 	sleep 2
 
 	mkdir /data/setupcompleted
+        mkdir /data/setupcompleted/1.5
 	settings put system screen_off_timeout 120000
 else
 	setenforce 0
-
+        /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
 	input keyevent 26
 	sleep 1
 	input keyevent 26
@@ -226,5 +227,41 @@ else
         value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
         fi
 
+	if [ ! -d /data/setupcompleted/1.5 ]
+	then
+		setprop service.bootanim.exit 0
+        	setprop service.bootanim.progress 0
+        	start bootanim
+
+ 		/system/bin/rm -rf /data/tmpsetup/*
+		/system/bin/tar -xvf /system/etc/retroarch64.tar.gz -C /data/tmpsetup/
+        	launcheruser=$( stat -c "%U" /data/data/com.retroarch.aarch64)
+        	launchergroup=$( stat -c "%G" /data/data/com.retroarch.aarch64)
+        	/system/bin/chown -R $launcheruser:$launchergroup /data/tmpsetup/data/data/com.retroarch.aarch64
+        	/system/bin/rm -rf /data/tmpsetup/data/data/com.retroarch.aarch64/cache
+        	/system/bin/rm -rf /data/tmpsetup/data/data/com.retroarch.aarch64/code_cache
+        	/system/bin/cp -pdrav /data/tmpsetup/data/data/com.retroarch.aarch64 /data/data/
+        	/system/bin/rm -rf /data/tmpsetup/*
+
+		sed -i '/^input_block_timeout/c\input_block_timeout = "0"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^audio_out_rate/c\audio_out_rate = "44100"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^autosave_interval/c\autosave_interval = "5"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^input_exit_emulator_btn/c\input_exit_emulator_btn = "190"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^input_menu_toggle_btn/c\input_menu_toggle_btn = "189"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^menu_pause_libretro/c\menu_pause_libretro = "true"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^quit_press_twice/c\quit_press_twice = "false"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+		sed -i '/^savestate_auto_load/c\savestate_auto_load = "true"' /sdcard/Android/data/com.retroarch.aarch64/files/retroarch.cfg
+
+        	if [[ "$is405v" == *"RG405V"* ]]; then
+		settings put secure sysui_qs_tiles "wifi,bt,performance,fan,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
+		else
+		settings put secure sysui_qs_tiles "wifi,bt,performance,abxy,dpadAnalogToggle,analogsensitivity,analogaxis,rightanalogaxis,airplane,rotation,cast,screenrecord"
+		fi
+
+		setprop service.bootanim.exit 1
+        	setprop service.bootanim.progress 1
+
+		mkdir /data/setupcompleted/1.5
+	fi
 fi
 
