@@ -10,7 +10,7 @@ PRODUCT_NAME := lineage_arm64_bgN
 PRODUCT_DEVICE := phhgsi_arm64_ab
 PRODUCT_BRAND := google
 PRODUCT_SYSTEM_BRAND := google
-PRODUCT_MODEL := Anbernic RG405V
+PRODUCT_MODEL := Anbernic RG505
 
 # Overwrite the inherited "emulator" characteristics
 PRODUCT_CHARACTERISTICS := device
