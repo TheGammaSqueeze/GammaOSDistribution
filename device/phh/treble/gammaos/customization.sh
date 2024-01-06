@@ -213,8 +213,8 @@ then
         mkdir /data/setupcompleted/1.5
 	settings put system screen_off_timeout 120000
 else
-	setenforce 0
         /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
+	setenforce 0
 	input keyevent 26
 	sleep 1
 	input keyevent 26
@@ -227,11 +227,37 @@ else
         value=1; printf "%b" "$(printf '\\x%02x\\x%02x\\x%02x\\x%02x' $((value & 0xFF)) $((value >> 8 & 0xFF)) $((value >> 16 & 0xFF)) $((value >> 24 & 0xFF)))" > /data/rgp2xbox/FAN_CONTROL_ISENABLED
         fi
 
+	# Migrations to GammaOS 1.5
 	if [ ! -d /data/setupcompleted/1.5 ]
 	then
-		setprop service.bootanim.exit 0
-        	setprop service.bootanim.progress 0
-        	start bootanim
+		while true; do
+    				# Check the mDreamingLockscreen value
+    				if dumpsys window | grep 'mDreamingLockscreen=true'; then
+        			# If the device is locked, wait for 1 second
+        			echo "Device is locked. Waiting..."
+        			sleep 1
+    			else
+        			# If the device is unlocked, break the loop
+        			echo "Device is unlocked. Executing commands..."
+        			break
+    			fi
+		done
+
+                setprop service.bootanim.exit 0
+                setprop service.bootanim.progress 0
+                start bootanim
+
+                pm install /system/product/app/daijisho/399.apk
+                /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
+                #settings put system accelerometer_rotation 0
+		/system/bin/pm install /system/etc/Firefox_120.0.1.apk
+
+	        screensize=$(wm size)
+        	# for RG405M
+        	if [[ "$screensize" == *"480x640"* ]]; then
+        	wm size 640x480
+        	wm reset
+        	fi
 
  		/system/bin/rm -rf /data/tmpsetup/*
 		/system/bin/tar -xvf /system/etc/retroarch64.tar.gz -C /data/tmpsetup/
@@ -261,7 +287,7 @@ else
 		setprop service.bootanim.exit 1
         	setprop service.bootanim.progress 1
 
-		mkdir /data/setupcompleted/1.5
+		mkdir -p /data/setupcompleted/1.5
 	fi
 fi
 
