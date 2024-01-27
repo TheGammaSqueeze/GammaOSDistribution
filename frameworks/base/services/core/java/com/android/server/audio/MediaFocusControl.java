@@ -35,6 +35,7 @@ import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -899,6 +900,11 @@ public class MediaFocusControl implements PlayerFocusEnforcer {
                     + " flags=0x" + Integer.toHexString(flags)
                     + " sdk=" + sdk))
                 .printLog(TAG));
+
+        if (("vehicle".equals(SystemProperties.get("ro.target.product"))) || ("car".equals(SystemProperties.get("ro.target.product")))) {
+            focusChangeHint = AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK;
+        }
+
         // we need a valid binder callback for clients
         if (!cb.pingBinder()) {
             Log.e(TAG, " AudioFocus DOA client for requestAudioFocus(), aborting.");

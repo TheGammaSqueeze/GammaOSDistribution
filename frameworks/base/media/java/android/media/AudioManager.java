@@ -5321,6 +5321,10 @@ public class AudioManager {
     @UnsupportedAppUsage
     public static final int DEVICE_OUT_HDMI = AudioSystem.DEVICE_OUT_HDMI;
     /** @hide
+     * The audio output device code for another HDMI */
+    @UnsupportedAppUsage
+    public static final int DEVICE_OUT_HDMI_1 = AudioSystem.DEVICE_OUT_HDMI_1;
+    /** @hide
      * The audio output device code for an analog wired headset attached via a
      *  docking station
      */
@@ -5367,6 +5371,10 @@ public class AudioManager {
      */
     public static final int DEVICE_OUT_SPDIF = AudioSystem.DEVICE_OUT_SPDIF;
     /** @hide
+     * The audio output device code for another S/PDIF digital connection.
+     */
+    public static final int DEVICE_OUT_SPDIF_1 = AudioSystem.DEVICE_OUT_SPDIF_1;
+    /** @hide
      * The audio output device code for built-in FM transmitter.
      */
     public static final int DEVICE_OUT_FM = AudioSystem.DEVICE_OUT_FM;
@@ -5408,6 +5416,11 @@ public class AudioManager {
      */
     public static final int DEVICE_IN_HDMI =
                                     AudioSystem.DEVICE_IN_HDMI;
+    /** @hide
+     * The audio input device code for another HDMI
+     */
+    public static final int DEVICE_IN_HDMI_1 =
+                                    AudioSystem.DEVICE_IN_HDMI_1;
     /** @hide
      * The audio input device code for HDMI ARC
      */
@@ -5851,38 +5864,6 @@ public class AudioManager {
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }
-    }
-
-     /**
-     * Indicate A2DP source or sink active device change and eventually suppress
-     * the {@link AudioManager.ACTION_AUDIO_BECOMING_NOISY} intent.
-     * This operation is asynchronous but its execution will still be sequentially scheduled
-     * relative to calls to {@link #setBluetoothHearingAidDeviceConnectionState(BluetoothDevice,
-     * int, boolean, int)} and
-     * {@link #handleBluetoothA2dpDeviceConfigChange(BluetoothDevice)}.
-     * @param device Bluetooth device connected/disconnected
-     * @param state  new connection state (BluetoothProfile.STATE_xxx)
-     * @param profile profile for the A2DP device
-     * (either {@link android.bluetooth.BluetoothProfile.A2DP} or
-     * {@link android.bluetooth.BluetoothProfile.A2DP_SINK})
-     * @param a2dpVolume New volume for the connecting device. Does nothing if
-     * disconnecting. Pass value -1 in case you want this field to be ignored
-     * @param suppressNoisyIntent if true the
-     * {@link AudioManager.ACTION_AUDIO_BECOMING_NOISY} intent will not be sent.
-     * @return a delay in ms that the caller should wait before broadcasting
-     * BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED intent.
-     * {@hide}
-     */
-    public void handleBluetoothA2dpActiveDeviceChange(
-                BluetoothDevice device, int state, int profile,
-                boolean suppressNoisyIntent, int a2dpVolume) {
-         final IAudioService service = getService();
-         try {
-             service.handleBluetoothA2dpActiveDeviceChange(device,
-                   state, profile, suppressNoisyIntent, a2dpVolume);
-         } catch (RemoteException e) {
-             throw e.rethrowFromSystemServer();
-         }
     }
 
     /** {@hide} */

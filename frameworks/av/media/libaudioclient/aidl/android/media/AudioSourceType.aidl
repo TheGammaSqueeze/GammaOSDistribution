@@ -32,6 +32,8 @@ enum AudioSourceType {
     REMOTE_SUBMIX = 8,
     UNPROCESSED = 9,
     VOICE_PERFORMANCE = 10,
+    HDMIIN = 11,
+    HDMIIN_1 = 12,
     ECHO_REFERENCE = 1997,
     FM_TUNER = 1998,
     /**

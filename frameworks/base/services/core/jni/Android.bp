@@ -71,6 +71,8 @@ cc_library_static {
         "com_android_server_am_LowMemDetector.cpp",
         "com_android_server_pm_PackageManagerShellCommandDataLoader.cpp",
         "com_android_server_sensor_SensorService.cpp",
+        "com_android_server_rkdisplay_RkDisplayModes.cpp",
+        "com_android_server_audio_RkAudioSetting.cpp",
         "onload.cpp",
         ":lib_cachedAppOptimizer_native",
         ":lib_networkStatsFactory_native",
@@ -81,10 +83,13 @@ cc_library_static {
         "frameworks/native/services",
         "system/gatekeeper/include",
         "system/memory/libmeminfo/include",
+        "vendor/rockchip/hardware/interfaces",
+        "hardware/rockchip/libhardware_rockchip/include/",
     ],
 
     header_libs: [
         "bionic_libc_platform_headers",
+        "libhardware_rockchip_headers",
     ],
 }
 
@@ -181,11 +186,13 @@ cc_defaults {
         "android.frameworks.stats-V1-ndk_platform",
         "android.system.suspend.control-V1-cpp",
         "android.system.suspend.control.internal-cpp",
+        "rockchip.hardware.outputmanager@1.0",
         "android.system.suspend@1.0",
         "service.incremental",
         "vendor.samsung.hardware.light@2.0",
         "vendor.samsung.hardware.light@3.0",
         "vendor.samsung.hardware.miscpower@2.0",
+        "librksoundsetting",
     ],
 
     static_libs: [

@@ -36,4 +36,9 @@ enum AudioOutputFlags {
     VOIP_RX          = 13,
     INCALL_MUSIC     = 14,
     GAPLESS_OFFLOAD  = 15,
+    RK_PRIMARY       = 16,
+    RK_HDMI          = 17,
+    RK_SPDIF         = 18,
+    RK_HDMI_1        = 19,
+    RK_SPDIF_1       = 20,
 }

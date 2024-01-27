@@ -29,7 +29,6 @@ import android.media.audiofx.AudioEffect;
 import android.media.audiopolicy.AudioMix;
 import android.os.Build;
 import android.os.IBinder;
-import android.os.SystemProperties;
 import android.os.Vibrator;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -231,14 +230,6 @@ public class AudioSystem
     public static final int AUDIO_FORMAT_APTX_HD        = 0x21000000;
     /** @hide */
     public static final int AUDIO_FORMAT_LDAC           = 0x23000000;
-    /** @hide */
-    public static final int AUDIO_FORMAT_CELT           = 0x26000000;
-    /** @hide */
-    public static final int AUDIO_FORMAT_APTX_ADAPTIVE  = 0x27000000;
-    /** @hide */
-    public static final int AUDIO_FORMAT_APTX_TWSP      = 0x2A000000;
-    /** @hide */
-    public static final int VX_AUDIO_FORMAT_LC3         = 0x2B000000;
 
     /** @hide */
     @IntDef(flag = false, prefix = "AUDIO_FORMAT_", value = {
@@ -253,9 +244,9 @@ public class AudioSystem
     @Retention(RetentionPolicy.SOURCE)
     public @interface AudioFormatNativeEnumForBtCodec {}
 
-    private static final boolean IS_QTI_BT =
-            SystemProperties.get("ro.bluetooth.library_name", "").equals("libbluetooth_qti.so");
-
+    // add AUDIO_FORMAT_IEC61937 define
+    /** @hide */
+    public static final int AUDIO_FORMAT_IEC61937       = 0x0D000000;
     /**
      * @hide
      * Convert audio format enum values to Bluetooth codec values
@@ -268,14 +259,6 @@ public class AudioSystem
             case AUDIO_FORMAT_APTX: return BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX;
             case AUDIO_FORMAT_APTX_HD: return BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_HD;
             case AUDIO_FORMAT_LDAC: return BluetoothCodecConfig.SOURCE_CODEC_TYPE_LDAC;
-            case AUDIO_FORMAT_CELT:
-                if (IS_QTI_BT) return BluetoothCodecConfig.SOURCE_CODEC_TYPE_CELT;
-            case AUDIO_FORMAT_APTX_ADAPTIVE:
-                if (IS_QTI_BT) return BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_ADAPTIVE;
-            case AUDIO_FORMAT_APTX_TWSP:
-                if (IS_QTI_BT) return BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_TWSP;
-            case VX_AUDIO_FORMAT_LC3:
-                if (IS_QTI_BT) return BluetoothCodecConfig.SOURCE_CODEC_TYPE_LC3;
             default:
                 Log.e(TAG, "Unknown audio format 0x" + Integer.toHexString(audioFormat)
                         + " for conversion to BT codec");
@@ -301,14 +284,6 @@ public class AudioSystem
                 return AudioSystem.AUDIO_FORMAT_APTX_HD;
             case BluetoothCodecConfig.SOURCE_CODEC_TYPE_LDAC:
                 return AudioSystem.AUDIO_FORMAT_LDAC;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_CELT:
-                if (IS_QTI_BT) return AudioSystem.AUDIO_FORMAT_CELT;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_ADAPTIVE:
-                if (IS_QTI_BT) return AudioSystem.AUDIO_FORMAT_APTX_ADAPTIVE;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_TWSP:
-                if (IS_QTI_BT) return AudioSystem.AUDIO_FORMAT_APTX_TWSP;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_LC3:
-                if (IS_QTI_BT) return AudioSystem.VX_AUDIO_FORMAT_LC3;
             default:
                 Log.e(TAG, "Unknown BT codec 0x" + Integer.toHexString(btCodec)
                         + " for conversion to audio format");
@@ -409,8 +384,6 @@ public class AudioSystem
                 return "AUDIO_FORMAT_LHDC_LL";
             case /* AUDIO_FORMAT_APTX_TWSP       */ 0x2A000000:
                 return "AUDIO_FORMAT_APTX_TWSP";
-            case /* VX_AUDIO_FORMAT_LC3          */ 0x2B000000:
-                return "VX_AUDIO_FORMAT_LC3";
 
             /* Aliases */
             case /* AUDIO_FORMAT_PCM_16_BIT        */ 0x1:
@@ -954,6 +927,8 @@ public class AudioSystem
     @UnsupportedAppUsage
     public static final int DEVICE_OUT_FM = 0x100000;
     /** @hide */
+    public static final int DEVICE_OUT_HDMI_1 = DEVICE_OUT_FM;
+    /** @hide */
     public static final int DEVICE_OUT_AUX_LINE = 0x200000;
     /** @hide */
     public static final int DEVICE_OUT_SPEAKER_SAFE = 0x400000;
@@ -969,6 +944,8 @@ public class AudioSystem
     public static final int DEVICE_OUT_HEARING_AID = 0x8000000;
     /** @hide */
     public static final int DEVICE_OUT_ECHO_CANCELLER = 0x10000000;
+    /** @hide */
+    public static final int DEVICE_OUT_SPDIF_1 = DEVICE_OUT_ECHO_CANCELLER;
     /** @hide */
     public static final int DEVICE_OUT_BLE_HEADSET = 0x20000000;
     /** @hide */
@@ -1117,6 +1094,8 @@ public class AudioSystem
     public static final int DEVICE_IN_LINE = DEVICE_BIT_IN | 0x8000;
     /** @hide */
     public static final int DEVICE_IN_SPDIF = DEVICE_BIT_IN | 0x10000;
+    /** @hide */
+    public static final int DEVICE_IN_HDMI_1 = DEVICE_IN_SPDIF;
     /** @hide */
     @UnsupportedAppUsage
     public static final int DEVICE_IN_BLUETOOTH_A2DP = DEVICE_BIT_IN | 0x20000;

@@ -309,11 +309,46 @@ void EglManager::loadConfigs() {
     }
 }
 
+char* gcoOS_GetProgramName(char* buf, int size)
+{
+    char procName[64];
+    pid_t pid = getpid();
+
+    FILE* fp = NULL;
+    snprintf(procName, sizeof(procName), "/proc/%i/cmdline", pid);
+    fp = fopen(procName, "r");
+    if(fp)
+    {
+        fread(buf, 1, size, fp);
+        fclose(fp);
+        fp = NULL;
+    }
+    else
+    {
+       ALOGD("%s : %d : open file %s failed \n", __FUNCTION__, __LINE__, procName);
+    }
+        return buf;
+}
+
 void EglManager::createContext() {
     std::vector<EGLint> contextAttributes;
     contextAttributes.reserve(5);
     contextAttributes.push_back(EGL_CONTEXT_CLIENT_VERSION);
     contextAttributes.push_back(GLES_VERSION);
+
+    //rk-workaround android.rk.RockVideoPlayer eglPriority is too low, will cause ANR
+    char programName[100];
+    char propSetName[100];
+    gcoOS_GetProgramName(programName,100);
+    property_get("debug.sf.eglpriority", propSetName, "android.rk.RockVideoPlayer");
+    if(strstr(programName,propSetName))
+    {
+        Properties::contextPriority = EGL_CONTEXT_PRIORITY_HIGH_IMG;
+        ALOGI("forcechange eglContextPriority, programName:%s   contextPriority:0x%x  \n",programName,Properties::contextPriority);
+
+    }
+    //end workaround
+
     if (Properties::contextPriority != 0 && EglExtensions.contextPriority) {
         contextAttributes.push_back(EGL_CONTEXT_PRIORITY_LEVEL_IMG);
         contextAttributes.push_back(Properties::contextPriority);

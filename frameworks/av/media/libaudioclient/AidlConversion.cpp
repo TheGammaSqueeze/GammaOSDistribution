@@ -584,6 +584,16 @@ ConversionResult<audio_output_flags_t> aidl2legacy_AudioOutputFlags_audio_output
             return AUDIO_OUTPUT_FLAG_INCALL_MUSIC;
         case media::AudioOutputFlags::GAPLESS_OFFLOAD:
             return AUDIO_OUTPUT_FLAG_GAPLESS_OFFLOAD;
+        case media::AudioOutputFlags::RK_PRIMARY:
+            return OUTPUT_FLAG_PRIMARY;
+        case media::AudioOutputFlags::RK_HDMI:
+            return OUTPUT_FLAG_HDMI;
+        case media::AudioOutputFlags::RK_SPDIF:
+            return OUTPUT_FLAG_SPDIF;
+        case media::AudioOutputFlags::RK_HDMI_1:
+            return OUTPUT_FLAG_HDMI_1;
+        case media::AudioOutputFlags::RK_SPDIF_1:
+            return OUTPUT_FLAG_SPDIF_1;
     }
     return unexpected(BAD_VALUE);
 }
@@ -625,6 +635,16 @@ ConversionResult<media::AudioOutputFlags> legacy2aidl_audio_output_flags_t_Audio
             return media::AudioOutputFlags::INCALL_MUSIC;
         case AUDIO_OUTPUT_FLAG_GAPLESS_OFFLOAD:
             return media::AudioOutputFlags::GAPLESS_OFFLOAD;
+        case OUTPUT_FLAG_PRIMARY:
+            return media::AudioOutputFlags::RK_PRIMARY;
+        case OUTPUT_FLAG_HDMI:
+            return media::AudioOutputFlags::RK_HDMI;
+        case OUTPUT_FLAG_SPDIF:
+            return media::AudioOutputFlags::RK_SPDIF;
+        case OUTPUT_FLAG_HDMI_1:
+            return media::AudioOutputFlags::RK_HDMI_1;
+        case OUTPUT_FLAG_SPDIF_1:
+            return media::AudioOutputFlags::RK_SPDIF_1;
     }
     return unexpected(BAD_VALUE);
 }
@@ -844,6 +864,10 @@ ConversionResult<audio_source_t> aidl2legacy_AudioSourceType_audio_source_t(
             return AUDIO_SOURCE_UNPROCESSED;
         case media::AudioSourceType::VOICE_PERFORMANCE:
             return AUDIO_SOURCE_VOICE_PERFORMANCE;
+        case media::AudioSourceType::HDMIIN:
+            return AUDIO_SOURCE_HDMIIN;
+        case media::AudioSourceType::HDMIIN_1:
+            return AUDIO_SOURCE_HDMIIN_1;
         case media::AudioSourceType::ECHO_REFERENCE:
             return AUDIO_SOURCE_ECHO_REFERENCE;
         case media::AudioSourceType::FM_TUNER:
@@ -881,6 +905,10 @@ ConversionResult<media::AudioSourceType> legacy2aidl_audio_source_t_AudioSourceT
             return media::AudioSourceType::UNPROCESSED;
         case AUDIO_SOURCE_VOICE_PERFORMANCE:
             return media::AudioSourceType::VOICE_PERFORMANCE;
+        case AUDIO_SOURCE_HDMIIN:
+            return media::AudioSourceType::HDMIIN;
+        case AUDIO_SOURCE_HDMIIN_1:
+            return media::AudioSourceType::HDMIIN_1;
         case AUDIO_SOURCE_ECHO_REFERENCE:
             return media::AudioSourceType::ECHO_REFERENCE;
         case AUDIO_SOURCE_FM_TUNER:

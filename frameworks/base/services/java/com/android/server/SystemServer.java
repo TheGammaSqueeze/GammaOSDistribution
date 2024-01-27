@@ -106,6 +106,7 @@ import com.android.server.appbinding.AppBindingService;
 import com.android.server.attention.AttentionManagerService;
 import com.android.server.audio.AudioService;
 import com.android.server.biometrics.AuthService;
+import com.android.server.audio.RkAudioSettingService;
 import com.android.server.biometrics.BiometricService;
 import com.android.server.biometrics.sensors.face.FaceService;
 import com.android.server.biometrics.sensors.fingerprint.FingerprintService;
@@ -1971,6 +1972,14 @@ public final class SystemServer implements Dumpable {
                 reportWtf("starting UpdateLockService", e);
             }
             t.traceEnd();
+
+                Slog.i(TAG, "addService rockchip_audio_setting");
+                try {
+                    ServiceManager.addService("rockchip_audio_setting",
+                            new RkAudioSettingService(context));
+                } catch (Throwable e) {
+                    Slog.e(TAG, "Failure starting RkAudioSettingManager Service", e);
+                }
 
             t.traceBegin("StartNotificationManager");
             mSystemServiceManager.startService(NotificationManagerService.class);

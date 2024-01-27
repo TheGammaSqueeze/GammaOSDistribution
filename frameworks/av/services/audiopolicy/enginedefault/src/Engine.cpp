@@ -34,6 +34,7 @@
 #include <media/AudioContainers.h>
 #include <utils/String8.h>
 #include <utils/Log.h>
+#include <cutils/properties.h>
 
 namespace android
 {
@@ -204,7 +205,8 @@ void Engine::filterOutputDevicesForStrategy(legacy_strategy strategy,
             if (desc->isActive() && !audio_is_linear_pcm(desc->getFormat())) {
                 availableOutputDevices.remove(desc->devices().getDevicesFromTypes({
                         AUDIO_DEVICE_OUT_HDMI, AUDIO_DEVICE_OUT_SPDIF,
-                        AUDIO_DEVICE_OUT_HDMI_ARC, AUDIO_DEVICE_OUT_HDMI_EARC}));
+                        AUDIO_DEVICE_OUT_HDMI_ARC, AUDIO_DEVICE_OUT_HDMI_EARC,
+                        AUDIO_DEVICE_OUT_HDMI_1, AUDIO_DEVICE_OUT_SPDIF_1, }));
             }
         }
         } break;
@@ -358,25 +360,30 @@ DeviceVector Engine::getDevicesForStrategyInt(legacy_strategy strategy,
             // no sonification on aux digital (e.g. HDMI)
             devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_AUX_DIGITAL);
         }
+        //priority Wired > a2dp > hdmi > hdmi 1 > spdif > spdif 1
+        if ((devices2.isEmpty()) && (strategy != STRATEGY_SONIFICATION)) {
+            devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_HDMI_1);
+        }
+        if ((devices2.isEmpty()) && (strategy != STRATEGY_SONIFICATION)) {
+            devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_SPDIF);
+        }
+        if ((devices2.isEmpty()) && (strategy != STRATEGY_SONIFICATION)) {
+            devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_SPDIF_1);
+        }
         if ((devices2.isEmpty()) &&
                 (getForceUse(AUDIO_POLICY_FORCE_FOR_DOCK) == AUDIO_POLICY_FORCE_ANALOG_DOCK)) {
             devices2 = availableOutputDevices.getDevicesFromType(
                     AUDIO_DEVICE_OUT_ANLG_DOCK_HEADSET);
-        }
-        if ((devices2.isEmpty()) && (strategy != STRATEGY_SONIFICATION)) {
-            // no sonification on WFD sink
-            devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_PROXY);
         }
         if (devices2.isEmpty()) {
             devices2 = availableOutputDevices.getDevicesFromType(AUDIO_DEVICE_OUT_SPEAKER);
         }
         DeviceVector devices3;
         if (strategy == STRATEGY_MEDIA) {
-            // ARC, SPDIF and AUX_LINE can co-exist with others.
+            // ARC and AUX_LINE can co-exist with others.
             devices3 = availableOutputDevices.getDevicesFromTypes({
                     AUDIO_DEVICE_OUT_HDMI_ARC, AUDIO_DEVICE_OUT_HDMI_EARC,
-                    AUDIO_DEVICE_OUT_SPDIF, AUDIO_DEVICE_OUT_AUX_LINE,
-                    });
+                    AUDIO_DEVICE_OUT_AUX_LINE, });
         }
 
         devices2.add(devices3);
@@ -563,8 +570,8 @@ sp<DeviceDescriptor> Engine::getDeviceForInputSource(audio_source_t inputSource)
     case AUDIO_SOURCE_CAMCORDER:
         // For a device without built-in mic, adding usb device
         device = availableDevices.getFirstExistingDevice({
-                AUDIO_DEVICE_IN_BACK_MIC, AUDIO_DEVICE_IN_BUILTIN_MIC,
-                AUDIO_DEVICE_IN_USB_DEVICE});
+            AUDIO_DEVICE_IN_USB_DEVICE,
+            AUDIO_DEVICE_IN_BACK_MIC, AUDIO_DEVICE_IN_BUILTIN_MIC});
         break;
     case AUDIO_SOURCE_VOICE_DOWNLINK:
     case AUDIO_SOURCE_VOICE_CALL:
@@ -577,6 +584,14 @@ sp<DeviceDescriptor> Engine::getDeviceForInputSource(audio_source_t inputSource)
                 AUDIO_DEVICE_IN_WIRED_HEADSET, AUDIO_DEVICE_IN_USB_HEADSET,
                 AUDIO_DEVICE_IN_USB_DEVICE, AUDIO_DEVICE_IN_BLUETOOTH_BLE,
                 AUDIO_DEVICE_IN_BUILTIN_MIC});
+        break;
+    case AUDIO_SOURCE_HDMIIN:
+        device = availableDevices.getDevice(
+                AUDIO_DEVICE_IN_HDMI, String8(""), AUDIO_FORMAT_DEFAULT);
+        break;
+    case AUDIO_SOURCE_HDMIIN_1:
+        device = availableDevices.getDevice(
+                AUDIO_DEVICE_IN_HDMI_1, String8(""), AUDIO_FORMAT_DEFAULT);
         break;
     case AUDIO_SOURCE_REMOTE_SUBMIX:
         device = availableDevices.getDevice(
