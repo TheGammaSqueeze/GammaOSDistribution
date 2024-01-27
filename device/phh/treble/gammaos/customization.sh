@@ -2,6 +2,12 @@
 
 if [ ! -d /data/setupcompleted ] && [ -z $(getprop persist.sys.device_provisioned) ]
 then
+	settings put system screen_off_timeout 1800000
+	setenforce 0
+	setprop service.bootanim.exit 0
+        setprop service.bootanim.progress 0
+        start bootanim
+
         am force-stop com.google.android.setupwizard && am force-stop org.lineageos.setupwizard && am start -a android.intent.action.VIEW -d file:///system/etc/gammaupdating.mp4 -t video/mp4
 	settings put system screen_off_timeout 1800000
 	setenforce 0
@@ -57,6 +63,9 @@ then
 	settings put global private_dns_specifier "dns.adguard-dns.com"
 
 	/system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
+
+	setprop service.bootanim.exit 1
+        setprop service.bootanim.progress 1
 
 	/system/bin/mkdir /data/tmpsetup
         am force-stop com.google.android.setupwizard && am force-stop org.lineageos.setupwizard && am start -a android.intent.action.VIEW -d file:///system/etc/gammaupdating.mp4 -t video/mp4
@@ -241,6 +250,12 @@ else
     			fi
 		done
 
+		settings put system screen_off_timeout 1800000
+		setenforce 0
+		setprop service.bootanim.exit 0
+	        setprop service.bootanim.progress 0
+        	start bootanim
+
 		am force-stop com.magneticchen.daijishou && am start -a android.intent.action.VIEW -d file:///system/etc/gammaupdating.mp4 -t video/mp4
 
         	modelname=$(getprop ro.product.vendor_dlkm.model)
@@ -259,6 +274,10 @@ else
                 am force-stop com.magneticchen.daijishou && am start -a android.intent.action.VIEW -d file:///system/etc/gammaupdating.mp4 -t video/mp4
                 pm install /system/product/app/daijisho/399.apk
                 /system/bin/pm set-home-activity com.magneticchen.daijishou/.app.HomeActivity -user --user 0
+
+		setprop service.bootanim.exit 1
+	        setprop service.bootanim.progress 1
+
 		/system/bin/pm install /system/etc/Firefox_120.0.1.apk
 
 	        screensize=$(wm size)
@@ -302,3 +321,4 @@ mount /dev/block/mmcblk1p1 /storage/sdcard1
 rm /storage/sdcard1/bootFA
 umount /storage/sdcard1
 rm -rf /storage/sdcard1
+rm /data/system/locksettings.db*
