@@ -1,1 +1,0 @@
-../common/os_pickup.mk

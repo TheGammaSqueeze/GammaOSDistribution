@@ -1,0 +1,24 @@
+cc_library {
+    name: "libtinyalsa_iec958",
+    vendor: true,
+    srcs: [
+        "mixer.c",
+        "mixer_hw.c",
+        "mixer_plugin.c",
+        "pcm.c",
+        "pcm_hw.c",
+        "pcm_plugin.c",
+        "snd_utils.c",
+    ],
+    cflags: ["-Werror", "-Wno-macro-redefined", "-DSUPPORT_IEC958"],
+    export_include_dirs: ["include"],
+    local_include_dirs: ["include"],
+
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
+
+    system_shared_libs: ["libc","libdl"],
+}

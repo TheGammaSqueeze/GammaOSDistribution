@@ -1,0 +1,38 @@
+// Signature format: 2.0
+package capabilities_type {
+
+  public class Capabilities {
+    ctor public Capabilities();
+    method public java.util.List<capabilities_type.Feature> getFeature();
+    method public String getIp();
+    method public String getVersion();
+    method public void setIp(String);
+    method public void setVersion(String);
+  }
+
+  public class Feature {
+    ctor public Feature();
+    method public String getName();
+    method public capabilities_type.Permission getPermission();
+    method public void setName(String);
+    method public void setPermission(capabilities_type.Permission);
+  }
+
+  public enum Permission {
+    method public String getRawName();
+    enum_constant public static final capabilities_type.Permission NO;
+    enum_constant public static final capabilities_type.Permission RO;
+    enum_constant public static final capabilities_type.Permission RW;
+    enum_constant public static final capabilities_type.Permission WO;
+  }
+
+  public class XmlParser {
+    ctor public XmlParser();
+    method public static capabilities_type.Capabilities readCapabilities(java.io.InputStream) throws javax.xml.datatype.DatatypeConfigurationException, java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static capabilities_type.Feature readFeature(java.io.InputStream) throws javax.xml.datatype.DatatypeConfigurationException, java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static String readText(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static void skip(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+  }
+
+}
+

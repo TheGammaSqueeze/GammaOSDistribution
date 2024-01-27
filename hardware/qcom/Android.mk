@@ -1,1 +1,0 @@
-../qcom-caf/common/os_pickup_aosp.mk

@@ -1,0 +1,38 @@
+cc_prebuilt_library {
+    name: "librkswpq",
+    compile_multilib: "both",
+    multilib: {
+        lib64: {
+            srcs: ["lib/arm64/librkswpq.so"],
+        },
+        lib32: {
+            srcs: ["lib/arm/librkswpq.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    vendor: true,
+}
+
+cc_prebuilt_library {
+    name: "libpq",
+    compile_multilib: "both",
+    multilib: {
+        lib64: {
+            srcs: ["lib/arm64/libpq.so"],
+        },
+        lib32: {
+            srcs: ["lib/arm/libpq.so"],
+        },
+    },
+    shared_libs: [
+        "librkswpq",
+    ],
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    vendor: true,
+}
